@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<svg
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="1900px"
+  height="1190px"
+  viewBox="-865 -425 1900 1190"
+  >
+  <text class="te ab_bb" x="1032" y="762">© CC-BY-SA 4.0 or later 2011-<tspan class="stand_jahr"/> Bjørn Bäuchle </text>
+ <metadata>
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+           xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+           xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <rdf:Description>
+    <dc:creator><![CDATA[Bjørn Bäuchle <gleisplan at frankfurtium dot de>]]></dc:creator>
+    <dc:subject>Frankfurt am Main, Straßenbahn Frankfurt, Gleisplan, track layout</dc:subject>
+    <dc:description>Schematischer Gleisplan des Straßenbahn-Netzes in Frankfurt mit Betriebshof Gutleut</dc:description>
+    <dc:identifier>https://plan.frankfurtium.de/strassenbahnnetz.svg</dc:identifier>
+    <dc:relation>https://plan.frankfurtium.de/strassenbahnnetz.svg</dc:relation>
+    <dc:rights>© Bjørn Bäuchle CC-BY-SA 4.0 or later</dc:rights>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type>Image</dc:type>
+    <dc:title>Straßenbahn-Gleisplan Frankfurt am Main</dc:title>
+    <dc:date/>
+    <dc:language>de</dc:language>
+    <dc:contributor>Users of Frankfurter Nahverkehrsforum https://frankfurter-nahverkehrsforum.de/forum/index.php?thread/20982-gleisnetz-straßenbahn-frankfurt/</dc:contributor>
+   </rdf:Description>
+  </rdf:RDF>
+ </metadata>
+ <style type="text/css"><![CDATA[
+  .strecke { stroke-width:1px; stroke:#000000; fill:none; }
+  .bb { stroke-width:.7px; stroke:#404040; }
+  .ubergabe { marker-end: url(#Arrow1Lend); }
+  .zugabe { marker-start: url(#Arrow2Lend); }
+  .anschluss { marker-end: url(#ArrowDB); }
+  .endet { marker-end:   url(#prell); }
+  .faeng { marker-start: url(#prell); }
+
+  .nullzig use, use.nullzig { stroke:#ff0000; fill:url(#bs00); }
+  .zehnzig use, use.zehnzig { stroke:#0000ff; fill:url(#bs10); }
+  .dreizig use, use.dreizig { stroke:#00c000; fill:url(#bs30); }
+  .funfzig use, use.funfzig { stroke:#8000ff; fill:url(#bs56); }
+  .hschild { stroke:#00c000; stroke-width:1px; fill:#ffff00; }
+  .htext { stroke:#00c000; fill:none; }
+  .uberwerf { fill-opacity:0.40; fill:#ffffff; stroke:none; }
+  .bahnsteig { stroke-width:1px; }
+  .doppelstrich rect { fill:white; stroke:none; }
+  .doppelstrich path { fill:none; stroke:black; stroke-width:.5px; }
+
+  .geplant { stroke-dasharray: 1,1; }
+  .verbot circle { stroke:red; stroke-width:2px; fill:white; }
+  .verbot text { stroke:black; fill:black; text-anchor:middle; font-size:8pt; }
+
+  text { font-size:9pt; font-family:Sans-Serif; }
+  .ab_bb { font-size:6pt; }
+  .link { fill:blue; }
+  .ref { font-size:9pt; fill:#0080ff; stroke:none; font-weight:bold; }
+  .geplant text { stroke:none; fill:solid; font-style:italic; }
+  .geplant text:before { content: "("; }
+  .geplant text:after { content: ")"; }
+
+  .te { text-anchor:end; }
+  .tm { text-anchor:middle; }
+
+  .bstggruppe { fill:#ffffc0; stroke:yellow; stroke-width:4pt; stroke-dasharray:2 1; }
+  .hstgruppe { fill:#c0ffc0; stroke:#80ff80; stroke-width:4pt; stroke-dasharray:.5 .25; }
+  .hstgrtitel { font-size:6pt; }
+
+  .box { fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:2; }
+  .ueberschrift { font-size:16pt;fill:black;fill-opacity:1;stroke:none; }
+  .unterschrift { font-size:14pt;fill:#ff0000;fill-opacity:1;stroke:none; }
+  .stand {  font-size:12pt;fill:#000000;fill-opacity:1;stroke:none; }
+ ]]>
+ </style>
+ <defs>
+  <linearGradient id="bs00" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ff8080" /><stop offset="100%" stop-opacity="100%" stop-color="#ff8080" /></linearGradient>
+  <linearGradient id="bs10" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#0080ff" /><stop offset="100%" stop-opacity="100%" stop-color="#0080ff" /></linearGradient>
+  <linearGradient id="bs30" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#80c080" /><stop offset="100%" stop-opacity="100%" stop-color="#80c080" /></linearGradient>
+  <linearGradient id="bs56" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#c080ff" /><stop offset="100%" stop-opacity="100%" stop-color="#c080ff" /></linearGradient>
+  <marker id="Arrow1Lend" refX="0" refY="0" style="overflow:visible" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" /></marker>
+  <marker id="Arrow2Lend" refX="0" refY="0" style="overflow:visible" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" transform="scale(-1,-1)" /></marker>
+  <marker id="ArrowDB" refX="0" refY="0" style="overflow:visible" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" /><rect x="5" y="-5" width="15" height="10" rx="1" ry="1" style="stroke:red; fill:none;" /></marker>
+  <marker id="prell" refX="0" refY="0" style="overflow:visible" orient="auto"><path d="M 0,-1 L 0,1" style="stroke:currentColor; " /></marker>
+  <path id="bahnsteig" d="M 6,-7.5 L 2,-7.5 L 2,7.5 L 6,7.5" class="bahnsteig" />
+  <g id="doppelbst">
+   <use xlink:href="#bahnsteig" />
+   <g class="doppelstrich" id="trennstrich" transform="translate(4,0) rotate(30)">
+    <rect x="-3.5" y="-1" width="7" height="2" />
+    <path d="M -3.5,-1 h 7 M -3.5,1 h 7" />
+   </g>
+  </g>
+  <g id="haltestel">
+   <circle r="3.5" cx="5" cy="0" class="hschild" />
+   <path class="htext" d="M 6.5,-1.9 L 6.5,1.9 M 3.5,-1.9 L 3.5,1.9 M 3.5,0 L 6.5,0" />
+  </g>
+  <g id="doppelhst">
+   <use xlink:href="#haltestel" transform="translate(0,-3.5)" />
+   <use xlink:href="#haltestel" transform="translate(0,+3.5)" />
+  </g>
+  <g id="grid">
+   <path style="stroke-width:.5px; stroke:#f00;" d="M -3000   0 H 3000" /><path style="stroke-width:.5px; stroke:#00f;" d="M   0 -3000 V 3000" />
+   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  10 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  10 -3000 V 3000" />
+   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  20 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  20 -3000 V 3000" />
+   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  30 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  30 -3000 V 3000" />
+   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  40 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  40 -3000 V 3000" />
+   <path style="stroke-width:.4px; stroke:#f44;" d="M -3000  50 H 3000" /><path style="stroke-width:.4px; stroke:#44f;" d="M  50 -3000 V 3000" />
+   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  60 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  60 -3000 V 3000" />
+   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  70 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  70 -3000 V 3000" />
+   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  80 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  80 -3000 V 3000" />
+   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  90 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  90 -3000 V 3000" />
+  </g>
+  <g id="keinU" transform="scale(.7)" class="verbot"><circle r="10" /><text text-anchor="middle" y="4">U</text></g>
+  <g id="bstg_mitte"><use xlink:href="#bahnsteig" transform="translate(5,0) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(-5,0)" /></g>
+  <g id="bstg_außen"><use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,0)" /></g>
+  <g id="bstg_vers1"><use xlink:href="#bahnsteig" transform="translate(-5,-9) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,9)" /></g>
+  <g id="bstg_vers2"><use xlink:href="#bahnsteig" transform="translate(-5,9) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,-9)" /></g>
+  <g id="bstg_vers3"><use xlink:href="#bahnsteig" transform="translate(-5,-19) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,19)" /></g>
+  <g id="hstl_außen"><use xlink:href="#haltestel" transform="translate(-5,0) rotate(180)" /><use xlink:href="#haltestel" transform="translate(5,0)" /></g>
+  <g id="hstl_vers1"><use xlink:href="#haltestel" transform="translate(-5,-5) rotate(180)" /><use xlink:href="#haltestel" transform="translate(5,5)" /></g>
+  <g id="hstl_vers2"><use xlink:href="#haltestel" transform="translate(-5,5) rotate(180)" /><use xlink:href="#haltestel" transform="translate(5,-5)" /></g>
+  <g id="hstl_links"><use xlink:href="#haltestel" transform="translate(-5,0) rotate(180)" /></g>
+  <g id="wien_außen"><use xlink:href="#bstg_außen" class="dreizig" /><use xlink:href="#hstl_außen" /></g>
+  <g id="dobs_mitte"><use xlink:href="#bstg_mitte" /><use xlink:href="#trennstrich" transform="translate(-4,0)" /></g>
+  <g id="dobs_außen"><use xlink:href="#doppelbst" transform="translate(-5,0) rotate(180)" /><use xlink:href="#doppelbst" transform="translate(5,0)" /></g>
+ </defs>
+ <g id="textboxen">
+  <g id="legende" transform="translate(1035,-425) translate(-350)">
+   <rect class="box" width="350" height="205" />
+   <text class="ueberschrift tm" x="175" y="30">Straßenbahn Frankfurt am Main</text>
+   <text class="unterschrift" x="15" y="55">Streckennetz (ohne Maßstab)</text>
+   <text class="stand"        x="15" y="75">Stand: <tspan class="stand_monat"/></text>
+   <g id="legende_normal" transform="translate(30,105)"><path class="strecke" d="M 0 -6 h 30" /><path class="strecke geplant" d="M 30 -6 h 30" /><text x="75">Straßenbahngleis (geplant)</text></g>
+   <g id="legende_normal" transform="translate(30,125)"><path class="strecke ubergabe" d="M 0 -6 h 50" /><text x="55" class="tm ref">A</text><text x="75">Anschluss an U-Bahn-Netz mit Referenz¹</text></g>
+   <g id="legende_normal" transform="translate(30,145)"><path class="strecke anschluss" d="M 0 -6 h 45" /><text x="75">Anschluss an DB-Netz</text></g>
+   <text class="ab_bb"   transform="translate(30,165)">BB: Betriebsbahnhof</text>
+   <use xlink:href="#keinU" transform="translate(30,180)" />
+   <text class="ab_bb" transform="translate(46,185)">Fahrverbot für U- und Ptb-Wagen</text>
+   <text class="ab_bb" transform="translate(6,200)">¹:</text>
+   <text class="ab_bb" transform="translate(18,200)">Siehe <a class="link" xlink:href="ubahnnetz.svg">U-Bahn-Netz Frankfurt</a></text>
+  </g>
+  <g id="legende_bahnsteige" transform="translate(-865,-425)">
+   <rect class="box" width="350" height="245" />
+   <text x="15" y="20" style="font-weight:bold;">Bahnsteige/Haltestellen</text>
+   <text class="hstgrtitel" x="33" y="40">↓ Symbol für Doppel- oder lange Haltestelle</text>
+   <g class="legende_normal" transform="translate(15,55)">
+    <use xlink:href="#haltestel" transform="rotate(90)" />
+    <use xlink:href="#doppelhst" transform="translate(20,0) rotate(90)" />
+    <text x="35" y="5">Einstieg von der Straße, 0 cm</text>
+   </g>
+   <g class="legende_normal nullzig" transform="translate(15,75)">
+    <use xlink:href="#bahnsteig" transform="rotate(90)" />
+    <use xlink:href="#doppelbst" transform="translate(20,0) rotate(90)" />
+    <text x="35" y="5">Bahnsteig² 0 cm</text>
+   </g>
+   <g class="legende_normal zehnzig" transform="translate(15,95)"><use xlink:href="#doppelbst" transform="translate(20,0) rotate(90)" /><use xlink:href="#bahnsteig" transform="rotate(90)" /><text x="35" y="5">Bahnsteig &gt; 0cm, aber nicht barrierefrei</text></g>
+   <g class="legende_normal dreizig" transform="translate(15,115)">
+    <use xlink:href="#bahnsteig" transform="rotate(90)" />
+    <use xlink:href="#doppelbst" transform="translate(20,0) rotate(90)" />
+    <text x="35" y="5">Bahnsteig, 30cm (barrierefreier Einstieg)</text>
+   </g>
+   <g class="legende_normal dreizig" transform="translate(15,135)">
+    <use xlink:href="#bahnsteig" transform="rotate(90)" /><use xlink:href="#haltestel" transform="rotate(90)"/>
+    <!--<use xlink:href="#bahnsteig" transform="translate(20,0) rotate(90)" /><use xlink:href="#doppelhst" transform="translate(20,0) rotate(90)"/>-->
+    <text x="35" y="5">Barrierefreier Einstieg von der Straße <tspan class="hstgrtitel">(Wiener Modell)</tspan></text>
+   </g>
+   <g class="legende_normal funfzig" transform="translate(15,155)"><use xlink:href="#bahnsteig" transform="rotate(90)" /><text x="35" y="5">56 cm (U-Bahnsteig)</text></g>
+   <g class="legende_normal" transform="translate(35,195)"><circle class="bstggruppe" r="20" /><use xlink:href="#haltestel" transform="translate(0,-5)" /><use xlink:href="#haltestel" transform="translate(-15,5)" /><text x="15" y="-15">Zusammenhängende Haltepositionen</text><text x="15" y="-3">(gleiche Haltestelle)</text></g>
+   <g class="legende_normal te" transform="translate(315,195)"><circle class="hstgruppe" r="20" /><use xlink:href="#haltestel" transform="translate(10,-5)" /><use xlink:href="#haltestel" transform="translate(-5,5)" /><text x="-10" y="9">Haltestellengruppe</text><text x="-10" y="21">(verschiedene Haltestellen)</text></g>
+   <text class="ab_bb" transform="translate(6,235)">²:</text>
+   <text class="ab_bb" transform="translate(18,235)">Als Bahnsteig zählt jede Fläche, die nicht dem Autoverkehr zur Verfügung steht.</text>
+  </g>
+  <text transform="translate(770,-115) translate(10,-5)" class="ab_bb">Anschluss Richtung BB Ost (via Johanna-Tesch-Platz)</text>
+  <text transform="translate(-350,220)" class="ab_bb te">BB Gutleut</text>
+  <text transform="translate(685,135)" class="ab_bb te">Gleiswerkstätten Riederhöfe</text>
+  <text transform="translate(-780,575) rotate(-45) translate(20,0)" class="ab_bb">Verkehrsmuseum</text>
+ </g>
+ <g style="visibility:hidden">
+  <use xlink:href="#grid" transform="translate(-1400,-1400)" />
+  <use xlink:href="#grid" transform="translate(-1300,-1300)" />
+  <use xlink:href="#grid" transform="translate(-1200,-1200)" />
+  <use xlink:href="#grid" transform="translate(-1100,-1100)" />
+  <use xlink:href="#grid" transform="translate(-1000,-1000)" />
+  <use xlink:href="#grid" transform="translate( -900, -900)" />
+  <use xlink:href="#grid" transform="translate( -800, -800)" />
+  <use xlink:href="#grid" transform="translate( -700, -700)" />
+  <use xlink:href="#grid" transform="translate( -600, -600)" />
+  <use xlink:href="#grid" transform="translate( -500, -500)" />
+  <use xlink:href="#grid" transform="translate( -400, -400)" />
+  <use xlink:href="#grid" transform="translate( -300, -300)" />
+  <use xlink:href="#grid" transform="translate( -200, -200)" />
+  <use xlink:href="#grid" transform="translate( -100, -100)" />
+  <use xlink:href="#grid" />
+  <use xlink:href="#grid" transform="rotate(180)" />
+  <use xlink:href="#grid" transform="translate(  100,  100)" />
+  <use xlink:href="#grid" transform="translate(  200,  200)" />
+  <use xlink:href="#grid" transform="translate(  300,  300)" />
+  <use xlink:href="#grid" transform="translate(  400,  400)" />
+  <use xlink:href="#grid" transform="translate(  500,  500)" />
+  <use xlink:href="#grid" transform="translate(  600,  600)" />
+  <use xlink:href="#grid" transform="translate(  700,  700)" />
+  <use xlink:href="#grid" transform="translate(  800,  800)" />
+  <use xlink:href="#grid" transform="translate(  900,  900)" />
+  <use xlink:href="#grid" transform="translate( 1000, 1000)" />
+  <use xlink:href="#grid" transform="translate( 1100, 1100)" />
+  <use xlink:href="#grid" transform="translate( 1200, 1200)" />
+  <use xlink:href="#grid" transform="translate( 1300, 1300)" />
+  <path style="stroke-width:4px; stroke:#f00;" d="M -3000   0 H 3000" /><path style="stroke-width:4px; stroke:#0f0;" d="M   0 -3000 V 3000" />
+ </g>
+ <g id="haltestellen" class="haltestellen">
+  <g id="hstnis" transform="translate(-20,720)" class="dreizig">
+   <path class="bstggruppe" d="M -10,40 c 20,0 30,-20 30,-30 c 0,-50 -10,-70 -20,-70 c -35,0 -35,0 -35,15 v 60 a 25,25 0,0,0 25,25" />
+   <use xlink:href="#bstg_vers1" /><text x="15" y="5">Neu-Isenburg/Stadtgrenze</text>
+  </g>
+  <g id="hstoss" transform="translate(-20,620)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text transform="translate(15,5)">Oberschweinstiege</text></g>
+  <g id="hstlui" transform="translate(-20,555)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(-15,0)">Louisa Bahnhof</text></g>
+  <g id="hstsam" transform="translate(-20,485)" class="te">
+   <path class="bstggruppe" d="M 0,15 c 10,0 15,0 15,-25 c 0,-10 -5,-15 -35,-15 c -5,0 -10,0 -10,10 c 0,10 10,30 30,30" />
+   <use xlink:href="#bstg_außen" class="zehnzig" />
+   <use xlink:href="#bahnsteig" transform="translate(-20,-20) rotate(90)" class="nullzig" />
+   <g transform="rotate(-45) translate(-15,0)"><text y="-7">Stresemannallee/</text><text y="5">Mörfelder Landstraße</text></g>
+  </g>
+  <g id="hstsma" transform="translate(-20,425)" class="dreizig geplant"><use xlink:href="#bstg_außen" /><text transform="translate(15,0)">(Stresemannallee)</text></g>
+  <g id="hstbeu" transform="translate(50,460)" class="zehnzig te"><use xlink:href="#bstg_vers1" transform="rotate(90)" /><g transform="rotate(-45) translate(-20,15)"><text y="-7">Beuthener</text><text y="5">Straße</text></g></g>
+  <g id="hstbre" transform="translate(95,460)" class="zehnzig te"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Breslauer Straße</text></g>
+  <g id="hstohl" transform="translate(135,460)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Oppenheimer Landstraße</text></g>
+  <g id="hstsml" transform="translate(170,460)" class="te"><use xlink:href="#haltestel" transform="translate(0,5) rotate(90)" /><g transform="rotate(-45) translate(-15,10)"><text y="-7">Schweizer Straße/</text><text y="5">Mörfelder Landstraße</text></g></g>
+  <g id="hstswt" transform="translate(190,390)" class="te"><use xlink:href="#hstl_außen" /><text x="-15" y="5">Schwanthalerstraße</text></g>
+  <g id="hstsgs" transform="translate(190,345)" class="tm">
+   <circle class="bstggruppe" cx="-5" cy="10" r="20" />
+   <use xlink:href="#haltestel" transform="translate(5,15)" />
+   <use xlink:href="#haltestel" transform="translate(-15,5) rotate(90)" />
+   <g transform="translate(0,-10)"><text y="-12">Schweizer-/</text><text y="0">Gartenstraße</text></g>
+  </g>
+  <g id="hstott" transform="translate(70,345)" class="dreizig"><use xlink:href="#bstg_außen" transform="rotate(90)"/><text x="20" y="0" transform="rotate(-45)">Otto-Hahn-Platz</text></g>
+  <g id="hsthip" transform="translate(-20,345)" class="te">
+   <path class="bstggruppe" d="M 0,50 c 20,0 35,-40  35,-60 s -15,-35 -35,-35 c -30,0 -30,95 0,95" />
+   <use xlink:href="#haltestel" transform="translate(25,-5) rotate(-90)" />
+   <use xlink:href="#bahnsteig" class="nullzig" transform="translate(5,-20) rotate(180)" />
+   <use xlink:href="#doppelbst" class="dreizig" transform="translate(-5,20) rotate(180)" />
+   <use xlink:href="#doppelbst" class="dreizig" transform="translate(5,20)" />
+   <use xlink:href="#bahnsteig" class="dreizig" transform="translate(15,20) rotate(180)" />
+   <g transform="translate(-12,5)"><text y="-8">Stresemannallee/</text><text y="6">Gartenstraße</text></g>
+  </g>
+  <g id="hgrsbf" transform="translate(215,430)" class="te">
+   <path class="hstgruppe" d="M 25,10 c 30,0 65,0 65,-15 s -55,-20 -65,-20 c -55,0 -70,25 -70,35 s 0,10 20,10 c 25,0 25,-10 50,-10 Z" />
+   <g id="hstsss" transform="translate(-25,10)"><use xlink:href="#hstl_außen" /><g transform="translate(-15,0)"><text y="-12" class="hstgrtitel">Südbahnhof/</text><text>Schweizer Straße</text></g></g>
+   <g id="hstsbf" transform="translate(25,-10)" class="nullzig"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Südbahnhof</text></g>
+  </g>
+  <g id="hstbts" transform="translate(285,390)" class="te"><use xlink:href="#hstl_außen" transform="rotate(90)" /><g transform="translate(0,-20)"><text y="-7">Brücken-/</text><text y="5">Textorstraße</text></g></g>
+  <g id="hgrlbf" transform="translate(365,390)">
+   <path class="hstgruppe" d="M 5,20 c 25,0 40,-5 40,-30 s -20,-40 -45,-40 s -50,30 -50,50 s 30,20 55,20 Z"/>
+   <path class="bstggruppe" d="M 5,15 c 20,0 35,-5 35,-25 s -20,-35 -40,-35 s -30,15 -30,35 s 10,25 35,25 Z" />
+   <g id="hstlts" transform="translate(-40,0)"><use xlink:href="#hstl_außen" transform="rotate(90)" /><g transform="translate(0,25)"><text class="hstgrtitel">Lokalbahnhof/</text><text y="12">Textorstraße</text></g></g>
+   <use xlink:href="#bahnsteig" class="dreizig" transform="translate(10,5) rotate(90)" />
+   <use xlink:href="#bahnsteig" class="dreizig" transform="translate(25,-5) rotate(-90)" />
+   <use xlink:href="#bahnsteig" class="nullzig" transform="translate(5,-25)" />
+   <use xlink:href="#bahnsteig" class="dreizig" transform="translate(-5,-20) rotate(180)" />
+   <use xlink:href="#bahnsteig" class="dreizig" transform="translate(-15,-20)" />
+   <text x="25" y="5" transform="rotate(-45)">Lokalbahnhof</text>
+  </g>
+  <g id="hsthss" transform="translate(440,390) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text x="20" y="0" transform="rotate(45)">Heister-/Seehofstraße</text></g>
+  <g id="hstmüb" transform="translate(490,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Mühlberg</text></g>
+  <g id="hstlkw" transform="translate(530,390) rotate(-90)"><use xlink:href="#hstl_vers1" /><text x="20" y="0" transform="rotate(45)">Lettigkautweg</text></g>
+  <g id="hstbds" transform="translate(570,390) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Balduinstraße</text></g>
+  <g id="hstbws" transform="translate(610,390) rotate(-90)"><use xlink:href="#hstl_vers1" /><text x="20" y="0" transform="rotate(45)">Bleiweißstraße</text></g>
+  <g id="hstbrp" transform="translate(650,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Buchrainplatz</text></g>
+  <g id="hstfbs" transform="translate(690,390) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Flaschenburgstraße</text></g>
+  <g id="hstwis" transform="translate(730,390) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Wiener Straße</text></g>
+  <g id="hstabr" transform="translate(780,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_mitte" /><g transform="rotate(45) translate(20,0)"><text y="-7">Offenbach Stadtgrenze/</text><text y="5">August-Bebel-Ring</text></g></g>
+  <g id="hstbow" transform="translate(365,315)" class="zehnzig te"><use xlink:href="#bstg_außen" /><g transform="translate(-15,5)"><text y="-7">Frankensteiner</text><text y="5">Platz</text></g></g>
+  <g id="hsthhg" transform="translate(365,275)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Hospital zum Heiligen Geist</text></g>
+  <g id="hstbas" transform="translate(-20,250)" class="dreizig"><use xlink:href="#dobs_außen" /><text x="15" y="5">Baseler Platz</text></g>
+
+  <g id="hgrhbf" transform="translate(-25,180)">
+   <path class="hstgruppe" d="M -20,50 c 20,0 50,-30 50,-60 c 0,-25 -10,-35 -25,-35 s -15,10 -15,30 c 0,30 -5,35 -15,35 a 15,15 0,0,0 0,30 h 5" />
+   <g id="hsthbs" transform="translate(-20,35) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_außen" /><g transform="rotate(90) translate(10,-20)"><text y="-4" class="hstgrtitel">Hauptbahnhof</text><text y="8">Südseite</text></g></g>
+   <g id="hsthbf" transform="translate(5,-30)" class="dreizig"><use xlink:href="#dobs_außen" /><text x="15" y="-9">Hauptbahnhof</text></g>
+   <g id="hsthbm" transform="translate(20,-5)">
+    <use xlink:href="#hstl_außen" transform="rotate(90)" />
+    <g transform="translate(0,25)"><text y="-4" class="hstgrtitel">Hauptbahnhof/</text><text y="8">Münchener Straße</text></g>
+   </g>
+  </g>
+  <g id="hstwms" transform="translate(75,175)"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text transform="translate(10,-10) rotate(-45)">Weser-/Münchener Straße</text></g>
+  <g id="hstthp" transform="translate(115,175)" class="dreizig"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text transform="translate(5,-10) rotate(-45)">Willy-Brandt-Platz</text></g>
+  <g id="hström" transform="translate(155,175)" class="dreizig"><use xlink:href="#bstg_vers1" transform="rotate(90)" /><text transform="translate(5,-10) rotate(-45)">Römer/Paulskirche</text></g>
+  <g id="hgrbpl" transform="translate(265,175)" class="dreizig te">
+   <path class="hstgruppe" d="M 0,15 h 20 c 15,0 25,-10 25,-25 a 5,5 0,0,0 -5,-5 h -70 a 15,15 0,0,0 0,30 h 30 z" />
+   <g id="hstbpl" transform="translate(-25,0)"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text transform="translate(-10,15) rotate(-45)">Börneplatz</text></g>
+   <g id="hstbps" transform="translate(25,0)"><use xlink:href="#bstg_vers1" transform="rotate(90)" /><g transform="translate(-10,15) rotate(-45)"><text y="-7" x="-5" class="hstgrtitel">Börneplatz/</text><text y="5">Stoltzestraße</text></g></g>
+  </g>
+  <g id="hstaht" transform="translate(390,175)" class="dreizig tm"><use xlink:href="#dobs_außen" transform="rotate(90)" /><text x="0" y="-15">Allerheiligentor</text></g>
+  <g id="hstoes" transform="translate(440,175)" class="dreizig te"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Ostendstraße</text></g>
+  <g id="hstzos" transform="translate(490,175)" class="dreizig te"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Zobelstraße</text></g>
+  <g id="hgrobf" transform="translate(550,175)">
+   <ellipse cx="0" cy="0" rx="35" ry="20" class="hstgruppe" />
+   <g id="hstobs" transform="translate(-20,0)" class="dreizig te"><use xlink:href="#bstg_außen" transform="rotate(90)" /><g transform="rotate(-45) translate(-15,10)"><text y="-7" x="-5" class="hstgrtitel">Ostbahnhof/</text><text y="5">Sonnemannstraße</text></g></g>
+   <g id="hstobh" transform="translate(20,0)" class="te"><use xlink:href="#hstl_außen" transform="rotate(90)" /><g transform="rotate(-45) translate(-15,10)"><text x="-5" y="-7" class="hstgrtitel">Ostbahnhof/</text><text y="5">Honsellstraße</text></g></g>
+  </g>
+  <g id="hstohp" transform="translate(610,175)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Osthafenplatz</text></g>
+  <g id="hstswl" transform="translate(650,175)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Schwedlerstraße</text></g>
+  <g id="hstrhf" transform="translate(700,175)" class="dreizig te"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Riederhöfe</text></g>
+  <g id="hstdai" transform="translate(815,175) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_vers2" /><text x="20" y="0" transform="rotate(45)">Daimlerstraße</text></g>
+  <g id="hstdie" transform="translate(860,175) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Dieselstraße</text></g>
+  <g id="hgrhjs" transform="translate(910,175)">
+   <ellipse cx="0" cy="30" rx="30" ry="50" class="hstgruppe" />
+   <g id="hsthjr" transform="rotate(-90)" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Hugo-Junkers-Straße</text></g>
+   <g id="hsthjs" transform="translate(-5,35) rotate(180)" class="te">
+    <use xlink:href="#bahnsteig" class="nullzig" transform="translate(-5,0)" />
+    <use xlink:href="#bahnsteig" class="zehnzig" transform="translate(5,0)" />
+    <text x="-15" y="5" transform="rotate(180)"><tspan class="hstgrtitel">Hugo-Junkers-Straße/</tspan>Schleife</text>
+   </g>
+  </g>
+  <g id="hstcas" transform="translate(960,175) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Cassellastraße</text></g>
+  <g id="hstmak" transform="translate(1000,175) rotate(-90)" class="dreizig te"><use xlink:href="#bstg_außen" /><text x="-20" y="10" transform="rotate(45)">Mainkur/Bahnhof</text></g>
+  <g id="hstafe" transform="translate(1020,210)" class="nullzig te"><use xlink:href="#bstg_außen" /><text x="-20" y="0" transform="rotate(-45)">Alt-Fechenheim</text></g>
+  <g id="hstfep" transform="translate(1020,250)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text x="-20" y="0" transform="rotate(-45)">Fechenheim Post</text></g>
+  <g id="hstshs" transform="translate(1020,305)" class="dreizig te">
+   <text x="-20" y="0" transform="rotate(-45)">Schießhüttenstraße</text>
+   <use xlink:href="#bahnsteig" transform="translate(-5,-15) rotate(180)" />
+   <use xlink:href="#bahnsteig" transform="translate(5,15)" />
+  </g>
+
+  <g id="hsthei" transform="translate(-205,215) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Heilbronner Straße</text></g>
+  <g id="hsthaf" transform="translate(-165,215) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Hafenstraße</text></g>
+  <g id="hstpfo" transform="translate(-85,255)" class="te"><use xlink:href="#hstl_außen" transform="rotate(-90)" /><text x="-20" y="0">Pforzheimer Straße</text></g>
+  <g id="hstpdr" transform="translate(-20,100)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Platz der Republik</text></g>
+  <g id="hstpdr" transform="translate(-20,40)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Hohenstaufenstraße</text></g>
+  <g id="hstfhm" transform="translate(-20,0)">
+   <path class="bstggruppe" d="M 15,0 a 15,15 0,0,1 -15,15 a 30,30 0,0,1 0,-60 a 15,45 0,0,1 15,45 z" />
+   <use xlink:href="#bstg_außen" class="dreizig" />
+   <use xlink:href="#bahnsteig" class="nullzig" transform="translate(-15,-20) rotate(180)" />
+   <text x="15" y="5">Festhalle/Messe</text>
+  </g>
+  <g id="hstlea" transform="translate(-20,-60)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Ludwig-Erhard-Anlage</text></g>
+  <g id="hstvts" transform="translate(-20,-100)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Varrentrappstraße</text></g>
+  <g id="hstass" transform="translate(0,-180)" class="zehnzig">
+   <path class="bstggruppe" d="M -15,35 q 25,0 25,-35 q 0,-5 -5,-5 q -45,0 -45,25 q 0,15 25,15" />
+   <use xlink:href="#bahnsteig" transform="translate(0,5) rotate(-90)" />
+   <use xlink:href="#bahnsteig" transform="translate(-40,15) rotate(+90) " />
+   <use xlink:href="#haltestel" transform="translate(-15,30)" />
+   <text transform="translate(0,5) translate(0,25)">Adalbert-/Schloßstraße</text>
+  </g>
+  <g id="hstbhw" transform="translate(45,-190)" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Bockenheimer Warte</text></g>
+  <g id="hstjus" transform="translate(45,-230)"><use xlink:href="#hstl_außen" /><text x="15" y="5">Juliusstraße</text></g>
+  <g id="hstffk" transform="translate(45,-270)"><use xlink:href="#hstl_außen" /><text x="15" y="5">Frauenfriedenskirche</text></g>
+  <g id="hstmkh" transform="translate(45,-310)" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Markus-Krankenhaus</text></g>
+  <g id="hstgin" transform="translate(45,-350)">
+   <use id="bstg_ginnheim_3" xlink:href="#bahnsteig" class="funfzig" transform="translate(15,0) rotate(180)" />
+   <g id="hstgin" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Ginnheim</text></g>
+  </g>
+  <g id="hgrwes" class="tm" transform="translate(-110,-155)">
+   <path class="hstgruppe" d="M 0,40 c 40,0 40,-10 40,-40 c 0,-30 0,-50 -20,-50 s -60,40 -60,75 c 0,15 20,15 40,15 " />
+   <g id="hstwbf" transform="translate(30,-30)" class="nullzig">
+    <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" />
+    <use xlink:href="#bahnsteig" transform="translate(5,0) rotate(180)" />
+    <text x="-5" y="-15" transform="rotate(-45)">Westbahnhof</text>
+   </g>
+   <g id="hstnhs" transform="translate(20,25) rotate(-90)" class="dreizig te"><use xlink:href="#bstg_außen" /><text x="-15" y="10" transform="rotate(45)">Nauheimer Straße</text></g>
+  <g id="hstkws" transform="translate(-20,25) rotate(-90)" class="dreizig te"><use xlink:href="#wien_außen" /><text x="-15" y="10" transform="rotate(45)">Kuhwaldstraße</text></g>
+  </g>
+  <g id="hstadd" transform="translate(-190,-130) rotate(-90)" class="dreizig"><use xlink:href="#wien_außen" /><text x="20" y="0" transform="rotate(45)">An der Dammheide</text></g>
+  <g id="hstldv" transform="translate(-230,-130) rotate(-90)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Leonardo-da-Vinci-Allee</text></g>
+  <g id="hstrsb" transform="translate(-280,-130) rotate(-90)" class="dreizig"><use xlink:href="#bstg_mitte" /><text x="20" y="0" transform="rotate(45)">Rebstockbad</text></g>
+  <g id="hstkow" transform="translate(260,120)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Konstablerwache</text></g>
+  <g id="hsthdm" transform="translate(260,80)" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Hessendenkmal</text></g>
+  <g id="hstfbp" transform="translate(260,40)"><use xlink:href="#hstl_vers1" /><text x="15" y="5">Friedberger Platz</text></g>
+  <!--<g id="hstrfl" transform="translate(260,0)"><use xlink:href="#wien_außen" /><text x="15" y="5">Rohrbachstraße/Friedberger Landstraße</text></g>-->
+  <g id="hstrfl" transform="translate(260,0)"><use xlink:href="#hstl_außen" /><text x="15" y="5">Rohrbachstraße/Friedberger Landstraße</text></g>
+ <g id="hstnfh" transform="translate(260,-90)" class="dreizig"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(15,15)">Nibelungenplatz/FH</text></g>
+  <g id="hstmün" transform="translate(260,-130)" class="dreizig"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(15,15)">Münzenberger Straße</text></g>
+  <g id="hstwap" transform="translate(260,-180)" class="dreizig"><use xlink:href="#bstg_vers2" /><text transform="rotate(-45) translate(15,15)">Wasserpark</text></g>
+  <g id="hstfbw" transform="translate(260,-230)" class="dreizig"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(15,15)">Friedberger Warte</text></g>
+  <g id="hstbow" transform="translate(260,-270)" class="dreizig"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(15,15)">Bodenweg</text></g>
+  <g id="hstwks" transform="translate(260,-310)" class="dreizig"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(15,15)">Walter-Kolb-Siedlung</text></g>
+  <g id="hstalk" transform="translate(260,-350)" class="dreizig"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(15,15)">Alkmenestraße</text></g>
+  <g id="hstgra" transform="translate(260,-410)" class="dreizig te"><use xlink:href="#bstg_mitte" /><text x="-10" y="5">Gravensteiner-Platz</text></g>
+  <g id="hstrsa" transform="translate(305,-50) rotate(-90)"  class="zehnzig">
+   <use xlink:href="#bahnsteig" transform="translate(5,10)" />
+   <use xlink:href="#haltestel" transform="translate(-5,-5) rotate(180)" />
+   <text transform="rotate(45) translate(15,0)">Rothschildallee</text>
+  </g>
+  <g id="hstgbp" transform="translate(355,-50) rotate(-90)"><use xlink:href="#hstl_außen" /><text transform="rotate(45) translate(15,0)">Günthersburgpark</text></g>
+  <g id="hstgbp" transform="translate(395,-50) rotate(-90)"><use xlink:href="#hstl_links" /><text transform="rotate(45) translate(15,0)">Hartmann-Ibach-Straße</text></g>
+  <g id="hstbgs" transform="translate(435,-50) rotate(-90)" class="zehnzig">
+   <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" />
+   <use xlink:href="#haltestel" transform="translate(+5,0)" />
+   <text transform="rotate(45) translate(15,0)">Burgstraße</text>
+  </g>
+  <g id="hstbom" transform="translate(475,-50) rotate(-90)"><use xlink:href="#hstl_außen" /><text transform="rotate(45) translate(15,0)">Bornheim Mitte</text></g>
+  <g id="hstbom" transform="translate(660,-50) rotate(-90)" class="dreizig"><use xlink:href="#bstg_außen" /><text transform="rotate(45) translate(15,0)">Eissporthalle</text></g>
+
+  <g id="hstzoo" transform="translate(465,140)" class="nullzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Zoo</text></g>
+  <g id="hstwss" transform="translate(483.5,90) rotate(45)"><use xlink:href="#hstl_außen" /><text x="15" y="5" transform="rotate(-45)">Waldschmidtstraße</text></g>
+  <g id="hsthwa" transform="translate(523.5,50) rotate(45)" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="15" y="5" transform="rotate(-45)">Habsburger-/Wittelsbacherallee</text></g>
+  <g id="hstfgs" transform="translate(563.5,10) rotate(45)" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="15" y="5" transform="rotate(-45)">Freiligrathstraße</text></g>
+  <g id="hstswa" transform="translate(590,-50)">
+   <path class="bstggruppe" d="M 10,35 c 5,0 25,-20 25,-45 c 0,-5 -20,-25 -45,-25 c -5,0 -25,20 -25,45 c 0,5 20,25 45,25 z" />
+   <use xlink:href="#bahnsteig" transform="translate(-5,-19) rotate(180)" class="nullzig" />
+   <use xlink:href="#bahnsteig" transform="translate(5,19)" class="zehnzig" />
+   <use xlink:href="#bstg_vers3" transform="rotate(90)" class="zehnzig" />
+   <text transform="rotate(-45) translate(20,5)">Saalburg-/Wittelsbacherallee</text>
+  </g>
+  <g id="hstihs" transform="translate(580,-120)">
+   <path class="bstggruppe" d="M -5,15 c 10,0 15,10 25,10 a 5,5 0,0,0 5,-5 v -20 a 25,25 0,0,0 -50,0 a 20,15 0,0,0 20,15" />
+   <use xlink:href="#bahnsteig" class="nullzig" transform="rotate(-135) translate(15,0)" />
+   <use xlink:href="#bahnsteig" class="zehnzig" transform="translate(15,10)" />
+   <text transform="rotate(-45) translate(20,5)">Ernst-May-Platz</text>
+  </g>
+
+  <g id="hstgüp" transform="translate(-105,75) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Güterplatz</text></g>
+  <g id="hstspy" transform="translate(-145,75) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Speyerer Straße</text></g>
+  <g id="hstgaw" transform="translate(-185,75) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Galluswarte</text></g>
+  <g id="hstspy" transform="translate(-265,75) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Schwalbacher Straße</text></g>
+  <g id="hstkgk" transform="translate(-216,95) rotate(-135)"><use xlink:href="#hstl_außen" /><text transform="rotate(135) translate(15,10)">Kriegkstraße</text></g>
+  <g id="hstgap" transform="translate(-236,115) rotate(-135)"><use xlink:href="#hstl_außen" /><text transform="rotate(135) translate(15,10)">Galluspark</text></g>
+  <g id="hstkri" transform="translate(-282,133) rotate(-45)" class="dreizig te"><use xlink:href="#bstg_außen"/><text x="-15" y="5" transform="rotate(45)">Ordnungsamt</text></g>
+  <g id="hstrss" transform="translate(-325,75)">
+   <path class="bstggruppe" d="M -25,10 c 0,15 45,20 50,15 s 5,-35 0,-40 s -50,10 -50,25 z" />
+   <use xlink:href="#haltestel" transform="translate(20,-5) rotate(-90)" />
+   <use xlink:href="#haltestel" transform="translate(15,23) rotate(-45)" />
+   <use xlink:href="#haltestel" transform="translate(-20,5) rotate(+90)" />
+   <text x="20" y="0" transform="rotate(-45)">Rebstöcker Straße</text>
+  </g>
+  <g id="hstwic" transform="translate(-385,75) rotate(-90)"><use xlink:href="#hstl_vers1" /><text x="20" y="0" transform="rotate(45)">Wickerer Straße</text></g>
+  <g id="hstmhs" transform="translate(-425,75) rotate(-90)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Mönchhofstraße</text></g>
+  <g id="hstwsc" transform="translate(-485,75) rotate(-90)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Waldschulstraße</text></g>
+  <g id="hstlin" transform="translate(-525,75) rotate(-90)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Linnegraben</text></g>
+  <g id="hstjäa" transform="translate(-565,75) rotate(-90)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Jägerallee</text></g>
+  <g id="hstbir" transform="translate(-605,75) rotate(-90)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Birminghamstraße</text></g>
+  <g id="hstlut" transform="translate(-650,75) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text x="20" y="0" transform="rotate(45)">Luthmerstraße</text></g>
+  <g id="hstnik" transform="translate(-695,75) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text x="20" y="0" transform="rotate(45)">Nied Kirche</text></g>
+  <g id="hsttil" transform="translate(-750,75) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text x="20" y="0" transform="rotate(45)">Tillystraße</text></g>
+  <g id="hstzss" class="nullzig" transform="translate(-830,75) rotate(-90)"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Zuckschwerdtstraße</text></g>
+  <g id="hstbol" transform="translate(-820,110) rotate(-90)" class="nullzig"><use xlink:href="#bahnsteig" transform="rotate(180)" /><text transform="translate(35,30) rotate(45) translate(20,0)">Bolongaropalast</text></g>
+
+  <g id="hstvws" transform="translate(-65,385) rotate(-90)" class="dreizig te"><use xlink:href="#dobs_außen" /><text x="-15" y="10" transform="rotate(45)">Vogelweidstraße</text></g>
+  <g id="hstunk" transform="translate(-105,385) rotate(-90)" class="dreizig te"><use xlink:href="#dobs_außen" /><text x="-15" y="10" transform="rotate(45)">Universitätsklinikum</text></g>
+  <g id="hstblu" transform="translate(-155,402) rotate(+45)" class="dreizig te"><use xlink:href="#dobs_außen" /><g transform="translate(-15,5) rotate(-45)"><text y="-6">Heinrich-Hoffmann-Straße/</text><text y="8">Blutspendedienst</text></g></g>
+  <g id="hstnrl" transform="translate(-185,432) rotate(45)" class="nullzig te">
+   <use xlink:href="#doppelbst" transform="translate(+5,+9)" />
+   <use xlink:href="#haltestel" transform="translate(-5,-5) rotate(180)" />
+   <text transform="translate(-15,5) rotate(-45)">Niederräder Landstraße</text>
+  </g>
+  <g id="hsttri" transform="translate(-235,482) rotate(+45)" class="dreizig"><use xlink:href="#dobs_außen" /><text transform="translate(20,5) rotate(-45)">Triftstraße</text></g>
+  <g id="hstger" transform="translate(-340,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="10" transform="rotate(45)">Gerauer Straße</text></g>
+  <g id="hstmbc" transform="translate(-380,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="10" transform="rotate(45)">Melibocusstraße</text></g>
+  <g id="hstnbf" transform="translate(-420,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="10" transform="rotate(45)">Niederrad Bahnhof</text></g>
+  <g id="hstbsn" transform="translate(-460,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="10" transform="rotate(45)">Bürostadt Niederrad</text></g>
+  <g id="hstkie" transform="translate(-510,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Kiesschneise</text></g>
+  <g id="hstwau" transform="translate(-555,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="10" transform="rotate(45)">Waldau</text></g>
+  <g id="hstwfr" transform="translate(-600,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_vers2" /><text x="-10" y="20" transform="rotate(45)">Waldfriedhof Goldstein</text></g>
+  <g id="hsthar" transform="translate(-670,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Harthweg</text></g>
+  <g id="hstfdw" transform="translate(-710,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Ferdinand-Dirichs-Weg</text></g>
+  <g id="hstrls" transform="translate(-800,575) rotate(-90)" class="zehnzig">
+   <path class="bstggruppe" transform="rotate(90)" d="M 0,35 c 50,0 55,-5 55,-25 s -50,-25 -55,-25 a 35,25 0,0,0 0,50" />
+   <use xlink:href="#bahnsteig" transform="translate(5,0)" />
+   <text x="20" y="0" transform="rotate(45)">Rheinlandstraße</text>
+  </g>
+  <g id="hstfhs" transform="translate(-255,455) rotate(-90)" class="te"><use xlink:href="#hstl_links" transform="rotate(180)"/><text x="-15" y="10" transform="rotate(45)">Frauenhofstraße</text></g>
+  <g id="hstsws" transform="translate(-295,455) rotate(-90)" class="te"><use xlink:href="#hstl_vers1" /><text x="-15" y="10" transform="rotate(45)">Schwarzwaldstraße</text></g>
+  <g id="hstows" transform="translate(-335,455) rotate(-90)" class="te"><use xlink:href="#hstl_vers1" /><text x="-15" y="10" transform="rotate(45)">Odenwaldstraße</text></g>
+  <g id="hsthaa" transform="translate(-385,455)" class="nullzig te">
+   <path class="bstggruppe" d="M -15,15 a 40,25 0,0,0 0,-50 a 20,20 0,0,0 -20,20 c 0,30 5,30 20,30" />
+   <use xlink:href="#bahnsteig" transform="translate(15,-5) rotate(-90)" />
+   <use xlink:href="#bahnsteig" transform="translate(-10,-15) rotate(135) translate(20,0)" />
+   <text x="-15" y="5" transform="rotate(-45)">Haardtwaldplatz</text>
+  </g>
+  <g id="hstren" transform="translate(-265,550)" class="dreizig"><use xlink:href="#dobs_außen" /><text x="15" y="5">Rennbahn</text></g>
+  <g id="hstofh" transform="translate(-265,620)">
+   <path class="bstggruppe" d="M 0,15 c 20,0 50,-40 50,-50 s -25,-10 -50,-10 s -25,60 0,60" />
+   <use xlink:href="#dobs_außen" class="dreizig"/>
+   <use xlink:href="#bahnsteig" class="zehnzig" transform="translate(-5,-30) rotate(180)" />
+   <use xlink:href="#bahnsteig" class="nullzig" transform="translate(20,-35) rotate(-90)" />
+   <use xlink:href="#bahnsteig" class="nullzig" transform="translate(50,-35) rotate(90)" />
+   <text x="15" y="5">Oberforsthaus</text>
+  </g>
+  <g id="hststa" transform="translate(-265,705)" class="dreizig">
+   <path class="bstggruppe" d="M 15,0 c 0,-50 0,-55 -15,-55 s -45,45 -45,55 s -5,45 30,45 s 30,-35 30,-45" />
+   <use xlink:href="#dobs_mitte" />
+   <use xlink:href="#dobs_mitte" transform="translate(-20,25)" />
+   <text x="15" y="5">Stadion</text>
+  </g>
+ </g>
+ <g class="strecke bb">
+  <path id="wa_lokalbahnhof" d="M 370,345 c 0,10 -10,10 -10,20" />
+  <path id="ab_neuisenburg_1" class="endet" d="M -30,675 q -1.5,0 -3.5,-2 l -6,-6 q -2,-2 -3.5,-2 h -7" />
+  <path id="ab_neuisenburg_2" class="endet" d="M -34.5,672 q -2,-2 -3.5,-2 h -12" />
+  <path id="ab_neuisenburg_3" class="endet" d="M -25,680 a 5,5 0,0,0 -5,-5 h -20" />
+  <path id="ab_neuisenburg_4" class="endet" d="M -35,675 q -1.5,0 -3.5,2 l -1,1 q -2,2 -3.5,2 h -7" />
+  <path id="aus_neuisenburg_1" d="M -15,690 c 0,5 5,5 5,10 v 10 c 0,5 -5,5 -5,10" />
+  <path id="aus_neuisenburg_2" d="M -15,680 c 0,5 -10,5 -10,10" />
+  <path id="schleife_louisa_1" d="M -25,580 a 15,15 0,0,0 30,0 a 10,10 0,0,0 -10,-10 a 10,10 0,0,1 -10,-10" />
+  <path id="schleife_louisa_2" d="M -10,595 a 10,10 0,0,0 10,-10 v -10 a 5,5 0,0,0 -5,-5" />
+  <path id="gw_theaterplatz" d="M 95,170 c 5,0 5,10 10,10" />
+  <path id="schleife_hugojunkersstraße" d="M 890,180 a 10,10 0,0,1 10,10 v 40 a 15,15 0,0,0 30,0 v -45 a 15,15 0,0,0 -15,-15" />
+  <path id="schleife_hugojunkersstraß2" d="M 900,190 c 0,5 10,5 10,10 v 20 c 0,5 -10,5 -10,10" />
+  <path id="gw_schießhüttenstraße" d="M 1015,295 v 20 c 0,10 10,10 10,20" />
+  <path id="gw_münzenberger" d="M 255,-110 c 0,-5 10,-5 10,-10" />
+  <path id="gw_gravensteinerplatz" d="M 255,-400 c 0,5 10,5 10,10 c 0,5 -10,5 -10,10" />
+  <path id="gw_burgstraße" d="M 445,-55 c 5,0 5,10 10,10" />
+  <path id="gw_eissporthalle" d="M 680,-55 c 5,0 5,10 10,10" />
+  <path id="schleife_zoo" d="M 470,130 a 5,5 0,0,0 -5,-5 h -15 a 10,10 0,1,1 10,-10" />
+  <path id="gw_oberrad_1" d="M 670,395 c -5,0 -5,-10 -10,-10" />
+  <path id="gw_offenbach_1" d="M 770,385 c -5,0 -5,10 -10,10" />
+  <path id="gw_offenbach_2" d="M 770,395 c -5,0 -5,-10 -10,-10" />
+  <path id="wa_südbahnhof_1" d="M 250,415 h 20 c 5,0 5,10 10,10" />
+  <path id="wa_südbahnhof_2" class="endet" d="M 250,425 h 40" />
+  <path id="gw_hbfsüd" d="M -60,210 c 5,0 5,10 10,10" />
+  <path id="schleife_pforzheimerstraße_1" d="M -80,210 a 20,20 0,0,0 -20,20 v 20 a 10,10 0,0,0 10,10 h 10 a 10,10 0,0,0 10,-10 v -20 a 10,10 0,0,1 10,-10" />
+  <path id="schleife_pforzheimerstraße_2" d="M -100,240 a 10,10 0,0,0 10,10 h 10 a 10,10 0,0,0 10,-10" />
+  <path id="schleife_pforzheimerstraße_3" d="M -110,220 a 10,10 0,0,1 10,10" />
+  <path id="schleife_messe_1" d="M -15,-25 a 10,10 0,0,0 -20,0 v 10 a 5,5 0,0,0 5,5 a 5,5 0,0,1 5,5" />
+  <path id="schleife_messe_2" d="M -25,-45 c 0,5 -10,5 -10,10 v 10" />
+  <path id="gw_opelkreisel" d="M -215,-135 c 5,0 5,10 10,10" />
+  <path id="wa_rebstock" d="M -270,-125 c 5,0 5,-10 10,-10 c 5,0 5,10 10,10" />
+  <path id="schleife_westbahnhof_1" d="M -5,-165 h -65 a 15,15 0,0,1 -15,-15 v -10 a 15,15 0,0,1 15,-15 h 40 a 15,15 0,0,1 15,15" />
+  <path id="schleife_westbahnhof_2" d="M -60,-165 a 15,15 0,0,1 -15,-15 v -10 a 15,15 0,0,1 15,-15" />
+  <path id="schleife_westbahnhof_3" d="M -25,-155 a 10,10 0,0,0 -10,-10" />
+  <path id="wa_mönchhofstraße_1" class="endet" d="M -435,80 c -5,0 -5,-5 -10,-5 h -15" />
+  <path id="wa_mönchhofstraße_2" d="M -440,70 c -5,0 -5,5 -10,5" />
+  <path id="schleife_niedkirche" d="M -695,70 a 5,5 0,0,1 -5,-5 a 10,10 0,0,0 -20,0 v 10 a 5,5 0,0,0 5,5" />
+  <path id="schleife_höchst" d="M -810,70 c -5,0 -5,10 -10,10 h -25 a 10,10 0,0,0 -10,10" />
+  <path id="gw_uniklinik" d="M -95,380 c 5,0 5,10 10,10" />
+  <path id="gw_triftstraße" d="M -255,495 c 3.5,-3.5 11.5,3.5 14,0" />
+  <path id="gw_bürostadt" d="M -480,570 c 5,0 5,10 10,10" />
+  <path id="schleife_waldfriedhof_1" class="endet" d="M -580,570 c -5,0 -5,-5 -10,-5 h -10" />
+  <path id="schleife_waldfriedhof_2" d="M -615,570 a 15,15 0,0,0 0,30 a 10,10 0,0,0 10,-10 a 10,10 0,0,1 10,-10" />
+  <path id="schleife_haardtwaldplatz" d="M -385,440 a 10,10 0,0,0 -10,-10 h -10 a 10,10 0,0,0 -10,10" />
+  <path id="schleife_oberforsthaus" d="M -270,595 a 15,15 0,0,0 15,15 h 10 a 15,15 0,0,0 15,-15 a 10,10 0,0,0 -10,-10 h -10 a 10,10 0,0,1 -10,-10" />
+  <path id="lieschenstrecke_1" class="endet" d="M -5,455 h -60 q -4,0 -7,3 l -124,124 q -3,3 -7,3 h -22" />
+  <path id="lieschenstrecke_2" class="endet" d="M -60,455 c 5,0 5,10 10,10 h 15" />
+  <path id="wa_stadion_1" d="M -260,650 c 0,5 -5,5 -5,10 v 5 c 0,5 -5,5 -5,10 q 0,4 -3,7 l -25,25 q -2,2 -2,5 v 3 c 0,5 -5,5 -5,10" />
+  <path id="wa_stadion_2" d="M -270,665 v 50 c 0,5 10,5 10,10" />
+  <path id="wa_stadion_3" class="endet" d="M -273,682 q -2,2 -2,5 v 48" />
+  <path id="wa_stadion_4" class="endet" d="M -278,687 q -2,2 -2,5 v 48" />
+  <path id="wa_stadion_5" class="endet" d="M -288,697 q -2,2 -2,5 v 38" />
+  <path id="wa_stadion_6" class="endet" d="M -293,702 q -2,2 -2,5 v 28" />
+  <path id="wa_stadion_7" d="M -260,685 c 0,5 -10,5 -10,10" />
+ </g>
+ <g id="betriebshöfe" class="strecke bb">
+  <g id="gleiswerkstätten_riederhöfe" transform="translate(-135,190)" >
+   <path id="gwr_1" d="M 810,-10 a 15,15 0,0,0 15,-15 v -15 a 5,5 0,0,1 5,-5 h 35 c 5,0 5,5 10,5" />
+   <path id="gwr_2" d="M 825,-30 a 10,10 0,0,1 -10,10" />
+   <path id="gwr_3" d="M 830,-45 c 5,0 5,5 10,5 h 35 a 20,20 0,0,0 0,-40 h -35 a 15,15 0,0,0 -15,15 v 25" />
+   <path id="gwr_4" class="endet" d="M 838,-45 q 2,0 3.5,-1.5 l 22,-22 q 1.5,-1.5 3.5,-1.5 h 18" />
+   <path id="gwr_5" class="endet" d="M 853.5,-58.5 q 1.5,-1.5 3.5,-1.5 h 28" />
+   <path id="gwr_6" class="endet" d="M 858.5,-63.5 q 1.5,-1.5 3.5,-1.5 h 23" />
+   <path id="gwr_7" class="endet" d="M 855,-45 c 5,0 5,-5 10,-5 h 20" />
+   <path id="gwr_8" class="endet" d="M 845,-45 c 10,0 10,-10 20,-10 h 20" />
+   <path id="gwr_9" class="endet" d="M 895,-60 a 25,25 0,0,1 -25,25 h -35" />
+   <path id="gwr_a" d="M 845,-35 c 5,0 5,5 10,5 h 5 c 5,0 5,-5 10,-5" />
+   <path id="gwr_b" class="endet" d="M 840,-80 c 5,0 5,5 10,5 h 15 c 5,0 5,-5 10,-5 h 20" />
+   <path id="gwr_d" class="faeng anschluss" d="M 825,-85 h 95 c 5,0 5,5 10,5 h 20" />
+   <path id="gwr_e" class="faeng" d="M 915,-80 h 15" />
+   <path id="gwr_f" d="M 885,-80 c 5,0 5,-5 10,-5" />
+   <path id="gwr_g" class="anschluss" d="M 858,-85 q 2,0 3.5,-1.5 l 10,-10" />
+   <rect id="brücke_riederhof" class="uberwerf" width="15" height="10" x="897.5" y="-90" />
+  </g>
+  <g id="gutleut" transform="translate(-285,250)">
+   <path id="gut_af" d="M 60,-30 h -108 q -2,0 -3.5,1.5" />
+   <path id="gut_gw" d="M 80,-40 c -5,0 -5,10 -10,10" />
+   <path id="gut_01" class="endet" d="M 51.5,-26.5 q -1.5,1.5 -1.5,3.5 v 53 " />
+   <path id="gut_02" class="endet" d="M 50,-22 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 43" />
+   <path id="gut_03" class="endet" d="M 41.5,-16.5 q -1.5,1.5 -1.5,3.5 v 43" />
+   <path id="gut_04" d="M 57,-30 q -2,0 -3.5,1.5 l -17,17 q -1.5,1.5 -1.5,3.5 v 51 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5 h -71 q -2,0 -3.5,-1.5 l -27,-27 q -1.5,-1.5 -1.5,-3.5 v -31 q 0,-2 1.5,-3.5 l 27,-27 q 1.5,-1.5 3.5,-1.5 h 118" />
+   <path id="gut_05" d="M 31.5,-26.5 q -1.5,1.5 -1.5,3.5 v 71 q 0,2 -1.5,3.5 " />
+   <path id="gut_06" class="endet" d="M 30,-22 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 43" />
+   <path id="gut_07" class="endet" d="M 37,-30 q -2,0 -3.5,1.5 l -12,12 q -1.5,1.5 -1.5,3.5 v 33" />
+   <path id="gut_08" d="M 22,-30 q -2,0 -3.5,1.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 66 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5" />
+   <path id="gut_09" d="M 11.5,-26.5 q -1.5,1.5 -1.5,3.5 v 66 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5" />
+   <path id="gut_10" d="M 17,-30 q -2,0 -3.5,1.5 l -7,7 q -1.5,1.5 -1.5,3.5 v 66 q 0,2 -1.5,3.5" />
+   <path id="gut_11" class="endet" d="M 1.5,-26.5 q -1.5,1.5 -1.5,3.5 v 58 " />
+   <path id="gut_12" class="endet" d="M 0,-22 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 53" />
+   <path id="gut_13" class="endet" d="M -8.5,-16.5 q -1.5,1.5 -1.5,3.5 v 53" />
+   <path id="gut_14" class="endet" d="M 7,-30 q -2,0 -3.5,1.5 l -17,17 q -1.5,1.5 -1.5,3.5 v 58" />
+   <path id="gut_15" class="endet" d="M -18.5,-26.5 q -1.5,1.5 -1.5,3.5 v 63 " />
+   <path id="gut_16" class="endet" d="M -20,-22 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 53" />
+   <path id="gut_17" class="endet" d="M -28.5,-16.5 q -1.5,1.5 -1.5,3.5 v 53" />
+   <path id="gut_18" class="endet" d="M -13,-30 q -2,0 -3.5,1.5 l -17,17 q -1.5,1.5 -1.5,3.5 v 48" />
+   <path id="gut_19" class="endet" d="M -38.5,-26.5 q -1.5,1.5 -1.5,3.5 v 48" />
+   <path id="gut_20" class="endet" d="M -33,-30 q -2,0 -3.5,1.5 l -7,7 q -1.5,1.5 -1.5,3.5 v 58" />
+   <path id="gut_21" class="endet" d="M -48.5,-26.5 q -1.5,1.5 -1.5,3.5 v 63" />
+   <path id="gut_22" class="endet" d="M -50,-22 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 53" />
+   <path id="gut_23" class="endet" d="M -43,-30 q -2,0 -3.5,1.5 l -12,12 q -1.5,1.5 -1.5,3.5 v 53" />
+   <path id="gut_24" d="M -63.5,-16.5 q -1.5,1.5 -1.5,3.5 v 51 q 0,2 1.5,3.5" />
+   <path id="gut_25" d="M -68.5,-11.5 q -1.5,1.5 -1.5,3.5 v 41 q 0,2 1.5,3.5" />
+   <path id="gut_26" d="M -38,-40 q -2,0 -3.5,1.5 l -32,32 q -1.5,1.5 -1.5,3.5 v 31 q 0,2 1.5,3.5" />
+  </g>
+  <g id="verkehrsmuseum" transform="translate(-800,575)">
+   <path id="vmi_01" class="endet" d="M 27,5 h -47" />
+   <path id="vmi_02" class="endet" d="M 12,15 q -2,0 -3.5,-1.5 l -2,-2 q -1.5,-1.5 -3.5,-1.5 h -23 " />
+   <path id="vmi_03" class="endet" d="M 16.5,13.5 q -1.5,1.5 -3.5,1.5 h -33" />
+   <path id="vmi_03" class="endet" d="M 11.5,18.5 q -1.5,1.5 -3.5,1.5 h -28" />
+   <path id="vmi_04" class="endet" d="M 6.5,23.5 q -1.5,1.5 -3.5,1.5 h -18" />
+   <path id="vma_01" class="endet" d="M 18.5,11.5 q 1.5,-1.5,3.5,-1.5 h 28 " />
+   <path id="vma_02" class="endet" d="M 28,10 q 2,0 3.5,1.5 l 2,2 q 1.5,1.5 3.5,1.5 h 13 " />
+   <path id="vma_03" class="endet" d="M 33.5,18.5 q 1.5,1.5 3.5,1.5 h 13" />
+   <path id="vma_04" class="endet" d="M 23,10 q 2,0 3.5,1.5 l 12,12 q 1.5,1.5 3.5,1.5 h 8 " />
+  </g>
+ </g>
+ <g class="strecke">
+  <path id="neuisenburg" d="M 205,415 a 20,20 0,0,0 -20,20 v 10 a 10,10 0,0,1 -10,10 h -180 a 20,20 0 0 0 -20,20 v 245 a 10,10 0,0,1 -10,10 a 10,10 0,0,0 -10,10
+                                               a 15,15 0,0,0 30,0 v -265 a 10,10 0,0,1 10,-10 h 180 a 20,20 0,0,0 20,-20 v -10 a 10,10 0,0,1 10,-10" />
+  <path id="textorstraße_1" d="M 185,405 a 20,20 0,0,0 20,20 h 45 a 20,20 0,0,0 20,-20 a 10,10 0,0,1 10,-10 h 100" />
+  <path id="textorstraße_2" d="M 380,385 h -100 a 20,20 0,0,0 -20,20 a 10,10 0,0,1 -10,10 h -45 a 10,10 0,0,1 -10,-10" />
+  <path id="langestraße_1" d="M 380,170 a 20,20 0,0,0 -20,20 v 155 c 0,10 -10,10 -10,20 v 10 a 10,10 0,0,1 -10,10" />
+  <path id="langestraße_2" d="M 350,395 a 20,20 0 0 0 20,-20 v -185 a 10,10 0,0,1 10,-10" />
+  <path id="oberrad_1" class="endet" d="M 360,345 v 30 a 20,20 0,0,0 20,20 h 410" />
+  <path id="oberrad_2" class="faeng" d="M 790,385 h -410 a 10,10 0,0,1 -10,-10 v -30" />
+  <path id="gartenstraße_1" d="M 195,435 v -75 a 20,20 0,0,0 -20,-20 h -170 a 10,10 0,0,1 -10,-10" />
+  <path id="gartenstraße_2" d="M -25,300 c 0,10 10,10 10,20 v 10 a 20,20 0,0,0 20,20 h 170 a 10,10 0,0,1 10,10 v 75" />
+  <path id="friedensbrücke_1" d="M -30,390 a 15,15 0,0,0 15,-15 v -15 c 0,-10 10,-10 10,-20 v -20 c 0,-10 -10,-10 -10,-20 v -100" />
+  <path id="friedensbrücke_2" d="M -25,200 V 360"/>
+  <path id="heilbronnerstraße_1" d="M -15,230 a 20,20 0,0,0 -20,-20 h -190" />
+  <path id="heilbronnerstraße_2" d="M -225,220 h 190 a 10,10 0,0,1 10,10" />
+  <path id="hbf_1" d="M -5,170 a 20,20 0,0,0 -20,20 v 10 a 10,10 0,0,1 -10,10" />
+  <path id="hbf_2" d="M -35,220 a 20,20 0,0,0 20,-20 v -10 a 10,10 0,0,1 10,-10" />
+  <path id="altstadt_1" d="M -25,160 a 20,20 0,0,0 20,20 h 280" />
+  <path id="altstadt_2" d="M 275,170 h -280 a 10,10 0,0,1 -10,-10" />
+  <path id="konstablerwache_1" d="M 245,180 a 20,20 0,0,0 20,-20 v -195 a 10,10 0,0,1 10,-10" />
+  <path id="konstablerwache_2" d="M 275,-55 a 20,20 0,0,0 -20,20 v 195 a 10,10 0,0,1 -10,10" />
+  <path id="glauburgstraße_1" class="ubergabe" d="M 265,-35 a 20,20 0,0,0 -20,-20 h -50" />
+  <path id="glauburgstraße_2" class="zugabe" d="M 195,-45 h 50 a 10,10 0,0,1 10,10" />
+  <text transform="translate(195,-50) translate(-5,5)" class="ref te">B</text>
+  <path id="friedbergerlandstraße_1" class="endet" d="M 265,-35 v -385" />
+  <path id="friedbergerlandstraße_2" class="faeng" d="M 255,-420 v 385" />
+  <path id="bornheim_1" d="M 255,-65 a 20,20 0,0,0 20,20 h 300 a 10,10 0,0,1 10,10" />
+  <path id="bornheim_2" d="M 595,-35 a 20,20 0,0,0 -20,-20 h -300 a 10,10 0,0,1 -10,-10" />
+  <path id="eissporthalle_1" d="M 575,-45 h 180 a 10,10 0,0,1 10,10" />
+  <path id="eissporthalle_2" d="M 775,-35 a 20,20 0,0,0 -20,-20 h -180" />
+  <path id="batonstraße_1" d="M 255,160 a 20,20 0,0,0 20,20 h 75 a 10,10 0,0,1 10,10" />
+  <path id="batonstraße_2" d="M 370,190 a 20,20 0,0,0 -20,-20 h -75 a 10,10 0,0,1 -10,-10" />
+  <path id="allerheiligentor_1" d="M 350,180 h 130" />
+  <path id="allerheiligentor_2" d="M 480,170 h -130" />
+  <path id="zoo_1" d="M 450,180 a 20,20 0,0,0 20,-20 v -46 q 0,-4 4,-8 l 115,-115 q 6,-6 6,-14 v -12 a 10,10 0,0,1 10,-10" />
+  <path id="zoo_2" d="M 605,-55 a 20,20 0,0,0 -20,20 v 12 q 0,4 -4,8 l -115,115 q -6,6 -6,14 v 46 a 10,10 0,0,1 -10,10" />
+  <path id="inheidenerstraße" d="M 595,-35 v -85 a 15,15 0,1,0 -30,0 a 10,10 0,0,0 10,10 a 10,10 0,0,1 10,10 v 65" />
+  <path id="ostbahnhof_1" d="M 460,160 a 20,20 0,0,0 20,20 h 305" />
+  <path id="ostbahnhof_2" d="M 785,170 h -305 a 10,10 0,0,1 -10,-10" />
+  <path id="ratsweg_1" d="M 755,180 a 20,20 0,0,0 20,-20 v -225" />
+  <path id="ratsweg_2" d="M 765,-65 v 225 a 10,10 0,0,1 -10,10" />
+  <path id="johannateschplatz_1" class="ubergabe" d="M 755,-45 a 20,20 0,0,0 20,-20 v -50" />
+  <path id="johannateschplatz_2" class="zugabe" d="M 765,-115 v 50 a 10,10 0,0,1 -10,10" />
+  <text transform="translate(770,-115) translate(0,-5)" class="ref tm">O</text>
+  <path id="hanauerlandstraße_1" d="M 765,160 a 20,20 0,0,0 20,20 h 220 a 10,10 0,0,1 10,10 v 105 c 0,10 10,10 10,20 " />
+  <path id="hanauerlandstraße_2" class="faeng" d="M 1025,345 v -155 a 20,20 0,0,0 -20,-20 h -220 a 10,10 0,0,1 -10,-10" />
+  <path id="hauptbahnhof" d="M -15,190 v -130" />
+  <path id="hauptbahnhof" d="M -25,60 v 130"/>
+  <path id="mainzerlandstraßeA_1" d="M -15,90 a 20,20 0,0,0 -20,-20 h -60" />
+  <path id="mainzerlandstraßeA_2" d="M -95,80 h 60 a 10,10 0,0,1 10,10" />
+  <path id="güterplatz_1" d="M -75,90 a 20,20 0,0,0 -20,-20 h -251" />
+  <path id="güterplatz_2" d="M -346,80 h 251 a 10,10 0,0,1 10,10" />
+  <path id="niddastraße_1" d="M -15,130 a 20,20 0,0,0 -20,-20 h -30 a 10,10 0,0,1 -10,-10 v -10 a 10,10 0,0,1 10,-10" />
+  <path id="niddastraße_2" d="M -65,70 a 20,20 0,0,0 -20,20 v 10 a 20,20 0,0,0 20,20 h 30 a 10,10 0,0,1 10,10" />
+  <path id="friedrichebertanlage_1" d="M -5,-175 a 20,20 0,0,0 -20,20 v 215 a 10,10 0,0,1 -10,10" />
+  <path id="friedrichebertanlage_2" d="M -35,80 a 20,20 0,0,0 20,-20 v -215 a 10,10 0,0,1 10,-10" />
+  <path id="schlossstraße_1" class="zugabe" d="M -25,-255 v 100" />
+  <path id="schlossstraße_2" class="ubergabe" d="M -15,-155 v -100" />
+  <text transform="translate(-20,-255) translate(0,-5)" class="ref tm">C</text>
+  <path id="ginnheim_1" class="faeng" d="M 40,-415 v 230 a 10,10 0,0,1 -10,10 h -35 a 10,10 0,0,1 -10,-10" />
+  <path id="ginnheim_2" d="M -25,-185 a 20,20 0,0,0 20,20 h 35 a 20,20 0,0,0 20,-20 v -175 c 0,-5 -10,-5 -10,-10" />
+  <path id="ginnheim_u"  class="ubergabe" d="M 40,-370 q 0,-4 3,-7 l 14,-14" />
+  <text transform="translate(57,-391) rotate(-45) translate(5,5)" class="ref">A</text>
+  <path id="ginnheim_3" class="endet" d="M 40,-385 c 0,-5 10,-5 10,-10 v -20" />
+  <path id="rebstock_1" class="endet" d="M -15,-115 a 20,20 0,0,0 -20,-20 h -255" />
+  <path id="rebstock_2" class="faeng" d="M -290,-125 h 230 c 5,0 5,-10 10,-10" />
+  <path id="rebstock_3" d="M -45,-135 c 5,0 5,10 10,10 a 10,10 0,0,1 10,10" />
+  <path id="kleyerstraße_1" d="M -190,70 q -8,0 -14,6 l -56,56 q -4,4 -8,4 q -4,0 -8,-4 l -34,-34 q -4,-4 -4,-8 a 10,10 0,0,1 10,-10" />
+  <path id="kleyerstraße_2" d="M -294,114 c 7,7 0,14 7,21 l 5,5 q 6,6 14,6 q 8,0 14,-6 l 56,-56 q 4,-4 8,-4" />
+  <path id="höchst" d="M -310,98 l -22,-22 q -6,-6 -14,-6 h -489 a 20,20 0,0,0 -20,20 a 20,20 0,0,0 20,20 h 30 a 15,15 0,0,0 15,-15 a 15,15 0,0,1 15,-15 h 429 q 4,0 8,4 l 14,14 c 7,7 14,0 21,7" />
+  <path id="schwanheim" d="M 5,340 h -10 a 20,20 0,0,0 -20,20 v 10 a 10,10 0,0,1 -10,10 h -97 q -8,0 -14,6 l -180,180 q -4,4 -8,4 h -476 
+                           a 17.5,17.5 0,0,0 0,35 h 8 q 2,0 3.5,-1.5 l 22,-22 q 1.5,-1.5 3.5,-1.5 h 439 q 8,0 14,-6 l 180,-180 q 4,-4 8,-4 h 107 a 20,20 0,0,0 20,-20 v -10 a 10,10 0,0,1 10,-10" />
+  <path id="haardtwaldplatz" d="M -206,446 q -4,4 -8,4 h -161 a 10,10 0,0,1 -10,-10 a 15,15 0,1,0 -30,0 a 20,20 0,0,0 20,20 h 181 q 8,0 14,-6" />
+  <path id="stadion" d="M -264,504 q -6,6 -6,14 v 145 q 0,3 -4,7 l -27,27 q -4,4 -4,7 v 19 a 20,20 0,0,0 20,20 h 5 a 20,20 0,0,0 20,-20 v -205 q 0,-4 4,-8" />
+  <g id="verlängerung_stresemannallee" class="geplant">
+   <path id="stresemannallee_1" d="M -25,370 v 105" />
+   <path id="stresemannallee_2" d="M -15,475 v -100" />
+   <path id="abzw_mörfelder_1" d="M -5,455 a 10,10 0,0,1 -10,-10" />
+   <path id="abzw_mörfelder_2" d="M -5,465 a 20,20 0,0,1 -20,-20" />
+   <path id="hippodrom_drittesgleis" d="M -15,395 c 0,-5 10,-5 10,-10 v -15" />
+   <path id="abzw_vogelweid_1" d="M -15,400 a 20,20 0,0,0 -20,-20" />
+   <path id="abzw_vogelweid_2" d="M -25,400 a 10,10 0,0,0 -10,-10" />
+   <path id="gw_stresemannallee" class="bb" d="M -15,405 c 0,5 -10,5 -10,10" />
+  </g>
+   <path id="zweitesgleis_rebstöcker" class="geplant" d="M -282,140 l -55,-55" />
+ </g>
+</svg>
