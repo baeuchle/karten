@@ -59,8 +59,9 @@
   .stand {  font-size:14pt;fill:#000000;fill-opacity:1;stroke:none; }
   .ab_bb { font-size:8pt; fill:black; stroke:none; }
   text { font-size:10pt; font-family:Sans-Serif; }
-  .verbot circle { stroke:red; stroke-width:2px; fill:white; }
+  .verbot circle, .verbot path { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; }
   .verbot text { stroke:black; fill:black; text-anchor:middle; font-size:8pt; }
+  .umleit path { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; } 
   .link { fill:blue; visibility:visible; }
   .script { visibility:visible; }
   .bbumrandung { fill:#fff; fill-opacity:1; stroke:#000; stroke-width:2px; }
@@ -182,6 +183,8 @@
   </g>
   <g id="keinu2" transform="scale(.7)" class="verbot"><circle r="10" /><text y="4">U2</text></g>
   <g id="jau4" class="tm"><circle r="10" style="fill:blue"/><text y="4" style="font-size:8pt; fill:white">U4</text></g>
+  <g id="bau" class="verbot"><path  d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" /></g>
+  <g id="uml" class="umleit"><path  d="M 0,3 h 7 l 3,-3 l -3,-3 h -17 v 6 h 11" /></g>
   <g id="punkt1" transform="rotate(30)">
    <path style="fill:url(#grau); stroke:none; fill-opacity:.5" d="M 0,0 l -2,-20 v -72 h 4 v 72 z" />
    <circle cx="0" cy="-99" r="7" style="stroke-width:5px; stroke:#f00; fill:none; " />
@@ -247,20 +250,22 @@
    <text class="ab_bb" transform="translate(18,338)">¹: Siehe <a class="link" xlink:href="strassenbahnnetz.svg">Straßenbahn-Netz Frankfurt</a></text>
   </g>
   <g id="bahnsteigshöhen" transform="translate(950,92)">
-   <rect class="box" width="200" height="175" x="-200" y="0" />
+   <rect class="box" width="200" height="225" x="-200" y="0" />
    <text x="-100" y="20" class="tm" style="font-weight:bold;">Bahnsteigshöhen</text>
-   <use xlink:href="#bahnsteig" class="nullzig"    transform="translate(-135, 45) rotate(90)" /><text x="-100" y=" 55">&lt; 30 cm</text>
-   <use xlink:href="#bahnsteig" class="funfzig" transform="translate(-135, 70) rotate(90)" /><text x="-100" y=" 80">56 cm</text>
+   <use xlink:href="#bahnsteig" class="nullzig"    transform="translate(-135, 45) rotate(90)" /><text x="-100"  y="55">&lt; 30 cm</text>
+   <use xlink:href="#bahnsteig" class="funfzig" transform="translate(-135, 70) rotate(90)" /><text x="-100"  y="80">56 cm</text>
    <use xlink:href="#bahnsteig" class="achtzig" transform="translate(-135, 95) rotate(90)" /><text x="-100" y="105">80 cm</text>
    <use xlink:href="#bahnsteig" class="neunzig" transform="translate(-135,120) rotate(90)" /><text x="-100" y="130">87 cm</text>
    <use xlink:href="#sbahn"   class="bahnsteig" transform="translate(-125,145) rotate(90)" /><text x="-100" y="155">S-Bahn</text>
+   <use xlink:href="#bau" transform="translate(-175,175)" /><text x="-140" y="180">im Bau/Umbau</text>
+   <use xlink:href="#uml" transform="translate(-175,200)" /><text x="-140" y="205">Ersatzhaltestelle</text>
   </g>
   <g id="ausbauprojekte" transform="translate(-815,140)">
    <rect class="box" width="500" height="190" />
    <text class="unterschrift" x="20" y="25">Ausbauprojekte</text>
    <text class="script ab_bb" x="20" y="40">Hier oder in entsprechender Stelle der Karte klicken, um die Darstellung zu ändern</text>
-   <text class="hochstatio" x="20" y=" 60" onclick="geplant('verlängerung_badhomburg')">Bad Homburg: Gonzenheim → Bad Homburg Bahnhof <tspan class="link" id="verlängerung_badhomburg_aktion">verstecken</tspan></text>
-   <text class="ab_bb" x="30" y=" 75">Stand: Planfeststellungsverfahren</text>
+   <text class="hochstatio" x="20" y="60" onclick="geplant('verlängerung_badhomburg')">Bad Homburg: Gonzenheim → Bad Homburg Bahnhof <tspan class="link" id="verlängerung_badhomburg_aktion">verstecken</tspan></text>
+   <text class="ab_bb" x="30" y="75">Stand: Planfeststellungsverfahren</text>
    <text class="hochstatio" x="20" y="95" onclick="geplant('verlängerung_europaviertel')">Europaviertel: Hauptbahnhof → Wohnpark <tspan class="link" id="verlängerung_europaviertel_aktion">verstecken</tspan></text>
    <text class="ab_bb" x="30" y="110">Stand: Vorplanung</text>
    <text class="hochstatio" x="20" y="130" onclick="geplant('ginnheimer_kurve')">Ginnheimer Kurve: Ginnheim → Bockenheimer Warte <tspan class="link" id="ginnheimer_kurve_aktion">einbauen</tspan></text>
@@ -271,23 +276,23 @@
   <g id="kilometrierungen" transform="translate(-815,330)">
    <rect class="box" width="400" height="160" />
    <text class="unterschrift" x="20" y="25">Kilometrierungen anzeigen</text>
-   <text class="hochstatio" x="20" y=" 45">
+   <text class="hochstatio" x="20" y="45">
     <tspan id="as_strecke_tx" onclick="kilometer('as_strecke')">A-Stamm</tspan>
     <tspan id="a1_strecke_tx" onclick="kilometer('a1_strecke')">A1</tspan>
     <tspan id="a2_strecke_tx" onclick="kilometer('a2_strecke')">A2</tspan>
     <tspan id="a3_strecke_tx" onclick="kilometer('a3_strecke')">A3</tspan>
    </text>
-   <text class="hochstatio" x="20" y=" 60">
+   <text class="hochstatio" x="20" y="60">
     <tspan id="bs_strecke_tx" onclick="kilometer('bs_strecke')">B+B1</tspan>
     <tspan id="b2_strecke_tx" onclick="kilometer('b2_strecke')">B2</tspan>
    </text>
-   <text class="hochstatio" x="20" y=" 75">
+   <text class="hochstatio" x="20" y="75">
     <tspan id="cs_strecke_tx" onclick="kilometer('cs_strecke')">C-Stamm</tspan>
     <tspan id="c1_strecke_tx" onclick="kilometer('c1_strecke')">C1</tspan>
     <tspan id="c2_strecke_tx" onclick="kilometer('c2_strecke')">Heerstr.</tspan>
     <tspan id="c3_strecke_tx" onclick="kilometer('c3_strecke')">Hausen</tspan>
    </text>
-   <text class="hochstatio" x="20" y=" 90">
+   <text class="hochstatio" x="20" y="90">
     <tspan id="ds_strecke_tx" onclick="kilometer('ds_strecke')">D-Strecke</tspan>
    </text>
    <use xlink:href="#punkt1" transform="translate(125,116) rotate(-120)" /><text x="135" y="120">Eichpunkt für Kilometrierung</text>
@@ -303,8 +308,8 @@
   </g>
   <g id="kilometrierungen" transform="translate(-815,490)">
    <rect class="box" width="300" height="40" />
-   <text class="hochstatio" x="20" y=" 20">In den Bereich der Betriebshöfe klicken,</text>
-   <text class="hochstatio" x="20" y=" 32">um Details zu zeigen (nur Heddernheim)</text>
+   <text class="hochstatio" x="20" y="20">In den Bereich der Betriebshöfe klicken,</text>
+   <text class="hochstatio" x="20" y="32">um Details zu zeigen (nur Heddernheim)</text>
   </g>
  </g>
  <g id="straßen">
@@ -600,7 +605,14 @@
   <g id="hst651" transform="translate(165,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Kalbach</text></g>
   <g id="hst652" transform="translate(265,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="25">Bonames Mitte</text></g>
   <g id="hst653" transform="translate(365,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Nieder-Eschbach</text></g>
-  <g id="hst655" transform="translate(490,135)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Ober-Eschbach</text></g>
+  <g id="hst655" transform="translate(490,135)" class="achtzig te"><use xlink:href="#bstg_außen" />
+    <use xlink:href="#bau" transform="translate(-10,-5)"/>
+    <use xlink:href="#uml" transform="translate(-10,15) rotate(90)"/>
+    <use xlink:href="#bau" transform="translate(10,-5)"/>
+    <use xlink:href="#uml" transform="translate(10,15) rotate(90)"/>
+    <text x="-20" y="5">Ober-Eschbach</text>
+    <text x="-20" y="15" class="ab_bb">Umbau bis voraussichtlich Juni 2012</text>
+  </g>
   <g id="hst656" transform="translate(490,30)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Bad Homburg Gonzenheim</text></g>
   <g id="hst551" transform="translate(-158,315)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Wiesenau</text></g>
   <g id="hst552" transform="translate(-158,215)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Niederursel</text></g>
