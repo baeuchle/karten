@@ -741,22 +741,50 @@
   <path id="bbe_11" class="endet" d="M 24,-5 q -2,0 -3.5,-1.5 l -9,-9 q -1.5,-1.5 -1.5,-3.5 v -41" />
   <path id="bbe_12" class="endet" d="M 8.5,-6.5 q -1.5,-1.5 -1.5,-3.5 v -70" />
   <path id="bbe_13" class="endet" d="M 7,-9.5 q 0,-2 -1.5,-3.5 q -1.5,-1.5 -1.5,-3.5 v -63.5" />
-  <path id="bbe_14" class="endet" d="M 2.5,-12.5 q -1.5,-1.5 -1.5,-3.5 v -64" />
-  <path id="bbe_15" class="endet" d="M 12,-5 q -2,0 -3.5,-1.5 l -9,-9 q -1.5,-1.5 -1.5,-3.5 v -61" />
-  <path id="bbe_16" class="endet" d="M -3.5,-6.5 q -1.5,-1.5 -1.5,-3.5 v -70" />
-  <path id="bbe_17" class="endet" d="M -5,-9.5 q 0,-2 -1.5,-3.5 q -1.5,-1.5 -1.5,-3.5 v -63.5" />
-  <path id="bbe_18" class="endet" d="M -9.5,-12.5 q -1.5,-1.5 -1.5,-3.5 v -64" />
-  <path id="bbe_19" class="endet" d="M -12,-5 q -2,0 -3.5,-1.5 l -9,-9 q -1.5,-1.5 -1.5,-3.5 v -61" />
-  <path id="bbe_20" class="endet" d="M -15.5,-6.5 q -1.5,-1.5 -1.5,-3.5 v -70" />
-  <path id="bbe_21" class="endet" d="M -17,-9.5 q 0,-2 -1.5,-3.5 q -1.5,-1.5 -1.5,-3.5 v -63.5" />
-  <path id="bbe_22" class="endet" d="M -21.5,-12.5 q -1.5,-1.5 -1.5,-3.5 v -64" />
-  <path id="bbe_23" class="endet" d="M 0,-5 q -2,0 -3.5,-1.5 l -9,-9 q -1.5,-1.5 -1.5,-3.5 v -61" />
-  <path id="bbe_24" class="endet" d="M -27.5,-6.5 q -1.5,-1.5 -1.5,-3.5 v -60" />
-  <path id="bbe_25" class="endet" d="M -29,-9.5 q 0,-2 -1.5,-3.5 q -1.5,-1.5 -1.5,-3.5 v -53.5" />
-  <path id="bbe_26" class="endet" d="M -33.5,-12.5 q -1.5,-1.5 -1.5,-3.5 v -54" />
-  <path id="bbe_27" class="endet" d="M -24,-5 q -2,0 -3.5,-1.5 l -9,-9 q -1.5,-1.5 -1.5,-3.5 v -51" />
-  <path id="bbe_28" class="endet" d="M 40,-5 h -69 a 12,12 0,0,1 -12,-12 v -20" />
+  <path id="bbe_14" class="endet" d="M 12,-5 q -2,0 -3.5,-1.5 l -6,-6 q -1.5,-1.5 -1.5,-3.5 v -64" />
+  <path id="bbe_15" class="endet" d="M -0.5,-6.5 q -1.5,-1.5 -1.5,-3.5 v -70" />
+  <path id="bbe_16" class="endet" d="M -2,-9.5 q 0,-2 -1.5,-3.5 q -1.5,-1.5 -1.5,-3.5 v -63.5" />
+  <path id="bbe_17" class="endet" d="M -6.5,-12.5 q -1.5,-1.5 -1.5,-3.5 v -64" />
+  <path id="bbe_18" class="endet" d="M -9,-5 q -2,0 -3.5,-1.5 l -9,-9 q -1.5,-1.5 -1.5,-3.5 v -61" />
+  <path id="bbe_19" class="endet" d="M -12.5,-6.5 q -1.5,-1.5 -1.5,-3.5 v -70" />
+  <path id="bbe_20" class="endet" d="M -14,-9.5 q 0,-2 -1.5,-3.5 q -1.5,-1.5 -1.5,-3.5 v -63.5" />
+  <path id="bbe_21" class="endet" d="M -18.5,-12.5 q -1.5,-1.5 -1.5,-3.5 v -64" />
+  <path id="bbe_22" class="endet" d="M 3,-5 q -2,0 -3.5,-1.5 l -9,-9 q -1.5,-1.5 -1.5,-3.5 v -61" />
+  <path id="bbe_23" class="endet" d="M -24.5,-6.5 q -1.5,-1.5 -1.5,-3.5 v -60" />
+  <path id="bbe_24" class="endet" d="M -26,-9.5 q 0,-2 -1.5,-3.5 q -1.5,-1.5 -1.5,-3.5 v -53.5" />
+  <path id="bbe_25" class="endet" d="M -30.5,-12.5 q -1.5,-1.5 -1.5,-3.5 v -54" />
+  <path id="bbe_26" class="endet" d="M -21,-5 q -2,0 -3.5,-1.5 l -9,-9 q -1.5,-1.5 -1.5,-3.5 v -51" />
+  <path id="bbe_27" class="endet" d="M 43,-5 h -69 a 12,12 0,0,1 -12,-12 v -20" />
   <g id="gleisnummern_eckenheim" display="none">
+   <path class="gebaude" id="bbe_bom" d="M 41.5,-26 v -15 h -9 v -20 h -69 v 23 h -3 v 19 h 72 v -7 z m -9,-15 v 15 m -12,-35 v 42 m -21,-42 v 42 m -36,-19 v 19" />
+   <!--<path class="gebaude" id="bbe_hsf" d="M 32.5,-19 v -42 h -12 v 42 z" />-->
+   <g transform="translate(40,-20)" class="bgleisnummer"><circle cy="-1" r="2" /><text>1</text></g>
+   <g transform="translate(37,-23)" class="bgleisnummer"><circle cy="-1" r="2" /><text>2</text></g>
+   <g transform="translate(34,-20)" class="bgleisnummer"><circle cy="-1" r="2" /><text>3</text></g>
+   <g transform="translate(31,-29)" class="bgleisnummer"><circle cy="-1" r="2" /><text>4</text></g>
+   <g transform="translate(28,-32)" class="bgleisnummer"><circle cy="-1" r="2" /><text>5</text></g>
+   <g transform="translate(25,-29)" class="bgleisnummer"><circle cy="-1" r="2" /><text>6</text></g>
+   <g transform="translate(22,-32)" class="bgleisnummer"><circle cy="-1" r="2" /><text>7</text></g>
+   <g transform="translate(19,-29)" class="bgleisnummer"><circle cy="-1" r="2" /><text>8</text></g>
+   <g transform="translate(16,-32)" class="bgleisnummer"><circle cy="-1" r="2" /><text>9</text></g>
+   <g transform="translate(13,-29)" class="bgleisnummer"><circle cy="-1" r="2" /><text>10</text></g>
+   <g transform="translate(10,-32)" class="bgleisnummer"><circle cy="-1" r="2" /><text>11</text></g>
+   <g transform="translate(7,-29)" class="bgleisnummer"><circle cy="-1" r="2" /><text>12</text></g>
+   <g transform="translate(4,-32)" class="bgleisnummer"><circle cy="-1" r="2" /><text>13</text></g>
+   <g transform="translate(1,-29)" class="bgleisnummer"><circle cy="-1" r="2" /><text>14</text></g>
+   <g transform="translate(-2,-32)" class="bgleisnummer"><circle cy="-1" r="2" /><text>15</text></g>
+   <g transform="translate(-5,-29)" class="bgleisnummer"><circle cy="-1" r="2" /><text>16</text></g>
+   <g transform="translate(-8,-32)" class="bgleisnummer"><circle cy="-1" r="2" /><text>17</text></g>
+   <g transform="translate(-11,-29)" class="bgleisnummer"><circle cy="-1" r="2" /><text>18</text></g>
+   <g transform="translate(-14,-32)" class="bgleisnummer"><circle cy="-1" r="2" /><text>19</text></g>
+   <g transform="translate(-17,-29)" class="bgleisnummer"><circle cy="-1" r="2" /><text>20</text></g>
+   <g transform="translate(-20,-32)" class="bgleisnummer"><circle cy="-1" r="2" /><text>21</text></g>
+   <g transform="translate(-23,-29)" class="bgleisnummer"><circle cy="-1" r="2" /><text>22</text></g>
+   <g transform="translate(-26,-32)" class="bgleisnummer"><circle cy="-1" r="2" /><text>23</text></g>
+   <g transform="translate(-29,-29)" class="bgleisnummer"><circle cy="-1" r="2" /><text>24</text></g>
+   <g transform="translate(-32,-32)" class="bgleisnummer"><circle cy="-1" r="2" /><text>25</text></g>
+   <g transform="translate(-35,-29)" class="bgleisnummer"><circle cy="-1" r="2" /><text>26</text></g>
+   <g transform="translate(-38,-32)" class="bgleisnummer"><circle cy="-1" r="2" /><text>27</text></g>
   </g>
  </g>
  <g id="bb_bommersheim" transform="translate(-415,80)" class="strecke" clip-path="url(#cp_bommersheim)">
