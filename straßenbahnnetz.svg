@@ -664,7 +664,7 @@
   <text transform="translate(57,-391) rotate(-45) translate(5,5)" class="ref">A</text>
   <path id="ginnheim_3" class="endet" d="M 40,-385 c 0,-5 10,-5 10,-10 v -20" />
   <path id="rebstock_1" class="endet" d="M -15,-115 a 20,20 0,0,0 -20,-20 h -255" />
-  <path id="rebstock_2" class="faeng" d="M -290,-125 h 230 c 5,0 5,-10 10,-10" />
+  <path id="rebstock_2" class="faeng" d="M -290,-125 h 210 c 5,0 5,-10 10,-10" />
   <path id="rebstock_3" d="M -45,-135 c 5,0 5,10 10,10 a 10,10 0,0,1 10,10" />
   <path id="kleyerstraße_1" d="M -190,70 q -8,0 -14,6 l -56,56 q -4,4 -8,4 q -4,0 -8,-4 l -34,-34 q -4,-4 -4,-8 a 10,10 0,0,1 10,-10" />
   <path id="kleyerstraße_2" d="M -294,114 c 7,7 0,14 7,21 l 5,5 q 6,6 14,6 q 8,0 14,-6 l 56,-56 q 4,-4 8,-4" />
@@ -684,5 +684,14 @@
    <path id="gw_stresemannallee" class="bb" d="M -15,405 c 0,5 -10,5 -10,10" />
   </g>
    <path id="zweitesgleis_rebstöcker" class="geplant" d="M -282,140 l -55,-55" />
+ </g>
+ <g style="fill:#008000; stroke:none;" transform="translate(-73,-125)" id="baeume">
+  <circle r="1.5" cx="00" />
+  <circle r="1.5" cx="05" />
+  <circle r="1.5" cx="10" />
+  <circle r="1.5" cx="15" />
+  <circle r="1.5" cx="20" />
+  <circle r="1.5" cx="25" />
+  <circle r="1.5" cx="30" />
  </g>
 </svg>

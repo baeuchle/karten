@@ -686,7 +686,7 @@
   <path d="M -25,-95 l 64,64 q 6,6 6,14 v 47" />
   <path d="M 14,-70 q -9,-9 -9,-21 m -10,0 q 0,16 12,28" />
   <g id="hst526_bstg" transform="translate(50,10)" class="achtzig"><use xlink:href="#bahnsteig" transform="translate(15,0) rotate(180)" /><use xlink:href="#bstg_außen" /></g>
-  <g id="gleisnummern_heddernheim" display="none">
+  <g id="gleisnummern_heddernheim" display="block">
    <path class="gebaude" id="werkstatt_heddernheim" d="M -14,-15.5 h 18 l 3,-3 v -6 h -21 v 9" />
    <path class="gebaude" id="waschanlage_heddernheim" d="M -15,-51.5 h 15 v -3 h -15 v 3" />
    <g transform="translate(9,-1)" class="beschrift"><path d="M -5,-17.5 l 5,5 v 9" /><text>Werkstatt</text></g>
@@ -719,6 +719,7 @@
    <g transform="translate( 59,-39)" class="bgleisnummer"><circle cy="-1" r="2" /><text>24</text></g>
    <g transform="translate( 62,-36)" class="bgleisnummer"><circle cy="-1" r="2" /><text>25</text></g>
    <g transform="translate( 65,-33)" class="bgleisnummer"><circle cy="-1" r="2" /><text>26</text></g>
+   <g transform="translate( 40,-05)" class="bgleisnummer"><circle cy="-1" r="2" /><text>61</text></g>
   </g>
  </g>
  <g id="bb_eckenheim" transform="translate(205,920)" class="strecke bb" clip-path="url(#cp_eckenheim)">
