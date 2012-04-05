@@ -59,9 +59,10 @@
   .stand {  font-size:14pt;fill:#000000;fill-opacity:1;stroke:none; }
   .ab_bb { font-size:8pt; fill:black; stroke:none; }
   text { font-size:10pt; font-family:Sans-Serif; }
-  .verbot circle, .verbot path { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; }
+  .verbot circle, path.verbot { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; }
   .verbot text { stroke:black; fill:black; text-anchor:middle; font-size:8pt; }
-  .umleit path { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; } 
+  path.umleit { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; } 
+  path.abreis { stroke:red; stroke-width:1; fill:none; }
   .link { fill:blue; visibility:visible; }
   .script { visibility:visible; }
   .bbumrandung { fill:#fff; fill-opacity:1; stroke:#000; stroke-width:2px; }
@@ -79,7 +80,10 @@
   .gleisnummer text, .beschrift text { fill:black; stroke:none; font-size:3pt; text-anchor:middle; }
   .bgleisnummer circle { fill:white; fill-opacity:.8; stroke:black; stroke-width:.3; }
   .bgleisnummer text { fill:black; stroke:none; font-size:2pt; text-anchor:middle; }
-  .gebaude { stroke:#93799a; fill:#beadad; fill-opacity:.5; stroke-width:.2; }
+  .wand { stroke:#93799a; stroke-width:.2; }
+  .tor { stroke:black; stroke-width:.3; marker-end:url(#prell); marker-start: url(#prell); }
+  .gebaude { fill:#beadad; fill-opacity:.5; }
+  .keinewand { stroke:none; }
   .beschrift path, .beschrift circle, .beschrift rect { fill:none; stroke:#93799a; stroke-width:.5; }
 
  ]]>
@@ -184,8 +188,9 @@
   </g>
   <g id="keinu2" transform="scale(.7)" class="verbot"><circle r="10" /><text y="4">U2</text></g>
   <g id="jau4" class="tm"><circle r="10" style="fill:blue"/><text y="4" style="font-size:8pt; fill:white">U4</text></g>
-  <g id="bau" class="verbot"><path  d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" /></g>
-  <g id="uml" class="umleit"><path  d="M 0,3 h 7 l 3,-3 l -3,-3 h -17 v 6 h 11" /></g>
+  <path id="bau" class="verbot" d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" />
+  <path id="uml" class="umleit" d="M 0,3 h 7 l 3,-3 l -3,-3 h -17 v 6 h 11" />
+  <path id="weg" class="abreis" d="M -1.2,-1.2 l 2.4,2.4 m -2.4,0 l 2.4,-2.4" />
   <g id="punkt1" transform="rotate(30)">
    <path style="fill:url(#grau); stroke:none; fill-opacity:.5" d="M 0,0 l -2,-20 v -72 h 4 v 72 z" />
    <circle cx="0" cy="-99" r="7" style="stroke-width:5px; stroke:#f00; fill:none; " />
@@ -686,9 +691,9 @@
   <path d="M -25,-95 l 64,64 q 6,6 6,14 v 47" />
   <path d="M 14,-70 q -9,-9 -9,-21 m -10,0 q 0,16 12,28" />
   <g id="hst526_bstg" transform="translate(50,10)" class="achtzig"><use xlink:href="#bahnsteig" transform="translate(15,0) rotate(180)" /><use xlink:href="#bstg_außen" /></g>
-  <g id="gleisnummern_heddernheim" display="block">
-   <path class="gebaude" id="werkstatt_heddernheim" d="M -14,-15.5 h 18 l 3,-3 v -6 h -21 v 9" />
-   <path class="gebaude" id="waschanlage_heddernheim" d="M -15,-51.5 h 15 v -3 h -15 v 3" />
+  <g id="gleisnummern_heddernheim" display="none">
+   <path class="gebaude wand" id="werkstatt_heddernheim" d="M -14,-15.5 h 18 l 3,-3 v -6 h -21 v 9" />
+   <path class="gebaude wand" id="waschanlage_heddernheim" d="M -15,-51.5 h 15 v -3 h -15 v 3" />
    <g transform="translate(9,-1)" class="beschrift"><path d="M -5,-17.5 l 5,5 v 9" /><text>Werkstatt</text></g>
    <g transform="translate(-20,-65)" class="beschrift"><path d="M 0,1 l 7,7 v 3" /><text>Waschanlage</text></g>
    <g transform="translate(45,10)" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>1</text></g>
@@ -736,8 +741,8 @@
   <path id="bbe_05" class="endet" d="M 31,-9.5 q 0,-2 -1.5,-3.5 q -1.5,-1.5 -1.5,-3.5 v -43.5" />
   <path id="bbe_06" class="endet" d="M 26.5,-12.5 q -1.5,-1.5 -1.5,-3.5 v -44" />
   <path id="bbe_07" class="endet" d="M 36,-5 q -2,0 -3.5,-1.5 l -9,-9 q -1.5,-1.5 -1.5,-3.5 v -41" />
-  <path id="bbe_08" class="endet" d="M 20.5,-6.5 q -1.5,-1.5 -1.5,-3.5 v -50" />
-  <path id="bbe_09" class="endet" d="M 19,-9.5 q 0,-2 -1.5,-3.5 q -1.5,-1.5 -1.5,-3.5 v -43.5" />
+  <path id="bbe_08" class="endet" d="M 20.5,-6.5 q -1.5,-1.5 -1.5,-3.5 v -45" />
+  <path id="bbe_09" class="endet" d="M 19,-9.5 q 0,-2 -1.5,-3.5 q -1.5,-1.5 -1.5,-3.5 v -38.5" />
   <path id="bbe_10" class="endet" d="M 14.5,-12.5 q -1.5,-1.5 -1.5,-3.5 v -44" />
   <path id="bbe_11" class="endet" d="M 24,-5 q -2,0 -3.5,-1.5 l -9,-9 q -1.5,-1.5 -1.5,-3.5 v -41" />
   <path id="bbe_12" class="endet" d="M 8.5,-6.5 q -1.5,-1.5 -1.5,-3.5 v -70" />
@@ -757,8 +762,23 @@
   <path id="bbe_26" class="endet" d="M -21,-5 q -2,0 -3.5,-1.5 l -9,-9 q -1.5,-1.5 -1.5,-3.5 v -51" />
   <path id="bbe_27" class="endet" d="M 43,-5 h -69 a 12,12 0,0,1 -12,-12 v -20" />
   <g id="gleisnummern_eckenheim" display="none">
-   <path class="gebaude" id="bbe_bom" d="M 41.5,-26 v -15 h -9 v -20 h -69 v 23 h -3 v 19 h 72 v -7 z m -9,-15 v 15 m -12,-35 v 42 m -21,-42 v 42 m -36,-19 v 19" />
-   <!--<path class="gebaude" id="bbe_hsf" d="M 32.5,-19 v -42 h -12 v 42 z" />-->
+   <path class="gebaude wand" id="bbe_bom" d="M 41.5,-26 v -15 h -9 v +15 h 9" />
+   <path class="gebaude wand" id="bbe_hsf" d="M 32.5,-19 v -42 h -12 v 42 h 12" />
+   <path class="gebaude keinewand" id="bbe_hal" d="M 20.5,-19 v -42 h -57 v 42 h 57" />
+   <path class="gebaude wand" id="bbe_wsa" d="M -36.5,-19 v -19 h -3 v 19 h 3" />
+   <path class="wand" d="M 20.5,-61 h -12 m -9,0 v 42 m -36,0 v -42" />
+   <path class="tor" d="M 20,-19 h -5"/>
+   <path class="tor" d="M 14,-19 h -5" />
+   <path class="tor" d="M -1,-19 h -5" />
+   <path class="tor" d="M -7,-19 h -5" />
+   <path class="tor" d="M -13,-19 h -5" />
+   <path class="tor" d="M -19,-19 h -5" />
+   <path class="tor" d="M -25,-19 h -5" />
+   <path class="tor" d="M -31,-19 h -5" />
+   <use xlink:href="#weg" transform="translate(-2,-61)" />
+   <use xlink:href="#weg" transform="translate(-5,-61)" />
+   <use xlink:href="#weg" transform="translate(-8,-61)" />
+   <use xlink:href="#weg" transform="translate(-11,-61)" />
    <g transform="translate(40,-20)" class="bgleisnummer"><circle cy="-1" r="2" /><text>1</text></g>
    <g transform="translate(37,-23)" class="bgleisnummer"><circle cy="-1" r="2" /><text>2</text></g>
    <g transform="translate(34,-20)" class="bgleisnummer"><circle cy="-1" r="2" /><text>3</text></g>
