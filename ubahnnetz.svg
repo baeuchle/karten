@@ -144,6 +144,11 @@
   }
 
   function bbgross( domobj ) {
+   var scale_re = / scale\([\d\.]+,[\d\.]+\)/;
+   if( document.getElementById("bb_"   +domobj).getAttribute("transform").match(scale_re)) {
+    bbklein(domobj);
+    return;
+   }
    document.getElementById( "bb_"    + domobj ).setAttribute("transform",document.getElementById("bb_"   +domobj).getAttribute("transform") + " scale(3,3)");
    document.getElementById( "bb_"    + domobj ).setAttribute("clip-path","url(#cp_"+domobj+")");
    document.getElementById( "gross_" + domobj ).setAttribute("transform",document.getElementById("gross_"+domobj).getAttribute("transform") + " scale(3,3)");
@@ -153,6 +158,10 @@
   }
   function bbklein( domobj ) {
    var scale_re = / scale\([\d\.]+,[\d\.]+\)/;
+   if( !document.getElementById("bb_"   +domobj).getAttribute("transform").match(scale_re) ) {
+    bbgross(domobj);
+    return;
+   }
    document.getElementById( "bb_"    + domobj ).setAttribute("transform",document.getElementById("bb_"   +domobj).getAttribute("transform").replace(scale_re, ""));
    document.getElementById( "bb_"    + domobj ).setAttribute("clip-path","none");
    document.getElementById( "gross_" + domobj ).setAttribute("transform",document.getElementById("gross_"+domobj).getAttribute("transform").replace(scale_re, ""));
