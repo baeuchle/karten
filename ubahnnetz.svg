@@ -6,7 +6,6 @@
   width="1765px"
   height="2217px"
   viewBox="-815 -250 1765 2217"
-  onload="bbgross('ost')"
   >
   <text class="te ab_bb" x="947" y="1964">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle </text>
  <metadata>
@@ -232,9 +231,9 @@
   <rect class="label" id="kasten8" y="-6" width="63" height="12" rx="2" ry="2" />
   <rect class="label" id="kasten9" y="-11" width="63" height="22" rx="2" ry="2" />
   <use xlink:href="#kasten9" id="kastenJ" x="-63" />
-  <clipPath id="cp_heddernheim"><path d="M -40,-80 h 110 v 110 h -110 v -110"/></clipPath>
-  <clipPath id="cp_eckenheim"><path d="M -45,-90 h 110 v 100 h -110 v -100"/></clipPath>
-  <clipPath id="cp_bommersheim"><path d="M -30,-50 h 95 v 65 h -95 v -65"/></clipPath>
+  <clipPath id="cp_heddernheim"><rect x="-40" y="-80" width="110" height="110" /></clipPath>
+  <clipPath id="cp_eckenheim"><rect x="-45" y="-95" width="110" height="100" /></clipPath>
+  <clipPath id="cp_bommersheim"><rect x="-35" y="-50" width="135" height="65" /></clipPath>
   <clipPath id="cp_ost"><rect x="-180" y="-40" width="208" height="143" /></clipPath>
  </defs>
  <rect id="aussen"
@@ -321,7 +320,7 @@
   <g id="kilometrierungen" transform="translate(-815,490)">
    <rect class="box" width="300" height="40" />
    <text class="hochstatio" x="20" y="20">In den Bereich der Betriebshöfe klicken,</text>
-   <text class="hochstatio" x="20" y="32">um Details zu zeigen (nur Heddernheim)</text>
+   <text class="hochstatio" x="20" y="32">um Details zu zeigen</text>
   </g>
  </g>
  <g id="straßen">
@@ -482,8 +481,8 @@
   <path id="ginnheim_2" class="faeng" d="M -120,920 v -185 c 0,-2.5 2.5,-2.5 2.5,-5 v -45 c 0,-2.5 -2.5,-2.5 -2.5,-5 v -60" />
   <path id="gonzenheim_1" class="faeng" d="M 485,10 v 140 a 50,50 0,0,1 -50,50 c -5,0 -5,-5 -10,-5 h -30 c -5,0 -5,5 -10,5 h -255 a 70,70 0,0,0 -70,70 V 449 q 0,16 12,28" />
   <path id="gonzenheim_2" class="endet" d="M 79,470 q -9,-9 -9,-21 V 270 a 60,60 0,0,1 60,-60 h 305 a 60,60 0,0,0 60,-60 v -140" />
-  <path id="hohemark_1"  class="faeng" d="M -800,-205 h 535 a 50,50 0,0,1 50,50 v 130 a 10,10, 0,0,1 -10,10 h -218 a 30,30 0,0,0 0,60 h 125 q 20,0 35,15 l 105,105 q 15,15 15,35 v 130 q 0,24 18,42 q 18,18 42,18 h 33" />
-  <path id="hohemark_2a" d="M -70,380 h -33 q -20,0 -35,-15 q -15,-15 -15,-35 v -130 q 0,-24 -18,-42 l -105,-105 q -18,-18 -42,-18 h -125 a 20,20 0,0,1 0,-40 h 218 a 20,20 0,0,0 20,-20 v -130 a 60,60 0,0,0 -60,-60 h -230 c -10,0 -10,10 -20,10" />
+  <path id="hohemark_1"  class="faeng" d="M -800,-205 h 535 a 50,50 0,0,1 50,50 v 130 a 10,10, 0,0,1 -10,10 h -213 a 30,30 0,0,0 0,60 h 120 q 20,0 35,15 l 105,105 q 15,15 15,35 v 130 q 0,24 18,42 q 18,18 42,18 h 33" />
+  <path id="hohemark_2a" d="M -70,380 h -33 q -20,0 -35,-15 q -15,-15 -15,-35 v -130 q 0,-24 -18,-42 l -105,-105 q -18,-18 -42,-18 h -120 a 20,20 0,0,1 0,-40 h 213 a 20,20 0,0,0 20,-20 v -130 a 60,60 0,0,0 -60,-60 h -230 c -10,0 -10,10 -20,10" />
   <path id="hohemark_2b" class="endet" d="M -745,-205 c -10,0 -10,-10 -20,-10 h -35" />
  </g>
  <g id="bstrecke" class="strecke">
@@ -628,7 +627,7 @@
  <g id="bbrechtecke">
   <rect id="gross_heddernheim" transform="translate(65,540)" x="-50" y="-80" height="110" width="120" class="klicken" onclick="bbgross('heddernheim')" />
   <rect id="gross_eckenheim" transform="translate(205,920)" x="-45" y="-90" height="100" width="110" class="klicken" onclick="bbgross('eckenheim')" />
-  <rect id="gross_bommersheim" transform="translate(-415,80)" x="-30" y="-50" height="65" width="95" class="klicken" onclick="bbgross('bommersheim')" />
+  <rect id="gross_bommersheim" transform="translate(-415,80)" x="-35" y="-50" height="65" width="135" class="klicken" onclick="bbgross('bommersheim')" />
   <rect id="gross_ost" transform="translate(815,1245)" x="-180" y="-40" width="208" height="143" class="klicken" onclick="bbgross('ost')" />
  </g>
  <g id="bb_heddernheim" transform="translate(65 540)" class="strecke" clip-path="url(#cp_heddernheim)">
@@ -787,20 +786,39 @@
  </g>
  <g id="bb_bommersheim" transform="translate(-415,80)" class="strecke" clip-path="url(#cp_bommersheim)">
   <g class="bb">
-   <path id="bomm_00" class="endet" d="M 65,-35 c -5,0 -5,5 -10,5 h -80" />
-   <path id="bomm_1_10" d="M 48,-30 q 4,0 7,3 q 4.5,4.5 4.5,10.5 a 15,15 0,0,1 -15,15 h -5 q -6,0 -10.5,-4.5 l -22.5,-22.5 q -1.5,-1.5 -3.5,-1.5 c -5,0 -5,-5 -10,-5 c -10,0 -10,-10 -20,-10" />
-   <path id="bomm_02" class="endet" d="M 43,-30 q 2,0 3.5,1.5 l 10,10" />
-   <path id="bomm_03" class="endet" d="M 38,-30 q 2,0 3.5,1.5 l 15,15" />
-   <path id="bomm_04" class="endet" d="M 31.5,-28.5 c 3,3 5,0 8,3 l 16,16" />
-   <path id="bomm_05" class="endet" d="M 28,-30 q 2,0 3.5,1.5 l 21,21" />
-   <path id="bomm_06" class="endet" d="M 23,-30 q 2,0 3.5,1.5 l 23,23" />
-   <path id="bomm_07" class="endet" d="M 18,-30 q 2,0 3.5,1.5 l 24,24" />
-   <path id="bomm_08" class="endet" d="M 6.5,-28.5 q 1.5,1.5 3.5,1.5 h 6 q 2,0 3.5,1.5 l 21,21" />
-   <path id="bomm_09" class="endet" d="M 11,-27 q 2,0 3.5,1.5 l 21,21" />
-   <path id="bomm_11" class="endet" d="M 11.5,-20.5 q 0,2 1.5,3.5 l 15,15" />
-   <path id="bomm_12" class="endet" d="M 10,-25 q 1.5,1.5 1.5,3.5 v 6 q 0,2 1.5,3.5 l 10,10" />
+   <path id="bomm_O1" class="endet" d="M 65,-35 c -5,0 -5,5 -10,5 h -70" />
+   <path id="bomm_01" class="endet" d="M 43,-30 q 2,0 3.5,1.5 l 8,8" />
+   <path id="bomm_02" class="endet" d="M 38,-30 q 2,0 3.5,1.5 l 10.5,10.5" />
+   <path id="bomm_03" class="endet" d="M 31.5,-28.5 c 3,3 5,0 8,3 l 15.5,15.5" />
+   <path id="bomm_04" class="endet" d="M 28,-30 q 2,0 3.5,1.5 l 21,21" />
+   <path id="bomm_05" class="endet" d="M 21.5,-28.5 c 3,3 5,0 8,3 l 20.5,20.5" />
+   <path id="bomm_06" class="endet" d="M 18,-30 q 2,0 3.5,1.5 l 26,26" />
+   <path id="bomm_07" class="endet" d="M 13,-30 q 2,0 3.5,1.5 l 28.5,28.5" />
+   <path id="bomm_08" class="endet" d="M -22,-45 c 10,0 10,10 20,10 c 5,0 5,5 10,5 q 2,0 3.5,1.5 l 31,31" />
+   <path id="bomm_09" class="endet" d="M 14.5,-25.5 q 1.5,1.5 1.5,3.5 v 1 q 0,2 1.5,3.5 l 22.5,22.5" />
+   <path id="bomm_10" d="M 48,-30 a 21,21 0,0,1 21,21 a 21,21 0,0,1 -21,21 q -6,0 -10.5,-4.5 l -23.5,-23.5 q -1.5,-1.5 -1.5,-3.5 v -6 q 0,-2 -1.5,-3.5" />
+   <path id="bomm_11" class="endet" d="M 12.5,-14.5 q 0,2 1.5,3.5 l 21,21" />
+   <path id="bomm_12" class="endet" d="M 12.5,-20.5 v 11 q 0,2 1.5,3.5 l 18.5,18.5" />
   </g>
-  <path d="M 72,-45 h -100 a 20,20 0,0,1 -20,-20 m -10,0 a 30,30 0,0,0 30,30 h 100" />
+  <path d="M 139,-27 q -18,-18 -42,-18 h -120 a 20,20 0,0,1 -20,-20 m -10,0 a 30,30 0,0,0 30,30 h 120 q 20,0 35,15" />
+  <g id="hst555_bstg" transform="translate(82,-40)" class="achtzig"><use xlink:href="#bstg_außen" transform="rotate(90)" /></g>
+  <g id="gleisnummern_bommersheim" display="none">
+   <path class="gebaude wand" id="bom_hal1" d="M 49.5,-25.5 m 1.25,-1.25 l 7,7 l -5,5 l -7,-7 l 5,-5" />
+   <path class="gebaude wand" id="bom_hal2" d="M 42.5,-22.5 m 1.25,-1.25 l 14,14 l -10,10 l -14,-14 l 10,-10" />
+   <g class="bgleisnummer" transform="translate(52,-22)"><circle cy="-1" r="2" /><text>1</text></g>
+   <g class="bgleisnummer" transform="translate(47,-22)"><circle cy="-1" r="2" /><text>2</text></g>
+   <g class="bgleisnummer" transform="translate(52,-12)"><circle cy="-1" r="2" /><text>3</text></g>
+   <g class="bgleisnummer" transform="translate(47,-12)"><circle cy="-1" r="2" /><text>4</text></g>
+   <g class="bgleisnummer" transform="translate(42,-12)"><circle cy="-1" r="2" /><text>5</text></g>
+   <g class="bgleisnummer" transform="translate(37,-12)"><circle cy="-1" r="2" /><text>6</text></g>
+   <g class="bgleisnummer" transform="translate(42,-02)"><circle cy="-1" r="2" /><text>7</text></g>
+   <g class="bgleisnummer" transform="translate(37,-02)"><circle cy="-1" r="2" /><text>8</text></g>
+   <g class="bgleisnummer" transform="translate(32,-02)"><circle cy="-1" r="2" /><text>9</text></g>
+   <g class="bgleisnummer" transform="translate(27,-02)"><circle cy="-1" r="2" /><text>10</text></g>
+   <g class="bgleisnummer" transform="translate(22,-02)"><circle cy="-1" r="2" /><text>11</text></g>
+   <g class="bgleisnummer" transform="translate(17,-02)"><circle cy="-1" r="2" /><text>12</text></g>
+   <g class="bgleisnummer" transform="translate(-5,-29)"><circle cy="-1" r="2" /><text>O1</text></g>
+  </g>
  </g>
  <g id="bb_ost" class="strecke" transform="translate(815,1245)">
   <g class="bb">
@@ -952,7 +970,7 @@
  <g id="texte">
   <text x="43" y="540" class="ab_bb te">BB Heddernheim</text>
   <text x="-140" y="714" class="ab_bb te">AB Römerstadt</text>
-  <text x="-400" y="90" class="ab_bb tm">AB Bommersheim</text>
+  <text x="-397" y="90" class="ab_bb te">AB Bommersheim</text>
   <text x="210" y="929" class="ab_bb te">AB Eckenheim</text>
   <text x="700" y="1247" class="ab_bb te">BB Ost</text>
   <text x="-660" y="775" class="ab_bb te">Stadtbahnzentralwerkstatt</text>
