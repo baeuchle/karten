@@ -681,7 +681,8 @@
    <path id="hippodrom_drittesgleis" d="M -15,395 c 0,-5 10,-5 10,-10 v -15" />
    <path id="abzw_vogelweid_1" d="M -15,400 a 20,20 0,0,0 -20,-20" />
    <path id="abzw_vogelweid_2" d="M -25,400 a 10,10 0,0,0 -10,-10" />
-   <path id="gw_stresemannallee" class="bb" d="M -15,405 c 0,5 -10,5 -10,10" />
+   <!--NICHT MEHR IN PF-UNTERLAGEN <path id="gw_stresemannallee" class="bb" d="M -15,405 c 0,5 -10,5 -10,10" />-->
+   <path id="lieschen" d="M -25,475 a 20,20 0,0,0, -20,-20" />
   </g>
    <path id="zweitesgleis_rebstöcker" class="geplant" d="M -282,140 l -55,-55" />
  </g>
