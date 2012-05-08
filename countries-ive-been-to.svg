@@ -54,6 +54,7 @@ path {
 .in path, path.in,
 .ca path, path.ca,
 .nl path, path.nl
+.pl path, path.pl
 
 { fill:#ffff00; }
 
