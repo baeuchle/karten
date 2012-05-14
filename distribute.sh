@@ -12,7 +12,9 @@ echo "Moving countries"
 mv countries-ive-been-to*.png ~/public_html/bilder/
 cp countries-ive-been-to.svg  ~/public_html/bilder/
 
-cp ubahnnetz.svg straßenbahnnetz.svg ~/public_html/bilder/
+echo "Moving Netzplaene"
+cp ubahnnetz.svg straßenbahnnetz.svg ~/public_html/images/
 
+echo "Entscripten"
 ./entscripten.pl < ubahnnetz.svg > ubahnnetz.wiki.svg
 ./entscripten.pl < straßenbahnnetz.svg > straßenbahnnetz.wiki.svg
