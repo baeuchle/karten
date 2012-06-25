@@ -222,16 +222,16 @@
   <g id="bstg_ecke1"><use xlink:href="#bahnsteig" transform="translate(5,0)" /><use xlink:href="#bahnsteig" transform="translate(-30,-25) rotate(90)" /></g>
   <g id="bstg_dosto"><use xlink:href="#bahnsteig" transform="rotate(45)" /><use xlink:href="#bahnsteig" transform="translate(5,0) rotate(45)" /></g>
   <g id="bstg_haupt">
-   <use xlink:href="#bahnsteig" class="neunzig" transform="translate(-15,0) rotate(180)" />
+   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(-15,0) rotate(180)" />
    <use xlink:href="#sbahn" transform="translate(-5,0)" />
    <use xlink:href="#sbahn" transform="translate(5,0) rotate(180) translate(0,-35)" />
-   <use xlink:href="#bahnsteig" class="neunzig" transform="translate(15,0)" />
+   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(15,0)" />
   </g>
   <g id="bstg_konst">
-   <use xlink:href="#bahnsteig" class="neunzig" transform="translate(-15,0)" />
+   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(-15,0)" />
    <use xlink:href="#sbahn" transform="translate(5,0)" />
    <use xlink:href="#sbahn" transform="translate(-5,0) rotate(180) translate(0,-35)" />
-   <use xlink:href="#bahnsteig" class="neunzig" transform="translate(15,0) rotate(180)" />
+   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(15,0) rotate(180)" />
   </g>
   <rect class="label" id="kasten3" y="-6" width="58" height="12" rx="2" ry="2" />
   <use xlink:href="#kasten3" id="kastenC" x="-58" />
@@ -592,18 +592,18 @@
   <g id="hst322" transform="translate(-470,1025)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Hausener Weg</text></g>
   <g id="hst321" transform="translate(-442.5,1109.5)" class="achtzig te"><use xlink:href="#bstg_außen" transform="rotate(-45)" /><text x="-5.5" y="21.5">Fischstein</text></g>
   <g id="hst317" transform="translate(-372.5,1179.5)" class="achtzig te"><use xlink:href="#bstg_außen" transform="rotate(-45)" /><text x="-5.5" y="21.5">Industriehof</text></g>
-  <g id="hst316" transform="translate(-302.5,1249.5)" class="neunzig"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="5.5" y="-5.5">Kirchplatz</text></g>
-  <g id="hst315" transform="translate(-231,1318)" class="neunzig te"><use xlink:href="#bstg_dosto" transform="scale(1,-1)" /><text x="-12" y="5">Leipziger Straße</text></g>
-  <g id="hst314" transform="translate(-162.5,1389.5)" class="neunzig te"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="-14.5" y="6.5">Bockenheimer Warte</text></g>
-  <g id="hst313" transform="translate(-92.5,1459.5)" class="neunzig te"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="-14.5" y="6.5">Westend</text></g>
-  <g id="hst312" transform="translate(-22.5,1529.5)" class="neunzig te"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="-14.5" y="6.5">Alte Oper</text></g>
+  <g id="hst316" transform="translate(-302.5,1249.5)" class="achtzig"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="5.5" y="-5.5">Kirchplatz</text></g>
+  <g id="hst315" transform="translate(-231,1318)" class="achtzig te"><use xlink:href="#bstg_dosto" transform="scale(1,-1)" /><text x="-12" y="5">Leipziger Straße</text></g>
+  <g id="hst314" transform="translate(-162.5,1389.5)" class="achtzig te"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="-14.5" y="6.5">Bockenheimer Warte</text></g>
+  <g id="hst313" transform="translate(-92.5,1459.5)" class="achtzig te"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="-14.5" y="6.5">Westend</text></g>
+  <g id="hst312" transform="translate(-22.5,1529.5)" class="achtzig te"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="-14.5" y="6.5">Alte Oper</text></g>
   <use id="hst311" xlink:href="#bstg_haupt" transform="translate(115,1580) rotate(90)" />
   <use id="hst811" xlink:href="#bstg_konst" transform="translate(260,1580) rotate(90)" />
-  <g id="hst812" transform="translate(424,1570)" class="neunzig te"><use xlink:href="#bahnsteig" class="neunzig" transform="translate(0,15) rotate(-90)" /><use xlink:href="#bstg_mitte" transform="rotate(90)" /><text x="0" y="30">Zoo</text></g>
+  <g id="hst812" transform="translate(424,1570)" class="achtzig te"><use xlink:href="#bahnsteig" transform="translate(0,15) rotate(-90)" /><use xlink:href="#bstg_mitte" transform="rotate(90)" /><text x="0" y="30">Zoo</text></g>
   <g id="hst813" transform="translate(507.5,1549.5)" class="achtzig"><use xlink:href="#bstg_mitte" transform="rotate(45)" /><text x="9.5" y="15.5">Habsburgerallee</text></g>
-  <g id="hst814" transform="translate(577.5,1479.5)" class="neunzig"><use xlink:href="#bstg_mitte" transform="rotate(45)" /><text x="9.5" y="15.5">Parlamentsplatz</text></g>
-  <g id="hst815" transform="translate(647.5,1409.5)" class="neunzig"><use xlink:href="#bstg_mitte" transform="rotate(45)" /><text x="9.5" y="15.5">Eissporthalle/Festplatz</text></g>
-  <g id="hst821" transform="translate(741,1363)" class="neunzig">
+  <g id="hst814" transform="translate(577.5,1479.5)" class="achtzig"><use xlink:href="#bstg_mitte" transform="rotate(45)" /><text x="9.5" y="15.5">Parlamentsplatz</text></g>
+  <g id="hst815" transform="translate(647.5,1409.5)" class="achtzig"><use xlink:href="#bstg_mitte" transform="rotate(45)" /><text x="9.5" y="15.5">Eissporthalle/Festplatz</text></g>
+  <g id="hst821" transform="translate(741,1363)" class="achtzig">
    <use xlink:href="#bstg_außen" transform="rotate(90)" />
    <text x="0" y="22">Johanna-Tesch-Platz</text>
   </g>
