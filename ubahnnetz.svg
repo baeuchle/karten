@@ -221,18 +221,6 @@
   <g id="bstg_vers3"><use xlink:href="#bahnsteig" transform="translate(-5,-10) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,10)" /></g>
   <g id="bstg_ecke1"><use xlink:href="#bahnsteig" transform="translate(5,0)" /><use xlink:href="#bahnsteig" transform="translate(-30,-25) rotate(90)" /></g>
   <g id="bstg_dosto"><use xlink:href="#bahnsteig" transform="rotate(45)" /><use xlink:href="#bahnsteig" transform="translate(5,0) rotate(45)" /></g>
-  <g id="bstg_haupt">
-   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(-15,0) rotate(180)" />
-   <use xlink:href="#sbahn" transform="translate(-5,0)" />
-   <use xlink:href="#sbahn" transform="translate(5,0) rotate(180) translate(0,-35)" />
-   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(15,0)" />
-  </g>
-  <g id="bstg_konst">
-   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(-15,0)" />
-   <use xlink:href="#sbahn" transform="translate(5,0)" />
-   <use xlink:href="#sbahn" transform="translate(-5,0) rotate(180) translate(0,-35)" />
-   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(15,0) rotate(180)" />
-  </g>
   <rect class="label" id="kasten3" y="-6" width="58" height="12" rx="2" ry="2" />
   <use xlink:href="#kasten3" id="kastenC" x="-58" />
   <rect class="label" id="kasten4" y="-6" width="60" height="12" rx="2" ry="2" />
@@ -288,7 +276,7 @@
    <text class="ab_bb" x="30" y="75">Stand: Planfeststellungsverfahren</text>
    <text class="hochstatio" x="20" y="95" onclick="geplant('verlängerung_europaviertel')">Europaviertel: Hauptbahnhof → Wohnpark <tspan class="link" id="verlängerung_europaviertel_aktion">verstecken</tspan></text>
    <text class="ab_bb" x="30" y="110">Stand: Vorplanung</text>
-   <text class="hochstatio" x="20" y="130" onclick="geplant('ginnheimer_kurve')">Ginnheimer Kurve: Ginnheim → Bockenheimer Warte <tspan class="link" id="ginnheimer_kurve_aktion">einbauen</tspan></text>
+   <text class="hochstatio" x="20" y="130" onclick="geplant('ginnheimer_kurve')">Ginnheimer Kurve: Ginnheim → Bockenheimer Warte <tspan class="link" id="ginnheimer_kurve_aktion">verstecken</tspan></text>
    <text class="ab_bb" x="30" y="145">Stand: Machbarkeitsstudie</text>
    <text class="hochstatio" x="20" y="165" onclick="geplant('frankfurter_berg')">Frankfurter Berg: Preungesheim → Frankfurter Berg <tspan class="link" id="frankfurter_berg_aktion">verstecken</tspan></text>
    <text class="ab_bb" x="30" y="180">Stand: Planfeststellungsverfahren wird vorbereitet</text>
@@ -536,17 +524,23 @@
   <g id="hst415" transform="translate(-125,780)" class="funfzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Niddapark</text></g>
   <g id="hst414" transform="translate(-125,900)"><use xlink:href="#bahnsteig" class="nullzig" transform="translate(-15,0)" /><g class="funfzig te"><use xlink:href="#bstg_außen" /><use xlink:href="#bahnsteig" transform="translate(15,0) rotate(180)" /><text x="-25" y="-6">Ginnheim</text></g></g>
   <g id="hst641" transform="translate(65,385)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Sandelmühle</text></g>
-  <g id="hst642" transform="translate(65,285)" class="funfzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Riedwiese/Mertonviertel</text></g>
+  <g id="hst642" transform="translate(65,285)" class="achtzig">
+   <use xlink:href="#bstg_außen" />
+   <text x="20" y="5">Riedwiese/Mertonviertel</text>
+   <use xlink:href="#bau" transform="translate(-10,-5)"/>
+   <use xlink:href="#bau" transform="translate(10,-5)"/>
+   <text x="20" y="15" class="ab_bb">Umbau bis voraussichtlich Dezember 2012</text>
+  </g>
   <g id="hst651" transform="translate(165,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Kalbach</text></g>
   <g id="hst652" transform="translate(265,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="25">Bonames Mitte</text></g>
   <g id="hst653" transform="translate(365,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Nieder-Eschbach</text></g>
   <g id="hst655" transform="translate(490,135)" class="achtzig te"><use xlink:href="#bstg_außen" />
-    <use xlink:href="#bau" transform="translate(-10,-5)"/>
-    <use xlink:href="#uml" transform="translate(-10,15) rotate(90)"/>
-    <use xlink:href="#bau" transform="translate(10,-5)"/>
-    <use xlink:href="#uml" transform="translate(10,15) rotate(90)"/>
-    <text x="-20" y="5">Ober-Eschbach</text>
-    <text x="-20" y="15" class="ab_bb">Umbau bis voraussichtlich Juni 2012</text>
+   <use xlink:href="#bau" transform="translate(-10,-5)"/>
+   <use xlink:href="#uml" transform="translate(-10,15) rotate(90)"/>
+   <use xlink:href="#bau" transform="translate(10,-5)"/>
+   <use xlink:href="#uml" transform="translate(10,15) rotate(90)"/>
+   <text x="-20" y="5">Ober-Eschbach</text>
+   <text x="-20" y="15" class="ab_bb">Umbau (ursprünglich bis Juni 2012 geplant)</text>
   </g>
   <g id="hst656" transform="translate(490,30)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Bad Homburg Gonzenheim</text></g>
   <g id="hst551" transform="translate(-158,315)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Wiesenau</text></g>
@@ -597,17 +591,27 @@
   <g id="hst314" transform="translate(-162.5,1389.5)" class="achtzig te"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="-14.5" y="6.5">Bockenheimer Warte</text></g>
   <g id="hst313" transform="translate(-92.5,1459.5)" class="achtzig te"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="-14.5" y="6.5">Westend</text></g>
   <g id="hst312" transform="translate(-22.5,1529.5)" class="achtzig te"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="-14.5" y="6.5">Alte Oper</text></g>
-  <use id="hst311" xlink:href="#bstg_haupt" transform="translate(115,1580) rotate(90)" />
-  <use id="hst811" xlink:href="#bstg_konst" transform="translate(260,1580) rotate(90)" />
+  <g id="hst311" transform="translate(115,1580) rotate(90)">
+   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(-15,0) rotate(180)" />
+   <use xlink:href="#sbahn" transform="translate(-5,0)" />
+   <use xlink:href="#sbahn" transform="translate(5,0) rotate(180) translate(0,-35)" />
+   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(15,0)" />
+  </g>
+  <g id="hst811" transform="translate(260,1580) rotate(90)">
+   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(-15,0)" />
+   <use xlink:href="#sbahn" transform="translate(5,0)" />
+   <use xlink:href="#sbahn" transform="translate(-5,0) rotate(180) translate(0,-35)" />
+   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(15,0) rotate(180)" />
+  </g>
   <g id="hst812" transform="translate(424,1570)" class="achtzig te"><use xlink:href="#bahnsteig" transform="translate(0,15) rotate(-90)" /><use xlink:href="#bstg_mitte" transform="rotate(90)" /><text x="0" y="30">Zoo</text></g>
   <g id="hst813" transform="translate(507.5,1549.5)" class="achtzig"><use xlink:href="#bstg_mitte" transform="rotate(45)" /><text x="9.5" y="15.5">Habsburgerallee</text></g>
   <g id="hst814" transform="translate(577.5,1479.5)" class="achtzig"><use xlink:href="#bstg_mitte" transform="rotate(45)" /><text x="9.5" y="15.5">Parlamentsplatz</text></g>
   <g id="hst815" transform="translate(647.5,1409.5)" class="achtzig"><use xlink:href="#bstg_mitte" transform="rotate(45)" /><text x="9.5" y="15.5">Eissporthalle/Festplatz</text></g>
-  <g id="hst821" transform="translate(741,1363)" class="achtzig">
+  <g id="hst821" transform="translate(766,1363)" class="achtzig">
    <use xlink:href="#bstg_außen" transform="rotate(90)" />
-   <text x="0" y="22">Johanna-Tesch-Platz</text>
+   <text x="-25" y="22">Johanna-Tesch-Platz</text>
   </g>
-  <g id="hst821_tram" transform="translate(766,1363) scale(.5,1)" class="nullzig">
+  <g id="hst821_tram" transform="translate(741,1363) scale(.5,1)" class="nullzig">
    <use xlink:href="#bstg_außen" transform="rotate(-90)" />
   </g>
   <g id="hst822" transform="translate(828,1284)"><text x="15" y="5">Schäfflestraße</text></g>
@@ -953,7 +957,7 @@
    <text x="420" y="400" class="te" style="stroke-dasharray:none; " id="frankfurter_berg_erkl">Geplante Verlängerung, vsl. 2013</text>
   </g>
 
-  <g id="ginnheimer_kurve" class="geplant" display="block" transform="translate(45,0)">
+  <g id="ginnheimer_kurve" class="geplant" display="inline" transform="translate(45,0)">
    <g class="te">
     <rect style="fill:white; stroke:none" x="-150" y="820" width="50" height="101" />
     <path id="ginnheimerkurve_1" d="M -130,820 v 380" />

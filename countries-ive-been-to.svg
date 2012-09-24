@@ -56,16 +56,17 @@ path {
 .in path, path.in,
 .ca path, path.ca,
 .nl path, path.nl,
-.pl path, path.pl
+.pl path, path.pl,
+.ba path, path.ba
 
 /*,
 .by path, path.by,
-.ua path, path.ua,
+.ua path, path.ua*//*,
 .mk path, path.mk,
 .kosovo path, path.kosovo,
 .al path, path.al,
-.me path, path.me,
-.ba path, path.ba*//*,
+.me path, path.me
+*//*,
 
 .ma path, path.ma,
 .dz path, path.dz,
