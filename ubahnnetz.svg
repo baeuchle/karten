@@ -534,14 +534,7 @@
   <g id="hst651" transform="translate(165,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Kalbach</text></g>
   <g id="hst652" transform="translate(265,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="25">Bonames Mitte</text></g>
   <g id="hst653" transform="translate(365,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Nieder-Eschbach</text></g>
-  <g id="hst655" transform="translate(490,135)" class="achtzig te"><use xlink:href="#bstg_außen" />
-   <use xlink:href="#bau" transform="translate(-10,-5)"/>
-   <use xlink:href="#uml" transform="translate(-10,15) rotate(90)"/>
-   <use xlink:href="#bau" transform="translate(10,-5)"/>
-   <use xlink:href="#uml" transform="translate(10,15) rotate(90)"/>
-   <text x="-20" y="5">Ober-Eschbach</text>
-   <text x="-20" y="15" class="ab_bb">Umbau (ursprünglich bis Juni 2012 geplant)</text>
-  </g>
+  <g id="hst655" transform="translate(490,135)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Ober-Eschbach</text></g>
   <g id="hst656" transform="translate(490,30)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Bad Homburg Gonzenheim</text></g>
   <g id="hst551" transform="translate(-158,315)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Wiesenau</text></g>
   <g id="hst552" transform="translate(-158,215)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Niederursel</text></g>
