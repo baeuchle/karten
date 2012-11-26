@@ -899,7 +899,7 @@
  </g>
  <g id="bahnsteige" class="strecke">
   <g id="verlängerung_badhomburg" class="geplant" display="inline" transform="translate(30,0)">
-   <rect style="fill:white; stroke:none;" width="30" height="85" x="475" y="5" />
+   <rect style="fill:white; stroke:none;" width="12" height="85" x="484" y="5" />
    <path id="badhomburg_1a" d="M 495,90 v -40" />
    <path id="badhomburg_1b" class="tunnel" d="M 495,50 v -35 c 0,-5 -5,-5 -5,-10 v -40" />
    <path id="badhomburg_1c" class="endet" d="M 490,-35 v -20 c 0,-5 5,-5 5,-10 v -145" />
@@ -909,10 +909,7 @@
    <path id="gw_badhomburg" class="bb" d="M 485,-110 c 0,-10 10,-10 10,-20" />
    <use id="rampe_gonzenheim" xlink:href="#tunnelrampe" transform="translate(490,50) rotate(180)" />
    <use id="rampe_badhomburg" xlink:href="#tunnelrampe" transform="translate(490,-35)" />
-   <use xlink:href="#bstg_außen" id="hst656_neu" transform="translate(490,30)" class="achtzig" />
    <g id="hst657" transform="translate(495,-145)" class="achtzig te"><use xlink:href="#bahnsteig" /><use xlink:href="#bahnsteig" transform="translate(0,-45)" /><text x="-15" y="5">Bad Homburg Bahnhof</text></g>
-   <use id="bstg_badhomburg_1" xlink:href="#bahnsteig" class="achtzig" transform="translate(495,-145)" />
-   <use id="bstg_badhomburg_2" xlink:href="#bahnsteig" class="achtzig" transform="translate(495,-190)" />
    <text x="475" y="-105" class="te" style="stroke-dasharray:none;" id="verlängerung_badhomburg_erkl">Geplante Verlängerung, vsl. 2016</text>
   </g>
   <g id="verlängerung_europaviertel" class="geplant" display="inline" transform="translate(0,30)">
@@ -939,15 +936,9 @@
    <path id="frankfurterberg_1" class="endet" d="M 440,565 v -250" />
    <path id="frankfurterberg_2" class="faeng" d="M 430,315 v 250" />
    <path id="gw_frankfurterberg" class="bb" d="M 430,390 c 0,-10 10,-10 10,-20 c 0,-10 -10,-10 -10,-20" />
-   <use id="bstg_augustschanzestraße_1" xlink:href="#bahnsteig" class="achtzig" transform="translate(430,505) rotate(180)" />
-   <use id="bstg_augustschanzestraße_2" xlink:href="#bahnsteig" class="achtzig" transform="translate(440,505)" />
-   <use id="bstg_berkersheimerweg_1" xlink:href="#bahnsteig" class="achtzig" transform="translate(430,425) rotate(180)" />
-   <use id="bstg_berkersheimerweg_2" xlink:href="#bahnsteig" class="achtzig" transform="translate(440,425)" />
-   <use id="bstg_frankfurterberg_1" xlink:href="#bahnsteig" class="achtzig" transform="translate(430,335)" />
-   <use id="bstg_frankfurterberg_2" xlink:href="#bahnsteig" class="achtzig" transform="translate(440,335) rotate(180)" />
-   <text style="stroke:none; fill:black; " transform="translate(450,509)">August-Schanz-Straße</text>
-   <text style="stroke:none; fill:black; " transform="translate(450,429)">Berkersheimer Weg</text>
-   <text style="stroke:none; fill:black; " transform="translate(450,339)">Frankfurter Berg</text>
+   <g id="hst633" transform="translate(435,505)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">August-Schanz-Straße</text></g>
+   <g id="hst634" transform="translate(435,425)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Berkersheimer Weg</text></g>
+   <g id="hst635" transform="translate(435,335)" class="achtzig"><use xlink:href="#bstg_mitte" /><text x="15" y="5">Frankfurter Berg</text></g>
    <text x="420" y="400" class="te" style="stroke-dasharray:none; " id="frankfurter_berg_erkl">Geplante Verlängerung, vsl. 2013</text>
   </g>
 
@@ -959,17 +950,10 @@
     <use id="rampe_bundesbank" xlink:href="#tunnelrampe" transform="translate(-125,1200)" />
     <path id="ginnheimertunnel_1" class="tunnel" d="M -130,1200 V 1284 c 0,8 -1,8 -1,16" />
     <path id="ginnheimertunnel_2" class="tunnel" d="M -119,1300 c 0,-8 -1,-8 -1,-16 V 1200" />
-    <use id="bstg_ginnheim_neu_1" xlink:href="#bahnsteig" class="achtzig" transform="translate(-120,880)" />
-    <use id="bstg_ginnheim_neu_2" xlink:href="#bahnsteig" class="achtzig" transform="translate(-130,880) rotate(180)" />
-    <use id="bstg_platenstraße_1" xlink:href="#bahnsteig" class="achtzig" transform="translate(-120,980)" />
-    <use id="bstg_platenstraße_2" xlink:href="#bahnsteig" class="achtzig" transform="translate(-130,980) rotate(180)" />
-    <use id="bstg_bundesbank_1" xlink:href="#bahnsteig" class="achtzig" transform="translate(-120,1080)" />
-    <use id="bstg_bundesbank_2" xlink:href="#bahnsteig" class="achtzig" transform="translate(-130,1080) rotate(180)" />
-    <use id="bstg_unicampuswestend_1" xlink:href="#bahnsteig" class="achtzig" transform="translate(-120,1180)" />
-    <use id="bstg_unicampuswestend_2" xlink:href="#bahnsteig" class="achtzig" transform="translate(-130,1180) rotate(180)" />
-    <text style="stroke:none; fill:black; " transform="translate(-140,984)">Platenstraße</text>
-    <text style="stroke:none; fill:black; " transform="translate(-140,1084)">Bundesbank</text>
-    <text style="stroke:none; fill:black; " transform="translate(-140,1184)">Uni Campus Westend</text>
+    <g id="hstginnh_neu" transform="translate(-125, 880)" class="achtzig"><use xlink:href="#bstg_außen" /></g>
+    <g id="hstplatenstr" transform="translate(-125, 980)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Platenstraße</text></g>
+    <g id="hstbundesban" transform="translate(-125,1080)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Bundesbank</text></g>
+    <g id="hstbundesban" transform="translate(-125,1180)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Uni Campus Westend</text></g>
     <g transform="translate(-140,1134)" id="ginnheimer_kurve_erkl" display="inline"><text y="-6">Vorgeschlagener Lückenschluss</text><text y="6">"Ginnheimer Kurve"</text></g>
    </g>
   </g>
