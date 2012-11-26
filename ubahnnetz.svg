@@ -58,7 +58,7 @@
   .unterschrift { font-size:18pt;fill:#ff0000;fill-opacity:1;stroke:none; }
   .stand {  font-size:14pt;fill:#000000;fill-opacity:1;stroke:none; }
   .ab_bb { font-size:8pt; fill:black; stroke:none; }
-  text { font-size:10pt; font-family:Sans-Serif; }
+  text { font-size:10pt; font-family:Sans-Serif; fill:black; stroke:none; }
   .verbot circle, path.verbot { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; }
   .verbot text { stroke:black; fill:black; text-anchor:middle; font-size:8pt; }
   path.umleit { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; } 
@@ -116,7 +116,7 @@
     document.getElementById( id + "_erkl" ).setAttribute("display","inline");
     document.getElementById( id + "_aktion" ).firstChild.data = "verstecken";
     if( id == "verlängerung_badhomburg" ) {
-     document.getElementById( "text_gonzenheim" ).setAttribute("class","normalstation");
+     //document.getElementById( "text_gonzenheim" ).setAttribute("class","normalstation");
     }
    } else if( gezeigt == "inline" ) {
     document.getElementById( id ).setAttribute("display","none");
@@ -916,22 +916,23 @@
    <text x="475" y="-105" class="te" style="stroke-dasharray:none;" id="verlängerung_badhomburg_erkl">Geplante Verlängerung, vsl. 2016</text>
   </g>
   <g id="verlängerung_europaviertel" class="geplant" display="inline" transform="translate(0,30)">
-   <path id="gw_europaviertel_2" class="tb" d="M -686,1550 c 10,0 10,-10 20,-10 m -20,0 c 10,0 10,10 20,10 c 5,0 5,-5 10,-5" />
-   <path id="wa_europaviertel_1" class="tb endet" d="M -666,1540 c 5,0 5,5 10,5 h 30" />
-   <path id="europaviertel_1" class="tunnel endet" d="M -282,1540 h -439" />
-   <path id="europaviertel_2" class="tunnel faeng" d="M -721,1550 h 439" />
-   <use id="bstg_wohngarten_b1" xlink:href="#bahnsteig" class="achtzig" transform="translate(-701,1540) rotate(90)" />
-   <use id="bstg_wohngarten_b2" xlink:href="#bahnsteig" class="achtzig" transform="translate(-701,1550) rotate(-90)" />
-   <use id="bstg_europagarten_b1" xlink:href="#bahnsteig" class="achtzig" transform="translate(-571,1540) rotate(90)" />
-   <use id="bstg_europagarten_b2" xlink:href="#bahnsteig" class="achtzig" transform="translate(-571,1550) rotate(-90)" />
-   <use id="bstg_emserbrücke_b1" xlink:href="#bahnsteig" class="achtzig" transform="translate(-471,1540) rotate(90)" />
-   <use id="bstg_emserbrücke_b2" xlink:href="#bahnsteig" class="achtzig" transform="translate(-471,1550) rotate(-90)" />
-   <use id="bstg_güterplatz_b1" xlink:href="#bahnsteig" class="achtzig" transform="translate(-371,1540) rotate(90)" />
-   <use id="bstg_güterplatz_b2" xlink:href="#bahnsteig" class="achtzig" transform="translate(-371,1550) rotate(-90)" />
-   <text class="tm" style="stroke:none; fill:black; " transform="translate(-701,1535)">Wohnpark</text>
-   <text class="tm" style="stroke:none; fill:black; " transform="translate(-571,1535)">Europapark</text>
-   <text class="tm" style="stroke:none; fill:black; " transform="translate(-471,1535)">Emser Brücke</text>
-   <text class="tm" style="stroke:none; fill:black; " transform="translate(-371,1535)">Güterplatz</text>
+   <path id="gw_europaviertel_2" class="bb" d="M -685,1550 c 10,0 10,-10 20,-10 m -20,0 c 10,0 10,10 20,10" /> <!-- c 5,0 5,-5 10,-5" />-->
+   <!--<path id="wa_europaviertel_1" class="bb endet" d="M -666,1540 c 5,0 5,5 10,5 h 30" />-->
+   <path id="europaviertel_1.1" class="tunnel" d="M -282,1540 h -98" />
+   <path id="europaviertel_1.2" class="tunnel" d="M -380,1550 h 98" />
+   <path id="europaviertel_2.1" d="M -380,1540 h -210" />
+   <path id="europaviertel_2.2" d="M -590,1550 h 210" />
+   <path id="europaviertel_3.1" class="tunnel" d="M -590,1540 h -50" />
+   <path id="europaviertel_3.2" class="tunnel" d="M -640,1550 h 50" />
+   <path id="europaviertel_4.1" class="endet" d="M -640,1540 h -80" />
+   <path id="europaviertel_4.2" class="faeng" d="M -720,1550 h 80" />
+   <g id="hstwohnpar" transform="translate(-700,1545)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Wohnpark</text></g>
+   <use id="rampe_europapark_west" xlink:href="#tunnelrampe" transform="translate(-640,1545) rotate(-90)" />
+   <use id="rampe_europapark_ost"  xlink:href="#tunnelrampe" transform="translate(-590,1545) rotate(+90)" />
+   <g id="hsteuropap" transform="translate(-530,1545)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Europapark</text></g>
+   <g id="hstemserbr" transform="translate(-430,1545)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Emser Brücke</text></g>
+   <use id="rampe_gueterplatz" xlink:href="#tunnelrampe" transform="translate(-380,1545) rotate(-90)" />
+   <g id="hstgueterp" transform="translate(-331,1545)" class="achtzig tm"><use xlink:href="#bstg_mitte" transform="rotate(90)" /><text x="0" y="-15">Güterplatz</text></g>
    <text x="-721" y="1570" style="stroke-dasharray:none;" id="verlängerung_europaviertel_erkl">Geplante Verlängerung, vsl. 2016-2017</text>
   </g>
   <g id="frankfurter_berg" class="geplant" display="inline" transform="translate(30,0)">
