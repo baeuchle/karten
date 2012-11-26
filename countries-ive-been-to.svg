@@ -57,7 +57,8 @@ path {
 .ca path, path.ca,
 .nl path, path.nl,
 .pl path, path.pl,
-.ba path, path.ba
+.ba path, path.ba,
+.mc path, path.mc
 
 /*,
 .by path, path.by,
