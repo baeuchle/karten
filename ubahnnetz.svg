@@ -421,7 +421,7 @@
   <path id="abzw_johanna_tesch_platz_2" class="ubergabe" d="M 726,1358 a 15,15 0,0,0 -15,15 v 25" />
   <text transform="translate(713.5,1398) translate(0,12)" class="ref tm">O</text>
   <path id="gw_kruppstr" d="M 833,1102 c 0,10 -10,10 -10,20" />
-  <path id="gw_enkheim" d="M 833,902 c 0,10 -10,10 -10,20 c 0,10 10,10 10,20" />
+  <path id="gw_enkheim" d="M 823,902 c 0,10 10,10 10,20 c 0,10 -10,10 -10,20" />
  </g>
  <g id="gw_d_strecke" class="strecke bb">
   <path id="wa_riedberg" class="endet" d="M 27,150 q 27.5,0 38.5,11.5 M 27,140 q 17.5,0 38.5,21.5 l 15,15" />
