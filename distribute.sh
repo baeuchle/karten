@@ -12,6 +12,11 @@ echo "Moving countries"
 mv countries-ive-been-to*.png ~/public_html/bilder/
 cp countries-ive-been-to.svg  ~/public_html/bilder/
 
+echo "Update date"
+for i in straßenbahnnetz.svg ubahnnetz.svg; do
+    perl -pi -e '@f = localtime(time); $_ =~ s/>.+</sprintf ">%04d-%02d-%02d<", $f[5]+1900, $f[4]+1, $f[3]/gex if /dc:date/' $i
+done
+
 echo "Moving Netzplaene"
 cp ubahnnetz.svg straßenbahnnetz.svg ~/public_html/images/
 
