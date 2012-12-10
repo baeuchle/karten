@@ -68,7 +68,7 @@
   .gleisnummer rect { fill:white; fill-opacity:.7; stroke:black; stroke-width:.3; }
   .gleisnummer text, .beschrift text { fill:black; stroke:none; font-size:3pt; text-anchor:middle; }
   .bgleisnummer circle { fill:white; fill-opacity:.8; stroke:black; stroke-width:.3; }
-  .bgleisnummer text { fill:black; stroke:none; font-size:2pt; text-anchor:middle; }
+  .bgleisnummer text { fill:black; stroke:none; font-size:4pt; text-anchor:middle; }
   .wand { stroke:#93799a; stroke-width:.2; }
   .tor { stroke:black; stroke-width:.3; marker-end:url(#prell); marker-start: url(#prell); }
   .gebaude { fill:#beadad; fill-opacity:.5; }
@@ -729,33 +729,35 @@
     <path class="gebaude wand" id="halle_gutleut" d="M -2.5,40 h -140 v 42.5 h 145 v -12.5 h -5 z" />
     <path class="gebaude wand" id="halle_schleif" d="M -98.5,37.5 h 1 v 35 h -5 v -35 h 1" />
     <path class="gebaude wand" id="halle_waschur" d="M -42.5,87.5 h 2.5 v -5 h -2.5 v -15 h 5 v -32.5 h -20 v 47.5 h -2.5 v 5 h 2.5" />
-    <g transform="translate(-10,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>1</text></g>
-    <g transform="translate(-15,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>2</text></g>
-    <g transform="translate(-20,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>3</text></g>
-    <g transform="translate(-25,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>4</text></g>
-    <g transform="translate(-30,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>5</text></g>
-    <g transform="translate(-35,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>6</text></g>
-    <g transform="translate(-40,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>7</text></g>
-    <g transform="translate(-45,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>8</text></g>
-    <g transform="translate(-50,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>9</text></g>
-    <g transform="translate(-55,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>10</text></g>
-    <g transform="translate(-60,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>11</text></g>
-    <g transform="translate(-65,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>12</text></g>
-    <g transform="translate(-70,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>13</text></g>
-    <g transform="translate(-75,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>14</text></g>
-    <g transform="translate(-80,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>15</text></g>
-    <g transform="translate(-85,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>16</text></g>
-    <g transform="translate(-90,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>17</text></g>
-    <g transform="translate(-95,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>18</text></g>
-    <g transform="translate(-100,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>19</text></g>
-    <g transform="translate(-105,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>20</text></g>
-    <g transform="translate(-110,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>21</text></g>
-    <g transform="translate(-115,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>22</text></g>
-    <g transform="translate(-120,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>23</text></g>
-    <g transform="translate(-125,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>24</text></g>
-    <g transform="translate(-130,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>25</text></g>
-    <g transform="translate(-135,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>26</text></g>
-    <g transform="translate(-140,45)" class="bgleisnummer"><circle cy="-1" r="2" /><text>27</text></g>
+    <g transform="translate(-108,95)" class="beschrift"><path d="M 0,-4 l 8,-8 v -8" /><text>Schleifstand</text></g>
+    <g transform="translate(-28,105)" class="beschrift"><path d="M 0,-4 l -12,-12" /><text>Wasch- und Revisionshalle</text></g>
+    <g transform="translate( -10,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>1</text></g>
+    <g transform="translate( -15,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>2</text></g>
+    <g transform="translate( -20,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>3</text></g>
+    <g transform="translate( -25,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>4</text></g>
+    <g transform="translate( -30,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>5</text></g>
+    <g transform="translate( -35,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>6</text></g>
+    <g transform="translate( -40,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>7</text></g>
+    <g transform="translate( -45,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>8</text></g>
+    <g transform="translate( -50,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>9</text></g>
+    <g transform="translate( -55,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>10</text></g>
+    <g transform="translate( -60,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>11</text></g>
+    <g transform="translate( -65,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>12</text></g>
+    <g transform="translate( -70,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>13</text></g>
+    <g transform="translate( -75,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>14</text></g>
+    <g transform="translate( -80,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>15</text></g>
+    <g transform="translate( -85,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>16</text></g>
+    <g transform="translate( -90,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>17</text></g>
+    <g transform="translate( -95,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>18</text></g>
+    <g transform="translate(-100,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>19</text></g>
+    <g transform="translate(-105,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>20</text></g>
+    <g transform="translate(-110,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>21</text></g>
+    <g transform="translate(-115,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>22</text></g>
+    <g transform="translate(-120,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>23</text></g>
+    <g transform="translate(-125,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>24</text></g>
+    <g transform="translate(-130,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>25</text></g>
+    <g transform="translate(-135,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>26</text></g>
+    <g transform="translate(-140,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>27</text></g>
    </g>
   </g>
   <g id="verkehrsmuseum" transform="translate(-800,575)">
