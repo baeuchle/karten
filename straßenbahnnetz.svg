@@ -49,8 +49,9 @@
   .doppelstrich path { fill:none; stroke:black; stroke-width:.5px; }
 
   .geplant { stroke-dasharray: 1,1; }
-  .verbot circle { stroke:red; stroke-width:2px; fill:white; }
+  .verbot circle, path.verbot { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; }
   .verbot text { stroke:black; fill:black; text-anchor:middle; font-size:8pt; }
+  path.abreis { stroke:red; stroke-width:1; fill:none; }
 
   text { font-size:9pt; font-family:Sans-Serif; }
   .ab_bb { font-size:6pt; }
@@ -140,6 +141,8 @@
    <use xlink:href="#haltestel" transform="translate(0,-3.5)" />
    <use xlink:href="#haltestel" transform="translate(0,+3.5)" />
   </g>
+  <path id="weg" class="abreis" d="M -1.2,-1.2 l 2.4,2.4 m -2.4,0 l 2.4,-2.4" />
+  <path id="bau" class="verbot" d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" />
   <g id="grid">
    <path style="stroke-width:.5px; stroke:#f00;" d="M -3000   0 H 3000" /><path style="stroke-width:.5px; stroke:#00f;" d="M   0 -3000 V 3000" />
    <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  10 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  10 -3000 V 3000" />
@@ -216,6 +219,7 @@
   <text transform="translate(770,-115) translate(10,-5)" class="ab_bb">Anschluss Richtung BB Ost (via Johanna-Tesch-Platz)</text>
   <text transform="translate(-350,200)" class="ab_bb te">BB Gutleut</text>
   <text transform="translate(685,135)" class="ab_bb te">Gleiswerkstätten Riederhöfe</text>
+  <text transform="translate(685,145)" class="ab_bb te">(wird z.Zt. umgebaut)</text>
   <text transform="translate(-780,575) rotate(-45) translate(20,0)" class="ab_bb">Verkehrsmuseum</text>
  </g>
  <g style="visibility:hidden">
@@ -343,7 +347,11 @@
   <g id="hstohp" transform="translate(610,175)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Osthafenplatz</text></g>
   <g id="hstswl" transform="translate(650,175)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Schwedlerstraße</text></g>
   <g id="hstrhf" transform="translate(700,175)" class="dreizig te"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Riederhöfe</text></g>
-  <g id="hstdai" transform="translate(815,175) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_vers2" /><text x="20" y="0" transform="rotate(45)">Daimlerstraße</text></g>
+  <g id="hstdai" transform="translate(815,175) rotate(-90)" class="zehnzig">
+   <use xlink:href="#doppelbst" transform="translate(-5,9) rotate(180)" />
+   <use xlink:href="#bahnsteig" transform="translate(5,-9)" />
+   <text x="20" y="0" transform="rotate(45)">Daimlerstraße</text>
+  </g>
   <g id="hstdie" transform="translate(860,175) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Dieselstraße</text></g>
   <g id="hgrhjs" transform="translate(910,175)">
    <ellipse cx="0" cy="30" rx="30" ry="50" class="hstgruppe" />
@@ -367,7 +375,7 @@
   <g id="hsthei" transform="translate(-205,215) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Heilbronner Straße</text></g>
   <g id="hsthaf" transform="translate(-165,215) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Hafenstraße</text></g>
   <g id="hstpfo" transform="translate(-85,255)" class="te"><use xlink:href="#hstl_außen" transform="rotate(-90)" /><text x="-20" y="0">Pforzheimer Straße</text></g>
-  <g id="hstpdr" transform="translate(-20,100)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Platz der Republik</text></g>
+  <g id="hstpdr" transform="translate(-20,100)" class="dreizig"><use xlink:href="#dobs_außen" /><text x="15" y="5">Platz der Republik</text></g>
   <g id="hstpdr" transform="translate(-20,40)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Hohenstaufenstraße</text></g>
   <g id="hstfhm" transform="translate(-20,0)">
    <path class="bstggruppe" d="M 15,0 a 15,15 0,0,1 -15,15 a 30,30 0,0,1 0,-60 a 15,45 0,0,1 15,45 z" />
@@ -457,7 +465,7 @@
   <g id="hstkgk" transform="translate(-216,95) rotate(-135)"><use xlink:href="#hstl_außen" /><text transform="rotate(135) translate(15,10)">Kriegkstraße</text></g>
   <g id="hstgap" transform="translate(-236,115) rotate(-135)"><use xlink:href="#hstl_außen" /><text transform="rotate(135) translate(15,10)">Galluspark</text></g>
   <g id="hstkri" transform="translate(-282,133) rotate(-45)" class="te">
-   <use xlink:href="#bahnsteig" transform="translate(-5,8) rotate(180)" class="dreizig"/>
+   <use xlink:href="#bahnsteig" transform="translate(-5,8) rotate(180)" class="nullzig"/>
    <use xlink:href="#haltestel" transform="translate(5,-10)" />
    <text transform="rotate(45) translate(-15,5)">Ordnungsamt</text>
   </g>
@@ -667,7 +675,7 @@
    <path id="abzw_vogelweid_1" d="M -15,400 a 20,20 0,0,0 -20,-20" />
    <path id="abzw_vogelweid_2" d="M -25,400 a 10,10 0,0,0 -10,-10" />
    <!--NICHT MEHR IN PF-UNTERLAGEN <path id="gw_stresemannallee" class="bb" d="M -15,405 c 0,5 -10,5 -10,10" />-->
-   <path id="lieschen" d="M -25,475 a 20,20 0,0,0, -20,-20" />
+   <path id="lieschen" d="M -25,475 a 10,10 0,0,0, -10,-10" />
   </g>
    <path id="zweitesgleis_rebstöcker" class="geplant" d="M -282,140 l -55,-55" />
  </g>
@@ -692,6 +700,8 @@
    <path id="gwr_f" d="M 885,-80 c 5,0 5,-5 10,-5" />
    <path id="gwr_g" class="anschluss" d="M 858,-85 q 2,0 3.5,-1.5 l 10,-10" />
    <rect id="brücke_riederhof" class="uberwerf" width="15" height="10" x="897.5" y="-90" />
+   <use xlink:href="#weg" transform="translate(825,-40)" />
+   <use xlink:href="#bau" transform="translate(855,-60) scale(4,4)" />
   </g>
   <g id="bb_gutleut" transform="translate(-250,205)">
    <path id="gut_gw" d="M 20,5 c -5,0 -5,10 -10,10" />
