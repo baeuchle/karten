@@ -408,8 +408,7 @@
   <g id="hstkow" transform="translate(260,120)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Konstablerwache</text></g>
   <g id="hsthdm" transform="translate(260,80)" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Hessendenkmal</text></g>
   <g id="hstfbp" transform="translate(260,40)"><use xlink:href="#hstl_vers1" /><text x="15" y="5">Friedberger Platz</text></g>
-  <!--<g id="hstrfl" transform="translate(260,0)"><use xlink:href="#wien_außen" /><text x="15" y="5">Rohrbachstraße/Friedberger Landstraße</text></g>-->
-  <g id="hstrfl" transform="translate(260,0)"><use xlink:href="#hstl_außen" /><text x="15" y="5">Rohrbachstraße/Friedberger Landstraße</text></g>
+  <g id="hstrfl" transform="translate(260,0)"><use xlink:href="#wien_außen" /><text x="15" y="5">Rohrbachstraße/Friedberger Landstraße</text></g>
  <g id="hstnfh" transform="translate(260,-90)" class="dreizig"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(15,15)">Nibelungenplatz/FH</text></g>
   <g id="hstmün" transform="translate(260,-130)" class="dreizig"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(15,15)">Münzenberger Straße</text></g>
   <g id="hstwap" transform="translate(260,-180)" class="dreizig"><use xlink:href="#bstg_vers2" /><text transform="rotate(-45) translate(15,15)">Wasserpark</text></g>
