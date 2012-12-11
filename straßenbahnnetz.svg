@@ -701,7 +701,7 @@
    <path id="gwr_g" class="anschluss" d="M 858,-85 q 2,0 3.5,-1.5 l 10,-10" />
    <rect id="brücke_riederhof" class="uberwerf" width="15" height="10" x="897.5" y="-90" />
    <use xlink:href="#weg" transform="translate(825,-40)" />
-   <use xlink:href="#bau" transform="translate(855,-60) scale(4,4)" />
+   <use xlink:href="#bau" transform="translate(855,-60)" />
   </g>
   <g id="bb_gutleut" transform="translate(-250,205)">
    <path id="gut_gw" d="M 20,5 c -5,0 -5,10 -10,10" />
