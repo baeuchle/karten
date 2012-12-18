@@ -388,7 +388,6 @@
   <path id="wa_preungesheim_1" d="M 440,650 c 0,-10 -10,-10 -10,-20 c 0,-10 10,-10 10,-20" />
   <path id="wa_preungesheim_2" class="endet" d="M 430,620 c 0,-10 -10,-10 -10,-20 v -35" />
   <path id="gw_sigmund_freud_straße" d="M 430,725 c 0,-10 10,-10 10,-20" />
-  <path id="gw_gießener_straße" d="M 430,945 c 0,-10 10,-10 10,-20" />
   <path id="gw_hauptfriedhof" d="M 270,1245 c 0,-10 10,-10 10,-20" />
   <path id="gw_glauburgstrasse" d="M 270,1335 c 0,-10 10,-10 10,-20" />
   <path id="abzw_glauburgstrasse_1" class="zugabe" d="M 295,1375 h -5 a 10,10 0,0,1 -10,-10" />
