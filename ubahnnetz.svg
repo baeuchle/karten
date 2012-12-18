@@ -402,8 +402,8 @@
   <path id="gw_hbf" class="tb" d="M -222,1620 c 0,-10 -10,-10 -10,-20 m 10,0 c 0,10 -10,10 -10,20" />
  </g>
  <g id="gw_c_strecke" class="strecke bb">
-  <path id="wa_heerstrasse_1" class="endet" d="M -475,685 c 0,-10 10,-10 10,-20 c 0,-10 10,-10 10,-20 v -20" />
-  <path id="wa_heerstrasse_2" d="M -465,685 c 0,-10 -10,-10 -10,-20 c 0,-10 10,-10 10,-20" />
+  <path id="wa_heerstrasse_1" class="endet" d="M -475,685 c 0,-10 10,-10 10,-20" />
+  <path id="wa_heerstrasse_2" d="M -465,685 c 0,-10 -10,-10 -10,-20" />
   <path id="gw_heerstrasse" d="M -475,740 c 0,10 10,10 10,20 c 0,10 -10,10 -10,20" />
   <path id="gw_hausen" d="M -395,941 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20" />
   <path id="gw_nelkenstraße" d="M -385,1121 c 0,10 -10,10 -10,20" />
