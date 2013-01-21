@@ -273,13 +273,13 @@
    <text class="unterschrift" x="20" y="25">Ausbauprojekte</text>
    <text class="script ab_bb" x="20" y="40">Hier oder in entsprechender Stelle der Karte klicken, um die Darstellung zu ändern</text>
    <text class="hochstatio" x="20" y="60" onclick="geplant('verlängerung_badhomburg')">Bad Homburg: Gonzenheim → Bad Homburg Bahnhof <tspan class="link" id="verlängerung_badhomburg_aktion">verstecken</tspan></text>
-   <text class="ab_bb" x="30" y="75">Stand: Dezember 2012</text>
+   <text class="ab_bb" x="30" y="75">Stand: Januar 2013</text>
    <text class="hochstatio" x="20" y="95" onclick="geplant('verlängerung_europaviertel')">Europaviertel: Hauptbahnhof → Wohnpark <tspan class="link" id="verlängerung_europaviertel_aktion">verstecken</tspan></text>
-   <text class="ab_bb" x="30" y="110">Stand: Dezember 2012</text>
+   <text class="ab_bb" x="30" y="110">Stand: Januar 2013</text>
    <text class="hochstatio" x="20" y="130" onclick="geplant('ginnheimer_kurve')">Ginnheimer Kurve: Ginnheim → Bockenheimer Warte <tspan class="link" id="ginnheimer_kurve_aktion">verstecken</tspan></text>
-   <text class="ab_bb" x="30" y="145">Stand: Dezember 2012</text>
+   <text class="ab_bb" x="30" y="145">Stand: Januar 2013</text>
    <text class="hochstatio" x="20" y="165" onclick="geplant('frankfurter_berg')">Frankfurter Berg: Preungesheim → Frankfurter Berg <tspan class="link" id="frankfurter_berg_aktion">verstecken</tspan></text>
-   <text class="ab_bb" x="30" y="180">Stand: Dezember 2012</text>
+   <text class="ab_bb" x="30" y="180">Stand: Januar 2013</text>
   </g>
   <g id="kilometrierungen" transform="translate(-815,330)">
    <rect class="box" width="400" height="160" />
@@ -952,7 +952,7 @@
     <g id="hstginnh_neu" transform="translate(-125, 880)" class="achtzig"><use xlink:href="#bstg_außen" /></g>
     <g id="hstplatenstr" transform="translate(-125, 980)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Platenstraße</text></g>
     <g id="hstbundesban" transform="translate(-125,1080)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Bundesbank</text></g>
-    <g id="hstbundesban" transform="translate(-125,1180)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Uni Campus Westend</text></g>
+    <g id="hstgrueneburgpark" transform="translate(-125,1180)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Grüneburgpark</text></g>
     <g transform="translate(-140,1134)" id="ginnheimer_kurve_erkl" display="inline"><text y="-6">Vorgeschlagener Lückenschluss</text><text y="6">"Ginnheimer Kurve"</text></g>
    </g>
   </g>
