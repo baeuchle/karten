@@ -273,13 +273,13 @@
    <text class="unterschrift" x="20" y="25">Ausbauprojekte</text>
    <text class="script ab_bb" x="20" y="40">Hier oder in entsprechender Stelle der Karte klicken, um die Darstellung zu ändern</text>
    <text class="hochstatio" x="20" y="60" onclick="geplant('verlängerung_badhomburg')">Bad Homburg: Gonzenheim → Bad Homburg Bahnhof <tspan class="link" id="verlängerung_badhomburg_aktion">verstecken</tspan></text>
-   <text class="ab_bb" x="30" y="75">Stand: Januar 2013</text>
+   <text class="ab_bb" x="30" y="75">Status: Planfeststellungsverfahren</text>
    <text class="hochstatio" x="20" y="95" onclick="geplant('verlängerung_europaviertel')">Europaviertel: Hauptbahnhof → Wohnpark <tspan class="link" id="verlängerung_europaviertel_aktion">verstecken</tspan></text>
-   <text class="ab_bb" x="30" y="110">Stand: Januar 2013</text>
+   <text class="ab_bb" x="30" y="110">Status: Vorplanung</text>
    <text class="hochstatio" x="20" y="130" onclick="geplant('ginnheimer_kurve')">Ginnheimer Kurve: Ginnheim → Bockenheimer Warte <tspan class="link" id="ginnheimer_kurve_aktion">verstecken</tspan></text>
-   <text class="ab_bb" x="30" y="145">Stand: Januar 2013</text>
+   <text class="ab_bb" x="30" y="145">Status: Machbarkeitsstudien</text>
    <text class="hochstatio" x="20" y="165" onclick="geplant('frankfurter_berg')">Frankfurter Berg: Preungesheim → Frankfurter Berg <tspan class="link" id="frankfurter_berg_aktion">verstecken</tspan></text>
-   <text class="ab_bb" x="30" y="180">Stand: Januar 2013</text>
+   <text class="ab_bb" x="30" y="180">Status: Planfeststellung wird vorbereitet</text>
   </g>
   <g id="kilometrierungen" transform="translate(-815,330)">
    <rect class="box" width="400" height="160" />
@@ -528,7 +528,7 @@
    <text x="20" y="5">Riedwiese/Mertonviertel</text>
    <use xlink:href="#bau" transform="translate(-10,-5)"/>
    <use xlink:href="#bau" transform="translate(10,-5)"/>
-   <text x="20" y="15" class="ab_bb">Umbau bis voraussichtlich Dezember 2012</text>
+   <text x="20" y="15" class="ab_bb">Umbau bis voraussichtlich März 2013</text>
   </g>
   <g id="hst651" transform="translate(165,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Kalbach</text></g>
   <g id="hst652" transform="translate(265,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="25">Bonames Mitte</text></g>
@@ -929,7 +929,7 @@
    <g id="hstemserbr" transform="translate(-430,1545)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Emser Brücke</text></g>
    <use id="rampe_gueterplatz" xlink:href="#tunnelrampe" transform="translate(-380,1545) rotate(-90)" />
    <g id="hstgueterp" transform="translate(-331,1545)" class="achtzig tm"><use xlink:href="#bstg_mitte" transform="rotate(90)" /><text x="0" y="-15">Güterplatz</text></g>
-   <text x="-721" y="1570" style="stroke-dasharray:none;" id="verlängerung_europaviertel_erkl">Geplante Verlängerung, vsl. 2016-2017</text>
+   <text x="-721" y="1570" style="stroke-dasharray:none;" id="verlängerung_europaviertel_erkl">Geplante Verlängerung, vsl. 2017</text>
   </g>
   <g id="frankfurter_berg" class="geplant" display="inline" transform="translate(30,0)">
    <path id="frankfurterberg_1" class="endet" d="M 440,565 v -250" />
@@ -938,7 +938,7 @@
    <g id="hst633" transform="translate(435,505)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">August-Schanz-Straße</text></g>
    <g id="hst634" transform="translate(435,425)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Berkersheimer Weg</text></g>
    <g id="hst635" transform="translate(435,335)" class="achtzig"><use xlink:href="#bstg_mitte" /><text x="15" y="5">Frankfurter Berg</text></g>
-   <text x="420" y="400" class="te" style="stroke-dasharray:none; " id="frankfurter_berg_erkl">Geplante Verlängerung, vsl. 2013</text>
+   <text x="420" y="400" class="te" style="stroke-dasharray:none; " id="frankfurter_berg_erkl">Geplante Verlängerung, vsl. 2017</text>
   </g>
 
   <g id="ginnheimer_kurve" class="geplant" display="inline" transform="translate(45,0)">
