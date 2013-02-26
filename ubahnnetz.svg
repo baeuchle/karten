@@ -606,7 +606,7 @@
   <g id="hst821_tram" transform="translate(741,1363) scale(.5,1)" class="nullzig">
    <use xlink:href="#bstg_außen" transform="rotate(-90)" />
   </g>
-  <g id="hst822" transform="translate(828,1284)"><text x="15" y="5">Schäfflestraße</text></g>
+  <g id="hst822" transform="translate(828,1284)"><text x="15" y="5">Schäfflestraße</text></g><!--Bahnsteig bei BB Ost-->
   <g id="hst823" transform="translate(828,1184)" class="neunzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Gwinnerstraße</text></g>
   <g id="hst824" transform="translate(828,1084)" class="neunzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Kruppstraße</text></g>
   <g id="hst825" transform="translate(828,984)" class="neunzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Hessen-Center</text></g>
@@ -864,7 +864,7 @@
   <path id="bbost_strecke_1" d="M -200,16 h 105 q 4,0 7,3 l 55.5,55.5 q 4.5,4.5 10.5,4.5 h 20 a 20,20 0,0,0 20,-20" />
   <path id="bbost_strecke_2" d="M 8,59 a 10,10 0,0,1 -10,10 h -20 q -2,0 -3.5,-1.5 l -55.5,-55.5 q -6,-6 -14,-6 h -105" />
   <path d="M 8,-72 v 160 a 25,25 0,0,1 -25,25 m 0,10 a 35,35 0,0,0 35,-35 v -160" />
-  <g id="hst822_bstg" transform="translate(13,39)" class="neunzig"><use xlink:href="#bstg_außen" /></g>
+  <g id="hst822_bstg" transform="translate(13,39)" class="achtzig"><use xlink:href="#bstg_außen" /></g>
   <use id="rampe_ost" xlink:href="#tunnelrampe" transform="translate(-200,11) rotate(90)" />
   <g id="gleisnummern_ost" display="none">
    <path class="gebaude wand" id="ost_hal" d="M -85,68.5 v 3 h -3 v 6 h 3 v 6 h -3 v 3 h 33 v -9 h -3 v -6 h 3 v -3 h -30" />
