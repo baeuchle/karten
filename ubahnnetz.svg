@@ -607,10 +607,10 @@
    <use xlink:href="#bstg_außen" transform="rotate(-90)" />
   </g>
   <g id="hst822" transform="translate(828,1284)"><text x="15" y="5">Schäfflestraße</text></g><!--Bahnsteig bei BB Ost-->
-  <g id="hst823" transform="translate(828,1184)" class="neunzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Gwinnerstraße</text></g>
-  <g id="hst824" transform="translate(828,1084)" class="neunzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Kruppstraße</text></g>
-  <g id="hst825" transform="translate(828,984)" class="neunzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Hessen-Center</text></g>
-  <g id="hst826" transform="translate(828,884)" class="neunzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Enkheim</text></g>
+  <g id="hst823" transform="translate(828,1184)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Gwinnerstraße</text></g>
+  <g id="hst824" transform="translate(828,1084)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Kruppstraße</text></g>
+  <g id="hst825" transform="translate(828,984)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Hessen-Center</text></g>
+  <g id="hst826" transform="translate(828,884)" class="achtzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Enkheim</text></g>
   <g id="hst851" transform="translate(541.5,1654.5)" class="achtzig"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="5.5" y="-5.5">Ostbahnhof</text></g>
 
   <g id="hst353" transform="translate(-390,926)" class="neunzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Hausen</text></g>
