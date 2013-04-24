@@ -523,13 +523,7 @@
   <g id="hst415" transform="translate(-125,780)" class="funfzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Niddapark</text></g>
   <g id="hst414" transform="translate(-125,900)"><use xlink:href="#bahnsteig" class="nullzig" transform="translate(-15,0)" /><g class="funfzig te"><use xlink:href="#bstg_außen" /><use xlink:href="#bahnsteig" transform="translate(15,0) rotate(180)" /><text x="-25" y="-6">Ginnheim</text></g></g>
   <g id="hst641" transform="translate(65,385)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Sandelmühle</text></g>
-  <g id="hst642" transform="translate(65,285)" class="achtzig">
-   <use xlink:href="#bstg_außen" />
-   <text x="20" y="5">Riedwiese/Mertonviertel</text>
-   <use xlink:href="#bau" transform="translate(-10,-5)"/>
-   <use xlink:href="#bau" transform="translate(10,-5)"/>
-   <text x="20" y="15" class="ab_bb">Umbau bis voraussichtlich März 2013</text>
-  </g>
+  <g id="hst642" transform="translate(65,285)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Riedwiese/Mertonviertel</text></g>
   <g id="hst651" transform="translate(165,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Kalbach</text></g>
   <g id="hst652" transform="translate(265,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="25">Bonames Mitte</text></g>
   <g id="hst653" transform="translate(365,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Nieder-Eschbach</text></g>
@@ -613,8 +607,8 @@
   <g id="hst826" transform="translate(828,884)" class="achtzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Enkheim</text></g>
   <g id="hst851" transform="translate(541.5,1654.5)" class="achtzig"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="5.5" y="-5.5">Ostbahnhof</text></g>
 
-  <g id="hst353" transform="translate(-390,926)" class="neunzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Hausen</text></g>
-  <g id="hst351" transform="translate(-390,1041)" class="neunzig"><use xlink:href="#bstg_vers1" /><text x="15" y="5">Große Nelkenstraße</text></g>
+  <g id="hst353" transform="translate(-390,926)" class="achtzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Hausen</text></g>
+  <g id="hst351" transform="translate(-390,1041)" class="achtzig"><use xlink:href="#bstg_vers1" /><text x="15" y="5">Große Nelkenstraße</text></g>
 
   <g id="hst251" transform="translate(-217,1515)" class="neunzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Festhalle/Messe</text></g>
   <use id="hst411" transform="translate(-163.5,1423.5) rotate(45)" class="neunzig" xlink:href="#bstg_mitte" />
