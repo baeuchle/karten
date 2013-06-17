@@ -552,12 +552,18 @@
   <g id="hst616" transform="translate(275,1280)" class="nullzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Deutsche Nationalbibliothek</text></g>
   <g id="hst617" transform="translate(275,1200)" class="nullzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Hauptfriedhof</text></g>
   <g id="hst621" transform="translate(275,1120)" class="nullzig"><use xlink:href="#bstg_vers3" /><text x="15" y="5">Neuer Jüdischer Friedhof</text></g>
-  <g id="hst622" transform="translate(275,1040)" class="nullzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="0">Eckenheimer</text><text x="-15" y="16">Landstraße/</text><text x="-15" y="32">Marbachweg</text></g>
+  <g id="hst622" transform="translate(275,1040)" class="achtzig te">
+   <use xlink:href="#bstg_außen" />
+   <text x="-15" y="0">Eckenheimer</text>
+   <text x="-15" y="16">Landstraße/</text><text x="-15" y="32">Marbachweg</text>
+   <use xlink:href="#bau" transform="translate(10,0)"/>
+   <use xlink:href="#bau" transform="translate(-10,0)"/>
+  </g>
   <use xlink:href="#weg" transform="translate(290,1005)"/>
   <use xlink:href="#weg" transform="translate(290,1015)"/>
   <text x="300" y="1035" class="ab_bb">Umbau aller Stationen zwischen</text>
-  <text x="300" y="1045" class="ab_bb">Marbachweg/Sozialzentrum und</text>
-  <text x="300" y="1055" class="ab_bb">Preungesheim und Sperrung des</text>
+  <text x="300" y="1045" class="ab_bb">Eckenheimer Landstraße/Marbachweg</text>
+  <text x="300" y="1055" class="ab_bb">und Preungesheim und Sperrung des</text>
   <text x="300" y="1065" class="ab_bb">Abschnittes bis voraussichtlich</text>
   <text x="300" y="1075" class="ab_bb">Anfang September 2013.</text>
   <g id="hst623" transform="translate(305,1010)" class="nullzig">
@@ -594,8 +600,8 @@
   </g>
   <g id="hst632" transform="translate(435,585)" class="nullzig">
    <use id="bstg_preungesheim_3" xlink:href="#bahnsteig" transform="translate(-15,0) rotate(180)" />
-   <use xlink:href="#bstg_mitte" class="achtzig"/>
-   <use xlink:href="#bau" transform="translate(0,0)"/>
+   <use xlink:href="#bstg_mitte" class="nullzig"/>
+   <!--<use xlink:href="#bau" transform="translate(0,0)"/>-->
    <text x="15" y="5">Preungesheim</text>
   </g>
 
