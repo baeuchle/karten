@@ -552,26 +552,24 @@
   <g id="hst616" transform="translate(275,1280)" class="nullzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Deutsche Nationalbibliothek</text></g>
   <g id="hst617" transform="translate(275,1200)" class="nullzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Hauptfriedhof</text></g>
   <g id="hst621" transform="translate(275,1120)" class="nullzig"><use xlink:href="#bstg_vers3" /><text x="15" y="5">Neuer Jüdischer Friedhof</text></g>
-  <g id="hst622" transform="translate(275,1040)" class="achtzig te">
+  <g id="hst622" transform="translate(275,1040)" class="nullzig te">
    <use xlink:href="#bstg_außen" />
    <text x="-15" y="0">Eckenheimer</text>
    <text x="-15" y="16">Landstraße/</text><text x="-15" y="32">Marbachweg</text>
-   <use xlink:href="#bau" transform="translate(10,0)"/>
-   <use xlink:href="#bau" transform="translate(-10,0)"/>
   </g>
   <use xlink:href="#weg" transform="translate(290,1005)"/>
   <use xlink:href="#weg" transform="translate(290,1015)"/>
-  <text x="300" y="1035" class="ab_bb">Umbau aller Stationen zwischen</text>
-  <text x="300" y="1045" class="ab_bb">Eckenheimer Landstraße/Marbachweg</text>
-  <text x="300" y="1055" class="ab_bb">und Preungesheim und Sperrung des</text>
-  <text x="300" y="1065" class="ab_bb">Abschnittes bis voraussichtlich</text>
-  <text x="300" y="1075" class="ab_bb">Anfang September 2013.</text>
-  <g id="hst623" transform="translate(305,1010)" class="nullzig">
+  <text x="300" y="1035" class="ab_bb">Kein Betrieb zwischen Marbachweg/</text>
+  <text x="300" y="1045" class="ab_bb">Sozialzentrum und Preungesheim</text>
+  <text x="300" y="1055" class="ab_bb">wegen Umbauten der Haltestellen</text>
+  <text x="300" y="1065" class="ab_bb">bis voraussichtlich Anfang September</text>
+  <text x="300" y="1075" class="ab_bb">2013.</text>
+  <g id="hst623" transform="translate(305,1010)" class="achtzig">
    <use xlink:href="#bstg_außen" transform="rotate(90)" />
    <text x="-15" y="-31">Marbachweg/</text>
    <text x="-15" y="-15">Sozialzentrum</text>
-   <use xlink:href="#weg" transform="translate(0,-10) scale(3)"/>
-   <use xlink:href="#weg" transform="translate(0,+10) scale(3)"/>
+   <use xlink:href="#bau" transform="translate(0,-10)"/>
+   <use xlink:href="#bau" transform="translate(0,+10)"/>
   </g>
   <g id="hstXXX" transform="translate(262,868)" class="nullzig"><text x="10" y="4" class="ab_bb">Schwabstraße</text></g>
   <g id="hst624" transform="translate(405,1010)" class="achtzig">
