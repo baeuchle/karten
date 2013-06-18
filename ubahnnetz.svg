@@ -945,7 +945,7 @@
    <use id="rampe_gonzenheim" xlink:href="#tunnelrampe" transform="translate(490,50) rotate(180)" />
    <use id="rampe_badhomburg" xlink:href="#tunnelrampe" transform="translate(490,-35)" />
    <g id="hst657" transform="translate(495,-145)" class="achtzig te"><use xlink:href="#bahnsteig" /><use xlink:href="#bahnsteig" transform="translate(0,-45)" /><text x="-15" y="5">Bad Homburg Bahnhof</text></g>
-   <text x="475" y="-105" class="te" style="stroke-dasharray:none;" id="verlängerung_badhomburg_erkl">Geplante Verlängerung, vsl. 2016</text>
+   <text x="475" y="-105" class="te" style="stroke-dasharray:none;" id="verlängerung_badhomburg_erkl">Geplante Verlängerung, vsl. 2017</text>
   </g>
   <g id="verlängerung_europaviertel" class="geplant" display="inline" transform="translate(0,30)">
    <path id="gw_europaviertel_2" class="bb tunnel" d="M -620,1550 c 10,0 10,-10 20,-10 c 10,0 10,10 20,10" /> <!-- c 5,0 5,-5 10,-5" />-->
@@ -965,7 +965,7 @@
    <g id="hstemserbr" transform="translate(-430,1545)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Emser Brücke</text></g>
    <use id="rampe_gueterplatz" xlink:href="#tunnelrampe" transform="translate(-380,1545) rotate(-90)" />
    <g id="hstgueterp" transform="translate(-331,1545)" class="achtzig tm"><use xlink:href="#bstg_mitte" transform="rotate(90)" /><text x="0" y="-15">Güterplatz</text></g>
-   <text x="-721" y="1570" style="stroke-dasharray:none;" id="verlängerung_europaviertel_erkl">Geplante Verlängerung, vsl. 2017</text>
+   <text x="-721" y="1570" style="stroke-dasharray:none;" id="verlängerung_europaviertel_erkl">Geplante Verlängerung, vsl. 2019</text>
   </g>
   <g id="frankfurter_berg" class="geplant" display="inline" transform="translate(30,0)">
    <path id="frankfurterberg_1" class="endet" d="M 440,565 v -250" />
