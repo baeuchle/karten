@@ -24,7 +24,7 @@
     <dc:title>U-Bahn-Gleisplan Frankfurt am Main</dc:title>
     <dc:date/>
     <dc:language>de</dc:language>
-    <dc:contributor>Users of Frankfurter Nahverkehrsforum http://frankfurter-nahverkehrsforum.de/thread.php?threadid=20627</dc:contributor>
+    <dc:contributor>Users of Frankfurter Nahverkehrsforum http://www.frankfurter-nahverkehrsforum.de/index.php?page=Thread&amp;threadID=20627</dc:contributor>
    </rdf:Description>
   </rdf:RDF>
  </metadata>
@@ -37,6 +37,7 @@
   .funfzig use, use.funfzig { stroke:#8000ff; fill:url(#bs56); }
   .achtzig use, use.achtzig { stroke:#00c000; fill:url(#bs80); }
   .neunzig use, use.neunzig { stroke:#00c0ff; fill:url(#bs87); }
+  .sechzig use, use.sechzig { stroke:#00c000; fill:url(#bs60); } /* Für die neuen Bahnsteige auf der Eckenheimer Ldstr. */
   #sbahn { stroke:#000000; stroke-width:1px; fill:none; }
 
   .uberwerf { fill-opacity:0.40; fill:#ffffff; stroke:none; }
@@ -174,6 +175,7 @@
  <defs>
   <linearGradient id="bs00" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ff8080" /><stop offset="100%" stop-opacity="100%" stop-color="#ff8080" /></linearGradient>
   <linearGradient id="bs56" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#c080ff" /><stop offset="100%" stop-opacity="100%" stop-color="#c080ff" /></linearGradient>
+  <linearGradient id="bs60" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#80c080" /><stop offset="100%" stop-opacity="100%" stop-color="#c080ff" /></linearGradient>
   <linearGradient id="bs80" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#80c080" /><stop offset="100%" stop-opacity="100%" stop-color="#80c080" /></linearGradient>
   <linearGradient id="bs87" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#80e0ff" /><stop offset="100%" stop-opacity="100%" stop-color="#80e0ff" /></linearGradient>
   <linearGradient id="bs99" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#808080" /><stop offset="100%" stop-opacity="100%" stop-color="#808080" /></linearGradient>
@@ -557,45 +559,22 @@
    <text x="-15" y="0">Eckenheimer</text>
    <text x="-15" y="16">Landstraße/</text><text x="-15" y="32">Marbachweg</text>
   </g>
-  <use xlink:href="#weg" transform="translate(290,1005)"/>
-  <use xlink:href="#weg" transform="translate(290,1015)"/>
-  <text x="300" y="1035" class="ab_bb">Kein Betrieb zwischen Marbachweg/</text>
-  <text x="300" y="1045" class="ab_bb">Sozialzentrum und Preungesheim</text>
-  <text x="300" y="1055" class="ab_bb">wegen Umbauten der Haltestellen</text>
-  <text x="300" y="1065" class="ab_bb">bis voraussichtlich Anfang September</text>
-  <text x="300" y="1075" class="ab_bb">2013.</text>
+  <text x="300" y="1035" class="ab_bb">Bahnsteig Gießener Straße Richtung</text>
+  <text x="300" y="1045" class="ab_bb">Hauptbahnhof noch im Umbau</text>
   <g id="hst623" transform="translate(305,1010)" class="achtzig">
    <use xlink:href="#bstg_außen" transform="rotate(90)" />
    <text x="-15" y="-31">Marbachweg/</text>
    <text x="-15" y="-15">Sozialzentrum</text>
-   <use xlink:href="#bau" transform="translate(0,-10)"/>
-   <use xlink:href="#bau" transform="translate(0,+10)"/>
   </g>
   <g id="hstXXX" transform="translate(262,868)" class="nullzig"><text x="10" y="4" class="ab_bb">Schwabstraße</text></g>
   <g id="hst624" transform="translate(405,1010)" class="achtzig">
    <use xlink:href="#bstg_ecke1" transform="rotate(90)" />
    <text x="35" y="5">Gießener Straße</text>
-   <use xlink:href="#bau" transform="translate(0,10)"/>
    <use xlink:href="#bau" transform="translate(20,-30)"/>
    </g>
-  <g id="hst625" transform="translate(435,865)" class="achtzig">
-   <use xlink:href="#bstg_außen" />
-   <text x="15" y="5">Theobald-Ziegler-Straße</text>
-   <use xlink:href="#bau" transform="translate(-10,0)"/>
-   <use xlink:href="#bau" transform="translate(+10,0)"/>
-  </g>
-  <g id="hst626" transform="translate(435,770)" class="achtzig">
-   <use xlink:href="#bstg_außen" />
-   <text x="15" y="5">Ronneburgstraße</text>
-   <use xlink:href="#bau" transform="translate(-10,0)"/>
-   <use xlink:href="#bau" transform="translate(+10,0)"/>
-  </g>
-  <g id="hst631" transform="translate(435,685)" class="achtzig">
-   <use xlink:href="#bstg_außen" />
-   <text x="15" y="5">Sigmund-Freud-Straße</text>
-   <use xlink:href="#bau" transform="translate(-10,0)"/>
-   <use xlink:href="#bau" transform="translate(+10,0)"/>
-  </g>
+  <g id="hst625" transform="translate(435,865)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Theobald-Ziegler-Straße</text></g>
+  <g id="hst626" transform="translate(435,770)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Ronneburgstraße</text></g>
+  <g id="hst631" transform="translate(435,685)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Sigmund-Freud-Straße</text></g>
   <g id="hst632" transform="translate(435,585)" class="nullzig">
    <use id="bstg_preungesheim_3" xlink:href="#bahnsteig" transform="translate(-15,0) rotate(180)" />
    <use xlink:href="#bstg_mitte" class="nullzig"/>
