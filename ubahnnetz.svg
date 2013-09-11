@@ -559,19 +559,13 @@
    <text x="-15" y="0">Eckenheimer</text>
    <text x="-15" y="16">Landstraße/</text><text x="-15" y="32">Marbachweg</text>
   </g>
-  <text x="300" y="1035" class="ab_bb">Bahnsteig Gießener Straße Richtung</text>
-  <text x="300" y="1045" class="ab_bb">Hauptbahnhof noch im Umbau</text>
   <g id="hst623" transform="translate(305,1010)" class="achtzig">
    <use xlink:href="#bstg_außen" transform="rotate(90)" />
    <text x="-15" y="-31">Marbachweg/</text>
    <text x="-15" y="-15">Sozialzentrum</text>
   </g>
   <g id="hstXXX" transform="translate(262,868)" class="nullzig"><text x="10" y="4" class="ab_bb">Schwabstraße</text></g>
-  <g id="hst624" transform="translate(405,1010)" class="achtzig">
-   <use xlink:href="#bstg_ecke1" transform="rotate(90)" />
-   <text x="35" y="5">Gießener Straße</text>
-   <use xlink:href="#bau" transform="translate(20,-30)"/>
-   </g>
+  <g id="hst624" transform="translate(405,1010)" class="achtzig"><use xlink:href="#bstg_ecke1" transform="rotate(90)" /><text x="35" y="5">Gießener Straße</text></g>
   <g id="hst625" transform="translate(435,865)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Theobald-Ziegler-Straße</text></g>
   <g id="hst626" transform="translate(435,770)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Ronneburgstraße</text></g>
   <g id="hst631" transform="translate(435,685)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Sigmund-Freud-Straße</text></g>
