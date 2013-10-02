@@ -24,7 +24,7 @@
     <dc:title>Straßenbahn-Gleisplan Frankfurt am Main</dc:title>
     <dc:date/>
     <dc:language>de</dc:language>
-    <dc:contributor>Users of Frankfurter Nahverkehrsforum https://frankfurter-nahverkehrsforum.de/forum/index.php?thread/20982-gleisnetz-straßenbahn-frankfurt/</dc:contributor>
+    <dc:contributor>Users of Frankfurter Nahverkehrsforum http://www.frankfurter-nahverkehrsforum.de/index.php?page=Thread&amp;threadID=20982; Christian Stade http://gleisplanweb.bplaced.net/Maps/Frankfurt.svg</dc:contributor>
    </rdf:Description>
   </rdf:RDF>
  </metadata>
@@ -85,37 +85,10 @@
   .ueberschrift { font-size:16pt;fill:black;fill-opacity:1;stroke:none; }
   .unterschrift { font-size:14pt;fill:#ff0000;fill-opacity:1;stroke:none; }
   .stand {  font-size:12pt;fill:#000000;fill-opacity:1;stroke:none; }
+
+  #baeume circle { fill:#008000; stroke:none; }
  ]]>
  </style>
- <script type="application/ecmascript"><![CDATA[
-  function bbgross( domobj ) {
-   var scale_re = / scale\([\d\.]+,[\d\.]+\)/;
-   if( document.getElementById("bb_"   +domobj).getAttribute("transform").match(scale_re)) {
-    bbklein(domobj);
-    return;
-   }
-   document.getElementById( "bb_"    + domobj ).setAttribute("transform",document.getElementById("bb_"   +domobj).getAttribute("transform") + " scale(3,3)");
-   document.getElementById( "bb_"    + domobj ).setAttribute("clip-path","url(#cp_"+domobj+")");
-   document.getElementById( "gross_" + domobj ).setAttribute("transform",document.getElementById("gross_"+domobj).getAttribute("transform") + " scale(3,3)");
-   document.getElementById( "gross_" + domobj ).setAttribute("class","bbumrandung");
-   document.getElementById( "gross_" + domobj ).setAttribute("onclick","javascript:bbklein('"+domobj+"')");
-   document.getElementById( "gleisnummern_" + domobj ).setAttribute("display","inline");
-  }
-  function bbklein( domobj ) {
-   var scale_re = / scale\([\d\.]+,[\d\.]+\)/;
-   if( !document.getElementById("bb_"   +domobj).getAttribute("transform").match(scale_re) ) {
-    bbgross(domobj);
-    return;
-   }
-   document.getElementById( "bb_"    + domobj ).setAttribute("transform",document.getElementById("bb_"   +domobj).getAttribute("transform").replace(scale_re, ""));
-   document.getElementById( "bb_"    + domobj ).setAttribute("clip-path","none");
-   document.getElementById( "gross_" + domobj ).setAttribute("transform",document.getElementById("gross_"+domobj).getAttribute("transform").replace(scale_re, ""));
-   document.getElementById( "gross_" + domobj ).setAttribute("class","klicken");
-   document.getElementById( "gross_" + domobj ).setAttribute("onclick","javascript:bbgross('"+domobj+"')");
-   document.getElementById( "gleisnummern_" + domobj ).setAttribute("display","none");
-  }
- ]]>
- </script>
  <defs>
   <linearGradient id="bs00" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ff8080" /><stop offset="100%" stop-opacity="100%" stop-color="#ff8080" /></linearGradient>
   <linearGradient id="bs10" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#0080ff" /><stop offset="100%" stop-opacity="100%" stop-color="#0080ff" /></linearGradient>
@@ -398,7 +371,7 @@
   <g id="hstmkh" transform="translate(45,-310)" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Markus-Krankenhaus</text></g>
   <g id="hstgin" transform="translate(45,-350)">
    <use id="bstg_ginnheim_3" xlink:href="#bahnsteig" class="funfzig" transform="translate(15,0) rotate(180)" />
-   <g id="hstgin" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Ginnheim</text></g>
+   <g id="hstgin" class="nullzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Ginnheim</text></g>
   </g>
   <g id="hgrwes" class="tm" transform="translate(-110,-155)">
    <path class="hstgruppe" d="M 0,40 c 40,0 40,-10 40,-40 c 0,-30 0,-50 -20,-50 s -60,40 -60,75 c 0,15 20,15 40,15 " />
@@ -679,9 +652,6 @@
   </g>
    <path id="zweitesgleis_rebstöcker" class="geplant" d="M -282,140 l -55,-55" />
  </g>
- <g id="bbrechtecke">
-  <rect id="gross_gutleut" transform="translate(-250,205)" x="-150" y="0" width="170" height="110" class="klicken" onclick="bbgross('gutleut')" />
- </g>
  <g id="betriebshöfe" class="strecke bb">
   <g id="gleiswerkstätten_riederhöfe" transform="translate(-135,190)" >
    <path id="gwr_1" d="M 810,-10 a 15,15 0,0,0 15,-15 v -15 a 5,5 0,0,1 5,-5 h 35 c 5,0 5,5 10,5" />
@@ -734,7 +704,7 @@
    <path id="gut_26" d="M -98,5 q -2,0 -3.5,1.5 l -32,32 q -1.5,1.5 -1.5,3.5 v 40 q 0,2 1.5,3.5" />
    <path id="gut_27" d="M -72,100 h -45 q -2,0 -3.5,-1.5 l -18,-18 q -1.5,-1.5 -1.5,-3.5 v -40 q 0,-2 1.5,-3.5 l 27,-27 q 1.5,-1.5 3.5,-1.5 h 138" />
 
-   <g id="gleisnummern_gutleut" display="none">
+   <g id="gleisnummern_gutleut">
     <path class="gebaude wand" id="halle_gutleut" d="M -2.5,40 h -140 v 42.5 h 145 v -12.5 h -5 z" />
     <path class="gebaude wand" id="halle_schleif" d="M -98.5,37.5 h 1 v 35 h -5 v -35 h 1" />
     <path class="gebaude wand" id="halle_waschur" d="M -42.5,87.5 h 2.5 v -5 h -2.5 v -15 h 5 v -32.5 h -20 v 47.5 h -2.5 v 5 h 2.5" />
@@ -781,7 +751,7 @@
    <path id="vma_04" class="endet" d="M 23,10 q 2,0 3.5,1.5 l 12,12 q 1.5,1.5 3.5,1.5 h 8 " />
   </g>
  </g>
- <g style="fill:#008000; stroke:none;" transform="translate(-73,-125)" id="baeume">
+ <g transform="translate(-73,-125)" id="baeume">
   <circle r="1.5" cx="00" />
   <circle r="1.5" cx="05" />
   <circle r="1.5" cx="10" />
