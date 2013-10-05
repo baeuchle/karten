@@ -529,6 +529,7 @@
   <path id="gw_eissporthalle" d="M 680,-55 c 5,0 5,10 10,10" />
   <path id="schleife_zoo" d="M 470,130 a 5,5 0,0,0 -5,-5 h -15 a 10,10 0,1,1 10,-10" />
   <path id="gw_oberrad_1" d="M 670,395 c -5,0 -5,-10 -10,-10" />
+  <path id="gw_oberrad_2" d="M 560,395 c -5,0 -5,-10 -10,-10" />
   <path id="gw_offenbach_1" d="M 770,385 c -5,0 -5,10 -10,10" />
   <path id="gw_offenbach_2" d="M 770,395 c -5,0 -5,-10 -10,-10" />
   <path id="wa_südbahnhof_1" d="M 250,415 h 20 c 5,0 5,10 10,10" />
