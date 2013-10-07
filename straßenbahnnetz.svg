@@ -153,13 +153,13 @@
    <g id="legende_normal" transform="translate(30,125)"><path class="strecke ubergabe" d="M 0 -6 h 50" /><text x="55" class="tm ref">A</text><text x="75">Anschluss an U-Bahn-Netz mit Referenz¹</text></g>
    <g id="legende_normal" transform="translate(30,145)"><path class="strecke anschluss" d="M 0 -6 h 45" /><text x="75">Anschluss an DB-Netz</text></g>
    <text class="ab_bb"   transform="translate(30,165)">BB: Betriebsbahnhof</text>
-   <use xlink:href="#keinU" transform="translate(30,180)" />
-   <text class="ab_bb" transform="translate(46,185)">Fahrverbot für U- und Ptb-Wagen</text>
+   <!--<use xlink:href="#keinU" transform="translate(30,180)" />
+   <text class="ab_bb" transform="translate(46,185)">Fahrverbot für U- und Ptb-Wagen</text>-->
    <text class="ab_bb" transform="translate(6,200)">¹:</text>
    <text class="ab_bb" transform="translate(18,200)">Siehe <a class="link" xlink:href="ubahnnetz.svg">U-Bahn-Netz Frankfurt</a></text>
   </g>
   <g id="legende_bahnsteige" transform="translate(-865,-425)">
-   <rect class="box" width="350" height="245" />
+   <rect class="box" width="360" height="265" />
    <text x="15" y="20" style="font-weight:bold;">Bahnsteige/Haltestellen</text>
    <text class="hstgrtitel" x="33" y="40">↓ Symbol für Doppel- oder lange Haltestelle</text>
    <g class="legende_normal" transform="translate(15,55)">
@@ -180,14 +180,14 @@
    </g>
    <g class="legende_normal dreizig" transform="translate(15,135)">
     <use xlink:href="#bahnsteig" transform="rotate(90)" /><use xlink:href="#haltestel" transform="rotate(90)"/>
-    <!--<use xlink:href="#bahnsteig" transform="translate(20,0) rotate(90)" /><use xlink:href="#doppelhst" transform="translate(20,0) rotate(90)"/>-->
     <text x="35" y="5">Barrierefreier Einstieg von der Straße <tspan class="hstgrtitel">(Wiener Modell)</tspan></text>
    </g>
    <g class="legende_normal funfzig" transform="translate(15,155)"><use xlink:href="#bahnsteig" transform="rotate(90)" /><text x="35" y="5">56 cm (U-Bahnsteig)</text></g>
-   <g class="legende_normal" transform="translate(35,195)"><circle class="bstggruppe" r="20" /><use xlink:href="#haltestel" transform="translate(0,-5)" /><use xlink:href="#haltestel" transform="translate(-15,5)" /><text x="15" y="-15">Zusammenhängende Haltepositionen</text><text x="15" y="-3">(gleiche Haltestelle)</text></g>
-   <g class="legende_normal te" transform="translate(315,195)"><circle class="hstgruppe" r="20" /><use xlink:href="#haltestel" transform="translate(10,-5)" /><use xlink:href="#haltestel" transform="translate(-5,5)" /><text x="-10" y="9">Haltestellengruppe</text><text x="-10" y="21">(verschiedene Haltestellen)</text></g>
-   <text class="ab_bb" transform="translate(6,235)">²:</text>
-   <text class="ab_bb" transform="translate(18,235)">Als Bahnsteig zählt jede Fläche, die nicht dem Autoverkehr zur Verfügung steht.</text>
+   <g class="legende_normal        " transform="translate(15,175)"><use xlink:href="#bau" /><text x="35" y="5">im Bau/Umbau</text></g>
+   <g class="legende_normal" transform="translate(35,215)"><circle class="bstggruppe" r="20" /><use xlink:href="#haltestel" transform="translate(0,-5)" /><use xlink:href="#haltestel" transform="translate(-15,5)" /><text x="15" y="-15">Zusammenhängende Haltepositionen</text><text x="15" y="-3">(gleiche Haltestelle)</text></g>
+   <g class="legende_normal te" transform="translate(315,215)"><circle class="hstgruppe" r="20" /><use xlink:href="#haltestel" transform="translate(10,-5)" /><use xlink:href="#haltestel" transform="translate(-5,5)" /><text x="-10" y="9">Haltestellengruppe</text><text x="-10" y="21">(verschiedene Haltestellen)</text></g>
+   <text class="ab_bb" transform="translate(6,255)">²:</text>
+   <text class="ab_bb" transform="translate(18,255)">Als Bahnsteig zählt jede Fläche, die nicht dem Autoverkehr zur Verfügung steht.</text>
   </g>
   <text transform="translate(770,-115) translate(10,-5)" class="ab_bb">Anschluss Richtung BB Ost (via Johanna-Tesch-Platz)</text>
   <text transform="translate(-350,200)" class="ab_bb te">BB Gutleut</text>
@@ -254,8 +254,8 @@
   </g>
   <g id="hstott" transform="translate(70,345)" class="dreizig"><use xlink:href="#bstg_außen" transform="rotate(90)"/><text x="20" y="0" transform="rotate(-45)">Otto-Hahn-Platz</text></g>
   <g id="hsthip" transform="translate(-20,345)" class="te">
-   <path class="bstggruppe" d="M 0,50 c 20,0 35,-40  35,-60 s -15,-35 -35,-35 c -30,0 -30,95 0,95" />
-   <use xlink:href="#haltestel" transform="translate(25,-5) rotate(-90)" />
+   <path class="bstggruppe" d="M 0,50 c 20,0 40,-40  40,-60 s -20,-35 -40,-35 c -30,0 -30,95 0,95" />
+   <use xlink:href="#bahnsteig" class="dreizig" transform="translate(30,-5) rotate(-90)" />
    <use xlink:href="#bahnsteig" class="nullzig" transform="translate(5,-20) rotate(180)" />
    <use xlink:href="#doppelbst" class="dreizig" transform="translate(-5,20) rotate(180)" />
    <use xlink:href="#doppelbst" class="dreizig" transform="translate(5,20)" />
@@ -338,7 +338,16 @@
   <g id="hstcas" transform="translate(960,175) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Cassellastraße</text></g>
   <g id="hstmak" transform="translate(1000,175) rotate(-90)" class="dreizig te"><use xlink:href="#bstg_außen" /><text x="-20" y="10" transform="rotate(45)">Mainkur/Bahnhof</text></g>
   <g id="hstafe" transform="translate(1020,210)" class="nullzig te"><use xlink:href="#bstg_außen" /><text x="-20" y="0" transform="rotate(-45)">Alt-Fechenheim</text></g>
-  <g id="hstfep" transform="translate(1020,250)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text x="-20" y="0" transform="rotate(-45)">Fechenheim Post</text></g>
+  <g id="hstaws" transform="translate(1020,250)" class="dreizig te">
+   <text x="-302" y="191" class="te ab_bb">Barrierefreier Ausbau bis voraussichtlich</text>
+   <text x="-302" y="200" class="te ab_bb">2. Januar 2014 und Umbenennung von</text>
+   <text x="-302" y="209" class="te ab_bb">„Fechenheim Post“ in „Arthur-von-Weinberg-Steg“</text>
+   <path class="strecke bb" d="M -300,196 h 100 l 70,-70"/>
+   <use xlink:href="#bstg_außen" />
+   <text x="-20" y="0" transform="rotate(-45)">Arthur-von-Weinberg-Steg</text>
+   <use xlink:href="#bau" transform="translate(-10 0)" />
+   <use xlink:href="#bau" transform="translate(+10 0)" />
+  </g>
   <g id="hstshs" transform="translate(1020,305)" class="dreizig te">
    <text x="-20" y="0" transform="rotate(-45)">Schießhüttenstraße</text>
    <use xlink:href="#bahnsteig" transform="translate(-5,-15) rotate(180)" />
@@ -478,7 +487,15 @@
   <g id="hstwau" transform="translate(-555,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="10" transform="rotate(45)">Waldau</text></g>
   <g id="hstwfr" transform="translate(-600,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_vers2" /><text x="-10" y="20" transform="rotate(45)">Waldfriedhof Goldstein</text></g>
   <g id="hsthar" transform="translate(-670,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Harthweg</text></g>
-  <g id="hstfdw" transform="translate(-710,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Ferdinand-Dirichs-Weg</text></g>
+  <g id="hstfdw" transform="translate(-710,575) rotate(-90)" class="dreizig te">
+   <text transform="rotate(90) translate(50,-109)" class="ab_bb tm">Barrierefreier Ausbau bis voraussichtlich</text>
+   <text transform="rotate(90) translate(50,-100)" class="ab_bb tm">15. November 2013.</text>
+   <path transform="rotate(90)" d="M 50,-96 v 46 l -30,30" class="strecke bb"/>
+   <use xlink:href="#bstg_vers1" />
+   <text x="-15" y="10" transform="rotate(45)">Ferdinand-Dirichs-Weg</text>
+   <use xlink:href="#bau" transform="translate(-10 -10) rotate(90)" />
+   <use xlink:href="#bau" transform="translate(+10 +10) rotate(90)" />
+  </g>
   <g id="hstrls" transform="translate(-800,575) rotate(-90)" class="zehnzig">
    <path class="bstggruppe" transform="rotate(90)" d="M 0,35 c 50,0 55,-5 55,-25 s -50,-25 -55,-25 a 35,25 0,0,0 0,50" />
    <use xlink:href="#bahnsteig" transform="translate(5,0)" />
