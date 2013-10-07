@@ -232,19 +232,19 @@
    <path class="bstggruppe" d="M -10,40 c 20,0 30,-20 30,-30 c 0,-50 -10,-70 -20,-70 c -35,0 -35,0 -35,15 v 60 a 25,25 0,0,0 25,25" />
    <use xlink:href="#bstg_vers1" /><text x="15" y="5">Neu-Isenburg/Stadtgrenze</text>
   </g>
-  <g id="hstoss" transform="translate(-20,620)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text transform="translate(15,5)">Oberschweinstiege</text></g>
-  <g id="hstlui" transform="translate(-20,555)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(-15,0)">Louisa Bahnhof</text></g>
-  <g id="hstsam" transform="translate(-20,485)" class="te">
+  <g id="hstoss" transform="translate(-20,635)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text transform="translate(15,5)">Oberschweinstiege</text></g>
+  <g id="hstlui" transform="translate(-20,565)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(-15,0)">Louisa Bahnhof</text></g>
+  <g id="hstsam" transform="translate(-20,505)" class="te">
    <path class="bstggruppe" d="M 0,15 c 10,0 15,0 15,-25 c 0,-10 -5,-15 -35,-15 c -5,0 -10,0 -10,10 c 0,10 10,30 30,30" />
    <use xlink:href="#bstg_außen" class="zehnzig" />
    <use xlink:href="#bahnsteig" transform="translate(-20,-20) rotate(90)" class="nullzig" />
    <g transform="rotate(-45) translate(-15,0)"><text y="-7">Stresemannallee/</text><text y="5">Mörfelder Landstraße</text></g>
   </g>
-  <g id="hstsma" transform="translate(-20,425)" class="dreizig geplant"><use xlink:href="#bstg_außen" /><text transform="translate(15,0)">(Stresemannallee)</text></g>
-  <g id="hstbeu" transform="translate(50,460)" class="zehnzig te"><use xlink:href="#bstg_vers1" transform="rotate(90)" /><g transform="rotate(-45) translate(-20,15)"><text y="-7">Beuthener</text><text y="5">Straße</text></g></g>
-  <g id="hstbre" transform="translate(95,460)" class="zehnzig te"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Breslauer Straße</text></g>
-  <g id="hstohl" transform="translate(135,460)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Oppenheimer Landstraße</text></g>
-  <g id="hstsml" transform="translate(170,460)" class="te"><use xlink:href="#haltestel" transform="translate(0,5) rotate(90)" /><g transform="rotate(-45) translate(-15,10)"><text y="-7">Schweizer Straße/</text><text y="5">Mörfelder Landstraße</text></g></g>
+  <g id="hstsma" transform="translate(-20,425)" class="dreizig geplant"><use xlink:href="#bstg_außen" /><text transform="translate(15,5)">(Stresemannallee)</text></g>
+  <g id="hstbeu" transform="translate(50,480)" class="zehnzig te"><use xlink:href="#bstg_vers1" transform="rotate(90)" /><g transform="rotate(-45) translate(-20,15)"><text y="-7">Beuthener</text><text y="5">Straße</text></g></g>
+  <g id="hstbre" transform="translate(95,480)" class="zehnzig te"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Breslauer Straße</text></g>
+  <g id="hstohl" transform="translate(135,480)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Oppenheimer Landstraße</text></g>
+  <g id="hstsml" transform="translate(170,480)" class="te"><use xlink:href="#haltestel" transform="translate(0,5) rotate(90)" /><g transform="rotate(-45) translate(-15,10)"><text y="-7">Schweizer Straße/</text><text y="5">Mörfelder Landstraße</text></g></g>
   <g id="hstswt" transform="translate(190,390)" class="te"><use xlink:href="#hstl_außen" /><text x="-15" y="5">Schwanthalerstraße</text></g>
   <g id="hstsgs" transform="translate(190,345)" class="tm">
    <circle class="bstggruppe" cx="-5" cy="10" r="20" />
@@ -262,10 +262,10 @@
    <use xlink:href="#bahnsteig" class="dreizig" transform="translate(15,20) rotate(180)" />
    <g transform="translate(-12,5)"><text y="-8">Stresemannallee/</text><text y="6">Gartenstraße</text></g>
   </g>
-  <g id="hgrsbf" transform="translate(215,430)" class="te">
-   <path class="hstgruppe" d="M 25,10 c 30,0 65,0 65,-15 s -55,-20 -65,-20 c -55,0 -70,25 -70,35 s 0,10 20,10 c 25,0 25,-10 50,-10 Z" />
-   <g id="hstsss" transform="translate(-25,10)"><use xlink:href="#hstl_außen" /><g transform="translate(-15,0)"><text y="-12" class="hstgrtitel">Südbahnhof/</text><text>Schweizer Straße</text></g></g>
-   <g id="hstsbf" transform="translate(25,-10)" class="nullzig"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Südbahnhof</text></g>
+  <g id="hgrsbf" transform="translate(215,430)">
+   <path class="hstgruppe" d="M 25,10 c 30,0 65,0 65,-15 s -55,-20 -65,-20 c -55,0 -70,25 -70,35 s 0,30 20,30 c 25,0 25,-30 50,-30 Z" />
+   <g id="hstsss" transform="translate(-25,30)"><use xlink:href="#hstl_außen" /><g transform="translate(20,10)"><text y="-12" class="hstgrtitel">Südbahnhof/</text><text>Schweizer Straße</text></g></g>
+   <g id="hstsbf" transform="translate(25,-10)" class="nullzig"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="-15" y="25">Südbahnhof</text></g>
   </g>
   <g id="hstbts" transform="translate(285,390)" class="te"><use xlink:href="#hstl_außen" transform="rotate(90)" /><g transform="translate(0,-20)"><text y="-7">Brücken-/</text><text y="5">Textorstraße</text></g></g>
   <g id="hgrlbf" transform="translate(365,390)">
@@ -534,8 +534,8 @@
   <path id="ab_neuisenburg_4" class="endet" d="M -35,675 q -1.5,0 -3.5,2 l -1,1 q -2,2 -3.5,2 h -7" />
   <path id="aus_neuisenburg_1" d="M -15,690 c 0,5 5,5 5,10 v 10 c 0,5 -5,5 -5,10" />
   <path id="aus_neuisenburg_2" d="M -15,680 c 0,5 -10,5 -10,10" />
-  <path id="schleife_louisa_1" d="M -25,580 a 15,15 0,0,0 30,0 a 10,10 0,0,0 -10,-10 a 10,10 0,0,1 -10,-10" />
-  <path id="schleife_louisa_2" d="M -10,595 a 10,10 0,0,0 10,-10 v -10 a 5,5 0,0,0 -5,-5" />
+  <path id="schleife_louisa_1" d="M -25,590 a 15,15 0,0,0 30,0 a 10,10 0,0,0 -10,-10 a 10,10 0,0,1 -10,-10" />
+  <path id="schleife_louisa_2" d="M -10,605 a 10,10 0,0,0 10,-10 v -10 a 5,5 0,0,0 -5,-5" />
   <path id="gw_theaterplatz" d="M 95,170 c 5,0 5,10 10,10" />
   <path id="schleife_hugojunkersstraße" d="M 890,180 a 10,10 0,0,1 10,10 v 40 a 15,15 0,0,0 30,0 v -45 a 15,15 0,0,0 -15,-15" />
   <path id="schleife_hugojunkersstraß2" d="M 900,190 c 0,5 10,5 10,10 v 20 c 0,5 -10,5 -10,10" />
@@ -573,8 +573,8 @@
   <path id="schleife_waldfriedhof_2" d="M -615,570 a 15,15 0,0,0 0,30 a 10,10 0,0,0 10,-10 a 10,10 0,0,1 10,-10" />
   <path id="schleife_haardtwaldplatz" d="M -385,440 a 10,10 0,0,0 -10,-10 h -10 a 10,10 0,0,0 -10,10" />
   <path id="schleife_oberforsthaus" d="M -270,595 a 15,15 0,0,0 15,15 h 10 a 15,15 0,0,0 15,-15 a 10,10 0,0,0 -10,-10 h -10 a 10,10 0,0,1 -10,-10" />
-  <path id="lieschenstrecke_1" class="endet" d="M -5,455 h -60 q -4,0 -7,3 l -124,124 q -3,3 -7,3 h -22" />
-  <path id="lieschenstrecke_2" class="endet" d="M -60,455 c 5,0 5,10 10,10 h 15" />
+  <path id="lieschenstrecke_1" class="endet" d="M -5,475 h -80 q -4,0 -7,3 l -104,104 q -3,3 -7,3 h -22" />
+  <path id="lieschenstrecke_2" class="endet" d="M -60,475 c 5,0 5,10 10,10 h 20" />
   <path id="wa_stadion_1" d="M -260,650 c 0,5 -5,5 -5,10 v 5 c 0,5 -5,5 -5,10 q 0,4 -3,7 l -25,25 q -2,2 -2,5 v 3 c 0,5 -5,5 -5,10" />
   <path id="wa_stadion_2" d="M -270,665 v 50 c 0,5 10,5 10,10" />
   <path id="wa_stadion_3" class="endet" d="M -273,682 q -2,2 -2,5 v 48" />
@@ -584,8 +584,8 @@
   <path id="wa_stadion_7" d="M -260,685 c 0,5 -10,5 -10,10" />
  </g>
  <g class="strecke">
-  <path id="neuisenburg" d="M 205,415 a 20,20 0,0,0 -20,20 v 10 a 10,10 0,0,1 -10,10 h -180 a 20,20 0 0 0 -20,20 v 245 a 10,10 0,0,1 -10,10 a 10,10 0,0,0 -10,10
-                                               a 15,15 0,0,0 30,0 v -265 a 10,10 0,0,1 10,-10 h 180 a 20,20 0,0,0 20,-20 v -10 a 10,10 0,0,1 10,-10" />
+  <path id="neuisenburg" d="M 205,415 a 20,20 0,0,0 -20,20 v 30 a 10,10 0,0,1 -10,10 h -180 a 20,20 0 0 0 -20,20 v 225 a 10,10 0,0,1 -10,10 a 10,10 0,0,0 -10,10
+                                               a 15,15 0,0,0 30,0 v -245 a 10,10 0,0,1 10,-10 h 180 a 20,20 0,0,0 20,-20 v -30 a 10,10 0,0,1 10,-10" />
   <path id="textorstraße_1" d="M 185,405 a 20,20 0,0,0 20,20 h 45 a 20,20 0,0,0 20,-20 a 10,10 0,0,1 10,-10 h 100" />
   <path id="textorstraße_2" d="M 380,385 h -100 a 20,20 0,0,0 -20,20 a 10,10 0,0,1 -10,10 h -45 a 10,10 0,0,1 -10,-10" />
   <path id="langestraße_1" d="M 380,170 a 20,20 0,0,0 -20,20 v 155 c 0,10 -10,10 -10,20 v 10 a 10,10 0,0,1 -10,10" />
@@ -658,15 +658,15 @@
   <path id="haardtwaldplatz" d="M -206,446 q -4,4 -8,4 h -161 a 10,10 0,0,1 -10,-10 a 15,15 0,1,0 -30,0 a 20,20 0,0,0 20,20 h 181 q 8,0 14,-6" />
   <path id="stadion" d="M -264,504 q -6,6 -6,14 v 145 q 0,3 -4,7 l -27,27 q -4,4 -4,7 v 19 a 20,20 0,0,0 20,20 h 5 a 20,20 0,0,0 20,-20 v -205 q 0,-4 4,-8" />
   <g id="verlängerung_stresemannallee" class="geplant">
-   <path id="stresemannallee_1" d="M -25,370 v 105" />
-   <path id="stresemannallee_2" d="M -15,475 v -100" />
-   <path id="abzw_mörfelder_1" d="M -5,455 a 10,10 0,0,1 -10,-10" />
-   <path id="abzw_mörfelder_2" d="M -5,465 a 20,20 0,0,1 -20,-20" />
+   <path id="stresemannallee_1" d="M -25,370 v 125" />
+   <path id="stresemannallee_2" d="M -15,495 v -120" />
+   <path id="abzw_mörfelder_1" d="M -5,475 a 10,10 0,0,1 -10,-10" />
+   <path id="abzw_mörfelder_2" d="M -5,485 a 20,20 0,0,1 -20,-20" />
    <path id="hippodrom_drittesgleis" d="M -15,395 c 0,-5 10,-5 10,-10 v -15" />
    <path id="abzw_vogelweid_1" d="M -15,400 a 20,20 0,0,0 -20,-20" />
    <path id="abzw_vogelweid_2" d="M -25,400 a 10,10 0,0,0 -10,-10" />
    <!--NICHT MEHR IN PF-UNTERLAGEN <path id="gw_stresemannallee" class="bb" d="M -15,405 c 0,5 -10,5 -10,10" />-->
-   <path id="lieschen" d="M -25,475 a 10,10 0,0,0, -10,-10" />
+   <path id="lieschen" d="M -25,495 a 10,10 0,0,0, -10,-10" />
   </g>
    <path id="zweitesgleis_rebstöcker" class="geplant" d="M -282,140 l -55,-55" />
  </g>
