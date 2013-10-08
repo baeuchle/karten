@@ -52,6 +52,7 @@
   .verbot circle, path.verbot { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; }
   .verbot text { stroke:black; fill:black; text-anchor:middle; font-size:8pt; }
   path.abreis { stroke:red; stroke-width:1; fill:none; }
+  path.umleit { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; }
 
   text { font-size:9pt; font-family:Sans-Serif; }
   .ab_bb { font-size:6pt; }
@@ -116,6 +117,7 @@
   </g>
   <path id="weg" class="abreis" d="M -1.2,-1.2 l 2.4,2.4 m -2.4,0 l 2.4,-2.4" />
   <path id="bau" class="verbot" d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" />
+  <path id="uml" class="umleit" d="M -5,3 h 7 l 3,-3 l -3,-3 h -7 v 6 h 1" />
   <g id="grid">
    <path style="stroke-width:.5px; stroke:#f00;" d="M -3000   0 H 3000" /><path style="stroke-width:.5px; stroke:#00f;" d="M   0 -3000 V 3000" />
    <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  10 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  10 -3000 V 3000" />
@@ -159,7 +161,7 @@
    <text class="ab_bb" transform="translate(18,200)">Siehe <a class="link" xlink:href="ubahnnetz.svg">U-Bahn-Netz Frankfurt</a></text>
   </g>
   <g id="legende_bahnsteige" transform="translate(-865,-425)">
-   <rect class="box" width="360" height="265" />
+   <rect class="box" width="360" height="285" />
    <text x="15" y="20" style="font-weight:bold;">Bahnsteige/Haltestellen</text>
    <text class="hstgrtitel" x="33" y="40">↓ Symbol für Doppel- oder lange Haltestelle</text>
    <g class="legende_normal" transform="translate(15,55)">
@@ -184,10 +186,11 @@
    </g>
    <g class="legende_normal funfzig" transform="translate(15,155)"><use xlink:href="#bahnsteig" transform="rotate(90)" /><text x="35" y="5">56 cm (U-Bahnsteig)</text></g>
    <g class="legende_normal        " transform="translate(15,175)"><use xlink:href="#bau" /><text x="35" y="5">im Bau/Umbau</text></g>
-   <g class="legende_normal" transform="translate(35,215)"><circle class="bstggruppe" r="20" /><use xlink:href="#haltestel" transform="translate(0,-5)" /><use xlink:href="#haltestel" transform="translate(-15,5)" /><text x="15" y="-15">Zusammenhängende Haltepositionen</text><text x="15" y="-3">(gleiche Haltestelle)</text></g>
-   <g class="legende_normal te" transform="translate(315,215)"><circle class="hstgruppe" r="20" /><use xlink:href="#haltestel" transform="translate(10,-5)" /><use xlink:href="#haltestel" transform="translate(-5,5)" /><text x="-10" y="9">Haltestellengruppe</text><text x="-10" y="21">(verschiedene Haltestellen)</text></g>
-   <text class="ab_bb" transform="translate(6,255)">²:</text>
-   <text class="ab_bb" transform="translate(18,255)">Als Bahnsteig zählt jede Fläche, die nicht dem Autoverkehr zur Verfügung steht.</text>
+   <g class="legende_normal        " transform="translate(15,195)"><use xlink:href="#uml" /><text x="35" y="5">Haltestelle vorübergehend verschoben</text></g>
+   <g class="legende_normal" transform="translate(35,235)"><circle class="bstggruppe" r="20" /><use xlink:href="#haltestel" transform="translate(0,-5)" /><use xlink:href="#haltestel" transform="translate(-15,5)" /><text x="15" y="-15">Zusammenhängende Haltepositionen</text><text x="15" y="-3">(gleiche Haltestelle)</text></g>
+   <g class="legende_normal te" transform="translate(325,235)"><circle class="hstgruppe" r="20" /><use xlink:href="#haltestel" transform="translate(10,-5)" /><use xlink:href="#haltestel" transform="translate(-5,5)" /><text x="-10" y="9">Haltestellengruppe</text><text x="-10" y="21">(verschiedene Haltestellen)</text></g>
+   <text class="ab_bb" transform="translate(6,275)">²:</text>
+   <text class="ab_bb" transform="translate(18,275)">Als Bahnsteig zählt jede Fläche, die nicht dem Autoverkehr zur Verfügung steht.</text>
   </g>
   <text transform="translate(770,-115) translate(10,-5)" class="ab_bb">Anschluss Richtung BB Ost (via Johanna-Tesch-Platz)</text>
   <text transform="translate(-350,200)" class="ab_bb te">BB Gutleut</text>
@@ -282,7 +285,13 @@
   <g id="hsthss" transform="translate(440,390) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text x="20" y="0" transform="rotate(45)">Heister-/Seehofstraße</text></g>
   <g id="hstmüb" transform="translate(490,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Mühlberg</text></g>
   <g id="hstlkw" transform="translate(530,390) rotate(-90)"><use xlink:href="#hstl_vers1" /><text x="20" y="0" transform="rotate(45)">Lettigkautweg</text></g>
-  <g id="hstbds" transform="translate(570,390) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Balduinstraße</text></g>
+  <g id="hstbds" transform="translate(570,390) rotate(-90)">
+   <!--<text class="ab_bb" transform="rotate(90) translate(-150,100)">Barrierefreier Ausbau</text>-->
+   <use xlink:href="#hstl_außen" />
+   <use xlink:href="#uml" transform="rotate(-90) translate(0,-10)" />
+   <use xlink:href="#uml" transform="rotate(-90) translate(0,+10)" />
+   <text x="20" y="0" transform="rotate(45)">Balduinstraße</text>
+  </g>
   <g id="hstbws" transform="translate(610,390) rotate(-90)"><use xlink:href="#hstl_vers1" /><text x="20" y="0" transform="rotate(45)">Bleiweißstraße</text></g>
   <g id="hstbrp" transform="translate(650,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Buchrainplatz</text></g>
   <g id="hstfbs" transform="translate(690,390) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Flaschenburgstraße</text></g>
@@ -324,11 +333,29 @@
    <use xlink:href="#doppelbst" transform="translate(-5,9) rotate(180)" />
    <use xlink:href="#bahnsteig" transform="translate(5,-9)" />
    <text x="20" y="0" transform="rotate(45)">Daimlerstraße</text>
+   <use xlink:href="#uml" transform="rotate(90) translate( 10, 10)" />
+   <use xlink:href="#uml" transform="rotate(90) translate(-10,-10)" />
   </g>
-  <g id="hstdie" transform="translate(860,175) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Dieselstraße</text></g>
+  <g id="hstdie" transform="translate(860,175) rotate(-90)" class="zehnzig">
+   <text class="ab_bb tm" transform="rotate(90) translate(80,-200)">Barrierefreier Umbau der Haltestellen</text>
+   <text class="ab_bb tm" transform="rotate(90) translate(80,-191)">Daimlerstraße, Dieselstraße und</text>
+   <text class="ab_bb tm" transform="rotate(90) translate(80,-182)">Hugo-Junkers-Straße unter Aufrecht-</text>
+   <text class="ab_bb tm" transform="rotate(90) translate(80,-173)">erhaltung des Betriebs bis voraussichtlich</text>
+   <text class="ab_bb tm" transform="rotate(90) translate(80,-164)">15. November 2013</text>
+   <path class="strecke bb" transform="rotate(90)" d="M 80,-160 v 74 l -10,10" />
+   <use xlink:href="#bstg_außen" />
+   <text x="20" y="0" transform="rotate(45)">Dieselstraße</text>
+   <use xlink:href="#uml" transform="rotate(90) translate(0, 10)" />
+   <use xlink:href="#uml" transform="rotate(90) translate(0,-10)" />
+  </g>
   <g id="hgrhjs" transform="translate(910,175)">
    <ellipse cx="0" cy="30" rx="30" ry="50" class="hstgruppe" />
-   <g id="hsthjr" transform="rotate(-90)" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Hugo-Junkers-Straße</text></g>
+   <g id="hsthjr" transform="rotate(-90)" class="zehnzig">
+    <use xlink:href="#bstg_außen" />
+    <text x="20" y="0" transform="rotate(45)">Hugo-Junkers-Straße</text>
+    <use xlink:href="#uml" transform="rotate(90) translate(0, 10)" />
+    <use xlink:href="#uml" transform="rotate(90) translate(0,-10)" />
+   </g>
    <g id="hsthjs" transform="translate(-5,35) rotate(180)" class="te">
     <use xlink:href="#bahnsteig" class="nullzig" transform="translate(-5,0)" />
     <use xlink:href="#bahnsteig" class="zehnzig" transform="translate(5,0)" />
