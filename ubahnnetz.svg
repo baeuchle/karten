@@ -492,7 +492,14 @@
   <g id="hst422" transform="translate(-125,560)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Nordwestzentrum</text></g>
   <g id="hst421" transform="translate(-125,660)" class="funfzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Römerstadt</text></g>
   <g id="hst415" transform="translate(-125,780)" class="funfzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Niddapark</text></g>
-  <g id="hst414" transform="translate(-125,900)"><use xlink:href="#bahnsteig" class="nullzig" transform="translate(-15,0)" /><g class="funfzig te"><use xlink:href="#bstg_außen" /><use xlink:href="#bahnsteig" transform="translate(15,0) rotate(180)" /><text x="-25" y="-6">Ginnheim</text></g></g>
+  <g id="hst414" transform="translate(-125,900)" class="te">
+   <use xlink:href="#bahnsteig" class="nullzig" transform="translate(-15,0)" />
+   <use xlink:href="#bahnsteig" transform="translate(15,0) rotate(180)" class="achtzig" />
+   <use xlink:href="#bau" transform="translate(15,0)" />
+   <use xlink:href="#weg" transform="translate(10,-25) rotate(45)" />
+   <use xlink:href="#bstg_außen" class="funfzig" />
+   <text x="-25" y="-6">Ginnheim</text>
+  </g>
   <g id="hst641" transform="translate(65,385)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Sandelmühle</text></g>
   <g id="hst642" transform="translate(65,285)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Riedwiese/Mertonviertel</text></g>
   <g id="hst651" transform="translate(165,205)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Kalbach</text></g>
@@ -610,8 +617,8 @@
    <path d="M 32,-52 c -3,-3 0,-6 -3,-9" />
    <path d="M 25,-45 c -2.5,-2.5 -5,0 -7.5,-2.5" />
    <path d="M 45,-6 c 0,-5 -5,-5 -5,-10" />
-   <path id="bbh_1_17" d="M 55,-6 q 0,-4 -3,-7 l -43,-43 q -3,-3 -7,-3 h -14 a 24,24 0 0 0 0,48 h 15 q 4,0 7,-3  l 14,-14 q 1.5,-1.5 3.5,-1.5 h 1.5 q 2,0 3.5,1.5 l 6,6 q 1.5,1.5 1.5,3.5" />
-   <path id="bbh_3_16" d="M 12,-53 q -3,-3 -7,-3 h -17 a 21,21 0 0 0 0,42 h 15 q 2,0 3.5,-1.5 l 9.5,-9.5 c 2.5,-2.5 0,-5 2.5,-7.5" />
+   <path id="bbh_1_18" d="M 55,-6 q 0,-4 -3,-7 l -43,-43 q -3,-3 -7,-3 h -14 a 24,24 0 0 0 0,48 h 15 q 4,0 7,-3  l 14,-14 q 1.5,-1.5 3.5,-1.5 h 1.5 q 2,0 3.5,1.5 l 6,6 q 1.5,1.5 1.5,3.5" />
+   <path id="bbh_3_17" d="M 12,-53 q -3,-3 -7,-3 h -17 a 21,21 0 0 0 0,42 h 15 q 2,0 3.5,-1.5 l 9.5,-9.5 c 2.5,-2.5 0,-5 2.5,-7.5" />
    <path id="bbh_04" class="endet" d="M -33,-35 a 18,18 0,0,0 18,18 h 9" />
    <path id="bbh_05" d="M -33,-35 a 15,15 0,0,0 15,15 h 27 q 2,0 3.5,-1.5" />
    <path id="bbh_06" d="M -18,-20 c 3,0 3,-3 6,-3 h 19 q 2,0 3.5,-1.5 l 9,-9 q 1.5,-1.5 3.5,-1.5" />
@@ -633,6 +640,7 @@
    <path id="bbh_24" class="endet" d="M 60.5,-29.5 q -1.5,-1.5 -1.5,-3.5 v -18" />
    <path id="bbh_25" class="endet" d="M 63.5,-26.5 q -1.5,-1.5 -1.5,-3.5 v -18" />
    <path id="bbh_26" class="endet" d="M 65,-23 v -22" />
+   <use xlink:href="#weg" transform="translate(6,-53)" />
   </g>
   <g id="gleisnummern_heddernheim">
    <path class="gebaude wand" id="werkstatt_heddernheim" d="M -14,-15.5 h 18 l 3,-3 v -6 h -21 v 9" />
