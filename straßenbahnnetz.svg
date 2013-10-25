@@ -288,9 +288,8 @@
   <g id="hstbds" transform="translate(570,390) rotate(-90)">
    <!--<text class="ab_bb" transform="rotate(90) translate(-150,100)">Barrierefreier Ausbau</text>-->
    <use xlink:href="#hstl_außen" />
-   <use xlink:href="#hstl_außen" transform="translate(0,-12)"/>
+   <use xlink:href="#haltestel" transform="translate(-15,-12)"/>
    <use xlink:href="#uml" transform="rotate(-90) translate(0,-10)" />
-   <use xlink:href="#uml" transform="rotate(-90) translate(0,+10)" />
    <text x="20" y="0" transform="rotate(45)">Balduinstraße</text>
   </g>
   <g id="hstbws" transform="translate(610,390) rotate(-90)" class="zehnzig">
@@ -323,7 +322,7 @@
     <g transform="translate(0,25)"><text y="-4" class="hstgrtitel">Hauptbahnhof/</text><text y="8">Münchener Straße</text></g>
    </g>
   </g>
-  <g id="hstwms" transform="translate(75,175)"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text transform="translate(10,-10) rotate(-45)">Weser-/Münchener Straße</text></g>
+  <g id="hstwms" transform="translate(75,175)"><use xlink:href="#hstl_vers1" transform="rotate90)" /><text transform="translate(10,-10) rotate(-45)">Weser-/Münchener Straße</text></g>
   <g id="hst4112" transform="translate(115,175)" class="dreizig"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text transform="translate(5,-10) rotate(-45)">Willy-Brandt-Platz</text></g>
   <g id="hström" transform="translate(155,175)" class="dreizig"><use xlink:href="#bstg_vers1" transform="rotate(90)" /><text transform="translate(5,-10) rotate(-45)">Römer/Paulskirche</text></g>
   <g id="hgr2112" transform="translate(265,175)" class="dreizig te">
