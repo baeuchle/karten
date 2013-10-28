@@ -488,6 +488,7 @@
   <g id="hst525" transform="translate(115,650)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Weißer Stein</text></g>
   <g id="hst526" transform="translate(115,550)" class="achtzig"><use xlink:href="#bahnsteig" transform="translate(15,0) rotate(180)"/><use xlink:href="#bstg_außen" /><text x="20" y="5">Heddernheim</text></g>
   <g id="hst527" transform="translate(10.5,408.5)" class="achtzig te"><use xlink:href="#bstg_außen" transform="rotate(-45)" /><text x="-5.5" y="21.5">Zeilweg</text></g>
+  <!--<g id="bst502">Abzweig/Dreieck Nordwest</g>-->
   <g id="hst423" transform="translate(-125,460)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Heddernheimer Landstraße</text></g>
   <g id="hst422" transform="translate(-125,560)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Nordwestzentrum</text></g>
   <g id="hst421" transform="translate(-125,660)" class="funfzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Römerstadt</text></g>
@@ -926,11 +927,11 @@
   </g>
  </g>
  <g id="texte">
-  <text x="43" y="540" class="ab_bb te">BB Heddernheim</text>
-  <text x="-140" y="714" class="ab_bb te">AB Römerstadt</text>
-  <text x="-397" y="90" class="ab_bb te">AB Bommersheim</text>
-  <text x="210" y="929" class="ab_bb te">AB Eckenheim</text>
-  <text x="700" y="1247" class="ab_bb te">BB Ost</text>
+  <text x="43" y="540" class="ab_bb te" id="bst526">BB Heddernheim</text>
+  <text x="-140" y="714" class="ab_bb te" id="421">AB Römerstadt</text>
+  <text x="-397" y="90" class="ab_bb te" id="bst555">AB Bommersheim</text>
+  <text x="210" y="929" class="ab_bb te" id="bst691">AB Eckenheim</text>
+  <text x="700" y="1247" class="ab_bb te" id="bst792">BB Ost</text>
   <text x="-660" y="775" class="ab_bb te">Stadtbahnzentralwerkstatt</text>
   <text transform="translate(-300 1415) scale(.5)" class="ab_bb">Der Bahnsteig in D-Ebene (unten) wurde</text>
   <text transform="translate(-300 1422) scale(.5)" class="ab_bb">temporär von 80cm auf 87cm angehoben.</text>
