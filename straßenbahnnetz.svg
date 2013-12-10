@@ -277,9 +277,15 @@
    <g id="hstlts" transform="translate(-40,0)"><use xlink:href="#hstl_außen" transform="rotate(90)" /><g transform="translate(0,25)"><text class="hstgrtitel">Lokalbahnhof/</text><text y="12">Textorstraße</text></g></g>
    <use xlink:href="#bahnsteig" class="dreizig" transform="translate(0,5) rotate(90)" />
    <use xlink:href="#bahnsteig" class="dreizig" transform="translate(25,-5) rotate(-90)" />
-   <use xlink:href="#bahnsteig" class="nullzig" transform="translate(5,-25)" />
+   <use xlink:href="#bahnsteig" class="dreizig" transform="translate(5,-25)" />
+   <use xlink:href="#bau" transform="translate(10,-25)" />
    <use xlink:href="#bahnsteig" class="dreizig" transform="translate(-5,-20) rotate(180)" />
    <use xlink:href="#bahnsteig" class="dreizig" transform="translate(-15,-20)" />
+   <path class="strecke bb" d="M 10,-15 l 10,15 l 50,50 v 40" />
+   <text class="ab_bb tm" transform="translate(70,100)">Barrierefreier Umbau des Bahnsteiges</text>
+   <text class="ab_bb tm" transform="translate(70,109)">Lokalbahnhof Richtung Frankensteiner</text>
+   <text class="ab_bb tm" transform="translate(70,118)">Platz bis voraussichtlich</text>
+   <text class="ab_bb tm" transform="translate(70,127)">24. Januar 2014</text>
    <text x="25" y="5" transform="rotate(-45)">Lokalbahnhof</text>
   </g>
   <g id="hsthss" transform="translate(440,390) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text x="20" y="0" transform="rotate(45)">Heister-/Seehofstraße</text></g>
