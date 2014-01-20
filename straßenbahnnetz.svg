@@ -328,7 +328,7 @@
     <g transform="translate(0,25)"><text y="-4" class="hstgrtitel">Hauptbahnhof/</text><text y="8">Münchener Straße</text></g>
    </g>
   </g>
-  <g id="hstwms" transform="translate(75,175)"><use xlink:href="#hstl_vers1" transform="rotate90)" /><text transform="translate(10,-10) rotate(-45)">Weser-/Münchener Straße</text></g>
+  <g id="hstwms" transform="translate(75,175)"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text transform="translate(10,-10) rotate(-45)">Weser-/Münchener Straße</text></g>
   <g id="hst4112" transform="translate(115,175)" class="dreizig"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text transform="translate(5,-10) rotate(-45)">Willy-Brandt-Platz</text></g>
   <g id="hström" transform="translate(155,175)" class="dreizig"><use xlink:href="#bstg_vers1" transform="rotate(90)" /><text transform="translate(5,-10) rotate(-45)">Römer/Paulskirche</text></g>
   <g id="hgr2112" transform="translate(265,175)" class="dreizig te">
