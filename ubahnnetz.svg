@@ -285,11 +285,6 @@
    <text x="4" y="54">anzuzeigen</text>
    </g>
   </g>
-  <g id="kilometrierungen" transform="translate(-815,490)">
-   <rect class="box" width="300" height="40" />
-   <text class="hochstatio" x="20" y="20">In den Bereich der Betriebshöfe klicken,</text>
-   <text class="hochstatio" x="20" y="32">um Details zu zeigen</text>
-  </g>
  </g>
  <g id="straßen">
   <path id="eckenheim_strassen" class="strasse" d="M 105,1005 h 185 m 0,10 h -185 M 280,1025 v -110 m -10,0 v 110 M 270,912.5 h -130" />

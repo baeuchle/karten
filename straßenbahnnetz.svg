@@ -302,8 +302,8 @@
   <g id="hstbds" transform="translate(570,390) rotate(-90)">
    <!--<text class="ab_bb" transform="rotate(90) translate(-150,100)">Barrierefreier Ausbau</text>-->
    <use xlink:href="#hstl_außen" />
-   <use xlink:href="#haltestel" transform="translate(-15,-12)"/>
-   <use xlink:href="#uml" transform="rotate(-90) translate(0,-10)" />
+   <!--<use xlink:href="#haltestel" transform="translate(-15,-12)"/>
+   <use xlink:href="#uml" transform="rotate(-90) translate(0,-10)" />-->
    <text x="20" y="0" transform="rotate(45)">Balduinstraße</text>
   </g>
   <g id="hstbws" transform="translate(610,390) rotate(-90)" class="zehnzig">
@@ -336,7 +336,7 @@
     <g transform="translate(0,25)"><text y="-4" class="hstgrtitel">Hauptbahnhof/</text><text y="8">Münchener Straße</text></g>
    </g>
   </g>
-  <g id="hstwms" transform="translate(75,175)"><use xlink:href="#hstl_vers1" transform="rotate90)" /><text transform="translate(10,-10) rotate(-45)">Weser-/Münchener Straße</text></g>
+  <g id="hstwms" transform="translate(75,175)"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text transform="translate(10,-10) rotate(-45)">Weser-/Münchener Straße</text></g>
   <g id="hst4112" transform="translate(115,175)" class="dreizig"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text transform="translate(5,-10) rotate(-45)">Willy-Brandt-Platz</text></g>
   <g id="hström" transform="translate(155,175)" class="dreizig"><use xlink:href="#bstg_vers1" transform="rotate(90)" /><text transform="translate(5,-10) rotate(-45)">Römer/Paulskirche</text></g>
   <g id="hgr2112" transform="translate(265,175)" class="dreizig te">
@@ -355,13 +355,13 @@
   <g id="hstohp" transform="translate(610,175)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Osthafenplatz</text></g>
   <g id="hstswl" transform="translate(650,175)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Schwedlerstraße</text></g>
   <g id="hstrhf" transform="translate(700,175)" class="dreizig te"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Riederhöfe</text></g>
-  <g id="hstdai" transform="translate(815,175) rotate(-90)" class="zehnzig"><use xlink:href="#doppelbst" transform="translate(-5,9) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,-9)" /><text x="20" y="0" transform="rotate(45)">Daimlerstraße</text></g>
+  <g id="hstdai" transform="translate(815,175) rotate(-90)" class="dreizig"><use xlink:href="#bahnsteig" transform="translate(-5,9) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,-9)" /><text x="20" y="0" transform="rotate(45)">Daimlerstraße</text></g>
   <g id="hstdie" transform="translate(860,175) rotate(-90)">
    <text class="ab_bb tm" transform="rotate(90) translate(80,-200)">Barrierefreier Umbau der Haltestellen</text>
-   <text class="ab_bb tm" transform="rotate(90) translate(80,-191)">Daimlerstraße, Dieselstraße und</text>
-   <text class="ab_bb tm" transform="rotate(90) translate(80,-182)">Hugo-Junkers-Straße unter Aufrecht-</text>
-   <text class="ab_bb tm" transform="rotate(90) translate(80,-173)">erhaltung des Betriebs bis voraussichtlich</text>
-   <text class="ab_bb tm" transform="rotate(90) translate(80,-164)">15. November 2013</text>
+   <text class="ab_bb tm" transform="rotate(90) translate(80,-191)">Dieselstraße und Hugo-Junkers-Straße unter</text>
+   <text class="ab_bb tm" transform="rotate(90) translate(80,-182)">weitestgehender Aufrechterhaltung des</text>
+   <text class="ab_bb tm" transform="rotate(90) translate(80,-173)">Betriebs (bei Sperrung Hugo-Junkers-Str.</text>
+   <text class="ab_bb tm" transform="rotate(90) translate(80,-164)">Richtung Schießhüttenstraße) bis auf weiteres.</text>
    <path class="strecke bb" transform="rotate(90)" d="M 80,-160 v 74 l -10,10" />
    <use xlink:href="#bstg_außen" transform="translate(0,-5) scale(1,.65)" class="dreizig"/>
    <use xlink:href="#bstg_außen" transform="translate(0,+5) scale(1,.65)" class="zehnzig"/>
@@ -375,10 +375,9 @@
     <text x="20" y="0" transform="rotate(45)">Hugo-Junkers-Straße</text>
     <use xlink:href="#bahnsteig" transform="translate(+5,-5) scale(1,.65)" class="zehnzig"/>
     <use xlink:href="#bahnsteig" transform="translate(+5,+5) scale(1,.65)" class="dreizig"/>
-    <use xlink:href="#bahnsteig" transform="translate(-5,+5) rotate(180) scale(1,.65)" class="zehnzig"/>
-    <use xlink:href="#bahnsteig" transform="translate(-5,-5) rotate(180) scale(1,.65)" class="dreizig"/>
-   <use xlink:href="#uml" transform="rotate(90) translate(-5, 10)" />
+    <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" class="dreizig"/>
    <use xlink:href="#uml" transform="rotate(-90) translate(-5,10)" />
+   <use xlink:href="#bau" transform="rotate(+90) translate(0,10)" />
    </g>
    <g id="hsthjs" transform="translate(-5,35) rotate(180)" class="nullzig te">
     <use xlink:href="#bahnsteig" transform="translate(-5,-5) scale(1,.65)" />
@@ -392,7 +391,7 @@
   <g id="hstafe" transform="translate(1020,210)" class="nullzig te"><use xlink:href="#bstg_außen" /><text x="-20" y="0" transform="rotate(-45)">Alt-Fechenheim</text></g>
   <g id="hstaws" transform="translate(1020,250)" class="dreizig te">
    <text x="-302" y="191" class="te ab_bb">Barrierefreier Ausbau bis voraussichtlich</text>
-   <text x="-302" y="200" class="te ab_bb">2. Januar 2014 und Umbenennung von</text>
+   <text x="-302" y="200" class="te ab_bb">2. Hälfte Januar 2014 und Umbenennung von</text>
    <text x="-302" y="209" class="te ab_bb">„Fechenheim Post“ in „Arthur-von-Weinberg-Steg“</text>
    <path class="strecke bb" d="M -300,196 h 100 l 70,-70"/>
    <use xlink:href="#bstg_außen" />
@@ -549,8 +548,8 @@
   <g id="hst4101" transform="translate(-600,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_vers2" /><text x="-10" y="20" transform="rotate(45)">Waldfriedhof Goldstein</text></g>
   <g id="hsthar" transform="translate(-670,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Harthweg</text></g>
   <g id="hstfdw" transform="translate(-710,575) rotate(-90)" class="dreizig te">
-   <text transform="rotate(90) translate(50,-109)" class="ab_bb tm">Barrierefreier Ausbau bis voraussichtlich</text>
-   <text transform="rotate(90) translate(50,-100)" class="ab_bb tm">15. November 2013.</text>
+   <text transform="rotate(90) translate(50,-109)" class="ab_bb tm">Barrierefreier Ausbau, Wiedereröffnungs-</text>
+   <text transform="rotate(90) translate(50,-100)" class="ab_bb tm">termin nicht bekannt.</text>
    <path transform="rotate(90)" d="M 50,-96 v 46 l -30,30" class="strecke bb"/>
    <use xlink:href="#bstg_vers1" />
    <text x="-15" y="10" transform="rotate(45)">Ferdinand-Dirichs-Weg</text>
