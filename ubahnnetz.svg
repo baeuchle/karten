@@ -246,7 +246,7 @@
    <text class="hochstatio" x="20" y="60" onclick="geplant('verlängerung_badhomburg')">Bad Homburg: Gonzenheim → Bad Homburg Bahnhof <tspan class="link" id="verlängerung_badhomburg_aktion">verstecken</tspan></text>
    <text class="ab_bb" x="30" y="75">Status: Planfeststellungsverfahren</text>
    <text class="hochstatio" x="20" y="95" onclick="geplant('verlängerung_europaviertel')">Europaviertel: Hauptbahnhof → Wohnpark <tspan class="link" id="verlängerung_europaviertel_aktion">verstecken</tspan></text>
-   <text class="ab_bb" x="30" y="110">Status: Planfeststellung begonnen</text>
+   <text class="ab_bb" x="30" y="110">Status: Vorbereitende Arbeiten haben begonnen</text>
    <text class="hochstatio" x="20" y="130" onclick="geplant('ginnheimer_kurve')">Ginnheimer Kurve: Ginnheim → Bockenheimer Warte <tspan class="link" id="ginnheimer_kurve_aktion">verstecken</tspan></text>
    <text class="ab_bb" x="30" y="145">Status: Machbarkeitsstudie/Alternativplanung entlang Rosa-Luxemburg-Straße</text>
    <text class="hochstatio" x="20" y="165" onclick="geplant('frankfurter_berg')">Frankfurter Berg: Preungesheim → Frankfurter Berg <tspan class="link" id="frankfurter_berg_aktion">verstecken</tspan></text>

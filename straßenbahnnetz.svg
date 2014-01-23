@@ -192,6 +192,14 @@
    <text class="ab_bb" transform="translate(6,275)">²:</text>
    <text class="ab_bb" transform="translate(18,275)">Als Bahnsteig zählt jede Fläche, die nicht dem Autoverkehr zur Verfügung steht.</text>
   </g>
+  <g id="ausbauprojekte" transform="translate(-505,-425)">
+   <rect class="box" width="200" height="140" />
+   <text class="unterschrift" x="20" y="25">Ausbauprojekte</text>
+   <text class="hochstatio" x="20" y="60">Stresemannallee</text>
+   <text class="ab_bb" x="30" y="75">Status: Bauarbeiten haben begonnen</text>
+   <text class="hochstatio" x="20" y="95">Kleyerstraße</text>
+   <text class="ab_bb" x="30" y="110">Status: Unbestimmt verschoben</text>
+  </g>
   <text transform="translate(770,-115) translate(10,-5)" class="ab_bb">Anschluss Richtung BB Ost (via Johanna-Tesch-Platz)</text>
   <text transform="translate(-350,200)" class="ab_bb te">BB Gutleut</text>
   <text transform="translate(685,135)" class="ab_bb te">Gleiswerkstätten Riederhöfe</text>
@@ -243,7 +251,7 @@
    <use xlink:href="#bahnsteig" transform="translate(-20,-20) rotate(90)" class="nullzig" />
    <g transform="rotate(-45) translate(-15,0)"><text y="-7">Stresemannallee/</text><text y="5">Mörfelder Landstraße</text></g>
   </g>
-  <g id="hstsma" transform="translate(-20,425)" class="dreizig geplant"><use xlink:href="#bstg_außen" /><text transform="translate(15,5)">(Stresemannallee)</text></g>
+  <g id="hstsma" transform="translate(-20,425)" class="dreizig geplant"><use xlink:href="#bstg_außen" /><text transform="translate(15,5)">Stresemannallee</text></g>
   <g id="hstbeu" transform="translate(50,480)" class="zehnzig te"><use xlink:href="#bstg_vers1" transform="rotate(90)" /><g transform="rotate(-45) translate(-20,15)"><text y="-7">Beuthener</text><text y="5">Straße</text></g></g>
   <g id="hstbre" transform="translate(95,480)" class="zehnzig te"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Breslauer Straße</text></g>
   <g id="hstohl" transform="translate(135,480)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Oppenheimer Landstraße</text></g>
