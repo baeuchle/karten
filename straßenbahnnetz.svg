@@ -356,28 +356,16 @@
   <g id="hstswl" transform="translate(650,175)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Schwedlerstraße</text></g>
   <g id="hstrhf" transform="translate(700,175)" class="dreizig te"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Riederhöfe</text></g>
   <g id="hstdai" transform="translate(815,175) rotate(-90)" class="dreizig"><use xlink:href="#bahnsteig" transform="translate(-5,9) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,-9)" /><text x="20" y="0" transform="rotate(45)">Daimlerstraße</text></g>
-  <g id="hstdie" transform="translate(860,175) rotate(-90)">
-   <text class="ab_bb tm" transform="rotate(90) translate(80,-200)">Barrierefreier Umbau der Haltestellen</text>
-   <text class="ab_bb tm" transform="rotate(90) translate(80,-191)">Dieselstraße und Hugo-Junkers-Straße unter</text>
-   <text class="ab_bb tm" transform="rotate(90) translate(80,-182)">weitestgehender Aufrechterhaltung des</text>
-   <text class="ab_bb tm" transform="rotate(90) translate(80,-173)">Betriebs (bei Sperrung Hugo-Junkers-Str.</text>
-   <text class="ab_bb tm" transform="rotate(90) translate(80,-164)">Richtung Schießhüttenstraße) bis auf weiteres.</text>
-   <path class="strecke bb" transform="rotate(90)" d="M 80,-160 v 74 l -10,10" />
-   <use xlink:href="#bstg_außen" transform="translate(0,-5) scale(1,.65)" class="dreizig"/>
-   <use xlink:href="#bstg_außen" transform="translate(0,+5) scale(1,.65)" class="zehnzig"/>
+  <g id="hstdie" transform="translate(860,175) rotate(-90)" class="dreizig">
+   <use xlink:href="#bstg_außen" />
    <text x="20" y="0" transform="rotate(45)">Dieselstraße</text>
-   <use xlink:href="#uml" transform="rotate(90) translate(-5, 10)" />
-   <use xlink:href="#uml" transform="rotate(90) translate(-5,-10)" />
   </g>
   <g id="hgr2715" transform="translate(910,175)">
    <ellipse cx="0" cy="30" rx="30" ry="50" class="hstgruppe" />
-   <g id="hsthjr" transform="rotate(-90)" class="zehnzig">
+   <g id="hsthjr" transform="rotate(-90)" class="dreizig">
     <text x="20" y="0" transform="rotate(45)">Hugo-Junkers-Straße</text>
-    <use xlink:href="#bahnsteig" transform="translate(+5,-5) scale(1,.65)" class="zehnzig"/>
-    <use xlink:href="#bahnsteig" transform="translate(+5,+5) scale(1,.65)" class="dreizig"/>
-    <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" class="dreizig"/>
-   <use xlink:href="#uml" transform="rotate(-90) translate(-5,10)" />
-   <use xlink:href="#bau" transform="rotate(+90) translate(0,10)" />
+    <use xlink:href="#bahnsteig" transform="translate(+5,0)"/>
+    <use xlink:href="#bahnsteig" transform="translate(-5,0)"/>
    </g>
    <g id="hsthjs" transform="translate(-5,35) rotate(180)" class="nullzig te">
     <use xlink:href="#bahnsteig" transform="translate(-5,-5) scale(1,.65)" />
