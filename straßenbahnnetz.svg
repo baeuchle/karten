@@ -48,7 +48,7 @@
   .doppelstrich rect { fill:white; stroke:none; }
   .doppelstrich path { fill:none; stroke:black; stroke-width:.5px; }
 
-  .geplant { stroke-dasharray: 1,1; }
+  .geplant { stroke-dasharray: 3,1; }
   .verbot circle, path.verbot { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; }
   .verbot text { stroke:black; fill:black; text-anchor:middle; font-size:8pt; }
   path.abreis { stroke:red; stroke-width:1; fill:none; }
@@ -76,7 +76,6 @@
   .gebaude { fill:#beadad; fill-opacity:.5; }
   .keinewand { stroke:none; }
   .beschrift path, .beschrift circle, .beschrift rect { fill:none; stroke:#93799a; stroke-width:.5; }
-
 
   .bstggruppe { fill:#ffffc0; stroke:yellow; stroke-width:4pt; stroke-dasharray:2 1; }
   .hstgruppe { fill:#c0ffc0; stroke:#80ff80; stroke-width:4pt; stroke-dasharray:.5 .25; }
@@ -196,9 +195,10 @@
    <rect class="box" width="200" height="140" />
    <text class="unterschrift" x="20" y="25">Ausbauprojekte</text>
    <text class="hochstatio" x="20" y="60">Stresemannallee</text>
-   <text class="ab_bb" x="30" y="75">Status: Bauarbeiten haben begonnen</text>
-   <text class="hochstatio" x="20" y="95">Kleyerstraße</text>
-   <text class="ab_bb" x="30" y="110">Status: Unbestimmt verschoben</text>
+   <text class="ab_bb" x="30" y="75">Status: Bauarbeiten haben begonnen,</text>
+   <text class="ab_bb" x="30" y="83">Inbetriebnahme 12/2014</text>
+   <text class="hochstatio" x="20" y="103">Kleyerstraße</text>
+   <text class="ab_bb" x="30" y="118">Status: Unbestimmt verschoben</text>
   </g>
   <text transform="translate(770,-115) translate(10,-5)" class="ab_bb">Anschluss Richtung BB Ost (via Johanna-Tesch-Platz)</text>
   <text transform="translate(-350,200)" class="ab_bb te">BB Gutleut</text>
@@ -245,13 +245,8 @@
   </g>
   <g id="hstoss" transform="translate(-20,635)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text transform="translate(15,5)">Oberschweinstiege</text></g>
   <g id="hstlui" transform="translate(-20,565)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(-15,0)">Louisa Bahnhof</text></g>
-  <g id="hstsam" transform="translate(-20,505)" class="te">
-   <path class="bstggruppe" d="M 0,15 c 10,0 15,0 15,-25 c 0,-10 -5,-15 -35,-15 c -5,0 -10,0 -10,10 c 0,10 10,30 30,30" />
-   <use xlink:href="#bstg_außen" class="zehnzig" />
-   <use xlink:href="#bahnsteig" transform="translate(-20,-20) rotate(90)" class="nullzig" />
-   <g transform="rotate(-45) translate(-15,0)"><text y="-7">Stresemannallee/</text><text y="5">Mörfelder Landstraße</text></g>
-  </g>
-  <g id="hstsma" transform="translate(-20,425)" class="dreizig geplant"><use xlink:href="#bstg_außen" /><text transform="translate(15,5)">Stresemannallee</text></g>
+  <g id="hstsam" transform="translate(-20,505)" class="zehnzig te"><use xlink:href="#bstg_außen" /><g transform="rotate(-45) translate(-15,0)"><text y="-7">Stresemannallee/</text><text y="5">Mörfelder Landstraße</text></g></g>
+  <g id="hstsma" transform="translate(-20,425)" class="dreizig te"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(-15,0)">Stresemannallee</text></g>
   <g id="hstbeu" transform="translate(50,480)" class="zehnzig te"><use xlink:href="#bstg_vers1" transform="rotate(90)" /><g transform="rotate(-45) translate(-20,15)"><text y="-7">Beuthener</text><text y="5">Straße</text></g></g>
   <g id="hstbre" transform="translate(95,480)" class="zehnzig te"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Breslauer Straße</text></g>
   <g id="hstohl" transform="translate(135,480)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Oppenheimer Landstraße</text></g>
@@ -279,21 +274,15 @@
    <g id="hst3725" transform="translate(25,-10)" class="nullzig"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="-15" y="25">Südbahnhof</text></g>
   </g>
   <g id="hstbts" transform="translate(285,390)" class="te"><use xlink:href="#hstl_außen" transform="rotate(90)" /><g transform="translate(0,-20)"><text y="-7">Brücken-/</text><text y="5">Textorstraße</text></g></g>
-  <g id="hgr3102" transform="translate(365,390)">
+  <g id="hgr3102" transform="translate(365,390)" class="dreizig">
    <path class="hstgruppe" d="M 5,20 c 25,0 40,-5 40,-30 s -20,-40 -45,-40 s -50,30 -50,50 s 30,20 55,20 Z"/>
    <path class="bstggruppe" d="M 5,15 c 20,0 35,-5 35,-25 s -20,-35 -40,-35 s -30,15 -30,35 s 10,25 35,25 Z" />
    <g id="hstlts" transform="translate(-40,0)"><use xlink:href="#hstl_außen" transform="rotate(90)" /><g transform="translate(0,25)"><text class="hstgrtitel">Lokalbahnhof/</text><text y="12">Textorstraße</text></g></g>
-   <use xlink:href="#bahnsteig" class="dreizig" transform="translate(0,5) rotate(90)" />
-   <use xlink:href="#bahnsteig" class="dreizig" transform="translate(25,-5) rotate(-90)" />
-   <use xlink:href="#bahnsteig" class="dreizig" transform="translate(5,-25)" />
-   <use xlink:href="#bau" transform="translate(10,-25)" />
-   <use xlink:href="#bahnsteig" class="dreizig" transform="translate(-5,-20) rotate(180)" />
-   <use xlink:href="#bahnsteig" class="dreizig" transform="translate(-15,-20)" />
-   <path class="strecke bb" d="M 10,-15 l 10,15 l 50,50 v 40" />
-   <text class="ab_bb tm" transform="translate(70,100)">Barrierefreier Umbau des Bahnsteiges</text>
-   <text class="ab_bb tm" transform="translate(70,109)">Lokalbahnhof Richtung Frankensteiner</text>
-   <text class="ab_bb tm" transform="translate(70,118)">Platz bis voraussichtlich</text>
-   <text class="ab_bb tm" transform="translate(70,127)">24. Januar 2014</text>
+   <use xlink:href="#bahnsteig" transform="translate(0,5) rotate(90)" />
+   <use xlink:href="#bahnsteig" transform="translate(25,-5) rotate(-90)" />
+   <use xlink:href="#bahnsteig" transform="translate(5,-25)" />
+   <use xlink:href="#bahnsteig" transform="translate(-5,-20) rotate(180)" />
+   <use xlink:href="#bahnsteig" transform="translate(-15,-20)" />
    <text x="25" y="5" transform="rotate(-45)">Lokalbahnhof</text>
   </g>
   <g id="hsthss" transform="translate(440,390) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text x="20" y="0" transform="rotate(45)">Heister-/Seehofstraße</text></g>
@@ -378,14 +367,8 @@
   <g id="hstmak" transform="translate(1000,175) rotate(-90)" class="dreizig te"><use xlink:href="#bstg_außen" /><text x="-20" y="10" transform="rotate(45)">Mainkur/Bahnhof</text></g>
   <g id="hstafe" transform="translate(1020,210)" class="nullzig te"><use xlink:href="#bstg_außen" /><text x="-20" y="0" transform="rotate(-45)">Alt-Fechenheim</text></g>
   <g id="hstaws" transform="translate(1020,250)" class="dreizig te">
-   <text x="-302" y="191" class="te ab_bb">Barrierefreier Ausbau bis voraussichtlich</text>
-   <text x="-302" y="200" class="te ab_bb">2. Hälfte Januar 2014 und Umbenennung von</text>
-   <text x="-302" y="209" class="te ab_bb">„Fechenheim Post“ in „Arthur-von-Weinberg-Steg“</text>
-   <path class="strecke bb" d="M -300,196 h 100 l 70,-70"/>
    <use xlink:href="#bstg_außen" />
    <text x="-20" y="0" transform="rotate(-45)">Arthur-von-Weinberg-Steg</text>
-   <use xlink:href="#bau" transform="translate(-10 0)" />
-   <use xlink:href="#bau" transform="translate(+10 0)" />
   </g>
   <g id="hst2500" transform="translate(1020,305)" class="dreizig te">
    <text x="-20" y="0" transform="rotate(-45)">Schießhüttenstraße</text>
@@ -564,7 +547,6 @@
    <use xlink:href="#dobs_außen" class="dreizig"/>
    <use xlink:href="#bahnsteig" class="zehnzig" transform="translate(-5,-30) rotate(180)" />
    <use xlink:href="#bahnsteig" class="nullzig" transform="translate(20,-35) rotate(-90)" />
-   <use xlink:href="#bahnsteig" class="nullzig" transform="translate(50,-35) rotate(90)" />
    <text x="15" y="5">Oberforsthaus</text>
   </g>
   <g id="hststa" transform="translate(-265,705)" class="dreizig">
@@ -621,8 +603,7 @@
   <path id="schleife_waldfriedhof_2" d="M -615,570 a 15,15 0,0,0 0,30 a 10,10 0,0,0 10,-10 a 10,10 0,0,1 10,-10" />
   <path id="schleife_haardtwaldplatz" d="M -385,440 a 10,10 0,0,0 -10,-10 h -10 a 10,10 0,0,0 -10,10" />
   <path id="schleife_oberforsthaus" d="M -270,595 a 15,15 0,0,0 15,15 h 10 a 15,15 0,0,0 15,-15 a 10,10 0,0,0 -10,-10 h -10 a 10,10 0,0,1 -10,-10" />
-  <path id="lieschenstrecke_1" class="endet" d="M -5,475 h -80 q -4,0 -7,3 l -104,104 q -3,3 -7,3 h -22" />
-  <path id="lieschenstrecke_2" class="endet" d="M -60,475 c 5,0 5,10 10,10 h 20" />
+  <path id="lieschenstrecke_1" class="faeng endet geplant" d="M -35,475 h -10 q -4,0 -7,3 l -104,104 q -3,3 -7,3 h -62" />
   <path id="wa_stadion_1" d="M -260,650 c 0,5 -5,5 -5,10 v 5 c 0,5 -5,5 -5,10 q 0,4 -3,7 l -25,25 q -2,2 -2,5 v 3 c 0,5 -5,5 -5,10" />
   <path id="wa_stadion_2" d="M -270,665 v 50 c 0,5 10,5 10,10" />
   <path id="wa_stadion_3" class="endet" d="M -273,682 q -2,2 -2,5 v 48" />
@@ -632,8 +613,10 @@
   <path id="wa_stadion_7" d="M -260,685 c 0,5 -10,5 -10,10" />
  </g>
  <g class="strecke">
-  <path id="neuisenburg" d="M 205,415 a 20,20 0,0,0 -20,20 v 30 a 10,10 0,0,1 -10,10 h -180 a 20,20 0 0 0 -20,20 v 225 a 10,10 0,0,1 -10,10 a 10,10 0,0,0 -10,10
-                                               a 15,15 0,0,0 30,0 v -245 a 10,10 0,0,1 10,-10 h 180 a 20,20 0,0,0 20,-20 v -30 a 10,10 0,0,1 10,-10" />
+  <path id="moerfelder_1" d="M 205,415 a 20,20 0,0,0 -20,20 v 30 a 10,10 0,0,1 -10,10 h -180 a 10,10 0,0,1 -10,-10" />
+  <path id="moerfelder_2" d="M -25,465 a 20,20 0,0,0 20,20 h 180 a 20,20 0,0,0 20,-20 v -30 a 10,10 0,0,1 10,-10" />
+  <path id="neuisenburg" d="M -5,475 a 20,20 0 0 0 -20,20 v 225 a 10,10 0,0,1 -10,10 a 10,10 0,0,0 -10,10
+                                               a 15,15 0,0,0 30,0 v -245 a 10,10 0,0,1 10,-10" />
   <path id="textorstraße_1" d="M 185,405 a 20,20 0,0,0 20,20 h 45 a 20,20 0,0,0 20,-20 a 10,10 0,0,1 10,-10 h 100" />
   <path id="textorstraße_2" d="M 380,385 h -100 a 20,20 0,0,0 -20,20 a 10,10 0,0,1 -10,10 h -45 a 10,10 0,0,1 -10,-10" />
   <path id="langestraße_1" d="M 380,170 a 20,20 0,0,0 -20,20 v 155 c 0,10 -10,10 -10,20 v 10 a 10,10 0,0,1 -10,10" />
@@ -705,18 +688,16 @@
                            a 17.5,17.5 0,0,0 0,35 h 8 q 2,0 3.5,-1.5 l 22,-22 q 1.5,-1.5 3.5,-1.5 h 439 q 8,0 14,-6 l 180,-180 q 4,-4 8,-4 h 107 a 20,20 0,0,0 20,-20 v -10 a 10,10 0,0,1 10,-10" />
   <path id="haardtwaldplatz" d="M -206,446 q -4,4 -8,4 h -161 a 10,10 0,0,1 -10,-10 a 15,15 0,1,0 -30,0 a 20,20 0,0,0 20,20 h 181 q 8,0 14,-6" />
   <path id="stadion" d="M -264,504 q -6,6 -6,14 v 145 q 0,3 -4,7 l -27,27 q -4,4 -4,7 v 19 a 20,20 0,0,0 20,20 h 5 a 20,20 0,0,0 20,-20 v -205 q 0,-4 4,-8" />
+  <path id="stresemannallee_anschluss_1" d="M -25,465 v 30" />
+  <path id="stresemannallee_anschluss_2" d="M -15,495 v -30" />
   <g id="verlängerung_stresemannallee" class="geplant">
-   <path id="stresemannallee_1" d="M -25,370 v 125" />
-   <path id="stresemannallee_2" d="M -15,495 v -120" />
-   <path id="abzw_mörfelder_1" d="M -5,475 a 10,10 0,0,1 -10,-10" />
-   <path id="abzw_mörfelder_2" d="M -5,485 a 20,20 0,0,1 -20,-20" />
+   <path id="stresemannallee_1" d="M -25,370 v 95" />
+   <path id="stresemannallee_2" d="M -15,465 v -90" />
    <path id="hippodrom_drittesgleis" d="M -15,395 c 0,-5 10,-5 10,-10 v -15" />
    <path id="abzw_vogelweid_1" d="M -15,400 a 20,20 0,0,0 -20,-20" />
    <path id="abzw_vogelweid_2" d="M -25,400 a 10,10 0,0,0 -10,-10" />
-   <!--NICHT MEHR IN PF-UNTERLAGEN <path id="gw_stresemannallee" class="bb" d="M -15,405 c 0,5 -10,5 -10,10" />-->
-   <path id="lieschen" d="M -25,495 a 10,10 0,0,0, -10,-10" />
   </g>
-   <path id="zweitesgleis_rebstöcker" class="geplant" d="M -282,140 l -55,-55" />
+  <path id="zweitesgleis_rebstöcker" class="geplant" d="M -282,140 l -55,-55" />
  </g>
  <g id="betriebshöfe" class="strecke bb">
   <g id="gleiswerkstätten_riederhöfe" transform="translate(-135,190)" >
