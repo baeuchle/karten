@@ -33,6 +33,7 @@
   .zugabe { marker-start: url(#Arrow2Lend); }
   .endet { marker-end:   url(#prell); }
   .faeng { marker-start: url(#prell); }
+  .anschluss { marker-end: url(#ArrowDB); }
   .nullzig use, use.nullzig { stroke:#ff0000; fill:url(#bs00); }
   .funfzig use, use.funfzig { stroke:#8000ff; fill:url(#bs56); }
   .achtzig use, use.achtzig { stroke:#00c000; fill:url(#bs80); }
@@ -109,6 +110,9 @@
      case "verlängerung_europaviertel":
       document.getElementById( id ).setAttribute("transform","translate(0,30)");
       break;
+     case "rtw":
+      document.getElementById( id ).setAttribute("transform","translate(-30,30)");
+      break;
      case "ginnheimer_kurve":
      case "frankfurter_berg":
       document.getElementById( id ).setAttribute("transform","translate(45,0)");
@@ -155,6 +159,7 @@
   <linearGradient id="grau" spreadMethod="reflect" x1=".5" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-color="#c0c0c0" /><stop offset="100%" stop-color="#808080" /></linearGradient>
   <marker id="Arrow1Lend" refX="0" refY="0" style="overflow:visible" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" /></marker>
   <marker id="Arrow2Lend" refX="0" refY="0" style="overflow:visible" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" transform="scale(-1,-1)" /></marker>
+  <marker id="ArrowDB" refX="0" refY="0" style="overflow:visible" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" /><rect x="5" y="-5" width="15" height="10" rx="1" ry="1" style="stroke:red; fill:none;" /></marker>
   <marker id="prell" refX="0" refY="0" style="overflow:visible" orient="auto"><path style="stroke:currentColor;" d="M 0,-1 L 0,1" /></marker>
   <path id="bahnsteig" d="M 6,-15 L 2,-15 L 2,15 L 6,15" class="bahnsteig" />
   <path id="sbahn"     d="M 6,-15 L 2,-15 L 2,50 L 6,50" class="bahnsteig" style="fill:url(#bs99)" />
@@ -211,7 +216,7 @@
     style="fill:white;stroke:#0000c0;stroke-width:.1px" />
  <g id="textboxen">
   <g id="legende" transform="translate(550,-250)">
-   <rect class="box" width="400" height="342" />
+   <rect class="box" width="400" height="372" />
    <text class="ueberschrift" x="15" y="35">U-Bahn Frankfurt am Main</text>
    <text class="unterschrift" x="20" y="60">Streckennetz (ohne Maßstab)</text>
    <text class="stand"        x="20" y="80">Stand: <tspan class="stand_monat"/></text>
@@ -223,13 +228,14 @@
     <use xlink:href="#tunnelrampe" transform="translate(30,-6) rotate(90)" /><text x="75">Tunnelportal</text>
    </g>
    <g id="legende_ansch" transform="translate(30,270)"><path class="ubergabe strecke" d="M 0 -6 h 50" /><text x="55" class="tm ref">A</text><text x="75">Anschluss an Straßenbahnnetz mit Referenz¹</text></g>
-   <text class="ab_bb"   transform="translate(30,300)">BB: Betriebsbahnhof, AB: Abstellbahnhof</text>
-   <use xlink:href="#keinu2" transform="translate(30 315)" />
-   <text class="ab_bb" transform="translate(46,314)">Zwischen Niederursel und Kalbach sind nur</text>
-   <text class="ab_bb" transform="translate(46,326)">U4- und U5-Wagen zugelassen</text>
-   <text class="ab_bb" transform="translate(18,338)">¹: Siehe <a class="link" xlink:href="strassenbahnnetz.svg">Straßenbahn-Netz Frankfurt</a></text>
+   <g id="legende_normal" transform="translate(30,300)"><path class="strecke anschluss" d="M 0 -6 h 45" /><text x="75">Anschluss an DB-Netz</text></g>
+   <text class="ab_bb"   transform="translate(30,330)">BB: Betriebsbahnhof, AB: Abstellbahnhof</text>
+   <use xlink:href="#keinu2" transform="translate(30 345)" />
+   <text class="ab_bb" transform="translate(46,344)">Zwischen Niederursel und Kalbach sind nur</text>
+   <text class="ab_bb" transform="translate(46,356)">U4- und U5-Wagen zugelassen</text>
+   <text class="ab_bb" transform="translate(18,368)">¹: Siehe <a class="link" xlink:href="strassenbahnnetz.svg">Straßenbahn-Netz Frankfurt</a></text>
   </g>
-  <g id="bahnsteigshöhen" transform="translate(950,92)">
+  <g id="bahnsteigshöhen" transform="translate(950,122)">
    <rect class="box" width="200" height="225" x="-200" y="0" />
    <text x="-100" y="20" class="tm" style="font-weight:bold;">Bahnsteigshöhen</text>
    <use xlink:href="#bahnsteig" class="nullzig"    transform="translate(-135, 45) rotate(90)" /><text x="-100"  y="55">&lt; 30 cm</text>
@@ -240,20 +246,29 @@
    <use xlink:href="#bau" transform="translate(-175,175)" /><text x="-140" y="180">im Bau/Umbau</text>
    <use xlink:href="#uml" transform="translate(-175,200)" /><text x="-140" y="205">Ersatzhaltestelle</text>
   </g>
-  <g id="ausbauprojekte" transform="translate(-815,140)">
-   <rect class="box" width="500" height="190" />
-   <text class="unterschrift" x="20" y="25">Ausbauprojekte</text>
-   <text class="script ab_bb" x="20" y="40">Hier oder in entsprechender Stelle der Karte klicken, um die Darstellung zu ändern</text>
-   <text class="hochstatio" x="20" y="60" onclick="geplant('verlängerung_badhomburg')">Bad Homburg: Gonzenheim → Bad Homburg Bahnhof <tspan class="link" id="verlängerung_badhomburg_aktion">verstecken</tspan></text>
-   <text class="ab_bb" x="30" y="75">Status: Planfeststellungsverfahren</text>
-   <text class="hochstatio" x="20" y="95" onclick="geplant('verlängerung_europaviertel')">Europaviertel: Hauptbahnhof → Wohnpark <tspan class="link" id="verlängerung_europaviertel_aktion">verstecken</tspan></text>
-   <text class="ab_bb" x="30" y="110">Status: Vorbereitende Arbeiten haben begonnen</text>
-   <text class="hochstatio" x="20" y="130" onclick="geplant('ginnheimer_kurve')">Ginnheimer Kurve: Ginnheim → Bockenheimer Warte <tspan class="link" id="ginnheimer_kurve_aktion">verstecken</tspan></text>
-   <text class="ab_bb" x="30" y="145">Status: Machbarkeitsstudie/Alternativplanung entlang Rosa-Luxemburg-Straße</text>
-   <text class="hochstatio" x="20" y="165" onclick="geplant('frankfurter_berg')">Frankfurter Berg: Preungesheim → Frankfurter Berg <tspan class="link" id="frankfurter_berg_aktion">verstecken</tspan></text>
-   <text class="ab_bb" x="30" y="180">Status: Planfeststellung wird vorbereitet</text>
+  <g id="ausbauprojekte" transform="translate(-815,100)">
+   <rect class="box" width="305" height="320" />
+   <text class="unterschrift" x="15" y="25">Ausbauprojekte</text>
+   <text class="script ab_bb" x="20" y="40">Hier oder in entsprechender Stelle der Karte</text>
+   <text class="script ab_bb" x="20" y="50">klicken, um die Darstellung zu ändern</text>
+   <text class="hochstatio" x="10" y="70" onclick="geplant('verlängerung_badhomburg')">Bad Homburg: <tspan class="link" id="verlängerung_badhomburg_aktion">verstecken</tspan></text>
+   <text class="hochstatio" x="15" y="85" onclick="geplant('verlängerung_badhomburg')">Gonzenheim → Bad Homburg Bahnhof</text>
+   <text class="ab_bb"      x="20" y="100">Status: Planfeststellungsverfahren</text>
+   <text class="hochstatio" x="10" y="120" onclick="geplant('verlängerung_europaviertel')">Europaviertel: <tspan class="link" id="verlängerung_europaviertel_aktion">verstecken</tspan></text>
+   <text class="hochstatio" x="15" y="135" onclick="geplant('verlängerung_europaviertel')">Hauptbahnhof → Wohnpark</text>
+   <text class="ab_bb"      x="20" y="150">Status: Vorbereitende Arbeiten haben begonnen</text>
+   <text class="hochstatio" x="10" y="170" onclick="geplant('ginnheimer_kurve')">Ginnheimer Kurve: <tspan class="link" id="ginnheimer_kurve_aktion">verstecken</tspan></text>
+   <text class="hochstatio" x="15" y="185" onclick="geplant('ginnheimer_kurve')">Ginnheim → Bockenheimer Warte</text>
+   <text class="ab_bb"      x="20" y="200">Status: Machbarkeitsstudie/Alternativplanung</text>
+   <text class="ab_bb"      x="20" y="210">entlang Rosa-Luxemburg-Straße</text>
+   <text class="hochstatio" x="10" y="230" onclick="geplant('frankfurter_berg')">Frankfurter Berg: <tspan class="link" id="frankfurter_berg_aktion">verstecken</tspan></text>
+   <text class="hochstatio" x="15" y="245" onclick="geplant('frankfurter_berg')">Preungesheim → Frankfurter Berg</text>
+   <text class="ab_bb"      x="20" y="260">Status: Planfeststellung wird vorbereitet</text>
+   <text class="hochstatio" x="10" y="280" onclick="geplant('rtw')">Regionaltangente West: <tspan class="link" id="rtw_aktion">verstecken</tspan></text>
+   <text class="hochstatio" x="15" y="295" onclick="geplant('rtw')">(Eschborn →) Praunheim → Niederursel</text>
+   <text class="ab_bb"      x="20" y="310">Status: Genauer Verlauf wird noch untersucht</text>
   </g>
-  <g id="kilometrierungen" transform="translate(-815,330)">
+  <g id="kilometrierungen" transform="translate(-120,-250)">
    <rect class="box" width="400" height="160" />
    <text class="unterschrift" x="20" y="25">Kilometrierungen anzeigen</text>
    <text class="hochstatio" x="20" y="45">
@@ -299,6 +314,7 @@
   <rect id="frankfurter_berg_ersatz" x="260" y="310" width="375" height="260" class="klicken" onclick="geplant('frankfurter_berg')"/>
   <rect id="ginnheimer_kurve_ersatz" x="-180" y="925" width="130" height="620" class="klicken" onclick="geplant('ginnheimer_kurve')"/>
   <rect id="verlängerung_europaviertel_ersatz" x="-720" y="1540" width="449" height="85" class="klicken" onclick="geplant('verlängerung_europaviertel')"/>
+  <path id="rtw_ersatz" d="M -680,660 h 230 v -200 h 130 v -140 l 160,-160 l -60,-60 l -289,289 v 32 h -172 z" class="klicken" onclick="geplant('rtw')"/>
  </g>
  <g id="stzw" class="strecke bb">
   <path d="M -465,705 a 20,20 0,0,0 -20,-20 h -20 c -5,0 -5,5 -10,5" />
@@ -508,7 +524,7 @@
   <g id="hst555" transform="translate(-333,40)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Bommersheim</text></g>
   <g id="hst556" transform="translate(-300,-10)" class="achtzig te"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Oberursel Bahnhof</text></g>
   <g id="hst557" transform="translate(-210,-40)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Oberursel Stadtmitte</text></g>
-  <g id="hst558" transform="translate(-210,-140)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Oberursel Altstadt</text></g>
+  <g id="hst558" transform="translate(-210,-140)" class="achtzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Oberursel Altstadt</text></g>
   <g id="hst561" transform="translate(-280,-210)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="-15">Lahnstraße</text></g>
   <g id="hst562" transform="translate(-380,-210)" class="achtzig tm"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="0" y="25">Glöcknerwiese</text></g>
   <g id="hst563" transform="translate(-480,-210)" class="achtzig tm"><use xlink:href="#bstg_mitte" transform="rotate(90)" /><text x="0" y="-10">Kupferhammer</text></g>
@@ -918,6 +934,14 @@
     <g id="hstgrueneburgpark" transform="translate(-125,1180)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Grüneburgpark</text></g>
     <g transform="translate(-140,1134)" id="ginnheimer_kurve_erkl" display="inline"><text y="-6">Vorgeschlagener Lückenschluss</text><text y="6">"Ginnheimer Kurve"</text></g>
    </g>
+  </g>
+  <g id="rtw" class="geplant" display="inline" transform="translate(-30,30)">
+   <path id="rtw1" class="anschluss" d="M -171,158 q -18,-18 -42,-18 q -24,0 -42,18 l -202,202 q -18,18 -18,42 v 123 a 50,50 0,0,1 -50,50 h -20" />
+   <path id="rtw2" d="M -465,625 v -223 q 0,-20 15,-35 c 7,-7 0,-14 7,-21 m 174,-174 c 7,-7 14,0 21,-7 q 15,-15 35,-15 q 20,0 35,15" />
+   <path id="u6_1" class="anschluss" d="M -465,525 a 60,60 0,0,1 -60,60 h -20" />
+   <path id="u6_2" d="M -475,525 v 100" />
+   <g id="hst327" transform="translate(-470,505)" class="achtzig te"><use xlink:href="#bstg_mitte" /><text x="-10" y="5">Gewerbegebiet Praunheim</text></g>
+   <text x="-455" y="425" id="rtw_erkl" display="inline">Regionaltangente West</text>
   </g>
  </g>
  <g id="texte">
