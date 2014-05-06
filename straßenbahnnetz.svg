@@ -271,7 +271,7 @@
   <g id="hgrsbf" transform="translate(215,430)">
    <path class="hstgruppe" d="M 25,10 c 30,0 65,0 65,-15 s -55,-20 -65,-20 c -55,0 -70,25 -70,35 s 0,30 20,30 c 25,0 25,-30 50,-30 Z" />
    <g id="hstsss" transform="translate(-25,30)"><use xlink:href="#hstl_außen" /><g transform="translate(20,10)"><text y="-12" class="hstgrtitel">Südbahnhof/</text><text>Schweizer Straße</text></g></g>
-   <g id="hst3725" transform="translate(25,-10)" class="nullzig"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="-15" y="25">Südbahnhof</text></g>
+   <g id="hst3725" transform="translate(25,-10)" class="nullzig"><use xlink:href="#dobs_außen" transform="rotate(90)" /><text x="-15" y="25">Südbahnhof</text></g>
   </g>
   <g id="hstbts" transform="translate(285,390)" class="te"><use xlink:href="#hstl_außen" transform="rotate(90)" /><g transform="translate(0,-20)"><text y="-7">Brücken-/</text><text y="5">Textorstraße</text></g></g>
   <g id="hgr3102" transform="translate(365,390)" class="dreizig">
@@ -353,8 +353,7 @@
    <ellipse cx="0" cy="30" rx="30" ry="50" class="hstgruppe" />
    <g id="hsthjr" transform="rotate(-90)" class="dreizig">
     <text x="20" y="0" transform="rotate(45)">Hugo-Junkers-Straße</text>
-    <use xlink:href="#bahnsteig" transform="translate(+5,0)"/>
-    <use xlink:href="#bahnsteig" transform="translate(-5,0)"/>
+    <use xlink:href="#bstg_außen" />
    </g>
    <g id="hsthjs" transform="translate(-5,35) rotate(180)" class="nullzig te">
     <use xlink:href="#bahnsteig" transform="translate(-5,-5) scale(1,.65)" />
@@ -529,7 +528,7 @@
   </g>
   <g id="hstrls" transform="translate(-800,575) rotate(-90)" class="zehnzig">
    <path class="bstggruppe" transform="rotate(90)" d="M 0,35 c 50,0 55,-5 55,-25 s -50,-25 -55,-25 a 35,25 0,0,0 0,50" />
-   <use xlink:href="#bahnsteig" transform="translate(5,0)" />
+   <use xlink:href="#doppelbst" transform="translate(5,0)" />
    <text x="20" y="0" transform="rotate(45)">Rheinlandstraße</text>
   </g>
   <g id="hstfhs" transform="translate(-255,455) rotate(-90)" class="te"><use xlink:href="#hstl_links" transform="rotate(180)"/><text x="-15" y="10" transform="rotate(45)">Frauenhofstraße</text></g>
