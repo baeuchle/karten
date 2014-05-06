@@ -517,15 +517,7 @@
   <g id="hstwau" transform="translate(-555,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="10" transform="rotate(45)">Waldau</text></g>
   <g id="hst4101" transform="translate(-600,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_vers2" /><text x="-10" y="20" transform="rotate(45)">Waldfriedhof Goldstein</text></g>
   <g id="hsthar" transform="translate(-670,575) rotate(-90)" class="zehnzig te"><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Harthweg</text></g>
-  <g id="hstfdw" transform="translate(-710,575) rotate(-90)" class="dreizig te">
-   <text transform="rotate(90) translate(50,-109)" class="ab_bb tm">Barrierefreier Ausbau, Wiedereröffnungs-</text>
-   <text transform="rotate(90) translate(50,-100)" class="ab_bb tm">termin nicht bekannt.</text>
-   <path transform="rotate(90)" d="M 50,-96 v 46 l -30,30" class="strecke bb"/>
-   <use xlink:href="#bstg_vers1" />
-   <text x="-15" y="10" transform="rotate(45)">Ferdinand-Dirichs-Weg</text>
-   <use xlink:href="#bau" transform="translate(-10 -10) rotate(90)" />
-   <use xlink:href="#bau" transform="translate(+10 +10) rotate(90)" />
-  </g>
+  <g id="hstfdw" transform="translate(-710,575) rotate(-90)" class="dreizig te"><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Ferdinand-Dirichs-Weg</text></g>
   <g id="hstrls" transform="translate(-800,575) rotate(-90)" class="zehnzig">
    <path class="bstggruppe" transform="rotate(90)" d="M 0,35 c 50,0 55,-5 55,-25 s -50,-25 -55,-25 a 35,25 0,0,0 0,50" />
    <use xlink:href="#doppelbst" transform="translate(5,0)" />
