@@ -398,7 +398,7 @@
   <path id="gw_bockenheimerwarte" class="tb" d="M -146,1413 c 7,7 14,0 21,7 m -14,-14 c 7,7 0,14 7,21 c 3,3 0,6 3,9" />
   <path id="gw_alteoper" class="tb" d="M -2,1557 c -7,-7 0,-14 -7,-21 m -7,7 c 7,7 14,0 21,7" />
   <path id="wa_zoo_1" class="tb" d="M 389,1575 c -10,0 -10,10 -20,10 c -5,0 -5,-5 -10,-5" />
-  <path id="wa_zoo_2" class="tb endet" d="M 389,1585 c -10,0 -10,-10 -20,-10 c -5,0 -5,5 -10,5 h -25" />
+  <path id="wa_zoo_2" class="tb endet" d="M 409,1575 c -10,0 -10,10 -20,10 c -10,0 -10,-10 -20,-10 c -5,0 -5,5 -10,5 h -25" />
   <path id="gw_ostbahnhof" class="tb" d="M 531,1637 c -7,-7 -14,0 -21,-7 M 524,1644 c -7,-7 0,-14 -7,-21" />
   <path id="gw_eissporthalle" class="tb" d="M 634,1416  c -7,7 0,14 -7,21 m -7,-7 c 7,-7 14,0 21,-7" />
   <path id="abzw_johanna_tesch_platz_1" class="ubergabe" d="M 726,1368 a 10,10 0,0,0 -10,10 v 20" />
