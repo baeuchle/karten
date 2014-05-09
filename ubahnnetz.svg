@@ -365,6 +365,8 @@
   <path id="wa_oberursel_2" class="endet" d="M -134.5,-13.5 q 1.5,-1.5 3.5,-1.5 h 26" />
   <path id="wa_oberursel_3" class="endet" d="M -225,-5 h 70 c 5,0 5,-5 10,-5 h 40" />
   <path id="wa_oberursel_4" class="endet" d="M -143,-10 c 5,0 5,5 10,5 h 28" />
+  <use xlink:href="#weg" transform="translate(-155,-15)" />
+  <use xlink:href="#weg" transform="translate(-195,-5)" />
   <path id="gw_gloecknerwiese" d="M -340,-205 c -10,0 -10,-10 -20,-10" />
  </g>
  <g id="gw_b_strecke" class="strecke bb">
