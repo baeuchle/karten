@@ -378,12 +378,14 @@
   <path id="abzw_glauburgstrasse_1" class="zugabe" d="M 295,1375 h -5 a 10,10 0,0,1 -10,-10" />
   <path id="abzw_glauburgstrasse_2" class="ubergabe" d="M 270,1365 a 15,15 0,0,0 15,15 h 10" />
   <text transform="translate(295,1380) translate(5,2.5)" class="ref">B</text>
-  <path id="gw_kw" class="tb" d="M 280,1635 c 0,-10 10,-10 10,-20 M 270,1540 c 0,-10 10,-10 10,-20" />
-  <rect id="uw_seckbacher_ldstr" class="uberwerf" width="40" height="8" x="560" y="1247" />
+  <path id="gw_kw" class="tb" d="M 280,1615 c 0,-10 10,-10 10,-20 M 270,1540 c 0,-10 10,-10 10,-20" />
+  <path id="gw_hbf" class="tb" d="M -222,1620 c 0,-10 -10,-10 -10,-20 m 10,0 c 0,10 -10,10 -10,20" />
+  <path id="ul_d_bbost_1" class="tunnel" d="M 615,1251 h -52 q -4,0 -7,3 l -5,5 c -3,3 0,6 -3,9" />
+  <path id="ul_d_bbost_2" class="tunnel" d="M 571,1267 q 6,-6 14,-6 h 30" />
+  <rect id="uw_seckbacher_ldstr" class="uberwerf" width="40" height="8" x="558" y="1247" />
   <path id="wa_seckbacher_ldstr_1" class="tb endet" d="M 535,1285 c 6,-6 9,-5 15,-11 l 40,-40" />
   <path id="wa_seckbacher_ldstr_2" class="tb endet" d="M 542,1292 c 6,-6 5,-9 11,-15 l 40,-40" />
   <path id="wa_seckbacher_ldstr_gw" class="tb" d="M 550,1274 c 3,-3 6,0 9,-3 c 4,-4 8,0 12,-4 M 553,1277 c 3,-3 0,-6 3,-9" />
-  <path id="gw_hbf" class="tb" d="M -222,1620 c 0,-10 -10,-10 -10,-20 m 10,0 c 0,10 -10,10 -10,20" />
  </g>
  <g id="gw_c_strecke" class="strecke bb">
   <path id="wa_heerstrasse_1" d="M -475,685 c 0,-10 10,-10 10,-20" />
@@ -450,7 +452,7 @@
   <path id="b_2_stamm2" class="tunnel faeng" d="M 586,1230 l -40,40 c -6,6 -5,9 -11,15 l -20,20 c -6,6 -5,9 -11,15 l -206,206 q -18,18 -18,42 v 77" /> 
   <rect id="uw_kw_bb" class="uberwerf" width="10" height="20" x="278" y="1530" />
   <path id="scheffeleck_1" class="tunnel" d="M 290,1560 c 0,-20 -10,-20 -10,-40 v -5" />
-  <path id="scheffeleck_2" class="tunnel" d="M 270,1515 v 80 c 0,10 10,10 10,20"/>
+  <path id="scheffeleck_2" class="tunnel" d="M 270,1515 v 90 c 0,10 10,10 10,20"/>
   <use id="rampe_scheffeleck" xlink:href="#tunnelrampe" transform="translate(275,1515)" />
  </g>
  <g id="astrecke" class="strecke">
@@ -843,10 +845,6 @@
    <path id="ost_SW" d="M -116.5,55.5 q 0,2 1.5,3.5 l 6.5,6.5 q 1.5,1.5 3.5,1.5 h 56 q 2,0 3.5,1.5 l 9,9 q 1.5,1.5 3.5,1.5 h 11 c 10,0 10,-10 20,-10 a 20,20 0,0,1 20,20 m -10,0 a 10,10 0,0,0 -10,-10" />
    <path id="ost_NW" d="M -180,6 c 10,0 10,10 20,10 c 5,0 5,5 10,5 h 50 q 2,0 3.5,1.5" />
    <path id="wa_schäfflestrasse" class="endet" d="M 18,24 c 0,-10 -10,-10 -10,-20 c 0,-5 -5,-5 -5,-10 v -15" />
-  </g>
-  <g class="tunnel">
-   <path id="ul_d_bbost_1" d="M -200,6 h -52 q -4,0 -7,3 l -5,5 c -3,3 0,6 -3,9" />
-   <path id="ul_d_bbost_2" d="M -244,22 q 6,-6 14,-6 h 30" />
   </g>
   <g id="gleisnummern_ost">
    <path class="gebaude wand" id="ost_hal" d="M -85,68.5 v 3 h -3 v 6 h 3 v 6 h -3 v 3 h 33 v -9 h -3 v -6 h 3 v -3 h -30" />
