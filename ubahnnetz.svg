@@ -542,9 +542,41 @@
   <g id="hst613" transform="translate(275,1580)" class="neunzig"><use xlink:href="#bahnsteig" transform="translate(15,0)" /><use xlink:href="#bstg_mitte" /><text x="20" y="-20">Konstablerwache</text></g>
   <g id="hst614" transform="translate(275,1470)" class="nullzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Musterschule</text></g>
   <g id="hst615" transform="translate(275,1375)" class="nullzig te"><use xlink:href="#bstg_vers2" /><text x="-15" y="5">Glauburgstraße</text></g>
-  <g id="hst616" transform="translate(275,1280)" class="nullzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Deutsche Nationalbibliothek</text></g>
-  <g id="hst617" transform="translate(275,1200)" class="nullzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Hauptfriedhof</text></g>
-  <g id="hst621" transform="translate(275,1120)" class="nullzig"><use xlink:href="#bstg_vers3" /><text x="15" y="5">Neuer Jüdischer Friedhof</text></g>
+  <g id="hst616" transform="translate(275,1280)" class="achtzig">
+   <use xlink:href="#bstg_außen" />
+   <use xlink:href="#bau" transform="translate(-10,-5)"/>
+   <use xlink:href="#uml" transform="translate(-10,15) rotate(90)"/>
+   <use xlink:href="#bau" transform="translate(10,-5)"/>
+   <use xlink:href="#uml" transform="translate(10,15) rotate(90)"/>
+   <text x="15" y="5">Deutsche Nationalbibliothek</text>
+  </g>
+  <g id="hst617" transform="translate(275,1200)" class="achtzig">
+   <use xlink:href="#bstg_außen" />
+   <use xlink:href="#bau" transform="translate(-10,+5)"/>
+   <use xlink:href="#uml" transform="translate(-10,-15) rotate(-90)"/>
+   <use xlink:href="#bau" transform="translate(10,+5)"/>
+   <use xlink:href="#uml" transform="translate(10,-15) rotate(-90)"/>
+   <text x="15" y="5">Hauptfriedhof</text>
+  </g>
+  <g id="hst621" transform="translate(275,1120)" class="nullzig">
+   <use xlink:href="#bstg_vers3" />
+   <use xlink:href="#uml" transform="translate(-10,-10) rotate(90)"/>
+   <use xlink:href="#uml" transform="translate(+10,+10) rotate(90)"/>
+   <text x="15" y="5">Neuer Jüdischer Friedhof</text>
+   <path class="bb" d="M 230,40 l -40,100" />
+   <path class="bb" d="M 230,40 l -120,30" />
+   <path class="bb" d="M 220, 0 h -40" />
+   <rect style="fill:white;" x="220" y="30" width="20" height="20" />
+   <text x="230" y="-40" class="ab_bb">Barrierefreier Umbau der Stationen</text>
+   <text x="230" y="-30" class="ab_bb">„Deutsche Nationalbibliothek“</text>
+   <text x="230" y="-20" class="ab_bb">(26. Mai – Ende August 2014) und</text>
+   <text x="230" y="-10" class="ab_bb">„Hauptfriedhof“</text>
+   <text x="230" y="000" class="ab_bb">(12. Mai – Ende August 2014).</text>
+   <text x="230" y="+10" class="ab_bb">Die Haltestelle „Neuer Jüdischer Friedhof“</text>
+   <text x="230" y="+20" class="ab_bb">wird während der Arbeiten mit der</text>
+   <text x="230" y="+30" class="ab_bb">Ersatzhaltestelle „Hauptfriedhof“</text>
+   <text x="230" y="+40" class="ab_bb">zusammengelegt.</text>
+  </g>
   <g id="hst622" transform="translate(275,1040)" class="nullzig te">
    <use xlink:href="#bstg_außen" />
    <text x="-15" y="0">Eckenheimer</text>
