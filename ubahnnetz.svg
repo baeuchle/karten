@@ -163,7 +163,7 @@
   <marker id="prell" refX="0" refY="0" style="overflow:visible" orient="auto"><path style="stroke:currentColor;" d="M 0,-1 L 0,1" /></marker>
   <path id="einwagen" d="M 6,0 L 2,0 L 2,7.5 L 6,7.5" class="bahnsteig" />
   <g id="bahnsteig">
-   <use xlink:href="#einwagen" transform="translate(0,-15.)" />
+   <use xlink:href="#einwagen" transform="translate(0,-15.0)" />
    <use xlink:href="#einwagen" transform="translate(0,-7.5)" />
    <use xlink:href="#einwagen" transform="translate(0,+0.0)" />
    <use xlink:href="#einwagen" transform="translate(0,+7.5)" />
