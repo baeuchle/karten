@@ -246,7 +246,12 @@
   <g id="hstoss" transform="translate(-20,635)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text transform="translate(15,5)">Oberschweinstiege</text></g>
   <g id="hstlui" transform="translate(-20,565)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(-15,0)">Louisa Bahnhof</text></g>
   <g id="hstsam" transform="translate(-20,505)" class="zehnzig te"><use xlink:href="#bstg_außen" /><g transform="rotate(-45) translate(-15,0)"><text y="-7">Stresemannallee/</text><text y="5">Mörfelder Landstraße</text></g></g>
-  <g id="hstsma" transform="translate(-20,425)" class="dreizig te"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(-15,0)">Stresemannallee</text></g>
+  <g id="hstsma" transform="translate(-20,425)" class="dreizig te">
+   <use xlink:href="#bstg_außen" />
+   <use xlink:href="#bau" transform="translate(-10,0)"/>
+   <use xlink:href="#bau" transform="translate(+10,0)"/>
+   <text transform="rotate(-45) translate(-15,0)">Stresemannallee</text>
+  </g>
   <g id="hstbeu" transform="translate(50,480)" class="zehnzig te"><use xlink:href="#bstg_vers1" transform="rotate(90)" /><g transform="rotate(-45) translate(-20,15)"><text y="-7">Beuthener</text><text y="5">Straße</text></g></g>
   <g id="hstbre" transform="translate(95,480)" class="zehnzig te"><use xlink:href="#bstg_außen" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Breslauer Straße</text></g>
   <g id="hstohl" transform="translate(135,480)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Oppenheimer Landstraße</text></g>
