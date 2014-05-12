@@ -77,8 +77,8 @@
   .keinewand { stroke:none; }
   .beschrift path, .beschrift circle, .beschrift rect { fill:none; stroke:#93799a; stroke-width:.5; }
 
-  .bstggruppe { fill:#ffffc0; stroke:yellow; stroke-width:4pt; stroke-dasharray:2 1; }
-  .hstgruppe { fill:#c0ffc0; stroke:#80ff80; stroke-width:4pt; stroke-dasharray:.5 .25; }
+  .bstggruppe { fill:#ffffc0; stroke:yellow; stroke-width:4pt; stroke-dasharray:2 1; fill-opacity:.8; }
+  .hstgruppe { fill:#c0ffc0; stroke:#80ff80; stroke-width:4pt; stroke-dasharray:.5 .25; fill-opacity:.8; }
   .hstgrtitel { font-size:6pt; }
 
   .box { fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:2; }
@@ -87,6 +87,10 @@
   .stand {  font-size:12pt;fill:#000000;fill-opacity:1;stroke:none; }
 
   #baeume circle { fill:#008000; stroke:none; }
+
+  .eigener path { stroke:none; stroke-width:1; fill:#c0a080; }
+  .spur path { stroke:none; stroke-width:1; fill:#e0e0e5; }
+  }
  ]]>
  </style>
  <defs>
@@ -237,6 +241,17 @@
   <use xlink:href="#grid" transform="translate( 1200, 1200)" />
   <use xlink:href="#grid" transform="translate( 1300, 1300)" />
   <path style="stroke-width:4px; stroke:#f00;" d="M -3000   0 H 3000" /><path style="stroke-width:4px; stroke:#0f0;" d="M   0 -3000 V 3000" />
+ </g>
+ <g class="eigener">
+  <path id="schwanheim_schotter" d="M -300,540 l -26,26 q -4,4 -8,4 h -246
+                      c -5,0 -5,-5 -10,-5 h -10 v 5 h -210
+                      a 17.5,17.5 0,0,0 0,35 h 8 q 2,0 3.5,-1.5 l 17,-17
+                      q 1.5,-1.5 3.5,-1.5 h 1 q 2,0 3.5,1.5 l 12,12 q 1.5,1.5 3.5,1.5 h8 v -20
+                      h 120 v 5 a 15,15 0,0,0 15,15 a 10,10 0,0,0 10,-10 a 10,10 0,0,1 10,-10
+                      h 261 q 8,0 14,-6 l 26,-26" />
+ </g>
+ <g class="spur">
+  <path id="mainzer_1" d="M -30,70 h -130 v 10 h 130" />
  </g>
  <g id="haltestellen" class="haltestellen">
   <g id="hstnis" transform="translate(-20,720)" class="dreizig">
@@ -610,93 +625,6 @@
   <path id="wa_stadion_6" class="endet" d="M -293,702 q -2,2 -2,5 v 28" />
   <path id="wa_stadion_7" d="M -260,685 c 0,5 -10,5 -10,10" />
  </g>
- <g class="strecke">
-  <path id="moerfelder_1" d="M 205,415 a 20,20 0,0,0 -20,20 v 30 a 10,10 0,0,1 -10,10 h -180 a 10,10 0,0,1 -10,-10" />
-  <path id="moerfelder_2" d="M -25,465 a 20,20 0,0,0 20,20 h 180 a 20,20 0,0,0 20,-20 v -30 a 10,10 0,0,1 10,-10" />
-  <path id="neuisenburg" d="M -5,475 a 20,20 0 0 0 -20,20 v 225 a 10,10 0,0,1 -10,10 a 10,10 0,0,0 -10,10
-                                               a 15,15 0,0,0 30,0 v -245 a 10,10 0,0,1 10,-10" />
-  <path id="textorstraße_1" d="M 185,405 a 20,20 0,0,0 20,20 h 45 a 20,20 0,0,0 20,-20 a 10,10 0,0,1 10,-10 h 100" />
-  <path id="textorstraße_2" d="M 380,385 h -100 a 20,20 0,0,0 -20,20 a 10,10 0,0,1 -10,10 h -45 a 10,10 0,0,1 -10,-10" />
-  <path id="langestraße_1" d="M 380,170 a 20,20 0,0,0 -20,20 v 155 c 0,10 -10,10 -10,20 v 10 a 10,10 0,0,1 -10,10" />
-  <path id="langestraße_2" d="M 350,395 a 20,20 0 0 0 20,-20 v -185 a 10,10 0,0,1 10,-10" />
-  <path id="oberrad_1" class="endet" d="M 360,345 v 30 a 20,20 0,0,0 20,20 h 410" />
-  <path id="oberrad_2" class="faeng" d="M 790,385 h -410 a 10,10 0,0,1 -10,-10 v -30" />
-  <path id="gartenstraße_1" d="M 195,435 v -75 a 20,20 0,0,0 -20,-20 h -170 a 10,10 0,0,1 -10,-10" />
-  <path id="gartenstraße_2" d="M -25,300 c 0,10 10,10 10,20 v 10 a 20,20 0,0,0 20,20 h 170 a 10,10 0,0,1 10,10 v 75" />
-  <path id="friedensbrücke_1" d="M -30,390 a 15,15 0,0,0 15,-15 v -15 c 0,-10 10,-10 10,-20 v -20 c 0,-10 -10,-10 -10,-20 v -100" />
-  <path id="friedensbrücke_2" d="M -25,200 V 360"/>
-  <path id="heilbronnerstraße_1" d="M -15,230 a 20,20 0,0,0 -20,-20 h -190" />
-  <path id="heilbronnerstraße_2" d="M -225,220 h 190 a 10,10 0,0,1 10,10" />
-  <path id="hbf_1" d="M -5,170 a 20,20 0,0,0 -20,20 v 10 a 10,10 0,0,1 -10,10" />
-  <path id="hbf_2" d="M -35,220 a 20,20 0,0,0 20,-20 v -10 a 10,10 0,0,1 10,-10" />
-  <path id="altstadt_1" d="M -25,160 a 20,20 0,0,0 20,20 h 280" />
-  <path id="altstadt_2" d="M 275,170 h -280 a 10,10 0,0,1 -10,-10" />
-  <path id="konstablerwache_1" d="M 245,180 a 20,20 0,0,0 20,-20 v -195 a 10,10 0,0,1 10,-10" />
-  <path id="konstablerwache_2" d="M 275,-55 a 20,20 0,0,0 -20,20 v 195 a 10,10 0,0,1 -10,10" />
-  <path id="glauburgstraße_1" class="ubergabe" d="M 265,-35 a 20,20 0,0,0 -20,-20 h -50" />
-  <path id="glauburgstraße_2" class="zugabe" d="M 195,-45 h 50 a 10,10 0,0,1 10,10" />
-  <text transform="translate(195,-50) translate(-5,5)" class="ref te">B</text>
-  <path id="friedbergerlandstraße_1" class="endet" d="M 265,-35 v -385" />
-  <path id="friedbergerlandstraße_2" class="faeng" d="M 255,-420 v 385" />
-  <path id="bornheim_1" d="M 255,-65 a 20,20 0,0,0 20,20 h 300 a 10,10 0,0,1 10,10" />
-  <path id="bornheim_2" d="M 595,-35 a 20,20 0,0,0 -20,-20 h -300 a 10,10 0,0,1 -10,-10" />
-  <path id="eissporthalle_1" d="M 575,-45 h 180 a 10,10 0,0,1 10,10" />
-  <path id="eissporthalle_2" d="M 775,-35 a 20,20 0,0,0 -20,-20 h -180" />
-  <path id="batonstraße_1" d="M 255,160 a 20,20 0,0,0 20,20 h 75 a 10,10 0,0,1 10,10" />
-  <path id="batonstraße_2" d="M 370,190 a 20,20 0,0,0 -20,-20 h -75 a 10,10 0,0,1 -10,-10" />
-  <path id="allerheiligentor_1" d="M 350,180 h 130" />
-  <path id="allerheiligentor_2" d="M 480,170 h -130" />
-  <path id="zoo_1" d="M 450,180 a 20,20 0,0,0 20,-20 v -46 q 0,-4 4,-8 l 115,-115 q 6,-6 6,-14 v -12 a 10,10 0,0,1 10,-10" />
-  <path id="zoo_2" d="M 605,-55 a 20,20 0,0,0 -20,20 v 12 q 0,4 -4,8 l -115,115 q -6,6 -6,14 v 46 a 10,10 0,0,1 -10,10" />
-  <path id="inheidenerstraße" d="M 595,-35 v -85 a 15,15 0,1,0 -30,0 a 10,10 0,0,0 10,10 a 10,10 0,0,1 10,10 v 65" />
-  <path id="ostbahnhof_1" d="M 460,160 a 20,20 0,0,0 20,20 h 305" />
-  <path id="ostbahnhof_2" d="M 785,170 h -305 a 10,10 0,0,1 -10,-10" />
-  <path id="ratsweg_1" d="M 755,180 a 20,20 0,0,0 20,-20 v -225" />
-  <path id="ratsweg_2" d="M 765,-65 v 225 a 10,10 0,0,1 -10,10" />
-  <path id="johannateschplatz_1" class="ubergabe" d="M 755,-45 a 20,20 0,0,0 20,-20 v -50" />
-  <path id="johannateschplatz_2" class="zugabe" d="M 765,-115 v 50 a 10,10 0,0,1 -10,10" />
-  <text transform="translate(770,-115) translate(0,-5)" class="ref tm">O</text>
-  <path id="hanauerlandstraße_1" d="M 765,160 a 20,20 0,0,0 20,20 h 220 a 10,10 0,0,1 10,10 v 105 c 0,10 10,10 10,20 " />
-  <path id="hanauerlandstraße_2" class="faeng" d="M 1025,345 v -155 a 20,20 0,0,0 -20,-20 h -220 a 10,10 0,0,1 -10,-10" />
-  <path id="hauptbahnhof" d="M -15,190 v -130" />
-  <path id="hauptbahnhof" d="M -25,60 v 130"/>
-  <path id="mainzerlandstraßeA_1" d="M -15,90 a 20,20 0,0,0 -20,-20 h -60" />
-  <path id="mainzerlandstraßeA_2" d="M -95,80 h 60 a 10,10 0,0,1 10,10" />
-  <path id="güterplatz_1" d="M -75,90 a 20,20 0,0,0 -20,-20 h -251" />
-  <path id="güterplatz_2" d="M -346,80 h 251 a 10,10 0,0,1 10,10" />
-  <path id="niddastraße_1" d="M -15,130 a 20,20 0,0,0 -20,-20 h -30 a 10,10 0,0,1 -10,-10 v -10 a 10,10 0,0,1 10,-10" />
-  <path id="niddastraße_2" d="M -65,70 a 20,20 0,0,0 -20,20 v 10 a 20,20 0,0,0 20,20 h 30 a 10,10 0,0,1 10,10" />
-  <path id="friedrichebertanlage_1" d="M -5,-175 a 20,20 0,0,0 -20,20 v 215 a 10,10 0,0,1 -10,10" />
-  <path id="friedrichebertanlage_2" d="M -35,80 a 20,20 0,0,0 20,-20 v -215 a 10,10 0,0,1 10,-10" />
-  <path id="schlossstraße_1" class="zugabe" d="M -25,-255 v 100" />
-  <path id="schlossstraße_2" class="ubergabe" d="M -15,-155 v -100" />
-  <text transform="translate(-20,-255) translate(0,-5)" class="ref tm">C</text>
-  <path id="ginnheim_1" class="faeng" d="M 40,-415 v 230 a 10,10 0,0,1 -10,10 h -35 a 10,10 0,0,1 -10,-10" />
-  <path id="ginnheim_2" d="M -25,-185 a 20,20 0,0,0 20,20 h 35 a 20,20 0,0,0 20,-20 v -175 c 0,-5 -10,-5 -10,-10" />
-  <path id="ginnheim_u"  class="ubergabe" d="M 40,-370 q 0,-4 3,-7 l 14,-14" />
-  <text transform="translate(57,-391) rotate(-45) translate(5,5)" class="ref">A</text>
-  <path id="ginnheim_3" class="endet" d="M 40,-385 c 0,-5 10,-5 10,-10 v -20" />
-  <path id="rebstock_1" class="endet" d="M -15,-115 a 20,20 0,0,0 -20,-20 h -255" />
-  <path id="rebstock_2" class="faeng" d="M -290,-125 h 210 c 5,0 5,-10 10,-10" />
-  <path id="rebstock_3" d="M -45,-135 c 5,0 5,10 10,10 a 10,10 0,0,1 10,10" />
-  <path id="kleyerstraße_1" d="M -190,70 q -8,0 -14,6 l -56,56 q -4,4 -8,4 q -4,0 -8,-4 l -34,-34 q -4,-4 -4,-8 a 10,10 0,0,1 10,-10" />
-  <path id="kleyerstraße_2" d="M -282,126 c 3.5,3.5 -3.5,10.5 0,14 q 6,6 14,6 q 8,0 14,-6 l 56,-56 q 4,-4 8,-4" />
-  <path id="höchst" d="M -310,98 l -22,-22 q -6,-6 -14,-6 h -489 a 20,20 0,0,0 -20,20 a 20,20 0,0,0 20,20 h 30 a 15,15 0,0,0 15,-15 a 15,15 0,0,1 15,-15 h 429 q 4,0 8,4 l 14,14 c 7,7 14,0 21,7" />
-  <path id="schwanheim" d="M 5,340 h -10 a 20,20 0,0,0 -20,20 v 10 a 10,10 0,0,1 -10,10 h -97 q -8,0 -14,6 l -180,180 q -4,4 -8,4 h -476 
-                           a 17.5,17.5 0,0,0 0,35 h 8 q 2,0 3.5,-1.5 l 22,-22 q 1.5,-1.5 3.5,-1.5 h 439 q 8,0 14,-6 l 180,-180 q 4,-4 8,-4 h 107 a 20,20 0,0,0 20,-20 v -10 a 10,10 0,0,1 10,-10" />
-  <path id="haardtwaldplatz" d="M -206,446 q -4,4 -8,4 h -161 a 10,10 0,0,1 -10,-10 a 15,15 0,1,0 -30,0 a 20,20 0,0,0 20,20 h 181 q 8,0 14,-6" />
-  <path id="stadion" d="M -264,504 q -6,6 -6,14 v 145 q 0,3 -4,7 l -27,27 q -4,4 -4,7 v 19 a 20,20 0,0,0 20,20 h 5 a 20,20 0,0,0 20,-20 v -205 q 0,-4 4,-8" />
-  <path id="stresemannallee_anschluss_1" d="M -25,465 v 30" />
-  <path id="stresemannallee_anschluss_2" d="M -15,495 v -30" />
-  <g id="verlängerung_stresemannallee" class="geplant">
-   <path id="stresemannallee_1" d="M -25,370 v 95" />
-   <path id="stresemannallee_2" d="M -15,465 v -90" />
-   <path id="hippodrom_drittesgleis" d="M -15,395 c 0,-5 10,-5 10,-10 v -15" />
-   <path id="abzw_vogelweid_1" d="M -15,400 a 20,20 0,0,0 -20,-20" />
-   <path id="abzw_vogelweid_2" d="M -25,400 a 10,10 0,0,0 -10,-10" />
-  </g>
-  <path id="zweitesgleis_rebstöcker" class="geplant" d="M -282,140 l -55,-55" />
- </g>
  <g id="betriebshöfe" class="strecke bb">
   <g id="gleiswerkstätten_riederhöfe" transform="translate(-135,190)" >
    <path id="gwr_1" d="M 810,-10 a 15,15 0,0,0 15,-15 v -15 a 5,5 0,0,1 5,-5 h 35 c 5,0 5,5 10,5" />
@@ -795,6 +723,93 @@
    <path id="vma_03" class="endet" d="M 33.5,18.5 q 1.5,1.5 3.5,1.5 h 13" />
    <path id="vma_04" class="endet" d="M 23,10 q 2,0 3.5,1.5 l 12,12 q 1.5,1.5 3.5,1.5 h 8 " />
   </g>
+ </g>
+ <g class="strecke">
+  <path id="moerfelder_1" d="M 205,415 a 20,20 0,0,0 -20,20 v 30 a 10,10 0,0,1 -10,10 h -180 a 10,10 0,0,1 -10,-10" />
+  <path id="moerfelder_2" d="M -25,465 a 20,20 0,0,0 20,20 h 180 a 20,20 0,0,0 20,-20 v -30 a 10,10 0,0,1 10,-10" />
+  <path id="neuisenburg" d="M -5,475 a 20,20 0 0 0 -20,20 v 225 a 10,10 0,0,1 -10,10 a 10,10 0,0,0 -10,10
+                                               a 15,15 0,0,0 30,0 v -245 a 10,10 0,0,1 10,-10" />
+  <path id="textorstraße_1" d="M 185,405 a 20,20 0,0,0 20,20 h 45 a 20,20 0,0,0 20,-20 a 10,10 0,0,1 10,-10 h 100" />
+  <path id="textorstraße_2" d="M 380,385 h -100 a 20,20 0,0,0 -20,20 a 10,10 0,0,1 -10,10 h -45 a 10,10 0,0,1 -10,-10" />
+  <path id="langestraße_1" d="M 380,170 a 20,20 0,0,0 -20,20 v 155 c 0,10 -10,10 -10,20 v 10 a 10,10 0,0,1 -10,10" />
+  <path id="langestraße_2" d="M 350,395 a 20,20 0 0 0 20,-20 v -185 a 10,10 0,0,1 10,-10" />
+  <path id="oberrad_1" class="endet" d="M 360,345 v 30 a 20,20 0,0,0 20,20 h 410" />
+  <path id="oberrad_2" class="faeng" d="M 790,385 h -410 a 10,10 0,0,1 -10,-10 v -30" />
+  <path id="gartenstraße_1" d="M 195,435 v -75 a 20,20 0,0,0 -20,-20 h -170 a 10,10 0,0,1 -10,-10" />
+  <path id="gartenstraße_2" d="M -25,300 c 0,10 10,10 10,20 v 10 a 20,20 0,0,0 20,20 h 170 a 10,10 0,0,1 10,10 v 75" />
+  <path id="friedensbrücke_1" d="M -30,390 a 15,15 0,0,0 15,-15 v -15 c 0,-10 10,-10 10,-20 v -20 c 0,-10 -10,-10 -10,-20 v -100" />
+  <path id="friedensbrücke_2" d="M -25,200 V 360"/>
+  <path id="heilbronnerstraße_1" d="M -15,230 a 20,20 0,0,0 -20,-20 h -190" />
+  <path id="heilbronnerstraße_2" d="M -225,220 h 190 a 10,10 0,0,1 10,10" />
+  <path id="hbf_1" d="M -5,170 a 20,20 0,0,0 -20,20 v 10 a 10,10 0,0,1 -10,10" />
+  <path id="hbf_2" d="M -35,220 a 20,20 0,0,0 20,-20 v -10 a 10,10 0,0,1 10,-10" />
+  <path id="altstadt_1" d="M -25,160 a 20,20 0,0,0 20,20 h 280" />
+  <path id="altstadt_2" d="M 275,170 h -280 a 10,10 0,0,1 -10,-10" />
+  <path id="konstablerwache_1" d="M 245,180 a 20,20 0,0,0 20,-20 v -195 a 10,10 0,0,1 10,-10" />
+  <path id="konstablerwache_2" d="M 275,-55 a 20,20 0,0,0 -20,20 v 195 a 10,10 0,0,1 -10,10" />
+  <path id="glauburgstraße_1" class="ubergabe" d="M 265,-35 a 20,20 0,0,0 -20,-20 h -50" />
+  <path id="glauburgstraße_2" class="zugabe" d="M 195,-45 h 50 a 10,10 0,0,1 10,10" />
+  <text transform="translate(195,-50) translate(-5,5)" class="ref te">B</text>
+  <path id="friedbergerlandstraße_1" class="endet" d="M 265,-35 v -385" />
+  <path id="friedbergerlandstraße_2" class="faeng" d="M 255,-420 v 385" />
+  <path id="bornheim_1" d="M 255,-65 a 20,20 0,0,0 20,20 h 300 a 10,10 0,0,1 10,10" />
+  <path id="bornheim_2" d="M 595,-35 a 20,20 0,0,0 -20,-20 h -300 a 10,10 0,0,1 -10,-10" />
+  <path id="eissporthalle_1" d="M 575,-45 h 180 a 10,10 0,0,1 10,10" />
+  <path id="eissporthalle_2" d="M 775,-35 a 20,20 0,0,0 -20,-20 h -180" />
+  <path id="batonstraße_1" d="M 255,160 a 20,20 0,0,0 20,20 h 75 a 10,10 0,0,1 10,10" />
+  <path id="batonstraße_2" d="M 370,190 a 20,20 0,0,0 -20,-20 h -75 a 10,10 0,0,1 -10,-10" />
+  <path id="allerheiligentor_1" d="M 350,180 h 130" />
+  <path id="allerheiligentor_2" d="M 480,170 h -130" />
+  <path id="zoo_1" d="M 450,180 a 20,20 0,0,0 20,-20 v -46 q 0,-4 4,-8 l 115,-115 q 6,-6 6,-14 v -12 a 10,10 0,0,1 10,-10" />
+  <path id="zoo_2" d="M 605,-55 a 20,20 0,0,0 -20,20 v 12 q 0,4 -4,8 l -115,115 q -6,6 -6,14 v 46 a 10,10 0,0,1 -10,10" />
+  <path id="inheidenerstraße" d="M 595,-35 v -85 a 15,15 0,1,0 -30,0 a 10,10 0,0,0 10,10 a 10,10 0,0,1 10,10 v 65" />
+  <path id="ostbahnhof_1" d="M 460,160 a 20,20 0,0,0 20,20 h 305" />
+  <path id="ostbahnhof_2" d="M 785,170 h -305 a 10,10 0,0,1 -10,-10" />
+  <path id="ratsweg_1" d="M 755,180 a 20,20 0,0,0 20,-20 v -225" />
+  <path id="ratsweg_2" d="M 765,-65 v 225 a 10,10 0,0,1 -10,10" />
+  <path id="johannateschplatz_1" class="ubergabe" d="M 755,-45 a 20,20 0,0,0 20,-20 v -50" />
+  <path id="johannateschplatz_2" class="zugabe" d="M 765,-115 v 50 a 10,10 0,0,1 -10,10" />
+  <text transform="translate(770,-115) translate(0,-5)" class="ref tm">O</text>
+  <path id="hanauerlandstraße_1" d="M 765,160 a 20,20 0,0,0 20,20 h 220 a 10,10 0,0,1 10,10 v 105 c 0,10 10,10 10,20 " />
+  <path id="hanauerlandstraße_2" class="faeng" d="M 1025,345 v -155 a 20,20 0,0,0 -20,-20 h -220 a 10,10 0,0,1 -10,-10" />
+  <path id="hauptbahnhof" d="M -15,190 v -130" />
+  <path id="hauptbahnhof" d="M -25,60 v 130"/>
+  <path id="mainzerlandstraßeA_1" d="M -15,90 a 20,20 0,0,0 -20,-20 h -60" />
+  <path id="mainzerlandstraßeA_2" d="M -95,80 h 60 a 10,10 0,0,1 10,10" />
+  <path id="güterplatz_1" d="M -75,90 a 20,20 0,0,0 -20,-20 h -251" />
+  <path id="güterplatz_2" d="M -346,80 h 251 a 10,10 0,0,1 10,10" />
+  <path id="niddastraße_1" d="M -15,130 a 20,20 0,0,0 -20,-20 h -30 a 10,10 0,0,1 -10,-10 v -10 a 10,10 0,0,1 10,-10" />
+  <path id="niddastraße_2" d="M -65,70 a 20,20 0,0,0 -20,20 v 10 a 20,20 0,0,0 20,20 h 30 a 10,10 0,0,1 10,10" />
+  <path id="friedrichebertanlage_1" d="M -5,-175 a 20,20 0,0,0 -20,20 v 215 a 10,10 0,0,1 -10,10" />
+  <path id="friedrichebertanlage_2" d="M -35,80 a 20,20 0,0,0 20,-20 v -215 a 10,10 0,0,1 10,-10" />
+  <path id="schlossstraße_1" class="zugabe" d="M -25,-255 v 100" />
+  <path id="schlossstraße_2" class="ubergabe" d="M -15,-155 v -100" />
+  <text transform="translate(-20,-255) translate(0,-5)" class="ref tm">C</text>
+  <path id="ginnheim_1" class="faeng" d="M 40,-415 v 230 a 10,10 0,0,1 -10,10 h -35 a 10,10 0,0,1 -10,-10" />
+  <path id="ginnheim_2" d="M -25,-185 a 20,20 0,0,0 20,20 h 35 a 20,20 0,0,0 20,-20 v -175 c 0,-5 -10,-5 -10,-10" />
+  <path id="ginnheim_u"  class="ubergabe" d="M 40,-370 q 0,-4 3,-7 l 14,-14" />
+  <text transform="translate(57,-391) rotate(-45) translate(5,5)" class="ref">A</text>
+  <path id="ginnheim_3" class="endet" d="M 40,-385 c 0,-5 10,-5 10,-10 v -20" />
+  <path id="rebstock_1" class="endet" d="M -15,-115 a 20,20 0,0,0 -20,-20 h -255" />
+  <path id="rebstock_2" class="faeng" d="M -290,-125 h 210 c 5,0 5,-10 10,-10" />
+  <path id="rebstock_3" d="M -45,-135 c 5,0 5,10 10,10 a 10,10 0,0,1 10,10" />
+  <path id="kleyerstraße_1" d="M -190,70 q -8,0 -14,6 l -56,56 q -4,4 -8,4 q -4,0 -8,-4 l -34,-34 q -4,-4 -4,-8 a 10,10 0,0,1 10,-10" />
+  <path id="kleyerstraße_2" d="M -282,126 c 3.5,3.5 -3.5,10.5 0,14 q 6,6 14,6 q 8,0 14,-6 l 56,-56 q 4,-4 8,-4" />
+  <path id="höchst" d="M -310,98 l -22,-22 q -6,-6 -14,-6 h -489 a 20,20 0,0,0 -20,20 a 20,20 0,0,0 20,20 h 30 a 15,15 0,0,0 15,-15 a 15,15 0,0,1 15,-15 h 429 q 4,0 8,4 l 14,14 c 7,7 14,0 21,7" />
+  <path id="schwanheim" d="M 5,340 h -10 a 20,20 0,0,0 -20,20 v 10 a 10,10 0,0,1 -10,10 h -97 q -8,0 -14,6 l -180,180 q -4,4 -8,4 h -476 
+                           a 17.5,17.5 0,0,0 0,35 h 8 q 2,0 3.5,-1.5 l 22,-22 q 1.5,-1.5 3.5,-1.5 h 439 q 8,0 14,-6 l 180,-180 q 4,-4 8,-4 h 107 a 20,20 0,0,0 20,-20 v -10 a 10,10 0,0,1 10,-10" />
+  <path id="haardtwaldplatz" d="M -206,446 q -4,4 -8,4 h -161 a 10,10 0,0,1 -10,-10 a 15,15 0,1,0 -30,0 a 20,20 0,0,0 20,20 h 181 q 8,0 14,-6" />
+  <path id="stadion" d="M -264,504 q -6,6 -6,14 v 145 q 0,3 -4,7 l -27,27 q -4,4 -4,7 v 19 a 20,20 0,0,0 20,20 h 5 a 20,20 0,0,0 20,-20 v -205 q 0,-4 4,-8" />
+  <path id="stresemannallee_anschluss_1" d="M -25,465 v 30" />
+  <path id="stresemannallee_anschluss_2" d="M -15,495 v -30" />
+  <g id="verlängerung_stresemannallee" class="geplant">
+   <path id="stresemannallee_1" d="M -25,370 v 95" />
+   <path id="stresemannallee_2" d="M -15,465 v -90" />
+   <path id="hippodrom_drittesgleis" d="M -15,395 c 0,-5 10,-5 10,-10 v -15" />
+   <path id="abzw_vogelweid_1" d="M -15,400 a 20,20 0,0,0 -20,-20" />
+   <path id="abzw_vogelweid_2" d="M -25,400 a 10,10 0,0,0 -10,-10" />
+  </g>
+  <path id="zweitesgleis_rebstöcker" class="geplant" d="M -282,140 l -55,-55" />
  </g>
  <g transform="translate(-73,-125)" id="baeume">
   <circle r="1.5" cx="00" />
