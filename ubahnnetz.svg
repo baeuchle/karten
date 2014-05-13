@@ -532,9 +532,13 @@
   <g id="hst421" transform="translate(-125,660)" class="funfzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Römerstadt</text></g>
   <g id="hst415" transform="translate(-125,780)" class="funfzig te"><use xlink:href="#bstg_außen" /><text x="-15" y="5">Niddapark</text></g>
   <g id="hst414" transform="translate(-125,900)" class="te">
-   <use xlink:href="#bahnsteig" class="nullzig" transform="translate(-15,0)" />
+   <use xlink:href="#einwagen" class="nullzig" transform="translate(-15,0)" />
+   <use xlink:href="#einwagen" class="nullzig" transform="translate(-15,7.5)" />
    <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" class="funfzig" />
-   <use xlink:href="#bstg_mitte" transform="translate(10,0)" class="achtzig" />
+   <use xlink:href="#einwagen" transform="translate(5,-15)" class="funfzig" />
+   <use xlink:href="#einwagen" transform="translate(15,-7.5) rotate(180)" class="funfzig" />
+   <use xlink:href="#weg" transform="translate(10,-12)" />
+   <use xlink:href="#drei_mitte" transform="translate(10,3.75)" class="achtzig" />
    <text x="-25" y="-6">Ginnheim</text>
   </g>
   <g id="hst641" transform="translate(65,385)" class="achtzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Sandelmühle</text></g>
