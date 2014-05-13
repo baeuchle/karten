@@ -503,17 +503,17 @@
   <g id="hstspy" transform="translate(-145,75) rotate(-90)"><use xlink:href="#hstl_vers1" /><text x="20" y="0" transform="rotate(45)">Speyerer Straße</text></g>
   <g id="hst2606" transform="translate(-185,75) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_außen" /><text x="20" y="0" transform="rotate(45)">Galluswarte</text></g>
   <g id="hstspy" transform="translate(-265,75) rotate(-90)"><use xlink:href="#hstl_vers1" /><text x="20" y="0" transform="rotate(45)">Schwalbacher Straße</text></g>
-  <g id="hstkgk" transform="translate(-216,95) rotate(-135)"><use xlink:href="#hstl_außen" /><text transform="rotate(135) translate(15,10)">Kriegkstraße</text></g>
+  <!--<g id="hstkgk" transform="translate(-216,95) rotate(-135)"><use xlink:href="#hstl_außen" /><text transform="rotate(135) translate(15,10)">Kriegkstraße</text></g>
   <g id="hstgap" transform="translate(-236,115) rotate(-135)"><use xlink:href="#hstl_außen" /><text transform="rotate(135) translate(15,10)">Galluspark</text></g>
   <g id="hstkri" transform="translate(-282,133) rotate(-45)" class="te">
    <use xlink:href="#bahnsteig" transform="translate(-5,8) rotate(180)" class="nullzig"/>
    <use xlink:href="#haltestel" transform="translate(5,-10)" />
    <text transform="rotate(45) translate(-15,5)">Ordnungsamt</text>
-  </g>
+  </g>-->
   <g id="hst3601" transform="translate(-325,75)">
    <path class="bstggruppe" d="M -25,10 c 0,15 45,20 50,15 s 5,-35 0,-40 s -50,10 -50,25 z" />
    <use xlink:href="#haltestel" transform="translate(20,-5) rotate(-90)" />
-   <use xlink:href="#haltestel" transform="translate(15,23) rotate(-45)" />
+   <!--<use xlink:href="#haltestel" transform="translate(15,23) rotate(-45)" />-->
    <use xlink:href="#haltestel" transform="translate(-20,5) rotate(+90)" />
    <text x="20" y="0" transform="rotate(-45)">Rebstöcker Straße</text>
   </g>
