@@ -256,7 +256,12 @@
  <g id="haltestellen" class="haltestellen">
   <g id="hstnis" transform="translate(-20,720)" class="dreizig">
    <path class="bstggruppe" d="M -10,40 c 20,0 30,-20 30,-30 c 0,-50 -10,-70 -20,-70 c -35,0 -35,0 -35,15 v 60 a 25,25 0,0,0 25,25" />
-   <use xlink:href="#bstg_vers1" /><text x="15" y="5">Neu-Isenburg/Stadtgrenze</text>
+   <use xlink:href="#bstg_vers1" />
+   <use xlink:href="#uml" transform="translate(-10,-10) rotate(-90)" />
+   <use xlink:href="#bau" transform="translate(10,10)" />
+   <use xlink:href="#weg" transform="translate(-5,-20)" />
+   <use xlink:href="#weg" transform="translate(+5,-35)" />
+   <text x="15" y="5">Neu-Isenburg/Stadtgrenze</text>
   </g>
   <g id="hstoss" transform="translate(-20,635)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text transform="translate(15,5)">Oberschweinstiege</text></g>
   <g id="hstlui" transform="translate(-20,565)" class="zehnzig te"><use xlink:href="#bstg_außen" /><text transform="rotate(-45) translate(-15,0)">Louisa Bahnhof</text></g>
@@ -311,8 +316,8 @@
   <g id="hstbds" transform="translate(570,390) rotate(-90)">
    <!--<text class="ab_bb" transform="rotate(90) translate(-150,100)">Barrierefreier Ausbau</text>-->
    <use xlink:href="#hstl_außen" />
-   <!--<use xlink:href="#haltestel" transform="translate(-15,-12)"/>
-   <use xlink:href="#uml" transform="rotate(-90) translate(0,-10)" />-->
+   <use xlink:href="#haltestel" transform="translate(-15,-12)"/>
+   <use xlink:href="#uml" transform="rotate(-90) translate(0,-10)" />
    <text x="20" y="0" transform="rotate(45)">Balduinstraße</text>
   </g>
   <g id="hstbws" transform="translate(610,390) rotate(-90)" class="zehnzig">
@@ -395,7 +400,11 @@
    <use xlink:href="#bahnsteig" transform="translate(5,15)" />
   </g>
 
-  <g id="hsthei" transform="translate(-205,215) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Heilbronner Straße</text></g>
+  <g id="hsthei" transform="translate(-205,215) rotate(-90)" class="zehnzig">
+   <use xlink:href="#haltestel" transform="translate(5,0)"/>
+   <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)"/>
+   <text x="20" y="0" transform="rotate(45)">Heilbronner Straße</text>
+  </g>
   <g id="hsthaf" transform="translate(-165,215) rotate(-90)"><use xlink:href="#hstl_außen" /><text x="20" y="0" transform="rotate(45)">Hafenstraße</text></g>
   <g id="hstpfo" transform="translate(-85,255)" class="te"><use xlink:href="#hstl_außen" transform="rotate(-90)" /><text x="-20" y="0">Pforzheimer Straße</text></g>
   <g id="hstpdr" transform="translate(-20,100)" class="dreizig"><use xlink:href="#dobs_außen" /><text x="15" y="5">Platz der Republik</text></g>
