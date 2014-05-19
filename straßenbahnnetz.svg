@@ -79,6 +79,8 @@
 
   .bstggruppe { fill:#ffffc0; stroke:yellow; stroke-width:4pt; stroke-dasharray:2 1; fill-opacity:.8; }
   .hstgruppe { fill:#c0ffc0; stroke:#80ff80; stroke-width:4pt; stroke-dasharray:.5 .25; fill-opacity:.8; }
+  #slash path { stroke:#c0ffc0; stroke-width:4pt; }
+  .hstgrzwei { fill:url(#slash); stroke:#80ff80; stroke-width:4pt; stroke-dasharray:.5 .25; fill-opacity:.8; }
   .hstgrtitel { font-size:6pt; }
 
   .box { fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:2; }
@@ -90,6 +92,8 @@
 
   .eigener path { stroke:none; stroke-width:1; fill:#c0a080; }
   .spur path { stroke:none; stroke-width:1; fill:#e0e0e5; }
+  .opnv path { stroke:none; stroke-width:1; fill:url(#backslash); }
+  #backslash path { stroke:none; fill:#e0e0ff; }
   }
  ]]>
  </style>
@@ -146,7 +150,13 @@
   <g id="wien_außen"><use xlink:href="#bstg_außen" class="dreizig" /><use xlink:href="#hstl_außen" /></g>
   <g id="dobs_mitte"><use xlink:href="#bstg_mitte" /><use xlink:href="#trennstrich" transform="translate(-4,0)" /></g>
   <g id="dobs_außen"><use xlink:href="#doppelbst" transform="translate(-5,0) rotate(180)" /><use xlink:href="#doppelbst" transform="translate(5,0)" /></g>
-  <clipPath id="cp_gutleut"><rect x="-150" y="0" width="170" height="110" /></clipPath>
+  <pattern id="slash" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" viewbox="0 0 10 10">
+   <path d="M 0,0 l 10,10"/>
+  </pattern>
+  <pattern id="backslash" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" viewbox="0 0 10 10">
+   <path d="M 0,0 l 10,10 v -5 l -5,-5"/>
+   <path d="M 0,10 h 5 l -5,-5"/>
+  </pattern>
  </defs>
  <g id="textboxen">
   <g id="legende" transform="translate(1035,-425) translate(-350)">
@@ -249,6 +259,12 @@
                       q 1.5,-1.5 3.5,-1.5 h 1 q 2,0 3.5,1.5 l 12,12 q 1.5,1.5 3.5,1.5 h8 v -20
                       h 120 v 5 a 15,15 0,0,0 15,15 a 10,10 0,0,0 10,-10 a 10,10 0,0,1 10,-10
                       h 261 q 8,0 14,-6 l 26,-26" />
+  <path id="rebstock_schotter" d="M -35,-135 h -70 v 10 h 70" />
+  <path id="huju_schotter" d="M 895,190 v 40 a 20,20 0,0,0 40,0 v -40 h -10 v 40 a 10,10 0,0,1 -20,0 c 0,-5 10,-5 10,-10 v -10 c 0,-5 -10,-5 -10,-10 v -10"/>
+  <path id="frankfurterbogen_schotter" d="M 255,-300 h 10 v -120 h -10" />
+ </g>
+ <g class="opnv">
+  <path id="opnv_friedberger" d="M 255,-80 h 10 v -210 h -10" />
  </g>
  <g class="spur">
   <path id="mainzer_1" d="M -30,70 h -130 v 10 h 130" />
@@ -433,7 +449,7 @@
    <g id="hstgin" class="nullzig"><use xlink:href="#bstg_außen" /><text x="15" y="5">Ginnheim</text></g>
   </g>
   <g id="hgrwes" class="tm" transform="translate(-110,-155)">
-   <path class="hstgruppe" d="M 0,40 c 40,0 40,-10 40,-40 c 0,-30 0,-50 -20,-50 s -60,40 -60,75 c 0,15 20,15 40,15 " />
+   <path class="hstgrzwei" d="M 0,40 c 40,0 40,-10 40,-40 c 0,-30 0,-50 -20,-50 s -60,40 -60,75 c 0,15 20,15 40,15 " />
    <g id="hstwbf" transform="translate(30,-30)" class="nullzig">
     <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" />
     <use xlink:href="#bahnsteig" transform="translate(5,0) rotate(180)" />
