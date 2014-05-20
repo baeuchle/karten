@@ -79,7 +79,7 @@
 
   .bstggruppe { fill:#ffffc0; stroke:yellow; stroke-width:4pt; stroke-dasharray:2 1; fill-opacity:.8; }
   .hstgruppe { fill:#c0ffc0; stroke:#80ff80; stroke-width:4pt; stroke-dasharray:.5 .25; fill-opacity:.8; }
-  #slash path { stroke:#c0ffc0; stroke-width:4pt; }
+  #slash path { stroke:#c0ffc0; stroke-width:1pt; }
   .hstgrzwei { fill:url(#slash); stroke:#80ff80; stroke-width:4pt; stroke-dasharray:.5 .25; fill-opacity:.8; }
   .hstgrtitel { font-size:6pt; }
 
@@ -151,7 +151,9 @@
   <g id="dobs_mitte"><use xlink:href="#bstg_mitte" /><use xlink:href="#trennstrich" transform="translate(-4,0)" /></g>
   <g id="dobs_außen"><use xlink:href="#doppelbst" transform="translate(-5,0) rotate(180)" /><use xlink:href="#doppelbst" transform="translate(5,0)" /></g>
   <pattern id="slash" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" viewbox="0 0 10 10">
-   <path d="M 0,0 l 10,10"/>
+  <path d="M 0,10 l 11,-11" />
+  <path d="M 9,11 l 2,-2" />
+  <path d="M -1,1 l 2,-2" />
   </pattern>
   <pattern id="backslash" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" viewbox="0 0 10 10">
    <path d="M 0,0 l 10,10 v -5 l -5,-5"/>
