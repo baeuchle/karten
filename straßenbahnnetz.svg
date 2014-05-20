@@ -94,6 +94,9 @@
   .spur path { stroke:none; stroke-width:1; fill:#e0e0e5; }
   .opnv path { stroke:none; stroke-width:1; fill:url(#backslash); }
   #backslash path { stroke:none; fill:#e0e0ff; }
+
+  .rasen { stroke: #008000; }
+  .rasenmarkierung { stroke-width: 10; stroke: #a0ffa0; }
   }
  ]]>
  </style>
@@ -259,10 +262,10 @@
                       q 1.5,-1.5 3.5,-1.5 h 1 q 2,0 3.5,1.5 l 12,12 q 1.5,1.5 3.5,1.5 h8 v -20
                       h 120 v 5 a 15,15 0,0,0 15,15 a 10,10 0,0,0 10,-10 a 10,10 0,0,1 10,-10
                       h 261 q 8,0 14,-6 l 26,-26" />
-  <path id="rebstock_schotter" d="M -35,-135 h -70 v 10 h 70" />
+  <!--<path id="rebstock_schotter" d="M -35,-135 h -70 v 10 h 70" />-->
   <path id="huju_schotter" d="M 895,190 v 40 a 20,20 0,0,0 40,0 v -40 h -10 v 40 a 10,10 0,0,1 -20,0 c 0,-5 10,-5 10,-10 v -10 c 0,-5 -10,-5 -10,-10 v -10"/>
-  <path id="frankfurterbogen_schotter" d="M 255,-300 h 10 v -120 h -10" />
  </g>
+ <path id="frankfurterbogen_schotter" class="rasenmarkierung" d="M 255,-300 v -120 m 10,0 v 120" />
  <g class="opnv">
   <path id="opnv_friedberger" d="M 255,-80 h 10 v -210 h -10" />
  </g>
@@ -630,7 +633,7 @@
   <path id="schleife_messe_1" d="M -15,-25 a 10,10 0,0,0 -20,0 v 10 a 5,5 0,0,0 5,5 a 5,5 0,0,1 5,5" />
   <path id="schleife_messe_2" d="M -25,-45 c 0,5 -10,5 -10,10 v 10" />
   <path id="gw_opelkreisel" d="M -215,-135 c 5,0 5,10 10,10" />
-  <path id="wa_rebstock" d="M -270,-125 c 5,0 5,-10 10,-10 c 5,0 5,10 10,10" />
+  <path id="wa_rebstock" class="rasen" d="M -270,-125 c 5,0 5,-10 10,-10 c 5,0 5,10 10,10" />
   <path id="schleife_westbahnhof_1" d="M -5,-165 h -65 a 15,15 0,0,1 -15,-15 v -10 a 15,15 0,0,1 15,-15 h 40 a 15,15 0,0,1 15,15" />
   <path id="schleife_westbahnhof_2" d="M -60,-165 a 15,15 0,0,1 -15,-15 v -10 a 15,15 0,0,1 15,-15" />
   <path id="schleife_westbahnhof_3" d="M -25,-155 a 10,10 0,0,0 -10,-10" />
@@ -819,9 +822,15 @@
   <path id="ginnheim_u"  class="ubergabe" d="M 40,-370 q 0,-4 3,-7 l 14,-14" />
   <text transform="translate(57,-391) rotate(-45) translate(5,5)" class="ref">A</text>
   <path id="ginnheim_3" class="endet" d="M 40,-385 c 0,-5 10,-5 10,-10 v -20" />
-  <path id="rebstock_1" class="endet" d="M -15,-115 a 20,20 0,0,0 -20,-20 h -255" />
-  <path id="rebstock_2" class="faeng" d="M -290,-125 h 210 c 5,0 5,-10 10,-10" />
-  <path id="rebstock_3" d="M -45,-135 c 5,0 5,10 10,10 a 10,10 0,0,1 10,10" />
+  <path id="rebstock_1" class="rasen endet" d="M -215,-135 h -75" />
+  <path id="rebstock_2" class="rasen faeng" d="M -290,-125 h 75"/>
+  <path id="rebstock_3" class="" d="M -215,-125 h  110" />
+  <path id="rebstock_4" class="" d="M -105,-135 h -110" />
+  <path id="rebstock_5" class="rasen" d="M -35,-135 h -70" />
+  <path id="rebstock_6a" class="rasen" d="M -105,-125 h 25 c 5,0 5,-10 10,-10" />
+  <path id="rebstock_6b" class="rasen" d="M -45,-135 c 5,0 5,10 10,10" />
+  <path id="rebstock_7" class="" d="M -15,-115 a 20,20 0,0,0 -20,-20" />
+  <path id="rebstock_8" d="M -35,-125 a 10,10 0,0,1 10,10" />
   <path id="kleyerstraße_1" d="M -190,70 q -8,0 -14,6 l -56,56 q -4,4 -8,4 q -4,0 -8,-4 l -34,-34 q -4,-4 -4,-8 a 10,10 0,0,1 10,-10" />
   <path id="kleyerstraße_2" d="M -282,126 c 3.5,3.5 -3.5,10.5 0,14 q 6,6 14,6 q 8,0 14,-6 l 56,-56 q 4,-4 8,-4" />
   <path id="höchst" d="M -310,98 l -22,-22 q -6,-6 -14,-6 h -489 a 20,20 0,0,0 -20,20 a 20,20 0,0,0 20,20 h 30 a 15,15 0,0,0 15,-15 a 15,15 0,0,1 15,-15 h 429 q 4,0 8,4 l 14,14 c 7,7 14,0 21,7" />
