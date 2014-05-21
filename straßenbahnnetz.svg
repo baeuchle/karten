@@ -196,7 +196,7 @@
    <g class="legende_normal dreizig" transform="translate(15,115)">
     <use xlink:href="#bahnsteig" transform="rotate(90)" />
     <use xlink:href="#doppelbst" transform="translate(20,0) rotate(90)" />
-    <text x="35" y="5">Bahnsteig, 30cm (barrierefreier Einstieg)</text>
+    <text x="35" y="5">Bahnsteig, 18-24cm (barrierefreier Einstieg)</text>
    </g>
    <g class="legende_normal dreizig" transform="translate(15,135)">
     <use xlink:href="#bahnsteig" transform="rotate(90)" /><use xlink:href="#haltestel" transform="rotate(90)"/>
