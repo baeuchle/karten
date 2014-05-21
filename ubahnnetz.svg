@@ -88,6 +88,7 @@
   .keinewand { stroke:none; }
   .beschrift path, .beschrift circle, .beschrift rect { fill:none; stroke:#93799a; stroke-width:.5; }
 
+  .abstell { stroke-width:.5; stroke:inherit; fill:#ffffff; fill-opacity:0.8; }
  ]]>
  </style>
  <script type="application/ecmascript"><![CDATA[
@@ -223,6 +224,27 @@
   <rect class="label" id="kasten9" y="-11" width="63" height="22" rx="2" ry="2" />
   <rect class="label" id="kastenK" y="-11" width="86" height="22" rx="2" ry="2" x="-86" />
   <use xlink:href="#kasten9" id="kastenJ" x="-63" />
+  <rect id="einsabstell" class="abstell" x="-1.5" width="3" y="0" height="5" />
+  <g id="zweiabstell">
+   <use xlink:href="#einsabstell" />
+   <use xlink:href="#einsabstell" transform="translate(0,5)" />
+  </g>
+  <g id="dreiabstell">
+   <use xlink:href="#zweiabstell" />
+   <use xlink:href="#einsabstell" transform="translate(0,10)" />
+  </g>
+  <g id="vierabstell">
+   <use xlink:href="#zweiabstell" />
+   <use xlink:href="#zweiabstell" transform="translate(0,10)" />
+  </g>
+  <g id="funfabstell">
+   <use xlink:href="#vierabstell" />
+   <use xlink:href="#einsabstell" transform="translate(0,20)" />
+  </g>
+  <g id="sechabstell">
+   <use xlink:href="#dreiabstell" />
+   <use xlink:href="#dreiabstell" transform="translate(0,15)" />
+  </g>
  </defs>
  <rect id="aussen"
     width="1765"  height="2217"
@@ -346,8 +368,8 @@
  </g>
  <g id="wa_römerstadt" class="strecke bb">
   <path id="röm_a" d="M -120,680 c 0,5 -5,5 -5,10" />
-  <path id="röm_1" class="endet" d="M -130,680 c 0,5 5,5 5,10 v 5 c 0,2.5 -2.5,2.5 -2.5,5 v 30" />
-  <path id="röm_2" class="endet" d="M -125,695 c 0,2.5 2.5,2.5 2.5,5 v 30" />
+  <path id="röm_1" class="endet" d="M -130,680 c 0,5 5,5 5,10 v 5 c 0,2.5 -2.5,2.5 -2.5,5 v 37.5" />
+  <path id="röm_2" class="endet" d="M -125,695 c 0,2.5 2.5,2.5 2.5,5 v 25" />
  </g>
  <g class="ebobahn">
   <text transform="translate(  8.5 1613.5) rotate(-45) translate(-5 5)" class="te">S-Bahn Hbf</text>
@@ -477,8 +499,8 @@
   <path id="eschersheimer_2" d="M 110,690 V 1130" />
   <path id="zeilweg_1" d="M 120,690 v -167 q 0,-12 -9,-21 l -113,-113 q -9,-9 -21,-9 h -47 a 60,60 0,0,0 -60,60 v 40" />
   <path id="zeilweg_2" d="M -120,480 v -40 a 50,50 0,0,1 50,-50 h 47 q 8,0 14,6 l 113,113 q 6,6 6,14 v 167" />
-  <path id="ginnheim_1" class="endet" d="M -130,620 v 60 c 0,2.5 -2.5,2.5 -2.5,5 v 45 c 0,2.5 2.5,2.5 2.5,5 v 185" />
-  <path id="ginnheim_2" class="faeng" d="M -120,920 v -185 c 0,-2.5 2.5,-2.5 2.5,-5 v -45 c 0,-2.5 -2.5,-2.5 -2.5,-5 v -60" />
+  <path id="ginnheim_1" class="endet" d="M -130,620 v 60 c 0,2.5 -2.5,2.5 -2.5,5 v 52.5 c 0,2.5 2.5,2.5 2.5,5 v 177.5" />
+  <path id="ginnheim_2" class="faeng" d="M -120,920 v -190 c 0,-2.5 2.5,-2.5 2.5,-5 v -40 c 0,-2.5 -2.5,-2.5 -2.5,-5 v -60" />
   <path id="gonzenheim_1" class="faeng" d="M 485,10 v 140 a 50,50 0,0,1 -50,50 c -5,0 -5,-5 -10,-5 h -30 c -5,0 -5,5 -10,5 h -255 a 70,70 0,0,0 -70,70 V 449 q 0,16 12,28" />
   <path id="gonzenheim_2" class="endet" d="M 79,470 q -9,-9 -9,-21 V 270 a 60,60 0,0,1 60,-60 h 305 a 60,60 0,0,0 60,-60 v -140" />
   <path id="hohemark_1"  class="faeng" d="M -800,-205 h 535 a 50,50 0,0,1 50,50 v 130 a 10,10, 0,0,1 -10,10 h -213 a 30,30 0,0,0 0,60 h 120 q 20,0 35,15 l 105,105 q 15,15 15,35 v 130 q 0,24 18,42 q 18,18 42,18 h 33" />
@@ -505,6 +527,23 @@
   <path id="gd_wiesenau_1" d="M -120,440 v -33 q 0,-24 -18,-42" />
   <path id="gd_wiesenau_2" d="M -145,372 q 15,15 15,35 v 33" />
  </g>
+ <g id="abstellungen">
+  <g class="tunnel">
+   <use id="sued_2" xlink:href="#vierabstell" transform="translate(110,1942.5)" />
+   <use id="sued_3" xlink:href="#vierabstell" transform="translate(115,1942.5)" />
+   <use id="sued_1" xlink:href="#vierabstell" transform="translate(120,1942.5)" />
+   <use id="et"     xlink:href="#vierabstell" transform="translate(115,1422.5)" />
+  </g>
+  <g class="strecke">
+   <use id="rs_31"  xlink:href="#vierabstell" transform="translate(-122.5,702.5)" />
+   <use id="rs_32a" xlink:href="#dreiabstell" transform="translate(-127.5,702.5)" />
+   <use id="rs_32b" xlink:href="#dreiabstell" transform="translate(-127.5,720)" />
+   <use id="ne_61" xlink:href="#vierabstell" transform="translate(402.5,205) rotate(-90)" />
+   <use id="ne_62" xlink:href="#vierabstell" transform="translate(402.5,200) rotate(-90)" />
+   <use id="rb_61" xlink:href="#vierabstell" transform="translate(65.5,161.5) rotate(-45)" />
+   <use id="ou_gv" xlink:href="#vierabstell" transform="translate(-180,-15) rotate(-90)" />
+  </g>
+ </g>
  <g id="haltestellen" class="haltestellen">
   <g id="hst913" transform="translate(115,1905)" class="achtzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Südbahnhof</text></g>
   <g id="hst912" transform="translate(115,1805)" class="achtzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Schweizer Platz</text></g>
@@ -516,7 +555,7 @@
   <g id="hst515" transform="translate(115,1180)" class="achtzig te">
    <use xlink:href="#bstg_ausen" />
    <rect style="fill:#ffffff" x="-12" y="13" width="6" height="4"/>
-   <rect style="fill:#ffffff" x="  6" y="13" width="6" height="4"/>
+   <rect style="fill:#ffffff" x="6"   y="13" width="6" height="4"/>
    <text x="-15" y="-3">Miquel-/Adickesallee/</text><text x="-15" y="13">Polizeipräsidium</text>
   </g>
   <g id="hst521" transform="translate(115,1080)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="-3">Dornbusch</text><text x="-15" y="13">(Hessischer Rundfunk)</text></g>
@@ -701,21 +740,21 @@
    <path d="M 32,-52 c -3,-3 0,-6 -3,-9" />
    <path d="M 25,-45 c -2.5,-2.5 -5,0 -7.5,-2.5" />
    <path d="M 45,-6 c 0,-5 -5,-5 -5,-10" />
-   <path id="bbh_1_18" d="M 55,-6 q 0,-4 -3,-7 l -43,-43 q -3,-3 -7,-3 h -14 a 24,24 0 0 0 0,48 h 15 q 4,0 7,-3  l 14,-14 q 1.5,-1.5 3.5,-1.5 h 1.5 q 2,0 3.5,1.5 l 6,6 q 1.5,1.5 1.5,3.5" />
-   <path id="bbh_3_17" d="M 12,-53 q -3,-3 -7,-3 h -17 a 21,21 0 0 0 0,42 h 15 q 2,0 3.5,-1.5 l 9.5,-9.5 c 2.5,-2.5 0,-5 2.5,-7.5" />
-   <path id="bbh_04" class="endet" d="M -33,-35 a 18,18 0,0,0 18,18 h 9" />
-   <path id="bbh_05" d="M -33,-35 a 15,15 0,0,0 15,15 h 27 q 2,0 3.5,-1.5" />
-   <path id="bbh_06" d="M -18,-20 c 3,0 3,-3 6,-3 h 19 q 2,0 3.5,-1.5 l 9,-9 q 1.5,-1.5 3.5,-1.5" />
-   <path id="bbh_07" class="endet" d="M 13.5,-27.5 q -1.5,1.5 -3.5,1.5 h -35" />
-   <path id="bbh_08" class="endet" d="M 18,-35 q -2,0 -3.5,1.5 l -3,3 q -1.5,1.5 -3.5,1.5 h -36" />
-   <path id="bbh_09" class="endet" d="M 13,-35 q -2,0 -3.5,1.5 -1.5,1.5 -3.5,1.5 h -36" />
-   <path id="bbh_10" class="endet" d="M 31.5,-33.5 q -1.5,-1.5 -3.5,-1.5 h -58" />
-   <path id="bbh_11" class="endet" d="M 28.5,-36.5 q -1.5,-1.5 -3.5,-1.5 h -55" />
-   <path id="bbh_12" class="endet" d="M 21.5,-39.5 q -1.5,-1.5 -3.5,-1.5 h -48" />
-   <path id="bbh_13" class="endet" d="M 18.5,-42.5 q -1.5,-1.5 -3.5,-1.5 h -43" />
-   <path id="bbh_14" class="endet" d="M 15.5,-45.5 q -1.5,-1.5 -3.5,-1.5 h -37" />
-   <path id="bbh_15" class="endet" d="M 12.5,-48.5 q -1.5,-1.5 -3.5,-1.5 h -30" />
-   <path id="bbh_18" class="endet" d="M 25,-38 q -2,0 -3.5,-1.5 l -12,-12 q -1.5,-1.5 -3.5,-1.5 h -18" />
+   <path id="bbh_1_18" d="M 55,-6 q 0,-4 -3,-7 l -43,-43 q -3,-3 -7,-3 h -32 a 24,24 0 0 0 0,48 h 33 q 4,0 7,-3  l 14,-14 q 1.5,-1.5 3.5,-1.5 h 1.5 q 2,0 3.5,1.5 l 6,6 q 1.5,1.5 1.5,3.5" />
+   <path id="bbh_3_17" d="M 12,-53 q -3,-3 -7,-3 h -35 a 21,21 0 0 0 0,42 h 33 q 2,0 3.5,-1.5 l 9.5,-9.5 c 2.5,-2.5 0,-5 2.5,-7.5" />
+   <path id="bbh_04" class="endet" d="M -51,-35 a 18,18 0,0,0 18,18 h 30" />
+   <path id="bbh_05" d="M -51,-35 a 15,15 0,0,0 15,15 h 45 q 2,0 3.5,-1.5" />
+   <path id="bbh_06" d="M -36,-20 c 3,0 3,-3 6,-3 h 37 q 2,0 3.5,-1.5 l 9,-9 q 1.5,-1.5 3.5,-1.5" />
+   <path id="bbh_07" class="endet" d="M 13.5,-27.5 q -1.5,1.5 -3.5,1.5 h -53" />
+   <path id="bbh_08" class="endet" d="M 18,-35 q -2,0 -3.5,1.5 l -3,3 q -1.5,1.5 -3.5,1.5 h -54" />
+   <path id="bbh_09" class="endet" d="M 13,-35 q -2,0 -3.5,1.5 -1.5,1.5 -3.5,1.5 h -54" />
+   <path id="bbh_10" class="endet" d="M 31.5,-33.5 q -1.5,-1.5 -3.5,-1.5 h -76" />
+   <path id="bbh_11" class="endet" d="M 28.5,-36.5 q -1.5,-1.5 -3.5,-1.5 h -73" />
+   <path id="bbh_12" class="endet" d="M 21.5,-39.5 q -1.5,-1.5 -3.5,-1.5 h -66" />
+   <path id="bbh_13" class="endet" d="M 18.5,-42.5 q -1.5,-1.5 -3.5,-1.5 h -61" />
+   <path id="bbh_14" class="endet" d="M 15.5,-45.5 q -1.5,-1.5 -3.5,-1.5 h -55" />
+   <path id="bbh_15" class="endet" d="M 12.5,-48.5 q -1.5,-1.5 -3.5,-1.5 h -48" />
+   <path id="bbh_18" class="endet" d="M 25,-38 q -2,0 -3.5,-1.5 l -12,-12 q -1.5,-1.5 -3.5,-1.5 h -36" />
    <path id="bbh_19" class="endet" d="M 65,-15 v -8 q 0,-2 -1.5,-3.5 l -48,-48"/>
    <path id="bbh_20" class="endet" d="M 56,-37 q 0,-2 -1.5,-3.5 l -34,-34" />
    <path id="bbh_21" class="endet" d="M 56,-42 q 0,-2 -1.5,-3.5 l -29,-29" />
@@ -726,31 +765,50 @@
    <path id="bbh_26" class="endet" d="M 65,-23 v -22" />
    <use xlink:href="#weg" transform="translate(6,-53)" />
   </g>
-  <g id="gleisnummern_heddernheim">
-   <path class="gebaude wand" id="werkstatt_heddernheim" d="M -14,-15.5 h 18 l 3,-3 v -6 h -21 v 9" />
-   <path class="gebaude wand" id="waschanlage_heddernheim" d="M -15,-51.5 h 15 v -3 h -15 v 3" />
+  <g id="abstell_heddernheim">
+   <use id="hd_01" xlink:href="#sechabstell" transform="translate(+5,-11) rotate(90)" />
+   <use id="hd_03" xlink:href="#vierabstell" transform="translate(+5,-14) rotate(90)" />
+   <use id="hd_04" xlink:href="#einsabstell" transform="translate(-5,-17) rotate(90)" />
+   <use id="hd_05" xlink:href="#dreiabstell" transform="translate(+5,-20) rotate(90)" />
+   <use id="hd_06" xlink:href="#dreiabstell" transform="translate(+5,-23) rotate(90)" />
+   <use id="hd_07" xlink:href="#vierabstell" transform="translate(+5,-26) rotate(90)" />
+   <use id="hd_08" xlink:href="#vierabstell" transform="translate(+5,-29) rotate(90)" />
+   <use id="hd_09" xlink:href="#vierabstell" transform="translate(+5,-32) rotate(90)" />
+   <use id="hd_10" xlink:href="#vierabstell" transform="translate(+5,-35) rotate(90)" />
+   <use id="hd_11" xlink:href="#funfabstell" transform="translate(+5,-38) rotate(90)" />
+   <use id="hd_12" xlink:href="#vierabstell" transform="translate(+5,-41) rotate(90)" />
+   <use id="hd_13" xlink:href="#vierabstell" transform="translate(+5,-44) rotate(90)" />
+   <use id="hd_14" xlink:href="#dreiabstell" transform="translate(+5,-47) rotate(90)" />
+   <use id="hd_15" xlink:href="#zweiabstell" transform="translate(+5,-50) rotate(90)" />
+   <use id="hd_16" xlink:href="#einsabstell" transform="translate(0,-53) rotate(90)" />
+   <use id="hd_wa" xlink:href="#einsabstell" transform="translate(-10,-53) rotate(90)" />
+   <use id="hd_61" xlink:href="#zweiabstell" transform="translate(40,-10)" />
+  </g>
+  <g id="gleisnummern_heddernheim" class="abstell">
+   <path class="gebaude wand" id="werkstatt_heddernheim" d="M -32,-15.5 h 36 l 3,-3 v -6 h -39 v 9" />
+   <path class="gebaude wand" id="waschanlage_heddernheim" d="M -32.5,-51.5 h 25 v -3 h -25 v 3" />
    <g transform="translate(9,-1)" class="beschrift"><path d="M -5,-17.5 l 5,5 v 9" /><text>Werkstatt</text></g>
-   <g transform="translate(-20,-65)" class="beschrift"><path d="M 0,1 l 7,7 v 3" /><text>Waschanlage</text></g>
+   <g transform="translate(-22.5,-65)" class="beschrift"><path d="M 0,1 l 7,7 v 3" /><text>Waschanlage</text></g>
    <g transform="translate(45,10)" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>1</text></g>
    <g transform="translate(55,10)" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>2</text></g>
    <g transform="translate(65,10)" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>3</text></g>
-   <g transform="translate(-10,-10)" class="bgleisnummer"><circle cy="-1" r="2" /><text>1</text></g>
-   <g transform="translate(-07,-13)" class="bgleisnummer"><circle cy="-1" r="2" /><text>3</text></g>
-   <g transform="translate(-10,-16)" class="bgleisnummer"><circle cy="-1" r="2" /><text>4</text></g>
-   <g transform="translate(-07,-19)" class="bgleisnummer"><circle cy="-1" r="2" /><text>5</text></g>
-   <g transform="translate(-10,-22)" class="bgleisnummer"><circle cy="-1" r="2" /><text>6</text></g>
-   <g transform="translate(-07,-25)" class="bgleisnummer"><circle cy="-1" r="2" /><text>7</text></g>
-   <g transform="translate(-10,-28)" class="bgleisnummer"><circle cy="-1" r="2" /><text>8</text></g>
-   <g transform="translate(-07,-31)" class="bgleisnummer"><circle cy="-1" r="2" /><text>9</text></g>
-   <g transform="translate(-10,-34)" class="bgleisnummer"><circle cy="-1" r="2" /><text>10</text></g>
-   <g transform="translate(-07,-37)" class="bgleisnummer"><circle cy="-1" r="2" /><text>11</text></g>
-   <g transform="translate(-10,-40)" class="bgleisnummer"><circle cy="-1" r="2" /><text>12</text></g>
-   <g transform="translate(-07,-43)" class="bgleisnummer"><circle cy="-1" r="2" /><text>13</text></g>
-   <g transform="translate(-10,-46)" class="bgleisnummer"><circle cy="-1" r="2" /><text>14</text></g>
-   <g transform="translate(-07,-49)" class="bgleisnummer"><circle cy="-1" r="2" /><text>15</text></g>
-   <g transform="translate(-04,-52)" class="bgleisnummer"><circle cy="-1" r="2" /><text>16</text></g>
-   <g transform="translate(-07,-55)" class="bgleisnummer"><circle cy="-1" r="2" /><text>17</text></g>
-   <g transform="translate(-04,-58)" class="bgleisnummer"><circle cy="-1" r="2" /><text>18</text></g>
+   <g transform="translate(-28,-10)" class="bgleisnummer"><circle cy="-1" r="2" /><text>1</text></g>
+   <g transform="translate(-25,-13)" class="bgleisnummer"><circle cy="-1" r="2" /><text>3</text></g>
+   <g transform="translate(-28,-16)" class="bgleisnummer"><circle cy="-1" r="2" /><text>4</text></g>
+   <g transform="translate(-25,-19)" class="bgleisnummer"><circle cy="-1" r="2" /><text>5</text></g>
+   <g transform="translate(-28,-22)" class="bgleisnummer"><circle cy="-1" r="2" /><text>6</text></g>
+   <g transform="translate(-25,-25)" class="bgleisnummer"><circle cy="-1" r="2" /><text>7</text></g>
+   <g transform="translate(-28,-28)" class="bgleisnummer"><circle cy="-1" r="2" /><text>8</text></g>
+   <g transform="translate(-25,-31)" class="bgleisnummer"><circle cy="-1" r="2" /><text>9</text></g>
+   <g transform="translate(-28,-34)" class="bgleisnummer"><circle cy="-1" r="2" /><text>10</text></g>
+   <g transform="translate(-25,-37)" class="bgleisnummer"><circle cy="-1" r="2" /><text>11</text></g>
+   <g transform="translate(-28,-40)" class="bgleisnummer"><circle cy="-1" r="2" /><text>12</text></g>
+   <g transform="translate(-25,-43)" class="bgleisnummer"><circle cy="-1" r="2" /><text>13</text></g>
+   <g transform="translate(-28,-46)" class="bgleisnummer"><circle cy="-1" r="2" /><text>14</text></g>
+   <g transform="translate(-25,-49)" class="bgleisnummer"><circle cy="-1" r="2" /><text>15</text></g>
+   <g transform="translate(-22,-52)" class="bgleisnummer"><circle cy="-1" r="2" /><text>16</text></g>
+   <g transform="translate(-25,-55)" class="bgleisnummer"><circle cy="-1" r="2" /><text>17</text></g>
+   <g transform="translate(-22,-58)" class="bgleisnummer"><circle cy="-1" r="2" /><text>18</text></g>
    <g transform="translate( 24,-65)" class="bgleisnummer"><circle cy="-1" r="2" /><text>19</text></g>
    <g transform="translate( 29,-65)" class="bgleisnummer"><circle cy="-1" r="2" /><text>20</text></g>
    <g transform="translate( 34,-65)" class="bgleisnummer"><circle cy="-1" r="2" /><text>21</text></g>
@@ -860,22 +918,35 @@
    <path id="bomm_11" class="endet" d="M 12.5,-14.5 q 0,2 1.5,3.5 l 21,21" />
    <path id="bomm_12" class="endet" d="M 12.5,-20.5 v 11 q 0,2 1.5,3.5 l 18.5,18.5" />
   </g>
+  <g id="abstell_bommersheim" class="abstell">
+   <use id="bh_O1" xlink:href="#dreiabstell" transform="translate(-12.5,-30) rotate(-90)" />
+   <use id="bh_03" xlink:href="#zweiabstell" transform="translate(42.5,-22.5) rotate(-45)" />
+   <use id="bh_04" xlink:href="#zweiabstell" transform="translate(40.0,-20.0) rotate(-45)" />
+   <use id="bh_05" xlink:href="#zweiabstell" transform="translate(37.5,-17.5) rotate(-45)" />
+   <use id="bh_06" xlink:href="#zweiabstell" transform="translate(35.0,-15.0) rotate(-45)" />
+   <use id="bh_07" xlink:href="#zweiabstell" transform="translate(32.5,-12.5) rotate(-45)" />
+   <use id="bh_08" xlink:href="#zweiabstell" transform="translate(30.0,-10.0) rotate(-45)" />
+   <use id="bh_09" xlink:href="#zweiabstell" transform="translate(27.5,-07.5) rotate(-45)" />
+   <use id="bh_10" xlink:href="#zweiabstell" transform="translate(25.0,-05.0) rotate(-45)" />
+   <use id="bh_11" xlink:href="#zweiabstell" transform="translate(22.5,-02.5) rotate(-45)" />
+   <use id="bh_12" xlink:href="#zweiabstell" transform="translate(20.0,-00.0) rotate(-45)" />
+  </g>
   <g id="gleisnummern_bommersheim">
    <path class="gebaude wand" id="bom_hal1" d="M 49.5,-25.5 m 1.25,-1.25 l 7,7 l -5,5 l -7,-7 l 5,-5" />
    <path class="gebaude wand" id="bom_hal2" d="M 42.5,-22.5 m 1.25,-1.25 l 14,14 l -10,10 l -14,-14 l 10,-10" />
    <g class="bgleisnummer" transform="translate(52,-22)"><circle cy="-1" r="2" /><text>1</text></g>
    <g class="bgleisnummer" transform="translate(47,-22)"><circle cy="-1" r="2" /><text>2</text></g>
-   <g class="bgleisnummer" transform="translate(52,-12)"><circle cy="-1" r="2" /><text>3</text></g>
-   <g class="bgleisnummer" transform="translate(47,-12)"><circle cy="-1" r="2" /><text>4</text></g>
-   <g class="bgleisnummer" transform="translate(42,-12)"><circle cy="-1" r="2" /><text>5</text></g>
-   <g class="bgleisnummer" transform="translate(37,-12)"><circle cy="-1" r="2" /><text>6</text></g>
-   <g class="bgleisnummer" transform="translate(42,-02)"><circle cy="-1" r="2" /><text>7</text></g>
-   <g class="bgleisnummer" transform="translate(37,-02)"><circle cy="-1" r="2" /><text>8</text></g>
-   <g class="bgleisnummer" transform="translate(32,-02)"><circle cy="-1" r="2" /><text>9</text></g>
-   <g class="bgleisnummer" transform="translate(27,-02)"><circle cy="-1" r="2" /><text>10</text></g>
-   <g class="bgleisnummer" transform="translate(22,-02)"><circle cy="-1" r="2" /><text>11</text></g>
-   <g class="bgleisnummer" transform="translate(17,-02)"><circle cy="-1" r="2" /><text>12</text></g>
-   <g class="bgleisnummer" transform="translate(-5,-29)"><circle cy="-1" r="2" /><text>O1</text></g>
+   <g class="bgleisnummer" transform="translate(52.5,-11.5)"><circle cy="-1" r="2" /><text>3</text></g>
+   <g class="bgleisnummer" transform="translate(50.0,-09.0)"><circle cy="-1" r="2" /><text>4</text></g>
+   <g class="bgleisnummer" transform="translate(47.5,-06.5)"><circle cy="-1" r="2" /><text>5</text></g>
+   <g class="bgleisnummer" transform="translate(45.0,-04.0)"><circle cy="-1" r="2" /><text>6</text></g>
+   <g class="bgleisnummer" transform="translate(42.5,-01.5)"><circle cy="-1" r="2" /><text>7</text></g>
+   <g class="bgleisnummer" transform="translate(40.0,+01.0)"><circle cy="-1" r="2" /><text>8</text></g>
+   <g class="bgleisnummer" transform="translate(37.5,+03.5)"><circle cy="-1" r="2" /><text>9</text></g>
+   <g class="bgleisnummer" transform="translate(35.0,+06.0)"><circle cy="-1" r="2" /><text>10</text></g>
+   <g class="bgleisnummer" transform="translate(32.5,+08.5)"><circle cy="-1" r="2" /><text>11</text></g>
+   <g class="bgleisnummer" transform="translate(30.0,+11.0)"><circle cy="-1" r="2" /><text>12</text></g>
+   <g class="bgleisnummer" transform="translate(-5,-29)"><circle cy="-1" r="2" /><text>01</text></g>
   </g>
  </g>
  <g id="bb_ost" class="strecke" transform="translate(815,1245)">
