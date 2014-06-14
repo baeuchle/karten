@@ -545,6 +545,7 @@
    <use id="bwd_6"  xlink:href="#vierabstell" transform="translate(-200,1460) rotate(-135)" />
    <use id="hb_11"  xlink:href="#zweiabstell" transform="translate(-236,1561) rotate(+135)" />
    <use id="hb_12"  xlink:href="#vierabstell" transform="translate(-239.5,1571.5) rotate(+135)" />
+   <use id="zo_61"  xlink:href="#vierabstell" transform="translate(337.5,1580) rotate(-90)" />
   </g>
   <g class="strecke">
    <use id="rs_31"  xlink:href="#vierabstell" transform="translate(-122.5,702.5)" />
@@ -554,6 +555,7 @@
    <use id="ne_62" xlink:href="#vierabstell" transform="translate(402.5,200) rotate(-90)" />
    <use id="rb_61" xlink:href="#vierabstell" transform="translate(65.5,161.5) rotate(-45)" />
    <use id="ou_gv" xlink:href="#vierabstell" transform="translate(-180,-15) rotate(-90)" />
+   <use id="sc_6" xlink:href="#vierabstell" transform="translate(818,1220)" />
   </g>
  </g>
  <g id="haltestellen" class="haltestellen">
@@ -1000,7 +1002,7 @@
    <path id="ost_86" d="M -118,36 l 29.5,29.5 q 1.5,1.5 3.5,1.5" />
    <path id="ost_SW" d="M -116.5,55.5 q 0,2 1.5,3.5 l 6.5,6.5 q 1.5,1.5 3.5,1.5 h 56 q 2,0 3.5,1.5 l 9,9 q 1.5,1.5 3.5,1.5 h 11 c 10,0 10,-10 20,-10 a 20,20 0,0,1 20,20 m -10,0 a 10,10 0,0,0 -10,-10" />
    <path id="ost_NW" d="M -180,6 c 10,0 10,10 20,10 c 5,0 5,5 10,5 h 50 q 2,0 3.5,1.5" />
-   <path id="wa_schäfflestrasse" class="endet" d="M 18,24 c 0,-10 -10,-10 -10,-20 c 0,-5 -5,-5 -5,-10 v -15" />
+   <path id="wa_schäfflestrasse" class="endet" d="M 18,24 c 0,-10 -10,-10 -10,-20 c 0,-5 -5,-5 -5,-10 v -20" />
   </g>
   <g id="gleisnummern_ost">
    <path class="gebaude wand" id="ost_hal" d="M -85,68.5 v 3 h -3 v 6 h 3 v 6 h -3 v 3 h 33 v -9 h -3 v -6 h 3 v -3 h -30" />
