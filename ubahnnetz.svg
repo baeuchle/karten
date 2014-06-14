@@ -7,6 +7,10 @@
   height="2217px"
   viewBox="-815 -250 1765 2217"
   >
+ <rect id="aussen"
+    width="1765"  height="2217"
+    x="-815" y="-250"
+    style="fill:white;stroke:#0000c0;stroke-width:.1px" />
   <text class="te ab_bb" x="947" y="1964">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle </text>
  <metadata>
   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -224,10 +228,6 @@
   <rect class="label" id="kastenK" y="-11" width="86" height="22" rx="2" ry="2" x="-86" />
   <use xlink:href="#kasten9" id="kastenJ" x="-63" />
  </defs>
- <rect id="aussen"
-    width="1765"  height="2217"
-    x="-815" y="-250"
-    style="fill:white;stroke:#0000c0;stroke-width:.1px" />
  <g id="textboxen">
   <g id="legende" transform="translate(550,-250)">
    <rect class="box" width="400" height="372" />
