@@ -533,6 +533,18 @@
    <use id="sued_3" xlink:href="#vierabstell" transform="translate(115,1942.5)" />
    <use id="sued_1" xlink:href="#vierabstell" transform="translate(120,1942.5)" />
    <use id="et"     xlink:href="#vierabstell" transform="translate(115,1422.5)" />
+   <use id="sl_13"  xlink:href="#sechabstell" transform="translate(584,1232) rotate(45)" />
+   <use id="sl131a" xlink:href="#vierabstell" transform="translate(588,1236) rotate(45)" />
+   <use id="sl131b" xlink:href="#vierabstell" transform="translate(572,1252) rotate(45)" />
+   <use id="sl_141" xlink:href="#sechabstell" transform="translate(591,1239) rotate(45)" />
+   <use id="sl_14"  xlink:href="#zweiabstell" transform="translate(595,1243) rotate(45)" />
+   <use id="bwd_2"  xlink:href="#vierabstell" transform="translate(-131,1305)" />
+   <use id="bwd_7"  xlink:href="#vierabstell" transform="translate(-127,1305)" />
+   <use id="bwd_5"  xlink:href="#vierabstell" transform="translate(-123,1305)" />
+   <use id="bwd_1"  xlink:href="#vierabstell" transform="translate(-119,1305)" />
+   <use id="bwd_6"  xlink:href="#vierabstell" transform="translate(-200,1460) rotate(-135)" />
+   <use id="hb_11"  xlink:href="#zweiabstell" transform="translate(-236,1561) rotate(+135)" />
+   <use id="hb_12"  xlink:href="#vierabstell" transform="translate(-239.5,1571.5) rotate(+135)" />
   </g>
   <g class="strecke">
    <use id="rs_31"  xlink:href="#vierabstell" transform="translate(-122.5,702.5)" />
@@ -855,6 +867,11 @@
    <path id="bbe_26" class="endet" d="M -21,-5 q -2,0 -3.5,-1.5 l -9,-9 q -1.5,-1.5 -1.5,-3.5 v -51" />
    <path id="bbe_27" class="endet" d="M 43,-5 h -69 a 12,12 0,0,1 -12,-12 v -20" />
   </g>
+  <g id="abstell_eckenheim">
+   <use id="abec14" xlink:href="#vierabstell" transform="translate(1,-58)" />
+   <use id="abec13" xlink:href="#vierabstell" transform="translate(4,-58)" />
+   <use id="abec12" xlink:href="#vierabstell" transform="translate(7,-58)" />
+  </g>
   <g id="gleisnummern_eckenheim">
    <path class="gebaude wand" id="bbe_bom" d="M 41.5,-26 v -15 h -9 v +15 h 9" />
    <path class="gebaude wand" id="bbe_hsf" d="M 32.5,-19 v -42 h -12 v 42 h 12" />
@@ -1049,6 +1066,7 @@
    <g id="hst214" transform="translate(-530,1545)" class="achtzig tm"><use xlink:href="#drei_ausen" transform="rotate(90)" /><text x="0" y="-15">Europapark</text></g>
    <g id="hst215" transform="translate(-670,1545)" class="achtzig tm"><use xlink:href="#drei_ausen" transform="rotate(90)" /><text x="0" y="-15">Wohnpark</text></g>
    <text x="-721" y="1570" style="stroke-dasharray:none;" id="verlängerung_europaviertel_erkl">Verlängerung in Bau, vsl. 2021</text>
+   <use xlink:href="#weg" transform="translate(-11,-61)" />
   </g>
   <g id="frankfurter_berg" class="geplant" display="inline" transform="translate(30,0)">
    <path id="frankfurterberg_1" class="endet" d="M 440,565 v -250" />
