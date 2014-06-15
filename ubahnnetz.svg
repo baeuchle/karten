@@ -455,7 +455,7 @@
   <path id="wa_bockenheim_gw" class="tb" d="M -123,1342 c 0,-4 -4,-4 -4,-8 m 0,8 c 0,-4 4,-4 4,-8" />
   <path id="gw_bockenheimerwarte_01" class="tb" d="M -178,1431 c -3.5,3.5 0,7 -3.5,10.5 M -167,1440 c -3,3 -6,0 -9,3 c -3.5,3.5 -7,0 -10.5,3.5" />
   <path id="wa_bockenheimerwarte_01" class="tb endet faeng" d="M -176,1436 l -25,25" />
-  <path id="abzw_bockenheimerwarte_cd" class="tb endet faeng" d="M -173,1446 l 13,-13 q 6,-6 14,-6 q 8,0 14,6 l 15,15" />
+  <path id="abzw_bockenheimerwarte_cd" class="tb endet faeng" d="M -173,1446 l 13,-13 q 6,-6 14,-6 q 8,0 14,6 l 20,20" />
   <path id="gw_festhallemesse" class="tb" d="M -222,1530 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20" />
   <path id="ul_hauptbahnhof_bd" class="tb" d="M -212,1580 c 0,10 -10,10 -10,20 m -20,50 c 0,24 10,32 34,56" />
  </g>
@@ -543,6 +543,7 @@
    <use id="bwd_5"  xlink:href="#vierabstell" transform="translate(-123,1305)" />
    <use id="bwd_1"  xlink:href="#vierabstell" transform="translate(-119,1305)" />
    <use id="bwd_6"  xlink:href="#vierabstell" transform="translate(-200,1460) rotate(-135)" />
+   <use id="bwc_3"  xlink:href="#vierabstell" transform="translate(-114,1451) rotate(+135)" />
    <use id="hb_11"  xlink:href="#zweiabstell" transform="translate(-236,1561) rotate(+135)" />
    <use id="hb_12"  xlink:href="#vierabstell" transform="translate(-239.5,1571.5) rotate(+135)" />
    <use id="zo_61"  xlink:href="#vierabstell" transform="translate(337.5,1580) rotate(-90)" />
