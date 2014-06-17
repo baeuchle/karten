@@ -246,8 +246,12 @@
    <path id="vogelweid3" d="M -42,380 v 10 h 7 a 10,10 0,0,1 10,10 v -30 a 10,10 0,0,1 -10,10 z"/>
    <path id="gartenstr1" d="M -5,360 a 10,10 0,0,1 10,-10 h 40 l 5,-5,-5,-5 h -27 v 5 h -13 v -5 a 10,10 0,0,1 -10,-10 z"/>
    <path id="gartenstr7" d="M 135,340 l -5,5,5,5 h 20 v -5 h 20 v 5 a 10,10 0,0,1 10,10 v 10 h 10 v -10 a 20,20 0,0,0 -20,-20 z"/>
+   <path id="bockenheim1" d="M 40,-285 h 10 v 75 h -5 v -10 h -5 z"/>
+   <path id="ginnheim" d="M 40,-340 h 10 v 20 h -10 z"/>
    <path id="schweizerstr1" d="M 185,375 h 10 v 30 a 10,10 0,0,0 10,10 v 5 h 20 v -5 h 5 v 10 h -25 a 10,10 0,0,0 -10,10 v 20 h -5 v -50 h -5 z"/>
    <path id="moerfelder1" d="M 185,460 h 5 v 5 h 5 a 20,20 0,0,1 -20,20 h -55 v -10 h 55 a 10,10 0,0,0 10,-10 z"/>
+   <path id="suedbf_wa1" d="M 270,425 h 10 v -5 c -5,0 -5,-5 -10,-5 z"/>
+   <path id="textorstr1" d="M 250,415 h 20 v -10 a 10,10 0,0,1 10,-10 h 40 v -5 h 10 v -5 h -50 a 20,20 0,0,0 -20,20 a 10,10 0,0,1 -10,10 z"/>
   </g>
   <g class="abmarkiert">
    <path id="mainzer_1" d="M -30,70 h -130 v 10 h 130" />
@@ -266,14 +270,18 @@
    <path id="gartenstr8" d="M 155,350 v -5 h 20 v 5 z"/>
    <path id="suedbf1" d="M 205,415 h 20 v 5 h -20 z"/>
    <path id="schweizerstr2" d="M 185,405 h 5 v 50 h 5 v 10 h -5 v -5 h -5 z"/>
+   <path id="suedbf_wa2" d="M 280,425 h 10 v -5 h -10 z"/>
+   <path id="textorstr2" d="M 320,395 h 10 v -5 h -10 z"/>
   </g>
   <g class="opnvspur">
    <path id="friedberger_2" d="M 255,-70 h 10 v -220 h -10" />
    <path id="friedbergerplatz" d="M 260,25 h 5 v -15 h -5" />
    <path id="konstabler" d="M 255,105 h 10 v 65 h -10 z" />
+   <path id="innenstadt_1" d="M -60,220 v -10 h 25 v 10 z" />
    <path id="zoo_1" d="M 460,160 h 10 v -5 h -10 z" />
    <path id="stresemannallee_3" d="M -25,395 h 10 c 0,-5 10,-5 10,-10 v -65 c 0,-10 -10,-10 -10,-20 h -10 " />
    <path id="triftstrasse" d="M -280,520 l 7,7 l 3,-3 v 5 h 10 v -11 q 0,-4 4,-8 l 32,-32 l -7,-7"/>
+   <path id="suedbf3" d="M 230,415 v 10 h 40 v -10 z"/>
   </g>
   <g class="gras">
    <path id="frankfurterbogen" d="M 255,-290 v -130 h 10 v 130 z" />
@@ -293,6 +301,8 @@
    <path id="neuisenburg_1" d="M -25,700 h 10 v -13 h -5 v 3 h -5 z"/>
    <path id="stresemannallee_1" d="M -25,672 h 10 v -177 h -10 z"/>
    <path id="baselerplatz" d="M -25,265 h 10 v -35 h -10 z" />
+   <path id="markuskrankenhaus" d="M 40,-320 h 10 v 35 h -10 z"/>
+   <path id="ginnheim_wa" d="M 40,-415 h 10 v 20 l 7,4 l -9,9 q -3,3 -3,7 v 5 c 0,5 5,5 5,10 v 20 h -10 z"/>
    <path id="schwanheim" d="M -800,570 v 5 h 30 v 5 h 140 v -10 z" />
    <path id="goldstein_schleife" d="M -630,585 a 15,15 0,0,0 15,15 a 10,10 0,0,0 10,-10 h -5 a 5,5 0,0,1 -5,5 a 10,10 0,0,1 -10,-10 z" />
    <path id="buerostadt" d="M -580,570 c -5,0 -5,-5 -10,-5 h -10 v 5 h -20 v 5 h 25 v 5 h 240 v -10 z" />
@@ -314,6 +324,7 @@
    <path id="neuisenburg_2" d="M -25,690 h 5 v -3 h 5 v -15 h -15 l -10,-10 h -10 v 21 h 10 l 4,-4 h 11 z"/>
    <path id="hauptbahnhof" d="M -25,230 h 10 v -40 a 10,10 0,0,1 10,-10 h -3 v -10 h 3 a 10,10 0,0,1 -10,-10 v -20 l -5,-5 -5,5
                               v 60 a 10,10 0,0,1 -10,10 v 10 a 10,10 0,0,1 10,10 z" />
+   <path id="bockenheimerwarte" d="M 40,-220 h 5 v 10 h 5 v 25 h -10 z"/>
    <path id="luisa_1" d="M -15,570 a 10,10 0,0,0 10,10 a 10,10 0,0,1 10,10 a 15,15 0,0,1 -15,15 v -5 a 5,5 0,0,0 5,-5 v -10 h -10 z"/>
    <path id="museum" d="M -800,570 h -10 a 17.5,17.5 0,0,0 0,35 h 8 q 2,0 3.5,-1.5 l 2,-2 q 1.5,-1.5 3.5,-1.5 h 43 v -20 h -20 v -5 h -30 z" />
    <path id="goldstein" d="M -630,570 v 15 h 5 v -5 h 15 v 10 h 5 a 10,10 0,0,1 10,-10 v -5 h -25 v -5 z" />
