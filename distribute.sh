@@ -16,6 +16,7 @@ echo "Update date"
 for i in straßenbahnnetz.svg ubahnnetz.svg; do
     perl -pi -e '@f = localtime(time); $_ =~ s/>.+</sprintf ">%04d-%02d-%02d<", $f[5]+1900, $f[4]+1, $f[3]/gex if /dc:date/' $i
     perl -pi -e '@f = localtime(time); @a = qw ! Januar Februar März April Mai Juni Juli August September Oktober November Dezember !; $_ =~ s/Stand: .+?</sprintf "Stand: %s %4d<", $a[$f[4]], $f[5]+1900/gex' $i
+    perl -pi -e '@f = localtime(time); $_ =~ s/2011-\d{4}/sprintf "2011-%4d", $f[5]+1900/gex' $i
 done
 
 echo "Moving Netzplaene"
