@@ -305,7 +305,7 @@
   <text transform="translate(685,135)" class="ab_bb te">Gleiswerkstätten Riederhöfe</text>
   <text transform="translate(685,145)" class="ab_bb te">(wird z.Zt. umgebaut)</text>
   <text transform="translate(-780,575) rotate(-45) translate(20,0)" class="ab_bb">Verkehrsmuseum</text>
-  <g id="landuses" transform="translate(1035,765) translate(-350,-185)">
+  <g id="landuses" transform="translate(1035,765) translate(-350,-185)" style="visibility:hidden">
    <rect class="box" width="350" height="185" />
    <text class="ueberschrift tm" x="175" y="30">Fahrbahn</text>
    <g id="legende_normal" transform="translate(10,50)" class="aufstrasse"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Gleis auf Fahrbahn des übrigen Verkehrs</text></g>
@@ -317,7 +317,7 @@
    <g id="legende_normal" transform="translate(10,170)" class="kies"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; Kies</text></g>
   </g>
  </g>
- <g id="fahrwege">
+ <g id="fahrwege" style="opacity: 0">
   <g class="aufstrasse">
    <path id="friedberger_3" d="M 255,40 h 10 v -15 h -5 v -15 h 5 v -45 a 10,10 0,0,1 10,-10 h 27 v -10
                                h -27 a 10,10 0,0,1 -10,-10 v -5 h -10 v5 a 10,10 0,0,1 -10,10 h -50 v 10
@@ -425,15 +425,7 @@
  </g>
  <g style="opacity: 1">
  <g id="haltestellen" class="haltestellen">
-  <g id="hstnis" transform="translate(-20,720)" class="dreizig">
-   <path class="bstggruppe" d="M -10,40 c 20,0 30,-20 30,-30 c 0,-50 -10,-70 -20,-70 c -35,0 -35,0 -35,15 v 60 a 25,25 0,0,0 25,25" />
-   <use xlink:href="#bstg_vers1" />
-   <use xlink:href="#uml" transform="translate(-10,-10) rotate(-90)" />
-   <use xlink:href="#bau" transform="translate(10,10)" />
-   <use xlink:href="#weg" transform="translate(-5,-20)" />
-   <use xlink:href="#weg" transform="translate(+5,-35)" />
-   <text x="15" y="5">Neu-Isenburg/Stadtgrenze</text>
-  </g>
+  <g id="hstnis" transform="translate(-20,720)" class="dreizig"><path class="bstggruppe" d="M -10,40 c 20,0 30,-20 30,-30 c 0,-50 -10,-70 -20,-70 c -35,0 -35,0 -35,15 v 60 a 25,25 0,0,0 25,25" /><use xlink:href="#bahnsteig" transform="translate(5, 10)"/><text x="15" y="5">Neu-Isenburg/Stadtgrenze</text></g>
   <g id="hstoss" transform="translate(-20,635)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text transform="translate(15,5)">Oberschweinstiege</text></g>
   <g id="hstlui" transform="translate(-20,565)" class="zehnzig te"><use xlink:href="#bstg_ausen" /><text transform="rotate(-45) translate(-15,0)">Louisa Bahnhof</text></g>
   <g id="hstsam" transform="translate(-20,505)" class="zehnzig te"><use xlink:href="#bstg_ausen" /><g transform="rotate(-45) translate(-15,0)"><text y="-7">Stresemannallee/</text><text y="5">Mörfelder Landstraße</text></g></g>
@@ -639,11 +631,6 @@
   <g id="hst2009" transform="translate(465,140)" class="nullzig">
    <path class="bstggruppe" d="M 0,15 c 20,0 20,-5 20,-25 s -15,-35 -30,-35 s -25,5 -25,30 s 10,30 35,30 Z" />
    <use xlink:href="#bstg_ausen" />
-   <use xlink:href="#uml" transform="rotate(-90) translate(0,10)" />
-   <use xlink:href="#uml" transform="rotate(-90) translate(0,-10)" />
-   <use xlink:href="#bahnsteig" transform="translate(5,-20)" />
-   <use xlink:href="#bahnsteig" transform="translate(-5,-20) rotate(180) scale(1,.5)" />
-   <!--<use xlink:href="#bahnsteig" transform="translate(-25,-25) rotate(180)" />-->
    <text x="15" y="5">Zoo</text>
   </g>
   <g id="hstwss" transform="translate(483.5,90) rotate(45)"><use xlink:href="#hstl_vers1" /><text x="15" y="5" transform="rotate(-45)">Waldschmidtstraße</text></g>
@@ -746,7 +733,7 @@
   <path id="ab_neuisenburg_2" class="endet" d="M -34.5,672 q -2,-2 -3.5,-2 h -12" />
   <path id="ab_neuisenburg_3" class="endet" d="M -25,680 a 5,5 0,0,0 -5,-5 h -20" />
   <path id="ab_neuisenburg_4" class="endet" d="M -35,675 q -1.5,0 -3.5,2 l -1,1 q -2,2 -3.5,2 h -7" />
-  <path id="aus_neuisenburg_1" d="M -15,690 c 0,5 5,5 5,10 v 10 c 0,5 -5,5 -5,10" />
+  <path id="aus_neuisenburg_1" class="endet" d="M -15,690 c 0,5 5,5 5,10 v 15" />
   <path id="aus_neuisenburg_2" d="M -15,680 c 0,5 -10,5 -10,10" />
   <path id="schleife_louisa_1" d="M -25,590 a 15,15 0,0,0 30,0 a 10,10 0,0,0 -10,-10 a 10,10 0,0,1 -10,-10" />
   <path id="schleife_louisa_2" d="M -10,605 a 10,10 0,0,0 10,-10 v -10 a 5,5 0,0,0 -5,-5" />
