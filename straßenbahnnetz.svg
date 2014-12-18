@@ -471,7 +471,7 @@
   <g id="hsthss" transform="translate(440,390) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text x="20" y="0" transform="rotate(45)">Heister-/Seehofstraße</text></g>
   <g id="hstmüb" transform="translate(490,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_ausen" /><text x="20" y="0" transform="rotate(45)">Mühlberg</text></g>
   <g id="hstlkw" transform="translate(530,390) rotate(-90)"><use xlink:href="#hstl_vers1" /><text x="20" y="0" transform="rotate(45)">Lettigkautweg</text></g>
-  <g id="hstbds" transform="translate(570,390) rotate(-90)"><use xlink:href="#hstl_ausen" /><text x="20" y="0" transform="rotate(45)">Balduinstraße</text></g>
+  <g id="hstbds" transform="translate(580,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_ausen" /><text x="20" y="0" transform="rotate(45)">Balduinstraße</text></g>
   <g id="hstbws" transform="translate(610,390) rotate(-90)" class="zehnzig">
    <use xlink:href="#bahnsteig" transform="rotate(180) translate(5,5)" />
    <use xlink:href="#haltestel" transform="translate(5,5)" />
@@ -628,7 +628,7 @@
   <g id="hstbom" transform="translate(475,-50) rotate(-90)"><use xlink:href="#hstl_ausen" /><text transform="rotate(45) translate(15,0)">Bornheim Mitte</text></g>
   <g id="hst2400" transform="translate(660,-50) rotate(-90)" class="dreizig"><use xlink:href="#bstg_ausen" /><text transform="rotate(45) translate(15,0)">Eissporthalle</text></g>
 
-  <g id="hst2009" transform="translate(465,140)" class="nullzig">
+  <g id="hst2009" transform="translate(465,140)" class="dreizig">
    <path class="bstggruppe" d="M 0,15 c 20,0 20,-5 20,-25 s -15,-35 -30,-35 s -25,5 -25,30 s 10,30 35,30 Z" />
    <use xlink:href="#bstg_ausen" />
    <text x="15" y="5">Zoo</text>
