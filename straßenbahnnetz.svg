@@ -4,14 +4,14 @@
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
   width="1900px"
-  height="1190px"
-  viewBox="-865 -425 1900 1190"
+  height="1180px"
+  viewBox="-865 -425 1900 1180"
   >
  <rect id="aussen"
     width="1900"  height="1190"
     x="-865" y="-425"
     style="fill:white;stroke:#0000c0;stroke-width:.1px" />
-  <text class="ab_bb" x="-865" y="762">© CC-BY-SA 4.0 or later 2011-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
+  <text class="ab_bb" x="-865" y="752">© CC-BY-SA 4.0 or later 2011-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <metadata>
   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -305,7 +305,7 @@
   <text transform="translate(685,135)" class="ab_bb te">Gleiswerkstätten Riederhöfe</text>
   <text transform="translate(685,145)" class="ab_bb te">(wird z.Zt. umgebaut)</text>
   <text transform="translate(-780,575) rotate(-45) translate(20,0)" class="ab_bb">Verkehrsmuseum</text>
-  <g id="landuses" transform="translate(1035,765) translate(-350,-185)" style="visibility:hidden">
+  <g id="landuses" transform="translate(1035,755) translate(-350,-185)" style="visibility:hidden">
    <rect class="box" width="350" height="185" />
    <text class="ueberschrift tm" x="175" y="30">Fahrbahn</text>
    <g id="legende_normal" transform="translate(10,50)" class="aufstrasse"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Gleis auf Fahrbahn des übrigen Verkehrs</text></g>
@@ -425,7 +425,11 @@
  </g>
  <g style="opacity: 1">
  <g id="haltestellen" class="haltestellen">
-  <g id="hstnis" transform="translate(-20,720)" class="dreizig"><path class="bstggruppe" d="M -10,40 c 20,0 30,-20 30,-30 c 0,-50 -10,-70 -20,-70 c -35,0 -35,0 -35,15 v 60 a 25,25 0,0,0 25,25" /><use xlink:href="#bahnsteig" transform="translate(5, 10)"/><text x="15" y="5">Neu-Isenburg/Stadtgrenze</text></g>
+  <g id="hstnis" transform="translate(-15,720)" class="dreizig">
+   <path class="bstggruppe" d="M -15,30 c 20,0 30,-15 30,-20 c 0,-50 -10,-70 -20,-70 c -35,0 -35,0 -35,15 v 50 a 25,25 0,0,0 25,25" />
+   <use xlink:href="#bahnsteig" />
+   <text x="10" y="5">Neu-Isenburg/Stadtgrenze</text>
+  </g>
   <g id="hstoss" transform="translate(-20,635)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text transform="translate(15,5)">Oberschweinstiege</text></g>
   <g id="hstlui" transform="translate(-20,565)" class="zehnzig te"><use xlink:href="#bstg_ausen" /><text transform="rotate(-45) translate(-15,0)">Louisa Bahnhof</text></g>
   <g id="hstsam" transform="translate(-20,505)" class="zehnzig te"><use xlink:href="#bstg_ausen" /><g transform="rotate(-45) translate(-15,0)"><text y="-7">Stresemannallee/</text><text y="5">Mörfelder Landstraße</text></g></g>
@@ -887,8 +891,8 @@
  <g class="strecke">
   <path id="moerfelder_1" d="M 205,415 a 20,20 0,0,0 -20,20 v 30 a 10,10 0,0,1 -10,10 h -180 a 10,10 0,0,1 -10,-10" />
   <path id="moerfelder_2" d="M -25,465 a 20,20 0,0,0 20,20 h 180 a 20,20 0,0,0 20,-20 v -30 a 10,10 0,0,1 10,-10" />
-  <path id="neuisenburg" d="M -5,475 a 20,20 0 0 0 -20,20 v 225 a 10,10 0,0,1 -10,10 a 10,10 0,0,0 -10,10
-                                               a 15,15 0,0,0 30,0 v -245 a 10,10 0,0,1 10,-10" />
+  <path id="neuisenburg" d="M -5,475 a 20,20 0 0 0 -20,20 v 215 a 10,10 0,0,1 -10,10 a 10,10 0,0,0 -10,10
+                                               a 15,15 0,0,0 30,0 v -235 a 10,10 0,0,1 10,-10" />
   <path id="textorstraße_1" d="M 185,405 a 20,20 0,0,0 20,20 h 45 a 20,20 0,0,0 20,-20 a 10,10 0,0,1 10,-10 h 100" />
   <path id="textorstraße_2" d="M 380,385 h -100 a 20,20 0,0,0 -20,20 a 10,10 0,0,1 -10,10 h -45 a 10,10 0,0,1 -10,-10" />
   <path id="langestraße_1" d="M 380,170 a 20,20 0,0,0 -20,20 v 155 c 0,10 -10,10 -10,20 v 10 a 10,10 0,0,1 -10,10" />
