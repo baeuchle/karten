@@ -616,7 +616,12 @@
   <g id="hst565" transform="translate(-680,-205)" class="achtzig tm"><use xlink:href="#dreisteig" transform="rotate(-90)" /><text x="0" y="-10">Waldlust</text></g>
   <g id="hst566" transform="translate(-780,-210)" class="achtzig tm"><use xlink:href="#drei_mitte" transform="rotate(90)" /><text x="0" y="20">Oberursel</text><text x="0" y="36">Hohemark</text></g>
 
-  <g id="hst211" transform="translate(-237,1635)" class="neunzig te"><use xlink:href="#bstg_mitte" /><use xlink:href="#bstg_mitte" transform="translate(20,0)" /><text x="-10" y="5">Frankfurt Hauptbahnhof</text></g>
+  <g id="hst211" transform="translate(-237,1635)" class="achtzig te">
+   <use class="neunzig" xlink:href="#bahnsteig" transform="translate(25,0) rotate(180)" />
+   <use xlink:href="#bstg_mitte" />
+   <use xlink:href="#bahnsteig" transform="translate(15,0)" />
+   <text x="-10" y="5">Frankfurt Hauptbahnhof</text>
+  </g>
   <use id="hst611" transform="translate(100,1725) rotate(90)" class="neunzig" xlink:href="#bstg_ausen" />
   <g id="hst612" transform="translate(200,1725)" class="neunzig tm"><use xlink:href="#bstg_mitte" transform="rotate(90)" /><text x="0" y="20">Dom/Römer</text></g>
   <g id="hst613" transform="translate(275,1580)" class="neunzig"><use xlink:href="#bahnsteig" transform="translate(15,0)" /><use xlink:href="#bstg_mitte" /><text x="20" y="-20">Konstablerwache</text></g>
@@ -701,8 +706,8 @@
   <g id="hst353" transform="translate(-390,926)" class="achtzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Hausen</text></g>
   <g id="hst351" transform="translate(-390,1041)" class="achtzig"><use xlink:href="#bstg_vers1" /><text x="15" y="5">Große Nelkenstraße</text></g>
 
-  <g id="hst251" transform="translate(-217,1515)" class="neunzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Festhalle/Messe</text></g>
-  <use id="hst411" transform="translate(-163.5,1423.5) rotate(45)" class="neunzig" xlink:href="#bstg_mitte" />
+  <g id="hst251" transform="translate(-217,1515)" class="achtzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Festhalle/Messe</text></g>
+  <use id="hst411" transform="translate(-163.5,1423.5) rotate(45)" class="achtzig" xlink:href="#bstg_mitte" />
   <g id="hst424" transform="translate(-88,145)" class="achtzig tm"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="0" y="-15">Uni Campus Riedberg</text></g>
   <g id="hst425" transform="translate(12,145)" class="achtzig tm"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="0" y="25">Riedberg</text></g>
  </g>
@@ -746,7 +751,6 @@
    <path id="bbh_24" class="endet" d="M 60.5,-29.5 q -1.5,-1.5 -1.5,-3.5 v -18" />
    <path id="bbh_25" class="endet" d="M 63.5,-26.5 q -1.5,-1.5 -1.5,-3.5 v -18" />
    <path id="bbh_26" class="endet" d="M 65,-23 v -22" />
-   <use xlink:href="#weg" transform="translate(6,-53)" />
   </g>
   <g id="abstell_heddernheim">
    <use id="hd_01" xlink:href="#sechabstell" transform="translate(+5,-11) rotate(90)" />
@@ -763,13 +767,12 @@
    <use id="hd_13" xlink:href="#vierabstell" transform="translate(+5,-44) rotate(90)" />
    <use id="hd_14" xlink:href="#dreiabstell" transform="translate(+5,-47) rotate(90)" />
    <use id="hd_15" xlink:href="#zweiabstell" transform="translate(+5,-50) rotate(90)" />
-   <use id="hd_16" xlink:href="#einsabstell" transform="translate(0,-53) rotate(90)" />
-   <use id="hd_wa" xlink:href="#einsabstell" transform="translate(-10,-53) rotate(90)" />
+   <use id="hd_wa" xlink:href="#zweiabstell" transform="translate(+5,-53) rotate(90)" />
    <use id="hd_61" xlink:href="#zweiabstell" transform="translate(40,-10)" />
   </g>
   <g id="gleisnummern_heddernheim" class="abstell">
    <path class="gebaude wand" id="werkstatt_heddernheim" d="M -32,-15.5 h 36 l 3,-3 v -6 h -39 v 9" />
-   <path class="gebaude wand" id="waschanlage_heddernheim" d="M -32.5,-51.5 h 25 v -3 h -25 v 3" />
+   <path class="gebaude wand" id="waschanlage_heddernheim" d="M -32.5,-51.5 h 40 v -3 h -40 v 3" />
    <g transform="translate(9,-1)" class="beschrift"><path d="M -5,-17.5 l 5,5 v 9" /><text>Werkstatt</text></g>
    <g transform="translate(-22.5,-65)" class="beschrift"><path d="M 0,1 l 7,7 v 3" /><text>Waschanlage</text></g>
    <g transform="translate(45,10)" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>1</text></g>
@@ -1079,8 +1082,6 @@
   <text x="210" y="929" class="ab_bb te" id="bst691">AB Eckenheim</text>
   <text x="700" y="1247" class="ab_bb te" id="bst792">BB Ost</text>
   <text x="-660" y="775" class="ab_bb te">Stadtbahnzentralwerkstatt</text>
-  <text transform="translate(-300 1415) scale(.5)" class="ab_bb">Der Bahnsteig in D-Ebene (unten) wurde</text>
-  <text transform="translate(-300 1422) scale(.5)" class="ab_bb">temporär von 80cm auf 87cm angehoben.</text>
  </g>
  <g id="kilometrierungen_gruppen">
   <g id="as_strecke_km" class="kilometer" visibility="hidden">
