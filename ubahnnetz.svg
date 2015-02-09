@@ -252,7 +252,7 @@
  </defs>
  <g id="textboxen">
   <g id="legende" transform="translate(550,-250)">
-   <rect class="box" width="400" height="372" />
+   <rect class="box" width="400" height="402" />
    <text class="ueberschrift" x="15" y="35">U-Bahn Frankfurt am Main</text>
    <text class="unterschrift" x="20" y="60">Streckennetz (ohne Maßstab)</text>
    <text class="stand"        x="20" y="80">Stand: <tspan class="stand_monat"/></text>
@@ -265,13 +265,24 @@
    </g>
    <g id="legende_ansch" transform="translate(30,270)"><path class="ubergabe strecke" d="M 0 -6 h 50" /><text x="55" class="tm ref">A</text><text x="75">Anschluss an Straßenbahnnetz mit Referenz¹</text></g>
    <g id="legende_normal" transform="translate(30,300)"><path class="strecke anschluss" d="M 0 -6 h 45" /><text x="75">Anschluss an DB-Netz</text></g>
-   <text class="ab_bb"   transform="translate(30,330)">BB: Betriebsbahnhof, AB: Abstellbahnhof</text>
-   <use xlink:href="#keinu2" transform="translate(30 345)" />
-   <text class="ab_bb" transform="translate(46,344)">Zwischen Niederursel und Kalbach sind nur</text>
-   <text class="ab_bb" transform="translate(46,356)">U4- und U5-Wagen zugelassen</text>
-   <text class="ab_bb" transform="translate(18,368)">¹: Siehe <a class="link" xlink:href="strassenbahnnetz.svg">Straßenbahn-Netz Frankfurt</a></text>
+   <g id="legende_normal" transform="translate(30,330)" class="strecke">
+    <path class="bb" d="M 0 -6 h 60" />
+    <g transform="translate(2, -6) rotate(-90)">
+    <use xlink:href="#einsabstell" />
+    <use transform="translate(0, 07)" xlink:href="#zweiabstell" />
+    <use transform="translate(0, 19)" xlink:href="#dreiabstell" />
+    <use transform="translate(0, 36)" xlink:href="#vierabstell" />
+    </g>
+    <text x="75">Abstellkapazität 1 / 2 / 3 / 4 Wagen</text>
+   </g>
+   
+   <text class="ab_bb"   transform="translate(30,360)">BB: Betriebsbahnhof, AB: Abstellbahnhof</text>
+   <use xlink:href="#keinu2" transform="translate(30 375)" />
+   <text class="ab_bb" transform="translate(46,374)">Zwischen Niederursel und Kalbach sind nur</text>
+   <text class="ab_bb" transform="translate(46,386)">U4- und U5-Wagen zugelassen</text>
+   <text class="ab_bb" transform="translate(18,398)">¹: Siehe <a class="link" xlink:href="strassenbahnnetz.svg">Straßenbahn-Netz Frankfurt</a></text>
   </g>
-  <g id="bahnsteigshöhen" transform="translate(950,122)">
+  <g id="bahnsteigshöhen" transform="translate(950,152)">
    <rect class="box" width="200" height="225" x="-200" y="0" />
    <text x="-100" y="20" class="tm" style="font-weight:bold;">Bahnsteige</text>
    <text x="-175" y="40" class="tm ab_bb">78 m</text>
@@ -537,10 +548,10 @@
    <use id="sl131b" xlink:href="#vierabstell" transform="translate(572,1252) rotate(45)" />
    <use id="sl_141" xlink:href="#sechabstell" transform="translate(591,1239) rotate(45)" />
    <use id="sl_14"  xlink:href="#zweiabstell" transform="translate(595,1243) rotate(45)" />
-   <use id="bwd_2"  xlink:href="#vierabstell" transform="translate(-131,1305)" />
+   <use id="bwd_2"  xlink:href="#sechabstell" transform="translate(-131,1305)" />
    <use id="bwd_7"  xlink:href="#vierabstell" transform="translate(-127,1305)" />
    <use id="bwd_5"  xlink:href="#vierabstell" transform="translate(-123,1305)" />
-   <use id="bwd_1"  xlink:href="#vierabstell" transform="translate(-119,1305)" />
+   <use id="bwd_1"  xlink:href="#sechabstell" transform="translate(-119,1305)" />
    <use id="bwd_6"  xlink:href="#vierabstell" transform="translate(-200,1460) rotate(-135)" />
    <use id="bwc_3"  xlink:href="#vierabstell" transform="translate(-114,1451) rotate(+135)" />
    <use id="hb_11"  xlink:href="#zweiabstell" transform="translate(-236,1561) rotate(+135)" />
