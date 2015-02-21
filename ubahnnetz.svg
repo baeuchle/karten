@@ -1179,7 +1179,7 @@
    <g transform="translate(-780,-150)"><g transform="rotate(135) translate(0,-60) rotate(-135)"><use xlink:href="#kasten4" /><text x="6" y="4">km 10,15</text></g><use xlink:href="#punkt2" transform="rotate(135)" /></g>
    <g transform="translate(-800,-150)"><g transform="rotate(180) translate(0,-60) rotate(-180)"><use xlink:href="#kasten4" /><text x="6" y="4">km 10,20</text></g><use xlink:href="#punkt3" transform="rotate(180)" /></g>
   </g>
-  <g id="bs_strecke_km" class="kilometer" visibility="visible">
+  <g id="bs_strecke_km" class="kilometer" visibility="hidden">
    <path class="kilometrierung" d="M -282,1545 a 55,55 0,0,1 55,55 v 50 q 0,30 22.5,52.5 q 22.5,22.5 52.5,22.5 h 368 a 69,69 0,0,0 69,-69 v -76" />
    <g transform="translate(285,1580)"><g transform="rotate(150) translate(0,-99) rotate(210)"><use xlink:href="#kasten3" /><text x="10" y="4">km 10,0</text></g><use xlink:href="#punkt1" transform="rotate(150)"/></g>
    <g transform="translate(200,1725)" class="te"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 9,30</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
