@@ -554,8 +554,14 @@
    <use id="bwd_1"  xlink:href="#sechabstell" transform="translate(-119,1305)" />
    <use id="bwd_6"  xlink:href="#vierabstell" transform="translate(-200,1460) rotate(-135)" />
    <use id="bwc_3"  xlink:href="#vierabstell" transform="translate(-114,1451) rotate(+135)" />
-   <use id="hb_11"  xlink:href="#zweiabstell" transform="translate(-236,1561) rotate(+135)" />
-   <use id="hb_12"  xlink:href="#vierabstell" transform="translate(-239.5,1571.5) rotate(+135)" />
+   <g transform="translate(-282,1600)">
+    <use id="hb_12a" xlink:href="#einsabstell" transform="rotate(-54) translate(50, -2.5)" />
+    <use id="hb_12b" xlink:href="#einsabstell" transform="rotate(-48) translate(50, -2.5)" />
+    <use id="hb_12c" xlink:href="#einsabstell" transform="rotate(-42) translate(50, -2.5)" />
+    <use id="hb_12d" xlink:href="#einsabstell" transform="rotate(-36) translate(50, -2.5)" />
+    <use id="hb_11a" xlink:href="#einsabstell" transform="rotate(-42.5) translate(60, -2.5)" />
+    <use id="hb_11b" xlink:href="#einsabstell" transform="rotate(-47.5) translate(60, -2.5)" />
+   </g>
    <use id="zo_61"  xlink:href="#vierabstell" transform="translate(337.5,1580) rotate(-90)" />
   </g>
   <g class="strecke">
