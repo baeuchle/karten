@@ -1120,7 +1120,7 @@
    <g transform="translate(115,1180)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 12,1</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    <g transform="translate(115,1130)" class="te"><g transform="translate(-60,0)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 12,40</text></g><use xlink:href="#punkt2" transform="rotate(-90)" /></g>
    <g transform="translate(115,1080)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 12,70</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
-   <g transform="translate(115,1000)" class="te"><g transform="translate(-60,0)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 12,91</text></g><use xlink:href="#punkt2" transform="rotate(-90)" /></g>
+   <g transform="translate(115,1020)" class="te"><g transform="rotate(-75) translate(0,-60) rotate(75)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 12,91</text></g><use xlink:href="#punkt2" transform="rotate(-75)" /></g>
    <g transform="translate(115,980)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 13,40</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
    <g transform="translate(115,865)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 13,95</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
    <g transform="translate(115,750)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 14,60</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
@@ -1283,7 +1283,7 @@
    <g transform="translate(-227,1635)"><g transform="rotate(30) translate(0,-99) rotate(-30)"><use xlink:href="#kasten3" /><text x="10" y="4">km 10,0</text></g><use xlink:href="#punkt1" transform="rotate(30)" /></g>
    <g transform="translate(-217,1515)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 10,7</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
    <g transform="translate(-163.5,1423.5)" class="te"><g transform="rotate(-75) translate(0,-60) rotate(75)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 11,7</text></g><use xlink:href="#punkt2" transform="rotate(-75)"/></g>
-   <use xlink:href="#punkt3" transform="translate(-125,1300) rotate(30)" />
+   <g transform="translate(-125,1300)"><g transform="rotate(90) translate(0,-60) rotate(-90)"><use xlink:href="#kasten3" /><text x="6" y="4">km 12,0</text></g><use xlink:href="#punkt3" transform="rotate(90)" /></g>
    <path class="kilometrierung" d="M -125,521 v -33 q 0,-22 -16.5,-38.5 M -158,260 a 55,55 0,0,1 55,-55 h 234" />
    <path class="kilometrierung klein" d="M -141.5,449.5 q -16.5,-16.5 -16.5,-38.5 v -151" />
    <g transform="translate(-125,521)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km+0,00</text></g><use xlink:href="#punkt3" transform="rotate(-30)" /></g>
