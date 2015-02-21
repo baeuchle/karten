@@ -357,14 +357,14 @@
   <path id="eckenheim_strassen" class="strasse" d="M 125,1025 h 165 m 0,10 h -165 M 280,1045 v -110 m -10,0 v 110" />
   <path id="eckenheimer_ldstr1" class="strasse" d="M 280,1510 v -180 m 0,-140 v -90" />
   <path id="eckenheimer_ldstr2" class="strasse" d="M 270,1100 v 90 m 0,140 v 180" />
-  <path id="u1_eigener" class="eigen" d="M -140,920 V 830 M -130,620 V 920 M -120,920 V 620 M -110,920 V 870" />
+  <path id="u1_eigener" class="eigen" d="M -140,1001 V 911 M -130,701 V 1001 M -120,1001 V 701 M -110,1001 V 951" />
   <path id="glauburgstraße"     class="strasse" d="M 270,1397.5 h 50" />
  </g>
  <g id="clickrechtecke">
-  <rect id="verlängerung_badhomburg_ersatz" x="300" y="-180" width="200" height="315" class="klicken" onclick="geplant('verlängerung_badhomburg')"/>
-  <rect id="frankfurter_berg_ersatz" x="260" y="310" width="375" height="260" class="klicken" onclick="geplant('frankfurter_berg')"/>
-  <rect id="ginnheimer_kurve_ersatz" x="-180" y="925" width="130" height="620" class="klicken" onclick="geplant('ginnheimer_kurve')"/>
-  <rect id="verlängerung_europaviertel_ersatz" x="-720" y="1540" width="449" height="85" class="klicken" onclick="geplant('verlängerung_europaviertel')"/>
+  <rect id="verlängerung_badhomburg_ersatz" x="320" y="-180" width="215" height="270" class="klicken" onclick="geplant('verlängerung_badhomburg')"/>
+  <rect id="frankfurter_berg_ersatz" x="260" y="330" width="375" height="260" class="klicken" onclick="geplant('frankfurter_berg')"/>
+  <rect id="ginnheimer_kurve_ersatz" x="-180" y="1001" width="130" height="300" class="klicken" onclick="geplant('ginnheimer_kurve')"/>
+  <rect id="verlängerung_europaviertel_ersatz" x="-730" y="1520" width="449" height="85" class="klicken" onclick="geplant('verlängerung_europaviertel')"/>
   <path id="rtw_ersatz" d="M -680,660 h 230 v -200 h 130 v -140 l 70,-70 h 50 v -35 h -135 l -174,174 v 32 h -172 z" class="klicken" onclick="geplant('rtw')"/>
  </g>
  <g id="stzw" class="strecke bb">
