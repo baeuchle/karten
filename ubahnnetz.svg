@@ -1179,7 +1179,7 @@
    <g transform="translate(-780,-150)"><g transform="rotate(135) translate(0,-60) rotate(-135)"><use xlink:href="#kasten4" /><text x="6" y="4">km 10,15</text></g><use xlink:href="#punkt2" transform="rotate(135)" /></g>
    <g transform="translate(-800,-150)"><g transform="rotate(180) translate(0,-60) rotate(-180)"><use xlink:href="#kasten4" /><text x="6" y="4">km 10,20</text></g><use xlink:href="#punkt3" transform="rotate(180)" /></g>
   </g>
-  <g id="bs_strecke_km" class="kilometer" visibility="hidden">
+  <g id="bs_strecke_km" class="kilometer" visibility="visible">
    <path class="kilometrierung" d="M -282,1545 a 55,55 0,0,1 55,55 v 50 q 0,30 22.5,52.5 q 22.5,22.5 52.5,22.5 h 368 a 69,69 0,0,0 69,-69 v -76" />
    <g transform="translate(285,1580)"><g transform="rotate(150) translate(0,-99) rotate(210)"><use xlink:href="#kasten3" /><text x="10" y="4">km 10,0</text></g><use xlink:href="#punkt1" transform="rotate(150)"/></g>
    <g transform="translate(200,1725)" class="te"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 9,30</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
@@ -1195,26 +1195,26 @@
    <g transform="translate(-630,1545)" class="te"><g transform="rotate( 30) translate(0, 60) rotate(-30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 5,05</text></g><use xlink:href="#punkt2" transform="rotate(210)"/></g>
    <g transform="translate(-670,1545)" class="te"><g transform="rotate(-30) translate(0,-60) rotate( 30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 4,85</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
    <g transform="translate(-730,1540)" class="te"><g transform="rotate( 00) translate(0, 60) rotate( 00)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 4,70</text></g><use xlink:href="#punkt3" transform="rotate(180)"/></g>
-   <path class="kilometrierung" d="M 285,1580 v -20 c 0,-10 -10,-20 -10,-40 v -5 V 1025 a 15,15 0,0,1 15,-15 h 130 a 15,15 0,0,0 15,-15 v -430" />
+   <path class="kilometrierung" d="M 285,1580 v -20 c 0,-10 -10,-20 -10,-40 v -5 V 1045 a 15,15 0,0,1 15,-15 h 130 a 15,15 0,0,0 15,-15 v -430" />
    <g transform="translate(285,1580)"><g transform="rotate(150) translate(0,-99) rotate(210)"><use xlink:href="#kasten3" /><text x="10" y="4">km 10,0</text></g><use xlink:href="#punkt1" transform="rotate(150)"/></g>
    <g transform="translate(275,1515)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 10,45</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
-   <g transform="translate(275,1470)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 10,85</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
-   <g transform="translate(275,1375)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 11,37</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
-   <g transform="translate(275,1280)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 11,90</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
-   <g transform="translate(275,1200)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 12,35</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
-   <g transform="translate(275,1120)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 12,75</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
-   <g transform="translate(275,1010)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 13,15</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
-   <g transform="translate(405,1015)"><g transform="rotate(120) translate(0,-60) rotate(-120)"><use xlink:href="#kasten4" /><text x="6" y="4">km 13,70</text></g><use xlink:href="#punkt2" transform="rotate(120)" /></g>
-   <g transform="translate(435,980)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 13,85</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
-   <g transform="translate(435,868)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 14,20</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
-   <g transform="translate(435,773)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 14,55</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
-   <g transform="translate(435,685)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 15,00</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
-   <g transform="translate(435,685)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 15,00</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
-   <g transform="translate(435,585)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 15,47</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
-   <g transform="translate(435,565)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 15,50</text></g><use xlink:href="#punkt3" transform="rotate(-30)" /></g>
-   <g transform="translate(435,505)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 16,15</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
-   <g transform="translate(435,425)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 16,65</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
-   <g transform="translate(435,315)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 17,05</text></g><use xlink:href="#punkt3" transform="rotate(-30)" /></g>
+   <g transform="translate(275,1490)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 10,85</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
+   <g transform="translate(275,1395)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 11,37</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
+   <g transform="translate(275,1300)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 11,90</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
+   <g transform="translate(275,1220)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 12,35</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
+   <g transform="translate(275,1140)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 12,75</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
+   <g transform="translate(275,1030)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 13,15</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
+   <g transform="translate(405,1035)"><g transform="rotate(120) translate(0,-60) rotate(-120)"><use xlink:href="#kasten4" /><text x="6" y="4">km 13,70</text></g><use xlink:href="#punkt2" transform="rotate(120)" /></g>
+   <g transform="translate(435,1000)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 13,85</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
+   <g transform="translate(435,888)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 14,20</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
+   <g transform="translate(435,793)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 14,55</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
+   <g transform="translate(435,705)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 15,00</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
+   <g transform="translate(435,705)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 15,00</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
+   <g transform="translate(435,605)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 15,47</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
+   <g transform="translate(435,585)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 15,50</text></g><use xlink:href="#punkt3" transform="rotate(-30)" /></g>
+   <g transform="translate(435,525)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 16,15</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
+   <g transform="translate(435,445)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 16,65</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
+   <g transform="translate(435,335)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 17,05</text></g><use xlink:href="#punkt3" transform="rotate(-30)" /></g>
   </g>
   <g id="b2_strecke_km" class="kilometer" visibility="hidden">
    <path class="kilometrierung" d="M 285,1580 v -16 q 0,-22 16.5,-38.5 l 290,-290" />
