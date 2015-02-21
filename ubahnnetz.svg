@@ -639,8 +639,8 @@
    <use xlink:href="#bahnsteig" transform="translate(15,0)" />
    <text x="-10" y="5">Frankfurt Hauptbahnhof</text>
   </g>
-  <use id="hst611" transform="translate(100,1725) rotate(90)" class="neunzig" xlink:href="#bstg_ausen" />
-  <g id="hst612" transform="translate(200,1725)" class="neunzig tm"><use xlink:href="#bstg_mitte" transform="rotate(90)" /><text x="0" y="20">Dom/Römer</text></g>
+  <use id="hst611" transform="translate(100,1725) rotate(90)" class="achtzig" xlink:href="#bstg_ausen" />
+  <g id="hst612" transform="translate(200,1725)" class="achtzig tm"><use xlink:href="#bstg_mitte" transform="rotate(90)" /><text x="0" y="20">Dom/Römer</text></g>
   <g id="hst613" transform="translate(275,1580)" class="neunzig"><use xlink:href="#bahnsteig" transform="translate(15,0)" /><use xlink:href="#bstg_mitte" /><text x="20" y="-20">Konstablerwache</text></g>
   <g id="u5planung" style="display:none;">
   <g id="hst614_neu" transform="translate(275,1485)" class="achtzig te"><use xlink:href="#drei_vers1"/><text x="-15" y="5">Musterschule</text></g>
