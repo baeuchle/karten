@@ -218,6 +218,7 @@
   <g id="drei_mitte"><use xlink:href="#dreisteig" transform="translate(5,0) rotate(180)" /><use xlink:href="#dreisteig" transform="translate(-5,0)" /></g>
   <g id="drei_ausen"><use xlink:href="#dreisteig" transform="translate(-5,0) rotate(180)" /><use xlink:href="#dreisteig" transform="translate(5,0)" /></g>
   <g id="drei_ecke1"><use xlink:href="#dreisteig" transform="translate(5,0)" /><use xlink:href="#dreisteig" transform="translate(-30,-25) rotate(90)" /></g>
+  <g id="drei_vers1"><use xlink:href="#dreisteig" transform="translate(-5,25) rotate(180)" /><use xlink:href="#dreisteig" transform="translate(5,-25)" /></g>
   <g id="drei_vers2"><use xlink:href="#dreisteig" transform="translate(-5,-25) rotate(180)" /><use xlink:href="#dreisteig" transform="translate(5,25)" /></g>
   <g id="drei_vers3"><use xlink:href="#dreisteig" transform="translate(-5,-10) rotate(180)" /><use xlink:href="#dreisteig" transform="translate(5,10)" /></g>
   <rect class="label" id="kasten3" y="-6" width="58" height="12" rx="2" ry="2" />
@@ -353,11 +354,11 @@
   </g>
  </g>
  <g id="strassen">
-  <path id="eckenheim_strassen" class="strasse" d="M 125,1005 h 165 m 0,10 h -165 M 280,1025 v -110 m -10,0 v 110 M 270,912.5 h -130" />
-  <path id="eckenheimer_ldstr1" class="strasse" d="M 280,1490 v -180 m 0,-140 v -90" />
-  <path id="eckenheimer_ldstr2" class="strasse" d="M 270,1080 v 90 m 0,140 v 180" />
+  <path id="eckenheim_strassen" class="strasse" d="M 125,1025 h 165 m 0,10 h -165 M 280,1045 v -110 m -10,0 v 110" />
+  <path id="eckenheimer_ldstr1" class="strasse" d="M 280,1510 v -180 m 0,-140 v -90" />
+  <path id="eckenheimer_ldstr2" class="strasse" d="M 270,1100 v 90 m 0,140 v 180" />
   <path id="u1_eigener" class="eigen" d="M -140,920 V 830 M -130,620 V 920 M -120,920 V 620 M -110,920 V 870" />
-  <path id="glauburgstraße"     class="strasse" d="M 270,1377.5 h 50" />
+  <path id="glauburgstraße"     class="strasse" d="M 270,1397.5 h 50" />
  </g>
  <g id="clickrechtecke">
   <rect id="verlängerung_badhomburg_ersatz" x="300" y="-180" width="200" height="315" class="klicken" onclick="geplant('verlängerung_badhomburg')"/>
@@ -420,14 +421,14 @@
   <path id="gw_gloecknerwiese" d="M -340,-145 c -10,0 -10,-10 -20,-10" />
  </g>
  <g id="gw_b_strecke" class="strecke bb">
-  <path id="wa_preungesheim_1" d="M 440,650 c 0,-10 -10,-10 -10,-20 c 0,-10 10,-10 10,-20" />
-  <path id="wa_preungesheim_2" class="endet" d="M 430,620 c 0,-10 -10,-10 -10,-20 v -35" />
-  <path id="gw_sigmund_freud_straße" d="M 430,725 c 0,-10 10,-10 10,-20" />
-  <path id="gw_hauptfriedhof" d="M 270,1245 c 0,-10 10,-10 10,-20" />
-  <path id="gw_glauburgstrasse" d="M 270,1335 c 0,-10 10,-10 10,-20" />
-  <path id="abzw_glauburgstrasse_1" class="zugabe" d="M 295,1375 h -5 a 10,10 0,0,1 -10,-10" />
-  <path id="abzw_glauburgstrasse_2" class="ubergabe" d="M 270,1365 a 15,15 0,0,0 15,15 h 10" />
-  <text transform="translate(295,1380) translate(5,2.5)" class="ref">B</text>
+  <path id="wa_preungesheim_1" d="M 440,670 c 0,-10 -10,-10 -10,-20 c 0,-10 10,-10 10,-20" />
+  <path id="wa_preungesheim_2" class="endet" d="M 430,640 c 0,-10 -10,-10 -10,-20 v -35" />
+  <path id="gw_sigmund_freud_straße" d="M 430,745 c 0,-10 10,-10 10,-20" />
+  <path id="gw_hauptfriedhof" d="M 270,1265 c 0,-10 10,-10 10,-20" />
+  <path id="gw_glauburgstrasse" d="M 270,1355 c 0,-10 10,-10 10,-20" />
+  <path id="abzw_glauburgstrasse_1" class="zugabe" d="M 295,1395 h -5 a 10,10 0,0,1 -10,-10" />
+  <path id="abzw_glauburgstrasse_2" class="ubergabe" d="M 270,1385 a 15,15 0,0,0 15,15 h 10" />
+  <text transform="translate(295,1400) translate(5,2.5)" class="ref">B</text>
   <path id="gw_kw" class="tb" d="M 280,1615 c 0,-10 10,-10 10,-20 M 270,1540 c 0,-10 10,-10 10,-20" />
   <path id="gw_hbf" class="tb" d="M -222,1620 c 0,-10 -10,-10 -10,-20 m 10,0 c 0,10 -10,10 -10,20" />
   <path id="ul_d_bbost_1" class="tunnel" d="M 615,1251 h -52 q -4,0 -7,3 l -5,5 c -3,3 0,6 -3,9" />
@@ -518,8 +519,8 @@
   <path id="hohemark_2b" class="endet" d="M -745,-145 c -10,0 -10,-10 -20,-10 h -35" />
  </g>
  <g id="bstrecke" class="strecke">
-  <path id="preungesheim_1" class="endet" d="M 280,1515 V 1025 a 10,10 0,0,1 10,-10 h 130 a 20,20 0,0,0 20,-20 v -430" />
-  <path id="preungesheim_2" class="faeng" d="M 430,565 v 430 a 10,10 0,0,1 -10,10 h -130 a 20,20 0,0,0 -20,20 V 1515" />
+  <path id="preungesheim_1" class="endet" d="M 280,1515 V 1045 a 10,10 0,0,1 10,-10 h 130 a 20,20 0,0,0 20,-20 v -430" />
+  <path id="preungesheim_2" class="faeng" d="M 430,585 v 430 a 10,10 0,0,1 -10,10 h -130 a 20,20 0,0,0 -20,20 V 1515" />
  </g>
  <g id="cstrecke" class="strecke">
   <path id="heerstraße_1" class="faeng" d="M -475,625 v 435 q 0,24 18,42 l 123,123" />
@@ -642,32 +643,32 @@
   <g id="hst612" transform="translate(200,1725)" class="neunzig tm"><use xlink:href="#bstg_mitte" transform="rotate(90)" /><text x="0" y="20">Dom/Römer</text></g>
   <g id="hst613" transform="translate(275,1580)" class="neunzig"><use xlink:href="#bahnsteig" transform="translate(15,0)" /><use xlink:href="#bstg_mitte" /><text x="20" y="-20">Konstablerwache</text></g>
   <g id="u5planung" style="display:none;">
-  <g id="hst614_neu" transform="translate(275,1465)" class="achtzig te"><use xlink:href="#drei_vers1" transform="scale(1,.76)"/><text x="-15" y="5">Musterschule</text></g>
-  <g id="hst615_neu" transform="translate(275,1365)" class="achtzig te"><use xlink:href="#drei_vers1" transform="scale(1,.76)"/><text x="-15" y="5">Glauburgstraße</text></g>
+  <g id="hst614_neu" transform="translate(275,1485)" class="achtzig te"><use xlink:href="#drei_vers1"/><text x="-15" y="5">Musterschule</text></g>
+  <g id="hst615_neu" transform="translate(275,1385)" class="achtzig te"><use xlink:href="#drei_vers1"/><text x="-15" y="5">Glauburgstraße</text></g>
   </g>
   <g id="u5ist">
-  <g id="hst614" transform="translate(275,1470)" class="nullzig te"><use xlink:href="#drei_ausen" /><text x="-15" y="5">Musterschule</text></g>
-  <g id="hst615" transform="translate(275,1375)" class="nullzig te"><use xlink:href="#drei_vers2" /><text x="-15" y="5">Glauburgstraße</text></g>
+  <g id="hst614" transform="translate(275,1490)" class="nullzig te"><use xlink:href="#drei_ausen" /><text x="-15" y="5">Musterschule</text></g>
+  <g id="hst615" transform="translate(275,1395)" class="nullzig te"><use xlink:href="#drei_vers2" /><text x="-15" y="5">Glauburgstraße</text></g>
   </g>
-  <g id="hst616" transform="translate(275,1280)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Deutsche Nationalbibliothek</text></g>
-  <g id="hst617" transform="translate(275,1200)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Hauptfriedhof</text></g>
-  <g id="hst621" transform="translate(275,1120)" class="nullzig"><use xlink:href="#drei_vers3" /><text x="15" y="5">Neuer Jüdischer Friedhof</text></g>
-  <g id="hst622" transform="translate(275,1040)" class="nullzig te">
+  <g id="hst616" transform="translate(275,1300)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Deutsche Nationalbibliothek</text></g>
+  <g id="hst617" transform="translate(275,1220)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Hauptfriedhof</text></g>
+  <g id="hst621" transform="translate(275,1140)" class="nullzig"><use xlink:href="#drei_vers3" /><text x="15" y="5">Neuer Jüdischer Friedhof</text></g>
+  <g id="hst622" transform="translate(275,1060)" class="nullzig te">
    <use xlink:href="#drei_ausen" />
    <text x="-15" y="0">Eckenheimer</text>
    <text x="-15" y="16">Landstraße/</text><text x="-15" y="32">Marbachweg</text>
   </g>
-  <g id="hst623" transform="translate(305,1010)" class="achtzig">
+  <g id="hst623" transform="translate(305,1030)" class="achtzig">
    <use xlink:href="#drei_ausen" transform="rotate(90)" />
    <text x="-15" y="-31">Marbachweg/</text>
    <text x="-15" y="-15">Sozialzentrum</text>
   </g>
-  <g id="hstXXX" transform="translate(262,868)" class="nullzig"><use xlink:href="#dreisteig" /><text x="10" y="4" class="ab_bb">Schwabstraße</text></g>
-  <g id="hst624" transform="translate(405,1010)" class="achtzig"><use xlink:href="#drei_ecke1" transform="rotate(90)" /><text x="35" y="5">Gießener Straße</text></g>
-  <g id="hst625" transform="translate(435,865)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Theobald-Ziegler-Straße</text></g>
-  <g id="hst626" transform="translate(435,770)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Ronneburgstraße</text></g>
-  <g id="hst631" transform="translate(435,685)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Sigmund-Freud-Straße</text></g>
-  <g id="hst632" transform="translate(435,585)" class="nullzig">
+  <g id="hstXXX" transform="translate(262,888)" class="nullzig"><use xlink:href="#dreisteig" /><text x="10" y="4" class="ab_bb">Schwabstraße</text></g>
+  <g id="hst624" transform="translate(405,1030)" class="achtzig"><use xlink:href="#drei_ecke1" transform="rotate(90)" /><text x="35" y="5">Gießener Straße</text></g>
+  <g id="hst625" transform="translate(435,885)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Theobald-Ziegler-Straße</text></g>
+  <g id="hst626" transform="translate(435,790)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Ronneburgstraße</text></g>
+  <g id="hst631" transform="translate(435,705)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Sigmund-Freud-Straße</text></g>
+  <g id="hst632" transform="translate(435,605)" class="nullzig">
    <use id="bstg_preungesheim_3" xlink:href="#dreisteig" transform="translate(-15,0) rotate(180)" />
    <use xlink:href="#drei_mitte" class="nullzig"/>
    <!--<use xlink:href="#bau" transform="translate(0,0)"/>-->
@@ -727,9 +728,8 @@
   <g id="hst424" transform="translate(-88,205)" class="achtzig tm"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="0" y="-15">Uni Campus Riedberg</text></g>
   <g id="hst425" transform="translate(12,205)" class="achtzig tm"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="0" y="25">Riedberg</text></g>
  </g>
- <g id="betriebsstrecken_eckenheim" transform="translate(205,920)" class="strecke bb">
+ <g id="betriebsstrecken_eckenheim" transform="translate(205,940)" class="strecke bb">
   <path id="marbachweg_1" d="M -95,80 a 15,15 0,0,0 15,15 h 135 a 20,20 0,0,0 20,-20 m -10,0 a 10,10 0,0,1 -10,10 h -15 c -10,0 -10,10 -20,10 m -70,0 c -5,0 -5,-5 -10,-5 h -15 a 10,10 0,0,1 -10,-10" />
-  <path id="schwabstraße_3" d="M 70.5,-5.5 q -13.5,-13.5 -13.5,-31.5" />
   <path id="abzw_preungesheim_bb" d="M 85,85 a 10,10 0,0,1 -10,-10" />
   <path id="abzw_bb_preungesheim" d="M 65,75 a 20,20 0,0,0 20,20" />
   <path id="eckenheimer_zufahrt_bb_klein" d="M 75,105 v -100 q 0,-6 -4.5,-10.5 q -4.5,-4.5 -10.5,-4.5 h -11 q -2,0 -3.5,1.5" />
@@ -830,7 +830,7 @@
    <g transform="translate( 40,-05)" class="bgleisnummer"><circle cy="-1" r="2" /><text>61</text></g>
   </g>
  </g>
- <g id="bb_eckenheim" transform="translate(205,920)" class="strecke bb">
+ <g id="bb_eckenheim" transform="translate(205,940)" class="strecke bb">
   <path class="strasse" d="M 75,5 v -10 m -10,0 v 15 M 65,-7.5 h -130" />
   <g class="bb">
    <path id="schwabstraße_1" d="M 57,-37 v 5 q 0,12 -9,21 l -4.5,4.5 q -1.5,1.5 -3.5,1.5" />
@@ -1066,13 +1066,13 @@
    <text x="-721" y="1570" style="stroke-dasharray:none;" id="verlängerung_europaviertel_erkl">Verlängerung in Bau, vsl. 2021</text>
   </g>
   <g id="frankfurter_berg" class="geplant" display="inline" transform="translate(30,0)">
-   <path id="frankfurterberg_1" class="endet" d="M 440,565 v -250" />
-   <path id="frankfurterberg_2" class="faeng" d="M 430,315 v 250" />
-   <path id="gw_frankfurterberg" class="bb" d="M 430,390 c 0,-10 10,-10 10,-20 c 0,-10 -10,-10 -10,-20" />
-   <g id="hst633" transform="translate(435,505)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">August-Schanz-Straße</text></g>
-   <g id="hst634" transform="translate(435,425)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Berkersheimer Weg</text></g>
-   <g id="hst635" transform="translate(435,335)" class="achtzig"><use xlink:href="#drei_mitte" /><text x="15" y="5">Frankfurter Berg</text></g>
-   <text x="420" y="400" class="te" style="stroke-dasharray:none; " id="frankfurter_berg_erkl">Geplante Verlängerung, vsl. 2017</text>
+   <path id="frankfurterberg_1" class="endet" d="M 440,585 v -250" />
+   <path id="frankfurterberg_2" class="faeng" d="M 430,335 v 250" />
+   <path id="gw_frankfurterberg" class="bb" d="M 430,410 c 0,-10 10,-10 10,-20 c 0,-10 -10,-10 -10,-20" />
+   <g id="hst633" transform="translate(435,525)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">August-Schanz-Straße</text></g>
+   <g id="hst634" transform="translate(435,445)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Berkersheimer Weg</text></g>
+   <g id="hst635" transform="translate(435,355)" class="achtzig"><use xlink:href="#drei_mitte" /><text x="15" y="5">Frankfurter Berg</text></g>
+   <text x="420" y="420" class="te" style="stroke-dasharray:none; " id="frankfurter_berg_erkl">Geplante Verlängerung, vsl. 2017</text>
   </g>
   <g id="ginnheimer_kurve" class="geplant" display="inline" transform="translate(45,0)">
    <g class="te">
@@ -1102,7 +1102,7 @@
   <text x="43" y="540" class="ab_bb te" id="bst526">BB Heddernheim</text>
   <text x="-140" y="795" class="ab_bb te" id="421">AB Römerstadt</text>
   <text x="-397" y="150" class="ab_bb te" id="bst555">AB Bommersheim</text>
-  <text x="210" y="929" class="ab_bb te" id="bst691">AB Eckenheim</text>
+  <text x="210" y="949" class="ab_bb te" id="bst691">AB Eckenheim</text>
   <text x="700" y="1247" class="ab_bb te" id="bst792">BB Ost</text>
   <text x="-660" y="775" class="ab_bb te">Stadtbahnzentralwerkstatt</text>
  </g>
