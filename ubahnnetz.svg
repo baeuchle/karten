@@ -178,7 +178,11 @@
    <use xlink:href="#einwagen" transform="translate(0,-03.75)" />
    <use xlink:href="#einwagen" transform="translate(0,+03.75)" />
   </g>
-  <!--<path id="bahnsteig" d="M 6,-15 L 2,-15 L 2,15 L 6,15" class="bahnsteig" />-->
+  <g id="kameliger">
+   <use xlink:href="#einwagen" class="funfzig" transform="translate(0,-11.25)" />
+   <use xlink:href="#einwagen" class="funfzig" transform="translate(0,+03.75)" />
+   <use xlink:href="#einwagen" class="achtzig" transform="translate(0,-03.75)" /><!-- Mitte nach Enden, damit das Grün vorne ist -->
+  </g>
   <path id="sbahn"     d="M 6,-15 L 2,-15 L 2,50 L 6,50" class="bahnsteig" style="fill:url(#bs99)" />
   <path id="tunnelrampe" d="M -10,-5 L -7,0 L 7,0 L 10,-5" style="fill:none;stroke:#000000;stroke-width:1px" />
   <g id="grid">
@@ -211,6 +215,7 @@
    <path style="fill:url(#grau); stroke:none; fill-opacity:.5" d="M 0,0 l -1,-10 v -50 h 2 v 50 z" />
    <path style="stroke-width:5px; stroke:#080; fill:none; " d="M -5,-60 h 10" />
   </g>
+  <g id="legende"><use xlink:href="#dreisteig" transform="translate(-75,-10) rotate(90)" /><use xlink:href="#bahnsteig" transform="translate(-35,-10) rotate(90)" /></g>
   <g id="bstg_mitte"><use xlink:href="#bahnsteig" transform="translate(5,0) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(-5,0)" /></g>
   <g id="bstg_ausen"><use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,0)" /></g>
   <g id="bstg_vers1"><use xlink:href="#bahnsteig" transform="translate(-5,-15) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,15)" /></g>
@@ -276,7 +281,6 @@
     </g>
     <text x="75">Abstellkapazität 1 / 2 / 3 / 4 Wagen</text>
    </g>
-   
    <text class="ab_bb"   transform="translate(30,360)">BB: Betriebsbahnhof, AB: Abstellbahnhof</text>
    <use xlink:href="#keinu2" transform="translate(30 375)" />
    <text class="ab_bb" transform="translate(46,374)">Zwischen Niederursel und Kalbach sind nur</text>
@@ -284,18 +288,19 @@
    <text class="ab_bb" transform="translate(18,398)">¹: Siehe <a class="link" xlink:href="strassenbahnnetz.svg">Straßenbahn-Netz Frankfurt</a></text>
   </g>
   <g id="bahnsteigshöhen" transform="translate(950,222)">
-   <rect class="box" width="200" height="225" x="-200" y="0" />
+   <rect class="box" width="200" height="250" x="-200" y="0" />
    <text x="-100" y="20" class="tm" style="font-weight:bold;">Bahnsteige</text>
    <text x="-175" y="40" class="tm ab_bb">78 m</text>
    <text x="-135" y="40" class="tm ab_bb">105 m</text>
    <text x="-90" y="40" class="tm">Höhe</text>
-   <use xlink:href="#dreisteig" class="nullzig" transform="translate(-175, 55) rotate(90)" /><use xlink:href="#bahnsteig" class="nullzig" transform="translate(-135, 55) rotate(90)" /><text x="-100"  y="65">&lt; 30 cm</text>
-   <use xlink:href="#dreisteig" class="funfzig" transform="translate(-175, 80) rotate(90)" /><use xlink:href="#bahnsteig" class="funfzig" transform="translate(-135, 80) rotate(90)" /><text x="-100"  y="90">56 cm</text>
-   <use xlink:href="#dreisteig" class="achtzig" transform="translate(-175, 105) rotate(90)" /><use xlink:href="#bahnsteig" class="achtzig" transform="translate(-135, 105) rotate(90)" /><text x="-100" y="115">80 cm</text>
-   <use xlink:href="#dreisteig" class="neunzig" transform="translate(-175,130) rotate(90)" /><use xlink:href="#bahnsteig" class="neunzig" transform="translate(-135,130) rotate(90)" /><text x="-100" y="140">87 cm</text>
-   <use xlink:href="#sbahn"   class="bahnsteig" transform="translate(-125,155) rotate(90)" /><use xlink:href="#sbahn"   class="bahnsteig" transform="translate(-125,155) rotate(90)" /><text x="-100" y="165">S-Bahn</text>
-   <use xlink:href="#bau" transform="translate(-175,185)" /><text x="-140" y="190">im Bau/Umbau</text>
-   <use xlink:href="#uml" transform="translate(-175,210)" /><text x="-140" y="215">Ersatzhaltestelle</text>
+   <g transform="translate(-100, 65)"><use xlink:href="#legende" class="nullzig" /><text>&lt; 30 cm</text></g>
+   <g transform="translate(-100, 90)"><use xlink:href="#legende" class="funfzig" /><text>56 cm</text></g>
+   <g transform="translate(-100,115)"><use xlink:href="#legende" class="achtzig" /><text>80 cm</text></g>
+   <g transform="translate(-100,140)"><use xlink:href="#legende" class="neunzig" /><text>87 cm</text></g>
+   <g transform="translate(-100,165)"><use xlink:href="#kameliger" transform="translate(-75,-10) rotate(90)" /><text class="tm ab_bb" x="-35">(73 m)</text><text>60 / 80 cm</text></g>
+   <use xlink:href="#sbahn" class="bahnsteig" transform="translate(-125,180) rotate(90)" /><text x="-100" y="190">S-Bahn</text>
+   <use xlink:href="#bau" transform="translate(-175,210)" /><text x="-140" y="215">im Bau/Umbau</text>
+   <use xlink:href="#uml" transform="translate(-175,235)" /><text x="-140" y="240">Ersatzhaltestelle</text>
   </g>
   <g id="ausbauprojekte" transform="translate(-815,100)">
    <rect class="box" width="305" height="320" />
