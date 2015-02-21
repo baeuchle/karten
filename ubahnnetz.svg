@@ -444,7 +444,7 @@
   <path id="gw_heerstrasse" d="M -475,740 c 0,10 10,10 10,20 c 0,10 -10,10 -10,20" />
   <path id="gw_hausen" d="M -395,941 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20" />
   <path id="gw_nelkenstraße" d="M -385,1121 c 0,10 -10,10 -10,20" />
-  <path id="gw_industriehof" d="M -355,1190 c 7,7 0,14 7,21 c 7,7 14,0 21,7 M -340,1193 c -6,-6 -12,0 -18,-6 M -323,1260 c 0,-5 -5,-5 -5,-10" />
+  <path id="gw_industriehof" d="M -355,1190 c 7,7 0,14 7,21 c 7,7 14,0 21,7 M -340,1193 c -6,-6 -12,0 -18,-6 M -328,1260 c 0,-5 5,-5 5,-10" />
   <path id="ug_industriehof_1" class="ubergabe" d="M -365,1194 c 6,6 0,12 6,18 l 28,28 q 3,3 3,7 v 27" />
   <path id="ug_industriehof_2" class="zugabe endet" d="M -323,1274 v -56 q 0,-8 -6,-14 l -22,-22" />
   <text transform="translate(-325.5,1274) translate(0,12)" class="ref tm">C</text>
