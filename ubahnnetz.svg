@@ -7,11 +7,8 @@
   height="2147px"
   viewBox="-815 -180 1765 2147"
   >
- <rect id="aussen"
-    width="1765"  height="2147"
-    x="-815" y="-180"
-    style="fill:white;stroke:#0000c0;stroke-width:.1px" />
-  <text class="te ab_bb" x="947" y="1964">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle </text>
+ <rect id="aussen" width="1765" height="2147" x="-815" y="-180" style="fill:white;stroke:#0000c0;stroke-width:.1px" />
+ <text class="te ab_bb" x="947" y="1964">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle </text>
  <metadata>
   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -42,7 +39,6 @@
   .funfzig use, use.funfzig { stroke:#8000ff; fill:url(#bs56); }
   .achtzig use, use.achtzig { stroke:#00c000; fill:url(#bs80); }
   .neunzig use, use.neunzig { stroke:#00c0ff; fill:url(#bs87); }
-  .sechzig use, use.sechzig { stroke:#00c000; fill:url(#bs60); } /* Für die neuen Bahnsteige auf der Eckenheimer Ldstr. */
   #sbahn { stroke:#000000; stroke-width:1px; fill:none; }
 
   .uberwerf { fill-opacity:0.40; fill:#ffffff; stroke:none; }
@@ -72,7 +68,7 @@
   .link { fill:blue; visibility:visible; }
   .script { visibility:visible; }
   .bbumrandung { fill:#fff; fill-opacity:1; stroke:#000; stroke-width:2px; }
-  .klicken { fill:#fff; stroke:none; }
+  .klicken * { fill:#fff; stroke:none; }
   .kilometrierung { stroke-width:3px; stroke-dasharray:20,4,4,4; fill:none; stroke:#000; }
   .klein { stroke-width:1.5px; stroke-dasharray:10,2,2,2; }
   .kilometer text { font-size:.7em; }
@@ -109,14 +105,14 @@
     document.getElementById( id ).setAttribute("class", "geplant");
     document.getElementById( id ).setAttribute("display","inline");
     switch( id ) {
-     case "verlängerung_badhomburg":
+     case "verlaengerung_badhomburg":
       document.getElementById( id ).setAttribute("transform","translate(30,0)");
       break;
-     case "verlängerung_europaviertel":
+     case "verlaengerung_europaviertel":
       document.getElementById( id ).setAttribute("transform","translate(0,30)");
       break;
      case "rtw":
-      document.getElementById( id ).setAttribute("transform","translate(-30,30)");
+      document.getElementById( id ).setAttribute("transform","translate(-30,0)");
       break;
      case "ginnheimer_kurve":
      case "frankfurter_berg":
@@ -125,7 +121,7 @@
     }
     document.getElementById( id + "_erkl" ).setAttribute("display","inline");
     document.getElementById( id + "_aktion" ).firstChild.data = "verstecken";
-    if( id == "verlängerung_badhomburg" ) {
+    if( id == "verlaengerung_badhomburg" ) {
      //document.getElementById( "text_gonzenheim" ).setAttribute("class","normalstation");
     }
    } else if( gezeigt == "inline" ) {
@@ -135,13 +131,6 @@
    else { }
   }
   
-  //var linien = false;
-  //function liniennummern() {
-  // //document.getElementById( 'texte' ).setAttribute("visibility",linien?"visible":"hidden");
-  // document.getElementById( 'liniennummern' ).setAttribute("visibility",linien?"hidden":"visible");
-  // linien = ! linien;
-  //}
-
   function kilometer( domobj ) {
    var gezeigt = document.getElementById( domobj + "_km" ).getAttribute( "visibility" );
    if( gezeigt == "visible" ) {
@@ -157,7 +146,6 @@
  <defs>
   <linearGradient id="bs00" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ff8080" /><stop offset="100%" stop-opacity="100%" stop-color="#ff8080" /></linearGradient>
   <linearGradient id="bs56" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#c080ff" /><stop offset="100%" stop-opacity="100%" stop-color="#c080ff" /></linearGradient>
-  <linearGradient id="bs60" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#80c080" /><stop offset="100%" stop-opacity="100%" stop-color="#c080ff" /></linearGradient>
   <linearGradient id="bs80" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#80c080" /><stop offset="100%" stop-opacity="100%" stop-color="#80c080" /></linearGradient>
   <linearGradient id="bs87" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#80e0ff" /><stop offset="100%" stop-opacity="100%" stop-color="#80e0ff" /></linearGradient>
   <linearGradient id="bs99" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#808080" /><stop offset="100%" stop-opacity="100%" stop-color="#808080" /></linearGradient>
@@ -199,7 +187,6 @@
    <path style="stroke-width:.5px; stroke:#000;" d="M -1000 100 H 1000" /><path style="stroke-width:.5px; stroke:#000;" d="M 100 -1000 V 1000" />
   </g>
   <g id="keinu2" transform="scale(.7)" class="verbot"><circle r="10" /><text y="4">U2</text></g>
-  <g id="jau4" class="tm"><circle r="10" style="fill:blue"/><text y="4" style="font-size:8pt; fill:white">U4</text></g>
   <path id="bau" class="verbot" d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" />
   <path id="uml" class="umleit" d="M 0,3 h 7 l 3,-3 l -3,-3 h -17 v 6 h 11" />
   <path id="weg" class="abreis" d="M -1.2,-1.2 l 2.4,2.4 m -2.4,0 l 2.4,-2.4" />
@@ -226,14 +213,14 @@
   <g id="drei_vers1"><use xlink:href="#dreisteig" transform="translate(-5,25) rotate(180)" /><use xlink:href="#dreisteig" transform="translate(5,-25)" /></g>
   <g id="drei_vers2"><use xlink:href="#dreisteig" transform="translate(-5,-25) rotate(180)" /><use xlink:href="#dreisteig" transform="translate(5,25)" /></g>
   <g id="drei_vers3"><use xlink:href="#dreisteig" transform="translate(-5,-10) rotate(180)" /><use xlink:href="#dreisteig" transform="translate(5,10)" /></g>
-  <rect class="label" id="kasten3" y="-6" width="58" height="12" rx="2" ry="2" />
-  <use xlink:href="#kasten3" id="kastenC" x="-58" />
-  <rect class="label" id="kasten4" y="-6" width="60" height="12" rx="2" ry="2" />
-  <use xlink:href="#kasten4" id="kastenD" x="-60" />
-  <rect class="label" id="kasten8" y="-6" width="63" height="12" rx="2" ry="2" />
-  <rect class="label" id="kasten9" y="-11" width="63" height="22" rx="2" ry="2" />
-  <rect class="label" id="kastenK" y="-11" width="86" height="22" rx="2" ry="2" x="-86" />
-  <use xlink:href="#kasten9" id="kastenJ" x="-63" />
+  <rect id="kasten3" class="label" y="-6" width="58" height="12" rx="2" ry="2" />
+  <rect id="kasten4" class="label" y="-6" width="60" height="12" rx="2" ry="2" />
+  <rect id="kasten8" class="label" y="-6" width="63" height="12" rx="2" ry="2" />
+  <rect id="kasten9" class="label" y="-11" width="63" height="22" rx="2" ry="2" />
+  <rect id="kastenK" class="label" y="-11" width="86" height="22" rx="2" ry="2" x="-86" />
+  <use id="kastenC" xlink:href="#kasten3" x="-58" />
+  <use id="kastenD" xlink:href="#kasten4" x="-60" />
+  <use id="kastenJ" xlink:href="#kasten9" x="-63" />
   <rect id="einsabstell" class="abstell" x="-1.5" width="3" y="0" height="5" />
   <g id="zweiabstell">
    <use xlink:href="#einsabstell" />
@@ -258,36 +245,44 @@
  </defs>
  <g id="textboxen">
   <g id="legende" transform="translate(550,-180)">
-   <rect class="box" width="400" height="402" />
+   <rect class="box" width="400" height="342" />
    <text class="ueberschrift" x="15" y="35">U-Bahn Frankfurt am Main</text>
    <text class="unterschrift" x="20" y="60">Streckennetz (ohne Maßstab)</text>
    <text class="stand"        x="20" y="80">Stand: <tspan class="stand_monat"/></text>
-   <g id="legende_tunnel" transform="translate(30,120)"><path class="tunnel"  d="M 0 -6 h 60" /><text x="75">Tunnelstrecke</text></g>
-   <g id="legende_normal" transform="translate(30,150)"><path class="eigen" d="M 30 -6 h 30" /><path class="strecke" d="M 0 -6 h 60" /><text x="75">Eigener Gleiskörper / Kreuzungsfrei</text></g>
-   <g id="legende_straße" transform="translate(30,180)"><path class="strasse" d="M 0 -6 h 60" /><path class="strecke" d="M 0 -6 h 60" /><text x="75">Straßenbahnmäßiger Ausbau</text></g>
-   <g id="legende_dosto"  transform="translate(30,210)"><path class="tunnel"  d="M 0 -10 h 20 c 8.5,0 10,3 18.5,3 h 21.5 m 0,5 h -21.5 c -8.5,0 -10,3 -18.5,3 h -20" /><text x="75">Normaler / Doppelstöckiger Tunnel</text></g>
-   <g id="legende_anschl" transform="translate(30,240)"><path class="tunnel" d="M 0 -6 h 30" /><path class="strecke" d="M 30 -6 h 30" />
-    <use xlink:href="#tunnelrampe" transform="translate(30,-6) rotate(90)" /><text x="75">Tunnelportal</text>
+   <g id="legende_anschl" transform="translate(30,120)">
+    <path class="tunnel" d="M 0 -6 h 30" />
+    <path class="strecke" d="M 30 -6 h 30" />
+    <use xlink:href="#tunnelrampe" transform="translate(30,-6) rotate(90)" />
+    <text x="75">Tunnelstrecke / Portal / Oberirdisch</text>
    </g>
-   <g id="legende_ansch" transform="translate(30,270)"><path class="ubergabe strecke" d="M 0 -6 h 50" /><text x="55" class="tm ref">A</text><text x="75">Anschluss an Straßenbahnnetz mit Referenz¹</text></g>
-   <g id="legende_normal" transform="translate(30,300)"><path class="strecke anschluss" d="M 0 -6 h 45" /><text x="75">Anschluss an DB-Netz</text></g>
-   <g id="legende_normal" transform="translate(30,330)" class="strecke">
+   <g id="legende_straße" transform="translate(30,150)">
+    <path class="strasse" d="M 0 -6 h 30" />
+    <path class="eigen" d="M 30 -6 h 30" />
+    <path class="strecke" d="M 0 -6 h 60" />
+    <text x="75">Straßenbahnmäßig / Kreuzungsfrei</text>
+   </g>
+   <g id="legende_dosto"  transform="translate(30,180)">
+    <path class="tunnel"  d="M 0 -10 h 20 c 8.5,0 10,3 18.5,3 h 21.5 m 0,5 h -21.5 c -8.5,0 -10,3 -18.5,3 h -20" />
+    <text x="75">Normaler / Doppelstöckiger Tunnel</text>
+   </g>
+   <g id="legende_ansch" transform="translate(30,210)"><path class="ubergabe strecke" d="M 0 -6 h 50" /><text x="55" class="tm ref">A</text><text x="75">Anschluss an Straßenbahnnetz¹</text></g>
+   <g id="legende_normal" transform="translate(30,240)"><path class="strecke anschluss" d="M 0 -6 h 45" /><text x="75">Anschluss an DB-Netz</text></g>
+   <g id="legende_normal" transform="translate(30,270)" class="strecke">
     <path class="bb" d="M 0 -6 h 60" />
-    <g transform="translate(2, -6) rotate(-90)">
+    <g transform="translate(5, -6) rotate(-90)">
     <use xlink:href="#einsabstell" />
-    <use transform="translate(0, 07)" xlink:href="#zweiabstell" />
-    <use transform="translate(0, 19)" xlink:href="#dreiabstell" />
-    <use transform="translate(0, 36)" xlink:href="#vierabstell" />
+    <use transform="translate(0, 15)" xlink:href="#zweiabstell" />
+    <use transform="translate(0, 35)" xlink:href="#dreiabstell" />
     </g>
-    <text x="75">Abstellkapazität 1 / 2 / 3 / 4 Wagen</text>
+    <text x="75">Abstellkapazität 1 / 2 / 3 Wagen</text>
    </g>
-   <text class="ab_bb"   transform="translate(30,360)">BB: Betriebsbahnhof, AB: Abstellbahnhof</text>
-   <use xlink:href="#keinu2" transform="translate(30 375)" />
-   <text class="ab_bb" transform="translate(46,374)">Zwischen Niederursel und Kalbach sind nur</text>
-   <text class="ab_bb" transform="translate(46,386)">U4- und U5-Wagen zugelassen</text>
-   <text class="ab_bb" transform="translate(18,398)">¹: Siehe <a class="link" xlink:href="strassenbahnnetz.svg">Straßenbahn-Netz Frankfurt</a></text>
+   <text class="ab_bb" transform="translate(30,300)">BB: Betriebsbahnhof, AB: Abstellbahnhof</text>
+   <use xlink:href="#keinu2" transform="translate(30,315)" />
+   <text class="ab_bb" transform="translate(46,314)">Zwischen Niederursel und Kalbach sind nur</text>
+   <text class="ab_bb" transform="translate(46,326)">U4- und U5-Wagen zugelassen</text>
+   <text class="ab_bb" transform="translate(18,338)">¹: Referenzen siehe <a class="link" xlink:href="strassenbahnnetz.svg">Straßenbahn-Netz Frankfurt</a></text>
   </g>
-  <g id="bahnsteigshöhen" transform="translate(950,222)">
+  <g id="bahnsteigshöhen" transform="translate(950,162)">
    <rect class="box" width="200" height="250" x="-200" y="0" />
    <text x="-100" y="20" class="tm" style="font-weight:bold;">Bahnsteige</text>
    <text x="-175" y="40" class="tm ab_bb">78 m</text>
@@ -302,16 +297,16 @@
    <use xlink:href="#bau" transform="translate(-175,210)" /><text x="-140" y="215">im Bau/Umbau</text>
    <use xlink:href="#uml" transform="translate(-175,235)" /><text x="-140" y="240">Ersatzhaltestelle</text>
   </g>
-  <g id="ausbauprojekte" transform="translate(-815,100)">
+  <g id="ausbauprojekte" transform="translate(-815,0)">
    <rect class="box" width="305" height="320" />
    <text class="unterschrift" x="15" y="25">Ausbauprojekte</text>
    <text class="script ab_bb" x="20" y="40">Hier oder in entsprechender Stelle der Karte</text>
    <text class="script ab_bb" x="20" y="50">klicken, um die Darstellung zu ändern</text>
-   <text class="hochstatio" x="10" y="70" onclick="geplant('verlängerung_badhomburg')">Bad Homburg: <tspan class="link" id="verlängerung_badhomburg_aktion">verstecken</tspan></text>
-   <text class="hochstatio" x="15" y="85" onclick="geplant('verlängerung_badhomburg')">Gonzenheim → Bad Homburg Bahnhof</text>
+   <text class="hochstatio" x="10" y="70" onclick="geplant('verlaengerung_badhomburg')">Bad Homburg: <tspan class="link" id="verlaengerung_badhomburg_aktion">verstecken</tspan></text>
+   <text class="hochstatio" x="15" y="85" onclick="geplant('verlaengerung_badhomburg')">Gonzenheim → Bad Homburg Bahnhof</text>
    <text class="ab_bb"      x="20" y="100">Status: Planfeststellungsverfahren</text>
-   <text class="hochstatio" x="10" y="120" onclick="geplant('verlängerung_europaviertel')">Europaviertel: <tspan class="link" id="verlängerung_europaviertel_aktion">verstecken</tspan></text>
-   <text class="hochstatio" x="15" y="135" onclick="geplant('verlängerung_europaviertel')">Hauptbahnhof → Wohnpark</text>
+   <text class="hochstatio" x="10" y="120" onclick="geplant('verlaengerung_europaviertel')">Europaviertel: <tspan class="link" id="verlaengerung_europaviertel_aktion">verstecken</tspan></text>
+   <text class="hochstatio" x="15" y="135" onclick="geplant('verlaengerung_europaviertel')">Hauptbahnhof → Wohnpark</text>
    <text class="ab_bb"      x="20" y="150">Status: Vorbereitende Arbeiten haben begonnen</text>
    <text class="hochstatio" x="10" y="170" onclick="geplant('ginnheimer_kurve')">Ginnheimer Kurve: <tspan class="link" id="ginnheimer_kurve_aktion">verstecken</tspan></text>
    <text class="hochstatio" x="15" y="185" onclick="geplant('ginnheimer_kurve')">Ginnheim → Bockenheimer Warte</text>
@@ -362,107 +357,132 @@
   <path id="eckenheim_strassen" class="strasse" d="M 125,1025 h 165 m 0,10 h -165 M 280,1045 v -110 m -10,0 v 110" />
   <path id="eckenheimer_ldstr1" class="strasse" d="M 280,1510 v -180 m 0,-140 v -90" />
   <path id="eckenheimer_ldstr2" class="strasse" d="M 270,1100 v 90 m 0,140 v 180" />
+  <path id="glauburgstrasse"    class="strasse" d="M 270,1397.5 h 50" />
   <path id="u1_eigener" class="eigen" d="M -140,1001 V 911 M -130,701 V 1001 M -120,1001 V 701 M -110,1001 V 951" />
-  <path id="glauburgstraße"     class="strasse" d="M 270,1397.5 h 50" />
  </g>
- <g id="clickrechtecke">
-  <rect id="verlängerung_badhomburg_ersatz" x="320" y="-180" width="215" height="270" class="klicken" onclick="geplant('verlängerung_badhomburg')"/>
-  <rect id="frankfurter_berg_ersatz" x="260" y="330" width="375" height="260" class="klicken" onclick="geplant('frankfurter_berg')"/>
-  <rect id="ginnheimer_kurve_ersatz" x="-180" y="1001" width="130" height="300" class="klicken" onclick="geplant('ginnheimer_kurve')"/>
-  <rect id="verlängerung_europaviertel_ersatz" x="-730" y="1520" width="449" height="85" class="klicken" onclick="geplant('verlängerung_europaviertel')"/>
-  <path id="rtw_ersatz" d="M -680,660 h 230 v -200 h 130 v -140 l 70,-70 h 50 v -35 h -135 l -174,174 v 32 h -172 z" class="klicken" onclick="geplant('rtw')"/>
+ <g id="clickrechtecke" class="klicken">
+  <rect id="verlaengerung_badhomburg_ersatz" x="320" y="-180" width="215" height="270" onclick="geplant('verlaengerung_badhomburg')"/>
+  <rect id="frankfurter_berg_ersatz" x="260" y="330" width="375" height="260" onclick="geplant('frankfurter_berg')"/>
+  <rect id="ginnheimer_kurve_ersatz" x="-180" y="1001" width="130" height="300" onclick="geplant('ginnheimer_kurve')"/>
+  <rect id="verlaengerung_europaviertel_ersatz" x="-730" y="1520" width="449" height="85" onclick="geplant('verlaengerung_europaviertel')"/>
+  <path id="rtw_ersatz" d="M -680,625 h 230 v -205 l 200,-200 h 70 v -35 h -155 l -206,206 h -140 z" onclick="geplant('rtw')"/>
  </g>
  <g class="ebobahn">
-  <text transform="translate(  8.5 1613.5) rotate(-45) translate(-5 5)" class="te">S-Bahn Hbf</text>
-  <text transform="translate(345.5 1613.5) rotate( 45) translate( 5 5)">S-Bahn Süd/Offenbach</text>
+  <text transform="translate(  8.5,1613.5) rotate(-45) translate(-5,5)" class="te">S-Bahn Hbf</text>
+  <text transform="translate(345.5,1613.5) rotate( 45) translate( 5,5)">S-Bahn Süd/Offenbach</text>
   <path id="gw_sbahn" d="M 140,1585 c 10,0 10,-10 20,-10 c 10,0 10,10 20,10" />
  </g>
  <g id="betriebsstrecken" class="strecke bb">
- <g id="gw_a_strecke">
-  <path id="gw_südbahnhof" class="tb" d="M 110,1870 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20" />
-  <path id="wa_südbahnhof" class="tb endet" d="M 110,1920 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20 m 0,-12 c 0,5 5,5 5,10 m 5,-10 c 0,5 -5,5 -5,10 v 27" />
-  <path id="gw_theaterplatz" class="tb" d="M 110,1635 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20 " />
-  <path id="wa_eschenheimertor" class="tb endet" d="M 120,1460 c 0,-5 -5,-5 -5,-10 m -5,15 c 0,-5 5,-5 5,-10 v -40" />
-  <path id="gw_theaterplatz" class="tb" d="M 110,1145 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20 " />
-  <path id="gw_schwalbenschwanz" d="M 110,830 c 0,-10 10,-10 10,-20" />
-  <path id="gw_zeilweg" d="M 20,471 c 10,0 10,-10 20,-10" />
-  <path id="gw_nwz" class="tb" d="M -130,611 c 0,-10 10,-10 10,-20" />
-  <path id="wa_ginnheim_a" d="M -120,906 c 0,10 -10,10 -10,20" />
-  <path id="wa_ginnheim_b" d="M -130,926 c 0,10 10,10 10,20" />
-  <path id="wa_ginnheim_5" class="endet" d="M -120,946 c 0,10 10,10 10,20 v 35" />
-  <path id="wa_ginnheim_u" class="ubergabe" d="M -130,946 q 0,4 -3,7 l -7,7" />
-  <text transform="translate(-137,957) rotate(-45) translate(-5,5)" class="ref te">A</text>
-  <path id="gw_riedwiese" d="M 70,305 c 0,10 -10,10 -10,20" />
-  <path id="wa_niedereschbach_1" class="endet" d="M 385,210 c 10,0 10,-10 20,-10 h 20" />
-  <path id="wa_niedereschbach_2" class="endet" d="M 385,200 c 5,0 5,5 10,5 h 30" />
-  <path id="gw_obereschbach" d="M 485,115 c 0,-10 10,-10 10,-20" />
-  <path id="wa_gonzenheim" d="M 495,85 c 0,-10 -10,-10 -10,-20 c 0,-10 10,-10 10,-20" />
-  <path id="gw_niederursel" d="M -178,225 c -7,-7 0,-14 -7,-21" />
-  <path id="wa_niederursel" class="geplant endet" d="M -185,204 c -3,-3 0,-6 -3,-9 l -7,-7" />
-  <path id="gw_weißkirchen" d="M -250,153 c -7,-7 0,-14 -7,-21" />
-  <path id="wa_oberursel_a" d="M -225,45 h 70 c 5,0 5,5 10,5"/>
-  <path id="wa_oberursel_b" d="M -205,55 c 10,0 10,-10 20,-10" />
-  <path id="wa_oberursel_1" class="endet" d="M -140,50 q 2,0 3.5,-1.5 l 7,-7 q 1.5,-1.5 3.5,-1.5 h 21" />
-  <path id="wa_oberursel_2" class="endet" d="M -134.5,46.5 q 1.5,-1.5 3.5,-1.5 h 26" />
-  <path id="wa_oberursel_3" class="endet" d="M -225,55 h 70 c 5,0 5,-5 10,-5 h 40" />
-  <path id="wa_oberursel_4" class="endet" d="M -143,50 c 5,0 5,5 10,5 h 28" />
-  <use xlink:href="#weg" transform="translate(-155,45)" />
-  <use xlink:href="#weg" transform="translate(-195,55)" />
-  <path id="gw_gloecknerwiese" d="M -340,-145 c -10,0 -10,-10 -20,-10" />
- </g>
- <g id="gw_b_strecke">
-  <path id="wa_preungesheim_1" d="M 440,670 c 0,-10 -10,-10 -10,-20 c 0,-10 10,-10 10,-20" />
-  <path id="wa_preungesheim_2" class="endet" d="M 430,640 c 0,-10 -10,-10 -10,-20 v -35" />
-  <path id="gw_sigmund_freud_straße" d="M 430,745 c 0,-10 10,-10 10,-20" />
-  <path id="gw_hauptfriedhof" d="M 270,1265 c 0,-10 10,-10 10,-20" />
-  <path id="gw_glauburgstrasse" d="M 270,1355 c 0,-10 10,-10 10,-20" />
-  <path id="abzw_glauburgstrasse_1" class="zugabe" d="M 295,1395 h -5 a 10,10 0,0,1 -10,-10" />
-  <path id="abzw_glauburgstrasse_2" class="ubergabe" d="M 270,1385 a 15,15 0,0,0 15,15 h 10" />
-  <text transform="translate(295,1400) translate(5,2.5)" class="ref">B</text>
-  <path id="gw_kw" class="tb" d="M 280,1615 c 0,-10 10,-10 10,-20 M 270,1540 c 0,-10 10,-10 10,-20" />
-  <path id="gw_hbf" class="tb" d="M -222,1620 c 0,-10 -10,-10 -10,-20 m 10,0 c 0,10 -10,10 -10,20" />
-  <path id="ul_d_bbost_1" class="tunnel" d="M 615,1251 h -52 q -4,0 -7,3 l -5,5 c -3,3 0,6 -3,9" />
-  <path id="ul_d_bbost_2" class="tunnel" d="M 571,1267 q 6,-6 14,-6 h 30" />
-  <rect id="uw_seckbacher_ldstr" class="uberwerf" width="40" height="8" x="558" y="1247" />
-  <path id="wa_seckbacher_ldstr_1" class="tb endet" d="M 535,1285 c 6,-6 9,-5 15,-11 l 40,-40" />
-  <path id="wa_seckbacher_ldstr_2" class="tb endet" d="M 542,1292 c 6,-6 5,-9 11,-15 l 40,-40" />
-  <path id="wa_seckbacher_ldstr_gw" class="tb" d="M 550,1274 c 3,-3 6,0 9,-3 c 4,-4 8,0 12,-4 M 553,1277 c 3,-3 0,-6 3,-9" />
- </g>
- <g id="gw_c_strecke">
-  <path id="wa_heerstrasse_1" d="M -475,685 c 0,-10 10,-10 10,-20" />
-  <path id="wa_heerstrasse_2" d="M -465,685 c 0,-10 -10,-10 -10,-20" />
-  <path id="gw_heerstrasse" d="M -475,740 c 0,10 10,10 10,20 c 0,10 -10,10 -10,20" />
-  <path id="gw_hausen" d="M -395,941 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20" />
-  <path id="gw_nelkenstraße" d="M -385,1121 c 0,10 -10,10 -10,20" />
-  <path id="gw_industriehof" d="M -355,1190 c 7,7 0,14 7,21 c 7,7 14,0 21,7 M -340,1193 c -6,-6 -12,0 -18,-6 M -328,1260 c 0,-5 5,-5 5,-10" />
-  <path id="ug_industriehof_1" class="ubergabe" d="M -365,1194 c 6,6 0,12 6,18 l 28,28 q 3,3 3,7 v 27" />
-  <path id="ug_industriehof_2" class="zugabe endet" d="M -323,1274 v -56 q 0,-8 -6,-14 l -22,-22" />
-  <text transform="translate(-325.5,1274) translate(0,12)" class="ref tm">C</text>
-  <path id="gw_bockenheimerwarte" class="tb" d="M -146,1413 c 7,7 14,0 21,7 m -14,-14 c 7,7 0,14 7,21 c 3,3 0,6 3,9" />
-  <path id="gw_alteoper" class="tb" d="M -2,1557 c -7,-7 0,-14 -7,-21 m -7,7 c 7,7 14,0 21,7" />
-  <path id="wa_zoo_1" class="tb" d="M 389,1575 c -10,0 -10,10 -20,10 c -5,0 -5,-5 -10,-5" />
-  <path id="wa_zoo_2" class="tb endet" d="M 409,1575 c -10,0 -10,10 -20,10 c -10,0 -10,-10 -20,-10 c -5,0 -5,5 -10,5 h -25" />
-  <path id="gw_ostbahnhof" class="tb" d="M 531,1637 c -7,-7 -14,0 -21,-7 M 524,1644 c -7,-7 0,-14 -7,-21" />
-  <path id="gw_eissporthalle" class="tb" d="M 634,1416  c -7,7 0,14 -7,21 m -7,-7 c 7,-7 14,0 21,-7" />
-  <path id="abzw_johanna_tesch_platz_1" class="ubergabe" d="M 726,1368 a 10,10 0,0,0 -10,10 v 20" />
-  <path id="abzw_johanna_tesch_platz_2" class="ubergabe" d="M 726,1358 a 15,15 0,0,0 -15,15 v 25" />
-  <text transform="translate(713.5,1398) translate(0,12)" class="ref tm">O</text>
-  <path id="gw_kruppstr" d="M 833,1102 c 0,10 -10,10 -10,20" />
-  <path id="gw_enkheim" d="M 823,902 c 0,10 10,10 10,20 c 0,10 -10,10 -10,20" />
- </g>
- <g id="gw_d_strecke">
-  <path id="wa_riedberg" class="endet" d="M 30,210 c 5,0 5,-5 10,-5 M 30,200 c 5,0 5,5 10,5 h 24" />
-  <path id="wa_bockenheim_1" class="tb endet" d="M -131,1350 c 0,-4 4,-4 4,-8 v -42" />
-  <path id="wa_bockenheim_2" class="tb endet" d="M -119,1350 c 0,-4 -4,-4 -4,-8 v -42" />
-  <path id="wa_bockenheim_gw" class="tb" d="M -123,1342 c 0,-4 -4,-4 -4,-8 m 0,8 c 0,-4 4,-4 4,-8" />
-  <path id="gw_bockenheimerwarte_01" class="tb" d="M -178,1431 c -3.5,3.5 0,7 -3.5,10.5 M -167,1440 c -3,3 -6,0 -9,3 c -3.5,3.5 -7,0 -10.5,3.5" />
-  <path id="wa_bockenheimerwarte_01" class="tb endet faeng" d="M -176,1436 l -25,25" />
-  <path id="abzw_bockenheimerwarte_cd" class="tb endet faeng" d="M -173,1446 l 13,-13 q 6,-6 14,-6 q 8,0 14,6 l 20,20" />
-  <path id="gw_festhallemesse" class="tb" d="M -222,1530 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20" />
-  <path id="ul_hauptbahnhof_bd" class="tb" d="M -212,1580 c 0,10 -10,10 -10,20 m -20,50 c 0,24 10,32 34,56" />
- </g>
+  <g id="gw_a_strecke">
+   <path id="gw_südbahnhof" class="tb" d="M 110,1870 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20" />
+   <path id="wa_südbahnhof" class="tb endet" d="M 110,1920 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20 m 0,-12 c 0,5 5,5 5,10 m 5,-10 c 0,5 -5,5 -5,10 v 27" />
+   <path id="gw_theaterplatz" class="tb" d="M 110,1635 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20 " />
+   <path id="wa_eschenheimertor" class="tb endet" d="M 120,1460 c 0,-5 -5,-5 -5,-10 m -5,15 c 0,-5 5,-5 5,-10 v -40" />
+   <path id="gw_miquel" class="tb" d="M 110,1145 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20 " />
+   <path id="gw_schwalbenschwanz" d="M 110,830 c 0,-10 10,-10 10,-20" />
+   <path id="gw_zeilweg" d="M 20,471 c 10,0 10,-10 20,-10" />
+   <path id="gw_nwz" class="tb" d="M -130,611 c 0,-10 10,-10 10,-20" />
+   <g id="wa_ginnheim" transform="translate(-120,946)">
+    <path id="wa_ginnheim_a" d="M 0,-40 c 0,10 -10,10 -10,20" />
+    <path id="wa_ginnheim_b" d="M -10,-20 c 0,10 10,10 10,20" />
+    <path id="wa_ginnheim_5" class="endet" d="M 0,0 c 0,10 10,10 10,20 v 35" />
+    <path id="wa_ginnheim_u" class="ubergabe" d="M -10,0 q 0,4 -3,7 l -7,7" />
+    <text transform="translate(-17,11) rotate(-45) translate(-5,5)" class="ref te">A</text>
+   </g>
+   <path id="gw_riedwiese" d="M 70,305 c 0,10 -10,10 -10,20" />
+   <g id="wa_niedereschbach" transform="translate(385, 210)">
+    <path id="wa_niedereschbach_1" class="endet" d="M 0,0 c 7.5,0 7.5,-10 15,-10 h 25" />
+    <path id="wa_niedereschbach_2" class="endet" d="M 0,-10 c 5,0 5,5 10,5 h 30" />
+   </g>
+   <path id="gw_obereschbach" d="M 485,115 c 0,-10 10,-10 10,-20" />
+   <path id="wa_gonzenheim" d="M 495,85 c 0,-10 -10,-10 -10,-20 c 0,-10 10,-10 10,-20" />
+   <path id="gw_niederursel" d="M -178,225 c -7,-7 0,-14 -7,-21" />
+   <path id="wa_niederursel" class="geplant endet" d="M -185,204 c -3,-3 0,-6 -3,-9 l -7,-7" />
+   <path id="gw_weisskirchen" d="M -250,153 c -7,-7 0,-14 -7,-21" />
+   <g id="gueterverwaltung_oberursel">
+    <path id="wa_oberursel_a" d="M -225,45 h 70 c 5,0 5,5 10,5"/>
+    <path id="wa_oberursel_b" d="M -205,55 c 10,0 10,-10 20,-10" />
+    <path id="wa_oberursel_1" class="endet" d="M -140,50 q 2,0 3.5,-1.5 l 7,-7 q 1.5,-1.5 3.5,-1.5 h 21" />
+    <path id="wa_oberursel_2" class="endet" d="M -134.5,46.5 q 1.5,-1.5 3.5,-1.5 h 26" />
+    <path id="wa_oberursel_3" class="endet" d="M -225,55 h 70 c 5,0 5,-5 10,-5 h 40" />
+    <path id="wa_oberursel_4" class="endet" d="M -143,50 c 5,0 5,5 10,5 h 28" />
+    <use xlink:href="#weg" transform="translate(-155,45)" />
+    <use xlink:href="#weg" transform="translate(-195,55)" />
+   </g>
+   <path id="gw_gloecknerwiese" d="M -340,-145 c -10,0 -10,-10 -20,-10" />
+  </g>
+  <g id="gw_b_strecke">
+   <g id="wa_preungesheim" transform="translate(430,640)">
+    <path id="wa_preungesheim_1" d="M 10,30 c 0,-10 -10,-10 -10,-20 c 0,-10 10,-10 10,-20" />
+    <path id="wa_preungesheim_2" class="endet" d="M 0,0 c 0,-10 -10,-10 -10,-20 v -35" />
+   </g>
+   <path id="gw_sigmund_freud_straße" d="M 430,745 c 0,-10 10,-10 10,-20" />
+   <path id="gw_hauptfriedhof" d="M 270,1265 c 0,-10 10,-10 10,-20" />
+   <g id="abzw_glauburgstrasse" transform="translate(270,1385)">
+    <path id="gw_glauburgstrasse" d="M 0,-30 c 0,-10 10,-10 10,-20" />
+    <path id="abzw_glauburgstrasse_1" class="zugabe" d="M 25,10 h -5 a 10,10 0,0,1 -10,-10" />
+    <path id="abzw_glauburgstrasse_2" class="ubergabe" d="M 0,0 a 15,15 0,0,0 15,15 h 10" />
+    <text transform="translate(25,15) translate(5,2.5)" class="ref">B</text>
+   </g>
+   <path id="gw_kw" class="tb" d="M 280,1615 c 0,-10 10,-10 10,-20 M 270,1540 c 0,-10 10,-10 10,-20" />
+   <path id="gw_hbf" class="tb" d="M -222,1620 c 0,-10 -10,-10 -10,-20 m 10,0 c 0,10 -10,10 -10,20" />
+   <g id="wa_seckbacher_ldstr" transform="translate(535,1285)">
+    <path id="ul_d_bbost_1" class="tunnel" d="M 80,-34 h -52 q -4,0 -7,3 l -5,5 c -3,3 0,6 -3,9" />
+    <path id="ul_d_bbost_2" class="tunnel" d="M 36,-18 q 6,-6 14,-6 h 30" />
+    <rect id="uw_seckbacher_ldstr" class="uberwerf" width="40" height="8" x="23" y="-38" />
+    <path id="wa_seckbacher_ldstr_1" class="tb endet" d="M 0,0 c 6,-6 9,-5 15,-11 l 40,-40" />
+    <path id="wa_seckbacher_ldstr_2" class="tb endet" d="M 7,7 c 6,-6 5,-9 11,-15 l 40,-40" />
+    <path id="wa_seckbacher_ldstr_gw" class="tb" d="M 15,-11 c 3,-3 6,0 9,-3 c 4,-4 8,0 12,-4 M 18,-8 c 3,-3 0,-6 3,-9" />
+   </g>
+  </g>
+  <g id="gw_c_strecke">
+   <g id="wa_heerstrasse" transform="translate(-470,685)">
+    <path id="wa_heerstrasse_1" d="M -5,0 c 0,-10 10,-10 10,-20" />
+    <path id="wa_heerstrasse_2" d="M +5,0 c 0,-10 -10,-10 -10,-20" />
+   </g>
+   <path id="gw_heerstrasse" d="M -475,740 c 0,10 10,10 10,20 c 0,10 -10,10 -10,20" />
+   <path id="gw_hausen" d="M -395,941 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20" />
+   <path id="gw_nelkenstraße" d="M -385,1121 c 0,10 -10,10 -10,20" />
+   <path id="gw_industriehof" d="M -355,1190 c 7,7 0,14 7,21 c 7,7 14,0 21,7 M -340,1193 c -6,-6 -12,0 -18,-6 M -328,1260 c 0,-5 5,-5 5,-10" />
+   <g id="ug_industriehof" transform="translate(-365,1274)">
+    <path id="ug_industriehof_1" class="ubergabe" d="M 0,-80 c 6,6 0,12 6,18 l 28,28 q 3,3 3,7 v 27" />
+    <path id="ug_industriehof_2" class="zugabe endet" d="M 42,0 v -56 q 0,-8 -6,-14 l -22,-22" />
+    <text transform="translate(40.5,12)" class="ref tm">C</text>
+   </g>
+   <path id="gw_bockenheimerwarte_c" class="tb" d="M -146,1413 c 7,7 14,0 21,7 m -14,-14 c 7,7 0,14 7,21 c 3,3 0,6 3,9" />
+   <path id="gw_alteoper" class="tb" d="M -2,1557 c -7,-7 0,-14 -7,-21 m -7,7 c 7,7 14,0 21,7" />
+   <g id="wa_zoo" transform="translate(399,1575)">
+    <path id="wa_zoo_1" class="tb" d="M -10,0 c -10,0 -10,10 -20,10 c -5,0 -5,-5 -10,-5" />
+    <path id="wa_zoo_2" class="tb endet" d="M 10,0 c -10,0 -10,10 -20,10 c -10,0 -10,-10 -20,-10 c -5,0 -5,5 -10,5 h -25" />
+   </g>
+   <path id="gw_ostbahnhof" class="tb" d="M 531,1637 c -7,-7 -14,0 -21,-7 M 524,1644 c -7,-7 0,-14 -7,-21" />
+   <path id="gw_eissporthalle" class="tb" d="M 634,1416  c -7,7 0,14 -7,21 m -7,-7 c 7,-7 14,0 21,-7" />
+   <g id="abzw_johanna_tesch_platz" transform="translate(726,1363)">
+    <path id="abzw_johanna_tesch_platz_1" class="ubergabe" d="M 0,+5 a 10,10 0,0,0 -10,10 v 20" />
+    <path id="abzw_johanna_tesch_platz_2" class="ubergabe" d="M 0,-5 a 15,15 0,0,0 -15,15 v 25" />
+   <text transform="translate(-13.5,47)" class="ref tm">O</text>
+   </g>
+   <path id="gw_kruppstr" d="M 833,1102 c 0,10 -10,10 -10,20" />
+   <path id="gw_enkheim" d="M 823,902 c 0,10 10,10 10,20 c 0,10 -10,10 -10,20" />
+  </g>
+  <g id="gw_d_strecke">
+   <path id="wa_riedberg" class="endet" d="M 30,210 c 5,0 5,-5 10,-5 M 30,200 c 5,0 5,5 10,5 h 24" />
+   <g id="wa_bockenheim_nord" transform="translate(-125,1350)">
+    <path id="wa_bockenheim_1" class="tb endet" d="M -6,0 c 0,-4 4,-4 4,-8 v -33" />
+    <path id="wa_bockenheim_2" class="tb endet" d="M +6,0 c 0,-4 -4,-4 -4,-8 v -33" />
+    <path id="wa_bockenheim_gw" class="tb" d="M 2,-8 c 0,-4 -4,-4 -4,-8 m 0,8 c 0,-4 4,-4 4,-8" />
+   </g>
+   <g id="wa_bockenheim_sued">
+    <path id="gw_bockenheimerwarte_01" class="tb" d="M -179.5,1439.5 c 3.5,-3.5 0,-7 3.5,-10.5"/>
+    <path id="gw_bockenheimerwarte_02" class="tb" d="M -183,1443 c 3.5,-3.5 7,0 10.5,-3.5 c 3.5,-3.5 7,-0 10.5,-3.5" />
+    <path id="wa_bockenheimerwarte_01" class="tb endet faeng" d="M -200.5,1460.5 l 27,-27" />
+    <path id="abzw_bockenheimerwarte_cd" class="tb endet faeng" d="M -169,1443 l 7,-7 l 5,-5 q 5,-5 11.5,-5 q 6.5,0 11.5,5 l 22.5,22.5" />
+   </g>
+   <path id="gw_festhallemesse" class="tb" d="M -222,1530 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20" />
+   <path id="ul_hauptbahnhof_bd" class="tb" d="M -212,1580 c 0,10 -10,10 -10,20 m -20,50 c 0,24 10,32 34,56" />
+  </g>
  <g id="stzw" transform="translate(-660,775)">
-  <text class="ab_bb te">Stadtbahnzentralwerkstatt</text><!--http://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Stadtbahnzentralwerkstatt-->
+  <text class="ab_bb te"><a xlink:href="http://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Stadtbahnzentralwerkstatt">Stadtbahnzentralwerkstatt</a></text>
   <path id="ausf_heerstrasse" d="M 195,-70 a 20,20 0,0,0 -20,-20 h -20 c -5,0 -5,5 -10,5" />
   <path id="ring_betriebsstrecke" d="M 40,35 a 30,30 0,0,1 -30,-30 v -20 a 30,30 0,0,1 60,0 v 20 a 30,30 0,0,1 -30,30 a 25,25 0,0,1 -25,-25 v -55 a 40,40 0,0,1 40,-40 h 120 a 10,10 0,0,1 10,10" />
   <path id="ausziehgleis" class="endet" d="M 15,-45 q 0,-12 9,-21 q 9,-9 21,-9 h 10" />
@@ -717,9 +737,6 @@
  </g>
  <g id="bb_ost" class="strecke" transform="translate(815,1245)">
   <text x="-115" y="2" class="ab_bb te"><a xlink:href="http://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Betriebshof_Ost">BB Ost</a></text>
-  <path id="bbost_strecke_1" d="M -200,16 h 105 q 4,0 7,3 l 55.5,55.5 q 4.5,4.5 10.5,4.5 h 20 a 20,20 0,0,0 20,-20" />
-  <path id="bbost_strecke_2" d="M 8,59 a 10,10 0,0,1 -10,10 h -20 q -2,0 -3.5,-1.5 l -55.5,-55.5 q -6,-6 -14,-6 h -105" />
-  <path d="M 8,-72 v 160 a 25,25 0,0,1 -25,25 m 0,10 a 35,35 0,0,0 35,-35 v -160" />
   <use id="rampe_ost" xlink:href="#tunnelrampe" transform="translate(-200,11) rotate(90)" />
   <g class="bb">
    <path id="ost_13" d="M -96.5,22.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 l 43,43" />
@@ -750,7 +767,7 @@
    <path id="ost_86" d="M -118,36 l 29.5,29.5 q 1.5,1.5 3.5,1.5" />
    <path id="ost_SW" d="M -116.5,55.5 q 0,2 1.5,3.5 l 6.5,6.5 q 1.5,1.5 3.5,1.5 h 56 q 2,0 3.5,1.5 l 9,9 q 1.5,1.5 3.5,1.5 h 11 c 10,0 10,-10 20,-10 a 20,20 0,0,1 20,20 m -10,0 a 10,10 0,0,0 -10,-10" />
    <path id="ost_NW" d="M -180,6 c 10,0 10,10 20,10 c 5,0 5,5 10,5 h 50 q 2,0 3.5,1.5" />
-   <path id="wa_schäfflestrasse" class="endet" d="M 18,24 c 0,-10 -10,-10 -10,-20 c 0,-5 -5,-5 -5,-10 v -20" />
+   <path id="wa_schaefflestrasse" class="endet" d="M 18,24 c 0,-10 -10,-10 -10,-20 c 0,-5 -5,-5 -5,-10 v -25" />
   </g>
   <g id="gleisnummern_ost">
    <path class="gebaude wand" id="ost_hal" d="M -85,68.5 v 3 h -3 v 6 h 3 v 6 h -3 v 3 h 33 v -9 h -3 v -6 h 3 v -3 h -30" />
@@ -781,76 +798,79 @@
    <g class="bgleisnummer" transform="translate(-105,55)"><circle cy="-1" r="2" /><text>85</text></g>
    <g class="bgleisnummer" transform="translate(-100,55)"><circle cy="-1" r="2" /><text>86</text></g>
   </g>
+  <path id="bbost_strecke_1" d="M -200,16 h 105 q 4,0 7,3 l 55.5,55.5 q 4.5,4.5 10.5,4.5 h 20 a 20,20 0,0,0 20,-20" />
+  <path id="bbost_strecke_2" d="M 8,59 a 10,10 0,0,1 -10,10 h -20 q -2,0 -3.5,-1.5 l -55.5,-55.5 q -6,-6 -14,-6 h -105" />
+  <path d="M 8,-72 v 160 a 25,25 0,0,1 -25,25 m 0,10 a 35,35 0,0,0 35,-35 v -160" />
  </g>
  </g>
  <g id="hauptstrecken" class="strecke">
- <g id="tunnelstrecken" class="tunnel">
-  <path id="b_1_stamm" class="tunnel faeng" d="M -282,1550 a 50,50 0,0,1 50,50 v 50 q 0,32 24,56 q 24,24 56,24 h 368 a 74,74 0,0,0 74,-74 v -11" />
-  <path id="b_2_stamm" class="tunnel endet" d="M 280,1645 v 11 a 64,64 0,0,1 -64,64 h -368 q -28,0 -49,-21 q -21,-21 -21,-49 v -50 a 60,60 0,0,0 -60,-60" />
-  <rect id="ebene_wbp" class="uberwerf" width="30" height="30" x="100" y="1710" />
-  <rect id="uw_hbf_no" class="uberwerf" width="17" height="20" x="-237" y="1580" />
-  <path id="a_1_stamm" class="faeng tunnel" d="M 120,1965 V 1130" />
-  <path id="a_2_stamm" class="endet tunnel" d="M 110,1130 V 1965" />
-  <use id="rampe_humserstrasse" xlink:href="#tunnelrampe" transform="translate(115,1130)" />
-  <path id="nwz_1" class="tunnel" d="M -130,561 v 140" />
-  <path id="nwz_2" class="tunnel" d="M -120,701 v -140" />
-  <use id="rampe_hedd_ldstr" xlink:href="#tunnelrampe" transform="translate(-125,561)" />
-  <use id="rampe_römerstadt" xlink:href="#tunnelrampe" transform="translate(-125,701) rotate(180)" />
-  <rect id="ebene_hw" class="uberwerf" width="30" height="50" x="100" y="1555" />
-  <path class="ebobahn" id="sbahn_strecke" d="M 5,1610 l 20,-20 q 15,-15 35,-15 h 234 q 20,0 35,15 l 20,20 m -7,7 l -20,-20 q -12,-12 -28,-12 h -234 q -16,0 -28,12 l -20,20" />
-  <path id="d_1" class="tunnel faeng endet" d="M -212,1670 v -171 q 0,-20 15,-35 l 51,-51 q 27,-27 27,-63 v -50" />
-  <path id="d_2" class="tunnel faeng endet" d="M -131,1300 v 56 q 0,28 -21,49 l -52,52 q -18,18 -18,42 v 81 c 0,10 -20,20 -20,30 v 100" />
-  <rect id="ebene_bw" class="uberwerf" width="15" height="15" transform="translate(-146,1395) rotate(45)" />
-  <rect id="uw_hw_sc" class="uberwerf" width="24.04163" height="21.920311" x="20.95837" y="1579.337" />
-  <rect id="uw_kw_sc" class="uberwerf" width="31" height="15" x="304" y="1582" />
-  <path id="ostbahnhof_1" class="tunnel faeng" d="M 559,1665 l -85,-85 q -15,-15 -35,-15 h -30 c -10,0 -10,10 -20,10" />
-  <path id="ostbahnhof_2" class="tunnel endet" d="M 449,1585 q 16,0 28,12 l 75,75" />
-  <rect id="uw_zoo" class="uberwerf" width="5" height="40" transform="translate(460,1570) rotate(-45)" />
-  <path id="c_1_stamm" class="tunnel" d="M -334,1225 l 39,39 c 6,6 9,5 15,11 l 92,92 c 6,6 5,9 11,15 l 195,195 q 18,18 42,18 h 234 c 20,0 20,-10 40,-10 h 121 q 24,0 42,-18 l 169,-169" />
-  <path id="c_2_stamm" class="tunnel" d="M 659,1391 l -169,169 q -15,15 -35,15 h -121 c -20,0 -20,-10 -40,-10 h -254 q -20,0 -35,-15 l -175,-175 c -6,-6 -9,-5 -15,-11 l -92,-92 c -6,-6 -5,-9 -11,-15 l -39,-39" />
-  <use id="rampe_industriehof" xlink:href="#tunnelrampe" transform="translate(-330.5,1221.5) rotate(-45)" />
-  <use id="rampe_eissporthalle" xlink:href="#tunnelrampe" transform="translate(662.5,1394.5) rotate(45)" />
-  <rect id="ebene_kw" class="uberwerf" width="35" height="40" x="265" y="1560" />
-  <path id="b_1_stamm2" class="tunnel endet" d="M 290,1645 v -85 q 0,-20 15,-35 l 200,-200 c 6,-6 9,-5 15,-11 l 22,-22 c 6,-6 9,-5 15,-11 l 40,-40" /> 
-  <path id="b_2_stamm2" class="tunnel faeng" d="M 586,1230 l -40,40 c -6,6 -5,9 -11,15 l -20,20 c -6,6 -5,9 -11,15 l -206,206 q -18,18 -18,42 v 77" /> 
-  <rect id="uw_kw_bb" class="uberwerf" width="10" height="20" x="278" y="1530" />
-  <path id="scheffeleck_1" class="tunnel" d="M 290,1560 c 0,-20 -10,-20 -10,-40 v -5" />
-  <path id="scheffeleck_2" class="tunnel" d="M 270,1515 v 90 c 0,10 10,10 10,20"/>
-  <use id="rampe_scheffeleck" xlink:href="#tunnelrampe" transform="translate(275,1515)" />
- </g>
- <g id="astrecke">
-  <path id="eschersheimer_1" d="M 120,1130 V 690" />
-  <path id="eschersheimer_2" d="M 110,690 V 1130" />
-  <path id="zeilweg_1" d="M 120,690 v -167 q 0,-12 -9,-21 l -32 -32 q -9,-9 -21,-9 h -128 a 60,60 0,0,0 -60,60 v 40" />
-  <path id="zeilweg_2" d="M -120,561 v -40 a 50,50 0,0,1 50,-50 h 128 q 8,0 14,6 l 32,32 q 6,6 6,14 v 167" />
-  <path id="ginnheim_1" class="endet" d="M -130,701 v 60 c 0,2.5 -2.5,2.5 -2.5,5 v 52.5 c 0,2.5 2.5,2.5 2.5,5 v 177.5" />
-  <path id="ginnheim_2" class="faeng" d="M -120,1001 v -190 c 0,-2.5 2.5,-2.5 2.5,-5 v -40 c 0,-2.5 -2.5,-2.5 -2.5,-5 v -60" />
-  <path id="gonzenheim_1" class="faeng" d="M 485,10 v 140 a 50,50 0,0,1 -50,50 c -5,0 -5,-5 -10,-5 h -30 c -5,0 -5,5 -10,5 h -255 a 70,70 0,0,0 -70,70 V 449 q 0,16 12,28" />
-  <path id="gonzenheim_2" class="endet" d="M 79,470 q -9,-9 -9,-21 V 270 a 60,60 0,0,1 60,-60 h 305 a 60,60 0,0,0 60,-60 v -140" />
-  <path id="hohemark_1"  class="faeng" d="M -800,-145 h 535 a 50,50 0,0,1 50,50 v 130 a 10,10, 0,0,1 -10,10 h -213 a 30,30 0,0,0 0,60 h 120 q 20,0 35,15 l 105,105 q 15,15 15,35 v 151 q 0,24 18,42 q 18,18 42,18 h 33" />
-  <path id="hohemark_2a" d="M -70,461 h -33 q -20,0 -35,-15 q -15,-15 -15,-35 v -151 q 0,-24 -18,-42 l -105,-105 q -18,-18 -42,-18 h -120 a 20,20 0,0,1 0,-40 h 213 a 20,20 0,0,0 20,-20 v -130 a 60,60 0,0,0 -60,-60 h -230 c -10,0 -10,10 -20,10" />
-  <path id="hohemark_2b" class="endet" d="M -745,-145 c -10,0 -10,-10 -20,-10 h -35" />
- </g>
- <g id="bstrecke">
-  <path id="preungesheim_1" class="endet" d="M 280,1515 V 1045 a 10,10 0,0,1 10,-10 h 130 a 20,20 0,0,0 20,-20 v -430" />
-  <path id="preungesheim_2" class="faeng" d="M 430,585 v 430 a 10,10 0,0,1 -10,10 h -130 a 20,20 0,0,0 -20,20 V 1515" />
- </g>
- <g id="cstrecke">
-  <path id="heerstraße_1" class="faeng" d="M -475,625 v 435 q 0,24 18,42 l 123,123" />
-  <path id="heerstraße_2" class="endet" d="M -327,1218 l -123,-123 q -15,-15 -15,-35 v -435" />
-  <path id="enkheim_1" class="endet" d="M 666,1398 l 15,-15 q 15,-15 35,-15 h 82 a 35,35 0,0,0 35,-35 v -469" />
-  <path id="enkheim_2" class="faeng" d="M 823,864 v 469 a 25,25 0,0,1 -25,25 h -82 q -24,0 -42,18 l -15,15" />
-  <path id="hausen_1" class="faeng" d="M -395,906 v 250 q 0,8 6,14" />
-  <path id="hausen_2" class="endet" d="M -382,1163 q -3,-3 -3,-7 v -250" />
- </g>
- <g id="dstrecke">
-  <path id="riedberg_1" d="M -153,260 a 50,50 0,0,1 50,-50 h 234" />
-  <path id="riedberg_2" d="M 131,200 h -234 a 60,60 0,0,0 -60,60" />
-  <use xlink:href="#keinu2" transform="translate(-103,260) rotate(30) translate(-50,0)" />
-  <use xlink:href="#keinu2" transform="translate(90,200) rotate(-90)" />
-  <path id="gd_wiesenau_1" d="M -120,521 v -33 q 0,-24 -18,-42" />
-  <path id="gd_wiesenau_2" d="M -145,453 q 15,15 15,35 v 33" />
- </g>
+  <g id="tunnelstrecken" class="tunnel">
+   <path id="b_1_stamm" class="tunnel faeng" d="M -282,1550 a 50,50 0,0,1 50,50 v 50 q 0,32 24,56 q 24,24 56,24 h 368 a 74,74 0,0,0 74,-74 v -11" />
+   <path id="b_2_stamm" class="tunnel endet" d="M 280,1645 v 11 a 64,64 0,0,1 -64,64 h -368 q -28,0 -49,-21 q -21,-21 -21,-49 v -50 a 60,60 0,0,0 -60,-60" />
+   <rect id="ebene_wbp" class="uberwerf" width="30" height="30" x="100" y="1710" />
+   <rect id="uw_hbf_no" class="uberwerf" width="17" height="20" x="-237" y="1580" />
+   <path id="a_1_stamm" class="faeng tunnel" d="M 120,1965 V 1130" />
+   <path id="a_2_stamm" class="endet tunnel" d="M 110,1130 V 1965" />
+   <path id="nwz_1" class="tunnel" d="M -130,561 v 140" />
+   <path id="nwz_2" class="tunnel" d="M -120,701 v -140" />
+   <rect id="ebene_hw" class="uberwerf" width="30" height="50" x="100" y="1555" />
+   <path class="ebobahn" id="sbahn_strecke" d="M 5,1610 l 20,-20 q 15,-15 35,-15 h 234 q 20,0 35,15 l 20,20 m -7,7 l -20,-20 q -12,-12 -28,-12 h -234 q -16,0 -28,12 l -20,20" />
+   <path id="d_1" class="tunnel faeng endet" d="M -212,1670 v -171 q 0,-20 15,-35 l 51,-51 q 27,-27 27,-63 v -50" />
+   <path id="d_2" class="tunnel faeng endet" d="M -131,1300 v 56 q 0,28 -21,49 l -52,52 q -18,18 -18,42 v 81 c 0,10 -20,20 -20,30 v 100" />
+   <rect id="ebene_bw" class="uberwerf" width="15" height="15" transform="translate(-146,1395) rotate(45)" />
+   <rect id="uw_hw_sc" class="uberwerf" width="24.04163" height="21.920311" x="20.95837" y="1579.337" />
+   <rect id="uw_kw_sc" class="uberwerf" width="31" height="15" x="304" y="1582" />
+   <path id="ostbahnhof_1" class="tunnel faeng" d="M 559,1665 l -85,-85 q -15,-15 -35,-15 h -30 c -10,0 -10,10 -20,10" />
+   <path id="ostbahnhof_2" class="tunnel endet" d="M 449,1585 q 16,0 28,12 l 75,75" />
+   <rect id="uw_zoo" class="uberwerf" width="5" height="40" transform="translate(460,1570) rotate(-45)" />
+   <path id="c_1_stamm" class="tunnel" d="M -334,1225 l 39,39 c 6,6 9,5 15,11 l 92,92 c 6,6 5,9 11,15 l 195,195 q 18,18 42,18 h 234 c 20,0 20,-10 40,-10 h 121 q 24,0 42,-18 l 169,-169" />
+   <path id="c_2_stamm" class="tunnel" d="M 659,1391 l -169,169 q -15,15 -35,15 h -121 c -20,0 -20,-10 -40,-10 h -254 q -20,0 -35,-15 l -175,-175 c -6,-6 -9,-5 -15,-11 l -92,-92 c -6,-6 -5,-9 -11,-15 l -39,-39" />
+   <rect id="ebene_kw" class="uberwerf" width="35" height="40" x="265" y="1560" />
+   <path id="b_1_stamm2" class="tunnel endet" d="M 290,1645 v -85 q 0,-20 15,-35 l 200,-200 c 6,-6 9,-5 15,-11 l 22,-22 c 6,-6 9,-5 15,-11 l 40,-40" /> 
+   <path id="b_2_stamm2" class="tunnel faeng" d="M 586,1230 l -40,40 c -6,6 -5,9 -11,15 l -20,20 c -6,6 -5,9 -11,15 l -206,206 q -18,18 -18,42 v 77" /> 
+   <rect id="uw_kw_bb" class="uberwerf" width="10" height="20" x="278" y="1530" />
+   <path id="scheffeleck_1" class="tunnel" d="M 290,1560 c 0,-20 -10,-20 -10,-40 v -5" />
+   <path id="scheffeleck_2" class="tunnel" d="M 270,1515 v 90 c 0,10 10,10 10,20"/>
+   <use id="rampe_humserstrasse" xlink:href="#tunnelrampe" transform="translate(115,1130)" />
+   <use id="rampe_hedd_ldstr" xlink:href="#tunnelrampe" transform="translate(-125,561)" />
+   <use id="rampe_roemerstadt" xlink:href="#tunnelrampe" transform="translate(-125,701) rotate(180)" />
+   <use id="rampe_industriehof" xlink:href="#tunnelrampe" transform="translate(-330.5,1221.5) rotate(-45)" />
+   <use id="rampe_eissporthalle" xlink:href="#tunnelrampe" transform="translate(662.5,1394.5) rotate(45)" />
+   <use id="rampe_scheffeleck" xlink:href="#tunnelrampe" transform="translate(275,1515)" />
+  </g>
+  <g id="astrecke">
+   <path id="eschersheimer_1" d="M 120,1130 V 690" />
+   <path id="eschersheimer_2" d="M 110,690 V 1130" />
+   <path id="zeilweg_1" d="M 120,690 v -167 q 0,-12 -9,-21 l -32 -32 q -9,-9 -21,-9 h -128 a 60,60 0,0,0 -60,60 v 40" />
+   <path id="zeilweg_2" d="M -120,561 v -40 a 50,50 0,0,1 50,-50 h 128 q 8,0 14,6 l 32,32 q 6,6 6,14 v 167" />
+   <path id="ginnheim_1" class="endet" d="M -130,701 v 60 c 0,2.5 -2.5,2.5 -2.5,5 v 52.5 c 0,2.5 2.5,2.5 2.5,5 v 177.5" />
+   <path id="ginnheim_2" class="faeng" d="M -120,1001 v -190 c 0,-2.5 2.5,-2.5 2.5,-5 v -40 c 0,-2.5 -2.5,-2.5 -2.5,-5 v -60" />
+   <path id="gonzenheim_1" class="faeng" d="M 485,10 v 140 a 50,50 0,0,1 -50,50 c -5,0 -5,-5 -10,-5 h -30 c -5,0 -5,5 -10,5 h -255 a 70,70 0,0,0 -70,70 V 449 q 0,16 12,28" />
+   <path id="gonzenheim_2" class="endet" d="M 79,470 q -9,-9 -9,-21 V 270 a 60,60 0,0,1 60,-60 h 305 a 60,60 0,0,0 60,-60 v -140" />
+   <path id="hohemark_1"  class="faeng" d="M -800,-145 h 535 a 50,50 0,0,1 50,50 v 130 a 10,10, 0,0,1 -10,10 h -213 a 30,30 0,0,0 0,60 h 120 q 20,0 35,15 l 105,105 q 15,15 15,35 v 151 q 0,24 18,42 q 18,18 42,18 h 33" />
+   <path id="hohemark_2a" d="M -70,461 h -33 q -20,0 -35,-15 q -15,-15 -15,-35 v -151 q 0,-24 -18,-42 l -105,-105 q -18,-18 -42,-18 h -120 a 20,20 0,0,1 0,-40 h 213 a 20,20 0,0,0 20,-20 v -130 a 60,60 0,0,0 -60,-60 h -230 c -10,0 -10,10 -20,10" />
+   <path id="hohemark_2b" class="endet" d="M -745,-145 c -10,0 -10,-10 -20,-10 h -35" />
+  </g>
+  <g id="bstrecke">
+   <path id="preungesheim_1" class="endet" d="M 280,1515 V 1045 a 10,10 0,0,1 10,-10 h 130 a 20,20 0,0,0 20,-20 v -430" />
+   <path id="preungesheim_2" class="faeng" d="M 430,585 v 430 a 10,10 0,0,1 -10,10 h -130 a 20,20 0,0,0 -20,20 V 1515" />
+  </g>
+  <g id="cstrecke">
+   <path id="heerstrasse_1" class="faeng" d="M -475,625 v 435 q 0,24 18,42 l 123,123" />
+   <path id="heerstrasse_2" class="endet" d="M -327,1218 l -123,-123 q -15,-15 -15,-35 v -435" />
+   <path id="enkheim_1" class="endet" d="M 666,1398 l 15,-15 q 15,-15 35,-15 h 82 a 35,35 0,0,0 35,-35 v -469" />
+   <path id="enkheim_2" class="faeng" d="M 823,864 v 469 a 25,25 0,0,1 -25,25 h -82 q -24,0 -42,18 l -15,15" />
+   <path id="hausen_1" class="faeng" d="M -395,906 v 250 q 0,8 6,14" />
+   <path id="hausen_2" class="endet" d="M -382,1163 q -3,-3 -3,-7 v -250" />
+  </g>
+  <g id="dstrecke">
+   <path id="riedberg_1" d="M -153,260 a 50,50 0,0,1 50,-50 h 234" />
+   <path id="riedberg_2" d="M 131,200 h -234 a 60,60 0,0,0 -60,60" />
+   <use xlink:href="#keinu2" transform="translate(-103,260) rotate(30) translate(-50,0)" />
+   <use xlink:href="#keinu2" transform="translate(90,200) rotate(-90)" />
+   <path id="gd_wiesenau_1" d="M -120,521 v -33 q 0,-24 -18,-42" />
+   <path id="gd_wiesenau_2" d="M -145,453 q 15,15 15,35 v 33" />
+  </g>
  </g>
  <g id="abstellungen">
   <g class="tunnel">
@@ -863,12 +883,12 @@
    <use id="sl131b" xlink:href="#vierabstell" transform="translate(572,1252) rotate(45)" />
    <use id="sl_141" xlink:href="#sechabstell" transform="translate(591,1239) rotate(45)" />
    <use id="sl_14"  xlink:href="#zweiabstell" transform="translate(595,1243) rotate(45)" />
-   <use id="bwd_2"  xlink:href="#sechabstell" transform="translate(-131,1305)" />
-   <use id="bwd_7"  xlink:href="#vierabstell" transform="translate(-127,1305)" />
-   <use id="bwd_5"  xlink:href="#vierabstell" transform="translate(-123,1305)" />
-   <use id="bwd_1"  xlink:href="#sechabstell" transform="translate(-119,1305)" />
-   <use id="bwd_6"  xlink:href="#vierabstell" transform="translate(-200,1460) rotate(-135)" />
-   <use id="bwc_3"  xlink:href="#vierabstell" transform="translate(-114,1451) rotate(+135)" />
+   <use id="bwd_2"  xlink:href="#sechabstell" transform="translate(-131,1306.5)" />
+   <use id="bwd_7"  xlink:href="#vierabstell" transform="translate(-127,1311.5)" />
+   <use id="bwd_5"  xlink:href="#vierabstell" transform="translate(-123,1311.5)" />
+   <use id="bwd_1"  xlink:href="#sechabstell" transform="translate(-119,1306.5)" />
+   <use id="bwd_6"  xlink:href="#vierabstell" transform="translate(-199,1459) rotate(-135)" />
+   <use id="bwc_3"  xlink:href="#vierabstell" transform="translate(-113,1452) rotate(+135)" />
    <g transform="translate(-282,1600)">
     <use id="hb_12a" xlink:href="#einsabstell" transform="rotate(-54) translate(50, -2.5)" />
     <use id="hb_12b" xlink:href="#einsabstell" transform="rotate(-48) translate(50, -2.5)" />
@@ -887,7 +907,7 @@
    <use id="ne_62" xlink:href="#vierabstell" transform="translate(402.5,200) rotate(-90)" />
    <use id="rb_61" xlink:href="#vierabstell" transform="translate(42,205) rotate(-90)" />
    <use id="ou_gv" xlink:href="#vierabstell" transform="translate(-180,45) rotate(-90)" />
-   <use id="sc_6" xlink:href="#vierabstell" transform="translate(818,1220)" />
+   <use id="sc_6" xlink:href="#vierabstell" transform="translate(818,1216.5)" />
   </g>
  </g>
  <g id="haltestellen" class="haltestellen">
@@ -1044,12 +1064,12 @@
   <g id="hst351" transform="translate(-390,1041)" class="achtzig"><use xlink:href="#bstg_vers1" /><text x="15" y="5">Große Nelkenstraße</text></g>
 
   <g id="hst251" transform="translate(-217,1515)" class="achtzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Festhalle/Messe</text></g>
-  <use id="hst411" transform="translate(-163.5,1423.5) rotate(45)" class="achtzig" xlink:href="#bstg_mitte" />
+  <use id="hst411" transform="translate(-161.5,1421.5) rotate(45)" class="achtzig" xlink:href="#bstg_mitte" />
   <g id="hst424" transform="translate(-88,205)" class="achtzig tm"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="0" y="-15">Uni Campus Riedberg</text></g>
   <g id="hst425" transform="translate(12,205)" class="achtzig tm"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="0" y="25">Riedberg</text></g>
  </g>
  <g id="laenger" class="strecke">
-  <g id="verlängerung_badhomburg" class="geplant" display="inline" transform="translate(30,0)">
+  <g id="verlaengerung_badhomburg" class="geplant" display="inline" transform="translate(30,0)">
    <rect style="fill:white; stroke:none;" width="12" height="85" x="484" y="5" />
    <path id="badhomburg_1a" d="M 495,90 v -40" />
    <path id="badhomburg_1b" class="tunnel" d="M 495,50 v -35 c 0,-5 -5,-5 -5,-10 v -20" />
@@ -1061,9 +1081,9 @@
    <use id="rampe_gonzenheim" xlink:href="#tunnelrampe" transform="translate(490,50) rotate(180)" />
    <use id="rampe_badhomburg" xlink:href="#tunnelrampe" transform="translate(490,-15)" />
    <g id="hst657" transform="translate(495,-110)" class="achtzig te"><use xlink:href="#bahnsteig" /><use xlink:href="#bahnsteig" transform="translate(0,-45)" /><text x="-15" y="5">Bad Homburg Bahnhof</text></g>
-   <text x="475" y="-65" class="te" style="stroke-dasharray:none;" id="verlängerung_badhomburg_erkl">Geplante Verlängerung, vsl. 2017</text>
+   <text x="475" y="-65" class="te" style="stroke-dasharray:none;" id="verlaengerung_badhomburg_erkl">Geplante Verlängerung, vsl. 2017</text>
   </g>
-  <g id="verlängerung_europaviertel" class="geplant" display="inline" transform="translate(0,30)">
+  <g id="verlaengerung_europaviertel" class="geplant" display="inline" transform="translate(0,30)">
    <path id="gw_europaviertel_2" class="bb tunnel" d="M -620,1550 c 10,0 10,-10 20,-10 c 10,0 10,10 20,10" /> <!-- c 5,0 5,-5 10,-5" />-->
    <path id="gw_emserbrücke" class="bb" d="M -490,1540 c 10,0 10,10 20,10" />
    <path id="europaviertel_1.1" class="tunnel" d="M -282,1540 h -98" />
@@ -1081,7 +1101,7 @@
    <g id="hst213" transform="translate(-430,1545)" class="achtzig tm"><use xlink:href="#drei_ausen" transform="rotate(90)" /><text x="0" y="-15">Emser Brücke</text></g>
    <g id="hst214" transform="translate(-530,1545)" class="achtzig tm"><use xlink:href="#drei_ausen" transform="rotate(90)" /><text x="0" y="-15">Europapark</text></g>
    <g id="hst215" transform="translate(-670,1545)" class="achtzig tm"><use xlink:href="#drei_ausen" transform="rotate(90)" /><text x="0" y="-15">Wohnpark</text></g>
-   <text x="-721" y="1570" style="stroke-dasharray:none;" id="verlängerung_europaviertel_erkl">Verlängerung in Bau, vsl. 2021</text>
+   <text x="-721" y="1570" style="stroke-dasharray:none;" id="verlaengerung_europaviertel_erkl">Verlängerung in Bau, vsl. 2021</text>
   </g>
   <g id="frankfurter_berg" class="geplant" display="inline" transform="translate(30,0)">
    <path id="frankfurterberg_1" class="endet" d="M 440,585 v -250" />
@@ -1107,13 +1127,13 @@
     <g transform="translate(-140,1114)" id="ginnheimer_kurve_erkl" display="inline"><text y="-6">Vorgeschlagener Lückenschluss</text><text y="6">"Ginnheimer Kurve"</text></g>
    </g>
   </g>
-  <g id="rtw" class="geplant" display="inline" transform="translate(-30,30)">
+  <g id="rtw" class="geplant" display="inline" transform="translate(-30,0)">
    <path id="rtw1" class="anschluss" d="M -181,208 q -18,-18 -42,-18 h -40 q -24,0 -42,18 l -152,152 q -18,18 -18,42 v 123 a 50,50 0,0,1 -50,50 h -20" />
    <path id="rtw2" d="M -465,625 v -223 q 0,-20 15,-35 c 7,-7 0,-14 7,-21 m 190,-156 c 10,0 10,10 20,10 h 10 q 20,0 35,15" />
    <path id="u6_1" class="anschluss" d="M -465,525 a 60,60 0,0,1 -60,60 h -20" />
    <path id="u6_2" d="M -475,525 v 100" />
    <g id="hst327" transform="translate(-470,505)" class="achtzig te"><use xlink:href="#bstg_mitte" /><text x="-10" y="5">Gewerbegebiet Praunheim</text></g>
-   <text x="-455" y="425" id="rtw_erkl" display="inline">Regionaltangente West</text>
+   <text x="-480" y="425" class="te" id="rtw_erkl" display="inline">Regionaltangente West</text>
   </g>
  </g>
  <g id="kilometrierungen_gruppen">
@@ -1292,7 +1312,7 @@
    <use xlink:href="#punkt3" transform="translate(-227,1690) rotate(210)" />
    <g transform="translate(-227,1635)"><g transform="rotate(30) translate(0,-99) rotate(-30)"><use xlink:href="#kasten3" /><text x="10" y="4">km 10,0</text></g><use xlink:href="#punkt1" transform="rotate(30)" /></g>
    <g transform="translate(-217,1515)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 10,7</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
-   <g transform="translate(-163.5,1423.5)" class="te"><g transform="rotate(-75) translate(0,-60) rotate(75)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 11,7</text></g><use xlink:href="#punkt2" transform="rotate(-75)"/></g>
+   <g transform="translate(-161.5,1421.5)" class="te"><g transform="rotate(-75) translate(0,-60) rotate(75)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 11,7</text></g><use xlink:href="#punkt2" transform="rotate(-75)"/></g>
    <g transform="translate(-125,1300)"><g transform="rotate(90) translate(0,-60) rotate(-90)"><use xlink:href="#kasten3" /><text x="6" y="4">km 12,0</text></g><use xlink:href="#punkt3" transform="rotate(90)" /></g>
    <path class="kilometrierung" d="M -125,521 v -33 q 0,-22 -16.5,-38.5 M -158,260 a 55,55 0,0,1 55,-55 h 234" />
    <path class="kilometrierung klein" d="M -141.5,449.5 q -16.5,-16.5 -16.5,-38.5 v -151" />
