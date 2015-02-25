@@ -59,7 +59,7 @@
   .ueberschrift { font-size:22pt;fill:#0000c0;fill-opacity:1;stroke:none; }
   .unterschrift { font-size:18pt;fill:#ff0000;fill-opacity:1;stroke:none; }
   .stand {  font-size:14pt;fill:#000000;fill-opacity:1;stroke:none; }
-  .ab_bb { font-size:8pt; fill:black; stroke:none; }
+  .ab_bb { font-size:8pt; stroke:none; }
   text { font-size:10pt; font-family:Sans-Serif; fill:black; stroke:none; }
   .verbot circle, path.verbot { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; }
   .verbot text { stroke:black; fill:black; text-anchor:middle; font-size:8pt; }
