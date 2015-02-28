@@ -44,7 +44,7 @@
   .uberwerf { fill-opacity:0.40; fill:#ffffff; stroke:none; }
   .bahnsteig { stroke-width:1px }
   .geplant { stroke-dasharray: 1,1; }
-  .geplant text { stroke:none; fill:currentColor; stroke-dasharray:none; font-size:70%; font-style:italic; }
+  .geplant text { stroke:none; stroke-dasharray:none; font-size:70%; font-style:italic; }
   .tunnel  { stroke-width:2px; stroke:#000080; }
   .ebobahn { stroke-width:1px; stroke:#008000; font-size:10pt; fill:none; }
   .ebobahn text { fill:#008000; stroke:none; }
@@ -738,7 +738,9 @@
   </g>
  </g>
  <g id="bb_ost" class="strecke" transform="translate(815,1245)">
-  <a xlink:href="http://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Betriebshof_Ost"><image xlink:href="https://wikipedia.de/favicon.ico" x="-112" y="-8" width="8" height="8"/></a><text x="-115" y="2" class="ab_bb te">BB Ost</text>
+  <a xlink:href="http://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Betriebshof_Ost">
+   <text x="-115" y="2" class="ab_bb te">BB Ost</text>
+  </a>
   <use id="rampe_ost" xlink:href="#tunnelrampe" transform="translate(-200,11) rotate(90)" />
   <g class="bb">
    <path id="ost_13" d="M -96.5,22.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 l 43,43" />
@@ -913,236 +915,435 @@
   </g>
  </g>
  <g id="haltestellen" class="haltestellen">
-  <g id="hst913" transform="translate(115,1905)" class="achtzig">
-   <use xlink:href="#bstg_mitte" />
-   <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Süd">
-    <text x="10" y="5">Südbahnhof</text>
-   </a>
+  <g id="hst_a">
+   <g id="hst913" transform="translate(115,1905)" class="achtzig">
+    <use xlink:href="#bstg_mitte" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Süd">
+     <text x="10" y="5">Südbahnhof</text>
+    </a>
+   </g>
+   <g id="hst912" transform="translate(115,1805)" class="achtzig">
+    <use xlink:href="#bstg_mitte" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Schweizer_Platz">
+     <text x="10" y="5">Schweizer Platz</text>
+    </a>
+   </g>
+   <g id="hst911" transform="translate(115,1705)" class="achtzig te">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Willy-Brandt-Platz">
+     <text x="-15" y="5">Willy-Brandt-Platz</text>
+    </a>
+   </g>
+   <g id="hst511" transform="translate(115,1605)" class="achtzig te">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Hauptwache">
+     <text x="-10" y="-50">Hauptwache</text>
+    </a>
+   </g>
+   <g id="hst512" transform="translate(115,1480)" class="achtzig te">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Eschenheimer_Tor">
+     <text x="-15" y="5">Eschenheimer Tor</text>
+    </a>
+   </g>
+   <g id="hst513" transform="translate(115,1380)" class="achtzig te">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Grüneburgweg">
+     <text x="-15" y="5">Grüneburgweg</text>
+    </a>
+   </g>
+   <g id="hst514" transform="translate(115,1280)" class="achtzig te">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Holzhausenstraße">
+     <text x="-15" y="5">Holzhausenstraße</text>
+    </a>
+   </g>
+   <g id="hst515" transform="translate(115,1180)" class="achtzig te">
+    <use xlink:href="#bstg_ausen" />
+    <rect style="fill:#ffffff" x="-12" y="13" width="6" height="4"/>
+    <rect style="fill:#ffffff" x="6"   y="13" width="6" height="4"/>
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Miquel-/Adickesallee">
+     <text x="-15" y="-3">Miquel-/Adickesallee/</text>
+     <text x="-15" y="13">Polizeipräsidium</text>
+    </a>
+   </g>
+   <g id="hst521" transform="translate(115,1080)" class="achtzig te">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Stadtbahnstation_Dornbusch">
+     <text x="-15" y="-3">Dornbusch</text>
+     <text x="-15" y="13">(Hessischer Rundfunk)</text>
+    </a>
+   </g>
+   <g id="hst522" transform="translate(115,980)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Fritz-Tarnow-Straße</text></g>
+   <g id="hst523" transform="translate(115,865)" class="achtzig te"><use xlink:href="#bstg_vers1" /><text x="-15" y="5">Hügelstraße</text></g>
+   <g id="hst524" transform="translate(115,750)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Lindenbaum</text></g>
+   <g id="hst525" transform="translate(115,650)" class="achtzig">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Stadtbahnstation_Weißer_Stein">
+     <text x="15" y="5">Weißer Stein</text>
+    </a>
+   </g>
+   <g id="hst526" transform="translate(115,550)" class="achtzig">
+    <use xlink:href="#bahnsteig" transform="translate(15,0) rotate(180)"/>
+    <use xlink:href="#bstg_ausen" />
+    <g transform="translate(-5,1.5)" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>2</text></g>
+    <g transform="translate(05,1.5)" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>1</text></g>
+    <g transform="translate(15,1.5)" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>3</text></g>
+   <text x="20" y="5">Heddernheim</text></g>
+   <g id="hst527" transform="translate(-10,466)" class="achtzig tm"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="0" y="-15">Zeilweg</text></g>
+   <!--<g id="bst502">Abzweig/Dreieck Nordwest</g>-->
+   <g id="hst423" transform="translate(-125,541)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Heddernheimer Landstraße</text></g>
+   <g id="hst422" transform="translate(-125,641)" class="achtzig te">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Nordwestzentrum">
+     <text x="-15" y="5">Nordwestzentrum</text>
+    </a>
+   </g>
+   <g id="hst421" transform="translate(-125,741)" class="funfzig te">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Siedlung_Römerstadt">
+     <text x="-15" y="5">Römerstadt</text>
+    </a>
+   </g>
+   <g id="hst415" transform="translate(-125,861)" class="funfzig te">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Niddapark">
+     <text x="-15" y="5">Niddapark</text>
+    </a>
+   </g>
+   <g id="hst414" transform="translate(-125,981)" class="te">
+    <use xlink:href="#einwagen" class="nullzig" transform="translate(-15,0)" />
+    <use xlink:href="#einwagen" class="nullzig" transform="translate(-15,7.5)" />
+    <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" class="funfzig" />
+    <use xlink:href="#einwagen" transform="translate(5,-15)" class="funfzig" />
+    <use xlink:href="#einwagen" transform="translate(15,-7.5) rotate(180)" class="funfzig" />
+    <use xlink:href="#weg" transform="translate(10,-12)" />
+    <use xlink:href="#drei_mitte" transform="translate(10,3.75)" class="achtzig" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Ginnheim">
+     <text x="-25" y="-6">Ginnheim</text>
+    </a>
+   </g>
+   <g id="hst641" transform="translate(65,385)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Sandelmühle</text></g>
+   <g id="hst642" transform="translate(65,285)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Riedwiese/Mertonviertel</text></g>
+   <g id="hst651" transform="translate(165,205)" class="achtzig tm">
+    <use xlink:href="#bstg_ausen" transform="rotate(90)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Frankfurt-Kalbach-Riedberg">
+     <text x="0" y="-15">Kalbach</text>
+    </a>
+   </g>
+   <g id="hst652" transform="translate(265,205)" class="achtzig tm">
+    <use xlink:href="#bstg_ausen" transform="rotate(90)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Frankfurt-Bonames">
+     <text x="0" y="25">Bonames Mitte</text>
+    </a>
+   </g>
+   <g id="hst653" transform="translate(365,205)" class="achtzig tm">
+    <use xlink:href="#bstg_ausen" transform="rotate(90)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Frankfurt-Nieder-Eschbach">
+     <text x="0" y="-15">Nieder-Eschbach</text>
+    </a>
+   </g>
+   <g id="hst655" transform="translate(490,135)" class="achtzig te">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Ober-Eschbach">
+     <text x="-15" y="5">Ober-Eschbach</text>
+    </a>
+   </g>
+   <g id="hst656" transform="translate(490,30)" class="achtzig te">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Gonzenheim">
+     <text x="-15" y="5">Bad Homburg Gonzenheim</text>
+    </a>
+   </g>
+   <g id="hst551" transform="translate(-158,385)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Wiesenau</text></g>
+   <g id="hst552" transform="translate(-158,285)" class="achtzig te">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Frankfurt-Niederursel">
+     <text x="-15" y="5">Niederursel</text>
+    </a>
+   </g>
+   <g id="hst554" transform="translate(-233.5,162.5)" class="achtzig te">
+    <use xlink:href="#drei_ausen" transform="rotate(-45)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Weißkirchen_(Oberursel)">
+     <text x="-5.5" y="21.5">Weißkirchen Ost</text>
+    </a>
+   </g>
+   <g id="hst555" transform="translate(-333,100)" class="achtzig tm">
+    <use xlink:href="#drei_ausen" transform="rotate(90)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Bommersheim">
+     <text x="0" y="-15">Bommersheim</text>
+    </a>
+   </g>
+   <g id="hst556" transform="translate(-300,50)" class="achtzig te">
+    <use xlink:href="#drei_ausen" transform="rotate(90)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Oberursel_(Taunus)">
+     <text x="0" y="-15">Oberursel Bahnhof</text>
+    </a>
+   </g>
+   <g id="hst557" transform="translate(-210,20)" class="achtzig">
+    <use xlink:href="#drei_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Oberursel_(Taunus)">
+     <text x="15" y="5">Oberursel Stadtmitte</text>
+    </a>
+   </g>
+   <g id="hst558" transform="translate(-210,-80)" class="achtzig te"><use xlink:href="#drei_ausen" /><text x="-15" y="5">Oberursel Altstadt</text></g>
+   <g id="hst561" transform="translate(-280,-150)" class="achtzig tm"><use xlink:href="#drei_ausen" transform="rotate(90)" /><text x="0" y="-15">Lahnstraße</text></g>
+   <g id="hst562" transform="translate(-380,-150)" class="achtzig tm"><use xlink:href="#drei_ausen" transform="rotate(90)" /><text x="0" y="25">Glöcknerwiese</text></g>
+   <g id="hst563" transform="translate(-480,-150)" class="achtzig tm"><use xlink:href="#drei_mitte" transform="rotate(90)" /><text x="0" y="-10">Kupferhammer</text></g>
+   <g id="hst564" transform="translate(-580,-145)" class="achtzig tm"><use xlink:href="#dreisteig" transform="rotate(90)" /><text x="0" y="20">Rosengärtchen</text></g>
+   <g id="hst565" transform="translate(-680,-145)" class="achtzig tm"><use xlink:href="#dreisteig" transform="rotate(-90)" /><text x="0" y="-10">Waldlust</text></g>
+   <g id="hst566" transform="translate(-780,-150)" class="achtzig tm">
+    <use xlink:href="#drei_mitte" transform="rotate(90)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Hohe_Mark_(Taunus)">
+     <text x="0" y="20">Oberursel</text>
+     <text x="0" y="36">Hohemark</text>
+    </a>
+   </g>
   </g>
-  <g id="hst912" transform="translate(115,1805)" class="achtzig">
-   <use xlink:href="#bstg_mitte" />
-   <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Schweizer_Platz">
-    <text x="10" y="5">Schweizer Platz</text>
-   </a>
-  </g>
-  <g id="hst911" transform="translate(115,1705)" class="achtzig te">
-   <use xlink:href="#bstg_ausen" />
-   <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Willy-Brandt-Platz">
-    <text x="-15" y="5">Willy-Brandt-Platz</text>
-   </a>
-  </g>
-  <g id="hst511" transform="translate(115,1605)" class="achtzig te">
-   <use xlink:href="#bstg_ausen" />
-   <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Hauptwache">
-    <text x="-10" y="-50">Hauptwache</text>
-   </a>
-  </g>
-  <g id="hst512" transform="translate(115,1480)" class="achtzig te">
-   <use xlink:href="#bstg_ausen" />
-   <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Eschenheimer_Tor">
-    <text x="-15" y="5">Eschenheimer Tor</text>
-   </a>
-  </g>
-  <g id="hst513" transform="translate(115,1380)" class="achtzig te">
-   <use xlink:href="#bstg_ausen" />
-   <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Grüneburgweg">
-    <text x="-15" y="5">Grüneburgweg</text>
-   </a>
-  </g>
-  <g id="hst514" transform="translate(115,1280)" class="achtzig te">
-   <use xlink:href="#bstg_ausen" />
-   <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Holzhausenstraße">
-    <text x="-15" y="5">Holzhausenstraße</text>
-   </a>
-  </g>
-  <g id="hst515" transform="translate(115,1180)" class="achtzig te">
-   <use xlink:href="#bstg_ausen" />
-   <rect style="fill:#ffffff" x="-12" y="13" width="6" height="4"/>
-   <rect style="fill:#ffffff" x="6"   y="13" width="6" height="4"/>
-   <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Miquel-/Adickesallee">
-    <text x="-15" y="-3">Miquel-/Adickesallee/</text>
-    <text x="-15" y="13">Polizeipräsidium</text>
-   </a>
-  </g>
-  <g id="hst521" transform="translate(115,1080)" class="achtzig te">
-   <use xlink:href="#bstg_ausen" />
-   <a xlink:href="http://de.wikipedia.org/wiki/Stadtbahnstation_Dornbusch">
-    <text x="-15" y="-3">Dornbusch</text>
-    <text x="-15" y="13">(Hessischer Rundfunk)</text>
-   </a>
-  </g>
-  <g id="hst522" transform="translate(115,980)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Fritz-Tarnow-Straße</text></g>
-  <g id="hst523" transform="translate(115,865)" class="achtzig te"><use xlink:href="#bstg_vers1" /><text x="-15" y="5">Hügelstraße</text></g>
-  <g id="hst524" transform="translate(115,750)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Lindenbaum</text></g>
-  <g id="hst525" transform="translate(115,650)" class="achtzig">
-   <use xlink:href="#bstg_ausen" />
-   <a xlink:href="http://de.wikipedia.org/wiki/Stadtbahnstation_Weißer_Stein">
-    <text x="15" y="5">Weißer Stein</text>
-   </a>
-  </g>
-  <g id="hst526" transform="translate(115,550)" class="achtzig">
-   <use xlink:href="#bahnsteig" transform="translate(15,0) rotate(180)"/>
-   <use xlink:href="#bstg_ausen" />
-   <g transform="translate(-5,1.5)" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>2</text></g>
-   <g transform="translate(05,1.5)" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>1</text></g>
-   <g transform="translate(15,1.5)" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>3</text></g>
-  <text x="20" y="5">Heddernheim</text></g>
-  <g id="hst527" transform="translate(-10,466)" class="achtzig tm"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="0" y="-15">Zeilweg</text></g>
-  <!--<g id="bst502">Abzweig/Dreieck Nordwest</g>-->
-  <g id="hst423" transform="translate(-125,541)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Heddernheimer Landstraße</text></g>
-  <g id="hst422" transform="translate(-125,641)" class="achtzig te">
-   <use xlink:href="#bstg_ausen" />
-   <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Nordwestzentrum">
-    <text x="-15" y="5">Nordwestzentrum</text>
-   </a>
-  </g>
-  <g id="hst421" transform="translate(-125,741)" class="funfzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Römerstadt</text></g>
-  <g id="hst415" transform="translate(-125,861)" class="funfzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Niddapark</text></g>
-  <g id="hst414" transform="translate(-125,981)" class="te">
-   <use xlink:href="#einwagen" class="nullzig" transform="translate(-15,0)" />
-   <use xlink:href="#einwagen" class="nullzig" transform="translate(-15,7.5)" />
-   <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" class="funfzig" />
-   <use xlink:href="#einwagen" transform="translate(5,-15)" class="funfzig" />
-   <use xlink:href="#einwagen" transform="translate(15,-7.5) rotate(180)" class="funfzig" />
-   <use xlink:href="#weg" transform="translate(10,-12)" />
-   <use xlink:href="#drei_mitte" transform="translate(10,3.75)" class="achtzig" />
-   <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Ginnheim">
-    <text x="-25" y="-6">Ginnheim</text>
-   </a>
-  </g>
-  <g id="hst641" transform="translate(65,385)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Sandelmühle</text></g>
-  <g id="hst642" transform="translate(65,285)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Riedwiese/Mertonviertel</text></g>
-  <g id="hst651" transform="translate(165,205)" class="achtzig tm"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="0" y="-15">Kalbach</text></g>
-  <g id="hst652" transform="translate(265,205)" class="achtzig tm"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="0" y="25">Bonames Mitte</text></g>
-  <g id="hst653" transform="translate(365,205)" class="achtzig tm"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="0" y="-15">Nieder-Eschbach</text></g>
-  <g id="hst655" transform="translate(490,135)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Ober-Eschbach</text></g>
-  <g id="hst656" transform="translate(490,30)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Bad Homburg Gonzenheim</text></g>
-  <g id="hst551" transform="translate(-158,385)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Wiesenau</text></g>
-  <g id="hst552" transform="translate(-158,285)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Niederursel</text></g>
-  <g id="hst554" transform="translate(-233.5,162.5)" class="achtzig te"><use xlink:href="#drei_ausen" transform="rotate(-45)" /><text x="-5.5" y="21.5">Weißkirchen Ost</text></g>
-  <g id="hst555" transform="translate(-333,100)" class="achtzig tm"><use xlink:href="#drei_ausen" transform="rotate(90)" /><text x="0" y="-15">Bommersheim</text></g>
-  <g id="hst556" transform="translate(-300,50)" class="achtzig te">
-   <use xlink:href="#drei_ausen" transform="rotate(90)" />
-   <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Oberursel_(Taunus)">
-    <text x="0" y="-15">Oberursel Bahnhof</text>
-   </a>
-  </g>
-  <g id="hst557" transform="translate(-210,20)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Oberursel Stadtmitte</text></g>
-  <g id="hst558" transform="translate(-210,-80)" class="achtzig te"><use xlink:href="#drei_ausen" /><text x="-15" y="5">Oberursel Altstadt</text></g>
-  <g id="hst561" transform="translate(-280,-150)" class="achtzig tm"><use xlink:href="#drei_ausen" transform="rotate(90)" /><text x="0" y="-15">Lahnstraße</text></g>
-  <g id="hst562" transform="translate(-380,-150)" class="achtzig tm"><use xlink:href="#drei_ausen" transform="rotate(90)" /><text x="0" y="25">Glöcknerwiese</text></g>
-  <g id="hst563" transform="translate(-480,-150)" class="achtzig tm"><use xlink:href="#drei_mitte" transform="rotate(90)" /><text x="0" y="-10">Kupferhammer</text></g>
-  <g id="hst564" transform="translate(-580,-145)" class="achtzig tm"><use xlink:href="#dreisteig" transform="rotate(90)" /><text x="0" y="20">Rosengärtchen</text></g>
-  <g id="hst565" transform="translate(-680,-145)" class="achtzig tm"><use xlink:href="#dreisteig" transform="rotate(-90)" /><text x="0" y="-10">Waldlust</text></g>
-  <g id="hst566" transform="translate(-780,-150)" class="achtzig tm"><use xlink:href="#drei_mitte" transform="rotate(90)" /><text x="0" y="20">Oberursel</text><text x="0" y="36">Hohemark</text></g>
+  <g id="hst_b">
+   <g id="hst211" transform="translate(-237,1635)" class="achtzig te">
+    <use class="neunzig" xlink:href="#bahnsteig" transform="translate(25,0) rotate(180)" />
+    <use xlink:href="#bstg_mitte" />
+    <use xlink:href="#bahnsteig" transform="translate(15,0)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Hauptbahnhof_(Frankfurt_am_Main)">
+    <text x="-10" y="5">Frankfurt Hauptbahnhof</text>
+    </a>
+   </g>
+   <use id="hst611" transform="translate(100,1725) rotate(90)" class="achtzig" xlink:href="#bstg_ausen" />
+   <g id="hst612" transform="translate(200,1725)" class="achtzig tm">
+    <use xlink:href="#bstg_mitte" transform="rotate(90)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Dom/Römer">
+     <text x="0" y="20">Dom/Römer</text>
+    </a>
+   </g>
+   <g id="hst613" transform="translate(275,1580)" class="neunzig">
+    <use xlink:href="#bahnsteig" transform="translate(15,0)" />
+    <use xlink:href="#bstg_mitte" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Konstablerwache">
+     <text x="20" y="-20">Konstablerwache</text>
+    </a>
+   </g>
+   <g id="u5planung" style="display:none;">
+   <g id="hst614_neu" transform="translate(275,1485)" class="achtzig te"><use xlink:href="#drei_vers1"/><text x="-15" y="5">Musterschule</text></g>
+   <g id="hst615_neu" transform="translate(275,1385)" class="achtzig te"><use xlink:href="#drei_vers1"/><text x="-15" y="5">Glauburgstraße</text></g>
+   </g>
+   <g id="u5ist">
+   <g id="hst614" transform="translate(275,1490)" class="nullzig te">
+    <use xlink:href="#drei_ausen" />
+    <a xlink:href="https://de.wikipedia.org/wiki/Musterschule">
+     <text x="-15" y="5">Musterschule</text>
+    </a>
+   </g>
+   <g id="hst615" transform="translate(275,1395)" class="nullzig te">
+    <use xlink:href="#drei_vers2" />
+    <a xlink:href="https://de.wikipedia.org/wiki/Glauburgstra%C3%9Fe">
+     <text x="-15" y="5">Glauburgstraße</text>
+    </a>
+   </g>
+   </g>
+   <g id="hst616" transform="translate(275,1300)" class="achtzig">
+    <use xlink:href="#drei_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Deutsche_Bibliothek">
+     <text x="15" y="5">Deutsche Nationalbibliothek</text>
+    </a>
+   </g>
+   <g id="hst617" transform="translate(275,1220)" class="achtzig">
+    <use xlink:href="#drei_ausen" />
+    <a xlink:href="https://de.wikipedia.org/wiki/Hauptfriedhof_Frankfurt">
+     <text x="15" y="5">Hauptfriedhof</text>
+    </a>
+   </g>
+   <g id="hst621" transform="translate(275,1140)" class="nullzig">
+    <use xlink:href="#drei_vers3" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Neuer_Jüdischer_Friedhof_(Frankfurt_am_Main)">
+     <text x="15" y="5">Neuer Jüdischer Friedhof</text>
+    </a>
+   </g>
+   <g id="hst622" transform="translate(275,1060)" class="nullzig te">
+    <use xlink:href="#drei_ausen" />
+    <text x="-15" y="0">Eckenheimer</text>
+    <text x="-15" y="16">Landstraße/</text><text x="-15" y="32">Marbachweg</text>
+   </g>
+   <g id="hst623" transform="translate(305,1030)" class="achtzig">
+    <use xlink:href="#drei_ausen" transform="rotate(90)" />
+    <text x="-15" y="-31">Marbachweg/</text>
+    <text x="-15" y="-15">Sozialzentrum</text>
+   </g>
+   <g id="hstXXX" transform="translate(262,888)" class="nullzig"><use xlink:href="#dreisteig" /><text x="10" y="4" class="ab_bb">Schwabstraße</text></g>
+   <g id="hst624" transform="translate(405,1030)" class="achtzig"><use xlink:href="#drei_ecke1" transform="rotate(90)" /><text x="35" y="5">Gießener Straße</text></g>
+   <g id="hst625" transform="translate(435,885)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Theobald-Ziegler-Straße</text></g>
+   <g id="hst626" transform="translate(435,790)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Ronneburgstraße</text></g>
+   <g id="hst631" transform="translate(435,705)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Sigmund-Freud-Straße</text></g>
+   <g id="hst632" transform="translate(435,605)" class="nullzig">
+    <use id="bstg_preungesheim_3" xlink:href="#dreisteig" transform="translate(-15,0) rotate(180)" />
+    <use xlink:href="#drei_mitte" class="nullzig"/>
+    <!--<use xlink:href="#bau" transform="translate(0,0)"/>-->
+    <a xlink:href="https://de.wikipedia.org/wiki/Frankfurt-Preungesheim">
+     <text x="15" y="5">Preungesheim</text>
+    </a>
+   </g>
 
-  <g id="hst211" transform="translate(-237,1635)" class="achtzig te">
-   <use class="neunzig" xlink:href="#bahnsteig" transform="translate(25,0) rotate(180)" />
-   <use xlink:href="#bstg_mitte" />
-   <use xlink:href="#bahnsteig" transform="translate(15,0)" />
-   <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Hauptbahnhof_(Frankfurt_am_Main)">
-   <text x="-10" y="5">Frankfurt Hauptbahnhof</text>
-   </a>
+   <g id="hst711" transform="translate(325,1505)" class="neunzig">
+    <use xlink:href="#bstg_dosto" />
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Merianplatz">
+     <text x="12" y="11">Merianplatz</text>
+    </a>
+   </g>
+   <g id="hst712" transform="translate(395,1435)" class="neunzig">
+    <use xlink:href="#bstg_dosto" />
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_H%C3%B6henstra%C3%9Fe">
+     <text x="12" y="11">Höhenstraße</text>
+    </a>
+   </g>
+   <g id="hst713" transform="translate(465,1365)" class="neunzig">
+    <use xlink:href="#bstg_dosto" />
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Bornheim_Mitte">
+     <text x="12" y="11">Bornheim Mitte</text>
+    </a>
+   </g>
+   <g id="hst714" transform="translate(527.5,1299.5)" class="neunzig">https://de.wikipedia.org/wiki/U-Bahnhof_Seckbacher_Landstra%C3%9Fe
+    <use xlink:href="#bstg_mitte" transform="rotate(45)" />
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Seckbacher_Landstra%C3%9Fe">
+     <text x="20" y="6">Seckbacher</text>
+     <text x="20" y="22">Landstraße</text>
+    </a>
+   </g>
   </g>
-  <use id="hst611" transform="translate(100,1725) rotate(90)" class="achtzig" xlink:href="#bstg_ausen" />
-  <g id="hst612" transform="translate(200,1725)" class="achtzig tm">
-   <use xlink:href="#bstg_mitte" transform="rotate(90)" />
-   <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Dom/Römer">
-    <text x="0" y="20">Dom/Römer</text>
-   </a>
+  <g id="hst_c">
+   <g id="hst326" transform="translate(-470,725)" class="achtzig te"><use xlink:href="#bstg_mitte" /><text x="-10" y="5">Heerstraße</text></g>
+   <g id="hst324" transform="translate(-470,825)" class="achtzig te">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Friedhof_Westhausen">
+     <text x="-15" y="5">Friedhof Westhausen</text>
+    </a>
+   </g>
+   <g id="hst323" transform="translate(-470,925)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Stephan-Heise-Straße</text></g>
+   <g id="hst322" transform="translate(-470,1025)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Hausener Weg</text></g>
+   <g id="hst321" transform="translate(-442.5,1109.5)" class="achtzig te"><use xlink:href="#bstg_ausen" transform="rotate(-45)" /><text x="-5.5" y="21.5">Fischstein</text></g>
+   <g id="hst317" transform="translate(-372.5,1179.5)" class="achtzig te"><use xlink:href="#bstg_ausen" transform="rotate(-45)" /><text x="-5.5" y="21.5">Industriehof</text></g>
+   <g id="hst316" transform="translate(-302.5,1249.5)" class="achtzig">
+    <use xlink:href="#bstg_mitte" transform="rotate(-45)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Kirchplatz_(Frankfurt_am_Main)">
+     <text x="5.5" y="-5.5">Kirchplatz</text>
+    </a>
+   </g>
+   <g id="hst315" transform="translate(-231,1318)" class="achtzig te">
+    <use xlink:href="#bstg_dosto" transform="scale(1,-1)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Leipziger_Straße">
+     <text x="-12" y="5">Leipziger Straße</text>
+    </a>
+   </g>
+   <g id="hst314" transform="translate(-162.5,1389.5)" class="achtzig te">
+    <use xlink:href="#bstg_mitte" transform="rotate(-45)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Bockenheimer_Warte">
+     <text x="-14.5" y="6.5">Bockenheimer Warte</text>
+    </a>
+   </g>
+   <g id="hst313" transform="translate(-92.5,1459.5)" class="achtzig te">
+    <use xlink:href="#bstg_mitte" transform="rotate(-45)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Westend">
+     <text x="-14.5" y="6.5">Westend</text>
+    </a>
+   </g>
+   <g id="hst312" transform="translate(-22.5,1529.5)" class="achtzig te">
+    <use xlink:href="#bstg_mitte" transform="rotate(-45)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Alte_Oper">
+     <text x="-14.5" y="6.5">Alte Oper</text>
+    </a>
+   </g>
+   <g id="hst311" transform="translate(115,1580) rotate(90)">
+    <use xlink:href="#bahnsteig" class="achtzig" transform="translate(-15,0) rotate(180)" />
+    <use xlink:href="#sbahn" transform="translate(-5,0)" />
+    <use xlink:href="#sbahn" transform="translate(5,0) rotate(180) translate(0,-35)" />
+    <use xlink:href="#bahnsteig" class="achtzig" transform="translate(15,0)" />
+   </g>
+   <g id="hst811" transform="translate(260,1580) rotate(90)">
+    <use xlink:href="#bahnsteig" class="achtzig" transform="translate(-15,0)" />
+    <use xlink:href="#sbahn" transform="translate(5,0)" />
+    <use xlink:href="#sbahn" transform="translate(-5,0) rotate(180) translate(0,-35)" />
+    <use xlink:href="#bahnsteig" class="achtzig" transform="translate(15,0) rotate(180)" />
+   </g>
+   <g id="hst812" transform="translate(424,1570)" class="achtzig te">
+    <use xlink:href="#bahnsteig" transform="translate(0,15) rotate(-90)" />
+    <use xlink:href="#bstg_mitte" transform="rotate(90)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Zoo">
+     <text x="0" y="30">Zoo</text>
+    </a>
+   </g>
+   <g id="hst813" transform="translate(507.5,1549.5)" class="achtzig">
+    <use xlink:href="#bstg_mitte" transform="rotate(45)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Habsburgerallee">
+     <text x="9.5" y="15.5">Habsburgerallee</text>
+    </a>
+   </g>
+   <g id="hst814" transform="translate(577.5,1479.5)" class="achtzig">
+    <use xlink:href="#bstg_mitte" transform="rotate(45)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Parlamentsplatz">
+     <text x="9.5" y="15.5">Parlamentsplatz</text>
+    </a>
+   </g>
+   <g id="hst815" transform="translate(647.5,1409.5)" class="achtzig">
+    <use xlink:href="#bstg_mitte" transform="rotate(45)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Eissporthalle">
+     <text x="9.5" y="15.5">Eissporthalle/Festplatz</text>
+    </a>
+   </g>
+   <g id="hst821" transform="translate(766,1363)">
+    <use xlink:href="#einwagen" class="nullzig" transform="translate(-23,-5) rotate(-90)" />
+    <use xlink:href="#einwagen" class="nullzig" transform="translate(-15.5,+5) rotate(+90)" />
+    <use xlink:href="#bstg_ausen" class="achtzig" transform="rotate(90)" />
+    <text x="-25" y="22">Johanna-Tesch-Platz</text>
+   </g>
+   <g id="hst822" transform="translate(828,1284)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Schäfflestraße</text></g>
+   <g id="hst823" transform="translate(828,1184)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Gwinnerstraße</text></g>
+   <g id="hst824" transform="translate(828,1084)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Kruppstraße</text></g>
+   <g id="hst825" transform="translate(828,984)" class="achtzig">
+    <use xlink:href="#bstg_ausen" />
+    <a xlink:href="https://de.wikipedia.org/wiki/Hessen-Center">
+     <text x="15" y="5">Hessen-Center</text>
+    </a>
+   </g>
+   <g id="hst826" transform="translate(828,884)" class="achtzig">
+    <use xlink:href="#bstg_mitte" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Enkheim_(Bergen-Enkheim)">
+     <text x="10" y="5">Enkheim</text>
+    </a>
+   </g>
+   <g id="hst851" transform="translate(541.5,1654.5)" class="achtzig">
+    <use xlink:href="#bstg_mitte" transform="rotate(-45)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Ost">
+     <text x="5.5" y="-5.5">Ostbahnhof</text>
+    </a>
+   </g>
+   <g id="hst353" transform="translate(-390,926)" class="achtzig">
+    <use xlink:href="#bstg_mitte" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Frankfurt-Hausen">
+     <text x="10" y="5">Hausen</text>
+    </a>
+   </g>
+   <g id="hst351" transform="translate(-390,1041)" class="achtzig"><use xlink:href="#bstg_vers1" /><text x="15" y="5">Große Nelkenstraße</text></g>
   </g>
-  <g id="hst613" transform="translate(275,1580)" class="neunzig">
-   <use xlink:href="#bahnsteig" transform="translate(15,0)" />
-   <use xlink:href="#bstg_mitte" />
-   <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Konstablerwache">
-    <text x="20" y="-20">Konstablerwache</text>
-   </a>
+  <g id="hst_d">
+   <g id="hst251" transform="translate(-217,1515)" class="achtzig">
+    <use xlink:href="#bstg_mitte" />
+    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Festhalle/Messe">
+     <text x="10" y="5">Festhalle/Messe</text>
+    </a>
+   </g>
+   <use id="hst411" transform="translate(-161.5,1421.5) rotate(45)" class="achtzig" xlink:href="#bstg_mitte" />
+   <g id="hst424" transform="translate(-88,205)" class="achtzig tm">
+    <use xlink:href="#bstg_ausen" transform="rotate(90)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Campus_Riedberg">
+     <text x="0" y="-15">Uni Campus Riedberg</text>
+    </a>
+   </g>
+   <g id="hst425" transform="translate(12,205)" class="achtzig tm">
+    <use xlink:href="#bstg_ausen" transform="rotate(90)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Frankfurt-Riedberg">
+     <text x="0" y="25">Riedberg</text>
+    </a>
+   </g>
   </g>
-  <g id="u5planung" style="display:none;">
-  <g id="hst614_neu" transform="translate(275,1485)" class="achtzig te"><use xlink:href="#drei_vers1"/><text x="-15" y="5">Musterschule</text></g>
-  <g id="hst615_neu" transform="translate(275,1385)" class="achtzig te"><use xlink:href="#drei_vers1"/><text x="-15" y="5">Glauburgstraße</text></g>
-  </g>
-  <g id="u5ist">
-  <g id="hst614" transform="translate(275,1490)" class="nullzig te"><use xlink:href="#drei_ausen" /><text x="-15" y="5" class="link">Musterschule</text></g>
-  <g id="hst615" transform="translate(275,1395)" class="nullzig te"><use xlink:href="#drei_vers2" /><text x="-15" y="5" class="link">Glauburgstraße</text></g>
-  </g>
-  <g id="hst616" transform="translate(275,1300)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Deutsche Nationalbibliothek</text></g>
-  <g id="hst617" transform="translate(275,1220)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5" class="link">Hauptfriedhof</text></g>
-  <g id="hst621" transform="translate(275,1140)" class="nullzig"><use xlink:href="#drei_vers3" /><text x="15" y="5">Neuer Jüdischer Friedhof</text></g>
-  <g id="hst622" transform="translate(275,1060)" class="nullzig te">
-   <use xlink:href="#drei_ausen" />
-   <text x="-15" y="0">Eckenheimer</text>
-   <text x="-15" y="16">Landstraße/</text><text x="-15" y="32">Marbachweg</text>
-  </g>
-  <g id="hst623" transform="translate(305,1030)" class="achtzig">
-   <use xlink:href="#drei_ausen" transform="rotate(90)" />
-   <text x="-15" y="-31">Marbachweg/</text>
-   <text x="-15" y="-15">Sozialzentrum</text>
-  </g>
-  <g id="hstXXX" transform="translate(262,888)" class="nullzig"><use xlink:href="#dreisteig" /><text x="10" y="4" class="ab_bb">Schwabstraße</text></g>
-  <g id="hst624" transform="translate(405,1030)" class="achtzig"><use xlink:href="#drei_ecke1" transform="rotate(90)" /><text x="35" y="5">Gießener Straße</text></g>
-  <g id="hst625" transform="translate(435,885)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Theobald-Ziegler-Straße</text></g>
-  <g id="hst626" transform="translate(435,790)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Ronneburgstraße</text></g>
-  <g id="hst631" transform="translate(435,705)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Sigmund-Freud-Straße</text></g>
-  <g id="hst632" transform="translate(435,605)" class="nullzig">
-   <use id="bstg_preungesheim_3" xlink:href="#dreisteig" transform="translate(-15,0) rotate(180)" />
-   <use xlink:href="#drei_mitte" class="nullzig"/>
-   <!--<use xlink:href="#bau" transform="translate(0,0)"/>-->
-   <text x="15" y="5" class="link">Preungesheim</text>
-  </g>
-
-  <g id="hst711" transform="translate(325,1505)" class="neunzig"><use xlink:href="#bstg_dosto" /><text x="12" y="11" class="link">Merianplatz</text></g>
-  <g id="hst712" transform="translate(395,1435)" class="neunzig"><use xlink:href="#bstg_dosto" /><text x="12" y="11" class="link">Höhenstraße</text></g>
-  <g id="hst713" transform="translate(465,1365)" class="neunzig"><use xlink:href="#bstg_dosto" /><text x="12" y="11" class="link">Bornheim Mitte</text></g>
-  <g id="hst714" transform="translate(527.5,1299.5)" class="neunzig"><use xlink:href="#bstg_mitte" transform="rotate(45)" /><text x="20" y="6" class="link">Seckbacher</text><text x="20" y="22" class="link">Landstraße</text></g>
-
-  <g id="hst326" transform="translate(-470,725)" class="achtzig te"><use xlink:href="#bstg_mitte" /><text x="-10" y="5">Heerstraße</text></g>
-  <g id="hst324" transform="translate(-470,825)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5" class="link">Friedhof Westhausen</text></g>
-  <g id="hst323" transform="translate(-470,925)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Stephan-Heise-Straße</text></g>
-  <g id="hst322" transform="translate(-470,1025)" class="achtzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Hausener Weg</text></g>
-  <g id="hst321" transform="translate(-442.5,1109.5)" class="achtzig te"><use xlink:href="#bstg_ausen" transform="rotate(-45)" /><text x="-5.5" y="21.5">Fischstein</text></g>
-  <g id="hst317" transform="translate(-372.5,1179.5)" class="achtzig te"><use xlink:href="#bstg_ausen" transform="rotate(-45)" /><text x="-5.5" y="21.5">Industriehof</text></g>
-  <g id="hst316" transform="translate(-302.5,1249.5)" class="achtzig"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="5.5" y="-5.5" class="link">Kirchplatz</text></g>
-  <g id="hst315" transform="translate(-231,1318)" class="achtzig te"><use xlink:href="#bstg_dosto" transform="scale(1,-1)" /><text x="-12" y="5" class="link">Leipziger Straße</text></g>
-  <g id="hst314" transform="translate(-162.5,1389.5)" class="achtzig te"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="-14.5" y="6.5" class="link">Bockenheimer Warte</text></g>
-  <g id="hst313" transform="translate(-92.5,1459.5)" class="achtzig te"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="-14.5" y="6.5" class="link">Westend</text></g>
-  <g id="hst312" transform="translate(-22.5,1529.5)" class="achtzig te"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="-14.5" y="6.5" class="link">Alte Oper</text></g>
-  <g id="hst311" transform="translate(115,1580) rotate(90)">
-   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(-15,0) rotate(180)" />
-   <use xlink:href="#sbahn" transform="translate(-5,0)" />
-   <use xlink:href="#sbahn" transform="translate(5,0) rotate(180) translate(0,-35)" />
-   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(15,0)" />
-  </g>
-  <g id="hst811" transform="translate(260,1580) rotate(90)">
-   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(-15,0)" />
-   <use xlink:href="#sbahn" transform="translate(5,0)" />
-   <use xlink:href="#sbahn" transform="translate(-5,0) rotate(180) translate(0,-35)" />
-   <use xlink:href="#bahnsteig" class="achtzig" transform="translate(15,0) rotate(180)" />
-  </g>
-  <g id="hst812" transform="translate(424,1570)" class="achtzig te"><use xlink:href="#bahnsteig" transform="translate(0,15) rotate(-90)" /><use xlink:href="#bstg_mitte" transform="rotate(90)" /><text x="0" y="30" class="link">Zoo</text></g>
-  <g id="hst813" transform="translate(507.5,1549.5)" class="achtzig"><use xlink:href="#bstg_mitte" transform="rotate(45)" /><text x="9.5" y="15.5" class="link">Habsburgerallee</text></g>
-  <g id="hst814" transform="translate(577.5,1479.5)" class="achtzig"><use xlink:href="#bstg_mitte" transform="rotate(45)" /><text x="9.5" y="15.5" class="link">Parlamentsplatz</text></g>
-  <g id="hst815" transform="translate(647.5,1409.5)" class="achtzig"><use xlink:href="#bstg_mitte" transform="rotate(45)" /><text x="9.5" y="15.5" class="link">Eissporthalle/Festplatz</text></g>
-  <g id="hst821" transform="translate(766,1363)">
-   <use xlink:href="#einwagen" class="nullzig" transform="translate(-23,-5) rotate(-90)" />
-   <use xlink:href="#einwagen" class="nullzig" transform="translate(-15.5,+5) rotate(+90)" />
-   <use xlink:href="#bstg_ausen" class="achtzig" transform="rotate(90)" />
-   <text x="-25" y="22">Johanna-Tesch-Platz</text>
-  </g>
-  <g id="hst822" transform="translate(828,1284)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Schäfflestraße</text></g>
-  <g id="hst823" transform="translate(828,1184)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Gwinnerstraße</text></g>
-  <g id="hst824" transform="translate(828,1084)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Kruppstraße</text></g>
-  <g id="hst825" transform="translate(828,984)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5" class="link">Hessen-Center</text></g>
-  <g id="hst826" transform="translate(828,884)" class="achtzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Enkheim</text></g>
-  <g id="hst851" transform="translate(541.5,1654.5)" class="achtzig"><use xlink:href="#bstg_mitte" transform="rotate(-45)" /><text x="5.5" y="-5.5" class="link">Ostbahnhof</text></g>
-
-  <g id="hst353" transform="translate(-390,926)" class="achtzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5">Hausen</text></g>
-  <g id="hst351" transform="translate(-390,1041)" class="achtzig"><use xlink:href="#bstg_vers1" /><text x="15" y="5">Große Nelkenstraße</text></g>
-
-  <g id="hst251" transform="translate(-217,1515)" class="achtzig"><use xlink:href="#bstg_mitte" /><text x="10" y="5" class="link">Festhalle/Messe</text></g>
-  <use id="hst411" transform="translate(-161.5,1421.5) rotate(45)" class="achtzig" xlink:href="#bstg_mitte" />
-  <g id="hst424" transform="translate(-88,205)" class="achtzig tm"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="0" y="-15">Uni Campus Riedberg</text></g>
-  <g id="hst425" transform="translate(12,205)" class="achtzig tm"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="0" y="25">Riedberg</text></g>
  </g>
  <g id="laenger" class="strecke">
   <g id="verlaengerung_badhomburg" class="geplant" display="inline" transform="translate(30,0)">
@@ -1156,7 +1357,13 @@
    <path id="gw_badhomburg" class="bb" d="M 485,-75 c 0,-10 10,-10 10,-20" />
    <use id="rampe_gonzenheim" xlink:href="#tunnelrampe" transform="translate(490,50) rotate(180)" />
    <use id="rampe_badhomburg" xlink:href="#tunnelrampe" transform="translate(490,-15)" />
-   <g id="hst657" transform="translate(495,-110)" class="achtzig te"><use xlink:href="#bahnsteig" /><use xlink:href="#bahnsteig" transform="translate(0,-45)" /><text x="-15" y="5">Bad Homburg Bahnhof</text></g>
+   <g id="hst657" transform="translate(495,-110)" class="achtzig te">
+    <use xlink:href="#bahnsteig" />
+    <use xlink:href="#bahnsteig" transform="translate(0,-45)" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Bad_Homburg">
+     <text x="-15" y="5">Bad Homburg Bahnhof</text>
+    </a>
+   </g>
    <text x="475" y="-65" class="te" style="stroke-dasharray:none;" id="verlaengerung_badhomburg_erkl">Geplante Verlängerung, vsl. 2017</text>
   </g>
   <g id="verlaengerung_europaviertel" class="geplant" display="inline" transform="translate(0,30)">
@@ -1185,7 +1392,12 @@
    <path id="gw_frankfurterberg" class="bb" d="M 430,410 c 0,-10 10,-10 10,-20 c 0,-10 -10,-10 -10,-20" />
    <g id="hst633" transform="translate(435,525)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">August-Schanz-Straße</text></g>
    <g id="hst634" transform="translate(435,445)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Berkersheimer Weg</text></g>
-   <g id="hst635" transform="translate(435,355)" class="achtzig"><use xlink:href="#drei_mitte" /><text x="15" y="5">Frankfurter Berg</text></g>
+   <g id="hst635" transform="translate(435,355)" class="achtzig">
+    <use xlink:href="#drei_mitte" />
+    <a xlink:href="http://de.wikipedia.org/wiki/Frankfurter_Berg">
+     <text x="15" y="5">Frankfurter Berg</text>
+    </a>
+   </g>
    <text x="420" y="420" class="te" style="stroke-dasharray:none; " id="frankfurter_berg_erkl">Geplante Verlängerung, vsl. 2017</text>
   </g>
   <g id="ginnheimer_kurve" class="geplant" display="inline" transform="translate(45,0)">
@@ -1198,8 +1410,18 @@
     <path id="ginnheimertunnel_2" class="tunnel" d="M -119,1300 c 0,-8 -1,-8 -1,-16 v -4" />
     <g id="hstginnh_neu" transform="translate(-125, 960)" class="achtzig"><use xlink:href="#bstg_ausen" /></g>
     <g id="hstplatenstr" transform="translate(-125, 1060)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Platenstraße</text></g>
-    <g id="hstbundesban" transform="translate(-125,1160)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Bundesbank</text></g>
-    <g id="hstgrueneburgpark" transform="translate(-125,1260)" class="achtzig"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Grüneburgpark</text></g>
+    <g id="hstbundesban" transform="translate(-125,1160)" class="achtzig">
+     <use xlink:href="#bstg_ausen" />
+     <a xlink:href="http://de.wikipedia.org/wiki/Deutsche_Bundesbank">
+      <text x="-15" y="5">Bundesbank</text>
+     </a>
+    </g>
+    <g id="hstgrueneburgpark" transform="translate(-125,1260)" class="achtzig">
+     <use xlink:href="#bstg_ausen" />
+     <a xlink:href="http://de.wikipedia.org/wiki/Grüneburgpark">
+      <text x="-15" y="5">Grüneburgpark</text>
+     </a>
+    </g>
     <g transform="translate(-140,1114)" id="ginnheimer_kurve_erkl" display="inline"><text y="-6">Vorgeschlagener Lückenschluss</text><text y="6">"Ginnheimer Kurve"</text></g>
    </g>
   </g>
