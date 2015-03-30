@@ -1059,7 +1059,7 @@
    </g>
    <g id="hst613" transform="translate(275,1580)">
     <use xlink:href="#bahnsteig" class="neunzig" transform="translate(-5,0)" />
-    <use xlink:href="#bstg_ausen" class="neunzig" transform="translate(10,0)" />
+    <use xlink:href="#bstg_ausen" class="achtzig" transform="translate(10,0)" />
     <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Konstablerwache">
      <text x="20" y="-20">Konstablerwache</text>
     </a>
