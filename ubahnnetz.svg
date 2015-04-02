@@ -36,9 +36,9 @@
   .faeng { marker-start: url(#prell); }
   .anschluss { marker-end: url(#ArrowDB); }
   .nullzig use, use.nullzig { stroke:#ff0000; fill:url(#bs00); }
-  .funfzig use, use.funfzig { stroke:#8000ff; fill:url(#bs56); }
+  .neunzig use, use.neunzig { stroke:#8000ff; fill:url(#bs56); }
   .achtzig use, use.achtzig { stroke:#00c000; fill:url(#bs80); }
-  .neunzig use, use.neunzig { stroke:#00c0ff; fill:url(#bs87); }
+  .funfzig use, use.funfzig { stroke:#00c0ff; fill:url(#bs87); }
   #sbahn { stroke:#000000; stroke-width:1px; fill:none; }
 
   .uberwerf { fill-opacity:0.40; fill:#ffffff; stroke:none; }
@@ -1042,10 +1042,10 @@
    <g id="hst351" transform="translate(-390,1041)" class="achtzig"><use xlink:href="#bstg_vers1" /><text x="15" y="5">Große Nelkenstraße</text></g>
   </g>
   <g id="hst_b">
-   <g id="hst211" transform="translate(-237,1635)" class="achtzig te">
-    <use class="neunzig" xlink:href="#bahnsteig" transform="translate(25,0) rotate(180)" />
-    <use xlink:href="#bstg_mitte" />
-    <use xlink:href="#bahnsteig" transform="translate(15,0)" />
+   <g id="hst211" transform="translate(-237,1635)" class="te">
+    <use xlink:href="#bahnsteig" class="neunzig" transform="translate(25,0) rotate(180)" />
+    <use xlink:href="#bstg_mitte" class="achtzig" />
+    <use xlink:href="#bahnsteig" class="achtzig" transform="translate(15,0)" />
     <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Hauptbahnhof_(Frankfurt_am_Main)">
     <text x="-10" y="5">Frankfurt Hauptbahnhof</text>
     </a>
