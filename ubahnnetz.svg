@@ -1108,8 +1108,15 @@
    <g id="hst632" transform="translate(435,605)" class="nullzig">
     <use id="bstg_preungesheim_3" xlink:href="#dreisteig" transform="translate(-15,0) rotate(180)" />
     <use xlink:href="#drei_mitte" class="nullzig"/>
-    <!--<use xlink:href="#bau" transform="translate(0,0)"/>-->
+    <use xlink:href="#bau" transform="translate(0,0)"/>
+    <use xlink:href="#bau" transform="translate(-20,0)"/>
+    <use xlink:href="#weg" transform="translate(+5,80)"/>
+    <use xlink:href="#weg" transform="translate(-5,80)"/>
     <text x="15" y="5">Preungesheim</text>
+    <text x="20" y="18" class="ab_bb">Umbau der Station Preungesheim</text>
+    <text x="20" y="28" class="ab_bb">auf 80cm-Bahnsteige</text>
+    <text x="20" y="38" class="ab_bb">voraussichtich 4.7.2015-29.11.2015</text>
+    <text x="20" y="48" class="ab_bb">Verkehr nur bis Sigmund-Freud-Straße</text>
    </g>
 
    <g id="hst711" transform="translate(325,1505)" class="achtzig">
@@ -1233,7 +1240,7 @@
    <g id="hst414" transform="translate(-125,981)" class="te">
     <use xlink:href="#einwagen" class="nullzig" transform="translate(-15,0)" />
     <use xlink:href="#einwagen" class="nullzig" transform="translate(-15,7.5)" />
-    <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" class="funfzig" />
+    <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" class="achtzig" />
     <use xlink:href="#einwagen" transform="translate(5,-15)" class="funfzig" />
     <use xlink:href="#einwagen" transform="translate(15,-7.5) rotate(180)" class="funfzig" />
     <use xlink:href="#weg" transform="translate(10,-12)" />
