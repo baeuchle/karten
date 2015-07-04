@@ -44,7 +44,7 @@
   .nullzig use, use.nullzig { stroke:#ff0000; fill:url(#bs00); }
   .zehnzig use, use.zehnzig { stroke:#0000ff; fill:url(#bs10); }
   .dreizig use, use.dreizig { stroke:#00c000; fill:url(#bs30); }
-  .funfzig use, use.funfzig { stroke:#ffc000; fill:url(#bs56); }
+  .achtzig use, use.achtzig { stroke:#ffc000; fill:url(#bs80); }
   .hschild { stroke:#00c000; stroke-width:1px; fill:#ffff00; }
   .htext { stroke:#00c000; fill:none; }
   .uberwerf { fill-opacity:0.40; fill:#ffffff; stroke:none; }
@@ -112,7 +112,7 @@
   <linearGradient id="bs00" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ff8080" /><stop offset="100%" stop-opacity="100%" stop-color="#ff8080" /></linearGradient>
   <linearGradient id="bs10" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#0080ff" /><stop offset="100%" stop-opacity="100%" stop-color="#0080ff" /></linearGradient>
   <linearGradient id="bs30" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#80c080" /><stop offset="100%" stop-opacity="100%" stop-color="#80c080" /></linearGradient>
-  <linearGradient id="bs56" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ffc000" /><stop offset="100%" stop-opacity="100%" stop-color="#ffc000" /></linearGradient>
+  <linearGradient id="bs80" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ffc000" /><stop offset="100%" stop-opacity="100%" stop-color="#ffc000" /></linearGradient>
   <marker id="Arrow1Lend" refX="0" refY="0" style="overflow:visible" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" /></marker>
   <marker id="Arrow2Lend" refX="0" refY="0" style="overflow:visible" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" transform="scale(-1,-1)" /></marker>
   <marker id="ArrowDB" refX="0" refY="0" style="overflow:visible" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" /><rect x="5" y="-5" width="15" height="10" rx="1" ry="1" style="stroke:red; fill:none;" /></marker>
@@ -283,7 +283,7 @@
     <use xlink:href="#bahnsteig" transform="rotate(90)" /><use xlink:href="#haltestel" transform="rotate(90)"/>
     <text x="35" y="5">Barrierefreier Einstieg von der Straße <tspan class="hstgrtitel">(Wiener Modell)</tspan></text>
    </g>
-   <g class="legende_normal funfzig" transform="translate(15,155)"><use xlink:href="#bahnsteig" transform="rotate(90) translate(0,-7.5) scale(1,2)" /><text x="35" y="5">56 cm (U-Bahnsteig)</text></g>
+   <g class="legende_normal achtzig" transform="translate(15,155)"><use xlink:href="#bahnsteig" transform="rotate(90) translate(0,-7.5) scale(1,2)" /><text x="35" y="5">80 cm (U-Bahnsteig)</text></g>
    <g class="legende_normal        " transform="translate(15,175)"><use xlink:href="#bau" /><text x="35" y="5">im Bau/Umbau</text></g>
    <g class="legende_normal        " transform="translate(15,195)"><use xlink:href="#uml" /><text x="35" y="5">Haltestelle vorübergehend verschoben</text></g>
    <g class="legende_normal" transform="translate(35,235)"><circle class="bstggruppe" r="20" /><use xlink:href="#haltestel" transform="translate(0,-5)" /><use xlink:href="#haltestel" transform="translate(-15,5)" /><text x="15" y="-15">Zusammenhängende Haltepositionen</text><text x="15" y="-3">(gleiche Haltestelle)</text></g>
@@ -589,8 +589,8 @@
   <g id="hstffk" transform="translate(45,-270)"><use xlink:href="#hstl_ausen" /><text x="15" y="5">Frauenfriedenskirche</text></g>
   <g id="hstmkh" transform="translate(45,-310)" class="zehnzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Markus-Krankenhaus</text></g>
   <g id="hstgin" transform="translate(45,-350)">
-   <use id="bstg_ginnheim_3" xlink:href="#bahnsteig" class="funfzig" transform="translate(15,-7.5) rotate(180) scale(1,2)" />
-   <g id="hstgin" class="zehnzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Ginnheim</text></g>
+   <use id="bstg_ginnheim_3" xlink:href="#bahnsteig" class="achtzig" transform="translate(15,-7.5) rotate(180) scale(1,2)" />
+   <g id="hstgin" class="dreizig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Ginnheim</text></g>
   </g>
   <g id="hgrwes" class="tm" transform="translate(-110,-155)">
    <path class="hstgruppe" d="M 0,40 c 40,0 40,-10 40,-40 c 0,-30 0,-50 -20,-50 s -60,40 -60,75 c 0,15 20,15 40,15 " />
