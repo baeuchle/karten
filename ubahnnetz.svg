@@ -416,8 +416,8 @@
   </g>
   <g id="gw_b_strecke">
    <g id="wa_preungesheim" transform="translate(430,640)">
-    <path id="wa_preungesheim_1" d="M 10,30 c 0,-10 -10,-10 -10,-20 c 0,-10 10,-10 10,-20" />
-    <path id="wa_preungesheim_2" class="endet" d="M 0,0 c 0,-10 -10,-10 -10,-20 v -35" />
+    <path id="wa_preungesheim_1" d="M 10,30 c 0,-10 -10,-10 -10,-20 m 0,-10 c 0,-10 10,-10 10,-20" />
+    <path id="wa_preungesheim_2" class="endet" d="M 0,10 c 0,-10 -10,-10 -10,-20 v -45" />
    </g>
    <path id="gw_sigmund_freud_straße" d="M 430,745 c 0,-10 10,-10 10,-20" />
    <path id="gw_hauptfriedhof" d="M 270,1265 c 0,-10 10,-10 10,-20" />
@@ -1105,11 +1105,11 @@
    <g id="hst625" transform="translate(435,885)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Theobald-Ziegler-Straße</text></g>
    <g id="hst626" transform="translate(435,790)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Ronneburgstraße</text></g>
    <g id="hst631" transform="translate(435,705)" class="achtzig"><use xlink:href="#drei_ausen" /><text x="15" y="5">Sigmund-Freud-Straße</text></g>
-   <g id="hst632" transform="translate(435,605)" class="nullzig">
-    <use id="bstg_preungesheim_3" xlink:href="#dreisteig" transform="translate(-15,0) rotate(180)" />
-    <use xlink:href="#drei_mitte" class="nullzig"/>
-    <use xlink:href="#bau" transform="translate(0,0)"/>
-    <use xlink:href="#bau" transform="translate(-20,0)"/>
+   <g id="hst632" transform="translate(435,605)" class="achtzig">
+    <use id="bstg_preungesheim_3" xlink:href="#dreisteig" transform="translate(+5,0)" />
+    <use xlink:href="#drei_mitte" transform="translate(-10,0)" class="nullzig"/>
+    <use xlink:href="#bau" transform="translate(-10,0)"/>
+    <use xlink:href="#bau" transform="translate(+10,0)"/>
     <use xlink:href="#weg" transform="translate(+5,80)"/>
     <use xlink:href="#weg" transform="translate(-5,80)"/>
     <text x="15" y="5">Preungesheim</text>
