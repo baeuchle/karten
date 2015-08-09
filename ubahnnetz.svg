@@ -51,8 +51,8 @@
   .strecke { stroke-width:1px; stroke:#000000; }
   .bb { stroke-width:.7px; stroke:#404040; }
   .tb { stroke-width:1.4px; stroke:#404080; }
-  .strasse { stroke-width:10px; stroke:#c0c0c0; fill:none; }
-  .eigen { stroke-width:10px; stroke:#ffff00; fill:none; }
+  .strasse { stroke-width:10px; stroke:#e0e0e0; fill:none; }
+  .eigen { stroke-width:10px; stroke:#e0e0a0; fill:none; }
   .strecke, .strasse, .ebobahn, .tunnel { fill: none; }
 
   .box { fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:2; }
