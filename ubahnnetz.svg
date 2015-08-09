@@ -301,7 +301,7 @@
    <use xlink:href="#uml" transform="translate(-175,235)" /><text x="-140" y="240">Ersatzhaltestelle</text>
   </g>
   <g id="ausbauprojekte" transform="translate(-815,0)">
-   <rect class="box" width="305" height="320" />
+   <rect class="box" width="305" height="310" />
    <text class="unterschrift" x="15" y="25">Ausbauprojekte</text>
    <text class="script ab_bb" x="20" y="40">Hier oder in entsprechender Stelle der Karte</text>
    <text class="script ab_bb" x="20" y="50">klicken, um die Darstellung zu ändern</text>
@@ -313,14 +313,13 @@
    <text class="ab_bb"      x="20" y="150">Status: Vorbereitende Arbeiten haben begonnen</text>
    <text class="hochstatio" x="10" y="170" onclick="geplant('ginnheimer_kurve')">Ginnheimer Kurve: <tspan class="link" id="ginnheimer_kurve_aktion">verstecken</tspan></text>
    <text class="hochstatio" x="15" y="185" onclick="geplant('ginnheimer_kurve')">Ginnheim → Bockenheimer Warte</text>
-   <text class="ab_bb"      x="20" y="200">Status: Machbarkeitsstudie/Alternativplanung</text>
-   <text class="ab_bb"      x="20" y="210">entlang Rosa-Luxemburg-Straße</text>
-   <text class="hochstatio" x="10" y="230" onclick="geplant('frankfurter_berg')">Frankfurter Berg: <tspan class="link" id="frankfurter_berg_aktion">verstecken</tspan></text>
-   <text class="hochstatio" x="15" y="245" onclick="geplant('frankfurter_berg')">Preungesheim → Frankfurter Berg</text>
-   <text class="ab_bb"      x="20" y="260">Status: Planfeststellung wird vorbereitet</text>
-   <text class="hochstatio" x="10" y="280" onclick="geplant('rtw')">Regionaltangente West: <tspan class="link" id="rtw_aktion">verstecken</tspan></text>
-   <text class="hochstatio" x="15" y="295" onclick="geplant('rtw')">(Eschborn →) Praunheim → Niederursel</text>
-   <text class="ab_bb"      x="20" y="310">Status: Genauer Verlauf wird noch untersucht</text>
+   <text class="ab_bb"      x="20" y="200">Status: Abwägung der <a xlink:href="http://www.stvv.frankfurt.de/parlisobj/B_292_2015_AN_Ergebnisbericht.pdf">Machbarkeitsstudie</a></text>
+   <text class="hochstatio" x="10" y="220" onclick="geplant('frankfurter_berg')">Frankfurter Berg: <tspan class="link" id="frankfurter_berg_aktion">verstecken</tspan></text>
+   <text class="hochstatio" x="15" y="235" onclick="geplant('frankfurter_berg')">Preungesheim → Frankfurter Berg</text>
+   <text class="ab_bb"      x="20" y="250">Status: Planfeststellung wird vorbereitet</text>
+   <text class="hochstatio" x="10" y="270" onclick="geplant('rtw')">Regionaltangente West: <tspan class="link" id="rtw_aktion">verstecken</tspan></text>
+   <text class="hochstatio" x="15" y="285" onclick="geplant('rtw')">(Eschborn →) Praunheim</text>
+   <text class="ab_bb"      x="20" y="300">Status: Genauer Verlauf wird noch untersucht</text>
   </g>
   <g id="kilometrierungen" transform="translate(-120,-169)">
    <rect class="box" width="400" height="160" />
@@ -368,7 +367,7 @@
   <rect id="frankfurter_berg_ersatz" x="260" y="330" width="375" height="260" onclick="geplant('frankfurter_berg')"/>
   <rect id="ginnheimer_kurve_ersatz" x="-180" y="1001" width="130" height="300" onclick="geplant('ginnheimer_kurve')"/>
   <rect id="verlaengerung_europaviertel_ersatz" x="-730" y="1520" width="449" height="85" onclick="geplant('verlaengerung_europaviertel')"/>
-  <path id="rtw_ersatz" d="M -680,625 h 230 v -194 l 200,-200 h 70 v -35 h -155 l -206,206 h -140 z" onclick="geplant('rtw')"/>
+  <path id="rtw_ersatz" d="M -740,625 h 290 v -150 h -290 z" onclick="geplant('rtw')"/>
  </g>
  <g class="ebobahn">
   <text transform="translate(  8.5,1613.5) rotate(-45) translate(-5,5)" class="te">S-Bahn Hbf</text>
@@ -1329,7 +1328,7 @@
      <text x="-15" y="5">Bad Homburg Bahnhof</text>
     </a>
    </g>
-   <text x="445" y="-54" class="te" style="stroke-dasharray:none;" id="verlaengerung_badhomburg_erkl">Geplante Verlängerung, vsl. 2017</text>
+   <text x="445" y="-54" class="te" style="stroke-dasharray:none;" id="verlaengerung_badhomburg_erkl">Geplante Verlängerung, vsl. 2021</text>
   </g>
   <g id="verlaengerung_europaviertel" class="geplant" display="inline" transform="translate(0,30)">
    <path id="gw_europaviertel_2" class="bb tunnel" d="M -620,1550 c 10,0 10,-10 20,-10 c 10,0 10,10 20,10" /> <!-- c 5,0 5,-5 10,-5" />-->
@@ -1361,7 +1360,7 @@
     <use xlink:href="#drei_mitte" />
     <text x="15" y="5">Frankfurter Berg</text>
    </g>
-   <text x="420" y="420" class="te" style="stroke-dasharray:none; " id="frankfurter_berg_erkl">Geplante Verlängerung, vsl. 2017</text>
+   <text x="420" y="420" class="te" style="stroke-dasharray:none; " id="frankfurter_berg_erkl">Geplante Verlängerung, vsl. 2021</text>
   </g>
   <g id="ginnheimer_kurve" class="geplant" display="inline" transform="translate(45,0)">
    <g class="te">
@@ -1385,12 +1384,12 @@
    </g>
   </g>
   <g id="rtw" class="geplant" display="inline" transform="translate(-30,0)">
-   <path id="rtw1" class="anschluss" d="M -181,219 q -18,-18 -42,-18 h -40 q -24,0 -42,18 l -152,152 q -18,18 -18,42 v 112 a 50,50 0,0,1 -50,50 h -20" />
-   <path id="rtw2" d="M -465,625 v -212 q 0,-20 15,-35 c 7,-7 0,-14 7,-21 m 190,-156 c 10,0 10,10 20,10 h 10 q 20,0 35,15" />
+   <path id="rtw1" class="faeng anschluss" d="M -475,485 v 40 a 50,50 0,0,1 -50,50 h -20" />
+   <path id="rtw2" class="endet" d="M -465,625 v -140" />
    <path id="u6_1" class="anschluss" d="M -465,525 a 60,60 0,0,1 -60,60 h -20" />
    <path id="u6_2" d="M -475,525 v 100" />
    <g id="hst327" transform="translate(-470,505)" class="achtzig te"><use xlink:href="#bstg_mitte" /><text x="-10" y="5">Gewerbegebiet Praunheim</text></g>
-   <text x="-480" y="425" class="te" id="rtw_erkl" display="inline">Regionaltangente West</text>
+   <text x="-580" y="584" class="te" id="rtw_erkl" display="inline">Regionaltangente West</text>
   </g>
  </g>
  <g id="kilometrierungen_gruppen">
