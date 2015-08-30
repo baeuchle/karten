@@ -2,19 +2,23 @@
 
 use strict;
 use constant PI => 2*atan2(1,0);
+use Data::Dumper;
 
 BEGIN {
-  do 'landtage.pl';
+  do 'regierungen/landtage.pl';
+  do 'regierungen/karte.pl';
 }
 
 my %colors = &read_colors;
-my %landtage = &landtage;
+my $landtage = &landtage;
+my $spreads = &spread;
+my $positions = &position;
 
 my $gradients = '';
 my $parlaments = '';
 
-for my $land (keys %landtage) {
-  my $current_land = $landtage{$land};
+for my $land (keys %$landtage) {
+  my $current_land = $landtage->{$land};
   print "Land $land\n";
 
   my $regierungssitze = 0;
@@ -22,7 +26,7 @@ for my $land (keys %landtage) {
     $regierungssitze += $current_land->{'sitze'}->{$regierungspartei};
   }
 
-  my $gradienttext = sprintf << 'ENDE', $land, @{$current_land->{'spread'}};
+  my $gradienttext = sprintf << 'ENDE', $land, @{$spreads->{$land}};
   <linearGradient id="%s" spreadMethod="repeat" x1="%s" x2="%s" y1="%s" y2="%s" gradientUnits="userSpaceOnUse">
 ENDE
   my $position = 0;
@@ -40,7 +44,7 @@ ENDE
     $allesitze += $current_land->{'sitze'}->{$partei};
   }
   my $nichtwaehler = 100 - $current_land->{'beteiligung'};
-  my $parlamenttext = sprintf <<'PARL', $land, @{$current_land->{'position'}}, $nichtwaehler * 1.8;
+  my $parlamenttext = sprintf <<'PARL', $land, @{$positions->{$land}}, $nichtwaehler * 1.8;
  <g id="parlament_%s" transform="translate(%d %d)">
   <g transform="scale(%d) rotate(%5.1f)">
    <circle class="parlament" r="1.25" />
@@ -66,7 +70,7 @@ KUCHENENDE
   $parlaments .= $parlamenttext;
 }
 
-open my $source_fh, 'd_regierungen.svg.template';
+open my $source_fh, 'regierungen/d_regierungen.svg.template';
 open my $target_fh, '>', 'd_regierungen.svg';
 while (my $line = <$source_fh>) {
   if ($line =~ /GRADIENTEN/) {
@@ -74,7 +78,6 @@ while (my $line = <$source_fh>) {
   }
   elsif ($line =~ /PARLAMENTE/) {
     $line = $parlaments;
-    print "Parlamente gefunden";
   }
   print $target_fh $line;
 }
@@ -85,7 +88,7 @@ exit 0;
 
 sub read_colors {
   my %colors = ();
-  open my $parteien, 'parteien' or die "Farbdefinitionen für Dateien nicht gefunden";
+  open my $parteien, 'regierungen/parteien' or die "Farbdefinitionen für Dateien nicht gefunden";
   while (my $line = <$parteien>) {
     chomp $line;
     my ($partei, $color) = split /\s+/, $line;
