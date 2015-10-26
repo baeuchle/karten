@@ -40,7 +40,7 @@
   .bb { stroke-width:.7px; stroke:#404040; }
   .endet { marker-end:   url(#prell); }
   .faeng { marker-start: url(#prell); }
-  .mitte { stroke: #404080; stroke-dasharray:2,1; stroke-opacity: 0; }
+  .mitte { stroke: #404080; stroke-dasharray:2,1; }
 
   .nullzig use, use.nullzig { stroke:#ff0000; fill:url(#bs00); }
   .zehnzig use, use.zehnzig { stroke:#0000ff; fill:url(#bs10); }
@@ -160,6 +160,7 @@
    <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  90 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  90 -3000 V 3000" />
   </g>
   <g id="keinU" transform="scale(.7)" class="verbot"><circle r="10" /><text text-anchor="middle" y="4">U</text></g>
+  <g id="bstg_ubahn"><use xlink:href="#bahnsteig" transform="rotate(180) scale(1,2)" class="achtzig" /></g>
   <g id="bstg_mitte"><use xlink:href="#bahnsteig" transform="translate(5,0) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(-5,0)" /></g>
   <g id="bstg_ausen"><use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,0)" /></g>
   <g id="bstg_vers1"><use xlink:href="#bahnsteig" transform="translate(-5,-9) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,9)" /></g>
@@ -305,8 +306,6 @@
   <g id="ausbauprojekte" transform="translate(-505,-425)" style="visibility:hidden">
    <rect class="box" width="200" height="100" />
    <!--<text class="unterschrift" x="20" y="25">Ausbauprojekte</text>
-   <text class="hochstatio" x="20" y="60">Stresemannallee</text>
-   <text class="ab_bb" x="30" y="75">Status: Bauarbeiten haben begonnen,</text>
    <text class="ab_bb" x="30" y="83">Inbetriebnahme 12/2014</text>-->
    <!--<text class="hochstatio" x="20" y="103">Kleyerstraße</text>
    <text class="ab_bb" x="30" y="118">Status: Unbestimmt verschoben</text>-->
@@ -600,8 +599,8 @@
   <g id="hstffk" transform="translate(-149,-266)" class="te"><use xlink:href="#hstl_ausen" /><text x="-15" y="3">Frauenfriedenskirche</text></g>
   <g id="hstmkh" transform="translate(-149,-306)" class="zehnzig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="3">Markus-Krankenhaus</text></g>
   <g id="hstggin" transform="translate(-149,-366)">
-   <use id="bstg_ginnheim_3" xlink:href="#bahnsteig" class="achtzig" transform="translate(15,-7.5) rotate(180) scale(1,2)" />
-   <g id="hstgin_" class="dreizig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Ginnheim</text></g>
+   <use id="bstg_ginnheim_3" xlink:href="#bstg_ubahn" transform="translate(15,-7.5)" />
+   <g id="hstgin_" class="dreizig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Ginnheim</text></g>
   </g>
   <g id="hgrwes" class="tm" transform="translate(-225,-121.5)">
    <path class="hstgruppe" d="M -15,70 c 40,0 40,-10 40,-40 c 0,-30 0,-50 -20,-50 s -60,40 -60,75 c 0,15 20,15 40,15 " />
@@ -747,6 +746,55 @@
    <use xlink:href="#dobs_mitte" />
    <use xlink:href="#dobs_mitte" transform="translate(-20,25)" />
    <text x="15" y="5">Stadion</text>
+  </g>
+  <g id="ringhst">
+   <g id="hstwes_" transform="translate(-86,-331)" class="dreizig"><use xlink:href="#bstg_vers1" transform="rotate(90)"/><text transform="translate(0,-15) rotate(-45)">Europaturm</text></g>
+   <g id="hstbub_" transform="translate(-36,-331)" class="dreizig">
+    <use xlink:href="#bstg_ausen" transform="rotate(90)"/>
+    <g transform="translate(5,-20) rotate(-45)">
+     <text y="-5">Deutsche</text>
+     <text y="+7">Bundesbank</text>
+    </g>
+   </g>
+   <g id="hstplst" transform="translate(  4,-331)" class="dreizig"><use xlink:href="#bstg_ausen" transform="rotate(90)"/><text transform="translate(0,-15) rotate(-45)">Platenstraße</text></g>
+   <g id="hstdor_" transform="translate( 44,-331)" class="dreizig te">
+    <path class="bstggruppe" d="M -10,0 a 25,50 0,0,0 25,50 a 15,35 0,0,0 15,-35 a 25,30 0,0,0 -25,-30 a 15,15 0,0,0 -15,15" />
+    <use xlink:href="#bstg_ausen" transform="rotate(90)"/>
+    <text transform="translate(-5,25) rotate(-45)">Dornbusch</text>
+    <g transform="translate(15,30)">
+    <use xlink:href="#bstg_ubahn" transform="translate(-5,0)" />
+    <use xlink:href="#bstg_ubahn" transform="translate(+5,0) rotate(180)" />
+    </g>
+   </g>
+   <g id="hstkss_" transform="translate( 94,-331)" class="dreizig">
+    <use xlink:href="#bstg_ausen" transform="rotate(90)"/>
+    <g transform="translate(5,-20) rotate(-45)">
+     <text y="-5">Kaiser-Sigmund-</text>
+     <text y="+7">Straße</text>
+    </g>
+   </g>
+   <g id="hsteck_" transform="translate(134,-331)" class="dreizig te">
+    <path class="hstgruppe" d="M 25,-20 a 35,20 0,0,0 0,40 a 45,20 0,0,0 0,-40" />
+    <use xlink:href="#bstg_ausen" transform="rotate(90)"/>
+    <g transform="translate(-5,25) rotate(-45)">
+     <text y="-5">Eckenheimer Landstraße/</text>
+     <text y="+7">Marbachweg</text>
+    </g>
+   </g>
+   <g id="hstmwso" transform="translate(189,-331)" class="dreizig">
+    <use xlink:href="#bstg_ubahn" transform="translate(0,-5) rotate(90)" />
+    <use xlink:href="#bstg_ubahn" transform="translate(0,5) rotate(-90)" />
+    <text class="ab_bb" transform="translate(5,-15) rotate(-45)">Marbachweg/Sozialzentrum</text>
+   </g>
+   <g id="hstgies" transform="translate(239,-331)">
+    <path class="bstggruppe" d="M -20,0 q 0,15 25,15 c 20,0 30,-30 30,-50 a 15,10 0,0,0 -15,-10 c -20,0 -40,25 -40,45" />
+    <path class="hstgruppe" d="M -25,0 a 55,30 0,0,0 55,30 a 20,15 0,0,0 20,-15 c 0,-30 0,-65 -30,-65 c -20,0 -45,25 -45,50" />
+    <use xlink:href="#bstg_ubahn" transform="translate(25,-30)" />
+    <use xlink:href="#bstg_ubahn" transform="translate(0,5) rotate(-90)" />
+    <text class="ab_bb te" transform="translate(-15,25) rotate(-45)">Gießener Straße</text>
+   </g>
+   <g id="hsthoma" transform="translate(272,-319) rotate(-45)" class="dreizig te"><use xlink:href="#bstg_ausen" /><text transform="translate(-15,5)">Homburger Landstraße/Marbachweg</text></g>
+   <g id="hstwetz" transform="translate(300,-291) rotate(-45)" class="dreizig te"><use xlink:href="#bstg_ausen" /><text transform="translate(-15,5)">Wetzlarer Straße</text></g>
   </g>
  </g>
  <g class="strecke bb">
@@ -894,7 +942,7 @@
     <g transform="translate(-140,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>27</text></g>
    </g>
   </g>
-  <g id="verkehrsmuseum" transform="translate(-800,575)">
+  <g id="verkehrsmuseum" transform="translate(-800,575)"> 
    <path id="vmi_01" class="endet" d="M 27,5 h -47" />
    <path id="vmi_02" class="endet" d="M 12,15 q -2,0 -3.5,-1.5 l -2,-2 q -1.5,-1.5 -3.5,-1.5 h -23 " />
    <path id="vmi_03" class="endet" d="M 16.5,13.5 q -1.5,1.5 -3.5,1.5 h -33" />
@@ -934,8 +982,13 @@
   <text transform="translate(195,-50) translate(-5,5)" class="ref te">B</text>
   <path id="friedbergerlandstraße_1" class="endet" d="M 265,-35 v -30 q 0,-4 4,-8 l 149,-149 q 6,-6 6,-14 v -130" />
   <path id="friedbergerlandstraße_2" class="faeng" d="M 414,-366 v 130 q 0,4 -4,8 l -149,149 q -6,6 -6,14 v 30" />
-  <path id="friedbergerlandstraße_m" class="mitte" d="M 260,-35 v -31 q 0,-5 6,-11 l 148,-148 q 5,-5 5,-11 v -130 h 5 v 20 h -10 v -20 " />
-  <!--<path id="ring_m" class="mitte" d="M 379,-190 q 5,-5 5,-11 q 0,-6 -5,-11 l -40,-40" />-->
+  <path id="friedbergerlandstraße_m" class="mitte" d="M 260,-35 v -31 q 0,-5 6,-11 l 148,-148 q 5,-5 5,-11 v -130" />
+  <path id="ring_m" class="mitte" d="M 379,-190 q 5,-5 5,-11 q 0,-6 -5,-11 l -114,-114 q -5,-5 -11,-5 h -388 a 15,15 0,0,0 -15,15" />
+  <path id="astrecke" class="mitte" d="M 59,-356 v 90" />
+  <path id="marbachweg_m" class="mitte" d="M 59,-346 a 15,15 0,0,0 15,15 m 70,0 a 15,15 0,0,0 15,-15" />
+  <path id="preungesheim_eckenheim_m" class="mitte" d="M 159,-346 a 15,15 0,0,0 15,15" />
+  <path id="u5_strecke_m" class="mitte" d="M 159,-306 v -10 a 15,15 0,0,1 15,-15 h 80 a 15,15 0,0,0 15,-15 v -45" />
+  <path id="konsti_eckenheim_m" class="mitte" d="M 159,-316 v -40" />
   <path id="bornheim_1" d="M 255,-65 a 20,20 0,0,0 20,20 h 300 a 10,10 0,0,1 10,10" />
   <path id="bornheim_2" d="M 595,-35 a 20,20 0,0,0 -20,-20 h -300 a 10,10 0,0,1 -10,-10" />
   <path id="eissporthalle_1" d="M 575,-45 h 180 a 10,10 0,0,1 10,10" />
@@ -1002,5 +1055,5 @@
   <circle r="1.5" cx="20" />
   <circle r="1.5" cx="25" />
  </g>
- </g>
+</g>
 </svg>
