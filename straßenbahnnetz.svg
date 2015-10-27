@@ -305,7 +305,7 @@
    <text class="ab_bb" transform="translate(18,275)">Als Bahnsteig zählt jede Fläche, die nicht dem Autoverkehr zur Verfügung steht.</text>
   </g>
   <g id="ausbauprojekte" transform="translate(-505,-425)" style="visibility:visible">
-   <rect class="box" width="200" height="100" />
+   <rect class="box" width="200" height="145" />
    <text class="unterschrift" x="5" y="20">Ausbauprojekte</text>
    <text class="hochstatio" x="5" y="40">Ringstraßenbahn</text>
    <text class="ab_bb" x="10" y="55">Markus-Krankenhaus - Friedberger Warte</text>
@@ -313,6 +313,9 @@
    <text class="ab_bb" x="15" y="75">- A (Dornbusch) und</text>
    <text class="ab_bb" x="15" y="85">- B (Eckenheimer Landstraße / Gießener Straße)</text>
    <text class="ab_bb" x="10" y="95">Status: Abwägung der <a xlink:href="http://www.stvv.frankfurt.de/parlisobj/B_381_2015_AN_Ergebnisbericht.pdf">Machbarkeitsstudie</a></text>
+   <text class="hochstatio" x="5" y="115">Zweites Gleis Rebstöcker Straße</text>
+   <text class="ab_bb" x="10" y="130">Status: Planfeststellung fertig;</text>
+   <text class="ab_bb" x="10" y="140">Baubeginn nicht absehbar</text>
   </g>
   <text transform="translate(770,-115) translate(10,-5)" class="ab_bb">Anschluss Richtung BB Ost (via Johanna-Tesch-Platz)</text>
   <text transform="translate(-350,200)" class="ab_bb te">BB Gutleut</text>
@@ -1085,7 +1088,7 @@
   <path id="stresemannallee_2" d="M -15,495 v -100 c 0,-5, 10,-5, 10,-10 v -25 a 10,10 0,0,1 10,-10" />
   <path id="hippodrom_1" d="M -15,400 v -25" />
   <path id="hippodrom_2" d="M -35,390 h 10 a 20,20 0,0,0 20,-20" />
-  <!--<path id="zweitesgleis_rebstöcker" class="geplant" d="M -282,140 l -55,-55" />-->
+  <path id="zweitesgleis_rebstöcker" class="geplant" d="M -282,140 l -55,-55" />
  <g transform="translate(-174,-64)" id="baeume">
   <circle r="1.5" cx="00" />
   <circle r="1.5" cx="05" />
