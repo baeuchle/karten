@@ -656,9 +656,9 @@
    <use xlink:href="#bstg_ausen" />
    <text x="15" y="5">Zoo</text>
   </g>
-  <g id="hstwss" transform="translate(483.5,90) rotate(45)"><use xlink:href="#hstl_vers1" /><text x="15" y="5" transform="rotate(-45)">Waldschmidtstraße</text></g>
-  <g id="hsthwa" transform="translate(523.5,50) rotate(45)" class="zehnzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5" transform="rotate(-45)">Habsburger-/Wittelsbacherallee</text></g>
-  <g id="hstfgs" transform="translate(563.5,10) rotate(45)" class="zehnzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5" transform="rotate(-45)">Freiligrathstraße</text></g>
+  <g id="hstwss" transform="translate(483.5,89.5) rotate(45)"><use xlink:href="#hstgrid" /><use xlink:href="#hstl_vers1" /><text x="15" y="5" transform="rotate(-45)">Waldschmidtstraße</text></g>
+  <g id="hsthwa" transform="translate(523.5,49.5) rotate(45)" class="zehnzig"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text x="15" y="5" transform="rotate(-45)">Habsburger-/Wittelsbacherallee</text></g>
+  <g id="hstfgs" transform="translate(563.5,9.5) rotate(45)" class="zehnzig"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text x="15" y="5" transform="rotate(-45)">Freiligrathstraße</text></g>
   <g id="hst3700" transform="translate(590,-50)" class="zehnzig">
    <path class="bstggruppe" d="M 10,35 c 5,0 25,-20 25,-45 c 0,-5 -20,-25 -45,-25 c -5,0 -25,20 -25,45 c 0,5 20,25 45,25 z" />
    <use xlink:href="#bahnsteig" transform="translate(-5,-19) rotate(180)" />
@@ -820,7 +820,7 @@
    </g>
    <g id="hstwetz" transform="translate(381,-285)" class="dreizig geplant"><use xlink:href="#hstgrid"/><use xlink:href="#bstg_ausen" /><text transform="translate(15,5) rotate(-45)">Wetzlarer Straße</text></g>
    <path class="strecke bb" d="M 396,-324 l 70,-70 h 20" />
-   <text x="486" Y="-391" class="ab_bb geplant">Ringstraßenbahn</text>
+   <text x="486" y="-391" class="ab_bb geplant">Ringstraßenbahn</text>
   </g>
  </g>
  <g class="strecke bb">
@@ -1036,8 +1036,9 @@
   <path id="batonstraße_2" d="M 370,190 a 20,20 0,0,0 -20,-20 h -75 a 10,10 0,0,1 -10,-10" />
   <path id="allerheiligentor_1" d="M 350,180 h 130" />
   <path id="allerheiligentor_2" d="M 480,170 h -130" />
-  <path id="zoo_1" d="M 450,180 a 20,20 0,0,0 20,-20 v -46 q 0,-4 4,-8 l 115,-115 q 6,-6 6,-14 v -12 a 10,10 0,0,1 10,-10" />
-  <path id="zoo_2" d="M 605,-55 a 20,20 0,0,0 -20,20 v 12 q 0,4 -4,8 l -115,115 q -6,6 -6,14 v 46 a 10,10 0,0,1 -10,10" />
+  <path id="zoo_1" d="M 450,180 a 20,20 0,0,0 20,-20 v -46 q 0,-4 3,-7 l 116,-116 q 6,-6 6,-14 v -12 a 10,10 0,0,1 10,-10" />
+  <path id="zoo_2" d="M 605,-55 a 20,20 0,0,0 -20,20 v 12 q 0,4 -3,7 l -116,116 q -6,6 -6,14 v 46 a 10,10 0,0,1 -10,10" />
+  <path id="zoo_m" class="mitte bb" d="M 450,175 a 15,15 0,0,0 15,-15 v -46 h 5 -5 q 0,-6 4.5,-10.5 l 3.5,3.5 -3.5,-3.5 l 116,-116 l 3.5,3.5 -3.5,-3.5 q 4.5,-4.5 4.5,-10.5 h 5 -5 v -12 h 5 -5 a 15,15 0,0,1 15,-15" />
   <path id="inheidenerstraße" d="M 595,-35 v -85 a 15,15 0,1,0 -30,0 a 10,10 0,0,0 10,10 a 10,10 0,0,1 10,10 v 65" />
   <path id="ostbahnhof_1" d="M 460,160 a 20,20 0,0,0 20,20 h 305" />
   <path id="ostbahnhof_2" d="M 785,170 h -305 a 10,10 0,0,1 -10,-10" />
