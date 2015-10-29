@@ -41,7 +41,6 @@
   .endet { marker-end:   url(#prell); }
   .faeng { marker-start: url(#prell); }
   .mitte { stroke: #404080; stroke-dasharray:2,1; stroke-width:.7px; }
-  .hilfslinie { stroke-opacity:0; }
   .ubahn { stroke: #0000c0; stroke-width:1; }
 
   .nullzig use, use.nullzig { stroke:#ff0000; fill:url(#bs00); }
@@ -108,15 +107,19 @@
 
   .ausbau_kleyer { visibility:hidden; }
   .ausbau_ring { visibility:hidden; }
+  .hilfslinie { visibility:hidden; }
  ]]>
  </style>
  <script type="application/ecmascript"><![CDATA[
    function geplant(name) {
+     var linkElement = document.getElementById(name + "_aktion");
+     var aktion = linkElement.firstChild.data == "anzeigen";
      var allStyledElements = document.getElementsByClassName(name);
      for (var i = 0; i < allStyledElements.length; ++i) {
        var classedElement = allStyledElements[i];
-       classedElement.style.visibility = classedElement.style.visibility == 'visible' ? 'hidden' : 'visible';
+       classedElement.style.visibility = aktion ? 'visible' : 'hidden';
      }
+     linkElement.firstChild.data = aktion ? 'verstecken' : 'anzeigen';
    }
  ]]>
  </script>
@@ -284,6 +287,8 @@
   </g>
   <g id="legende_bahnsteige" transform="translate(-865,-425)">
    <rect class="box" width="360" height="285" />
+   <rect fill="#fff" stroke="none" width="5" height="5" x="1" y="1" onclick="geplant('hilfslinie')"/>
+   <text visibility="hidden" id="hilfslinie_aktion">anzeigen</text>
    <text x="15" y="20" style="font-weight:bold;">Bahnsteige/Haltestellen</text>
    <text class="hstgrtitel" x="33" y="40">↓ Symbol für Doppel- oder lange Haltestelle</text>
    <g class="legende_normal" transform="translate(15,55)">
@@ -315,17 +320,18 @@
    <text class="ab_bb" transform="translate(18,275)">Als Bahnsteig zählt jede Fläche, die nicht dem Autoverkehr zur Verfügung steht.</text>
   </g>
   <g id="ausbauprojekte" transform="translate(-505,-425)" style="visibility:visible">
-   <rect class="box" width="200" height="145" />
+   <rect class="box" width="200" height="155" />
    <text class="unterschrift" x="5" y="20">Ausbauprojekte</text>
-   <text class="hochstatio" x="5" y="40" onclick="geplant('ausbau_ring')">Ringstraßenbahn</text>
+   <text class="hochstatio" x="5" y="40" onclick="geplant('ausbau_ring')">Ringstraßenbahn <tspan class="link" id="ausbau_ring_aktion">anzeigen</tspan></text>
    <text class="ab_bb" x="10" y="55">Markus-Krankenhaus - Friedberger Warte</text>
    <text class="ab_bb" x="10" y="65">mit Anschluss an Stadtbahnstrecken</text>
    <text class="ab_bb" x="15" y="75">- A (Dornbusch) und</text>
    <text class="ab_bb" x="15" y="85">- B (Eckenheimer Landstraße / Gießener Straße)</text>
-   <text class="ab_bb" x="10" y="95">Status: Abwägung der <a xlink:href="http://www.stvv.frankfurt.de/parlisobj/B_381_2015_AN_Ergebnisbericht.pdf">Machbarkeitsstudie</a></text>
-   <text class="hochstatio" x="5" y="115" onclick="geplant('ausbau_kleyer')">Zweites Gleis Rebstöcker Straße</text>
-   <text class="ab_bb" x="10" y="130">Status: Planfeststellung fertig;</text>
-   <text class="ab_bb" x="10" y="140">Baubeginn nicht absehbar</text>
+   <text class="ab_bb" x="10" y="95">Status: Abwägung der <a xlink:href="http://www.stvv.frankfurt.de/parlisobj/B_381_2015_AN_Machbarkeitsstudie.pdf">Machbarkeitsstudie</a></text>
+   <text class="hochstatio" x="5" y="115" onclick="geplant('ausbau_kleyer')">Rebstöcker Straße <tspan class="link" id="ausbau_kleyer_aktion">anzeigen</tspan></text>
+   <text class="ab_bb" x="10" y="130">Zweigleisiger Ausbau</text>
+   <text class="ab_bb" x="10" y="140">Status: Planfeststellung fertig;</text>
+   <text class="ab_bb" x="10" y="150">Baubeginn nicht absehbar</text>
   </g>
   <text transform="translate(770,-115) translate(10,-5)" class="ab_bb">Anschluss Richtung BB Ost (via Johanna-Tesch-Platz)</text>
   <text transform="translate(-350,200)" class="ab_bb te">BB Gutleut</text>
@@ -1052,10 +1058,10 @@
    <path id="u5_strecke_m" class="ubahn mitte hilfslinie" d="M 191,-310 v -10 a 15,15 0,0,1 15,-15 h 120 a 15,15 0,0,0 15,-15 v -45" />
    <path id="u5_strecke_1" class="ubahn ubergabe zugabe" d="M 196,-310 v -10 a 10,10 0,0,1 10,-10 h 120 a 20,20 0,0,0 20,-20 v -45" />
    <path id="u5_strecke_2" class="ubahn ubergabe zugabe" d="M 336,-395 v 45 a 10,10 0,0,1 -10,10 h -120 a 20,20 0,0,0 -20,20 v 10" />
+   <path id="ring_m" class="mitte hilfslinie" d="M 376.5,-187.5 l -3.5,-3.5 3.5,3.5 q 4.5,-4.5 4.5,-10.5 v -122 a 15,15 0,0,0 -15,-15 v 5 -5 h -499 a 15,15 0,0,0 -15,15 h 5,-10,5" />
+   <path id="ring_1" class="geplant" d="M 380,-184 q 6,-6 6,-14 v -122 a 20,20 0,0,0 -20,-20 h -499 a 20,20 0,0,0 -20,20" />
+   <path id="ring_2" class="geplant" d="M -143,-320 a 10,10 0,0,1 10,-10 h 499 a 10,10 0,0,1 10,10 v 122 q 0,4 -3,7" />
   </g>
-  <path id="ring_m" class="ausbau_ring mitte hilfslinie" d="M 376.5,-187.5 l -3.5,-3.5 3.5,3.5 q 4.5,-4.5 4.5,-10.5 v -122 a 15,15 0,0,0 -15,-15 v 5 -5 h -499 a 15,15 0,0,0 -15,15 h 5,-10,5" />
-  <path id="ring_1" class="ausbau_ring geplant" d="M 380,-184 q 6,-6 6,-14 v -122 a 20,20 0,0,0 -20,-20 h -499 a 20,20 0,0,0 -20,20" />
-  <path id="ring_2" class="ausbau_ring geplant" d="M -143,-320 a 10,10 0,0,1 10,-10 h 499 a 10,10 0,0,1 10,10 v 122 q 0,4 -3,7" />
   <path id="bornheim_1" d="M 255,-65 a 20,20 0,0,0 20,20 h 300 a 10,10 0,0,1 10,10" />
   <path id="bornheim_2" d="M 595,-35 a 20,20 0,0,0 -20,-20 h -300 a 10,10 0,0,1 -10,-10" />
   <path id="eissporthalle_1" d="M 575,-45 h 180 a 10,10 0,0,1 10,10" />
