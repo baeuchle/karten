@@ -55,8 +55,6 @@
   .doppelstrich rect { fill:white; stroke:none; }
   .doppelstrich path { fill:none; stroke:black; stroke-width:.5px; }
 
-  .ausbau_kleyer { opacity:0; }
-
   .geplant { stroke-dasharray: 3,1; }
   .verbot circle, path.verbot { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; }
   .verbot text { stroke:black; fill:black; text-anchor:middle; font-size:8pt; }
@@ -70,20 +68,16 @@
   .geplant text { stroke:none; fill:black; font-style:italic; }
   .geplant text:before { content: "("; }
   .geplant text:after { content: ")"; }
-  .bbumrandung { fill:#fff; fill-opacity:1; stroke:#000; stroke-width:2px; }
   .klicken { fill:#fff; stroke:none; }
 
   .te { text-anchor:end; }
   .tm { text-anchor:middle; }
 
-  .gleisnummer rect { fill:white; fill-opacity:.7; stroke:black; stroke-width:.3; }
-  .gleisnummer text, .beschrift text { fill:black; stroke:none; font-size:3pt; text-anchor:middle; }
+  .beschrift text { fill:black; stroke:none; font-size:3pt; text-anchor:middle; }
   .bgleisnummer circle { fill:white; fill-opacity:.8; stroke:black; stroke-width:.3; }
   .bgleisnummer text { fill:black; stroke:none; font-size:4pt; text-anchor:middle; }
   .wand { stroke:#93799a; stroke-width:.2; }
-  .tor { stroke:black; stroke-width:.3; marker-end:url(#prell); marker-start: url(#prell); }
   .gebaude { fill:#beadad; fill-opacity:.5; }
-  .keinewand { stroke:none; }
   .beschrift path, .beschrift circle, .beschrift rect { fill:none; stroke:#93799a; stroke-width:.5; }
 
   .bstggruppe { stroke:yellow; stroke-width:4pt; stroke-dasharray:2 1; fill:none; }
@@ -111,8 +105,21 @@
   #gras       path { stroke:#a0ffa0; stroke-width:1; fill:none; }
   #kies     circle { stroke:black; stroke-width:.1; fill:#f0d0a0; }
   #pflaster   path { stroke:black; stroke-width:.1; fill:#bfa0a8; fill-opacity:.5; stroke-opacity: .5; }
+
+  .ausbau_kleyer { visibility:hidden; }
+  .ausbau_ring { visibility:hidden; }
  ]]>
  </style>
+ <script type="application/ecmascript"><![CDATA[
+   function geplant(name) {
+     var allStyledElements = document.getElementsByClassName(name);
+     for (var i = 0; i < allStyledElements.length; ++i) {
+       var classedElement = allStyledElements[i];
+       classedElement.style.visibility = classedElement.style.visibility == 'visible' ? 'hidden' : 'visible';
+     }
+   }
+ ]]>
+ </script>
  <defs>
   <linearGradient id="bs00" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ff8080" /><stop offset="100%" stop-opacity="100%" stop-color="#ff8080" /></linearGradient>
   <linearGradient id="bs10" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#0080ff" /><stop offset="100%" stop-opacity="100%" stop-color="#0080ff" /></linearGradient>
@@ -310,13 +317,13 @@
   <g id="ausbauprojekte" transform="translate(-505,-425)" style="visibility:visible">
    <rect class="box" width="200" height="145" />
    <text class="unterschrift" x="5" y="20">Ausbauprojekte</text>
-   <text class="hochstatio" x="5" y="40">Ringstraßenbahn</text>
+   <text class="hochstatio" x="5" y="40" onclick="geplant('ausbau_ring')">Ringstraßenbahn</text>
    <text class="ab_bb" x="10" y="55">Markus-Krankenhaus - Friedberger Warte</text>
    <text class="ab_bb" x="10" y="65">mit Anschluss an Stadtbahnstrecken</text>
    <text class="ab_bb" x="15" y="75">- A (Dornbusch) und</text>
    <text class="ab_bb" x="15" y="85">- B (Eckenheimer Landstraße / Gießener Straße)</text>
    <text class="ab_bb" x="10" y="95">Status: Abwägung der <a xlink:href="http://www.stvv.frankfurt.de/parlisobj/B_381_2015_AN_Ergebnisbericht.pdf">Machbarkeitsstudie</a></text>
-   <text class="hochstatio" x="5" y="115">Zweites Gleis Rebstöcker Straße</text>
+   <text class="hochstatio" x="5" y="115" onclick="geplant('ausbau_kleyer')">Zweites Gleis Rebstöcker Straße</text>
    <text class="ab_bb" x="10" y="130">Status: Planfeststellung fertig;</text>
    <text class="ab_bb" x="10" y="140">Baubeginn nicht absehbar</text>
   </g>
@@ -348,7 +355,7 @@
    <path id="innenstadt_9" d="M 290,180 v -5 h 20 v -5 h 70 a 20,20 0,0,0 -20,20 a 10,10 0,0,0 -10,-10 z" />
    <path id="bubisbruecke" d="M 360,280 h 5 v 10 h -5 z" />
    <path id="zoo_2" d="M 460,155 h 10 v -5 h -10 z" />
-   <path id="zoo_4" d="M 460,114 h 10 q 0,-4 4,-8 l 2,-2 l -3.5,-3.5 l -3,3 l -3.5,-3.5 q -6,6 -6,14 -z" />
+   <path id="zoo_4" d="M 460,114 h 10 q 0,-4 4,-8 l 2,-2 l -3.5,-3.5 l -3,3 l -3.5,-3.5 q -6,6 -6,14 z" />
    <path id="zoo_6" d="M 481,99 l 25,-25 l -7,-7 l -25,25 z" />
    <path id="bornheim_2" d="M 307,-45 h 103 v -10 h -83 v 5 h -20 z"/>
    <path id="bornheim_4" d="M 465,-45 h 50 v -5 h 10 v -5 h -40 v 5 h -20 z"/>
@@ -774,7 +781,7 @@
    <use xlink:href="#dobs_mitte" transform="translate(-20,25)" />
    <text x="15" y="5">Stadion</text>
   </g>
-  <g id="ringhst">
+  <g class="ausbau_ring">
    <g id="hstwes_" transform="translate(-94,-335)" class="dreizig geplant"><use xlink:href="#bstg_vers1" transform="rotate(90)"/><text transform="translate(0,-15) rotate(-45)">Europaturm</text></g>
    <g id="hstbub_" transform="translate(-44,-335)" class="dreizig geplant">
     <use xlink:href="#bstg_ausen" transform="rotate(90)"/>
@@ -1028,25 +1035,27 @@
   <path id="friedbergerlandstraße_1" class="endet" d="M 265,-35 v -30 q 0,-4 3,-7 l 245,-245" />
   <path id="friedbergerlandstraße_2" class="faeng" d="M 506,-324 l -245,245 q -6,6 -6,14 v 30" />
   <path id="friedbergerlandstraße_n" class="mitte hilfslinie"    d="M 260,-35 v -30 q 0,-6 4.5,-10.5 l 3.5,3.5 -7,-7 3.5,3.5 l 245,-245" />
-  <path id="marbachweg_m" class="mitte hilfslinie" d="M 51,-350 a 15,15 0,0,0 15,15 v 5,-5 h 10 v 5,-5 h 90 v 5,-5 h 10 v 5,-5 a 15,15 0,0,0 15,-15" />
-  <path id="marbachweg_1a" class="bb" d="M 46,-350 a 20,20 0,0,0 20,20 c 5,0 5,-10 10,-10" />
-  <path id="marbachweg_1b" class="bb" d="M 166,-340 c 5,0 5,10 10,10 a 20,20 0,0,0 20,-20" />
-  <path id="marbachweg_2" class="bb" d="M 186,-350 a 10,10 0,0,1 -10,10 h -110 a 10,10 0,0,1 -10,-10" />
-  <path id="astrecke_m" class="ubahn mitte hilfslinie" d="M 51,-360 v 90" />
-  <path id="astrecke_1" class="ubahn zugabe ubergabe" d="M 46,-360 v 90" />
-  <path id="astrecke_2" class="ubahn zugabe ubergabe" d="M 56,-270 v -90" />
-  <path id="eckenheim_preungesheim_m" class="mitte hilfslinie" d="M 191,-350 a 15,15 0,0,0 15,15" />
-  <path id="eckenheim_preungesheim_1" class="bb" d="M 186,-350 a 20,20 0,0,0 20,20" />
-  <path id="eckenheim_preungesheim_2" class="bb" d="M 206,-340 a 10,10 0,0,1 -10,-10" />
-  <path id="konsti_eckenheim_m" class="mitte hilfslinie" d="M 191,-320 v -40" />
-  <path id="konsti_eckenheim_1" class="bb ubergabe" d="M 196,-320 v -40" />
-  <path id="konsti_eckenheim_2" class="bb zugabe" d="M 186,-360 v 40" />
-  <path id="u5_strecke_m" class="ubahn mitte hilfslinie" d="M 191,-310 v -10 a 15,15 0,0,1 15,-15 h 120 a 15,15 0,0,0 15,-15 v -45" />
-  <path id="u5_strecke_1" class="ubahn ubergabe zugabe" d="M 196,-310 v -10 a 10,10 0,0,1 10,-10 h 120 a 20,20 0,0,0 20,-20 v -45" />
-  <path id="u5_strecke_2" class="ubahn ubergabe zugabe" d="M 336,-395 v 45 a 10,10 0,0,1 -10,10 h -120 a 20,20 0,0,0 -20,20 v 10" />
-  <path id="ring_m" class="mitte hilfslinie" d="M 376.5,-187.5 l -3.5,-3.5 3.5,3.5 q 4.5,-4.5 4.5,-10.5 v -122 a 15,15 0,0,0 -15,-15 v 5 -5 h -499 a 15,15 0,0,0 -15,15 h 5,-10,5" />
-  <path id="ring_1" class="geplant" d="M 380,-184 q 6,-6 6,-14 v -122 a 20,20 0,0,0 -20,-20 h -499 a 20,20 0,0,0 -20,20" />
-  <path id="ring_2" class="geplant" d="M -143,-320 a 10,10 0,0,1 10,-10 h 499 a 10,10 0,0,1 10,10 v 122 q 0,4 -3,7" />
+  <g class="ausbau_ring">
+   <path id="marbachweg_m" class="mitte hilfslinie" d="M 51,-350 a 15,15 0,0,0 15,15 v 5,-5 h 10 v 5,-5 h 90 v 5,-5 h 10 v 5,-5 a 15,15 0,0,0 15,-15" />
+   <path id="marbachweg_1a" class="bb" d="M 46,-350 a 20,20 0,0,0 20,20 c 5,0 5,-10 10,-10" />
+   <path id="marbachweg_1b" class="bb" d="M 166,-340 c 5,0 5,10 10,10 a 20,20 0,0,0 20,-20" />
+   <path id="marbachweg_2" class="bb" d="M 186,-350 a 10,10 0,0,1 -10,10 h -110 a 10,10 0,0,1 -10,-10" />
+   <path id="astrecke_m" class="ubahn mitte hilfslinie" d="M 51,-360 v 90" />
+   <path id="astrecke_1" class="ubahn zugabe ubergabe" d="M 46,-360 v 90" />
+   <path id="astrecke_2" class="ubahn zugabe ubergabe" d="M 56,-270 v -90" />
+   <path id="eckenheim_preungesheim_m" class="mitte hilfslinie" d="M 191,-350 a 15,15 0,0,0 15,15" />
+   <path id="eckenheim_preungesheim_1" class="bb" d="M 186,-350 a 20,20 0,0,0 20,20" />
+   <path id="eckenheim_preungesheim_2" class="bb" d="M 206,-340 a 10,10 0,0,1 -10,-10" />
+   <path id="konsti_eckenheim_m" class="mitte hilfslinie" d="M 191,-320 v -40" />
+   <path id="konsti_eckenheim_1" class="bb ubergabe" d="M 196,-320 v -40" />
+   <path id="konsti_eckenheim_2" class="bb zugabe" d="M 186,-360 v 40" />
+   <path id="u5_strecke_m" class="ubahn mitte hilfslinie" d="M 191,-310 v -10 a 15,15 0,0,1 15,-15 h 120 a 15,15 0,0,0 15,-15 v -45" />
+   <path id="u5_strecke_1" class="ubahn ubergabe zugabe" d="M 196,-310 v -10 a 10,10 0,0,1 10,-10 h 120 a 20,20 0,0,0 20,-20 v -45" />
+   <path id="u5_strecke_2" class="ubahn ubergabe zugabe" d="M 336,-395 v 45 a 10,10 0,0,1 -10,10 h -120 a 20,20 0,0,0 -20,20 v 10" />
+  </g>
+  <path id="ring_m" class="ausbau_ring mitte hilfslinie" d="M 376.5,-187.5 l -3.5,-3.5 3.5,3.5 q 4.5,-4.5 4.5,-10.5 v -122 a 15,15 0,0,0 -15,-15 v 5 -5 h -499 a 15,15 0,0,0 -15,15 h 5,-10,5" />
+  <path id="ring_1" class="ausbau_ring geplant" d="M 380,-184 q 6,-6 6,-14 v -122 a 20,20 0,0,0 -20,-20 h -499 a 20,20 0,0,0 -20,20" />
+  <path id="ring_2" class="ausbau_ring geplant" d="M -143,-320 a 10,10 0,0,1 10,-10 h 499 a 10,10 0,0,1 10,10 v 122 q 0,4 -3,7" />
   <path id="bornheim_1" d="M 255,-65 a 20,20 0,0,0 20,20 h 300 a 10,10 0,0,1 10,10" />
   <path id="bornheim_2" d="M 595,-35 a 20,20 0,0,0 -20,-20 h -300 a 10,10 0,0,1 -10,-10" />
   <path id="eissporthalle_1" d="M 575,-45 h 180 a 10,10 0,0,1 10,10" />
@@ -1098,7 +1107,7 @@
   <path id="kleyerstraße_m" class="mitte hilfslinie" d="M -195,75 v 5,-5 q -6,0 -10.5,4.5 l 3.5,3.5 -3.5,-3.5 l -66,66 l 3.5,3.5 -3.5,-3.5 q -4.5,4.5 -10.5,4.5 a 15,15 0,0,1 -15,-15 h 5,-5 v -45 a 15,15 0,0,1 15,-15" />
   <path id="kleyerstraße_1" d="M -195,70 q -8,0 -14,6 l -66,66 q -4,3 -7,3 a 10,10 0,0,1 -10,-10 v -45 a 10,10 0,0,1 10,-10" />
   <path id="kleyerstraße_2" d="M -292,125 c 0,5 -10,5 -10,10 a 20,20 0,0,0 20,20 q 8,0 14,-6 l 66,-66 q 4,-3 7,-3" />
-  <path id="zweitesgleis_rebstöcker" class="geplant" d="M -302,90 v 45" />
+  <path id="zweitesgleis_rebstöcker" class="ausbau_kleyer geplant" d="M -302,90 v 45" />
   <path id="höchst" d="M -292,90 a 20,20 0,0,0 -20,-20 h -525 a 20,20 0,0,0 0,40
                        h 30 a 20,20 0,0,0 20,-20 a 10,10 0,0,1 10,-10 h 465 a 10,10 0,0,1 10,10 c 0,5 10,5 10,10" />
   <path id="höchst_m" class="mitte hilfslinie" d="M -297,90 a 15,15 0,0,0 -15,-15 h -525 a 15,15 0,0,0 0,30 h 30 a 15,15 0,0,0 15,-15 a 15,15 0,0,1 15,-15" />
