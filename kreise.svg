@@ -1,5 +1,14 @@
-<svg>
-  <g transform="scale(4,4)">
+<svg
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="800px"
+  height="800px"
+  viewBox="-50 -50 100 100"
+  > 
+  <g style="stroke:black; fill:none; ">
+   <path stroke="#f00" style="stroke-width:.25; stroke-opacity:.5" d="M 0,25 a 25,25 0,0,0 0,-50" />
+   <path stroke="#f00" style="stroke-width:.25; stroke-opacity:.5" d="M 0,20 a 20,20 0,0,0 0,-40" />
    <path               style="stroke-width:.25; stroke-opacity:.5" d="M 0,25 q 10.0,0 17.5,-7.5 l 7,7 -14,-14 7,7 q 7.5,-7.5 7.5,-17.5 h -10 20 -10 q 0,-10.0 -7.5,-17.5 l 7,-7 -14,14 7,-7 q -7.5,-7.5 -17.5,-7.5" />
    <path               style="stroke-width:.25; stroke-opacity:.5" d="M 0,20 q  8.0,0 14.0,-6.0 l 7,7 -14,-14 7,7 q 6.0,-6.0 6.0,-14.0 h -10 20 -10 q 0, -8.0 -6.0,-14.0 l 7,-7 -14,14 7,-7 q -6.0,-6.0 -14.0,-6.0" />
    <path               style="stroke-width:.25; stroke-opacity:.5" d="M 0,15 q  6.0,0 10.5,-4.5 l 7,7 -14,-14 7,7 q 4.5,-4.5 4.5,-10.5 h -10 20 -10 q 0, -6.0 -4.5,-10.5 l 7,-7 -14,14 7,-7 q -4.5,-4.5 -10.5,-4.5" />
