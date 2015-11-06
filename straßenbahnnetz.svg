@@ -42,6 +42,7 @@
   .faeng { marker-start: url(#prell); }
   .mitte { stroke: #404080; stroke-dasharray:2,1; stroke-width:.7px; }
   .ubahn { stroke: #0000c0; stroke-width:1; }
+  .drehscheibe { fill:white; }
 
   .nullzig use, use.nullzig { stroke:#ff0000; fill:url(#bs00); }
   .zehnzig use, use.zehnzig { stroke:#0000ff; fill:url(#bs10); }
@@ -913,25 +914,21 @@
   <path id="wa_stadion_7" d="M -247,667 c 0,5 -10,5 -10,10" />
  </g>
  <g id="betriebshöfe" class="strecke bb">
-  <g id="gleiswerkstätten_riederhöfe" transform="translate(-135,190)" >
-   <path id="gwr_1" d="M 810,-10 a 15,15 0,0,0 15,-15 v -15 a 5,5 0,0,1 5,-5 h 35 c 5,0 5,5 10,5" />
-   <path id="gwr_2" d="M 825,-30 a 10,10 0,0,1 -10,10" />
-   <path id="gwr_3" d="M 830,-45 c 5,0 5,5 10,5 h 35 a 20,20 0,0,0 0,-40 h -35 a 15,15 0,0,0 -15,15 v 25" />
-   <path id="gwr_4" class="endet" d="M 838,-45 q 2,0 3.5,-1.5 l 22,-22 q 1.5,-1.5 3.5,-1.5 h 18" />
-   <path id="gwr_5" class="endet" d="M 853.5,-58.5 q 1.5,-1.5 3.5,-1.5 h 28" />
-   <path id="gwr_6" class="endet" d="M 858.5,-63.5 q 1.5,-1.5 3.5,-1.5 h 23" />
-   <path id="gwr_7" class="endet" d="M 855,-45 c 5,0 5,-5 10,-5 h 20" />
-   <path id="gwr_8" class="endet" d="M 845,-45 c 10,0 10,-10 20,-10 h 20" />
-   <path id="gwr_9" class="endet" d="M 895,-60 a 25,25 0,0,1 -25,25 h -35" />
-   <path id="gwr_a" d="M 845,-35 c 5,0 5,5 10,5 h 5 c 5,0 5,-5 10,-5" />
-   <path id="gwr_b" class="endet" d="M 840,-80 c 5,0 5,5 10,5 h 15 c 5,0 5,-5 10,-5 h 20" />
-   <path id="gwr_d" class="faeng anschluss" d="M 825,-85 h 95 c 5,0 5,5 10,5 h 20" />
-   <path id="gwr_e" class="faeng" d="M 915,-80 h 15" />
-   <path id="gwr_f" d="M 885,-80 c 5,0 5,-5 10,-5" />
-   <path id="gwr_g" class="anschluss" d="M 858,-85 q 2,0 3.5,-1.5 l 10,-10" />
-   <rect id="brücke_riederhof" class="uberwerf" width="15" height="10" x="897.5" y="-90" />
+  <g id="zgw" transform="translate(-135,190)" >
+   <path id="zgw_1" d="M 810,-10 a 15,15 0,0,0 15,-15 v -15 a 5,5 0,0,1 5,-5 h 40 a 15,15 0,0,0 0,-30 h -30 a 15,15 0,0,0 -15,15 v 20" />
+   <path id="zgw_2" d="M 825,-30 a 10,10 0,0,1 -10,10" />
+   <path id="zgw_3" class="endet" d="M 838,-45 q 2,0 3.5,-1.5 l 2,-2 q 1.5,-1.5 3.5,-1.5 h 16" />
+   <path id="zgw_4" class="faeng" d="M 830,-40 h 30" />
+   <path id="zgw_5" d="M 835,-40 c 5,0 5,5 10,5 h 5 c 5,0 5,-5 10,-5 c 5,0 5,-5 10,-5" />
+   <path id="zgw_6" class="endet" d="M 840,-75 c 5,0 5,5 10,5 h 5 c 5,0 5,-5 10,-5 c 5,0 5,-5 10,-5 h 20" />
+   <path id="zgw_7" class="endet" d="M 875,-80 c 5,0 5,5 10,5 h 10" />
+   <path id="zgw_8" class="endet" d="M 890,-75 v 10" />
+   <path id="zgw_9" class="endet" d="M 850,-70 q 2,0 3.5,1.5 l 7,7 q 1.5,1.5 3.5,1.5 h 12" />
+   <path id="zgw_a" class="endet" d="M 855.5,-66.5 q 1.5,1.5 3.5,1.5 h 17" />
+   <circle class="drehscheibe" cx="890" cy="-75" r="2" />
+   <path id="zgw_drehscheibe" transform="translate(890,-75) rotate(-45)" d="M 0,0 h -2 h 4" />
    <use xlink:href="#weg" transform="translate(825,-40)" />
-   <use xlink:href="#bau" transform="translate(855,-60)" />
+   <use xlink:href="#bau" transform="translate(850,-60)" />
   </g>
   <g id="bb_gutleut" transform="translate(-250,205)">
    <path id="gut_gw" d="M 20,5 c -5,0 -5,10 -10,10" />
