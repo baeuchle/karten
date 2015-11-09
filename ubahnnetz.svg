@@ -1244,39 +1244,70 @@
    <g id="hst551" transform="translate(-158,391)" class="achtzig te">
     <use xlink:href="#bstg_ausen" />
     <text x="-15" y="5">Wiesenau</text>
+    <g class="a3_strecke kilometer"><g transform="rotate(-120) translate(0,-60) rotate(120)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 0,50</text></g><use xlink:href="#punkt2" transform="rotate(-120)" /></g>
    </g>
    <g id="hst552" transform="translate(-158,291)" class="achtzig te">
     <use xlink:href="#bstg_ausen" />
     <text x="-15" y="5">Niederursel</text>
+    <g class="a3_strecke kilometer"><g transform="rotate(-120) translate(0,-60) rotate(120)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 1,05</text></g><use xlink:href="#punkt2" transform="rotate(-120)" /></g>
    </g>
    <g id="hst554" transform="translate(-233.5,173.5)" class="achtzig te">
     <use xlink:href="#drei_ausen" transform="rotate(-45)" />
     <text x="-5.5" y="21.5">Weißkirchen Ost</text>
+    <g class="a3_strecke kilometer ta"><g transform="rotate(-15) translate(0,-60) rotate(15)"><use xlink:href="#kasten3" /><text x="6" y="4">km 3,45</text></g><use xlink:href="#punkt2" transform="rotate(-15)"/></g>
    </g>
    <g id="hst555" transform="translate(-333,111)" class="achtzig tm">
     <use xlink:href="#drei_ausen" transform="rotate(90)" />
     <text x="0" y="-15">Bommersheim</text>
+    <g class="a3_strecke kilometer te"><g transform="rotate(-150) translate(0,-60) rotate(150)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 4,50</text></g><use xlink:href="#punkt2" transform="rotate(-150)" /></g>
    </g>
    <g id="hst556" transform="translate(-300,61)" class="achtzig te">
     <use xlink:href="#drei_ausen" transform="rotate(90)" />
     <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Oberursel_(Taunus)">
      <text x="0" y="-15">Oberursel Bahnhof</text>
     </a>
+    <g class="a3_strecke kilometer"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 5,70</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
    </g>
    <g id="hst557" transform="translate(-210,31)" class="achtzig">
     <use xlink:href="#drei_ausen" />
     <text x="15" y="5">Oberursel Stadtmitte</text>
+    <g class="a3_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 6,30</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
-   <g id="hst558" transform="translate(-210,-69)" class="achtzig te"><use xlink:href="#drei_ausen" /><text x="-15" y="5">Oberursel Altstadt</text></g>
-   <g id="hst561" transform="translate(-280,-139)" class="achtzig tm"><use xlink:href="#drei_ausen" transform="rotate(90)" /><text x="0" y="-15">Lahnstraße</text></g>
-   <g id="hst562" transform="translate(-380,-139)" class="achtzig tm"><use xlink:href="#drei_ausen" transform="rotate(90)" /><text x="0" y="25">Glöcknerwiese</text></g>
-   <g id="hst563" transform="translate(-480,-139)" class="achtzig tm"><use xlink:href="#drei_mitte" transform="rotate(90)" /><text x="0" y="-10">Kupferhammer</text></g>
-   <g id="hst564" transform="translate(-580,-134)" class="achtzig tm"><use xlink:href="#dreisteig" transform="rotate(90)" /><text x="0" y="20">Rosengärtchen</text></g>
-   <g id="hst565" transform="translate(-680,-134)" class="achtzig tm"><use xlink:href="#dreisteig" transform="rotate(-90)" /><text x="0" y="-10">Waldlust</text></g>
+   <g id="hst558" transform="translate(-210,-69)"  class="achtzig te">
+    <use xlink:href="#drei_ausen" />
+    <text x="-15" y="5">Oberursel Altstadt</text>
+    <g class="a3_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 6,90</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
+   </g>
+   <g id="hst561" transform="translate(-280,-139)" class="achtzig tm">
+    <use xlink:href="#drei_ausen" transform="rotate(90)" />
+    <text x="0" y="-15">Lahnstraße</text>
+    <g class="a3_strecke kilometer ta"><g transform="rotate(90) translate(0,-60) rotate(-90)"><use xlink:href="#kasten3" /><text x="6" y="4">km 7,60</text></g><use xlink:href="#punkt2" transform="rotate(90)" /></g>
+   </g>
+   <g id="hst562" transform="translate(-380,-139)" class="achtzig tm">
+    <use xlink:href="#drei_ausen" transform="rotate(90)" />
+    <text x="0" y="25">Glöcknerwiese</text>
+    <g class="a3_strecke kilometer ta"><g transform="rotate(150) translate(0,-60) rotate(-150)"><use xlink:href="#kasten3" /><text x="6" y="4">km 8,40</text></g><use xlink:href="#punkt2" transform="rotate(150)" /></g>
+   </g>
+   <g id="hst563" transform="translate(-480,-139)" class="achtzig tm">
+    <use xlink:href="#drei_mitte" transform="rotate(90)" />
+    <text x="0" y="-10">Kupferhammer</text>
+    <g class="a3_strecke kilometer ta"><g transform="rotate(150) translate(0,-60) rotate(-150)"><use xlink:href="#kasten3" /><text x="6" y="4">km 8,75</text></g><use xlink:href="#punkt2" transform="rotate(150)" /></g>
+   </g>
+   <g id="hst564" transform="translate(-580,-134)" class="achtzig tm">
+    <use xlink:href="#dreisteig" transform="rotate(90)" />
+    <text x="0" y="20">Rosengärtchen</text>
+    <g class="a3_strecke kilometer ta"><g transform="rotate(150) translate(0,-60) rotate(-150)"><use xlink:href="#kasten3" /><text x="6" y="4">km 9,30</text></g><use xlink:href="#punkt2" transform="rotate(150)" /></g>
+   </g>
+   <g id="hst565" transform="translate(-680,-134)" class="achtzig tm">
+    <use xlink:href="#dreisteig" transform="rotate(-90)" />
+    <text x="0" y="-10">Waldlust</text>
+    <g class="a3_strecke kilometer ta"><g transform="rotate(150) translate(0,-60) rotate(-150)"><use xlink:href="#kasten3" /><text x="6" y="4">km 9,75</text></g><use xlink:href="#punkt2" transform="rotate(150)" /></g>
+   </g>
    <g id="hst566" transform="translate(-780,-139)" class="achtzig tm">
     <use xlink:href="#drei_mitte" transform="rotate(90)" />
     <text x="0" y="20">Oberursel</text>
     <text x="0" y="36">Hohemark</text>
+    <g class="a3_strecke kilometer ta"><g transform="rotate(135) translate(0,-60) rotate(-135)"><use xlink:href="#kasten4" /><text x="6" y="4">km 10,15</text></g><use xlink:href="#punkt2" transform="rotate(135)" /></g>
    </g>
    <g id="u5planung" style="display:none;">
     <g id="hst614_neu" transform="translate(275,1485)" class="achtzig te"><use xlink:href="#drei_vers1"/><text x="-15" y="5">Musterschule</text></g>
@@ -1464,23 +1495,10 @@
   <g class="a3_strecke kilometer">
    <path class="kilometrierung" d="M -70,466 h -33 q -22,0 -38.5,-16.5 q -16.5,-16.5 -16.5,-38.5 v -140 q 0,-22 -16.5,-38.5 l -105,-105 q -16.5,-16.5 -38.5,-16.5 h -120 a 25,25 0,0,1 0,-50 h 213 a 15,15 0,0,0 15,-15 v -130 a 55,55 0,0,0 -55,-55 h -535" />
    <g transform="translate(-70,465)"><g transform="rotate(210) translate(0,-60) rotate(-210)"><use xlink:href="#kasten3" /><text x="6" y="4">km 0,00</text></g><use xlink:href="#punkt3" transform="rotate(150)" /></g>
-   <g transform="translate(-158,391)" class="te"><g transform="rotate(-120) translate(0,-60) rotate(120)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 0,50</text></g><use xlink:href="#punkt2" transform="rotate(-120)" /></g>
-   <g transform="translate(-158,291)" class="te"><g transform="rotate(-120) translate(0,-60) rotate(120)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 1,05</text></g><use xlink:href="#punkt2" transform="rotate(-120)" /></g>
-   <g transform="translate(-233.5,173.5)"><g transform="rotate(-15) translate(0,-60) rotate(15)"><use xlink:href="#kasten3" /><text x="6" y="4">km 3,45</text></g><use xlink:href="#punkt2" transform="rotate(-15)"/></g>
-   <g transform="translate(-333,111)" class="te"><g transform="rotate(-150) translate(0,-60) rotate(150)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 4,50</text></g><use xlink:href="#punkt2" transform="rotate(-150)" /></g>
    <g transform="translate(-433,111)" class="te"><g transform="rotate(-150) translate(0,-60) rotate(150)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 5,05</text></g><use xlink:href="#punkt2" transform="rotate(-150)" /></g>
-   <g transform="translate(-300,61)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 5,70</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
    <g transform="translate(-225,61)"><g transform="rotate(135) translate(0,-60) rotate(-135)"><use xlink:href="#kasten3" /><text x="6" y="4">km 5,85</text></g><use xlink:href="#punkt2" transform="rotate(135)" /></g>
-   <g transform="translate(-210,31)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 6,30</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
-   <g transform="translate(-210,-69)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 6,90</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
-   <g transform="translate(-280,-139)"><g transform="rotate(90) translate(0,-60) rotate(-90)"><use xlink:href="#kasten3" /><text x="6" y="4">km 7,60</text></g><use xlink:href="#punkt2" transform="rotate(90)" /></g>
-   <g transform="translate(-380,-139)"><g transform="rotate(150) translate(0,-60) rotate(-150)"><use xlink:href="#kasten3" /><text x="6" y="4">km 8,40</text></g><use xlink:href="#punkt2" transform="rotate(150)" /></g>
-   <g transform="translate(-480,-139)"><g transform="rotate(150) translate(0,-60) rotate(-150)"><use xlink:href="#kasten3" /><text x="6" y="4">km 8,75</text></g><use xlink:href="#punkt2" transform="rotate(150)" /></g>
    <g transform="translate(-515,-134)"><g transform="rotate(-60) translate(0,-60) rotate(60)" class="te"><use xlink:href="#kastenC" /><text x="-6" y="4">km 8,86</text></g><use xlink:href="#punkt3" transform="rotate(-60)" /></g>
-   <g transform="translate(-580,-139)"><g transform="rotate(150) translate(0,-60) rotate(-150)"><use xlink:href="#kasten3" /><text x="6" y="4">km 9,30</text></g><use xlink:href="#punkt2" transform="rotate(150)" /></g>
-   <g transform="translate(-680,-139)"><g transform="rotate(150) translate(0,-60) rotate(-150)"><use xlink:href="#kasten3" /><text x="6" y="4">km 9,75</text></g><use xlink:href="#punkt2" transform="rotate(150)" /></g>
    <g transform="translate(-745,-134)"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 10,03</text></g><use xlink:href="#punkt3" transform="rotate(60)" /></g>
-   <g transform="translate(-780,-139)"><g transform="rotate(135) translate(0,-60) rotate(-135)"><use xlink:href="#kasten4" /><text x="6" y="4">km 10,15</text></g><use xlink:href="#punkt2" transform="rotate(135)" /></g>
    <g transform="translate(-800,-139)"><g transform="rotate(180) translate(0,-60) rotate(-180)"><use xlink:href="#kasten4" /><text x="6" y="4">km 10,20</text></g><use xlink:href="#punkt3" transform="rotate(180)" /></g>
   </g>
   <g class="bs_strecke kilometer">
