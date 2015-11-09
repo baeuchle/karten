@@ -922,11 +922,8 @@
    <path id="zgw_5" d="M 835,-40 c 5,0 5,5 10,5 h 5 c 5,0 5,-5 10,-5 c 5,0 5,-5 10,-5" />
    <path id="zgw_6" class="endet" d="M 840,-75 c 5,0 5,5 10,5 h 5 c 5,0 5,-5 10,-5 c 5,0 5,-5 10,-5 h 20" />
    <path id="zgw_7" class="endet" d="M 875,-80 c 5,0 5,5 10,5 h 10" />
-   <path id="zgw_8" class="endet" d="M 890,-75 v 10" />
-   <path id="zgw_9" class="endet" d="M 850,-70 q 2,0 3.5,1.5 l 7,7 q 1.5,1.5 3.5,1.5 h 12" />
-   <path id="zgw_a" class="endet" d="M 855.5,-66.5 q 1.5,1.5 3.5,1.5 h 17" />
-   <circle class="drehscheibe" cx="890" cy="-75" r="2" />
-   <path id="zgw_drehscheibe" transform="translate(890,-75) rotate(-45)" d="M 0,0 h -2 h 4" />
+   <path id="zgw_8" class="endet" d="M 850,-70 q 2,0 3.5,1.5 l 7,7 q 1.5,1.5 3.5,1.5 h 12" />
+   <path id="zgw_9" class="endet" d="M 855.5,-66.5 q 1.5,1.5 3.5,1.5 h 17" />
    <use xlink:href="#weg" transform="translate(825,-40)" />
    <use xlink:href="#bau" transform="translate(850,-60)" />
   </g>
