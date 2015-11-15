@@ -655,18 +655,21 @@
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Merianplatz">
      <text x="12" y="11">Merianplatz</text>
     </a>
+    <g transform="translate(-1.5,-1.5)" class="b2_strecke kilometer te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 10,9</text></g><use xlink:href="#punkt2" transform="rotate(15)"/></g>
    </g>
    <g id="hst712" transform="translate(395,1435)" class="achtzig">
     <use xlink:href="#bstg_dosto" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_H%C3%B6henstra%C3%9Fe">
      <text x="12" y="11">Höhenstraße</text>
     </a>
+    <g transform="translate(-1.5,-1.5)" class="b2_strecke kilometer te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 11,45</text></g><use xlink:href="#punkt2" transform="rotate(15)"/></g>
    </g>
    <g id="hst713" transform="translate(465,1365)" class="achtzig">
     <use xlink:href="#bstg_dosto" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Bornheim_Mitte">
      <text x="12" y="11">Bornheim Mitte</text>
     </a>
+    <g transform="translate(0.5,-1.5)" class="b2_strecke kilometer te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 12,0</text></g><use xlink:href="#punkt2" transform="rotate(15)"/></g>
    </g>
    <g id="hst714" transform="translate(527.5,1299.5)" class="achtzig">
     <use xlink:href="#bstg_mitte" transform="rotate(45)" />
@@ -674,6 +677,7 @@
      <text x="20" y="6">Seckbacher</text>
      <text x="20" y="22">Landstraße</text>
     </a>
+    <g class="b2_strecke kilometer te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 12,9</text></g><use xlink:href="#punkt2" transform="rotate(15)"/></g>
    </g>
   </g>
  </g>
@@ -1579,10 +1583,6 @@
   </g>
   <g class="b2_strecke kilometer">
    <path class="kilometrierung" d="M 285,1580 v -16 q 0,-22 16.5,-38.5 l 290,-290" />
-   <g transform="translate(323.5,1503.5)" class="te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 10,9</text></g><use xlink:href="#punkt2" transform="rotate(15)"/></g>
-   <g transform="translate(393.5,1433.5)" class="te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 11,45</text></g><use xlink:href="#punkt2" transform="rotate(15)"/></g>
-   <g transform="translate(463.5,1363.5)" class="te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 12,0</text></g><use xlink:href="#punkt2" transform="rotate(15)"/></g>
-   <g transform="translate(527.5,1299.5)" class="te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 12,9</text></g><use xlink:href="#punkt2" transform="rotate(15)"/></g>
    <g transform="translate(591.5,1235.5)" class="te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 13,65</text></g><use xlink:href="#punkt3"  transform="rotate(15)"/></g>
   </g>
   <g class="cs_strecke kilometer">
