@@ -1445,15 +1445,7 @@
    <g id="hst632" transform="translate(435,605)" class="achtzig">
     <use id="bstg_preungesheim_3" xlink:href="#dreisteig" transform="translate(+5,0)" />
     <use xlink:href="#drei_mitte" transform="translate(-10,0)" class="nullzig"/>
-    <use xlink:href="#bau" transform="translate(-10,0)"/>
-    <use xlink:href="#bau" transform="translate(+10,0)"/>
-    <use xlink:href="#weg" transform="translate(+5,80)"/>
-    <use xlink:href="#weg" transform="translate(-5,80)"/>
     <text x="15" y="5">Preungesheim</text>
-    <text x="20" y="18" class="ab_bb">Umbau der Station Preungesheim</text>
-    <text x="20" y="28" class="ab_bb">auf 80cm-Bahnsteige</text>
-    <text x="20" y="38" class="ab_bb">voraussichtich 4.7.2015-29.11.2015</text>
-    <text x="20" y="48" class="ab_bb">Verkehr nur bis Sigmund-Freud-Straße</text>
     <g class="bs_strecke kilometer"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 15,47</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
    </g>
    <g id="hst633" transform="translate(435,525)" class="geplant frankfurter_berg achtzig">
