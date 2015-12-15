@@ -23,7 +23,7 @@ if [ -d ~/public_html/images ]; then
     echo "Moving Netzplaene"
     cp ubahnnetz.svg straßenbahnnetz.svg ~/public_html/images/
     
-    echo "Entscripten"
-    ./entscripten.pl < ubahnnetz.svg > ubahnnetz.wiki.svg
-    ./entscripten.pl < straßenbahnnetz.svg > straßenbahnnetz.wiki.svg
 fi
+echo "Entscripten"
+./entscripten.pl < ubahnnetz.svg > ubahnnetz.wiki.svg
+./entscripten.pl < straßenbahnnetz.svg > straßenbahnnetz.wiki.svg
