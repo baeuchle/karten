@@ -924,9 +924,9 @@
   <g id="bb_gutleut" transform="translate(-250,205)">
    <path id="gut_gw" d="M 20,5 c -5,0 -5,10 -10,10" />
    <path id="gut_af" d="M 25,15 h -133 q -2,0 -3.5,1.5" />
-   <path id="gut_01" class="endet" d="M -8.5,18.5 q -1.5,1.5 -1.5,3.5 v 53 " />
-   <path id="gut_02" class="endet" d="M -10,23 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 43" />
-   <path id="gut_03" class="endet" d="M -18.5,28.5 q -1.5,1.5 -1.5,3.5 v 43" />
+   <path id="gut_01" class="endet" d="M -8.5,18.5 q -1.5,1.5 -1.5,3.5 v 73 " />
+   <path id="gut_02" class="endet" d="M -10,23 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 63" />
+   <path id="gut_03" class="endet" d="M -18.5,28.5 q -1.5,1.5 -1.5,3.5 v 63" />
    <path id="gut_04" d="M -3,15 q -2,0 -3.5,1.5 l -17,17 q -1.5,1.5 -1.5,3.5 v 51 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5 h -35" />
    <path id="gut_05" d="M -28.5,18.5 q -1.5,1.5 -1.5,3.5 v 71 q 0,2 -1.5,3.5 " />
    <path id="gut_06" class="endet" d="M -30,23 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 43" />
@@ -935,18 +935,18 @@
    <path id="gut_09" d="M -48.5,18.5 q -1.5,1.5 -1.5,3.5 v 66 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5" />
    <path id="gut_10" d="M -43,15 q -2,0 -3.5,1.5 l -7,7 q -1.5,1.5 -1.5,3.5 v 66 q 0,2 -1.5,3.5" />
    <path id="gut_11" class="endet" d="M -58.5,18.5 q -1.5,1.5 -1.5,3.5 v 58 " />
-   <path id="gut_12" class="endet" d="M -60,23 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 53" />
-   <path id="gut_13" class="endet" d="M -68.5,28.5 q -1.5,1.5 -1.5,3.5 v 53" />
+   <path id="gut_12" class="endet" d="M -60,23 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 63" />
+   <path id="gut_13" class="endet" d="M -68.5,28.5 q -1.5,1.5 -1.5,3.5 v 63" />
    <path id="gut_14" class="endet" d="M -53,15 q -2,0 -3.5,1.5 l -17,17 q -1.5,1.5 -1.5,3.5 v 58" />
-   <path id="gut_15" class="endet" d="M -78.5,18.5 q -1.5,1.5 -1.5,3.5 v 63 " />
-   <path id="gut_16" class="endet" d="M -80,23 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 53" />
-   <path id="gut_17" class="endet" d="M -88.5,28.5 q -1.5,1.5 -1.5,3.5 v 53" />
-   <path id="gut_18" class="endet" d="M -73,15 q -2,0 -3.5,1.5 l -17,17 q -1.5,1.5 -1.5,3.5 v 48" />
+   <path id="gut_15" class="endet" d="M -78.5,18.5 q -1.5,1.5 -1.5,3.5 v 73 " />
+   <path id="gut_16" class="endet" d="M -80,23 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 63" />
+   <path id="gut_17" class="endet" d="M -88.5,28.5 q -1.5,1.5 -1.5,3.5 v 63" />
+   <path id="gut_18" class="endet" d="M -73,15 q -2,0 -3.5,1.5 l -17,17 q -1.5,1.5 -1.5,3.5 v 58" />
    <path id="gut_19" class="endet" d="M -98.5,18.5 q -1.5,1.5 -1.5,3.5 v 48" />
-   <path id="gut_20" class="endet" d="M -93,15 q -2,0 -3.5,1.5 l -7,7 q -1.5,1.5 -1.5,3.5 v 58" />
-   <path id="gut_21" class="endet" d="M -108.5,18.5 q -1.5,1.5 -1.5,3.5 v 63" />
-   <path id="gut_22" class="endet" d="M -110,23 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 53" />
-   <path id="gut_23" class="endet" d="M -103,15 q -2,0 -3.5,1.5 l -12,12 q -1.5,1.5 -1.5,3.5 v 53" />
+   <path id="gut_20" class="endet" d="M -93,15 q -2,0 -3.5,1.5 l -7,7 q -1.5,1.5 -1.5,3.5 v 68" />
+   <path id="gut_21" class="endet" d="M -108.5,18.5 q -1.5,1.5 -1.5,3.5 v 73" />
+   <path id="gut_22" class="endet" d="M -110,23 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 v 63" />
+   <path id="gut_23" class="endet" d="M -103,15 q -2,0 -3.5,1.5 l -12,12 q -1.5,1.5 -1.5,3.5 v 63" />
    <path id="gut_24" d="M -123.5,28.5 q -1.5,1.5 -1.5,3.5 v 60 q 0,2 1.5,3.5" />
    <path id="gut_25" d="M -128.5,33.5 q -1.5,1.5 -1.5,3.5 v 50 q 0,2 1.5,3.5" />
    <path id="gut_26" d="M -98,5 q -2,0 -3.5,1.5 l -32,32 q -1.5,1.5 -1.5,3.5 v 40 q 0,2 1.5,3.5" />
@@ -956,7 +956,7 @@
     <path class="gebaude wand" id="halle_gutleut" d="M -2.5,40 h -140 v 42.5 h 145 v -12.5 h -5 z" />
     <path class="gebaude wand" id="halle_schleif" d="M -98.5,37.5 h 1 v 35 h -5 v -35 h 1" />
     <path class="gebaude wand" id="halle_waschur" d="M -42.5,87.5 h 2.5 v -5 h -2.5 v -15 h 5 v -32.5 h -20 v 47.5 h -2.5 v 5 h 2.5" />
-    <g transform="translate(-108,95)" class="beschrift"><path d="M 0,-4 l 8,-8 v -8" /><text>Schleifstand</text></g>
+    <g transform="translate(-108,115)" class="beschrift"><path d="M 0,-4 l 8,-8 v -28" /><text>Schleifstand</text></g>
     <g transform="translate(-28,105)" class="beschrift"><path d="M 0,-4 l -12,-12" /><text>Wasch- und Revisionshalle</text></g>
     <g transform="translate( -10,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>1</text></g>
     <g transform="translate( -15,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>2</text></g>
