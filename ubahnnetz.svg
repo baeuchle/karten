@@ -17,8 +17,8 @@
     <dc:creator><![CDATA[Bjørn Bäuchle <gleisplan at frankfurtium dot de>]]></dc:creator>
     <dc:subject>Frankfurt am Main, U-Bahn Frankfurt, Gleisplan, track layout, Kilometrierung U-Bahn</dc:subject>
     <dc:description>Schematischer Gleisplan des U-Bahn-Netzes in Frankfurt mit Kilometrierung und Betriebshöfen</dc:description>
-    <dc:identifier>https://plan.frankfurtium.de/ubahnnetz.svg</dc:identifier>
-    <dc:relation>https://plan.frankfurtium.de/ubahnnetz.svg</dc:relation>
+    <dc:identifier>http://plan.frankfurtium.de/ubahnnetz.svg</dc:identifier>
+    <dc:relation>http://plan.frankfurtium.de/ubahnnetz.svg</dc:relation>
     <dc:rights>© Bjørn Bäuchle CC-BY-SA 4.0 or later</dc:rights>
     <dc:format>image/svg+xml</dc:format>
     <dc:type>Image</dc:type>
