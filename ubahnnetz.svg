@@ -1048,12 +1048,15 @@
     <g class="bgleisnummer" transform="translate(-5,-29)"><circle cy="-1" r="2" /><text>01</text></g>
    </g>
   </g>
-  <g id="bb_ost" class="strecke" transform="translate(815,1245)">
+  <g id="bb_ost" class="strecke" transform="translate(800,1245)">
    <a xlink:href="http://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Betriebshof_Ost">
     <text x="-115" y="2" class="ab_bb te">BB Ost</text>
    </a>
    <g class="bb">
-    <path id="ost_13" d="M -96.5,22.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 l 43,43" />
+    <path id="ost_16" class="geplant" d="M  -80,21 q 2,0 3.5,1.5 l 46,46" />
+    <path id="ost_15" class="geplant" d="M -86.5,22.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5" />
+    <path id="ost_14" class="geplant" d="M  -90,21 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5" />
+    <path id="ost_13" d="M -96.5,22.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5" />
     <path id="ost_12" d="M -100,21 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5" />
     <path id="ost_11" d="M -106.5,22.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5" />
     <path id="ost_10" d="M -110,21 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5" />
@@ -1069,19 +1072,20 @@
     <path id="ost_62" class="endet" d="M -97,79 q 2,0 3.5,1.5 q 1.5,1.5 3.5,1.5 h 30" />
     <path id="ost_63" class="endet" d="M -107.5,71.5 l 6,6 q 1.5,1.5 3.5,1.5 h 38" />
     <path id="ost_64" d="M -104,73 q 2,0 3.5,1.5 q 1.5,1.5 3.5,1.5 h 44.5 q 2,0 3.5,-1.5 q 1.5,-1.5 3.5,-1.5" />
-    <path id="ost_65" d="M -107.5,71.5 q 1.5,1.5 3.5,1.5 h 61 q 2,0 3.5,1.5" />
-    <path id="ost_66" d="M -108.5,65.5 l 3,3 q 1.5,1.5 3.5,1.5 h 56 q 2,0 3.5,1.5" />
+    <path id="ost_65" d="M -107.5,71.5 q 1.5,1.5 3.5,1.5 h 76 q 2,0 3.5,1.5" />
+    <path id="ost_66" d="M -108.5,65.5 l 3,3 q 1.5,1.5 3.5,1.5 h 71 q 2,0 3.5,1.5" />
     <path id="ost_71" class="faeng" d="M -170,21 h 20" />
     <path id="ost_72" class="faeng" d="M -148,26 l 8.5,8.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5" />
     <path id="ost_73" d="M -150,21 q 2,0 3.5,1.5 l 14.5,14.5" />
     <path id="ost_75" d="M -132,37 l 14,14 q 1.5,1.5 1.5,3.5 v 6" />
-    <path id="ost_77" class="endet" d="M -36.5,77.5 l 5,5 q 1.5,1.5 3.5,1.5 h 25" />
+    <path id="ost_77" class="endet" d="M -21.5,77.5 l 5,5 q 1.5,1.5 3.5,1.5 h 25" />
     <path id="ost_84" class="faeng" d="M -113.5,50.5 l 15,15 q 1.5,1.5 3.5,1.5" />
     <path id="ost_85" class="faeng" d="M -111,48 l 14.5,14.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 " />
     <path id="ost_86" d="M -118,36 l 29.5,29.5 q 1.5,1.5 3.5,1.5" />
-    <path id="ost_SW" d="M -116.5,55.5 q 0,2 1.5,3.5 l 6.5,6.5 q 1.5,1.5 3.5,1.5 h 56 q 2,0 3.5,1.5 l 9,9 q 1.5,1.5 3.5,1.5 h 11 c 10,0 10,-10 20,-10 a 20,20 0,0,1 20,20 m -10,0 a 10,10 0,0,0 -10,-10" />
-    <path id="ost_NW" d="M -180,6 c 10,0 10,10 20,10 c 5,0 5,5 10,5 h 50 q 2,0 3.5,1.5" />
-    <path id="wa_schaefflestrasse" class="endet" d="M 18,24 c 0,-10 -10,-10 -10,-20 c 0,-5 -5,-5 -5,-10 v -25" />
+    <path id="ost_SW" d="M -116.5,55.5 q 0,2 1.5,3.5 l 6.5,6.5 q 1.5,1.5 3.5,1.5 h 71 q 2,0 3.5,1.5 l 9,9 q 1.5,1.5 3.5,1.5 h 11 c 10,0 10,-10 20,-10 a 20,20 0,0,1 20,20 m -10,0 a 10,10 0,0,0 -10,-10" />
+    <path id="ost_NW" d="M -175,6 c 7.5,0 7.5,10 15,10 c 5,0 5,5 10,5 h 50" />
+    <path id="ost_NW_zusatz" class="geplant" d="M -100,21 h 20" />
+    <path id="wa_schaefflestrasse" class="endet" d="M 33,24 c 0,-10 -10,-10 -10,-20 c 0,-5 -5,-5 -5,-10 v -25" />
    </g>
    <g id="gleisnummern_ost">
     <path class="gebaude wand" id="ost_hal" d="M -85,68.5 v 3 h -3 v 6 h 3 v 6 h -3 v 3 h 33 v -9 h -3 v -6 h 3 v -3 h -30" />
@@ -1093,6 +1097,9 @@
     <g class="bgleisnummer" transform="translate(-85,40)"><circle cy="-1" r="2" /><text>11</text></g>
     <g class="bgleisnummer" transform="translate(-80,40)"><circle cy="-1" r="2" /><text>12</text></g>
     <g class="bgleisnummer" transform="translate(-75,40)"><circle cy="-1" r="2" /><text>13</text></g>
+    <g class="bgleisnummer" transform="translate(-70,40)"><circle cy="-1" r="2" /><text>14</text></g>
+    <g class="bgleisnummer" transform="translate(-65,40)"><circle cy="-1" r="2" /><text>15</text></g>
+    <g class="bgleisnummer" transform="translate(-60,40)"><circle cy="-1" r="2" /><text>16</text></g>
     <g class="bgleisnummer" transform="translate(-135,30)"><circle cy="-1" r="2" /><text>51</text></g>
     <g class="bgleisnummer" transform="translate(-130,30)"><circle cy="-1" r="2" /><text>52</text></g>
     <g class="bgleisnummer" transform="translate(-125,30)"><circle cy="-1" r="2" /><text>53</text></g>
@@ -1107,13 +1114,13 @@
     <g class="bgleisnummer" transform="translate(-145,30)"><circle cy="-1" r="2" /><text>72</text></g>
     <g class="bgleisnummer" transform="translate(-140,30)"><circle cy="-1" r="2" /><text>73</text></g>
     <g class="bgleisnummer" transform="translate(-125,45)"><circle cy="-1" r="2" /><text>75</text></g>
-    <g class="bgleisnummer" transform="translate(-20,85)"><circle cy="-1" r="2" /><text>77</text></g>
+    <g class="bgleisnummer" transform="translate(-5,85)"><circle cy="-1" r="2" /><text>77</text></g>
     <g class="bgleisnummer" transform="translate(-110,55)"><circle cy="-1" r="2" /><text>84</text></g>
     <g class="bgleisnummer" transform="translate(-105,55)"><circle cy="-1" r="2" /><text>85</text></g>
     <g class="bgleisnummer" transform="translate(-100,55)"><circle cy="-1" r="2" /><text>86</text></g>
    </g>
-   <path id="bbost_strecke_1" d="M -200,16 h 105 q 4,0 7,3 l 55.5,55.5 q 4.5,4.5 10.5,4.5 h 20 a 20,20 0,0,0 20,-20" />
-   <path id="bbost_strecke_2" d="M 8,59 a 10,10 0,0,1 -10,10 h -20 q -2,0 -3.5,-1.5 l -55.5,-55.5 q -6,-6 -14,-6 h -105" />
+   <path id="bbost_strecke_1" d="M -185,16 h 105 q 4,0 7,3 l 55.5,55.5 q 4.5,4.5 10.5,4.5 h 20 a 20,20 0,0,0 20,-20" />
+   <path id="bbost_strecke_2" d="M 23,59 a 10,10 0,0,1 -10,10 h -20 q -2,0 -3.5,-1.5 l -55.5,-55.5 q -6,-6 -14,-6 h -105" />
   </g>
   </g>
   <g id="strecke_oberirdisch" class="strecke">
