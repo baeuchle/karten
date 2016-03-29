@@ -285,6 +285,8 @@
    <text class="ab_bb" transform="translate(46,185)">Fahrverbot für U- und Ptb-Wagen</text>-->
    <text class="ab_bb" transform="translate(6,200)">¹:</text>
    <text class="ab_bb" transform="translate(18,200)">Siehe <a class="link" xlink:href="ubahnnetz.svg">U-Bahn-Netz Frankfurt</a></text>
+   <text class="ab_bb te" transform="translate(332,201)"><a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg">Dieser Plan bei Wikipedia</a></text>
+   <a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(333,188)"/></a>
   </g>
   <g id="legende_bahnsteige" transform="translate(-865,-425)">
    <rect class="box" width="360" height="285" />
