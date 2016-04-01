@@ -145,10 +145,6 @@
    <circle r="3.5" cx="5" cy="0" class="hschild" />
    <path class="htext" d="M 6.5,-1.9 L 6.5,1.9 M 3.5,-1.9 L 3.5,1.9 M 3.5,0 L 6.5,0" />
   </g>
-  <g id="doppelhst">
-   <use xlink:href="#haltestel" transform="translate(0,-3.5)" />
-   <use xlink:href="#haltestel" transform="translate(0,+3.5)" />
-  </g>
   <path id="weg" class="abreis" d="M -1.2,-1.2 l 2.4,2.4 m -2.4,0 l 2.4,-2.4" />
   <path id="bau" class="verbot" d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" />
   <path id="uml" class="umleit" d="M -5,3 h 7 l 3,-3 l -3,-3 h -7 v 6 h 1" />
@@ -174,7 +170,6 @@
    <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  80 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  80 -3000 V 3000" />
    <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  90 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  90 -3000 V 3000" />
   </g>
-  <g id="keinU" transform="scale(.7)" class="verbot"><circle r="10" /><text text-anchor="middle" y="4">U</text></g>
   <g id="bstg_ubahn"><use xlink:href="#bahnsteig" transform="rotate(180) scale(1,2)" class="achtzig" /></g>
   <g id="bstg_mitte"><use xlink:href="#bahnsteig" transform="translate(5,0) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(-5,0)" /></g>
   <g id="bstg_ausen"><use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,0)" /></g>
@@ -281,12 +276,12 @@
    <g id="legende_normal" transform="translate(30,125)"><path class="strecke ubergabe" d="M 0 -6 h 50" /><text x="55" class="tm ref">A</text><text x="75">Anschluss an U-Bahn-Netz mit Referenz¹</text></g>
    <g id="legende_normal" transform="translate(30,145)"><path class="strecke anschluss" d="M 0 -6 h 45" /><text x="75">Anschluss an DB-Netz</text></g>
    <text class="ab_bb"   transform="translate(30,165)">BB: Betriebsbahnhof</text>
-   <!--<use xlink:href="#keinU" transform="translate(30,180)" />
-   <text class="ab_bb" transform="translate(46,185)">Fahrverbot für U- und Ptb-Wagen</text>-->
    <text class="ab_bb" transform="translate(6,200)">¹:</text>
    <text class="ab_bb" transform="translate(18,200)">Siehe <a class="link" xlink:href="ubahnnetz.svg">U-Bahn-Netz Frankfurt</a></text>
-   <text class="ab_bb te" transform="translate(332,201)"><a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg">Dieser Plan bei Wikipedia</a></text>
-   <a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(333,188)"/></a>
+   <g class="nowiki">
+    <text class="ab_bb te" transform="translate(332,201)"><a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg">Dieser Plan bei Wikipedia</a></text>
+    <a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(333,188)"/></a>
+   </g>
   </g>
   <g id="legende_bahnsteige" transform="translate(-865,-425)">
    <rect class="box" width="360" height="285" />
@@ -296,7 +291,7 @@
    <text class="hstgrtitel" x="33" y="40">↓ Symbol für Doppel- oder lange Haltestelle</text>
    <g class="legende_normal" transform="translate(15,55)">
     <use xlink:href="#haltestel" transform="rotate(90)" />
-    <use xlink:href="#doppelhst" transform="translate(20,0) rotate(90)" />
+    <!--<use xlink:href="#doppelhst" transform="translate(20,0) rotate(90)" />-->
     <text x="35" y="5">Einstieg von der Straße, 0 cm</text>
    </g>
    <g class="legende_normal nullzig" transform="translate(15,75)">

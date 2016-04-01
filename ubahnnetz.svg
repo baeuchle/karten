@@ -294,8 +294,10 @@
    <text class="ab_bb" transform="translate(46,314)">Zwischen Niederursel und Kalbach sind nur</text>
    <text class="ab_bb" transform="translate(46,326)">U4- und U5-Wagen zugelassen</text>
    <text class="ab_bb" transform="translate(18,338)">¹: Referenzen siehe <a xlink:href="strassenbahnnetz.svg">Straßenbahn-Netz Frankfurt</a></text>
-   <text class="ab_bb te" transform="translate(382,338)"><a xlink:href="https://commons.wikimedia.org/wiki/File:U-Netz_Frankfurt.svg">Dieser Plan bei Wikipedia</a></text>
-   <a xlink:href="https://commons.wikimedia.org/wiki/File:U-Netz_Frankfurt.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(383,326)"/></a>
+    <g class="nowiki">
+    <text class="ab_bb te" transform="translate(382,338)"><a xlink:href="https://commons.wikimedia.org/wiki/File:U-Netz_Frankfurt.svg">Dieser Plan bei Wikipedia</a></text>
+    <a xlink:href="https://commons.wikimedia.org/wiki/File:U-Netz_Frankfurt.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(383,326)"/></a>
+   </g>
   </g>
   <g id="bahnsteigshöhen" transform="translate(950,173)">
    <rect class="box" width="200" height="250" x="-200" y="0" />
