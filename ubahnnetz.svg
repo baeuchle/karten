@@ -322,7 +322,7 @@
    <text class="ab_bb"      x="20" y="100">Status: Planfestgestellt (seit <a xlink:href="https://rp-darmstadt.hessen.de/irj/RPDA_Internet?cid=5464da63732d568b55216d20f5655ee9">25.01.2016</a>)</text>
    <text class="hochstatio" x="10" y="120" onclick="geplant('verlaengerung_europaviertel')">Europaviertel: <tspan class="link" id="verlaengerung_europaviertel_aktion">anzeigen</tspan></text>
    <text class="hochstatio" x="15" y="135" onclick="geplant('verlaengerung_europaviertel')">Hauptbahnhof → Wohnpark</text>
-   <text class="ab_bb"      x="20" y="150">Status: In Bau; Details siehe <a xlink:href="">Projektwebseite</a></text>
+   <text class="ab_bb"      x="20" y="150">Status: In Bau; Details siehe <a xlink:href="http://www.sbev-frankfurt.de/de/home/">Projektwebseite</a></text>
    <text class="hochstatio" x="10" y="170" onclick="geplant('ginnheimer_kurve')">Ginnheimer Kurve: <tspan class="link" id="ginnheimer_kurve_aktion">anzeigen</tspan></text>
    <text class="hochstatio" x="15" y="185" onclick="geplant('ginnheimer_kurve')">Ginnheim → Bockenheimer Warte</text>
    <text class="ab_bb"      x="20" y="200">Status: Abwägung der <a xlink:href="http://www.stvv.frankfurt.de/parlisobj/B_292_2015_AN_Ergebnisbericht.pdf">Machbarkeitsstudie</a></text>
