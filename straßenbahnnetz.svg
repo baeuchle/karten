@@ -188,6 +188,7 @@
   </g>
   <g id="dobs_mitte"><use xlink:href="#bstg_mitte" /><use xlink:href="#trennstrich" transform="translate(-4,0)" /></g>
   <g id="dobs_ausen"><use xlink:href="#doppelbst" transform="translate(-5,0) rotate(180)" /><use xlink:href="#doppelbst" transform="translate(5,0)" /></g>
+  <g id="dobs_vers2"><use xlink:href="#doppelbst" transform="translate(-5,9) rotate(180)" /><use xlink:href="#doppelbst" transform="translate(5,-9)" /></g>
   <pattern id="backslash" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" viewbox="0 0 10 10">
    <path d="M 0,0 l 10,10 v -5 l -5,-5"/>
    <path d="M 0,10 h 5 l -5,-5"/>
@@ -463,7 +464,11 @@
    <text x="10" y="5">Neu-Isenburg/Stadtgrenze</text>
   </g>
   <g id="hstoss" transform="translate(-20,635)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text transform="translate(15,5)">Oberschweinstiege</text></g>
-  <g id="hstlui" transform="translate(-20,565)" class="zehnzig te"><use xlink:href="#dobs_ausen" /><text transform="rotate(-45) translate(-15,0)">Louisa Bahnhof</text></g>
+  <g id="hstlui" transform="translate(-20,565)" class="zehnzig te">
+   <use xlink:href="#doppelbst" transform="translate(-5,0) rotate(180)" />
+   <use xlink:href="#bahnsteig" transform="translate(5,0)" /></g>
+   <text transform="rotate(-45) translate(-15,0)">Louisa Bahnhof</text>
+  </g>
   <g id="hstsam" transform="translate(-20,505)" class="zehnzig te"><use xlink:href="#bstg_ausen" /><g transform="rotate(-45) translate(-15,0)"><text y="-7">Stresemannallee/</text><text y="5">Mörfelder Landstraße</text></g></g>
   <g id="hstsma" transform="translate(-20,425)" class="dreizig te"><use xlink:href="#bstg_ausen" /><text transform="rotate(-45) translate(-15,0)">Stresemannallee</text></g>
   <g id="hstbeu" transform="translate(50,480)" class="zehnzig te"><use xlink:href="#bstg_vers1" transform="rotate(90)" /><g transform="rotate(-45) translate(-20,15)"><text y="-7">Beuthener</text><text y="5">Straße</text></g></g>
@@ -477,7 +482,11 @@
    <use xlink:href="#haltestel" transform="translate(-15,5) rotate(90)" />
    <g transform="translate(0,-10)"><text y="-12">Schweizer-/</text><text y="0">Gartenstraße</text></g>
   </g>
-  <g id="hstott" transform="translate(70,345)" class="dreizig"><use xlink:href="#bstg_ausen" transform="rotate(90)"/><text x="20" y="0" transform="rotate(-45)">Otto-Hahn-Platz</text></g>
+  <g id="hstott" transform="translate(70,345)" class="dreizig">
+   <use xlink:href="#doppelbst" transform="translate(0,+5) rotate(+90)" />
+   <use xlink:href="#bahnsteig" transform="translate(0,-5) rotate(-90)" />
+   <text x="20" y="0" transform="rotate(-45)">Otto-Hahn-Platz</text>
+  </g>
   <g id="hst3716" transform="translate(-20,345)" class="te">
    <path class="bstggruppe" d="M 0,50 c 20,0 40,-40  40,-60 s -20,-35 -40,-35 c -30,0 -30,95 0,95" />
    <use xlink:href="#bahnsteig" class="dreizig" transform="translate(30,-5) rotate(-90)" />
@@ -547,7 +556,7 @@
    <g id="hstbps" transform="translate(25,0)"><use xlink:href="#bstg_vers1" transform="rotate(90)" /><g transform="translate(-10,15) rotate(-45)"><text y="-7" x="-5" class="hstgrtitel">Börneplatz/</text><text y="5">Stoltzestraße</text></g></g>
   </g>
   <g id="hst2001" transform="translate(390,175)" class="dreizig tm"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="0" y="-15">Allerheiligentor</text></g>
-  <g id="hstoes" transform="translate(440,175)" class="dreizig te"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Ostendstraße</text></g>
+  <g id="hstoes" transform="translate(440,175)" class="dreizig te"><use xlink:href="#dobs_ausen" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Ostendstraße</text></g>
   <g id="hst4201" transform="translate(490,175)" class="dreizig te"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Zobelstraße</text></g>
   <g id="hgrobf" transform="translate(550,175)">
    <ellipse cx="0" cy="0" rx="35" ry="20" class="hstgruppe" />
@@ -646,11 +655,11 @@
   <g id="hsthdm" transform="translate(260,80)" class="zehnzig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Hessendenkmal</text></g>
   <g id="hstfbp" transform="translate(260,40)"><use xlink:href="#hstl_vers1" /><text x="15" y="5">Friedberger Platz</text></g>
   <g id="hst3607" transform="translate(260,-010)"><use xlink:href="#wien_vers2" /><text x="15" y="5">Rohrbachstraße/Friedberger Landstraße</text></g>
-  <g id="hstnfh_" transform="translate(271.5,-082.5) rotate(45)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text transform="translate(-15,5) rotate(-45)">Nibelungenplatz/FH</text></g>
-  <g id="hstmün_" transform="translate(299.5,-110.5) rotate(45)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text transform="translate(-15,5) rotate(-45)">Münzenberger Straße</text></g>
-  <g id="hstwap_" transform="translate(334.5,-145.5) rotate(45)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_vers2" /><text transform="translate(-15,5) rotate(-45)">Wasserpark</text></g>
-  <g id="hstfbw_" transform="translate(369.5,-180.5) rotate(45)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text transform="translate(-15,5) rotate(-45)">Friedberger Warte</text></g>
-  <g id="hstbow_" transform="translate(404.5,-215.5) rotate(45)" class="dreizig   "><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text transform="rotate(-45) translate(15,15)">Bodenweg</text></g>
+  <g id="hstnfh_" transform="translate(271.5,-082.5) rotate(45)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#dobs_ausen" /><text transform="translate(-15,5) rotate(-45)">Nibelungenplatz/FH</text></g>
+  <g id="hstmün_" transform="translate(299.5,-110.5) rotate(45)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#dobs_ausen" /><text transform="translate(-15,5) rotate(-45)">Münzenberger Straße</text></g>
+  <g id="hstwap_" transform="translate(334.5,-145.5) rotate(45)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#dobs_vers2" /><text transform="translate(-15,5) rotate(-45)">Wasserpark</text></g>
+  <g id="hstfbw_" transform="translate(369.5,-180.5) rotate(45)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#dobs_ausen" /><text transform="translate(-15,5) rotate(-45)">Friedberger Warte</text></g>
+  <g id="hstbow_" transform="translate(404.5,-215.5) rotate(45)" class="dreizig   "><use xlink:href="#hstgrid" /><use xlink:href="#dobs_ausen" /><text transform="rotate(-45) translate(15,15)">Bodenweg</text></g>
   <g id="hstwks_" transform="translate(432.5,-243.5) rotate(45)" class="dreizig   "><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text transform="rotate(-45) translate(15,15)">Walter-Kolb-Siedlung</text></g>
   <g id="hstalk_" transform="translate(460.5,-271.5) rotate(45)" class="dreizig   "><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text transform="rotate(-45) translate(15,15)">Alkmenestraße</text></g>
   <g id="hstgra_" transform="translate(502.5,-313.5) rotate(45)" class="dreizig   "><use xlink:href="#hstgrid" /><use xlink:href="#bstg_mitte" /><text transform="rotate(-45) translate(15,15)">Gravensteiner-Platz</text></g>
