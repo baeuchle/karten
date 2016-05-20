@@ -466,7 +466,7 @@
   <g id="hstoss" transform="translate(-20,635)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text transform="translate(15,5)">Oberschweinstiege</text></g>
   <g id="hstlui" transform="translate(-20,565)" class="zehnzig te">
    <use xlink:href="#doppelbst" transform="translate(-5,0) rotate(180)" />
-   <use xlink:href="#bahnsteig" transform="translate(5,0)" /></g>
+   <use xlink:href="#bahnsteig" transform="translate(5,0)" />
    <text transform="rotate(-45) translate(-15,0)">Louisa Bahnhof</text>
   </g>
   <g id="hstsam" transform="translate(-20,505)" class="zehnzig te"><use xlink:href="#bstg_ausen" /><g transform="rotate(-45) translate(-15,0)"><text y="-7">Stresemannallee/</text><text y="5">Mörfelder Landstraße</text></g></g>
@@ -1129,6 +1129,7 @@
   <circle r="1.5" cx="15" />
   <circle r="1.5" cx="20" />
   <circle r="1.5" cx="25" />
+ </g>
  </g>
  </g>
 </svg>
