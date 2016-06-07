@@ -25,6 +25,7 @@ if [ -d /var/www/plan ]; then
     echo "Moving Netzplaene"
     cp ubahnnetz.svg /var/www/plan/
     cp straßenbahnnetz.svg /var/www/plan/strassenbahnnetz.svg
+    cp fahrrad.svg /var/www/plan/
     
 fi
 echo "Entscripten"

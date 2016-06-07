@@ -8,10 +8,9 @@
   onload="initialize()"
    >
    <title>Fahrradfahrten</title>
-
  <style type="text/css"><![CDATA[
   * { fill:none; stroke-width:1px; }
-  text { fill:black; stroke: none; font-size: 7pt; }
+  text { fill:black; stroke: none; font-size: 12pt; }
   text.ylabel { text-anchor: end; }
   text.xlabel { text-anchor: middle; }
 
@@ -21,6 +20,7 @@
   #xaxis text#xaxislabel, #yaxis text#yaxislabel { font-size: 120%; font-weight: bold; text-anchor: middle; }
 
   .datapoint { stroke: none; fill: #ff0000; fill-opacity: 1; }
+  .dataline  { stroke: #000080; fill: none; stroke-width: .5; }
   a { fill: #0000ff; }
  ]]>
  </style>
@@ -184,8 +184,16 @@ var fahrrad = { daten : [
 ] };
  ]]></script>
  <script type="application/ecmascript" id="initialize_data"><![CDATA[
+  var pathdata;
   function drawData() {
+    pathdata = "M ";
     fahrrad.daten.forEach(drawPoint);
+    pathdata = pathdata.substr(0, pathdata.length - 2);
+    var pathobj = document.createElementNS("http://www.w3.org/2000/svg", 'path');
+    pathobj.setAttribute("d", pathdata);
+    pathobj.setAttribute("class", "dataline");
+    var area = document.getElementById("dataarea");
+    area.insertBefore(pathobj, area.firstChild);
   }
 
   function drawPoint(value, index, daten) {
@@ -196,9 +204,10 @@ var fahrrad = { daten : [
     point.setAttribute("r", "2");
     point.setAttribute("cx", get_xpos(value.date));
     point.setAttribute("cy", get_ypos(value.distance));
-    point.setAttribute("onmouseover", "showpoint(" + index + ", event)");
+    point.setAttribute("onmouseover", "showpoint(" + index + ", evt)");
     point.setAttribute("onmouseout", "hidepoint(" + index + ")");
     point.setAttribute("onclick", "keep(" + index + ")");
+    pathdata += "" + get_xpos(value.date) + "," + get_ypos(value.distance) + " L ";
   }
  ]]></script>
  <script type="application/ecmascript" id="initialize"><![CDATA[
@@ -318,7 +327,6 @@ var fahrrad = { daten : [
  ]]></script>
  <script type="application/ecmascript" id="showdata"><![CDATA[
    function showpoint(index, evt) {
-     console.log("Showing " + index + " current " + keepPopup);
      var datainfogroup = document.getElementById("datainfo");
      datainfogroup.setAttribute("visibility", "shown");
      if (keepPopup >= 0) {
@@ -342,6 +350,7 @@ var fahrrad = { daten : [
        var link = document.createElementNS("http://www.w3.org/2000/svg", 'a');
        link.href = data.link;
        link.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", data.link);
+       link.setAttribute("target", "_parent");
        link.textContent = data.text;
        desc_text.appendChild(link);
      }
@@ -357,7 +366,6 @@ var fahrrad = { daten : [
 
    var keepPopup = -1;
    function keep(index) {
-     console.log("Keeping " + index + " current " + keepPopup);
      if (keepPopup == index) {
        keepPopup = -1;
        hidepoint(keepPopup);
@@ -367,7 +375,6 @@ var fahrrad = { daten : [
    }
   
    function hidepoint(index) {
-     console.log("Hiding " + index + " current " + keepPopup);
      if (keepPopup != -1) {
        return;
      }
@@ -378,7 +385,7 @@ var fahrrad = { daten : [
    }
  ]]></script>
  <g id="coord" transform="translate(80,550)">
-  <rect x="0" y="-490" height="490" width="640" style="fill: #ffffe0; stroke: #000000; fill-opacity:.3" onclick="toggle_coordinateshow(event)" onmousemove="showcoordinates(event)"/>
+  <rect x="0" y="-490" height="490" width="640" style="fill: #ffffe0; stroke: #000000; fill-opacity:.3" onclick="toggle_coordinateshow(evt)" onmousemove="showcoordinates(evt)"/>
   <g id="axes">
    <g id="xaxis" />
    <g id="yaxis" />
