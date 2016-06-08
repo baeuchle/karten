@@ -61,8 +61,8 @@
     var localwidth = element.clientWidth || element.offsetWidth || element.scrollWidth;
     var localheight = element.clientHeight || element.offsetHeight || element.scrollHeight;
     if (!localwidth && !localheight) {
-      localwidth = element.getAttribute("width");
-      localheight = element.getAttribute("height");
+      localwidth = Number(element.getAttribute("width"));
+      localheight = Number(element.getAttribute("height"));
     }
     if (!localwidth && !localheight) {
       var rect = element.getBoundingClientRect();
