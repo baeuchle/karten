@@ -15,7 +15,7 @@
   text.xlabel { text-anchor: middle; }
 
   #xaxis path, #yaxis path { stroke: #000000; stroke-width: 1; }
-  #xaxis text { text-anchor: middle; }
+  #xaxis text { text-anchor: middle; border: thin black solid; }
   #yaxis text { text-anchor: end; }
   #xaxis text#xaxislabel, #yaxis text#yaxislabel { font-size: 120%; font-weight: bold; text-anchor: middle; }
 
@@ -25,30 +25,62 @@
  ]]>
  </style>
  <script type="application/ecmascript" id="constants"><![CDATA[
-  var show = false;
-  var height = 490;
-  var width = 640;
-  var min_y = 0;
-  var max_y = 14000;
-  var del_y = 1000;
-  var min_x = new Date(2001, 0, 1, 0, 0, 0, 0);
-  var max_x = new Date(2017, 0, 1, 0, 0, 0, 0);
-  var del_x = 1;
-  var xlabeltext = "Jahr";
-  var ylabeltext = "km";
+  var plotparams = {
+    showPosition: false,
+    keepPopup: -1,
+    x: {
+      min: new Date(2001, 0, 1, 0, 0, 0, 0),
+      max: new Date(2017, 0, 1, 0, 0, 0, 0),
+      del: 1,
+      labeltext: "Jahr"
+    },
+    y: {
+      min: 0,
+      max: 14000,
+      del: 1000,
+      labeltext: "km"
+    },
+    width: 640,
+    height: 490
+  };
+  var plotlines = {
+    pathdata: ""
+  };
 
   function get_xpos(xDate) {
-    var xoffset = xDate - min_x;
-    var xlength = max_x - min_x;
-    return (width * xoffset / xlength).toFixed(3);
+    var xoffset = xDate - plotparams.x.min;
+    var xlength = plotparams.x.max - plotparams.x.min;
+    return (plotparams.width * xoffset / xlength).toFixed(3);
   }
 
   function get_ypos(y) {
-    return ((-y - min_y) / (max_y - min_y) * height);
+    return ((-y - plotparams.y.min) / (plotparams.y.max - plotparams.y.min) * plotparams.height);
+  }
+
+  function get_size(element) {
+    var localwidth = element.clientWidth || element.offsetWidth || element.scrollWidth;
+    var localheight = element.clientHeight || element.offsetHeight || element.scrollHeight;
+    if (!localwidth && !localheight) {
+      localwidth = element.getAttribute("width");
+      localheight = element.getAttribute("height");
+    }
+    if (!localwidth && !localheight) {
+      var rect = element.getBoundingClientRect();
+      var ul = document.documentElement.createSVGPoint();
+      var dr = document.documentElement.createSVGPoint();
+      ul.x = 0; ul.y = 0;
+      dr.x = rect.width; dr.y = rect.height;
+      var matrix = element.getScreenCTM().inverse();
+      ul = ul.matrixTransform(matrix);
+      dr = dr.matrixTransform(matrix);
+      localwidth = Math.abs(dr.x - ul.x);
+      localheight = Math.abs(dr.y - ul.y);
+    }
+    return { width: localwidth, height: localheight };
   }
  ]]></script>
  <script type="application/ecmascript" id="data"><![CDATA[
-var fahrrad = { daten : [
+var fahrrad = [
  { date : new Date("2000-05-22"), distance :    0, link: "", text : "18. Geburtstag: Fahrrad bekommen" },
  { date : new Date("2005-09-03"), distance : 3390, link: "", text : "Fahrradtour zur Ostsee mit Caro und Derek B." },
  { date : new Date("2005-09-04"), distance : 3452, link: "", text : "Fahrradtour zur Ostsee mit Caro und Derek B." },
@@ -117,6 +149,14 @@ var fahrrad = { daten : [
  { date : new Date("2013-04-08"), distance :13067, link: "http://baeuchle.frankfurtium.de/2013-05/alles-neu-macht-der-mai/", text: "Alles neu macht der Mai" },
  { date : new Date("2013-05-12"), distance :    0, link: "http://baeuchle.frankfurtium.de/2013-05/alles-neu-macht-der-mai/", text: "Alles neu macht der Mai" },
  { date : new Date("2013-12-31"), distance :  805, link: "http://baeuchle.frankfurtium.de/2014-02/auf-nach-niederursel/", text: "Auf nach Niederursel" },
+ { date : new Date("2014-08-09"), distance : 2050, link: "", text: "Mainradweg (Stand geschätzt)" },
+ { date : new Date("2014-08-10"), distance : 2141, link: "", text: "Mainradweg (Stand geschätzt)" },
+ { date : new Date("2014-08-11"), distance : 2186, link: "", text: "Mainradweg (Stand geschätzt)" },
+ { date : new Date("2014-08-12"), distance : 2273, link: "", text: "Mainradweg (Stand geschätzt)" },
+ { date : new Date("2014-08-13"), distance : 2373, link: "", text: "Mainradweg (Stand geschätzt)" },
+ { date : new Date("2014-08-14"), distance : 2465, link: "", text: "Mainradweg (Stand geschätzt)" },
+ { date : new Date("2014-08-15"), distance : 2561, link: "", text: "Mainradweg (Stand geschätzt)" },
+ { date : new Date("2014-08-16"), distance : 2627, link: "", text: "Mainradweg (Stand geschätzt)" },
  { date : new Date("2015-01-05"), distance : 3759, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2015-01-12"), distance : 3828, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2015-01-19"), distance : 3869, link: "", text: "Quelle: Protokoll" },
@@ -181,16 +221,15 @@ var fahrrad = { daten : [
  { date : new Date("2016-05-22"), distance : 6340, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2016-05-29"), distance : 6354, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2016-06-05"), distance : 6372, link: "", text: "Quelle: Protokoll" }
-] };
+];
  ]]></script>
  <script type="application/ecmascript" id="initialize_data"><![CDATA[
-  var pathdata;
   function drawData() {
-    pathdata = "M ";
-    fahrrad.daten.forEach(drawPoint);
-    pathdata = pathdata.substr(0, pathdata.length - 2);
+    plotlines.pathdata = "M ";
+    fahrrad.forEach(drawPoint);
+    plotlines.pathdata = plotlines.pathdata.substr(0, plotlines.pathdata.length - 2);
     var pathobj = document.createElementNS("http://www.w3.org/2000/svg", 'path');
-    pathobj.setAttribute("d", pathdata);
+    pathobj.setAttribute("d", plotlines.pathdata);
     pathobj.setAttribute("class", "dataline");
     var area = document.getElementById("dataarea");
     area.insertBefore(pathobj, area.firstChild);
@@ -207,7 +246,7 @@ var fahrrad = { daten : [
     point.setAttribute("onmouseover", "showpoint(" + index + ", evt)");
     point.setAttribute("onmouseout", "hidepoint(" + index + ")");
     point.setAttribute("onclick", "keep(" + index + ")");
-    pathdata += "" + get_xpos(value.date) + "," + get_ypos(value.distance) + " L ";
+    plotlines.pathdata += "" + get_xpos(value.date) + "," + get_ypos(value.distance) + " L ";
   }
  ]]></script>
  <script type="application/ecmascript" id="initialize"><![CDATA[
@@ -218,7 +257,7 @@ var fahrrad = { daten : [
   }
 
   function drawXaxis(group) {
-    for (var x = min_x.getFullYear(); x <= max_x.getFullYear(); x += del_x) {
+    for (var x = plotparams.x.min.getFullYear(); x <= plotparams.x.max.getFullYear(); x += plotparams.x.del) {
       var label = document.createElementNS("http://www.w3.org/2000/svg", 'text');
       var tic = document.createElementNS("http://www.w3.org/2000/svg", 'path');
       group.appendChild(label);
@@ -228,19 +267,19 @@ var fahrrad = { daten : [
       var xpos = get_xpos(xDate);
       label.textContent = x;
       label.setAttribute("x", xpos);
-      label.setAttribute("y", 1.5 * label.clientHeight);
+      label.setAttribute("y", 1.5 * get_size(label).height);
       tic.setAttribute("d", "M " + xpos + ",0 v -5");
     }
     var axislabel = document.createElementNS("http://www.w3.org/2000/svg", 'text');
     group.appendChild(axislabel);
-    axislabel.textContent = xlabeltext;
+    axislabel.textContent = plotparams.x.labeltext;
     axislabel.setAttribute("id", "xaxislabel");
-    axislabel.setAttribute("x", width / 2);
-    axislabel.setAttribute("y", 1.5 * group.firstChild.clientHeight + axislabel.clientHeight);
+    axislabel.setAttribute("x", plotparams.width / 2);
+    axislabel.setAttribute("y", 1.5 * get_size(group.firstChild).height + get_size(axislabel).height);
   }
 
   function drawYaxis(group) {
-    for (var y = min_y; y <= max_y; y += del_y) {
+    for (var y = plotparams.y.min; y <= plotparams.y.max; y += plotparams.y.del) {
       var label = document.createElementNS("http://www.w3.org/2000/svg", 'text');
       group.appendChild(label);
       var tic = document.createElementNS("http://www.w3.org/2000/svg", 'path');
@@ -248,43 +287,43 @@ var fahrrad = { daten : [
 
       var ypos = get_ypos(y);
       label.textContent = y;
-      label.setAttribute("y", ypos + label.clientHeight / 3);
-      label.setAttribute("x", - label.clientHeight / 2);
+      label.setAttribute("y", ypos + get_size(label).height / 3);
+      label.setAttribute("x", - get_size(label).height / 2);
       tic.setAttribute("d", "M 0," + ypos + " h 5");
     }
     var axislabel = document.createElementNS("http://www.w3.org/2000/svg", 'text');
     group.appendChild(axislabel);
-    axislabel.textContent = ylabeltext;
-    var x = -group.lastChild.previousSibling.previousSibling.clientWidth - 5;
-    var y = -height / 2;
+    axislabel.textContent = plotparams.y.labeltext;
+    var x = - get_size(group.lastChild.previousSibling.previousSibling).width - 5;
+    var y = -plotparams.height / 2;
     axislabel.setAttribute("transform", "translate(" + x + "," + y + ") rotate(-90)");
     axislabel.setAttribute("id", "yaxislabel");
   }
  ]]></script>
  <script type="application/ecmascript" id="show_coordinates"><![CDATA[
   function toggle_coordinateshow(evt) {
-    show = !show;
-    document.getElementById("koordinaten").setAttribute("visibility", show ? 'shown' : 'hidden');
+    plotparams.showPosition = !plotparams.showPosition;
+    document.getElementById("koordinaten").setAttribute("visibility", plotparams.showPosition ? 'shown' : 'hidden');
     showcoordinates(evt);
   }
 
   function showcoordinates(evt) {
-    if (! show) {
+    if (! plotparams.showPosition) {
       return;
     }
     var coordinate_point = getCoordinatePoint(evt);
 
     // plot_point is between 0 and 1 for both dimensions:
     var plot_point = document.documentElement.createSVGPoint();
-    plot_point.x =  coordinate_point.x / width;
-    plot_point.y = -coordinate_point.y / height;
-    var date = new Date(min_x.getTime() + (max_x.getTime() - min_x.getTime())*plot_point.x);
+    plot_point.x =  coordinate_point.x / plotparams.width;
+    plot_point.y = -coordinate_point.y / plotparams.height;
+    var date = new Date(plotparams.x.min.getTime() + (plotparams.x.max.getTime() - plotparams.x.min.getTime())*plot_point.x);
     var xText = dateFormat(date);
-    var yText = (plot_point.y * max_y + min_y).toFixed(2) + " km";
+    var yText = (plot_point.y * plotparams.y.max + plotparams.y.min).toFixed(2) + " km";
 
     var textElement = document.getElementById("koordinaten");
     textElement.firstChild.data = yText + " / " + xText;
-    textElement.setAttribute("y", textElement.clientHeight);
+    textElement.setAttribute("y", get_size(textElement).height);
 
     // positioning of text field:
     setNodePosition(textElement, textElement, coordinate_point);
@@ -296,16 +335,15 @@ var fahrrad = { daten : [
   function setNodePosition(node, sizer, position) {
     var x;
     var y;
-    var localwidth = sizer.clientWidth ? sizer.clientWidth : Number(sizer.getAttribute("width"));
-    var localheight = sizer.clientHeight ? sizer.clientHeight : Number(sizer.getAttribute("height"));
-    if (localwidth + position.x > width - 10) {
-      x = position.x - 10 - localwidth;
+    var localsize = get_size(sizer);
+    if (localsize.width + position.x > plotparams.width - 10) {
+      x = position.x - 10 - localsize.width;
     } else {
       x = position.x + 10;
     }
 
-    if (localheight + position.y > -5) {
-      y = - (localheight + 2);
+    if (localsize.height + position.y > -5) {
+      y = - (localsize.height + 2);
     } else {
       y = position.y + 2;
     }
@@ -329,10 +367,10 @@ var fahrrad = { daten : [
    function showpoint(index, evt) {
      var datainfogroup = document.getElementById("datainfo");
      datainfogroup.setAttribute("visibility", "shown");
-     if (keepPopup >= 0) {
+     if (plotparams.keepPopup >= 0) {
        return;
      }
-     var data = fahrrad.daten[index];
+     var data = fahrrad[index];
      document.getElementById("koordinaten").setAttribute("visibility", 'hidden');
      var bg_rect = document.getElementById("datainfo_background");
      var date_text = document.getElementById("datainfo_date");
@@ -354,32 +392,34 @@ var fahrrad = { daten : [
        link.textContent = data.text;
        desc_text.appendChild(link);
      }
-     date_text.setAttribute("y", 1.5 + date_text.clientHeight);
-     dist_text.setAttribute("y", 1.5 + date_text.clientHeight + dist_text.clientHeight);
-     desc_text.setAttribute("y", 1.5 + date_text.clientHeight + dist_text.clientHeight + desc_text.clientHeight);
+     var dateSize = get_size(date_text);
+     var distSize = get_size(dist_text);
+     var descSize = get_size(desc_text);
+     date_text.setAttribute("y", 1.5 + dateSize.height);
+     dist_text.setAttribute("y", 1.5 + dateSize.height + distSize.height);
+     desc_text.setAttribute("y", 1.5 + dateSize.height + distSize.height + descSize.height);
 
-     var maxwidth = Math.max(date_text.clientWidth, dist_text.clientWidth, desc_text.clientWidth);
-     bg_rect.setAttribute("width", 12 + 6 + maxwidth);
-     bg_rect.setAttribute("height", 6 + date_text.clientHeight + dist_text.clientHeight + desc_text.clientHeight);
+     var maxwidth = Math.max(dateSize.width, distSize.width, descSize.width);
+     bg_rect.setAttribute("width", 6 + maxwidth);
+     bg_rect.setAttribute("height", 6 + dateSize.height + distSize.height + descSize.height);
      setNodePosition(datainfogroup, bg_rect, getCoordinatePoint(evt));
    }
 
-   var keepPopup = -1;
    function keep(index) {
-     if (keepPopup == index) {
-       keepPopup = -1;
-       hidepoint(keepPopup);
+     if (plotparams.keepPopup == index) {
+       plotparams.keepPopup = -1;
+       hidepoint(plotparams.keepPopup);
        return;
      }
-     keepPopup = index;
+     plotparams.keepPopup = index;
    }
   
    function hidepoint(index) {
-     if (keepPopup != -1) {
+     if (plotparams.keepPopup != -1) {
        return;
      }
-     keepPopup = -1;
-     document.getElementById("koordinaten").setAttribute("visibility", show ? 'shown' : 'hidden');
+     plotparams.keepPopup = -1;
+     document.getElementById("koordinaten").setAttribute("visibility", plotparams.showPosition ? 'shown' : 'hidden');
      var datainfogroup = document.getElementById("datainfo");
      datainfogroup.setAttribute("visibility", "hidden");
    }
