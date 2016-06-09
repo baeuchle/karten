@@ -6,12 +6,18 @@
 ## than 40 hexadecimal digits.
 
 use strict;
+binmode STDOUT, ':encoding(UTF-8)';
+binmode STDERR, ':encoding(UTF-8)';
+use utf8;
+
+use CGI;
+my $query = CGI->new;
 
 my $repository = '/home/baeuchle/karten/';
 chdir $repository;
 
 ## read and check file input:
-my $file = shift @ARGV;
+my $file = $query->param('file');
 my @file_whitelist = qw ! fahrrad.svg ubahnnetz.svg strassenbahn.svg !;
 my $file_is_allowed = 0;
 foreach my $allowed_file (@file_whitelist) {
@@ -23,26 +29,31 @@ unless ($file_is_allowed) {
 }
 
 ## read and check revision input:
-my $rev = shift @ARGV;
-if (length ($rev) > 40 || $rev =~ /[\da-f]/) {
+my $rev = $query->param('rev');
+if (length ($rev) > 40 || $rev =~ /[^\da-f]/) {
   &invalid_revision($rev);
 }
 
 my $ref_id = $rev.':'.$file;
+print STDERR $ref_id;
 
 print <<'HTTP';
 Content-Type: image/xml+svg
 
 HTTP
 
-my $a = system('git', 'show', $ref_id);
+my $retval = system('git', 'show', $ref_id);
+
+if ($retval != 0) {
+  system('git', 'show', $file);
+}
 
 exit;
 
 sub invalid_file {
   my $filename = shift || "";
   print <<"FEHLER";
-HTTP/1.1 404 File Not Found
+Status: 404 Not Found
 Content-Type: text/plain
 
 Die angeforderte Datei $filename wurde nicht gefunden.
@@ -53,7 +64,7 @@ FEHLER
 sub invalid_revision {
   my $filename = shift || "";
   print <<"FEHLER";
-HTTP/1.1 404 File Not Found
+Status: 404 Not Found
 Content-Type: text/plain
 
 $rev ist keine gültige Revision! SHA-1 angeben.

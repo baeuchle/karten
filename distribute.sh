@@ -26,7 +26,7 @@ if [ -d /var/www/plan ]; then
     cp ubahnnetz.svg /var/www/plan/
     cp straßenbahnnetz.svg /var/www/plan/strassenbahnnetz.svg
     cp fahrrad.svg /var/www/plan/
-    
+    cp oldrev.pl /var/www/plan/
 fi
 echo "Entscripten"
 ./entscripten.pl < ubahnnetz.svg > ubahnnetz.wiki.svg
