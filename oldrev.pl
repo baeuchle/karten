@@ -38,7 +38,7 @@ my $ref_id = $rev.':'.$file;
 print STDERR $ref_id;
 
 print <<'HTTP';
-Content-Type: image/xml+svg
+Content-Type: image/svg+xml
 
 HTTP
 
