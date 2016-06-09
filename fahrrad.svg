@@ -4,7 +4,7 @@
   xmlns:xlink="http://www.w3.org/1999/xlink"
   width="100%"
   height="100%"
-  viewBox="0 0 800 600"
+  viewBox="0 50 740 600"
   onload="initialize()"
    >
    <title>Fahrradfahrten</title>
@@ -20,6 +20,7 @@
   #xaxis text#xaxislabel, #yaxis text#yaxislabel { font-size: 120%; font-weight: bold; text-anchor: middle; }
 
   .datapoint { stroke: none; fill: #ff0000; fill-opacity: 1; }
+  .dataarea { stroke: none; fill: #00c000; fill-opacity: .2; }
   .dataline  { stroke: #000080; fill: none; stroke-width: .5; }
   a { fill: #0000ff; }
  ]]>
@@ -29,14 +30,14 @@
     showPosition: false,
     keepPopup: -1,
     x: {
-      min: new Date(2001, 0, 1, 0, 0, 0, 0),
+      min: new Date(2005, 0, 1, 0, 0, 0, 0),
       max: new Date(2017, 0, 1, 0, 0, 0, 0),
       del: 1,
       labeltext: "Jahr"
     },
     y: {
-      min: 0,
-      max: 14000,
+      min: 1000,
+      max: 13000,
       del: 1000,
       labeltext: "km"
     },
@@ -50,11 +51,11 @@
   function get_xpos(xDate) {
     var xoffset = xDate - plotparams.x.min;
     var xlength = plotparams.x.max - plotparams.x.min;
-    return (plotparams.width * xoffset / xlength).toFixed(3);
+    return plotparams.width * xoffset / xlength;
   }
 
   function get_ypos(y) {
-    return ((-y - plotparams.y.min) / (plotparams.y.max - plotparams.y.min) * plotparams.height);
+    return (-y + plotparams.y.min) / (plotparams.y.max - plotparams.y.min) * plotparams.height;
   }
 
   function get_size(element) {
@@ -81,7 +82,7 @@
  ]]></script>
  <script type="application/ecmascript" id="data"><![CDATA[
 var fahrrad = [
- { date : new Date("2000-05-22"), distance :    0, link: "", text : "18. Geburtstag: Fahrrad bekommen" },
+ { date : new Date("2001-05-22"), distance :    0, link: "", text : "19. Geburtstag: Fahrrad bekommen" },
  { date : new Date("2005-09-03"), distance : 3390, link: "", text : "Fahrradtour zur Ostsee mit Caro und Derek B." },
  { date : new Date("2005-09-04"), distance : 3452, link: "", text : "Fahrradtour zur Ostsee mit Caro und Derek B." },
  { date : new Date("2005-09-05"), distance : 3542, link: "", text : "Fahrradtour zur Ostsee mit Caro und Derek B." },
@@ -222,9 +223,19 @@ var fahrrad = [
  { date : new Date("2016-05-29"), distance : 6354, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2016-06-05"), distance : 6372, link: "", text: "Quelle: Protokoll" }
 ];
+var regionen = [
+ { date: [ new Date("2005-09-03"), new Date("2005-09-20")], dateText: "September 2005", km: [ 3390,  4752], link: "", text: "Fahrradtour zur Ostsee mit Caro und Derek B." },
+ { date: [ new Date("2006-08-02"), new Date("2007-07-16")], dateText: "Aug 2008 - Jun 2007", km: [ 6020,  7355], link: "http://baeuchle.frankfurtium.de/tags/norge/", text: "Jahr in Norwegen" },
+ { date: [ new Date("2008-09-05"), new Date("2008-09-09")], dateText: "September 2008", km: [ 7977,  8376], link: "http://baeuchle.frankfurtium.de/2008-11/fahrradurlaub-am-rhein/", text: "Fahrradurlaub am Rhein" },
+ { date: [ new Date("2009-07-06"), new Date("2009-07-18")], dateText: "Juli 2009", km: [ 9208, 10255], link: "http://baeuchle.frankfurtium.de/2010-03/norwegen-2009/", text: "Norwegen 2009" },
+ { date: [ new Date("2012-04-25"), new Date("2012-04-30")], dateText: "April 2012", km: [11600, 11920], link: "http://baeuchle.frankfurtium.de/2012-05/niederrhein/", text: "Niederrhein (Stand geschätzt)" },
+ { date: [ new Date("2013-04-13"), new Date("2013-05-12")], dateText: "Mai 2013", km: [ 3266,  9800], kmText: " ", link: "http://baeuchle.frankfurtium.de/2013-05/alles-neu-macht-der-mai/", text: "Neues Fahrrad" },
+ { date: [ new Date("2014-08-09"), new Date("2014-08-16")], dateText: "August 2014", km: [ 2050,  2627], link: "", text: "Mainradweg (Stand geschätzt)" },
+ ];
  ]]></script>
  <script type="application/ecmascript" id="initialize_data"><![CDATA[
   function drawData() {
+    regionen.forEach(drawRegion);
     plotlines.pathdata = "M ";
     fahrrad.forEach(drawPoint);
     plotlines.pathdata = plotlines.pathdata.substr(0, plotlines.pathdata.length - 2);
@@ -235,6 +246,38 @@ var fahrrad = [
     area.insertBefore(pathobj, area.firstChild);
   }
 
+  function drawRegion(value, index, daten) {
+    var area = document.createElementNS("http://www.w3.org/2000/svg", 'ellipse');
+    document.getElementById("dataarea").appendChild(area);
+    area.setAttribute("class", "dataarea");
+    area.setAttribute("id", "area" + index);
+    var lowx = get_xpos(value.date[0]) / 2;
+    var hihx = get_xpos(value.date[1]) / 2;
+    var midx = lowx + hihx;
+    var lowy = get_ypos(value.km[0]) / 2;
+    var hihy = get_ypos(value.km[1]) / 2;
+    var midy = lowy + hihy;
+    area.setAttribute("rx", Math.max(20, 5 + Math.abs(hihx - lowx)));
+    area.setAttribute("ry", Math.max(20, 5 + Math.abs(hihy - lowy)));
+    area.setAttribute("cx", midx);
+    area.setAttribute("cy", midy);
+    area.setAttribute("onmouseover", "showpoint(make_datapoint(regionen[" + index + "]), evt)");
+    area.setAttribute("onmouseout", "hidepoint(make_datapoint(regionen[" + index + "]))");
+  }
+
+  function make_datapoint(region) {
+    var midx = (region.date[0].getTime() + region.date[1].getTime()) / 2;
+    var midy = (region.km[0] + region.km[1]) / 2;
+    return {
+      date: new Date(midx),
+      datetext: region.dateText,
+      distance: midy,
+      kmtext: region.kmText ? region.kmText : region.km[0] + "km – " + region.km[1] + " km",
+      text: region.text,
+      link: region.link
+    };
+  }
+
   function drawPoint(value, index, daten) {
     var point = document.createElementNS("http://www.w3.org/2000/svg", 'circle'); 
     document.getElementById("dataarea").appendChild(point);
@@ -243,8 +286,8 @@ var fahrrad = [
     point.setAttribute("r", "2");
     point.setAttribute("cx", get_xpos(value.date));
     point.setAttribute("cy", get_ypos(value.distance));
-    point.setAttribute("onmouseover", "showpoint(" + index + ", evt)");
-    point.setAttribute("onmouseout", "hidepoint(" + index + ")");
+    point.setAttribute("onmouseover", "showpoint(fahrrad[" + index + "], evt)");
+    point.setAttribute("onmouseout", "hidepoint(fahrrad[" + index + "])");
     point.setAttribute("onclick", "keep(" + index + ")");
     plotlines.pathdata += "" + get_xpos(value.date) + "," + get_ypos(value.distance) + " L ";
   }
@@ -364,20 +407,19 @@ var fahrrad = [
   }
  ]]></script>
  <script type="application/ecmascript" id="showdata"><![CDATA[
-   function showpoint(index, evt) {
+   function showpoint(data, evt) {
      var datainfogroup = document.getElementById("datainfo");
      datainfogroup.setAttribute("visibility", "shown");
      if (plotparams.keepPopup >= 0) {
        return;
      }
-     var data = fahrrad[index];
      document.getElementById("koordinaten").setAttribute("visibility", 'hidden');
      var bg_rect = document.getElementById("datainfo_background");
      var date_text = document.getElementById("datainfo_date");
      var dist_text = document.getElementById("datainfo_value");
      var desc_text = document.getElementById("datainfo_description");
-     date_text.textContent = dateFormat(data.date);
-     dist_text.textContent = data.distance + " km";
+     date_text.textContent = data.datetext ? data.datetext : dateFormat(data.date);
+     dist_text.textContent = data.kmtext ? data.kmtext : (data.distance + " km");
      while (desc_text.firstChild) {
        desc_text.removeChild(desc_text.firstChild);
      }
