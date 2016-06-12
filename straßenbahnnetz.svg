@@ -11,6 +11,8 @@
     width="1900"  height="1190"
     x="-865" y="-425"
     style="fill:white;stroke:#0000c0;stroke-width:.1px" />
+ <text class="ab_bb rev" x="-865" y="732"><a xlink:href="strassenbahnnetz.svg?rev=0000000000000000000000000000000000000000" class="rev">Permalink zu dieser Version</a></text>
+ <text class="ab_bb rev" x="-865" y="742"><a xlink:href="strassenbahnnetz.svg?rev=0000000000000000000000000000000000000000" class="rev">(<tspan class="hash"/>)</a></text>
   <text class="ab_bb" x="-865" y="752">© CC-BY-SA 4.0 or later 2011-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <metadata>
   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -65,6 +67,7 @@
   .ab_bb { font-size:6pt; }
   .link, a text, text a { fill:blue; visibility:visible; }
   .ref { font-size:9pt; fill:#0080ff; stroke:none; font-weight:bold; }
+  .rev { font-size: 7pt; fill-opacity: .5; }
   .geplant text { stroke:none; fill:black; font-style:italic; }
   .geplant text:before { content: "("; }
   .geplant text:after { content: ")"; }
@@ -278,7 +281,7 @@
    <g id="legende_normal" transform="translate(30,145)"><path class="strecke anschluss" d="M 0 -6 h 45" /><text x="75">Anschluss an DB-Netz</text></g>
    <text class="ab_bb"   transform="translate(30,165)">BB: Betriebsbahnhof</text>
    <text class="ab_bb" transform="translate(6,200)">¹:</text>
-   <text class="ab_bb" transform="translate(18,200)">Siehe <a class="link" xlink:href="ubahnnetz.svg">U-Bahn-Netz Frankfurt</a></text>
+   <text class="ab_bb" transform="translate(18,200)">Siehe <a class="link" xlink:href="ubahnnetz.svg?rev=0000000000000000000000000000000000000000">U-Bahn-Netz Frankfurt</a></text>
    <g class="nowiki">
     <text class="ab_bb te" transform="translate(332,201)"><a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg">Dieser Plan bei Wikipedia</a></text>
     <a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(333,188)"/></a>

@@ -8,7 +8,9 @@
   viewBox="-815 -169 1765 2129"
   >
  <rect id="aussen" width="1765" height="2147" x="-815" y="-180" style="fill:white;stroke:#0000c0;stroke-width:.1px" />
- <text class="te ab_bb" x="947" y="1958">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle </text>
+ <text class="te ab_bb rev" x="947" y="1938"><a xlink:href="ubahnnetz.svg?rev=0000000000000000000000000000000000000000" class="rev">Permalink zu dieser Version</a></text>
+ <text class="te ab_bb rev" x="947" y="1948"><a xlink:href="ubahnnetz.svg?rev=0000000000000000000000000000000000000000" class="rev">(<tspan class="hash"/>)</a></text>
+ <text class="te ab_bb" x="947" y="1958">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <metadata>
   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -77,6 +79,7 @@
   .kilometer text { font-size:.7em; }
   .label { fill:#fff; fill-opacity:.9; stroke-width:1px; stroke:#000; }
   .ref { font-size:9pt; fill:#0080ff; stroke:none; font-weight:bold; }
+  .rev { font-size: 7pt; fill-opacity: .5; }
 
   .ta { text-anchor:start; }
   .te { text-anchor:end; }
@@ -293,7 +296,7 @@
    <use xlink:href="#keinu2" transform="translate(30,315)" />
    <text class="ab_bb" transform="translate(46,314)">Zwischen Niederursel und Kalbach sind nur</text>
    <text class="ab_bb" transform="translate(46,326)">U4- und U5-Wagen zugelassen</text>
-   <text class="ab_bb" transform="translate(18,338)">¹: Referenzen siehe <a xlink:href="strassenbahnnetz.svg">Straßenbahn-Netz Frankfurt</a></text>
+   <text class="ab_bb" transform="translate(18,338)">¹: Referenzen siehe <a xlink:href="strassenbahnnetz.svg?rev=0000000000000000000000000000000000000000">Straßenbahn-Netz Frankfurt</a></text>
     <g class="nowiki">
     <text class="ab_bb te" transform="translate(382,338)"><a xlink:href="https://commons.wikimedia.org/wiki/File:U-Netz_Frankfurt.svg">Dieser Plan bei Wikipedia</a></text>
     <a xlink:href="https://commons.wikimedia.org/wiki/File:U-Netz_Frankfurt.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(383,326)"/></a>
