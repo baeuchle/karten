@@ -12,8 +12,6 @@ for i in straßenbahnnetz.svg ubahnnetz.svg; do
     perl -pi -e "s/\([\da-f]{40}\)/($revision)/" $i.dist
 done
 
-exit;
-
 if [ -d /var/www/plan ]; then
     if [ $(which convert) ]; then
         echo "1024"
