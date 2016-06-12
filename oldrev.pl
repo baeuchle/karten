@@ -18,7 +18,7 @@ chdir $repository;
 
 ## read and check file input:
 my $file = $query->param('file');
-my @file_whitelist = qw ! fahrrad.svg ubahnnetz.svg strassenbahn.svg !;
+my @file_whitelist = qw ! fahrrad.svg ubahnnetz.svg strassenbahnnetz.svg !;
 my $file_is_allowed = 0;
 foreach my $allowed_file (@file_whitelist) {
   $file_is_allowed = 1 if $file eq $allowed_file;

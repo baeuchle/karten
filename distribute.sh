@@ -3,7 +3,7 @@
 revision=$(git log -1 --pretty=format:%H)
 
 echo "Update date and version ($revision)"
-for i in straßenbahnnetz.svg ubahnnetz.svg; do
+for i in strassenbahnnetz.svg ubahnnetz.svg; do
     cp $i $i.dist
     perl -pi -e '@f = localtime(time); $_ =~ s/>.+</sprintf ">%04d-%02d-%02d<", $f[5]+1900, $f[4]+1, $f[3]/gex if /dc:date/' $i.dist
     perl -pi -e '@f = localtime(time); @a = qw ! Januar Februar März April Mai Juni Juli August September Oktober November Dezember !; $_ =~ s/Stand: .+?</sprintf "Stand: %s %4d<", $a[$f[4]], $f[5]+1900/gex' $i.dist
@@ -27,11 +27,11 @@ if [ -d /var/www/plan ]; then
     fi
     cp countries-ive-been-to.svg  /var/www/plan/
     echo "Moving Netzplaene"
-    cp ubahnnetz.svg.dist /var/www/plan/ubahnnetz.svg
-    cp straßenbahnnetz.svg.dist /var/www/plan/strassenbahnnetz.svg
+    mv ubahnnetz.svg.dist /var/www/plan/ubahnnetz.svg
+    mv strassenbahnnetz.svg.dist /var/www/plan/strassenbahnnetz.svg
     cp fahrrad.svg /var/www/plan/
     cp oldrev.pl /var/www/plan/
 fi
 echo "Entscripten"
 ./entscripten.pl < ubahnnetz.svg.dist > ubahnnetz.wiki.svg
-./entscripten.pl < straßenbahnnetz.svg.dist > straßenbahnnetz.wiki.svg
+./entscripten.pl < strassenbahnnetz.svg.dist > strassenbahnnetz.wiki.svg
