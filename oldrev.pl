@@ -35,7 +35,7 @@ unless ($file_is_allowed) {
 my $rev = $query->param('rev');
 &missing_parameter unless $rev;
 if (length ($rev) > 40 || $rev =~ /[^\da-f]/) {
-  &invalid_revision($rev);
+  &invalid_revision($rev, $file);
 }
 
 my $content = &get_content($rev, $file);
@@ -50,37 +50,64 @@ HTTP
   exit 0;
 }
 
-&invalid_file("Diese");
+&filerev_notfound($rev, $file);
 exit 1;
+
+sub filerev_notfound {
+  my $rev = shift || '';
+  my $file = shift || '';
+  print <<"FEHLER";
+Status: 404 Not Found
+Content-Type: text/html
+
+<html><head><title>Fehler: Datei und Revision passen nicht</title></head>
+<body><h1>Fehler: Datei und Revision passen nicht</h1>
+<p>Entweder konnte keine Revision $rev gefunden werden oder diese Revision enthält Datei $file nicht!</p>
+<p><a href="$file">Aktuelle Version dieser Datei</a></p>
+</body></html>
+FEHLER
+  exit 1;
+}
 
 sub invalid_file {
   my $filename = shift || "";
   print <<"FEHLER";
 Status: 404 Not Found
-Content-Type: text/plain
+Content-Type: text/html
 
-Die angeforderte Datei $filename wurde nicht gefunden.
+<html><head><title>Fehler: Datei unbekannt</title></head>
+<body><h1>Fehler: Datei unbekannt</h1>
+<p>Die angeforderte Datei $filename ist nicht in der Liste der erlaubten Dateien enthalten!</p>
+</body></html>
 FEHLER
   exit 1;
 }
 
 sub invalid_revision {
-  my $filename = shift || "";
+  my $revision = shift || "";
+  my $filename = shift || '';
   print <<"FEHLER";
 Status: 404 Not Found
-Content-Type: text/plain
+Content-Type: text/html
 
-$rev ist keine gültige Revision! SHA-1 angeben.
+<html><head><title>Fehler: Revision ungültig</title></head>
+<body><h1>Fehler: Revision ungültig</h1>
+<p>$rev ist keine gültige Revisionsangabe</p>
+<p><a href="$filename">Aktuelle Version dieser Datei</a></p>
+</body></html>
 FEHLER
   exit 1;
 }
 
 sub missing_parameter {
   print <<"FEHLER";
-Status: 404 Not Found
-Content-Type: text/plain
+Status: 400 Bad Request
+Content-Type: text/html
 
-Keine Datei oder keine Revision angegeben!
+<html><head><title>Fehler: Parameter fehlen</title></head>
+<body><h1>Fehler</h1>
+<p>Das Programm benötigt Parameter <tt>rev</tt> und <tt>file</tt></p>
+</body></html>
 FEHLER
   exit 1;
 }
