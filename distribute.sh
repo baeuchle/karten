@@ -8,8 +8,9 @@ for i in strassenbahnnetz.svg ubahnnetz.svg; do
     perl -pi -e '@f = localtime(time); $_ =~ s/>.+</sprintf ">%04d-%02d-%02d<", $f[5]+1900, $f[4]+1, $f[3]/gex if /dc:date/' $i.dist
     perl -pi -e '@f = localtime(time); @a = qw ! Januar Februar März April Mai Juni Juli August September Oktober November Dezember !; $_ =~ s/Stand: .+?</sprintf "Stand: %s %4d<", $a[$f[4]], $f[5]+1900/gex' $i.dist
     perl -pi -e '@f = localtime(time); $_ =~ s/2011-\d{4}/sprintf "2011-%4d", $f[5]+1900/gex' $i.dist
-    perl -pi -e "s/rev=[\da-f]{40}/rev=$revision/" $i.dist
-    perl -pi -e "s/\([\da-f]{40}\)/($revision)/" $i.dist
+    ./update.pl $revision < $i.dist > $i.dist.1
+    mv $i.dist.1 $i.dist
+    ./entscripten.pl < $i.dist > ${i/svg/wiki.svg}
 done
 
 if [ -d /var/www/plan ]; then
@@ -32,6 +33,3 @@ if [ -d /var/www/plan ]; then
     cp fahrrad.svg /var/www/plan/
     cp oldrev.pl /var/www/plan/
 fi
-echo "Entscripten"
-./entscripten.pl < ubahnnetz.svg.dist > ubahnnetz.wiki.svg
-./entscripten.pl < strassenbahnnetz.svg.dist > strassenbahnnetz.wiki.svg
