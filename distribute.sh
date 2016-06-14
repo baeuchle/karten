@@ -4,12 +4,7 @@ revision=$(git log -1 --pretty=format:%H)
 
 echo "Update date and version ($revision)"
 for i in strassenbahnnetz.svg ubahnnetz.svg; do
-    cp $i $i.dist
-    perl -pi -e '@f = localtime(time); $_ =~ s/>.+</sprintf ">%04d-%02d-%02d<", $f[5]+1900, $f[4]+1, $f[3]/gex if /dc:date/' $i.dist
-    perl -pi -e '@f = localtime(time); @a = qw ! Januar Februar März April Mai Juni Juli August September Oktober November Dezember !; $_ =~ s/Stand: .+?</sprintf "Stand: %s %4d<", $a[$f[4]], $f[5]+1900/gex' $i.dist
-    perl -pi -e '@f = localtime(time); $_ =~ s/2011-\d{4}/sprintf "2011-%4d", $f[5]+1900/gex' $i.dist
-    ./update.pl $revision < $i.dist > $i.dist.1
-    mv $i.dist.1 $i.dist
+    ./update.pl $revision < $i > $i.dist
     ./entscripten.pl < $i.dist > ${i/svg/wiki.svg}
 done
 
