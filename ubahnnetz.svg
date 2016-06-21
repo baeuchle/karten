@@ -387,7 +387,7 @@
   <g id="strecke_debene" class="tunnel">
    <path id="ul_b_bbost_1" d="M 535,1285 m 80,-34 h -52 q -4,0 -7,3 l -5,5 c -3,3 0,6 -3,9" />
    <path id="ul_b_bbost_2" d="M 535,1285 m 36,-18 q 6,-6 14,-6 h 30" />
- <path class="mitte hilfslinie" d="q 0,22 16.5,38.5 l 3.5,-3.5 -3.5,3.5 q 16.5,16.5 38.5,16.5 h2 h 270 v 5,-5 h 15 v 5,-5 h 85 v 5,-5 h 30 a 55,55 0,0,0 55,-55 h 5,-5 v -20" />
+   <path class="mitte hilfslinie" d="m 0, 0 q 0,22 16.5,38.5 l 3.5,-3.5 -3.5,3.5 q 16.5,16.5 38.5,16.5 h2 h 270 v 5,-5 h 15 v 5,-5 h 85 v 5,-5 h 30 a 55,55 0,0,0 55,-55 h 5,-5 v -20" />
    <path id="b_1_stamm" class="tunnel faeng" d="M -282,1550 a 50,50 0,0,1 50,50 v 50 q 0,24 18,42 q 18,18 42,18 h 2 h 400 a 60,60 0,0,0 60,-60" />
    <path id="b_2_stamm" class="tunnel endet" d="M 280,1650 a 50,50 0,0,1 -50,50 h -400 h -2 q -20,0 -35,-15 q -15,-15 -15,-35 v -50 a 60,60 0,0,0 -60,-60" />
    <path id="europaviertel_1.1" class="geplant verlaengerung_europaviertel" d="M -282,1540 h -78" />
