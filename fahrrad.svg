@@ -14,10 +14,12 @@
   text.ylabel { text-anchor: end; }
   text.xlabel { text-anchor: middle; }
 
-  #xaxis path, #yaxis path { stroke: #000000; stroke-width: 1; }
-  #xaxis text { text-anchor: middle; border: thin black solid; }
-  #yaxis text { text-anchor: end; }
-  #xaxis text#xaxislabel, #yaxis text#yaxislabel { font-size: 120%; font-weight: bold; text-anchor: middle; }
+  .xaxis path, .yaxis path { stroke: #000000; stroke-width: 1; }
+  .xaxis text { text-anchor: middle; border: thin black solid; }
+  .yaxis text { text-anchor: end; }
+  .xaxis text.xaxislabel, .yaxis text.yaxislabel { font-size: 120%; font-weight: bold; text-anchor: middle; }
+  .monthlabel { font-size: 70%; }
+  .inletRect { fill: #ffffff; fill-opacity: .2; stroke: #000000; stroke-opacity: .2; }
 
   .datapoint { stroke: none; fill: #ff0000; fill-opacity: 1; }
   .dataarea { stroke: none; fill: #00c000; fill-opacity: .2; }
@@ -34,7 +36,7 @@
     x: {
       min: new Date(2005, 0, 1, 0, 0, 0, 0),
       max: new Date(2017, 0, 1, 0, 0, 0, 0),
-      del: 1,
+      del: 12,
       labeltext: "Jahr"
     },
     y: {
@@ -44,20 +46,46 @@
       labeltext: "km"
     },
     width: 640,
-    height: 490
+    height: 490,
+    area: "dataarea",
+    dataname: "data",
+    overflow: true,
+    pathdata: ""
   };
-  var plotlines = {
+  var inletparams = {
+    showPosition: false,
+    currentPopup: -1,
+    popupStay: false,
+    x: {
+      min: new Date(2015, 5, 1, 0, 0, 0, 0),
+      max: new Date(2016, 8, 1, 0, 0, 0, 0),
+      del: 3,
+      labeltext: ""
+    },
+    y: {
+      min: 5000,
+      max: 6600,
+      del: 400,
+      labeltext: ""
+    },
+    width: 250,
+    height: 150,
+    area: "inlet_dataarea",
+    dataname: "inletdata",
+    overflow: false,
     pathdata: ""
   };
 
-  function get_xpos(xDate) {
-    var xoffset = xDate - plotparams.x.min;
-    var xlength = plotparams.x.max - plotparams.x.min;
-    return plotparams.width * xoffset / xlength;
+  function get_xpos(xDate, plot) {
+    plot = plot ? plot : plotparams;
+    var xoffset = xDate - plot.x.min;
+    var xlength = plot.x.max - plot.x.min;
+    return plot.width * xoffset / xlength;
   }
 
-  function get_ypos(y) {
-    return (-y + plotparams.y.min) / (plotparams.y.max - plotparams.y.min) * plotparams.height;
+  function get_ypos(y, plot) {
+    plot = plot ? plot : plotparams;
+    return (-y + plot.y.min) / (plot.y.max - plot.y.min) * plot.height;
   }
 
   function get_size(element) {
@@ -238,28 +266,34 @@ var regionen = [
  ];
  ]]></script>
  <script type="application/ecmascript" id="initialize_data"><![CDATA[
-  function drawData() {
-    regionen.forEach(drawRegion);
-    plotlines.pathdata = "M ";
-    fahrrad.forEach(drawPoint);
-    plotlines.pathdata = plotlines.pathdata.substr(0, plotlines.pathdata.length - 2);
+  function drawData(plot) {
+    if (plot.overflow) {
+      for (var i = 0; i < regionen.length; ++i) {
+        drawRegion(regionen[i], i, plot);
+      }
+    }
+    plot.pathdata = "M ";
+    for (var i = 0; i < fahrrad.length; ++i) {
+      drawPoint(fahrrad[i], i, plot);
+    }
+    plot.pathdata = plot.pathdata.substr(0, plot.pathdata.length - 2);
     var pathobj = document.createElementNS("http://www.w3.org/2000/svg", 'path');
-    pathobj.setAttribute("d", plotlines.pathdata);
+    pathobj.setAttribute("d", plot.pathdata);
     pathobj.setAttribute("class", "dataline");
-    var area = document.getElementById("dataarea");
+    var area = document.getElementById(plot.area);
     area.insertBefore(pathobj, area.firstChild);
   }
 
-  function drawRegion(value, index, daten) {
+  function drawRegion(value, index, plot) {
     var area = document.createElementNS("http://www.w3.org/2000/svg", 'ellipse');
-    document.getElementById("dataarea").appendChild(area);
-    area.setAttribute("class", "dataarea");
+    document.getElementById(plot.area).appendChild(area);
+    area.setAttribute("class", plot.area);
     area.setAttribute("id", "area" + index);
-    var lowx = get_xpos(value.date[0]) / 2;
-    var hihx = get_xpos(value.date[1]) / 2;
+    var lowx = get_xpos(value.date[0], plot) / 2;
+    var hihx = get_xpos(value.date[1], plot) / 2;
     var midx = lowx + hihx;
-    var lowy = get_ypos(value.km[0]) / 2;
-    var hihy = get_ypos(value.km[1]) / 2;
+    var lowy = get_ypos(value.km[0], plot) / 2;
+    var hihy = get_ypos(value.km[1], plot) / 2;
     var midy = lowy + hihy;
     area.setAttribute("rx", Math.max(20, 5 + Math.abs(hihx - lowx)));
     area.setAttribute("ry", Math.max(20, 5 + Math.abs(hihy - lowy)));
@@ -283,57 +317,79 @@ var regionen = [
     };
   }
 
-  function drawPoint(value, index, daten) {
+  function drawPoint(value, index, plot) {
+    if (! plot.overflow && (value.date < plot.x.min || value.date > plot.x.max || value.distance < plot.y.min || value.distance > plot.y.max)) {
+      return;
+    }
     var point = document.createElementNS("http://www.w3.org/2000/svg", 'circle'); 
-    document.getElementById("dataarea").appendChild(point);
+    document.getElementById(plot.area).appendChild(point);
     point.setAttribute("class", "datapoint");
-    point.setAttribute("id", "data" + index);
+    point.setAttribute("id", plot.dataname + index);
     point.setAttribute("r", "2");
-    point.setAttribute("cx", get_xpos(value.date));
-    point.setAttribute("cy", get_ypos(value.distance));
-    point.setAttribute("onmouseover", "onto_point(fahrrad[" + index + "], " + index + ", evt)");
-    point.setAttribute("onmouseout", "away_point()");
-    point.setAttribute("onclick", "click_point(fahrrad[" + index + "], " + index + ", evt)");
-    plotlines.pathdata += "" + get_xpos(value.date) + "," + get_ypos(value.distance) + " L ";
+    point.setAttribute("cx", get_xpos(value.date, plot));
+    point.setAttribute("cy", get_ypos(value.distance, plot));
+    if (plot.overflow) {
+      point.setAttribute("onmouseover", "onto_point(fahrrad[" + index + "], " + index + ", evt)");
+      point.setAttribute("onmouseout", "away_point()");
+      point.setAttribute("onclick", "click_point(fahrrad[" + index + "], " + index + ", evt)");
+    }
+    plot.pathdata += "" + get_xpos(value.date, plot) + "," + get_ypos(value.distance, plot) + " L ";
   }
  ]]></script>
  <script type="application/ecmascript" id="initialize"><![CDATA[
   function initialize() {
-     drawXaxis(document.getElementById("xaxis"))
-     drawYaxis(document.getElementById("yaxis"))
-     drawData();
+     drawInlet(inletparams, plotparams);
+     drawXaxis(document.getElementById("xaxis"), plotparams)
+     drawYaxis(document.getElementById("yaxis"), plotparams)
+     drawData(plotparams);
+     //
+     drawXaxis(document.getElementById("inlet_xaxis"), inletparams)
+     drawYaxis(document.getElementById("inlet_yaxis"), inletparams)
+     drawData(inletparams);
   }
 
-  function drawXaxis(group) {
-    for (var x = plotparams.x.min.getFullYear(); x <= plotparams.x.max.getFullYear(); x += plotparams.x.del) {
-      var label = document.createElementNS("http://www.w3.org/2000/svg", 'text');
-      var tic = document.createElementNS("http://www.w3.org/2000/svg", 'path');
-      group.appendChild(label);
-      group.appendChild(tic);
+  function drawXaxis(group, plot) {
+    for (var x = plot.x.min.getFullYear(); x <= plot.x.max.getFullYear(); x += 1) {
+      for (var m = 0; m < 12; m += plot.x.del) {
+        var xDate = new Date(x, m, 1, 0, 0, 0);
+        if (xDate < plot.x.min || xDate > plot.x.max) {
+          continue;
+        }
+        var label = document.createElementNS("http://www.w3.org/2000/svg", 'text');
+        var tic = document.createElementNS("http://www.w3.org/2000/svg", 'path');
+        group.appendChild(label);
+        group.appendChild(tic);
 
-      var xDate = new Date(x, 0, 1, 0, 0, 0, 0);
-      var xpos = get_xpos(xDate);
-      label.textContent = x;
-      label.setAttribute("x", xpos);
-      label.setAttribute("y", 1.5 * get_size(label).height);
-      tic.setAttribute("d", "M " + xpos + ",0 v -5");
+        var xpos = get_xpos(xDate, plot);
+        if (m == 0) {
+          label.textContent = xDate.getFullYear();
+          label.setAttribute("y", 1.5 * get_size(label).height);
+        } else {
+          var text = "0" + (1 + xDate.getMonth());
+          label.textContent = text.substr(text.length - 2);
+          label.setAttribute("class", "monthlabel");
+          label.setAttribute("y", 1.0 * get_size(label).height);
+        }
+        label.setAttribute("x", xpos);
+        tic.setAttribute("d", "M " + xpos + ",0 v -5");
+      }
     }
     var axislabel = document.createElementNS("http://www.w3.org/2000/svg", 'text');
     group.appendChild(axislabel);
-    axislabel.textContent = plotparams.x.labeltext;
-    axislabel.setAttribute("id", "xaxislabel");
-    axislabel.setAttribute("x", plotparams.width / 2);
+    axislabel.textContent = plot.x.labeltext;
+    axislabel.setAttribute("class", "xaxislabel");
+    axislabel.setAttribute("x", plot.width / 2);
     axislabel.setAttribute("y", 1.5 * get_size(group.firstChild).height + get_size(axislabel).height);
   }
 
-  function drawYaxis(group) {
-    for (var y = plotparams.y.min; y <= plotparams.y.max; y += plotparams.y.del) {
+  function drawYaxis(group, plot) {
+    for (var y = plot.y.min; y <= plot.y.max; y += plot.y.del) {
       var label = document.createElementNS("http://www.w3.org/2000/svg", 'text');
       group.appendChild(label);
       var tic = document.createElementNS("http://www.w3.org/2000/svg", 'path');
       group.appendChild(tic);
 
-      var ypos = get_ypos(y);
+      var ypos = get_ypos(y, plot);
       label.textContent = y;
       label.setAttribute("y", ypos + get_size(label).height / 3);
       label.setAttribute("x", - get_size(label).height / 2);
@@ -341,11 +397,25 @@ var regionen = [
     }
     var axislabel = document.createElementNS("http://www.w3.org/2000/svg", 'text');
     group.appendChild(axislabel);
-    axislabel.textContent = plotparams.y.labeltext;
+    axislabel.textContent = plot.y.labeltext;
     var x = - get_size(group.lastChild.previousSibling.previousSibling).width - 5;
-    var y = -plotparams.height / 2;
+    var y = -plot.height / 2;
     axislabel.setAttribute("transform", "translate(" + x + "," + y + ") rotate(-90)");
-    axislabel.setAttribute("id", "yaxislabel");
+    axislabel.setAttribute("class", "yaxislabel");
+  }
+
+  function drawInlet(inlet, plot) {
+    var inletRect = document.createElementNS("http://www.w3.org/2000/svg", 'rect');
+    document.getElementById(plot.area).appendChild(inletRect);
+    var upper = get_ypos(inlet.y.max, plot);
+    var lower = get_ypos(inlet.y.min, plot);
+    var left = get_xpos(inlet.x.min, plot);
+    var right = get_xpos(inlet.x.max, plot);
+    inletRect.setAttribute("x", left);
+    inletRect.setAttribute("y", upper);
+    inletRect.setAttribute("width", right - left);
+    inletRect.setAttribute("height", lower - upper);
+    inletRect.setAttribute("class", "inletRect");
   }
  ]]></script>
  <script type="application/ecmascript" id="show_coordinates"><![CDATA[
@@ -562,12 +632,10 @@ var regionen = [
      return (x << 1) | y;
    }
  ]]></script>
- <g id="coord" transform="translate(80,550)">
+ <g transform="translate(80,550)">
   <rect x="0" y="-490" height="490" width="640" style="fill: #ffffe0; stroke: #000000; fill-opacity:.3" onclick="toggle_coordinateshow(evt)" onmousemove="showcoordinates(evt)"/>
-  <g id="axes">
-   <g id="xaxis" />
-   <g id="yaxis" />
-  </g>
+  <g class="xaxis" id="xaxis" />
+  <g class="yaxis" id="yaxis" />
   <g id="dataarea" />
   <g id="datainfo">
     <rect id="datainfo_background" x="0" y="0" style="fill: #ffffff; stroke: #000000; stroke-width: 1; " onclick="hidepoint()"/>
@@ -577,5 +645,11 @@ var regionen = [
     <text id="datainfo_geo" x="3" />
   </g>
   <text id="koordinaten" visibility="hidden">Koordinaten</text>
+ </g>
+ <g transform="translate(225,500)">
+  <rect x="0" y="-150" height="150" width="250" style="fill: #ffffff; stroke: #000000; fill-opacity:.8" />
+  <g class="xaxis" id="inlet_xaxis" />
+  <g class="yaxis" id="inlet_yaxis" />
+  <g id="inlet_dataarea" />
  </g>
 </svg>
