@@ -57,15 +57,15 @@
     currentPopup: -1,
     popupStay: false,
     x: {
-      min: new Date(2015, 5, 1, 0, 0, 0, 0),
-      max: new Date(2016, 8, 1, 0, 0, 0, 0),
-      del: 3,
+      min: new Date(2015, 7, 1, 0, 0, 0, 0),
+      max: new Date(2016, 6, 1, 0, 0, 0, 0),
+      del: 2,
       labeltext: ""
     },
     y: {
-      min: 5000,
-      max: 6600,
-      del: 400,
+      min: 5600,
+      max: 6500,
+      del: 300,
       labeltext: ""
     },
     width: 250,
