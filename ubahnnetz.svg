@@ -672,9 +672,9 @@
    <path id="b_2_stamm2" class="faeng" d="M 586,1230 l -40,40 c -6,6 -5,9 -11,15 l -20,20 c -6,6 -5,9 -11,15 l -206,206 q -18,18 -18,42 v 82" /> 
   </g>
   <g id="hst_aebene">
-   <g id="hst613" transform="translate(285,1580)">
+   <g id="hst613" transform="translate(285,1580)" class="achtzig">
     <use xlink:href="#bahnsteig" class="neunzig" transform="translate(-15,0)" />
-    <use xlink:href="#bstg_ausen" class="achtzig" />
+    <use xlink:href="#bstg_ausen" />
     <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Konstablerwache">
      <text x="10" y="-20">Konstablerwache</text>
     </a>
