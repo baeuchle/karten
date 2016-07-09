@@ -7,7 +7,26 @@
   viewBox="0 50 740 600"
   onload="initialize()"
    >
-   <title>Fahrradfahrten</title>
+ <title>Fahrradfahrten</title>
+ <metadata>
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+           xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+           xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <rdf:Description>
+    <dc:creator><![CDATA[Bjørn Bäuchle <fahrrad at frankfurtium dot de>]]></dc:creator>
+    <dc:subject>Fahrrad, Kilometer</dc:subject>
+    <dc:description>Meine Fahrradfahrstatistik</dc:description>
+    <dc:identifier>http://plan.frankfurtium.de/fahrrad.svg</dc:identifier>
+    <dc:relation>http://plan.frankfurtium.de/fahrrad.svg</dc:relation>
+    <dc:rights>© Bjørn Bäuchle CC-BY-SA 4.0</dc:rights>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type>Image</dc:type>
+    <dc:title>Fahrradfahrten</dc:title>
+    <dc:date>2016-06-30</dc:date>
+    <dc:language>de</dc:language>
+   </rdf:Description>
+  </rdf:RDF>
+ </metadata>
  <style type="text/css"><![CDATA[
   * { fill:none; stroke-width:1px; }
   text { fill:black; stroke: none; font-size: 12pt; }
