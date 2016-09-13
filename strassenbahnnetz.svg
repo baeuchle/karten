@@ -564,7 +564,18 @@
   <g id="hgrobf" transform="translate(550,175)">
    <ellipse cx="0" cy="0" rx="35" ry="20" class="hstgruppe" />
    <g id="hstobs" transform="translate(-20,0)" class="dreizig te"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><g transform="rotate(-45) translate(-15,10)"><text y="-7" x="-5" class="hstgrtitel">Ostbahnhof/</text><text y="5">Sonnemannstraße</text></g></g>
-   <g id="hstobh" transform="translate(20,0)" class="dreizig te"><use xlink:href="#wien_ausen" transform="rotate(90)" /><g transform="rotate(-45) translate(-15,10)"><text x="-5" y="-7" class="hstgrtitel">Ostbahnhof/</text><text y="5">Honsellstraße</text></g></g>
+   <g id="hstobh" transform="translate(20,0)" class="dreizig te">
+    <!--<use xlink:href="#wien_ausen" transform="rotate(90)" />-->
+    <use xlink:href="#haltestel" transform="rotate(90) translate(5,0)" />
+    <use xlink:href="#bahnsteig" transform="rotate(-90) translate(5,0)" />
+    <use xlink:href="#haltestel" transform="rotate(-90) translate(5,0)" />
+    <use xlink:href="#weg" transform="translate(0,-10) scale(2)"/>
+    <!--<g id="wien_ausen"><use xlink:href="#bstg_ausen" class="dreizig" /><use xlink:href="#hstl_ausen" /></g>-->
+    <g transform="rotate(-45) translate(-15,10)">
+     <text x="-5" y="-7" class="hstgrtitel">Ostbahnhof/</text>
+     <text y="5">Honsellstraße</text>
+    </g>
+   </g>
   </g>
   <g id="hstohp" transform="translate(610,175)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Osthafenplatz</text></g>
   <g id="hstswl" transform="translate(650,175)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text transform="rotate(-45) translate(-15,10)">Schwedlerstraße</text></g>
