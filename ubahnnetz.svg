@@ -1176,12 +1176,6 @@
    <use xlink:href="#keinu2" transform="translate(90,211) rotate(-90)" />
    <path id="gd_wiesenau_1" d="M -120,521 v -33 q 0,-24 -18,-42" />
    <path id="gd_wiesenau_2" d="M -145,453 q 15,15 15,35 v 33" />
-   <use xlink:href="#weg" transform="translate(270,1520)" />
-   <use xlink:href="#weg" transform="translate(280,1520)" />
-   <use xlink:href="#weg" transform="translate(270,1070)" />
-   <use xlink:href="#weg" transform="translate(280,1070)" />
-   <use xlink:href="#weg" transform="translate(290,1425)" />
-   <use xlink:href="#weg" transform="translate(285,1430)" />
   </g>
   <g id="hst_oberirdisch">
    <g id="hst213" transform="translate(-410,1545)" class="geplant verlaengerung_europaviertel achtzig tm">
@@ -1407,8 +1401,6 @@
     <use xlink:href="#kameliger" transform="translate(+5,+15)" />
     <use xlink:href="#kameliger" transform="translate(-5,-15) rotate(180)" />
     <text x="-15" y="5">Musterschule</text>
-    <use xlink:href="#bau" transform="translate(+10,+15)" />
-    <use xlink:href="#bau" transform="translate(-10,-15)" />
     <g class="bs_strecke kilometer te"><g transform="rotate(-60) translate(0,-60) rotate(60)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 10,78</text></g><use xlink:href="#punkt2" transform="rotate(-60)" /></g>
    </g>
    <g id="hst615" transform="translate(275,1385)" class="te">
@@ -1428,12 +1420,6 @@
     <use xlink:href="#drei_ausen" />
     <text x="15" y="5">Hauptfriedhof</text>
     <g class="bs_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 12,35</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
-   </g>
-   <g transform="translate(275,1105)">
-    <text x="15" y="-13.5" class="ab_bb">Vollsperrung 29. März - 10. Oktober 2016</text>
-    <text x="15" y="-04.5" class="ab_bb">Marbachweg → Konstablerwache</text>
-    <text x="15" y="+04.5" class="ab_bb">Kompletter Neubau Haltestellen</text>
-    <text x="15" y="+13.5" class="ab_bb">Glauburgstraße und Musterschule</text>
    </g>
    <g id="hst621" transform="translate(275,1155)" class="nullzig">
     <use xlink:href="#haltestel" transform="translate(+5,+5)" />
