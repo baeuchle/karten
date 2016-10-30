@@ -1407,8 +1407,6 @@
     <use xlink:href="#kameliger" transform="translate(+5,+15)" />
     <use xlink:href="#kameliger" transform="translate(-5,-15) rotate(180)" />
     <text x="-15" y="5">Glauburgstraße</text>
-    <use xlink:href="#bau" transform="translate(+10,+15)" />
-    <use xlink:href="#bau" transform="translate(-10,-15)" />
     <g class="bs_strecke kilometer te"><g transform="rotate(-60) translate(0,-60) rotate(60)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 11,43</text></g><use xlink:href="#punkt2" transform="rotate(-60)" /></g>
    </g>
    <g id="hst616" transform="translate(275,1305)" class="achtzig">
