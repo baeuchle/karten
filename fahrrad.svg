@@ -76,14 +76,14 @@
     currentPopup: -1,
     popupStay: false,
     x: {
-      min: new Date(2015, 9, 1, 0, 0, 0, 0),
-      max: new Date(2016, 9, 1, 0, 0, 0, 0),
+      min: new Date(2016, 0, 1, 0, 0, 0, 0),
+      max: new Date(2017, 0, 1, 0, 0, 0, 0),
       del: 2,
       labeltext: ""
     },
     y: {
       min: 6000,
-      max: 7000,
+      max: 7200,
       del: 250,
       labeltext: ""
     },
@@ -288,6 +288,16 @@ var fahrrad = [
  { date : new Date("2016-09-25"), distance : 6771, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2016-10-02"), distance : 6786, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2016-10-09"), distance : 6815, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2016-10-16"), distance : 6834, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2016-10-23"), distance : 6849, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2016-10-30"), distance : 6880, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2016-11-06"), distance : 6903, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2016-11-13"), distance : 6937, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2016-11-20"), distance : 7009, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2016-11-27"), distance : 7018, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2016-12-04"), distance : 7035, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2016-12-11"), distance : 7058, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2016-12-18"), distance : 7101, link: "", text: "Quelle: Protokoll" },
 ];
 var regionen = [
  { date: [ new Date("2005-09-03"), new Date("2005-09-20")], dateText: "September 2005", km: [ 3390,  4752], link: "", text: "Fahrradtour zur Ostsee mit Caro und Derek B." },
