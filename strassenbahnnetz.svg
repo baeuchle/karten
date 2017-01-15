@@ -917,8 +917,7 @@
   <path id="gw_uniklinik" d="M -90,380 c 5,0 5,10 10,10" />
   <path id="gw_triftstraße" d="M -244,484 c 3.5,-3.5 11.5,3.5 14,0" />
   <path id="gw_bürostadt" d="M -473,559 c 5,0 5,10 10,10" />
-  <path id="schleife_waldfriedhof_1" class="endet" d="M -583,559 c -5,0 -5,-5 -10,-5 h -10" />
-  <path id="schleife_waldfriedhof_2" d="M -618,559 a 15,15 0,0,0 0,30 a 10,10 0,0,0 10,-10 a 10,10 0,0,1 10,-10" />
+  <path id="schleife_waldfriedhof" d="M -618,559 a 15,15 0,0,0 0,30 a 10,10 0,0,0 10,-10 a 10,10 0,0,1 10,-10" />
   <path id="schleife_haardtwaldplatz" d="M -379,435 a 10,10 0,0,0 -10,-10 h -10 a 10,10 0,0,0 -10,10" />
   <path id="schleife_oberforsthaus" d="M -257,580 a 15,15 0,0,0 15,15 h 10 a 15,15 0,0,0 15,-15 a 10,10 0,0,0 -10,-10 h -10 a 10,10 0,0,1 -10,-10" />
   <path id="wa_stadion_1" d="M -247,630 c 0,5 -5,5 -5,10 v 5 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 q 0,4 -3,7 l -24,24 q -3,3 -3,7 v 5 c 0,5 -5,5 -5,10" />
