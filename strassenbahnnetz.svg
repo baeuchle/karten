@@ -22,15 +22,15 @@
     <dc:creator><![CDATA[Bjørn Bäuchle <gleisplan at frankfurtium dot de>]]></dc:creator>
     <dc:subject>Frankfurt am Main, Straßenbahn Frankfurt, Gleisplan, track layout</dc:subject>
     <dc:description>Schematischer Gleisplan des Straßenbahn-Netzes in Frankfurt mit Betriebshof Gutleut</dc:description>
-    <dc:identifier>http://plan.frankfurtium.de/strassenbahnnetz.svg</dc:identifier>
-    <dc:relation>http://plan.frankfurtium.de/strassenbahnnetz.svg</dc:relation>
+    <dc:identifier>https://plan.frankfurtium.de/strassenbahnnetz.svg</dc:identifier>
+    <dc:relation>https://plan.frankfurtium.de/strassenbahnnetz.svg</dc:relation>
     <dc:rights>© Bjørn Bäuchle CC-BY-SA 4.0 or later</dc:rights>
     <dc:format>image/svg+xml</dc:format>
     <dc:type>Image</dc:type>
     <dc:title>Straßenbahn-Gleisplan Frankfurt am Main</dc:title>
     <dc:date/>
     <dc:language>de</dc:language>
-    <dc:contributor>Users of Frankfurter Nahverkehrsforum http://www.frankfurter-nahverkehrsforum.de/index.php?page=Thread&amp;threadID=20982; Christian Stade http://gleisplanweb.bplaced.net/Maps/Frankfurt.svg</dc:contributor>
+    <dc:contributor>Users of Frankfurter Nahverkehrsforum http://www.frankfurter-nahverkehrsforum.de/index.php?page=Thread&amp;threadID=20982</dc:contributor>
    </rdf:Description>
   </rdf:RDF>
  </metadata>
@@ -329,7 +329,7 @@
    <text class="ab_bb" x="10" y="65">mit Anschluss an Stadtbahnstrecken</text>
    <text class="ab_bb" x="15" y="75">- A (Dornbusch) und</text>
    <text class="ab_bb" x="15" y="85">- B (Eckenheimer Landstraße / Gießener Straße)</text>
-   <text class="ab_bb" x="10" y="95">Status: Abwägung der <a xlink:href="http://www.stvv.frankfurt.de/parlisobj/B_381_2015_AN_Machbarkeitsstudie.pdf">Machbarkeitsstudie</a></text>
+   <text class="ab_bb" x="10" y="95">Status: Abwägung der <a xlink:href="https://www.stvv.frankfurt.de/parlisobj/B_381_2015_AN_Machbarkeitsstudie.pdf">Machbarkeitsstudie</a></text>
    <text class="hochstatio" x="5" y="115" onclick="geplant('ausbau_kleyer')">Rebstöcker Straße <tspan class="link" id="ausbau_kleyer_aktion">anzeigen</tspan></text>
    <text class="ab_bb" x="10" y="130">Zweigleisiger Ausbau</text>
    <text class="ab_bb" x="10" y="140">Status: Planfeststellung fertig;</text>

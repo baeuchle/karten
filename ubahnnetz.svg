@@ -19,8 +19,8 @@
     <dc:creator><![CDATA[Bjørn Bäuchle <gleisplan at frankfurtium dot de>]]></dc:creator>
     <dc:subject>Frankfurt am Main, U-Bahn Frankfurt, Gleisplan, track layout, Kilometrierung U-Bahn</dc:subject>
     <dc:description>Schematischer Gleisplan des U-Bahn-Netzes in Frankfurt mit Kilometrierung und Betriebshöfen</dc:description>
-    <dc:identifier>http://plan.frankfurtium.de/ubahnnetz.svg</dc:identifier>
-    <dc:relation>http://plan.frankfurtium.de/ubahnnetz.svg</dc:relation>
+    <dc:identifier>https://plan.frankfurtium.de/ubahnnetz.svg</dc:identifier>
+    <dc:relation>https://plan.frankfurtium.de/ubahnnetz.svg</dc:relation>
     <dc:rights>© Bjørn Bäuchle CC-BY-SA 4.0 or later</dc:rights>
     <dc:format>image/svg+xml</dc:format>
     <dc:type>Image</dc:type>
@@ -260,7 +260,7 @@
  <g id="textboxen">
   <g id="legende" transform="translate(550,-169)">
    <rect class="box" width="400" height="342" />
-   <a xlink:href="http://de.wikipedia.org/wiki/U-Bahn_Frankfurt">
+   <a xlink:href="https://de.wikipedia.org/wiki/U-Bahn_Frankfurt">
     <text class="ueberschrift" x="15" y="35">U-Bahn Frankfurt am Main</text>
    </a>
    <text class="unterschrift" x="20" y="60">Streckennetz (ohne Maßstab)</text>
@@ -322,13 +322,13 @@
    <text class="unterschrift" x="15" y="25">Ausbauprojekte</text>
    <text class="hochstatio" x="10" y="70" onclick="geplant('verlaengerung_badhomburg')">Bad Homburg: <tspan class="link" id="verlaengerung_badhomburg_aktion">anzeigen</tspan></text>
    <text class="hochstatio" x="15" y="85" onclick="geplant('verlaengerung_badhomburg')">Gonzenheim → Bad Homburg Bahnhof</text>
-   <text class="ab_bb"      x="20" y="100">Status: Planfestgestellt (seit <a xlink:href="https://rp-darmstadt.hessen.de/irj/RPDA_Internet?cid=5464da63732d568b55216d20f5655ee9">25.01.2016</a>)</text>
+   <text class="ab_bb"      x="20" y="100">Status: Planfestgestellt (seit 25.01.2016)</text>
    <text class="hochstatio" x="10" y="120" onclick="geplant('verlaengerung_europaviertel')">Europaviertel: <tspan class="link" id="verlaengerung_europaviertel_aktion">anzeigen</tspan></text>
    <text class="hochstatio" x="15" y="135" onclick="geplant('verlaengerung_europaviertel')">Hauptbahnhof → Wohnpark</text>
-   <text class="ab_bb"      x="20" y="150">Status: Planfestgestellt (seit <a xlink:href="https://rp-darmstadt.hessen.de/irj/servlet/prt/portal/prtroot/slimp.CMReader/HMdI_15/RPDA_Internet/med/060/060504cb-7c7e-c451-d064-8712ae8bad54,22222222-2222-2222-2222-222222222222">19.05.2016</a>); <a xlink:href="http://www.sbev-frankfurt.de/de/home/">in Bau</a></text>
+   <text class="ab_bb"      x="20" y="150">Status: Planfestgestellt (seit <a xlink:href="https://rp-darmstadt.hessen.de/irj/servlet/prt/portal/prtroot/slimp.CMReader/HMdI_15/RPDA_Internet/med/060/060504cb-7c7e-c451-d064-8712ae8bad54,22222222-2222-2222-2222-222222222222">19.05.2016</a>); <a xlink:href="https://www.sbev-frankfurt.de/de/home/">in Bau</a></text>
    <text class="hochstatio" x="10" y="170" onclick="geplant('ginnheimer_kurve')">Ginnheimer Kurve: <tspan class="link" id="ginnheimer_kurve_aktion">anzeigen</tspan></text>
    <text class="hochstatio" x="15" y="185" onclick="geplant('ginnheimer_kurve')">Ginnheim → Bockenheimer Warte</text>
-   <text class="ab_bb"      x="20" y="200">Status: Abwägung der <a xlink:href="http://www.stvv.frankfurt.de/parlisobj/B_292_2015_AN_Ergebnisbericht.pdf">Machbarkeitsstudie</a></text>
+   <text class="ab_bb"      x="20" y="200">Status: Abwägung der <a xlink:href="https://www.stvv.frankfurt.de/parlisobj/B_292_2015_AN_Ergebnisbericht.pdf">Machbarkeitsstudie</a></text>
    <text class="hochstatio" x="10" y="220" onclick="geplant('frankfurter_berg')">Frankfurter Berg: <tspan class="link" id="frankfurter_berg_aktion">anzeigen</tspan></text>
    <text class="hochstatio" x="15" y="235" onclick="geplant('frankfurter_berg')">Preungesheim → Frankfurter Berg</text>
    <text class="ab_bb"      x="20" y="250">Status: Planfeststellung wird vorbereitet</text>
@@ -405,7 +405,7 @@
     <use xlink:href="#bahnsteig" class="neunzig" transform="translate(25,0) rotate(180)" />
     <use xlink:href="#bstg_mitte" class="achtzig" />
     <use xlink:href="#bahnsteig" class="achtzig" transform="translate(15,0)" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Hauptbahnhof_(Frankfurt_am_Main)">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Hauptbahnhof_(Frankfurt_am_Main)">
      <text x="-10" y="5">Frankfurt Hauptbahnhof</text>
     </a>
     <g class="bs_strecke kilometer ta" transform="translate(10,0)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 7,75</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
@@ -417,7 +417,7 @@
    </g>
    <g id="hst612" transform="translate(200,1705)" class="achtzig tm">
     <use xlink:href="#bstg_mitte" transform="rotate(90)" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Dom/Römer">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Dom/Römer">
      <text x="0" y="20">Dom/Römer</text>
     </a>
     <g class="bs_strecke kilometer te"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 9,30</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
@@ -463,49 +463,49 @@
   <g id="hst_cebene">
    <g id="hst913" transform="translate(115,1895)" class="achtzig"><use xlink:href="#hstgrid" />
     <use xlink:href="#bstg_mitte" />
-    <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Süd">
+    <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Süd">
      <text x="10" y="5">Südbahnhof</text>
     </a>
     <g class="as_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 7,90</text></g><use xlink:href="#punkt2" transform="rotate(30)" /></g>
    </g>
    <g id="hst912" transform="translate(115,1795)" class="achtzig">
     <use xlink:href="#bstg_mitte" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Schweizer_Platz">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Schweizer_Platz">
      <text x="10" y="5">Schweizer Platz</text>
     </a>
     <g class="as_strecke kilometer te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 8,50</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
    </g>
    <g id="hst911" transform="translate(115,1695)" class="achtzig te">
     <use xlink:href="#bstg_ausen" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Willy-Brandt-Platz">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Willy-Brandt-Platz">
      <text x="-15" y="-5">Willy-Brandt-Platz</text>
     </a>
     <g class="as_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 9,40</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
    <g id="hst511" transform="translate(115,1595)" class="achtzig te">
     <use xlink:href="#bstg_ausen" />
-    <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Hauptwache">
+    <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Hauptwache">
      <text x="-10" y="-40">Hauptwache</text>
     </a>
     <g class="as_strecke kilometer ta"><g transform="rotate(30) translate(0,-99) rotate(-30)"><use xlink:href="#kasten3" /><text x="10" y="4">km 10,0</text></g><use xlink:href="#punkt1" transform="rotate(30)" /></g>
    </g>
    <g id="hst512" transform="translate(115,1480)" class="achtzig te">
     <use xlink:href="#bstg_ausen" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Eschenheimer_Tor">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Eschenheimer_Tor">
      <text x="-15" y="5">Eschenheimer Tor</text>
     </a>
     <g class="as_strecke kilometer te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 10,4</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
    </g>
    <g id="hst513" transform="translate(115,1380)" class="achtzig te">
     <use xlink:href="#bstg_ausen" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Grüneburgweg">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Grüneburgweg">
      <text x="-15" y="5">Grüneburgweg</text>
     </a>
     <g class="as_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 11,1</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
    <g id="hst514" transform="translate(115,1280)" class="achtzig te">
     <use xlink:href="#bstg_ausen" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Holzhausenstraße">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Holzhausenstraße">
      <text x="-15" y="5">Holzhausenstraße</text>
     </a>
     <g class="as_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 11,5</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
@@ -514,7 +514,7 @@
     <use xlink:href="#bstg_ausen" />
     <rect style="fill:#ffffff" x="-12" y="13" width="6" height="4"/>
     <rect style="fill:#ffffff" x="6"   y="13" width="6" height="4"/>
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Miquel-/Adickesallee">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Miquel-/Adickesallee">
      <text x="-15" y="-3">Miquel-/Adickesallee/</text>
      <text x="-15" y="13">Polizeipräsidium</text>
     </a>
@@ -522,7 +522,7 @@
    </g>
    <g id="hst251" transform="translate(-217,1515)" class="achtzig">
     <use xlink:href="#bstg_mitte" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Festhalle/Messe">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Festhalle/Messe">
      <text x="10" y="5">Festhalle/Messe</text>
     </a>
     <g class="ds_strecke kilometer te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 10,7</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
@@ -533,7 +533,7 @@
    </g>
    <g id="hst851" transform="translate(541.5,1654.5)" class="achtzig">
     <use xlink:href="#bstg_mitte" transform="rotate(-45)" />
-    <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Ost">
+    <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Ost">
      <text x="5.5" y="-5.5">Ostbahnhof</text>
     </a>
     <g class="cs_strecke kilometer te"><g transform="rotate(210) translate(0,-60) rotate(150)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 7,90</text></g><use xlink:href="#punkt2" transform="rotate(210)"/></g>
@@ -575,35 +575,35 @@
   <g id="hst_bebene">
    <g id="hst316" transform="translate(-302.5,1249.5)" class="achtzig">
     <use xlink:href="#bstg_mitte" transform="rotate(-45)" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Kirchplatz_(Frankfurt_am_Main)">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Kirchplatz_(Frankfurt_am_Main)">
      <text x="5.5" y="-5.5">Kirchplatz</text>
     </a>
     <g class="cs_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 13,3</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
    </g>
    <g id="hst315" transform="translate(-231,1318)" class="achtzig te">
     <use xlink:href="#bstg_dosto" transform="scale(1,-1)" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Leipziger_Straße">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Leipziger_Straße">
      <text x="-12" y="5">Leipziger Straße</text>
     </a>
     <g class="cs_strecke kilometer ta" transform="translate(-1.5,1.5)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 12,6</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
    </g>
    <g id="hst314" transform="translate(-162.5,1389.5)" class="achtzig te">
     <use xlink:href="#bstg_mitte" transform="rotate(-45)" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Bockenheimer_Warte">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Bockenheimer_Warte">
      <text x="-14.5" y="6.5">Bockenheimer Warte</text>
     </a>
     <g class="cs_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 12,0</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
    </g>
    <g id="hst313" transform="translate(-92.5,1459.5)" class="achtzig te">
     <use xlink:href="#bstg_mitte" transform="rotate(-45)" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Westend">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Westend">
      <text x="-14.5" y="6.5">Westend</text>
     </a>
     <g class="cs_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 11,3</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
    </g>
    <g id="hst312" transform="translate(-22.5,1529.5)" class="achtzig te">
     <use xlink:href="#bstg_mitte" transform="rotate(-45)" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Alte_Oper">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Alte_Oper">
      <text x="-14.5" y="6.5">Alte Oper</text>
     </a>
     <g class="cs_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 10,65</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
@@ -625,28 +625,28 @@
    <g id="hst812" transform="translate(424,1570)" class="achtzig te">
     <use xlink:href="#bahnsteig" transform="translate(0,15) rotate(-90)" />
     <use xlink:href="#bstg_mitte" transform="rotate(90)" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Zoo">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Zoo">
      <text x="0" y="30">Zoo</text>
     </a>
     <g class="cs_strecke kilometer" transform="translate(0,10)"><g transform="rotate(210) translate(0,-60) rotate(150)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 8,60</text></g><use xlink:href="#punkt2" transform="rotate(210)"/></g>
    </g>
    <g id="hst813" transform="translate(507.5,1549.5)" class="achtzig">
     <use xlink:href="#bstg_mitte" transform="rotate(45)" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Habsburgerallee">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Habsburgerallee">
      <text x="9.5" y="15.5">Habsburgerallee</text>
     </a>
     <g class="c1_strecke kilometer"><g transform="rotate(75) translate(0,-60) rotate(-75)"><use xlink:href="#kasten9" /><text x="6" y="-1">km 0,65→</text><text x="6" y="9">km 1,10←</text></g><use xlink:href="#punkt2" transform="rotate(75)" /></g>
    </g>
    <g id="hst814" transform="translate(577.5,1479.5)" class="achtzig">
     <use xlink:href="#bstg_mitte" transform="rotate(45)" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Parlamentsplatz">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Parlamentsplatz">
      <text x="9.5" y="15.5">Parlamentsplatz</text>
     </a>
     <g class="c1_strecke kilometer"><g transform="rotate(85) translate(0,-60) rotate(-85)"><use xlink:href="#kasten9" /><text x="6" y="-1">km 1,20→</text><text x="6" y="9">km 1,65←</text></g><use xlink:href="#punkt2" transform="rotate(85)" /></g>
    </g>
    <g id="hst815" transform="translate(647.5,1409.5)" class="achtzig">
     <use xlink:href="#bstg_mitte" transform="rotate(45)" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Eissporthalle">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Eissporthalle">
      <text x="9.5" y="15.5">Eissporthalle/Festplatz</text>
     </a>
     <g class="c1_strecke kilometer"><g transform="rotate(120) translate(0,-60) rotate(-120)"><use xlink:href="#kasten9" /><text x="6" y="-1">km 1,80→</text><text x="6" y="9">km 2,20←</text></g><use xlink:href="#punkt2" transform="rotate(120)" /></g>
@@ -675,7 +675,7 @@
    <g id="hst613" transform="translate(285,1580)" class="achtzig">
     <use xlink:href="#bahnsteig" class="neunzig" transform="translate(-15,0)" />
     <use xlink:href="#bstg_ausen" />
-    <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Konstablerwache">
+    <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Konstablerwache">
      <text x="10" y="-20">Konstablerwache</text>
     </a>
     <g class="bs_strecke kilometer"><g transform="rotate(150) translate(0,-99) rotate(210)"><use xlink:href="#kasten3" /><text x="10" y="4">km 10,0</text></g><use xlink:href="#punkt1" transform="rotate(150)"/></g>
@@ -805,7 +805,7 @@
  </g>
  <g id="betriebshoefe" class="strecke bb">
   <g id="stzw" transform="translate(-660,775)">
-   <text class="ab_bb te"><a xlink:href="http://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Stadtbahnzentralwerkstatt">Stadtbahnzentralwerkstatt</a></text>
+   <text class="ab_bb te"><a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Stadtbahnzentralwerkstatt">Stadtbahnzentralwerkstatt</a></text>
    <path id="ausf_heerstrasse" d="M 195,-70 a 20,20 0,0,0 -20,-20 h -20 c -5,0 -5,5 -10,5" />
    <path id="ring_betriebsstrecke" d="M 40,35 a 30,30 0,0,1 -30,-30 v -20 a 30,30 0,0,1 60,0 v 20 a 30,30 0,0,1 -30,30 a 25,25 0,0,1 -25,-25 v -55 a 40,40 0,0,1 40,-40 h 120 a 10,10 0,0,1 10,10" />
    <path id="ausziehgleis" class="endet" d="M 15,-45 q 0,-12 9,-21 q 9,-9 21,-9 h 10" />
@@ -823,7 +823,7 @@
    <path id="roem_2" class="endet" d="M -5,15 c 0,2.5 2.5,2.5 2.5,5 v 25" />
   </g>
   <g id="bb_heddernheim" transform="translate(65 540)">
-   <a xlink:href="http://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Betriebshof_Heddernheim">
+   <a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Betriebshof_Heddernheim">
     <text x="-22" class="ab_bb te" id="bst526">BB Heddernheim</text>
    </a>
    <g id="gleise_heddernheim">
@@ -918,7 +918,7 @@
    </g>
   </g>
   <g id="bb_eckenheim" transform="translate(205,965)">
-   <text x="5" y="9" class="ab_bb te" id="bst691"><a xlink:href="http://de.wikipedia.org/wiki/Eckenheimer_Depot">AB Eckenheim</a></text>
+   <text x="5" y="9" class="ab_bb te" id="bst691"><a xlink:href="https://de.wikipedia.org/wiki/Eckenheimer_Depot">AB Eckenheim</a></text>
    <path class="strasse" d="M 75,5 v -10 m -10,0 v 15 M 65,-7.5 h -110" />
    <g id="betriebsstrecken_eckenheim">
     <path id="marbachweg_1" d="M -95,75 a 20,20 0,0,0 20,20 h 130 a 20,20 0,0,0 20,-20 m -10,0 a 10,10 0,0,1 -10,10 h -15 c -10,0 -10,10 -20,10 m -70,0 c -10,0 -10,-10 -20,-10 h -5 a 10,10 0,0,1 -10,-10" />
@@ -1013,7 +1013,7 @@
    </g>
   </g>
   <g id="bb_bommersheim" transform="translate(-415,151)" class="strecke">
-   <text x="18" y="10" class="ab_bb te"><a xlink:href="http://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Wagenhalle_Bommersheim">AB Bommersheim</a></text>
+   <text x="18" y="10" class="ab_bb te"><a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Wagenhalle_Bommersheim">AB Bommersheim</a></text>
    <g class="bb">
     <path id="bomm_O1" class="endet" d="M 65,-35 c -5,0 -5,5 -10,5 h -70" />
     <path id="bomm_01" class="endet" d="M 43,-30 q 2,0 3.5,1.5 l 8,8" />
@@ -1061,7 +1061,7 @@
    </g>
   </g>
   <g id="bb_ost" class="strecke" transform="translate(800,1245)">
-   <a xlink:href="http://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Betriebshof_Ost">
+   <a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Betriebshof_Ost">
     <text x="-115" y="2" class="ab_bb te">BB Ost</text>
    </a>
    <g class="bb">
@@ -1247,7 +1247,7 @@
     <use xlink:href="#einwagen" transform="translate(15,-7.5) rotate(180)" class="funfzig" />
     <use xlink:href="#weg" transform="translate(10,-12)" />
     <use xlink:href="#drei_mitte" transform="translate(10,3.75)" class="achtzig" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Ginnheim">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Ginnheim">
      <text x="-25" y="-6">Ginnheim</text>
     </a>
     <g class="a1_strecke kilometer"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 5,28</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
@@ -1265,7 +1265,7 @@
    </g>
    <g id="hst422" transform="translate(-125,641)" class="achtzig te">
     <use xlink:href="#bstg_ausen" />
-    <a xlink:href="http://de.wikipedia.org/wiki/U-Bahnhof_Nordwestzentrum">
+    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Nordwestzentrum">
      <text x="-15" y="5">Nordwestzentrum</text>
     </a>
     <g class="a1_strecke kilometer"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 3,10</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
@@ -1287,7 +1287,7 @@
    </g>
    <g id="hst521" transform="translate(115,1080)" class="achtzig te">
     <use xlink:href="#bstg_ausen" />
-    <a xlink:href="http://de.wikipedia.org/wiki/Stadtbahnstation_Dornbusch">
+    <a xlink:href="https://de.wikipedia.org/wiki/Stadtbahnstation_Dornbusch">
      <text x="-15" y="-3">Dornbusch</text>
      <text x="-15" y="13">(Hessischer Rundfunk)</text>
     </a>
@@ -1310,7 +1310,7 @@
    </g>
    <g id="hst525" transform="translate(115,650)" class="achtzig">
     <use xlink:href="#bstg_ausen" />
-    <a xlink:href="http://de.wikipedia.org/wiki/Stadtbahnstation_Weißer_Stein">
+    <a xlink:href="https://de.wikipedia.org/wiki/Stadtbahnstation_Weißer_Stein">
      <text x="15" y="5">Weißer Stein</text>
     </a>
     <g class="a1_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 0,10</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
@@ -1351,7 +1351,7 @@
    </g>
    <g id="hst556" transform="translate(-300,61)" class="achtzig te">
     <use xlink:href="#drei_ausen" transform="rotate(90)" />
-    <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Oberursel_(Taunus)">
+    <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Oberursel_(Taunus)">
      <text x="0" y="-15">Oberursel Bahnhof</text>
     </a>
     <g class="a3_strecke kilometer"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 5,70</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
@@ -1512,7 +1512,7 @@
    <g id="hst657" transform="translate(465,-99)" class="geplant verlaengerung_badhomburg achtzig te">
     <use xlink:href="#bahnsteig" />
     <use xlink:href="#bahnsteig" transform="translate(0,-45)" />
-    <a xlink:href="http://de.wikipedia.org/wiki/Bahnhof_Bad_Homburg">
+    <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Bad_Homburg">
      <text x="-15" y="5">Bad Homburg Bahnhof</text>
     </a>
     <g class="a2_strecke kilometer"><g transform="rotate(-120) translate(0,-60) rotate(120)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 25,24</text></g><use xlink:href="#punkt2" transform="rotate(-120)" /></g>
