@@ -322,7 +322,8 @@
    <text class="unterschrift" x="15" y="25">Ausbauprojekte</text>
    <text class="hochstatio" x="10" y="70" onclick="geplant('verlaengerung_badhomburg')">Bad Homburg: <tspan class="link" id="verlaengerung_badhomburg_aktion">anzeigen</tspan></text>
    <text class="hochstatio" x="15" y="85" onclick="geplant('verlaengerung_badhomburg')">Gonzenheim → Bad Homburg Bahnhof</text>
-   <text class="ab_bb"      x="20" y="100">Status: Planfestgestellt (seit 25.01.2016)</text>
+   <text class="ab_bb"      x="20" y="100">Status: Planfestgestellt (seit <a href="http://stanz.ms-visucom.de/cgi-bin/r20msvc_menue.pl?var_hauptpfad=../anwendungen/ms-visucom/&amp;var_html_folgemaske=index_pdf_oeffentlich.html&amp;var_datei_selektionen=20170115/84176157176587b9fea902ea2.dat&amp;var_variable_uebergabe=2016_public/0202.pdf">25.01.2016</a>)</text>
+
    <text class="hochstatio" x="10" y="120" onclick="geplant('verlaengerung_europaviertel')">Europaviertel: <tspan class="link" id="verlaengerung_europaviertel_aktion">anzeigen</tspan></text>
    <text class="hochstatio" x="15" y="135" onclick="geplant('verlaengerung_europaviertel')">Hauptbahnhof → Wohnpark</text>
    <text class="ab_bb"      x="20" y="150">Status: Planfestgestellt (seit <a xlink:href="https://rp-darmstadt.hessen.de/irj/servlet/prt/portal/prtroot/slimp.CMReader/HMdI_15/RPDA_Internet/med/060/060504cb-7c7e-c451-d064-8712ae8bad54,22222222-2222-2222-2222-222222222222">19.05.2016</a>); <a xlink:href="https://www.sbev-frankfurt.de/de/home/">in Bau</a></text>
