@@ -16,8 +16,8 @@
     <dc:creator><![CDATA[Bjørn Bäuchle <fahrrad at frankfurtium dot de>]]></dc:creator>
     <dc:subject>Fahrrad, Kilometer</dc:subject>
     <dc:description>Meine Fahrradfahrstatistik</dc:description>
-    <dc:identifier>http://plan.frankfurtium.de/fahrrad.svg</dc:identifier>
-    <dc:relation>http://plan.frankfurtium.de/fahrrad.svg</dc:relation>
+    <dc:identifier>https://plan.frankfurtium.de/fahrrad.svg</dc:identifier>
+    <dc:relation>https://plan.frankfurtium.de/fahrrad.svg</dc:relation>
     <dc:rights>© Bjørn Bäuchle CC-BY-SA 4.0</dc:rights>
     <dc:format>image/svg+xml</dc:format>
     <dc:type>Image</dc:type>
@@ -54,8 +54,8 @@
     popupStay: false,
     x: {
       min: new Date(2005, 0, 1, 0, 0, 0, 0),
-      max: new Date(2017, 0, 1, 0, 0, 0, 0),
-      del: 12,
+      max: new Date(2018, 0, 1, 0, 0, 0, 0),
+      del: 13,
       labeltext: "Jahr"
     },
     y: {
@@ -77,13 +77,13 @@
     popupStay: false,
     x: {
       min: new Date(2016, 0, 1, 0, 0, 0, 0),
-      max: new Date(2017, 0, 1, 0, 0, 0, 0),
+      max: new Date(2017, 4, 1, 0, 0, 0, 0),
       del: 2,
       labeltext: ""
     },
     y: {
       min: 6000,
-      max: 7200,
+      max: 7500,
       del: 250,
       labeltext: ""
     },
@@ -150,19 +150,19 @@ var fahrrad = [
  { date : new Date("2005-09-18"), distance : 4573, geo: [53.0949, 11.4802 ], ort: "Lenzen (Elbe)" },
  { date : new Date("2005-09-19"), distance : 4672, geo: [53.642 , 11.416  ], ort: "Schwerin" },
  { date : new Date("2005-09-20"), distance : 4752, geo: [53.9115, 11.4312 ], ort: "Seebad Wendorf" },
- { date : new Date("2006-06-20"), distance : 5901, link: "http://baeuchle.frankfurtium.de/2006-06/projekt-6000/", text: "Projekt 6000" },
- { date : new Date("2006-06-21"), distance : 5916, link: "http://baeuchle.frankfurtium.de/2006-06/projekt-6000/", text: "Projekt 6000" },
- { date : new Date("2006-06-22"), distance : 5928, link: "http://baeuchle.frankfurtium.de/2006-06/projekt-6000/", text: "Projekt 6000" },
- { date : new Date("2006-06-27"), distance : 5953, link: "http://baeuchle.frankfurtium.de/2006-06/projekt-6000/", text: "Projekt 6000" },
- { date : new Date("2006-07-13"), distance : 6009, link: "http://baeuchle.frankfurtium.de/2006-06/projekt-6000/", text: "Projekt 6000" },
- { date : new Date("2006-08-26"), distance : 6300, link: "http://baeuchle.frankfurtium.de/2006-08/projekt-7000/", text: "Projekt 7000" },
- { date : new Date("2006-09-10"), distance : 6500, link: "http://baeuchle.frankfurtium.de/2006-09/halbe-miete-und-handys/", text: "Halbe Miete und Handys" },
- { date : new Date("2006-10-31"), distance : 6888, link: "http://baeuchle.frankfurtium.de/2006-10/ruskevaer/", text: "Ruskevær" },
+ { date : new Date("2006-06-20"), distance : 5901, link: "https://baeuchle.frankfurtium.de/2006-06/projekt-6000/", text: "Projekt 6000" },
+ { date : new Date("2006-06-21"), distance : 5916, link: "https://baeuchle.frankfurtium.de/2006-06/projekt-6000/", text: "Projekt 6000" },
+ { date : new Date("2006-06-22"), distance : 5928, link: "https://baeuchle.frankfurtium.de/2006-06/projekt-6000/", text: "Projekt 6000" },
+ { date : new Date("2006-06-27"), distance : 5953, link: "https://baeuchle.frankfurtium.de/2006-06/projekt-6000/", text: "Projekt 6000" },
+ { date : new Date("2006-07-13"), distance : 6009, link: "https://baeuchle.frankfurtium.de/2006-06/projekt-6000/", text: "Projekt 6000" },
+ { date : new Date("2006-08-26"), distance : 6300, link: "https://baeuchle.frankfurtium.de/2006-08/projekt-7000/", text: "Projekt 7000" },
+ { date : new Date("2006-09-10"), distance : 6500, link: "https://baeuchle.frankfurtium.de/2006-09/halbe-miete-und-handys/", text: "Halbe Miete und Handys" },
+ { date : new Date("2006-10-31"), distance : 6888, link: "https://baeuchle.frankfurtium.de/2006-10/ruskevaer/", text: "Ruskevær" },
  { date : new Date("2006-12-05"), distance : 7013, link: "", text: "Quelle: Kalender" },
  { date : new Date("2006-12-06"), distance : 7025, link: "", text: "Quelle: Kalender" },
  { date : new Date("2006-12-07"), distance : 7035, link: "", text: "Quelle: Kalender" },
  { date : new Date("2006-12-08"), distance : 7045, link: "", text: "Quelle: Kalender" },
- { date : new Date("2007-07-16"), distance : 7355, link: "http://baeuchle.frankfurtium.de/2007-07/siste-innforing-om-norge/", text: "Siste Innføring om Norge" },
+ { date : new Date("2007-07-16"), distance : 7355, link: "https://baeuchle.frankfurtium.de/2007-07/siste-innforing-om-norge/", text: "Siste Innføring om Norge" },
  { date : new Date("2008-09-05"), distance : 7977, geo: [50.1852, 8.6650], ort: "Frankfurt" },
  { date : new Date("2008-09-06"), distance : 8046, geo: [48.0372, 7.5816], ort: "Breisach" },
  { date : new Date("2008-09-07"), distance : 8146, geo: [48.6676, 7.9381], ort: "Rheinau-Freistett" },
@@ -181,24 +181,24 @@ var fahrrad = [
  { date : new Date("2009-07-16"), distance :10116, geo: [68.4385, 17.4303], ort: "Narvik" },
  { date : new Date("2009-07-17"), distance :10216, geo: [68.1322, 15.8939], ort: "Sørkil" },
  { date : new Date("2009-07-18"), distance :10255, geo: [67.9635, 15.9303], ort: "Innhavet" },
- { date : new Date("2012-01-06"), distance :10882, link: "http://baeuchle.frankfurtium.de/2012-01/projekt-11000/", text: "Projekt 11000" },
- { date : new Date("2012-02-28"), distance :11000, link: "http://baeuchle.frankfurtium.de/2012-03/tagestrip-nach-amsterdam/", text: "Tagestrip nach Amsterdam" },
- { date : new Date("2012-03-12"), distance :11162, link: "http://baeuchle.frankfurtium.de/2012-03/tagestrip-nach-amsterdam/", text: "Tagestrip nach Amsterdam" },
- { date : new Date("2012-04-05"), distance :11400, link: "http://baeuchle.frankfurtium.de/2012-04/fleischlos/", text: "Fleischlos" },
+ { date : new Date("2012-01-06"), distance :10882, link: "https://baeuchle.frankfurtium.de/2012-01/projekt-11000/", text: "Projekt 11000" },
+ { date : new Date("2012-02-28"), distance :11000, link: "https://baeuchle.frankfurtium.de/2012-03/tagestrip-nach-amsterdam/", text: "Tagestrip nach Amsterdam" },
+ { date : new Date("2012-03-12"), distance :11162, link: "https://baeuchle.frankfurtium.de/2012-03/tagestrip-nach-amsterdam/", text: "Tagestrip nach Amsterdam" },
+ { date : new Date("2012-04-05"), distance :11400, link: "https://baeuchle.frankfurtium.de/2012-04/fleischlos/", text: "Fleischlos" },
  { date : new Date("2012-04-25"), distance :11600, geo: [50.4308, 7.4743], ort: "Neuwied" },
  { date : new Date("2012-04-26"), distance :11652, geo: [50.6474, 7.2229], ort: "Bad Honnef" },
  { date : new Date("2012-04-27"), distance :11757, geo: [51.2163, 6.7822], ort: "Düsseldorf" },
  { date : new Date("2012-04-28"), distance :11828, geo: [51.6294, 6.5792], ort: "Wesel-Büderich" },
  { date : new Date("2012-04-29"), distance :11891, geo: [51.8625, 6.0378], ort: "Millingen a. d. Rijn" },
  { date : new Date("2012-04-30"), distance :11920, geo: [51.8432, 5.8528], ort: "Nijmegen" },
- { date : new Date("2012-10-10"), distance :12569, link: "http://baeuchle.frankfurtium.de/2012-10/projekt-13000-und-weitere-plaene-fuer-2012/", text: "Projekt 13000 und weitere Pläne für 2012" },
- { date : new Date("2012-12-20"), distance :13000, link: "http://baeuchle.frankfurtium.de/2012-12/projekt-14000/", text: "Projekt 14000" },
- { date : new Date("2013-02-26"), distance :13013, link: "http://baeuchle.frankfurtium.de/2013-02/statistik-2012/", text: "Statistik 2012" },
- { date : new Date("2013-02-28"), distance :13041, link: "http://baeuchle.frankfurtium.de/2013-02/statistik-2012/", text: "Statistik 2012" },
- { date : new Date("2013-04-02"), distance :13055, link: "http://baeuchle.frankfurtium.de/2013-04/fleischlos-und-kein-alkohol/", text: "Fleischlos und kein Alkohol" },
- { date : new Date("2013-04-08"), distance :13067, link: "http://baeuchle.frankfurtium.de/2013-05/alles-neu-macht-der-mai/", text: "Alles neu macht der Mai" },
- { date : new Date("2013-05-12"), distance :    0, link: "http://baeuchle.frankfurtium.de/2013-05/alles-neu-macht-der-mai/", text: "Alles neu macht der Mai" },
- { date : new Date("2013-12-31"), distance :  805, link: "http://baeuchle.frankfurtium.de/2014-02/auf-nach-niederursel/", text: "Auf nach Niederursel" },
+ { date : new Date("2012-10-10"), distance :12569, link: "https://baeuchle.frankfurtium.de/2012-10/projekt-13000-und-weitere-plaene-fuer-2012/", text: "Projekt 13000 und weitere Pläne für 2012" },
+ { date : new Date("2012-12-20"), distance :13000, link: "https://baeuchle.frankfurtium.de/2012-12/projekt-14000/", text: "Projekt 14000" },
+ { date : new Date("2013-02-26"), distance :13013, link: "https://baeuchle.frankfurtium.de/2013-02/statistik-2012/", text: "Statistik 2012" },
+ { date : new Date("2013-02-28"), distance :13041, link: "https://baeuchle.frankfurtium.de/2013-02/statistik-2012/", text: "Statistik 2012" },
+ { date : new Date("2013-04-02"), distance :13055, link: "https://baeuchle.frankfurtium.de/2013-04/fleischlos-und-kein-alkohol/", text: "Fleischlos und kein Alkohol" },
+ { date : new Date("2013-04-08"), distance :13067, link: "https://baeuchle.frankfurtium.de/2013-05/alles-neu-macht-der-mai/", text: "Alles neu macht der Mai" },
+ { date : new Date("2013-05-12"), distance :    0, link: "https://baeuchle.frankfurtium.de/2013-05/alles-neu-macht-der-mai/", text: "Alles neu macht der Mai" },
+ { date : new Date("2013-12-31"), distance :  805, link: "https://baeuchle.frankfurtium.de/2014-02/auf-nach-niederursel/", text: "Auf nach Niederursel" },
  { date : new Date("2014-08-09"), distance : 2050, geo: [49.8501, 11.6281], ort: "Creußen" },
  { date : new Date("2014-08-10"), distance : 2141, geo: [50.1463, 11.0604], ort: "Lichtenfels" },
  { date : new Date("2014-08-11"), distance : 2186, geo: [49.8890, 10.8829], ort: "Bamberg" },
@@ -298,15 +298,27 @@ var fahrrad = [
  { date : new Date("2016-12-04"), distance : 7035, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2016-12-11"), distance : 7058, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2016-12-18"), distance : 7101, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-01-08"), distance : 7107, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-01-15"), distance : 7119, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-02-26"), distance : 7132, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-03-05"), distance : 7170, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-03-12"), distance : 7195, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-03-19"), distance : 7244, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-03-26"), distance : 7289, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-04-02"), distance : 7345, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-04-09"), distance : 7388, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-04-16"), distance : 7411, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-04-23"), distance : 7434, link: "", text: "Quelle: Protokoll" },
 ];
 var regionen = [
  { date: [ new Date("2005-09-03"), new Date("2005-09-20")], dateText: "September 2005", km: [ 3390,  4752], link: "", text: "Fahrradtour zur Ostsee mit Caro und Derek B." },
- { date: [ new Date("2006-08-02"), new Date("2007-07-16")], dateText: "Aug 2008 - Jun 2007", km: [ 6020,  7355], link: "http://baeuchle.frankfurtium.de/tags/norge/", text: "Jahr in Norwegen" },
- { date: [ new Date("2008-09-05"), new Date("2008-09-09")], dateText: "September 2008", km: [ 7977,  8376], link: "http://baeuchle.frankfurtium.de/2008-11/fahrradurlaub-am-rhein/", text: "Fahrradurlaub am Rhein" },
- { date: [ new Date("2009-07-06"), new Date("2009-07-18")], dateText: "Juli 2009", km: [ 9208, 10255], link: "http://baeuchle.frankfurtium.de/2010-03/norwegen-2009/", text: "Norwegen 2009" },
- { date: [ new Date("2012-04-25"), new Date("2012-04-30")], dateText: "April 2012", km: [11600, 11920], link: "http://baeuchle.frankfurtium.de/2012-05/niederrhein/", text: "Niederrhein (Stand geschätzt)" },
- { date: [ new Date("2013-04-13"), new Date("2013-05-12")], dateText: "Mai 2013", km: [ 3266,  9800], kmText: " ", link: "http://baeuchle.frankfurtium.de/2013-05/alles-neu-macht-der-mai/", text: "Neues Fahrrad" },
+ { date: [ new Date("2006-08-02"), new Date("2007-07-16")], dateText: "Aug 2008 - Jun 2007", km: [ 6020,  7355], link: "https://baeuchle.frankfurtium.de/tags/norge/", text: "Jahr in Norwegen" },
+ { date: [ new Date("2008-09-05"), new Date("2008-09-09")], dateText: "September 2008", km: [ 7977,  8376], link: "https://baeuchle.frankfurtium.de/2008-11/fahrradurlaub-am-rhein/", text: "Fahrradurlaub am Rhein" },
+ { date: [ new Date("2009-07-06"), new Date("2009-07-18")], dateText: "Juli 2009", km: [ 9208, 10255], link: "https://baeuchle.frankfurtium.de/2010-03/norwegen-2009/", text: "Norwegen 2009" },
+ { date: [ new Date("2012-04-25"), new Date("2012-04-30")], dateText: "April 2012", km: [11600, 11920], link: "https://baeuchle.frankfurtium.de/2012-05/niederrhein/", text: "Niederrhein (Stand geschätzt)" },
+ { date: [ new Date("2013-04-13"), new Date("2013-05-12")], dateText: "Mai 2013", km: [ 3266,  9800], kmText: " ", link: "https://baeuchle.frankfurtium.de/2013-05/alles-neu-macht-der-mai/", text: "Neues Fahrrad" },
  { date: [ new Date("2014-08-09"), new Date("2014-08-16")], dateText: "August 2014", km: [ 2050,  2627], link: "http://www.mainradweg.com/", text: "Mainradweg (Stand geschätzt)" },
+ { date: [ new Date("2016-12-25"), new Date("2017-01-01")], dateText: "Ende 2016", km: [ 7000, 7200 ], link: "https://baeuchle.frankfurtium.de/2017-01/kevin-alf/", text: "Geburt von Kevin-Alf" },
  ];
  ]]></script>
  <script type="application/ecmascript" id="initialize_data"><![CDATA[
