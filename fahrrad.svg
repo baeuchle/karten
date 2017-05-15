@@ -309,6 +309,9 @@ var fahrrad = [
  { date : new Date("2017-04-09"), distance : 7388, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2017-04-16"), distance : 7411, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2017-04-23"), distance : 7434, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-04-30"), distance : 7472, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-05-07"), distance : 7501, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-05-014), distance : 7530, link: "", text: "Quelle: Protokoll" },
 ];
 var regionen = [
  { date: [ new Date("2005-09-03"), new Date("2005-09-20")], dateText: "September 2005", km: [ 3390,  4752], link: "", text: "Fahrradtour zur Ostsee mit Caro und Derek B." },
