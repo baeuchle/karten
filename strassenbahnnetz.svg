@@ -111,7 +111,7 @@
 
   .ausbau_kleyer { visibility:hidden; }
   .ausbau_ring { visibility:hidden; }
-  .hilfslinie { visibility:shown; }
+  .hilfslinie { visibility:hidden; }
  ]]>
  </style>
  <script type="application/ecmascript"><![CDATA[
