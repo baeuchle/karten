@@ -111,7 +111,7 @@
 
   .ausbau_kleyer { visibility:hidden; }
   .ausbau_ring { visibility:hidden; }
-  .hilfslinie { visibility:hidden; }
+  .hilfslinie { visibility:shown; }
  ]]>
  </style>
  <script type="application/ecmascript"><![CDATA[
@@ -466,7 +466,12 @@
    <use xlink:href="#doppelbst" />
    <text x="10" y="5">Neu-Isenburg/Stadtgrenze</text>
   </g>
-  <g id="hstoss" transform="translate(-20,635)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text transform="translate(15,5)">Oberschweinstiege</text></g>
+  <g id="hstoss" transform="translate(-20,635)" class="dreizig">
+   <use xlink:href="#bstg_vers1" />
+   <text transform="translate(15,5)">Oberschweinstiege</text>
+   <use xlink:href="#bau" transform="translate(-10,-10)" />
+   <use xlink:href="#uml" transform="translate(10,10) rotate(90)" />
+  </g>
   <g id="hstlui" transform="translate(-20,565)" class="zehnzig te">
    <use xlink:href="#doppelbst" transform="translate(-5,0) rotate(180)" />
    <use xlink:href="#bahnsteig" transform="translate(5,0)" />
@@ -502,27 +507,34 @@
   <g id="hgrsbf" transform="translate(215,430)">
    <path class="hstgruppe" d="M 25,10 c 30,0 65,0 65,-15 s -55,-20 -65,-20 c -55,0 -70,25 -70,35 s 0,30 20,30 c 25,0 25,-30 50,-30 Z" />
    <g id="hstsss" transform="translate(-25,30)"><use xlink:href="#hstl_ausen" /><g transform="translate(20,10)"><text y="-12" class="hstgrtitel">Südbahnhof/</text><text>Schweizer Straße</text></g></g>
-   <g id="hst3725" transform="translate(25,-10)" class="nullzig"><use xlink:href="#dobs_ausen" transform="rotate(90)" /><text x="-15" y="25">Südbahnhof</text></g>
+   <g id="hst3725" transform="translate(25,-10)" class="nullzig">
+    <use xlink:href="#dobs_ausen" transform="rotate(90)" />
+    <use xlink:href="#haltestel"  transform="translate(45,5) rotate(-90)" />
+    <text x="-15" y="25">Südbahnhof</text>
+   </g>
   </g>
   <g id="hstbts" transform="translate(285,390)" class="te"><use xlink:href="#hstl_ausen" transform="rotate(90)" /><g transform="translate(0,-20)"><text y="-7">Brücken-/</text><text y="5">Textorstraße</text></g></g>
   <g id="hgr3102" transform="translate(365,390)" class="dreizig">
    <path class="hstgruppe" d="M 5,20 c 25,0 40,-5 40,-30 s -20,-40 -45,-40 s -50,30 -50,50 s 30,20 55,20 Z"/>
    <path class="bstggruppe" d="M 5,15 c 20,0 35,-5 35,-25 s -20,-35 -40,-35 s -30,15 -30,35 s 10,25 35,25 Z" />
    <g id="hstlts" transform="translate(-40,0)"><use xlink:href="#hstl_ausen" transform="rotate(90)" /><g transform="translate(0,25)"><text class="hstgrtitel">Lokalbahnhof/</text><text y="12">Textorstraße</text></g></g>
+   <use xlink:href="#weg" transform="translate(15,5)" />
+   <use xlink:href="#weg" transform="translate(15,-5)" />
    <use xlink:href="#bahnsteig" transform="translate(0,5) rotate(90)" />
    <use xlink:href="#bahnsteig" transform="translate(25,-5) rotate(-90)" />
    <use xlink:href="#bahnsteig" transform="translate(5,-25)" />
    <use xlink:href="#bahnsteig" transform="translate(-5,-20) rotate(180)" />
    <use xlink:href="#bahnsteig" transform="translate(-15,-20)" />
    <text x="25" y="5" transform="rotate(-45)">Lokalbahnhof</text>
+   <text x="55" y="30">Strecke nach Oberrad noch bis 2018 gesperrt</text>
   </g>
   <g id="hsthss" transform="translate(440,390) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text x="20" y="0" transform="rotate(45)">Heister-/Seehofstraße</text></g>
   <g id="hstmüb" transform="translate(490,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_ausen" /><text x="20" y="0" transform="rotate(45)">Mühlberg</text></g>
   <g id="hstlkw" transform="translate(530,390) rotate(-90)"><use xlink:href="#hstl_vers1" /><text x="20" y="0" transform="rotate(45)">Lettigkautweg</text></g>
   <g id="hstbds" transform="translate(580,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_ausen" /><text x="20" y="0" transform="rotate(45)">Balduinstraße</text></g>
-  <g id="hstbws" transform="translate(610,390) rotate(-90)" class="zehnzig">
+  <g id="hstbws" transform="translate(610,390) rotate(-90)" class="dreizig">
    <use xlink:href="#bahnsteig" transform="rotate(180) translate(5,5)" />
-   <use xlink:href="#haltestel" transform="translate(5,5)" />
+   <use xlink:href="#bahnsteig" transform="translate(5,5)" />
    <text x="20" y="0" transform="rotate(45)">Bleiweißstraße</text>
   </g>
   <g id="hstbrp" transform="translate(650,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_ausen" /><text x="20" y="0" transform="rotate(45)">Buchrainplatz</text></g>
@@ -566,8 +578,6 @@
    <g id="hstobs" transform="translate(-20,0)" class="dreizig te"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><g transform="rotate(-45) translate(-15,10)"><text y="-7" x="-5" class="hstgrtitel">Ostbahnhof/</text><text y="5">Sonnemannstraße</text></g></g>
    <g id="hstobh" transform="translate(20,0)" class="dreizig te">
     <use xlink:href="#wien_ausen" transform="rotate(90)" />
-    <use xlink:href="#weg" transform="translate(0,10) scale(2)"/>
-    <use xlink:href="#weg" transform="translate(0,-10) scale(2)"/>
     <g transform="rotate(-45) translate(-15,10)">
      <text x="-5" y="-7" class="hstgrtitel">Ostbahnhof/</text>
      <text y="5">Honsellstraße</text>
@@ -768,7 +778,12 @@
   <g id="hstbsn_" transform="translate(-453,564) rotate(-90)" class="zehnzig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text x="-15" y="10" transform="rotate(45)">Bürostadt Niederrad</text></g>
   <g id="hstkie_" transform="translate(-503,564) rotate(-90)" class="zehnzig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Kiesschneise</text></g>
   <g id="hstwau_" transform="translate(-553,564) rotate(-90)" class="zehnzig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text x="-15" y="10" transform="rotate(45)">Waldau</text></g>
-  <g id="hst4101" transform="translate(-603,564) rotate(-90)" class="zehnzig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_vers2" /><text x="-10" y="20" transform="rotate(45)">Waldfriedhof Goldstein</text></g>
+  <g id="hst4101" transform="translate(-603,564) rotate(-90)" class="zehnzig te">
+   <use xlink:href="#hstgrid" />
+   <use xlink:href="#bstg_vers2" />
+   <use xlink:href="#uml" transform="translate(-10,10) rotate(90)" />
+   <text x="-10" y="20" transform="rotate(45)">Waldfriedhof Goldstein</text>
+  </g>
   <g id="hsthar_" transform="translate(-673,564) rotate(-90)" class="zehnzig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Harthweg</text></g>
   <g id="hstfdw_" transform="translate(-723,564) rotate(-90)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Ferdinand-Dirichs-Weg</text></g>
   <g id="hstrls_" transform="translate(-821,564) rotate(-90)" class="dreizig"><use xlink:href="#hstgrid" />
