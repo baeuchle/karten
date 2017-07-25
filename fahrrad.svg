@@ -77,14 +77,14 @@
     popupStay: false,
     x: {
       min: new Date(2016, 0, 1, 0, 0, 0, 0),
-      max: new Date(2017, 6, 1, 0, 0, 0, 0),
-      del: 2,
+      max: new Date(2018, 0, 1, 0, 0, 0, 0),
+      del: 3,
       labeltext: ""
     },
     y: {
       min: 6000,
-      max: 8000,
-      del: 250,
+      max: 8400,
+      del: 300,
       labeltext: ""
     },
     width: 250,
@@ -312,6 +312,17 @@ var fahrrad = [
  { date : new Date("2017-04-30"), distance : 7472, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2017-05-07"), distance : 7501, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2017-05-14"), distance : 7530, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-05-21"), distance : 7569, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-05-28"), distance : 7591, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-06-04"), distance : 7630, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-06-11"), distance : 7659, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-06-18"), distance : 7680, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-06-25"), distance : 7716, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-07-02"), distance : 7749, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-07-09"), distance : 7812, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-07-16"), distance : 7867, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-07-23"), distance : 7899, link: "", text: "Quelle: Protokoll" },
+
 ];
 var regionen = [
  { date: [ new Date("2005-09-03"), new Date("2005-09-20")], dateText: "September 2005", km: [ 3390,  4752], link: "", text: "Fahrradtour zur Ostsee mit Caro und Derek B." },
@@ -321,7 +332,8 @@ var regionen = [
  { date: [ new Date("2012-04-25"), new Date("2012-04-30")], dateText: "April 2012", km: [11600, 11920], link: "https://baeuchle.frankfurtium.de/2012-05/niederrhein/", text: "Niederrhein (Stand geschätzt)" },
  { date: [ new Date("2013-04-13"), new Date("2013-05-12")], dateText: "Mai 2013", km: [ 3266,  9800], kmText: " ", link: "https://baeuchle.frankfurtium.de/2013-05/alles-neu-macht-der-mai/", text: "Neues Fahrrad" },
  { date: [ new Date("2014-08-09"), new Date("2014-08-16")], dateText: "August 2014", km: [ 2050,  2627], link: "http://www.mainradweg.com/", text: "Mainradweg (Stand geschätzt)" },
- { date: [ new Date("2016-12-25"), new Date("2017-01-01")], dateText: "Ende 2016", km: [ 7000, 7200 ], link: "https://baeuchle.frankfurtium.de/2017-01/kevin-alf/", text: "Geburt von Kevin-Alf" },
+ { date: [ new Date("2017-01-01"), new Date("2017-01-01")], dateText: "Ende 2016", km: [ 7000, 7200 ], link: "https://baeuchle.frankfurtium.de/2017-01/kevin-alf/", text: "Geburt von Kevin-Alf" },
+ { date: [ new Date("2017-06-27"), new Date("2017-06-27")], dateText: "Ende Juni 2017", km: [ 7720, 7720 ], link: "https://baeuchle.frankfurtium.de/2017-07/elternzeit/", text: "Anschaffung Fahrradanhänger" },
  ];
  ]]></script>
  <script type="application/ecmascript" id="initialize_data"><![CDATA[
