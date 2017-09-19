@@ -100,7 +100,7 @@
   .mitte { stroke: #404040; stroke-dasharray:2,1; stroke-width:.7px; fill:none; }
   .hilfslinie { display:none; }
   .verlaengerung_badhomburg { display:none; }
-  .verlaengerung_europaviertel { display:none; }
+  .verlaengerung_europaviertel { display:display; }
   .ginnheimer_kurve { display:none; }
   .frankfurter_berg { display:none; }
   .rtw { display:none; }
@@ -189,7 +189,6 @@
    <path style="stroke-width:.2px; stroke:#888;" d="M -1000  90 H 1000" /><path style="stroke-width:.2px; stroke:#888;" d="M  90 -1000 V 1000" />
    <path style="stroke-width:.5px; stroke:#000;" d="M -1000 100 H 1000" /><path style="stroke-width:.5px; stroke:#000;" d="M 100 -1000 V 1000" />
   </g>
-  <g id="keinu2" transform="scale(.7)" class="verbot"><circle r="10" /><text y="4">U2</text></g>
   <path id="bau" class="verbot" d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" />
   <path id="uml" class="umleit" d="M 0,3 h 7 l 3,-3 l -3,-3 h -17 v 6 h 11" />
   <path id="weg" class="abreis" d="M -1.2,-1.2 l 2.4,2.4 m -2.4,0 l 2.4,-2.4" />
@@ -282,8 +281,8 @@
     <text x="75">Normaler / Doppelstöckiger Tunnel</text>
    </g>
    <g id="legende_ansch" transform="translate(30,210)"><path class="ubergabe strecke" d="M 0 -6 h 50" /><text x="55" class="tm ref">A</text><text x="75">Anschluss an Straßenbahnnetz¹</text></g>
-   <g id="legende_normal" transform="translate(30,240)"><path class="strecke anschluss" d="M 0 -6 h 45" /><text x="75">Anschluss an DB-Netz</text></g>
-   <g id="legende_normal" transform="translate(30,270)" class="strecke">
+   <g id="legende_db" transform="translate(30,240)"><path class="strecke anschluss" d="M 0 -6 h 45" /><text x="75">Anschluss an DB-Netz</text></g>
+   <g id="legende_abstell" transform="translate(30,270)" class="strecke">
     <path class="bb" d="M 0 -6 h 60" />
     <g transform="translate(5, -6) rotate(-90)">
     <use xlink:href="#einsabstell" />
@@ -292,10 +291,14 @@
     </g>
     <text x="75">Abstellkapazität 1 / 2 / 3 Wagen</text>
    </g>
-   <text class="ab_bb" transform="translate(30,300)">BB: Betriebsbahnhof, AB: Abstellbahnhof</text>
-   <use xlink:href="#keinu2" transform="translate(30,315)" />
-   <text class="ab_bb" transform="translate(46,314)">Zwischen Niederursel und Kalbach sind nur</text>
-   <text class="ab_bb" transform="translate(46,326)">U4- und U5-Wagen zugelassen</text>
+   <g id="legende_inbau" transform="translate(30,300)">
+    <path class="strecke geplant" d="M 0 -6 h 30" />
+    <path class="tunnel geplant" d="M 30 -6 h 30" />
+    <text x="75">Abschnitt in Bau
+     <tspan class="nowiki">/ geplant (siehe Legende links)</tspan>
+    </text>
+   </g>
+   <text class="ab_bb" transform="translate(30,324)">BB: Betriebsbahnhof, AB: Abstellbahnhof</text>
    <text class="ab_bb" transform="translate(18,338)">¹: Referenzen siehe <a xlink:href="strassenbahnnetz.svg/0000000000000000000000000000000000000000">Straßenbahn-Netz Frankfurt</a></text>
     <g class="nowiki">
     <text class="ab_bb te" transform="translate(382,338)"><a xlink:href="https://commons.wikimedia.org/wiki/File:U-Netz_Frankfurt.svg">Dieser Plan bei Wikipedia</a></text>
@@ -324,9 +327,9 @@
    <text class="hochstatio" x="15" y="85" onclick="geplant('verlaengerung_badhomburg')">Gonzenheim → Bad Homburg Bahnhof</text>
    <text class="ab_bb"      x="20" y="100">Status: Planfestgestellt (seit <a xlink:href="http://stanz.ms-visucom.de/cgi-bin/r20msvc_menue.pl?var_hauptpfad=../anwendungen/ms-visucom/&amp;var_html_folgemaske=index_pdf_oeffentlich.html&amp;var_datei_selektionen=20170115/84176157176587b9fea902ea2.dat&amp;var_variable_uebergabe=2016_public/0202.pdf">25.01.2016</a>)</text>
 
-   <text class="hochstatio" x="10" y="120" onclick="geplant('verlaengerung_europaviertel')">Europaviertel: <tspan class="link" id="verlaengerung_europaviertel_aktion">anzeigen</tspan></text>
+   <text class="hochstatio" x="10" y="120" onclick="geplant('verlaengerung_europaviertel')">Europaviertel: <tspan class="link" id="verlaengerung_europaviertel_aktion">verstecken</tspan></text>
    <text class="hochstatio" x="15" y="135" onclick="geplant('verlaengerung_europaviertel')">Hauptbahnhof → Wohnpark</text>
-   <text class="ab_bb"      x="20" y="150">Status: Planfestgestellt (seit <a xlink:href="https://rp-darmstadt.hessen.de/irj/servlet/prt/portal/prtroot/slimp.CMReader/HMdI_15/RPDA_Internet/med/060/060504cb-7c7e-c451-d064-8712ae8bad54,22222222-2222-2222-2222-222222222222">19.05.2016</a>); <a xlink:href="https://www.sbev-frankfurt.de/de/home/">in Bau</a></text>
+   <text class="ab_bb"      x="20" y="150">Status: <a xlink:href="https://www.sbev-frankfurt.de/de/home/">in Bau</a></text>
    <text class="hochstatio" x="10" y="170" onclick="geplant('ginnheimer_kurve')">Ginnheimer Kurve: <tspan class="link" id="ginnheimer_kurve_aktion">anzeigen</tspan></text>
    <text class="hochstatio" x="15" y="185" onclick="geplant('ginnheimer_kurve')">Ginnheim → Bockenheimer Warte</text>
    <text class="ab_bb"      x="20" y="200">Status: Abwägung der <a xlink:href="https://www.stvv.frankfurt.de/parlisobj/B_292_2015_AN_Ergebnisbericht.pdf">Machbarkeitsstudie</a></text>
@@ -1173,8 +1176,6 @@
    <path id="ginnheimerkurve_2" class="geplant ginnheimer_kurve" d="M -120,1280 v -380" />
    <path id="riedberg_1" d="M -153,271 a 50,50 0,0,1 50,-50 h 234" />
    <path id="riedberg_2" d="M 131,211 h -234 a 60,60 0,0,0 -60,60" />
-   <use xlink:href="#keinu2" transform="translate(-103,271) rotate(30) translate(-50,0)" />
-   <use xlink:href="#keinu2" transform="translate(90,211) rotate(-90)" />
    <path id="gd_wiesenau_1" d="M -120,521 v -33 q 0,-24 -18,-42" />
    <path id="gd_wiesenau_2" d="M -145,453 q 15,15 15,35 v 33" />
   </g>
@@ -1423,6 +1424,8 @@
    <g id="hst621" transform="translate(275,1155)" class="nullzig">
     <use xlink:href="#haltestel" transform="translate(+5,+5)" />
     <use xlink:href="#haltestel" transform="translate(-5,-5) rotate(180)" />
+    <use xlink:href="#weg" transform="translate(-10,-5) scale(2)" />
+    <use xlink:href="#weg" transform="translate(+10,+5) scale(2)" />
     <text x="17" y="5">Neuer Jüdischer Friedhof</text>
     <text class="ab_bb" x="17" y="14">Wird b.a.w. nicht bedient</text>
     <g class="bs_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 12,75</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
