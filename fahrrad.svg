@@ -76,15 +76,15 @@
     currentPopup: -1,
     popupStay: false,
     x: {
-      min: new Date(2016, 0, 1, 0, 0, 0, 0),
+      min: new Date(2017, 0, 1, 0, 0, 0, 0),
       max: new Date(2018, 0, 1, 0, 0, 0, 0),
-      del: 3,
+      del: 2,
       labeltext: ""
     },
     y: {
-      min: 6000,
-      max: 8400,
-      del: 300,
+      min: 7000,
+      max: 9000,
+      del: 250,
       labeltext: ""
     },
     width: 250,
@@ -321,7 +321,23 @@ var fahrrad = [
  { date : new Date("2017-07-02"), distance : 7749, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2017-07-09"), distance : 7812, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2017-07-16"), distance : 7867, link: "", text: "Quelle: Protokoll" },
- { date : new Date("2017-07-23"), distance : 7899, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-07-23"), distance : 7966, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-07-30"), distance : 7973, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-08-06"), distance : 8046, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-08-13"), distance : 8099, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-08-20"), distance : 8178, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-08-27"), distance : 8253, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-09-03"), distance : 8294, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-09-10"), distance : 8319, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-09-17"), distance : 8365, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-09-24"), distance : 8394, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-10-01"), distance : 8450, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-10-08"), distance : 8476, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-10-15"), distance : 8489, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-10-22"), distance : 8536, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-10-29"), distance : 8568, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-11-05"), distance : 8602, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-11-12"), distance : 8656, link: "", text: "Quelle: Protokoll" },
 
 ];
 var regionen = [
