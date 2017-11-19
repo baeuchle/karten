@@ -116,6 +116,15 @@
   .c2_strecke { display:none; }
   .c3_strecke { display:none; }
   .ds_strecke { display:none; }
+
+  .signal use { fill: black; stroke: none; }
+  .signalfuss { fill: none; stroke: black; }
+  .signaldetails { display: none; }
+  #signal_lichtbox { fill: black; stroke: none; }
+  #signalhp0 circle { fill: #ff0000; stroke: none; }
+  #signalhp1 circle { fill: #00c000; stroke: none; }
+  #signalhp3 circle { fill: #ffc000; stroke: none; }
+  #signalzs8 circle { fill: #ffff00; stroke: none; }
  ]]>
  </style>
  <script type="application/ecmascript"><![CDATA[
@@ -139,6 +148,12 @@
       var classedElement = allStyledElements[i];
       classedElement.style.display = zeigen ? 'inline' : 'none';
     }
+  }
+
+  function toggleshow(domobj) {
+    var sibling = domobj.parentNode.getElementsByClassName("signaldetails")[0];
+    var aktion = sibling.style.display == 'none';
+    sibling.style.display = aktion ? 'inline' : 'none';
   }
  ]]>
  </script>
@@ -254,6 +269,27 @@
     <path class="bb" style="fill:none;"  d="M 0,0 l 10,15" />
     <path class="bb" style="fill:none; stroke-dasharray:1,1"  d="M -5,-15 h 10" />
     <path class="bb" style="fill:none; stroke-dasharray:1,1"  d="M -5,+15 h 10" />
+  </g>
+  <rect id="signalplatz" x="1.5" y="-1.5" width="3" height="3" />
+  <path id="signalfuss" d="M 4,0 h 10 h -5 v -10" style="stroke:black; fill: none" />
+  <rect id="signal_lichtbox" x="4" y="-10" width="10" height="10" style="stroke: none; fill: black;" />
+  <g id="signalhp0">
+   <use xlink:href="#signal_lichtbox" />
+   <circle cx="9" cy="-5" r="3.5" />
+  </g>
+  <g id="signalhp1">
+   <use xlink:href="#signal_lichtbox" />
+   <circle cx="9" cy="-5" r="3.5" />
+  </g>
+  <g id="signalhp3">
+   <use xlink:href="#signal_lichtbox" />
+   <circle cx="9" cy="-5" r="3.5" />
+  </g>
+  <g id="signalzs8">
+   <use xlink:href="#signal_lichtbox" />
+   <circle cx=" 6.5" cy="-7" r="1.5" />
+   <circle cx="11.5" cy="-7" r="1.5" />
+   <circle cx=" 9.0" cy="-3" r="1.5" />
   </g>
  </defs>
  <g id="textboxen">
@@ -478,6 +514,16 @@
      <text x="10" y="5">Schweizer Platz</text>
     </a>
     <g class="as_strecke kilometer te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 8,50</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
+    <g class="signal" transform="translate(5,-17)">
+      <use xlink:href="#signalplatz" onclick="toggleshow(this)" />
+      <g class="signaldetails">
+       <text x="16" y="-10">912H14</text>
+       <use xlink:href="#signalfuss" />
+       <use xlink:href="#signalzs8" transform="translate(0,-10)" />
+       <use xlink:href="#signalhp1" transform="translate(0,-20)" />
+       <use xlink:href="#signalhp0" transform="translate(0,-30)" />
+      </g>
+    </g>
    </g>
    <g id="hst911" transform="translate(115,1695)" class="achtzig te">
     <use xlink:href="#bstg_ausen" />
@@ -1245,10 +1291,7 @@
     <use xlink:href="#einwagen" class="nullzig" transform="translate(-15,0)" />
     <use xlink:href="#einwagen" class="nullzig" transform="translate(-15,7.5)" />
     <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" class="achtzig" />
-    <use xlink:href="#einwagen" transform="translate(5,-15)" class="funfzig" />
-    <use xlink:href="#einwagen" transform="translate(15,-7.5) rotate(180)" class="funfzig" />
-    <use xlink:href="#weg" transform="translate(10,-12)" />
-    <use xlink:href="#drei_mitte" transform="translate(10,3.75)" class="achtzig" />
+    <use xlink:href="#bstg_mitte" transform="translate(10,0)" class="achtzig" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Ginnheim">
      <text x="-25" y="-6">Ginnheim</text>
     </a>
