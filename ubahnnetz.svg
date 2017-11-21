@@ -287,9 +287,9 @@
   </g>
   <g id="signalzs8">
    <use xlink:href="#signal_lichtbox" />
-   <circle cx=" 6.5" cy="-7" r="1.5" />
-   <circle cx="11.5" cy="-7" r="1.5" />
-   <circle cx=" 9.0" cy="-3" r="1.5" />
+   <circle transform="translate( 6.5,-7)" r="1.5" />
+   <circle transform="translate(11.5,-7)" r="1.5" />
+   <circle transform="translate( 9.0,-3)" r="1.5" />
   </g>
  </defs>
  <g id="textboxen">
