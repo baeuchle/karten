@@ -271,7 +271,7 @@
     <path class="bb" style="fill:none; stroke-dasharray:1,1"  d="M -5,+15 h 10" />
   </g>
   <rect id="signalplatz" x="1.5" y="-1.5" width="3" height="3" />
-  <path id="signalfuss" d="M 4,0 h 10 h -5 v -10" style="stroke:black; fill: none" />
+  <path id="signalfuss" d="M 4,0 h 10 h -5 v -5" style="stroke:black; fill: none" />
   <rect id="signal_lichtbox" x="4" y="-10" width="10" height="10" style="stroke: none; fill: black;" />
   <g id="signalhp0">
    <use xlink:href="#signal_lichtbox" />
@@ -507,6 +507,79 @@
      <text x="10" y="5">Südbahnhof</text>
     </a>
     <g class="as_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 7,90</text></g><use xlink:href="#punkt2" transform="rotate(30)" /></g>
+    <g class="signal" transform="translate(5,-17)">
+      <use xlink:href="#signalplatz" onclick="toggleshow(this)" />
+      <g class="signaldetails">
+       <text x="16" y="-10">913H14</text>
+       <use xlink:href="#signalfuss" />
+       <use xlink:href="#signalzs8" transform="translate(0,-05)" />
+       <use xlink:href="#signalhp1" transform="translate(0,-15)" />
+       <use xlink:href="#signalhp0" transform="translate(0,-25)" />
+      </g>
+    </g>
+    <g class="signal" transform="translate(-5,17) rotate(180)">
+      <use xlink:href="#signalplatz" onclick="toggleshow(this)" />
+      <g class="signaldetails">
+       <text transform="translate(16,-10) rotate(180)" class="te">913H24</text>
+       <use xlink:href="#signalfuss" />
+       <use xlink:href="#signalzs8" transform="translate(0,-05)" />
+       <use xlink:href="#signalhp3" transform="translate(0,-15)" />
+       <use xlink:href="#signalhp0" transform="translate(0,-25)" />
+      </g>
+    </g>
+    <g class="signal" transform="translate(-5,-17)">
+      <use xlink:href="#signalplatz" onclick="toggleshow(this)" />
+      <g class="signaldetails">
+       <text x="16" y="-10">913R23</text>
+       <use xlink:href="#signalfuss" />
+       <use xlink:href="#signalzs8" transform="translate(0,-05)" />
+       <use xlink:href="#signalhp1" transform="translate(0,-15)" />
+       <use xlink:href="#signalhp3" transform="translate(0,-25)" />
+       <use xlink:href="#signalhp0" transform="translate(0,-35)" />
+      </g>
+    </g>
+    <g class="signal" transform="translate(5,17) rotate(180)">
+      <use xlink:href="#signalplatz" onclick="toggleshow(this)" />
+      <g class="signaldetails">
+       <text transform="translate(16,-10) rotate(180)" class="te">913R13</text>
+       <use xlink:href="#signalfuss" />
+       <use xlink:href="#signalzs8" transform="translate(0,-05)" />
+       <use xlink:href="#signalhp3" transform="translate(0,-15)" />
+       <use xlink:href="#signalhp0" transform="translate(0,-25)" />
+      </g>
+    </g>
+    <g class="signal" transform="translate(5,37)">
+      <use xlink:href="#signalplatz" onclick="toggleshow(this)" />
+      <g class="signaldetails">
+       <text x="16" y="-10">913H12</text>
+       <use xlink:href="#signalfuss" />
+       <use xlink:href="#signalzs8" transform="translate(0,-05)" />
+       <use xlink:href="#signalhp1" transform="translate(0,-15)" />
+       <use xlink:href="#signalhp3" transform="translate(0,-25)" />
+       <use xlink:href="#signalhp0" transform="translate(0,-35)" />
+      </g>
+    </g>
+    <g class="signal" transform="translate(0,37)">
+      <use xlink:href="#signalplatz" onclick="toggleshow(this)" />
+      <g class="signaldetails">
+       <text x="16" y="-10">913H61</text>
+       <use xlink:href="#signalfuss" />
+       <use xlink:href="#signalzs8" transform="translate(0,-05)" />
+       <use xlink:href="#signalhp3" transform="translate(0,-15)" />
+       <use xlink:href="#signalhp0" transform="translate(0,-25)" />
+      </g>
+    </g>
+    <g class="signal" transform="translate(-5,37)">
+      <use xlink:href="#signalplatz" onclick="toggleshow(this)" />
+      <g class="signaldetails">
+       <text x="16" y="-10">913R25</text>
+       <use xlink:href="#signalfuss" />
+       <use xlink:href="#signalzs8" transform="translate(0,-05)" />
+       <use xlink:href="#signalhp1" transform="translate(0,-15)" />
+       <use xlink:href="#signalhp3" transform="translate(0,-25)" />
+       <use xlink:href="#signalhp0" transform="translate(0,-35)" />
+      </g>
+    </g>
    </g>
    <g id="hst912" transform="translate(115,1795)" class="achtzig">
     <use xlink:href="#bstg_mitte" />
@@ -519,9 +592,9 @@
       <g class="signaldetails">
        <text x="16" y="-10">912H14</text>
        <use xlink:href="#signalfuss" />
-       <use xlink:href="#signalzs8" transform="translate(0,-10)" />
-       <use xlink:href="#signalhp1" transform="translate(0,-20)" />
-       <use xlink:href="#signalhp0" transform="translate(0,-30)" />
+       <use xlink:href="#signalzs8" transform="translate(0,-05)" />
+       <use xlink:href="#signalhp1" transform="translate(0,-15)" />
+       <use xlink:href="#signalhp0" transform="translate(0,-25)" />
       </g>
     </g>
    </g>
