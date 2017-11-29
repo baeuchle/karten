@@ -127,6 +127,8 @@
   #signalhp1 circle { fill: #00c000; stroke: none; }
   #signalhp3 circle { fill: #ffc000; stroke: none; }
   #signal_a7 circle { fill: #ffff00; stroke: none; }
+  #signalvor circle.vr1 { fill: #00c000; stroke: none; }
+  #signalvor circle.vr0 { fill: #ffc000; stroke: none; }
  ]]>
  </style>
  <script type="application/ecmascript"><![CDATA[
@@ -309,6 +311,15 @@
    <circle transform="translate( 2.5,-7)" r="1.5" />
    <circle transform="translate( 0.0,-3)" r="1.5" />
   </g>
+  <g id="signalvor">
+   <use xlink:href="#signalfuss" />
+   <use xlink:href="#signal_lichtbox" transform="translate(0,-5)" />
+   <use xlink:href="#signal_lichtbox" transform="translate(0,-12)" />
+   <circle class="vr1" transform="translate(-2, -8)" r="1.75" />
+   <circle class="vr0" transform="translate( 2,-11)" r="1.75" />
+   <circle class="vr1" transform="translate(-2,-15)" r="1.75" />
+   <circle class="vr0" transform="translate( 2,-19)" r="1.75" />
+  </g>
   <g id="signal_haupt_01v">
     <use xlink:href="#signalfuss" />
     <use xlink:href="#signal_a7" transform="translate(0,-05)" />
@@ -327,6 +338,10 @@
     <use xlink:href="#signalhp3" transform="translate(0,-05)" />
     <use xlink:href="#signal_a7" transform="translate(0,-15)" />
     <use xlink:href="#signalhp0" transform="translate(0,-25)" />
+  </g>
+  <g id="signal_haupt_02v_vor">
+    <use xlink:href="#signal_haupt_02v" transform="translate(0,-20)" />
+    <use xlink:href="#signalvor" />
   </g>
  </defs>
  <g id="textboxen">
@@ -509,7 +524,7 @@
   <g id="betrieb_cebene" class="strecke tb">
    <path id="gw_südbahnhof" d="M 110,1860 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20" />
    <path id="wa_südbahnhof" class="endet" d="M 110,1910 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20 m 0,-12 c 0,6 5,6 5,12 m 5,-12 c 0,6 -5,6 -5,12 v 25" />
-   <path id="gw_theaterplatz" d="M 110,1635 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20 " />
+   <path id="gw_theaterplatz" d="M 110,1645 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20 " />
    <path id="wa_eschenheimertor" class="endet" d="M 120,1460 c 0,-5 -5,-5 -5,-10 m -5,15 c 0,-5 5,-5 5,-10 v -40" />
    <path id="gw_miquel" class="tb" d="M 110,1145 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20 " />
    <g id="wa_bockenheim_nord" transform="translate(-125,1350)">
@@ -602,52 +617,209 @@
     </a>
     <g class="as_strecke kilometer te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 8,50</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
     <g class="hstdetails">
+      <g class="signal" transform="translate(0,-17)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text x="31">912H14</text>
+        <use xlink:href="#signal_haupt_01v" transform="translate(25,0)" />
+      </g>
+      <g class="signal" transform="translate(0,42)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text x="31">912H11</text>
+        <use xlink:href="#signal_haupt_01v" transform="translate(25,0)" />
+      </g>
+      <g class="signal" transform="translate(0,-42) rotate(180)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text class="te" transform="translate(31, -10) rotate(180)">912H21</text>
+        <use xlink:href="#signal_haupt_01v" transform="translate(25,0)" />
+      </g>
+      <g class="signal" transform="translate(0,17) rotate(180)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text class="te" transform="translate(31, -10) rotate(180)">912H24</text>
+        <use xlink:href="#signal_haupt_02v" transform="translate(25,0)" />
+      </g>
     </g>
    </g>
    <g id="hst911" transform="translate(115,1695)" class="achtzig te">
-    <use xlink:href="#bstg_ausen" />
+    <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Willy-Brandt-Platz">
      <text x="-15" y="-5">Willy-Brandt-Platz</text>
+     <text x="-15" y="30"><tspan class="hstdetails">(C-Ebene: 911, WBC)</tspan></text>
     </a>
     <g class="as_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 9,40</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
+    <g class="hstdetails ta">
+      <g class="signal" transform="translate(0,-17)">
+        <use xlink:href="#signalplatz" transform="translate(-5,0)" />
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text x="51" y="-10">911R23</text>
+        <text x="51" y="-00">911H14 + 511V11</text>
+        <use xlink:href="#signal_haupt_02v_vor" transform="translate(45,0)" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(25,0)" />
+        <path class="signalverbinder" d="M 25,0 c 0,-5 -27,-5 -27,0" />
+        <path class="signalverbinder" d="M 45,0 c 0, 5 -37, 5 -37,0" />
+      </g>
+      <g class="signal" transform="translate(0,42)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text x="31">911H11</text>
+        <use xlink:href="#signal_haupt_01v" transform="translate(25,0)" />
+      </g>
+      <g class="signal" transform="translate(0,-52) rotate(180)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text class="te" transform="translate(31, -10) rotate(180)">911H21</text>
+        <use xlink:href="#signal_haupt_02v" transform="translate(25,10)" />
+      </g>
+      <g class="signal" transform="translate(0,17) rotate(180)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text class="te" transform="translate(31, -25) rotate(180)">911H24</text>
+        <use xlink:href="#signal_haupt_02v" transform="translate(25,-15)" />
+        <path class="signalverbinder" d="M 25,-15 c -10,0 -17,10 -17,15" />
+      </g>
+    </g>
    </g>
    <g id="hst511" transform="translate(115,1595)" class="achtzig te">
-    <use xlink:href="#bstg_ausen" />
+    <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Hauptwache">
      <text x="-10" y="-40">Hauptwache</text>
+     <text x="35" y="15" class="ta"><tspan class="hstdetails">(D-Ebene: 511, HWD)</tspan></text>
     </a>
     <g class="as_strecke kilometer ta"><g transform="rotate(30) translate(0,-99) rotate(-30)"><use xlink:href="#kasten3" /><text x="10" y="4">km 10,0</text></g><use xlink:href="#punkt1" transform="rotate(30)" /></g>
+    <g class="hstdetails ta">
+      <g class="signal" transform="translate(0,-22)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text x="31" y="-10">511H14</text>
+        <use xlink:href="#signal_haupt_01v" transform="translate(25,-10)" />
+        <path class="signalverbinder" d="M 25,-10 c 0,10 -17,5 -17,10" />
+      </g>
+      <g class="signal" transform="translate(0,42)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text x="31">511H11</text>
+        <use xlink:href="#signal_haupt_02v" transform="translate(25,10)" />
+      </g>
+      <g class="signal" transform="translate(0,17) rotate(180)">
+        <use xlink:href="#signalplatz" transform="translate(-5,0)" />
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text class="te" transform="translate(51, -10) rotate(180)">511H24</text>
+        <text class="te" transform="translate(51, -20) rotate(180)">+ 911V21</text>
+        <text class="te" transform="translate(51, -35) rotate(180)">511R13</text>
+        <use xlink:href="#signal_haupt_02v" transform="translate(25,0)" />
+        <use xlink:href="#signal_haupt_02v_vor" transform="translate(45,0)" />
+        <path class="signalverbinder" d="M 25,0 c 0,-5 -27,-5 -27,0" />
+        <path class="signalverbinder" d="M 45,0 c 0, 5 -37, 5 -37,0" />
+      </g>
+    </g>
    </g>
    <g id="hst512" transform="translate(115,1480)" class="achtzig te">
-    <use xlink:href="#bstg_ausen" />
+    <g onclick="toggle_details(this)">
+     <use xlink:href="#bstg_ausen" />
+     <use id="a_512A51" xlink:href="#vierabstell" transform="translate(0,-57.5)" />
+    </g>
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Eschenheimer_Tor">
      <text x="-15" y="5">Eschenheimer Tor</text>
+     <text x="-15" y="15"><tspan class="hstdetails">(512, ET)</tspan></text>
     </a>
     <g class="as_strecke kilometer te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 10,4</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
+    <g class="hstdetails">
+      <g class="signal ta" transform="translate(0,-17)">
+        <use xlink:href="#signalplatz" transform="translate(-5,0)" />
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text x="51" y="-10">512R23</text>
+        <text x="51" y="-00">512H14</text>
+        <use xlink:href="#signal_haupt_03v" transform="translate(25,0)" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(45,0)" />
+        <path class="signalverbinder" d="M 25,0 c 0,-5 -27,-5 -27,0" />
+        <path class="signalverbinder" d="M 45,0 c 0, 5 -37, 5 -37,0" />
+      </g>
+      <g class="signal" transform="translate(0,17) rotate(180)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text transform="translate(31, -10) rotate(180)">512H24</text>
+        <use xlink:href="#signal_haupt_01v" transform="translate(25,0)" />
+      </g>
+      <g class="signal" transform="translate(0,-32) rotate(180)">
+        <use xlink:href="#signalplatz" />
+        <text transform="translate(31, -10) rotate(180)">512R51</text>
+        <use xlink:href="#signal_haupt_03v" transform="translate(25,10)" />
+      </g>
+    </g>
    </g>
    <g id="hst513" transform="translate(115,1380)" class="achtzig te">
-    <use xlink:href="#bstg_ausen" />
+    <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Grüneburgweg">
      <text x="-15" y="5">Grüneburgweg</text>
+     <text x="-15" y="15"><tspan class="hstdetails">(513, GW)</tspan></text>
     </a>
     <g class="as_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 11,1</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
+    <g class="hstdetails">
+      <g class="signal ta" transform="translate(0,-17)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text x="31">513H14</text>
+        <use xlink:href="#signal_haupt_01v" transform="translate(25,0)" />
+      </g>
+      <g class="signal" transform="translate(0,17) rotate(180)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text transform="translate(31, -10) rotate(180)">513H24</text>
+        <use xlink:href="#signal_haupt_01v" transform="translate(25,0)" />
+      </g>
+    </g>
    </g>
    <g id="hst514" transform="translate(115,1280)" class="achtzig te">
-    <use xlink:href="#bstg_ausen" />
+    <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Holzhausenstraße">
      <text x="-15" y="5">Holzhausenstraße</text>
+     <text x="-15" y="15"><tspan class="hstdetails">(514, HO)</tspan></text>
     </a>
     <g class="as_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 11,5</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
+    <g class="hstdetails">
+      <g class="signal ta" transform="translate(0,-17)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text x="31">514H14</text>
+        <use xlink:href="#signal_haupt_01v" transform="translate(25,0)" />
+      </g>
+      <g class="signal" transform="translate(0,17) rotate(180)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text transform="translate(31, -10) rotate(180)">514H24</text>
+        <use xlink:href="#signal_haupt_01v" transform="translate(25,0)" />
+      </g>
+    </g>
    </g>
    <g id="hst515" transform="translate(115,1180)" class="achtzig te">
-    <use xlink:href="#bstg_ausen" />
-    <rect style="fill:#ffffff" x="-12" y="13" width="6" height="4"/>
-    <rect style="fill:#ffffff" x="6"   y="13" width="6" height="4"/>
+    <g onclick="toggle_details(this)">
+     <use xlink:href="#bstg_ausen" />
+     <rect style="fill:#ffffff" x="-12" y="13" width="6" height="4"/>
+     <rect style="fill:#ffffff" x="6"   y="13" width="6" height="4"/>
+    </g>
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Miquel-/Adickesallee">
      <text x="-15" y="-3">Miquel-/Adickesallee/</text>
      <text x="-15" y="13">Polizeipräsidium</text>
+     <text x="-15" y="23"><tspan class="hstdetails">(515, MI)</tspan></text>
     </a>
     <g class="as_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 12,1</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
+    <g class="hstdetails">
+      <g class="signal ta" transform="translate(0,-17)">
+        <use xlink:href="#signalplatz" transform="translate(-5,0)" />
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text x="51" y="-10">515R23</text>
+        <text x="51" y="-00">515H14</text>
+        <use xlink:href="#signal_haupt_03v" transform="translate(25,0)" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(45,0)" />
+        <path class="signalverbinder" d="M 25,0 c 0,-5 -27,-5 -27,0" />
+        <path class="signalverbinder" d="M 45,0 c 0, 5 -37, 5 -37,0" />
+      </g>
+      <g class="signal" transform="translate(0,17) rotate(180)">
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text transform="translate(31, -20) rotate(180)">512H24</text>
+        <use xlink:href="#signal_haupt_01v" transform="translate(25,-10)" />
+      </g>
+      <g class="signal" transform="translate(0,-37) rotate(180)">
+        <use xlink:href="#signalplatz" transform="translate(-5,0)" />
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <text class="te" transform="translate(51, -10) rotate(180)">515H21</text>
+        <text class="te" transform="translate(51, -20) rotate(180)">515R15</text>
+        <use xlink:href="#signal_vor" transform="translate(65,0)" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(45,25)" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(25,25)" />
+        <path class="signalverbinder" d="M 25,25 c 0,10 -27,10 -27,-25" />
+        <path class="signalverbinder" d="M 45,25 c 0,10 -37,10 -37,-25" />
+      </g>
+    </g>
    </g>
    <g id="hst251" transform="translate(-217,1515)" class="achtzig">
     <use xlink:href="#bstg_mitte" />
@@ -1409,12 +1581,27 @@
     <g class="ds_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km+2,80</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
    <g id="hst521" transform="translate(115,1080)" class="achtzig te">
-    <use xlink:href="#bstg_ausen" />
+    <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/Stadtbahnstation_Dornbusch">
      <text x="-15" y="-3">Dornbusch</text>
      <text x="-15" y="13">(Hessischer Rundfunk)</text>
     </a>
     <g class="as_strecke kilometer"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 12,70</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
+    <g class="hstdetails">
+      <g class="signal" transform="translate(0,17) rotate(180)">
+        <use xlink:href="#signalplatz" transform="translate(-11,0)" />
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+        <use xlink:href="#signalplatz" transform="translate( 5,-20)" />
+        <text transform="translate(71, -10) rotate(180)">521H24</text>
+        <text transform="translate(71, -20) rotate(180)">521R13</text>
+        <text transform="translate(71, -30) rotate(180)">515V21</text>
+        <use xlink:href="#signalvor" transform="translate(25,-20)" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(45,0)" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(65,0)" />
+        <path class="signalverbinder" d="M 45,0 c 0,-5 -47,-5 -47,0" />
+        <path class="signalverbinder" d="M 65,0 c 0, 5 -57, 5 -57,0" />
+      </g>
+    </g>
    </g>
    <g id="hst522" transform="translate(115,980)" class="achtzig te">
     <use xlink:href="#bstg_ausen" />
@@ -1682,7 +1869,6 @@
  </g>
  <g id="abstellungen">
   <g class="tunnel">
-   <use id="et"     xlink:href="#vierabstell" transform="translate(115,1422.5)" />
    <use id="sl_13"  xlink:href="#sechabstell" transform="translate(584,1232) rotate(45)" />
    <use id="sl131a" xlink:href="#vierabstell" transform="translate(588,1236) rotate(45)" />
    <use id="sl131b" xlink:href="#vierabstell" transform="translate(572,1252) rotate(45)" />
