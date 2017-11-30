@@ -338,6 +338,7 @@ var fahrrad = [
  { date : new Date("2017-10-29"), distance : 8568, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2017-11-05"), distance : 8602, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2017-11-12"), distance : 8656, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-11-19"), distance : 8704, link: "", text: "Quelle: Protokoll" },
 
 ];
 var regionen = [
