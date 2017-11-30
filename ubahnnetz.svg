@@ -382,6 +382,20 @@
     <use xlink:href="#signal_f3" transform="translate(0,-20)" />
     <use xlink:href="#signal_f0" transform="translate(0,-30)" />
   </g>
+  <g id="signal_f_012v">
+    <use xlink:href="#signalfuss" />
+    <use xlink:href="#signal_f7" transform="translate(0,-10)" />
+    <use xlink:href="#signal_f2" transform="translate(0,-20)" />
+    <use xlink:href="#signal_f1" transform="translate(0,-30)" />
+    <use xlink:href="#signal_f0" transform="translate(0,-40)" />
+  </g>
+  <g id="signal_f_013v">
+    <use xlink:href="#signalfuss" />
+    <use xlink:href="#signal_f7" transform="translate(0,-10)" />
+    <use xlink:href="#signal_f3" transform="translate(0,-20)" />
+    <use xlink:href="#signal_f1" transform="translate(0,-30)" />
+    <use xlink:href="#signal_f0" transform="translate(0,-40)" />
+  </g>
  </defs>
  <g id="textboxen">
   <g id="legende" transform="translate(550,-169)">
@@ -1565,6 +1579,32 @@
     <text x="0" y="25">Riedberg</text>
     <g class="ds_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km+2,80</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
+   <g id="bst502" transform="translate(-115,466)" class="te"><use xlink:href="#hstgrid"/>
+    <text x="-25" y="7" class="ab_bb"><tspan class="hstdetails">(502, ANW)</tspan></text>
+    <text x="-25" y="17" class="ab_bb" onclick="toggle_details(this)">Abzweig Nordwest</text>
+    <g class="hstdetails">
+     <g class="signal te" transform="translate(55,0) rotate(-90)">
+       <use xlink:href="#signalplatz" transform="translate(5,0)" />
+       <text transform="translate(35,0) rotate(90)">502Y11</text>
+       <use xlink:href="#signal_f_012v" transform="translate(25,0)" />
+     </g>
+     <g class="signal ta" transform="rotate(-90) translate(55,12) rotate(15) translate(-55,0)">
+       <use xlink:href="#signalplatz" transform="translate(5,0)" />
+       <text transform="translate(40,-17) rotate(75)">502Y14</text>
+       <use xlink:href="#signal_f_01v" transform="translate(30,0)" />
+     </g>
+     <g class="signal ta" transform="rotate(90)">
+       <use xlink:href="#signalplatz" transform="translate(-55,-12) rotate(10) translate(60,0)" />
+       <text transform="translate(35,-20) rotate(-90)">502Y24</text>
+       <use xlink:href="#signal_f_01v" transform="translate(20,-20)" />
+     </g>
+     <g class="signal te" transform="rotate(90) translate(-55,-12) rotate(45) translate(55,0)">
+       <use xlink:href="#signalplatz" transform="translate(5,0)" />
+       <text transform="translate(26,45) rotate(225)">502Y21</text>
+       <use xlink:href="#signal_f_013v" transform="translate(20,45)" />
+     </g>
+    </g>
+   </g>
    <g id="hst521" transform="translate(115,1080)" class="achtzig te">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/Stadtbahnstation_Dornbusch">
@@ -1766,8 +1806,13 @@
      </g>
      <g class="signal ta" transform="translate(-37,0) rotate(90)">
        <use xlink:href="#signalplatz" transform="translate(5,0)" />
-       <text transform="translate(45,-5) rotate(-90)">527H21</text>
+       <text transform="translate(40,-5) rotate(-90)">527H21</text>
        <use xlink:href="#signal_haupt_01v" transform="translate(25,0)" />
+     </g>
+     <g class="signal te" transform="translate(-37,0) rotate(-90)">
+       <use xlink:href="#signalplatz" transform="translate(5,0)" />
+       <text transform="translate(35,0) rotate(90)">527Y15</text>
+       <use xlink:href="#signal_f_01v" transform="translate(25,0)" />
      </g>
     </g>
    </g>
@@ -1996,7 +2041,6 @@
     <text x="10" y="5">Enkheim</text>
     <g class="c1_strecke kilometer te"><g transform="rotate(-60) translate(0,-60) rotate(60)"><use xlink:href="#kastenJ" /><text x="-6" y="-1">km 5,24→</text><text x="-6" y="9">km 5,54←</text></g><use xlink:href="#punkt2" transform="rotate(-60)" /></g>
    </g>
-   <!--<g id="bst502">Abzweig/Dreieck Nordwest</g>-->
   </g>
  </g>
  <g id="abstellungen">
