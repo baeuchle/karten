@@ -775,12 +775,11 @@
   </g>
   <g id="hstbsn_" transform="translate(-453,564) rotate(-90)" class="zehnzig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text x="-15" y="10" transform="rotate(45)">Bürostadt Niederrad</text></g>
   <g id="hstkie_" transform="translate(-503,564) rotate(-90)" class="zehnzig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Kiesschneise</text></g>
-  <g id="hstwau_" transform="translate(-553,564) rotate(-90)" class="zehnzig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text x="-15" y="10" transform="rotate(45)">Waldau</text></g>
-  <g id="hst4101" transform="translate(-603,564) rotate(-90)" class="zehnzig te">
+  <g id="hstwau_" transform="translate(-553,564) rotate(-90)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text x="-15" y="10" transform="rotate(45)">Waldau</text></g>
+  <g id="hst4101" transform="translate(-603,564) rotate(-90)" class="dreizig te">
    <use xlink:href="#hstgrid" />
-   <use xlink:href="#bstg_vers2" />
-   <use xlink:href="#uml" transform="translate(-10,10) rotate(90)" />
-   <text x="-10" y="20" transform="rotate(45)">Waldfriedhof Goldstein</text>
+   <use xlink:href="#bstg_ausen" />
+   <text x="-15" y="15" transform="rotate(45)">Waldfriedhof Goldstein</text>
   </g>
   <g id="hsthar_" transform="translate(-673,564) rotate(-90)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Harthweg</text></g>
   <g id="hstfdw_" transform="translate(-723,564) rotate(-90)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Ferdinand-Dirichs-Weg</text></g>
@@ -927,7 +926,7 @@
   <path id="gw_uniklinik" d="M -90,380 c 5,0 5,10 10,10" />
   <path id="gw_triftstraße" d="M -244,484 c 3.5,-3.5 11.5,3.5 14,0" />
   <path id="gw_bürostadt" d="M -473,559 c 5,0 5,10 10,10" />
-  <path id="schleife_waldfriedhof" d="M -618,559 a 15,15 0,0,0 0,30 a 10,10 0,0,0 10,-10 a 10,10 0,0,1 10,-10" />
+  <path id="schleife_waldfriedhof" d="M -628,559 a 15,15 0,0,0 0,30 a 10,10 0,0,0 10,-10 a 10,10 0,0,1 10,-10" />
   <path id="schleife_haardtwaldplatz" d="M -379,435 a 10,10 0,0,0 -10,-10 h -10 a 10,10 0,0,0 -10,10" />
   <path id="schleife_oberforsthaus" d="M -257,580 a 15,15 0,0,0 15,15 h 10 a 15,15 0,0,0 15,-15 a 10,10 0,0,0 -10,-10 h -10 a 10,10 0,0,1 -10,-10" />
   <path id="wa_stadion_1" d="M -247,630 c 0,5 -5,5 -5,10 v 5 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -1.5,3.5 q 0,4 -3,7 l -24,24 q -3,3 -3,7 v 5 c 0,5 -5,5 -5,10" />
