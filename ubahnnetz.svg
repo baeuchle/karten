@@ -6,6 +6,7 @@
   width="1765px"
   height="2129px"
   viewBox="-815 -169 1765 2129"
+  onload="readquery()"
   >
  <rect id="aussen" width="1765" height="2147" x="-815" y="-180" style="fill:white;stroke:#0000c0;stroke-width:.1px" />
  <text class="te ab_bb" x="947" y="1938"><a xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">Permalink zu dieser Version</a></text>
@@ -88,9 +89,10 @@
   .abstell { stroke-width:.5; stroke:black; fill:#ffffff; fill-opacity:0.8; }
 
   .mitte { stroke: #404040; stroke-dasharray:2,1; stroke-width:.7px; fill:none; }
-  .hilfslinie { display:display; }
+  .hilfslinie { display:none; }
+  svg.debug .hilfslinie { display:inline; }
   .verlaengerung_badhomburg { display:none; }
-  .verlaengerung_europaviertel { display:display; }
+  .verlaengerung_europaviertel { display:inline; }
   .ginnheimer_kurve { display:none; }
   .frankfurter_berg { display:none; }
   .rtw { display:none; }
@@ -156,8 +158,16 @@
     }
   }
 
-  function toggle_details(domobj) {
-    var detailobjects = domobj.parentNode.getElementsByClassName("hstdetails");
+  /// Schaltet die Haltestellendetails der übergeordneten Gruppe an oder aus:
+  /// @param clickobj Objekt, auf das geklickt wird; sollte direkt unter der Haltestellengruppe liegen.
+  function toggle_details(clickobj) {
+    toggle_stopdetails(clickobj.parentNode);
+  }
+
+  /// Schaltet die Haltestellendetails dieser Haltestelle an oder aus
+  /// @param domobj Objekt, dass die zu dieser Haltestelle gehörende SVG-Gruppe enthält.
+  function toggle_stopdetails(domobj) {
+    var detailobjects = domobj.getElementsByClassName("hstdetails");
     if (detailobjects.length == 0) {
       return;
     }
@@ -175,6 +185,34 @@
     for (var i = 0; i < detailobjects.length; ++i) {
       var detailelement = detailobjects[i];
       detailelement.style.display = 'inline';
+    }
+  }
+  
+  function readquery() {
+    var query = location.search;
+    if (query == "") {
+      return;
+    }
+    if (query.indexOf("?") == 0) {
+      query = query.substring(1);
+    }
+    var fields = query.split("&").sort();
+    console.log("query: " + query + " contains " + fields.length + " fields");
+    for (var i = 0; i < fields.length; ++i) {
+      var key = fields[i];
+      if (key == "debug") {
+        document.firstChild.setAttribute("class","debug");
+        continue;
+      }
+      if (key.startsWith("showdetails=")) {
+        var value = key.substring(key.indexOf("=") + 1);
+        console.log(value);
+        var group = document.getElementById(value);
+        if (group === undefined) {
+          return;
+        }
+        toggle_stopdetails(group);
+      }
     }
   }
  ]]>
@@ -292,7 +330,10 @@
     <path class="bb" style="fill:none; stroke-dasharray:1,1"  d="M -5,-15 h 10" />
     <path class="bb" style="fill:none; stroke-dasharray:1,1"  d="M -5,+15 h 10" />
   </g>
-  <rect id="signalplatz" x="1.5" y="-1.5" width="3" height="3" />
+  <g id="signalplatz" style="stroke: none; fill: black; ">
+    <rect x="0" y="-.5" width="1" height="1" />
+    <path d="M 1,.5 l 2,1.5 v -4 l -2,1.5 z" />
+  </g>
   <path id="signalfuss" d="M -5,0 h 10 m -5,0 v -5" style="stroke:black; fill: none" />
   <rect id="signal_lichtbox" x="-5" y="-10" width="10" height="10" style="stroke: none; fill: black;" />
   <g id="signal_fbox">
@@ -1607,13 +1648,18 @@
     </g>
    </g>
    <g id="hst424" transform="translate(-88,216)" class="achtzig tm">
-    <use xlink:href="#bstg_ausen" transform="rotate(90)" />
+    <use xlink:href="#bstg_ausen" transform="rotate(90)" onclick="toggle_details(this)" />
+    <text x="0" y="-25"><tspan class="hstdetails">(424, UR)</tspan></text>
     <text x="0" y="-15">Uni Campus Riedberg</text>
     <g class="ds_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km*0,90</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
    <g id="hst425" transform="translate(12,216)" class="achtzig tm">
-    <use xlink:href="#bstg_ausen" transform="rotate(90)" />
+    <g onclick="toggle_details(this)" transform="rotate(-90)">
+     <use xlink:href="#bstg_ausen" />
+     <use id="rb_61" xlink:href="#vierabstell" transform="translate(0,30)" />
+    </g>
     <text x="0" y="25">Riedberg</text>
+    <text x="0" y="35"><tspan class="hstdetails">(425, RB)</tspan></text>
     <g class="ds_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km*1,60</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
    <g id="bst502" transform="translate(-115,466)" class="te"><use xlink:href="#hstgrid"/>
@@ -1681,24 +1727,24 @@
     <g class="as_strecke kilometer te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 13,95</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
     <g class="hstdetails">
       <g class="signal" transform="translate(0,-57) rotate(180)">
-        <use xlink:href="#signalplatz" transform="translate(-5,0)" />
-        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
         <text transform="translate(51, -10) rotate(180)">523Y21</text>
         <text transform="translate(51, -20) rotate(180)">523Y15</text>
         <use xlink:href="#signal_f_03v" transform="translate(25,0)" />
         <use xlink:href="#signal_f_01v" transform="translate(45,0)" />
-        <path class="signalverbinder" d="M 25,0 c 0,-5 -27,-5 -27,0" />
-        <path class="signalverbinder" d="M 45,0 c 0, 5 -37, 5 -37,0" />
-      </g>
-      <g class="signal ta" transform="translate(0,-32)">
+        <path class="signalverbinder" d="M 25,0 c 0,-5 -28,-5 -28,0" />
+        <path class="signalverbinder" d="M 45,0 c 0, 5 -38, 5 -38,0" />
         <use xlink:href="#signalplatz" transform="translate(-5,0)" />
         <use xlink:href="#signalplatz" transform="translate( 5,0)" />
+      </g>
+      <g class="signal ta" transform="translate(0,-32)">
         <text transform="translate(51,   0)">523Y23</text>
         <text transform="translate(51, -10)">523Y11</text>
         <use xlink:href="#signal_f_03v" transform="translate(25,0)" />
         <use xlink:href="#signal_f_01v" transform="translate(45,0)" />
-        <path class="signalverbinder" d="M 25,0 c 0,-5 -27,-5 -27,0" />
-        <path class="signalverbinder" d="M 45,0 c 0, 5 -37, 5 -37,0" />
+        <path class="signalverbinder" d="M 25,0 c 0,-5 -28,-5 -28,0" />
+        <path class="signalverbinder" d="M 45,0 c 0, 5 -38, 5 -38,0" />
+        <use xlink:href="#signalplatz" transform="translate(-5,0)" />
+        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
       </g>
     </g>
    </g>
@@ -1788,13 +1834,13 @@
         <text x="51" y="20">526H10</text>
         <use xlink:href="#signal_haupt_02v" transform="translate(25,20)" />
         <use xlink:href="#signal_haupt_02v" transform="translate(45,20)" />
-        <path class="signalverbinder" d="M 25,20 c 0,-5 -17,-15 -17,-20" />
-        <path class="signalverbinder" d="M 45,20 c 0,5 -37,5 -37,0" />
+        <path class="signalverbinder" d="M 25,20 c 0,-5 -18,-10 -18,-20" />
+        <path class="signalverbinder" d="M 45,20 c 0,10 -38,10 -38,0" />
       </g>
       <g class="signal" transform="translate(0,-17)">
         <use xlink:href="#signalplatz" transform="translate(5,0)" />
         <use xlink:href="#signalplatz" transform="translate(-5,0)" />
-        <use xlink:href="#signalplatz" transform="translate(-15,0)" />
+        <use xlink:href="#signalplatz" transform="translate(-15,-6)" />
         <use xlink:href="#signalplatz" transform="translate(15,0)" />
         <text x="101" y="-30">526R61</text>
         <text x="101" y="-20">526R22</text>
@@ -1804,26 +1850,45 @@
         <use xlink:href="#signal_haupt_03v" transform="translate(55,0)" />
         <use xlink:href="#signal_haupt_02v" transform="translate(75,0)" />
         <use xlink:href="#signal_haupt_02v" transform="translate(95,0)" />
-        <path class="signalverbinder" d="M 35,0 c 0,-5 -47,-5 -47,-0" />
-        <path class="signalverbinder" d="M 55,0 c 0,5 -57,5 -57,0" />
-        <path class="signalverbinder" d="M 75,0 c 0,-5 -67,-5 -67,-0" />
-        <path class="signalverbinder" d="M 95,0 c 0,5 -77,5 -77,0" />
+        <path class="signalverbinder" d="M 35,0 c 0,-5 -43,-6 -48,-6" />
+        <path class="signalverbinder" d="M 55,0 c 0, 5 -58, 5 -58,0" />
+        <path class="signalverbinder" d="M 75,0 c 0,-5 -68,-5 -68,0" />
+        <path class="signalverbinder" d="M 95,0 c 0, 5 -78, 5 -78,0" />
       </g>
-      <g class="signal" transform="translate(-10,-53) rotate(-45)">
+      <g class="signal" transform="translate(-10,-56) rotate(-45)">
         <use xlink:href="#signalplatz" transform="translate(3,0)" />
         <use xlink:href="#signal_haupt_03v" transform="translate(35,0)" />
         <path class="signalverbinder" d="M 35,0 c 0,-5 -29,-5 -29,-0" />
         <text transform="translate(41,0) rotate(45)">526H51</text>
       </g>
-      <g class="signal" transform="translate(-28,-65) rotate(135)">
+      <g class="signal te">
         <use xlink:href="#hstgrid" />
-        <use xlink:href="#signalplatz" transform="translate(-11,0)" />
-        <use xlink:href="#signalplatz" transform="translate(3,0)" />
-        <use xlink:href="#signalplatz" transform="translate(6.5,0)" />
-      </g>
-      <g class="signal" transform="translate(-11,-48) rotate(135)">
-        <use xlink:href="#signalplatz" transform="translate(6.5,0)" />
-        <use xlink:href="#signalplatz" transform="translate(10,-2)" />
+        <use xlink:href="#signalplatz" transform="translate(-33,-59) rotate(135)" />
+        <use xlink:href="#signalplatz" transform="translate(-31,-61) rotate(135)" />
+        <use xlink:href="#signalplatz" transform="translate(-21,-71) rotate(135)" />
+        <use xlink:href="#signalplatz" transform="translate(-17,-42.5) rotate(135)" />
+        <use xlink:href="#signalplatz" transform="translate(-17,-38) rotate(135)" />
+        <use xlink:href="#signalplatz" transform="translate( 15,-33) rotate(180)" />
+        <g transform="rotate(180) translate(30,0)">
+         <use xlink:href="#signal_haupt_03v" transform="translate(0,0)" />
+         <use xlink:href="#signal_haupt_02v" transform="translate(20,0)" />
+         <use xlink:href="#signal_haupt_02v" transform="translate(40,0)" />
+         <use xlink:href="#signal_haupt_03v" transform="translate(60,0)" />
+         <use xlink:href="#signal_haupt_03v" transform="translate(80,0)" />
+         <use xlink:href="#signal_haupt_02v" transform="translate(100,0)" />
+         <text transform="translate(-5,-50) rotate(90)">526R40</text>
+         <text transform="translate(15,-50) rotate(90)">526H62</text>
+         <text transform="translate(35,-50) rotate(90)">526H63</text>
+         <text transform="translate(55,-50) rotate(90)">526R50</text>
+         <text transform="translate(75,-50) rotate(90)">526R66</text>
+         <text transform="translate(95,-50) rotate(90)">526H26</text>
+        </g>
+        <path class="signalverbinder" d="M -30,0 c 0,-20 22,-33 42,-33" />
+        <path class="signalverbinder" d="M -50,0 c 20,0 25,-30 32,-37" />
+        <path class="signalverbinder" d="M -70,0 c 20,0 45,-34.5 52,-41,5" />
+        <path class="signalverbinder" d="M -90,0 c 20,0 45,-34.5 68,-70" />
+        <path class="signalverbinder" d="M -110,0 c -45,-45 31,-103 76,-58" />
+        <path class="signalverbinder" d="M -130,0 c -40,-40 48,-110 98,-60" />
       </g>
       <g class="signal te" transform="translate(-50,-125) rotate(180)">
         <use xlink:href="#signalplatz" transform="translate(5,0)" />
@@ -2010,14 +2075,14 @@
     <text x="15" y="5">Frankfurter Berg</text>
    </g>
    <g id="hst641" transform="translate(65,391)" class="achtzig"><use xlink:href="#hstgrid" />
-    <use xlink:href="#bstg_ausen" />
-    <text x="15" y="5">Sandelmühle</text>
+    <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
+    <text x="15" y="5">Sandelmühle<tspan class="hstdetails"> (641, SM)</tspan></text>
     <g class="a2_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 16,50</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
    <g id="hst642" transform="translate(65,291)" class="achtzig">
     <use xlink:href="#hstgrid" />
-    <use xlink:href="#bstg_ausen" />
-    <text x="15" y="5">Riedwiese/Mertonviertel</text>
+    <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
+    <text x="15" y="5">Riedwiese/Mertonviertel <tspan class="hstdetails"> (642, RW)</tspan></text>
     <g class="a2_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 17,10</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
    <g id="hst651" transform="translate(200,216)" class="achtzig tm">
@@ -2117,7 +2182,6 @@
    <use id="rs_31"  xlink:href="#vierabstell" transform="translate(-122.5,783.5)" />
    <use id="rs_32a" xlink:href="#dreiabstell" transform="translate(-127.5,783.5)" />
    <use id="rs_32b" xlink:href="#dreiabstell" transform="translate(-127.5,801)" />
-   <use id="rb_61" xlink:href="#vierabstell" transform="translate(42,216) rotate(-90)" />
    <use id="ou_gv" xlink:href="#vierabstell" transform="translate(-180,56) rotate(-90)" />
    <use id="sc_6" xlink:href="#vierabstell" transform="translate(818,1216.5)" />
   </g>
