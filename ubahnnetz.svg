@@ -136,9 +136,22 @@
  ]]>
  </style>
  <script type="application/ecmascript"><![CDATA[
+   /// Zeigt oder versteckt geplante Strecke
+   ///
+   /// Detektiert, ob an- oder ausgeschaltet werden soll anhand des
+   /// Textes im Linkelement mit dem Namen <name>_aktion.
+   /// @param name Name der geplanten Strecke.
    function geplant(name) {
      var linkElement = document.getElementById(name + "_aktion");
      var aktion = linkElement.firstChild.data == "anzeigen";
+     geplant_onoff(name, aktion);
+   }
+
+   /// Zeigt oder versteckt geplante Strecke
+   /// @param name Name der geplanten Strecke
+   /// @param aktion Wenn \c true, dann wird versteckt.
+   function geplant_onoff(name, aktion) {
+     var linkElement = document.getElementById(name + "_aktion");
      var allStyledElements = document.getElementsByClassName(name);
      for (var i = 0; i < allStyledElements.length; ++i) {
        var classedElement = allStyledElements[i];
@@ -147,11 +160,17 @@
      linkElement.firstChild.data = aktion ? 'verstecken' : 'anzeigen';
    }
   
-  function kilometer(domobj) {
-    var linkElement = document.getElementById(domobj + "_tx");
+  /// Zeigt die Kilometrierung für eine Strecke an oder versteckt sie wieder.
+  ///
+  /// Detektiert, ob an- oder ausgeschaltet werden soll anhand des
+  /// Schriftgewichtes im Linkelement mit dem Namen <classname>_tx.
+  /// @param classname Name der CSS-Klasse, die alle Elemente der
+  /// Kilometrierung der gewünschten Strecke haben.
+  function kilometer(classname) {
+    var linkElement = document.getElementById(classname + "_tx");
     var zeigen = linkElement.getAttribute("font-weight") != "bold";
     linkElement.setAttribute("font-weight", zeigen ? "bold" : "normal");
-    var allStyledElements = document.getElementsByClassName(domobj);
+    var allStyledElements = document.getElementsByClassName(classname);
     for (var i = 0; i < allStyledElements.length; ++i) {
       var classedElement = allStyledElements[i];
       classedElement.style.display = zeigen ? 'inline' : 'none';
@@ -159,13 +178,15 @@
   }
 
   /// Schaltet die Haltestellendetails der übergeordneten Gruppe an oder aus:
-  /// @param clickobj Objekt, auf das geklickt wird; sollte direkt unter der Haltestellengruppe liegen.
+  /// @param clickobj Objekt, auf das geklickt wird; sollte direkt unter
+  /// der Haltestellengruppe liegen.
   function toggle_details(clickobj) {
     toggle_stopdetails(clickobj.parentNode);
   }
 
   /// Schaltet die Haltestellendetails dieser Haltestelle an oder aus
-  /// @param domobj Objekt, dass die zu dieser Haltestelle gehörende SVG-Gruppe enthält.
+  /// @param domobj Objekt, dass die zu dieser Haltestelle gehörende
+  /// SVG-Gruppe enthält.
   function toggle_stopdetails(domobj) {
     var detailobjects = domobj.getElementsByClassName("hstdetails");
     if (detailobjects.length == 0) {
@@ -197,7 +218,6 @@
       query = query.substring(1);
     }
     var fields = query.split("&").sort();
-    console.log("query: " + query + " contains " + fields.length + " fields");
     for (var i = 0; i < fields.length; ++i) {
       var key = fields[i];
       if (key == "debug") {
@@ -205,13 +225,36 @@
         continue;
       }
       if (key.startsWith("showdetails=")) {
-        var value = key.substring(key.indexOf("=") + 1);
-        console.log(value);
-        var group = document.getElementById(value);
+        var group = document.getElementById(key.substring(key.indexOf("=") + 1));
         if (group === undefined) {
-          return;
+          continue;
         }
         toggle_stopdetails(group);
+        continue;
+      }
+      if (key.startsWith("kilometer=")) {
+        var value = key.substring(key.indexOf("=") + 1);
+        if (value == "") {
+          continue;
+        }
+        kilometer(value);
+        continue;
+      }
+      if (key.startsWith("geplant=")) {
+        var value = key.substring(key.indexOf("=") + 1);
+        if (value == "") {
+          continue;
+        }
+        geplant_onoff(value, true);
+        continue;
+      }
+      if (key.startsWith("nogeplant=")) {
+        var value = key.substring(key.indexOf("=") + 1);
+        if (value == "") {
+          continue;
+        }
+        geplant_onoff(value, false);
+        continue;
       }
     }
   }
@@ -1885,7 +1928,7 @@
         </g>
         <path class="signalverbinder" d="M -30,0 c 0,-20 22,-33 42,-33" />
         <path class="signalverbinder" d="M -50,0 c 20,0 25,-30 32,-37" />
-        <path class="signalverbinder" d="M -70,0 c 20,0 45,-34.5 52,-41,5" />
+        <path class="signalverbinder" d="M -70,0 c 20,0 45,-34.5 52,-41.5" />
         <path class="signalverbinder" d="M -90,0 c 20,0 45,-34.5 68,-70" />
         <path class="signalverbinder" d="M -110,0 c -45,-45 31,-103 76,-58" />
         <path class="signalverbinder" d="M -130,0 c -40,-40 48,-110 98,-60" />
