@@ -469,8 +469,6 @@
   <g id="hstoss" transform="translate(-20,635)" class="dreizig">
    <use xlink:href="#bstg_vers1" />
    <text transform="translate(15,5)">Oberschweinstiege</text>
-   <use xlink:href="#bau" transform="translate(-10,-10)" />
-   <use xlink:href="#uml" transform="translate(10,10) rotate(90)" />
   </g>
   <g id="hstlui" transform="translate(-20,565)" class="zehnzig te">
    <use xlink:href="#doppelbst" transform="translate(-5,0) rotate(180)" />
@@ -784,7 +782,7 @@
    <use xlink:href="#uml" transform="translate(-10,10) rotate(90)" />
    <text x="-10" y="20" transform="rotate(45)">Waldfriedhof Goldstein</text>
   </g>
-  <g id="hsthar_" transform="translate(-673,564) rotate(-90)" class="zehnzig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Harthweg</text></g>
+  <g id="hsthar_" transform="translate(-673,564) rotate(-90)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Harthweg</text></g>
   <g id="hstfdw_" transform="translate(-723,564) rotate(-90)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Ferdinand-Dirichs-Weg</text></g>
   <g id="hstrls_" transform="translate(-821,564) rotate(-90)" class="dreizig"><use xlink:href="#hstgrid" />
    <path class="bstggruppe" transform="rotate(90)" d="M 0,35 c 50,0 65,-5 65,-25 s -50,-25 -65,-25 a 35,25 0,0,0 0,50" />
