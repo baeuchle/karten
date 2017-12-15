@@ -1281,13 +1281,9 @@
   <path id="gw_niederursel" d="M -178,236 c -7,-7 0,-14 -7,-21" />
   <path id="gw_weisskirchen" d="M -250,164 c -7,-7 0,-14 -7,-21" />
   <g id="gueterverwaltung_oberursel">
-   <path id="wa_oberursel_a" d="M -225,56 h 70 c 5,0 5,5 10,5"/>
-   <path id="wa_oberursel_b" d="M -205,66 c 10,0 10,-10 20,-10" />
-   <path id="wa_oberursel_1" class="endet" d="M -140,61 q 2,0 3.5,-1.5 l 7,-7 q 1.5,-1.5 3.5,-1.5 h 21" />
-   <path id="wa_oberursel_2" class="endet" d="M -134.5,57.5 q 1.5,-1.5 3.5,-1.5 h 26" />
-   <path id="wa_oberursel_3" class="endet" d="M -225,66 h 70 c 5,0 5,-5 10,-5 h 40" />
-   <path id="wa_oberursel_4" class="endet" d="M -143,61 c 5,0 5,5 10,5 h 28" />
-   <use xlink:href="#weg" transform="translate(-155,56)" />
+   <path id="g556a53" class="endet" d="M -225,56 h 70"/>
+   <path id="g556w33w43" d="M -205,66 c 10,0 10,-10 20,-10" />
+   <path id="g556a53" class="endet" d="M -225,66 h 70" />
    <use xlink:href="#weg" transform="translate(-195,66)" />
   </g>
   <path id="gw_gloecknerwiese" d="M -340,-134 c -10,0 -10,-10 -20,-10" />
@@ -1484,7 +1480,7 @@
   <g id="bb_bommersheim" transform="translate(-415,151)" class="strecke">
    <text x="18" y="10" class="ab_bb te"><a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Wagenhalle_Bommersheim">AB Bommersheim</a></text>
    <g class="bb">
-    <path id="bomm_O1" class="endet" d="M 65,-35 c -5,0 -5,5 -10,5 h -77" />
+    <path id="bomm_O1" class="endet" d="M 70,-35 c -5,0 -5,5 -10,5 h -82" />
     <path id="bomm_01" class="endet" d="M 43,-30 q 2,0 3.5,1.5 l 8,8" />
     <path id="bomm_02" class="endet" d="M 38,-30 q 2,0 3.5,1.5 l 10.5,10.5" />
     <path id="bomm_03" class="endet" d="M 31.5,-28.5 c 3,3 5,0 8,3 l 15.5,15.5" />
@@ -2298,33 +2294,101 @@
     <text x="0" y="-25"><tspan class="hstdetails">(555, BH)</tspan></text>
     <g class="a3_strecke kilometer te"><g transform="rotate(-150) translate(0,-60) rotate(150)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 21,55</text></g><use xlink:href="#punkt2" transform="rotate(-150)" /></g>
     <g class="hstdetails">
-     <g id="gleisnummern_bommersheim" transform="translate(-82,40)">
-      <g class="bgleisnummer" transform="translate(52,-22)"><circle cy="-1" r="2" /><text>1</text></g>
-      <g class="bgleisnummer" transform="translate(47,-22)"><circle cy="-1" r="2" /><text>2</text></g>
-      <g class="bgleisnummer" transform="translate(52.5,-11.5)"><circle cy="-1" r="2" /><text>3</text></g>
-      <g class="bgleisnummer" transform="translate(50.0,-09.0)"><circle cy="-1" r="2" /><text>4</text></g>
-      <g class="bgleisnummer" transform="translate(47.5,-06.5)"><circle cy="-1" r="2" /><text>5</text></g>
-      <g class="bgleisnummer" transform="translate(45.0,-04.0)"><circle cy="-1" r="2" /><text>6</text></g>
-      <g class="bgleisnummer" transform="translate(42.5,-01.5)"><circle cy="-1" r="2" /><text>7</text></g>
-      <g class="bgleisnummer" transform="translate(40.0,+01.0)"><circle cy="-1" r="2" /><text>8</text></g>
-      <g class="bgleisnummer" transform="translate(37.5,+03.5)"><circle cy="-1" r="2" /><text>9</text></g>
-      <g class="bgleisnummer" transform="translate(35.0,+06.0)"><circle cy="-1" r="2" /><text>10</text></g>
-      <g class="bgleisnummer" transform="translate(32.5,+08.5)"><circle cy="-1" r="2" /><text>11</text></g>
-      <g class="bgleisnummer" transform="translate(30.0,+11.0)"><circle cy="-1" r="2" /><text>12</text></g>
-      <g class="bgleisnummer" transform="translate(-12,-29)"><circle cy="-1" r="2" /><text>01</text></g>
+     <g id="gleisnummern_bommersheim" class="bgleisnummer" transform="translate(-82,40)">
+      <g transform="translate(52,-22)"><circle cy="-1" r="2" /><text>1</text></g>
+      <g transform="translate(47,-22)"><circle cy="-1" r="2" /><text>2</text></g>
+      <g transform="translate(52.5,-11.5)"><circle cy="-1" r="2" /><text>3</text></g>
+      <g transform="translate(50.0,-09.0)"><circle cy="-1" r="2" /><text>4</text></g>
+      <g transform="translate(47.5,-06.5)"><circle cy="-1" r="2" /><text>5</text></g>
+      <g transform="translate(45.0,-04.0)"><circle cy="-1" r="2" /><text>6</text></g>
+      <g transform="translate(42.5,-01.5)"><circle cy="-1" r="2" /><text>7</text></g>
+      <g transform="translate(40.0,+01.0)"><circle cy="-1" r="2" /><text>8</text></g>
+      <g transform="translate(37.5,+03.5)"><circle cy="-1" r="2" /><text>9</text></g>
+      <g transform="translate(35.0,+06.0)"><circle cy="-1" r="2" /><text>10</text></g>
+      <g transform="translate(32.5,+08.5)"><circle cy="-1" r="2" /><text>11</text></g>
+      <g transform="translate(30.0,+11.0)"><circle cy="-1" r="2" /><text>12</text></g>
+      <g transform="translate(-12,-29)"><circle cy="-1" r="2" /><text>01</text></g>
      </g>
+      <g id="sig555H14" transform="rotate(-90) translate(5,-14)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(0,214)" />
+        <text transform="translate(-15,191.5) rotate(90)">555H14</text>
+      </g>
+      <g id="sig555H16" transform="rotate(-90) translate(5,-69)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(0,214)" />
+        <text transform="translate(-15,192) rotate(90)">555H16</text>
+      </g>
+      <g id="sig555V18" transform="rotate(-90) translate(5,-102)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_vor" transform="translate(0,189)" />
+        <text transform="translate(-15,178) rotate(90)">555V18</text>
+      </g>
+      <g id="sig555H18" transform="rotate(90) translate(-45,102)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(25,-167)" />
+        <text transform="translate(19,-189.5) rotate(-90)">555H18</text>
+      </g>
+      <g id="sig555H61" transform="rotate(-90) translate(-10,-65)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(-10,214)" />
+        <text transform="translate(-25,192) rotate(90)">555H61</text>
+      </g>
+      <g id="sig555H21" transform="rotate(180) translate(135,25)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(15,22.5)" />
+        <text transform="translate(15,23.5) rotate(180)">555H21</text>
+      </g>
+      <g id="sig555R01" transform="rotate(90) translate(10,82)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_03v" transform="translate(15,35)" />
+        <text transform="translate(31,16.5) rotate(-90)">555R01</text>
+      </g>
+      <g id="sig555R17" transform="rotate(90) translate(-5,105)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_03v" transform="translate(30,65)" />
+        <text transform="translate(46,48.5) rotate(-90)">555R17</text>
+      </g>
+      <g id="sig555H42" transform="rotate(90) translate(10,22)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(15,-15)" />
+        <text transform="translate(31,-37.5) rotate(-90)">555H42</text>
+      </g>
+      <g id="sig555H71" transform="translate(-54,23) rotate(-45)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+      </g>
+      <g id="sig555H81" transform="translate(-56.5,25.5) rotate(-45)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+      </g>
+      <g id="sig555H91" transform="translate(-59,28) rotate(-45)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+      </g>
+      <g id="sig555H10" transform="translate(-61.5,30.5) rotate(-45)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+      </g>
+      <g id="sig555H11" transform="translate(-64,33) rotate(-45)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+      </g>
+      <g id="sig555H12" transform="translate(-66.5,35.5) rotate(-45)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+      </g>
     </g>
    </g>
-   <g id="hst556" transform="translate(-300,61)" class="achtzig te">
-    <use xlink:href="#drei_ausen" transform="rotate(90)" />
+   <g id="hst556" transform="translate(-300,61)" class="achtzig tm">
+    <g onclick="toggle_details(this)">
+     <use xlink:href="#drei_ausen" transform="rotate(90)" />
+     <use xlink:href="#vierabstell" transform="translate(120,-5) rotate(-90)" />
+    </g>
     <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Oberursel_(Taunus)">
-     <text x="0" y="-15">Oberursel Bahnhof</text>
+     <text x="0" y="-37"><tspan class="hstdetails">(556, OU)</tspan></text>
+     <text x="0" y="-26">Oberursel</text>
+     <text x="0" y="-15">Bahnhof</text>
     </a>
     <g class="a3_strecke kilometer"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 22,75</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
    </g>
-   <g id="hst557" transform="translate(-210,31)" class="achtzig">
-    <use xlink:href="#drei_ausen" />
-    <text x="15" y="5">Oberursel Stadtmitte</text>
+   <g id="hst557" transform="translate(-210,6)" class="achtzig">
+    <use xlink:href="#drei_ausen" onclick="toggle_details(this)"/>
+    <text x="15" y="5">Oberursel Stadtmitte<tspan class="hstdetails"> (557, LF)</tspan></text>
     <g class="a3_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 23,35</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
    <g id="hst558" transform="translate(-210,-69)"  class="achtzig te">
@@ -2628,7 +2692,6 @@
    <use id="zo_61"  xlink:href="#vierabstell" transform="translate(337.5,1580) rotate(-90)" />
   </g>
   <g class="strecke">
-   <use id="ou_gv" xlink:href="#vierabstell" transform="translate(-180,56) rotate(-90)" />
    <use id="sc_6" xlink:href="#vierabstell" transform="translate(818,1216.5)" />
   </g>
  </g>
