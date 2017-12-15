@@ -139,6 +139,7 @@
   #signalhp3 circle { fill: #ffc000; stroke: none; }
   #signal_a7 circle { fill: #ffff00; stroke: none; }
   #signal_f7 circle { fill: #ffffff; stroke: none; }
+  #signal_a16 path { stroke:#ffffd0; fill:none; }
   #signal_vor circle.vr1 { fill: #00c000; stroke: none; }
   #signal_vor circle.vr0 { fill: #ffc000; stroke: none; }
 
@@ -489,6 +490,11 @@
    <circle transform="rotate(240) translate(0,2)" r="1" />
    <circle transform="rotate(0)   translate(0,2)" r="1" />
   </g>
+  <g id="signal_a16">
+   <use xlink:href="#signal_fbox" />
+   <path d="M -2.5,-2 v 4 m 2,0 l -2,-2 2,-2" />
+   <path d="M  0.5,-2 v 4 m 2,0 l -2,-2 2,-2" />
+  </g>
   <g id="signal_vor">
    <use xlink:href="#signalfuss" />
    <use xlink:href="#signal_lichtbox" transform="translate(0,-5)" />
@@ -526,6 +532,13 @@
     <use xlink:href="#signal_f7" transform="translate(0,-10)" />
     <use xlink:href="#signal_f1" transform="translate(0,-20)" />
     <use xlink:href="#signal_f0" transform="translate(0,-30)" />
+  </g>
+  <g id="signal_f_016v">
+    <use xlink:href="#signalfuss" />
+    <use xlink:href="#signal_f7" transform="translate(0,-10)" />
+    <use xlink:href="#signal_f1" transform="translate(0,-20)" />
+    <use xlink:href="#signal_f0" transform="translate(0,-30)" />
+    <use xlink:href="#signal_a16" transform="translate(0,-40)" />
   </g>
   <g id="signal_f_03v">
     <use xlink:href="#signalfuss" />
@@ -2394,8 +2407,8 @@
       </g>
       <g id="sig555R17" transform="rotate(90) translate(-5,105)" onmouseover="highlight(this)">
         <use xlink:href="#signalplatz" />
-        <use xlink:href="#signal_haupt_03v" transform="translate(30,65)" />
-        <text transform="translate(46,48.5) rotate(-90)">555R17</text>
+        <use xlink:href="#signal_haupt_03v" transform="translate(20,65)" />
+        <text transform="translate(36,48.5) rotate(-90)">555R17</text>
       </g>
       <g id="sig555H42" transform="rotate(90) translate(10,22)" onmouseover="highlight(this)">
         <use xlink:href="#signalplatz" />
@@ -2404,21 +2417,33 @@
       </g>
       <g id="sig555H71" transform="translate(-54,23) rotate(-45)" onmouseover="highlight(this)">
         <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_03v" transform="translate(-45,35)" />
+        <text transform="translate(-51,41) rotate(45)" class="ta">555H71</text>
       </g>
       <g id="sig555H81" transform="translate(-56.5,25.5) rotate(-45)" onmouseover="highlight(this)">
         <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_03v" transform="translate(-55,35)" />
+        <text transform="translate(-61,41) rotate(45)" class="ta">555H81</text>
       </g>
       <g id="sig555H91" transform="translate(-59,28) rotate(-45)" onmouseover="highlight(this)">
         <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_03v" transform="translate(-65,35)" />
+        <text transform="translate(-71,41) rotate(45)" class="ta">555H91</text>
       </g>
       <g id="sig555H10" transform="translate(-61.5,30.5) rotate(-45)" onmouseover="highlight(this)">
         <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_03v" transform="translate(-75,35)" />
+        <text transform="translate(-81,41) rotate(45)" class="ta">555H10</text>
       </g>
       <g id="sig555H11" transform="translate(-64,33) rotate(-45)" onmouseover="highlight(this)">
         <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_03v" transform="translate(-85,35)" />
+        <text transform="translate(-91,41) rotate(45)" class="ta">555H11</text>
       </g>
       <g id="sig555H12" transform="translate(-66.5,35.5) rotate(-45)" onmouseover="highlight(this)">
         <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_03v" transform="translate(-95,35)" />
+        <text transform="translate(-101,41) rotate(45)" class="ta">555H12</text>
       </g>
     </g>
    </g>
@@ -2433,6 +2458,33 @@
      <text x="0" y="-15">Bahnhof</text>
     </a>
     <g class="a3_strecke kilometer"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 22,75</text></g><use xlink:href="#punkt2" transform="rotate(-30)" /></g>
+    <g class="hstdetails">
+      <g id="sig556H14" transform="translate(17,5) rotate(90)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(15,0)" />
+        <text transform="rotate(-90) translate(22.5,31)">556H14</text>
+      </g>
+      <g id="sig556H24" transform="translate(-17,-5) rotate(-90) " onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(15,-15)" />
+        <text transform="rotate(90) translate(-37.5,-21)">556H24</text>
+      </g>
+      <g id="sig555V21" transform="translate(-90,-5) rotate(-90) " onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_vor" transform="translate(15,0)" />
+        <text transform="rotate(90) translate(-11,-21)">555V21</text>
+      </g>
+      <g id="sig556H21" transform="translate(85,-25) rotate(180)" onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(15,45)" />
+        <text transform="translate(21,35) rotate(180)" class="te">556H21</text>
+      </g>
+      <g id="sig556R54" transform="translate(117,-5) rotate(-90) " onmouseover="highlight(this)">
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(15,45)" />
+        <text transform="rotate(90) translate(22.5,-21)">556H24</text>
+      </g>
+    </g>
    </g>
    <g id="hst557" transform="translate(-210,6)">
     <use xlink:href="#drei_ausen" onclick="toggle_details(this)"/>
@@ -2440,40 +2492,73 @@
     <g class="a3_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 23,35</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
    <g id="hst558" transform="translate(-210,-69)"  class="te">
-    <use xlink:href="#drei_ausen" />
+    <use xlink:href="#drei_ausen" onclick="toggle_details(this)"/>
     <text x="-15" y="5">Oberursel Altstadt</text>
+    <text x="-15" y="15"><tspan class="hstdetails">(558, PO)</tspan></text>
     <g class="a3_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 23,95</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
    <g id="hst561" transform="translate(-280,-139)" class="tm">
-    <use xlink:href="#drei_ausen" transform="rotate(90)" />
+    <use xlink:href="#drei_ausen" transform="rotate(90)" onclick="toggle_details(this)"/>
     <text x="0" y="-15">Lahnstraße</text>
+    <text x="0" y="25"><tspan class="hstdetails">(561, LA)</tspan></text>
     <g class="a3_strecke kilometer ta"><g transform="rotate(90) translate(0,-60) rotate(-90)"><use xlink:href="#kasten3" /><text x="6" y="4">km 24,65</text></g><use xlink:href="#punkt2" transform="rotate(90)" /></g>
    </g>
    <g id="hst562" transform="translate(-380,-139)" class="tm">
-    <use xlink:href="#drei_ausen" transform="rotate(90)" />
+    <use xlink:href="#drei_ausen" transform="rotate(90)" onclick="toggle_details(this)"/>
     <text x="0" y="25">Glöcknerwiese</text>
+    <text x="0" y="35"><tspan class="hstdetails">(562, GW)</tspan></text>
     <g class="a3_strecke kilometer ta"><g transform="rotate(150) translate(0,-60) rotate(-150)"><use xlink:href="#kasten3" /><text x="6" y="4">km 25,45</text></g><use xlink:href="#punkt2" transform="rotate(150)" /></g>
    </g>
    <g id="hst563" transform="translate(-480,-139)" class="tm">
-    <use xlink:href="#drei_mitte" transform="rotate(90)" />
+    <use xlink:href="#drei_mitte" transform="rotate(90)" onclick="toggle_details(this)"/>
     <text x="0" y="-10">Kupferhammer</text>
+    <text x="0" y="25" class="ta"><tspan class="hstdetails">(563, KU)</tspan></text>
     <g class="a3_strecke kilometer ta"><g transform="rotate(150) translate(0,-60) rotate(-150)"><use xlink:href="#kasten3" /><text x="6" y="4">km 25,80</text></g><use xlink:href="#punkt2" transform="rotate(150)" /></g>
+    <g class="hstdetails">
+     <g id="sig563Y21" transform="translate(-37,5) rotate(90)" onmouseover="highlight(this)">
+      <use xlink:href="#signalplatz" />
+      <use xlink:href="#signal_f_01v" transform="translate(15,0)" />
+      <text transform="translate(31,-17.5) rotate(-90)">563Y21</text>
+     </g>
+     <g id="sig563Y14" transform="translate(-12,-5) rotate(-90)" onmouseover="highlight(this)">
+      <use xlink:href="#signalplatz" />
+      <use xlink:href="#signal_f_016v" transform="translate(10,-35)" />
+      <text transform="translate(5,-81) rotate(90)" class="te">563Y14</text>
+     </g>
+    </g>
    </g>
    <g id="hst564" transform="translate(-580,-134)" class="tm">
-    <use xlink:href="#bstg_dreiw" transform="rotate(90)" />
+    <use xlink:href="#bstg_dreiw" transform="rotate(90)" onclick="toggle_details(this)"/>
     <text x="0" y="20">Rosengärtchen</text>
+    <text x="0" y="30"><tspan class="hstdetails">(564, RG)</tspan></text>
     <g class="a3_strecke kilometer ta"><g transform="rotate(150) translate(0,-60) rotate(-150)"><use xlink:href="#kasten3" /><text x="6" y="4">km 26,35</text></g><use xlink:href="#punkt2" transform="rotate(150)" /></g>
    </g>
    <g id="hst565" transform="translate(-680,-134)" class="tm">
-    <use xlink:href="#bstg_dreiw" transform="rotate(-90)" />
+    <use xlink:href="#bstg_dreiw" transform="rotate(-90)" onclick="toggle_details(this)"/>
     <text x="0" y="-10">Waldlust</text>
+    <text x="0" y="20"><tspan class="hstdetails">(565, WA)</tspan></text>
     <g class="a3_strecke kilometer ta"><g transform="rotate(150) translate(0,-60) rotate(-150)"><use xlink:href="#kasten3" /><text x="6" y="4">km 26,80</text></g><use xlink:href="#punkt2" transform="rotate(150)" /></g>
    </g>
    <g id="hst566" transform="translate(-780,-139)" class="tm">
-    <use xlink:href="#drei_mitte" transform="rotate(90)" />
+    <use xlink:href="#drei_mitte" transform="rotate(90)" onclick="toggle_details(this)"/>
     <text x="0" y="20">Oberursel</text>
     <text x="0" y="36">Hohemark</text>
+    <text x="0" y="46"><tspan class="hstdetails">(566, HM)</tspan></text>
     <g class="a3_strecke kilometer ta"><g transform="rotate(135) translate(0,-60) rotate(-135)"><use xlink:href="#kasten4" /><text x="6" y="4">km 27,20</text></g><use xlink:href="#punkt2" transform="rotate(135)" /></g>
+    <g class="hstdetails">
+     <g transform="translate(0,-4)" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>1</text></g>
+     <g transform="translate(0, 6)" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>2</text></g>
+     <g id="sig566YR13" transform="translate(13,-5) rotate(90)" onmouseover="highlight(this)">
+      <use xlink:href="#signalplatz" />
+      <use xlink:href="#signal_f_01v" transform="translate(-15,-20)" />
+      <text transform="rotate(-90) translate(19,-10)" class="te">566YR13</text>
+     </g>
+     <g id="sig566Y24" transform="translate(13,5) rotate(90)" onmouseover="highlight(this)">
+      <use xlink:href="#signalplatz" />
+      <use xlink:href="#signal_f_01v" transform="translate(-10,-20)" />
+      <text transform="rotate(-90) translate(37.5,10)">566Y24</text>
+     </g>
+    </g>
    </g>
    <g id="hst614" transform="translate(275,1475)" class="te">
     <use xlink:href="#kameliger" transform="translate(+5,+15)" />
