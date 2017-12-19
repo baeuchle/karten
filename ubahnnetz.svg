@@ -809,14 +809,14 @@
       </g>
       <g id="sig612H14" transform="translate(-17,-5) rotate(-90)" onmouseover="highlight(this)">
         <use xlink:href="#signalplatz" />
-        <use xlink:href="#signal_haupt_01v" transform="translate(20,0)" />
-        <text transform="rotate(90) translate(-17.5,-26)">612H14</text>
+        <use xlink:href="#signal_haupt_01v" transform="translate(20,-10)" />
+        <text transform="rotate(90) translate(-27.5,-26)">612H14</text>
       </g>
       <g id="sig612H21" transform="translate(-30,5) rotate(90)" onmouseover="highlight(this)">
-        <path class="signalverbinder" d="M 2,0 c 0,10 33,10 33,0" />
+        <path class="signalverbinder" d="M 2,0 c 0,10 33,20 33,10" />
         <use xlink:href="#signalplatz" />
-        <use xlink:href="#signal_haupt_01v" transform="translate(35,0)" />
-        <text transform="rotate(-90) translate(17.5,51)">612H21</text>
+        <use xlink:href="#signal_haupt_01v" transform="translate(35,10)" />
+        <text transform="rotate(-90) translate(7.5,51)">612H21</text>
       </g>
       <g id="sig612H24" transform="translate(17,5) rotate(90)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 c 0,10 33,10 33,0" />
@@ -1436,7 +1436,8 @@
  </g>
  <g id="a_ebene">
   <g id="betrieb_aebene" class="strecke tb">
-   <path id="gw_kw" d="M 280,1615 c 0,-10 10,-10 10,-20 M 270,1540 c 0,-10 10,-10 10,-20" />
+   <path id="gw_613w33w21" d="M 280,1615 c 0,-10 10,-10 10,-20" />
+   <path id="gw_613w14w24" d="M 270,1540 c 0,-10 10,-10 10,-20" />
    <g id="wa_seckbacher_ldstr" transform="translate(535,1285)">
     <path id="wa_seckbacher_ldstr_1" class="endet" d="M 0,0 c 6,-6 9,-5 15,-11 l 40,-40" />
     <path id="wa_seckbacher_ldstr_2" class="endet" d="M 7,7 c 6,-6 5,-9 11,-15 l 40,-40" />
@@ -1451,6 +1452,7 @@
   </g>
   <g id="hst_aebene">
    <g id="hst613" transform="translate(285,1580)">
+    <use xlink:href="#hstgrid" />
     <g onclick="toggle_details(this)">
       <use xlink:href="#bahnsteig" transform="translate(-15,0)" />
       <use xlink:href="#bstg_ausen" />
@@ -1460,15 +1462,57 @@
      <text x="-20" y="30" class="hstdetails te">(C-Ebene: KWC, 613)</text>
     </a>
     <g class="bs_strecke kilometer"><g transform="rotate(150) translate(0,-99) rotate(210)"><use xlink:href="#kasten3" /><text x="10" y="4">km 10,0</text></g><use xlink:href="#punkt1" transform="rotate(150)"/></g>
+    <g class="hstdetails">
+      <use xlink:href="#gleis1" transform="translate(-15,0)" />
+      <use xlink:href="#gleis2" transform="translate(5,0)" />
+      <use xlink:href="#gleis3" transform="translate(-5,0)" />
+      <g id="sig613R13" transform="translate(-15,-17)" onmouseover="highlight(this)">
+        <path class="signalverbinder" d="M 2,0 c 20,0 88,0 88,-15" />
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(90,-15)" />
+        <text x="116" y="-30">613R13</text>
+      </g>
+      <g id="sig613R15" transform="translate(-5,60)" onmouseover="highlight(this)">
+        <path class="signalverbinder" d="M 2,0 c 0,15 18,35 28,35" />
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_03v" transform="translate(30,35)" />
+        <text x="56" y="25">613R15</text>
+      </g>
+      <g id="sig613H21" transform="translate(5,60)" onmouseover="highlight(this)">
+        <path class="signalverbinder" d="M 2,0 c 0,-5 38,-5 38,5" />
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_01v" transform="translate(40,35)" />
+        <text x="46" y="35">613H21</text>
+      </g>
+      <g id="sig613H24" transform="translate(5,-17)" onmouseover="highlight(this)">
+        <path class="signalverbinder" d="M 2,0 c 20,0 88,0 88,-15" />
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(90,-15)" />
+        <text x="96" y="-20">613H24</text>
+      </g>
+      <g id="sig613V26" transform="translate(-5,-40)" onmouseover="highlight(this)">
+        <path class="signalverbinder" d="M 2,0 c 10,0 38,-3 38,8" />
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_vor" transform="translate(40,8)" />
+        <text x="106" y="-27">613V26</text>
+      </g>
+      <g id="sig613H26" transform="translate(-5,-50)" onmouseover="highlight(this)">
+        <path class="signalverbinder" d="M 2,0 c 0,-10 48,-22 58,-22" />
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(60,18)" />
+        <text x="106" y="-7">613H26</text>
+      </g>
+    </g>
    </g>
-   <g id="hst711" transform="translate(325,1505)">
+   <g id="hst711" transform="translate(345,1485)">
+    <use xlink:href="#hstgrid" />
     <use xlink:href="#bstg_dosto" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Merianplatz">
      <text x="12" y="11">Merianplatz</text>
     </a>
     <g transform="translate(-1.5,-1.5)" class="b2_strecke kilometer te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 10,9</text></g><use xlink:href="#punkt2" transform="rotate(15)"/></g>
    </g>
-   <g id="hst712" transform="translate(395,1435)">
+   <g id="hst712" transform="translate(405,1425)">
     <use xlink:href="#bstg_dosto" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_H%C3%B6henstra%C3%9Fe">
      <text x="12" y="11">Höhenstraße</text>
@@ -1493,11 +1537,11 @@
   </g>
  </g>
  <g id="uberwerf_a_0" class="uberwerf">
-  <rect id="uw_kw_bb" width="10" height="20" x="278" y="1530" />
+  <rect id="uw_kw_bb" width="10" height="15" x="278" y="1545" />
  </g>
  <g id="0_ebene">
   <g id="strecke_0ebene" class="tunnel">
-   <path id="scheffeleck_1" class="tunnel" d="M 290,1560 c 0,-20 -10,-20 -10,-40 v -5" />
+   <path id="scheffeleck_1" class="tunnel" d="M 290,1560 q 0,-4 -3,-7 l -4,-4 q -3,-3 -3,-7 v -27" />
    <path id="scheffeleck_2" class="tunnel" d="M 270,1515 v 90 c 0,10 10,10 10,20"/>
   </g>
  </g>
@@ -2830,7 +2874,8 @@
    </g>
    <g id="hst616" transform="translate(275,1305)">
     <use xlink:href="#drei_ausen" />
-    <text x="15" y="5">Deutsche Nationalbibliothek</text>
+    <text x="15" y="0">Deutsche</text>
+    <text x="15" y="10">Nationalbibliothek</text>
     <g class="bs_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 11,90</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
    </g>
    <g id="hst617" transform="translate(275,1225)">
@@ -3184,5 +3229,12 @@
  </g>
  <path class="mitte hilfslinie" d="M 115,1955 v -2.5 h 5,-5 v -20 h 5,-5 v -2.5 h 5,-5 v -20 h 5,-5 v -30 h 5,-5 v -20 h 5,-5 v -65 h 5,-5 v -100 h 5,-5 v -50 h 5,-5 v -75 h 5,-5 v -1250" />
  <path class="mitte hilfslinie" d="M -690,1545 v 5,-5 h 2.5 v 5,-5 h 20 v 5,-5 h 2.5 v 5,-5 h 20 v 5,-5 h 15 v 5,-5 h 30 v 5,-5 h 60 v 5,-5 h 230 v 5,-5 h 30 h -2 v 5,-5
-                                   a 55,55 0,0,1 55,55 h 5,-5 v 20 h 5,-5 v 30 h 5,-5 q 0,22 16.5,38.5 l 3.5,-3.5 -3.5,3.5 q 16.5,16.5 38.5,16.5 h2 h 270 v 5,-5 h 15 v 5,-5 h 85 v 5,-5 h 30 a 55,55 0,0,0 55,-55 h 5,-5 v -20" />
+                                   a 55,55 0,0,1 55,55 h 5,-5 v 20 h 5,-5 v 30 h 5,-5 q 0,22 16.5,38.5 l 3.5,-3.5 -3.5,3.5 q 16.5,16.5 38.5,16.5 h2 h 270 v 5,-5 h 15 v 5,-5 h 85 v 5,-5 h 30 a 55,55 0,0,0 55,-55 h 5,-5" />
+ <path class="mitte hilfslinie" d="M 290,1650 v -90 q 0,-20 15.0,-35 l 5,5 -5,-5 l 200,-200 c 6,-6 9,-5 15,-11 l 22,-22 c 6,-6 9,-5 15,-11 l 40,-40" /> 
+ <path class="mitte hilfslinie" d="M 285,1650 h -5,5 v -82 h -5,5 v -8 h 5,-5 v 4
+                                                    q 0,-22 16.5,-38.5 l 5,5 -5,-5 l -2,2 l 5,5 -5,-5 l 4,-4 l 5,5 -5,-5 l 200,-200
+                                                    q 16.5,-16.5 16.5,-38.5
+                                                    c 6,-6 9,-5 15,-11 l 22,-22 c 6,-6 9,-5 15,-11 l 40,-40" /> 
+ <path class="mitte hilfslinie" d="M 280,1650 v -82 q 0,-24 18.0,-42 l -5,-5 5,5 l 4,-4 l 5,5 -5,-5 " />
+ <path class="mitte hilfslinie" d="M 586,1230 l -40,40 c -6,6 -5,9 -11,15 l -20,20 c -6,6 -5,9 -11,15 l -206,206 q -18,18 -18,42 v 82 h -10" />
 </svg> 
