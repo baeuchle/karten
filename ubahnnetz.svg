@@ -126,7 +126,8 @@
   .ds_strecke { display:none; }
   /* Haltestellendetails */
   .abstell { stroke-width:.5; stroke:#000000; fill:#ffffff; fill-opacity:0.8; }
-  .hstdetails { font-size:70%; display: none; }
+  text.hstdetails, tspan.hstdetails, .hstdetails text { font-size:7pt; }
+  .hstdetails { font-size:7pt; display: none; }
   #signalfuss { fill:none; stroke:#000000; }
   #signal_lichtbox { fill:black; stroke:none; }
   #signal_fbox { stroke:none; }
@@ -1449,6 +1450,7 @@
    <path id="badhomburg_2b" class="geplant verlaengerung_badhomburg" d="M 510,16 c 0,5 -5,5 -5,10 v 35" />
    <path id="b_1_stamm2" class="endet" d="M 290,1650 v -90 q 0,-20 15,-35 l 200,-200 c 6,-6 9,-5 15,-11 l 22,-22 c 6,-6 9,-5 15,-11 l 40,-40" /> 
    <path id="b_2_stamm2" class="faeng" d="M 586,1230 l -40,40 c -6,6 -5,9 -11,15 l -20,20 c -6,6 -5,9 -11,15 l -206,206 q -18,18 -18,42 v 82" /> 
+   <path id="scheffeleck_2" class="tunnel" d="M 270,1515 v 90 c 0,10 10,10 10,20"/>
   </g>
   <g id="hst_aebene">
    <g id="hst613" transform="translate(285,1580)">
@@ -1542,7 +1544,6 @@
  <g id="0_ebene">
   <g id="strecke_0ebene" class="tunnel">
    <path id="scheffeleck_1" class="tunnel" d="M 290,1560 q 0,-4 -3,-7 l -4,-4 q -3,-3 -3,-7 v -27" />
-   <path id="scheffeleck_2" class="tunnel" d="M 270,1515 v 90 c 0,10 10,10 10,20"/>
   </g>
  </g>
  <g id="tunnelrampen">
