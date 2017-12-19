@@ -908,8 +908,7 @@
        <g class="ta" transform="translate(-150,85)">
         <text>Gleis 4 und der anschließende Tunnelstutzen</text>
         <text y="10">werden nur für Feuerwehrübungen benutzt.</text>
-        <text y="20">Der Bahnsteig von Gleis 4</text>
-        <text y="30">hat eine Höhe von 87 cm.</text>
+        <text y="20">(Bahnsteigshöhe Gleis 4 87 cm)</text>
        </g>
        <g id="sig211H11_211V12" transform="translate(160,65) rotate(-90)" onmouseover="highlight(this)">
          <use xlink:href="#signalplatz" />
@@ -1564,9 +1563,9 @@
    </g>
    <g id="hst711" transform="translate(345,1485)">
     <use xlink:href="#hstgrid" />
-    <use xlink:href="#bstg_dosto" />
+    <use xlink:href="#bstg_dosto" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Merianplatz">
-     <text x="12" y="11">Merianplatz</text>
+     <text x="12" y="11">Merianplatz<tspan class="hstdetails"> (ME, 711)</tspan></text>
     </a>
     <g transform="translate(-1.5,-1.5)" class="b2_strecke kilometer te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 10,9</text></g><use xlink:href="#punkt2" transform="rotate(15)"/></g>
    </g>
@@ -2108,7 +2107,7 @@
    <g id="hst415" transform="translate(-125,861)" class="te">
     <use xlink:href="#bstg_nidda" onclick="toggle_details(this)" />
     <text x="-15" y="5">Niddapark</text>
-    <text x="-15" y="15"><tspan class="hstdetails">(415, NI)</tspan></text>
+    <text x="-15" y="15"><tspan class="hstdetails">(Bahnsteigshöhe 56 cm) (415, NI)</tspan></text>
     <g class="a1_strecke kilometer"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 4,75</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
     <g class="hstdetails">
       <g id="sig415H11" transform="translate(5,30)" onmouseover="highlight(this)">
@@ -2141,7 +2140,7 @@
      <use id="rs_32b" xlink:href="#dreiabstell" transform="translate(-2.5,60)" />
     </g>
     <text x="-15" y="5">Römerstadt</text>
-    <text x="-15" y="15"><tspan class="hstdetails">(421, RS)</tspan></text>
+    <text x="-15" y="15"><tspan class="hstdetails">(Bahnsteigshöhe 56 cm) (421, RS)</tspan></text>
     <g class="a1_strecke kilometer"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 3,70</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
     <g class="hstdetails">
       <g transform="translate(-2.5,80)" class="bgleisnummer"><circle cy="-1" r="2" /><text>31</text></g>
@@ -2389,7 +2388,7 @@
    <g id="hst522" transform="translate(115,980)" class="te">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Fritz-Tarnow-Straße</text>
-    <text x="-15" y="15"><tspan class="hstdetails">(__, 522)</tspan></text>
+    <text x="-15" y="15"><tspan class="hstdetails">(FT, 522)</tspan></text>
     <g class="as_strecke kilometer"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 13,40</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
    </g>
    <g id="hst523" transform="translate(115,865)" class="te">
@@ -2928,10 +2927,13 @@
        <use xlink:href="#kameliger" transform="translate(+5,+15)" />
        <use xlink:href="#kameliger" transform="translate(-5,-15) rotate(180)" />
      </g>
-     <text x="-15" y="5">Musterschule</text>
-     <text x="-15" y="15" class="hstdetails">(MS, 614)</text>
-     <text x="-15" y="25" class="hstdetails">Nur teilweise barrierefrei</text>
-     <text x="-15" y="35" class="hstdetails">(Endzustand erreicht)</text>
+     <text x="-15" y="6">Musterschule</text>
+     <text x="-15" y="-5" class="hstdetails">(MS, 614)</text>
+     <g class="hstdetails">
+       <text x="-15" y="15">Nur im Mittelteil barrierefrei</text>
+       <text x="-15" y="25">(Bahnsteigshöhe 80 cm, vor-</text>
+       <text x="-15" y="35">derer und hinterer Teil 60 cm)</text>
+     </g>
      <g class="bs_strecke kilometer te"><g transform="rotate(-60) translate(0,-60) rotate(60)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 10,78</text></g><use xlink:href="#punkt2" transform="rotate(-60)" /></g>
    </g>
    <g id="hst615" transform="translate(275,1385)" class="te">
@@ -2940,9 +2942,12 @@
        <use xlink:href="#kameliger" transform="translate(-5,-15) rotate(180)" />
      </g>
      <text x="-15" y="5">Glauburgstraße</text>
-     <text x="-15" y="15" class="hstdetails">(GB, 615)</text>
-     <text x="-15" y="25" class="hstdetails">Nur teilweise barrierefrei</text>
-     <text x="-15" y="35" class="hstdetails">(Endzustand erreicht)</text>
+     <text x="-15" y="-6" class="hstdetails">(GB, 615)</text>
+     <g class="hstdetails">
+       <text x="-15" y="15">Nur im Mittelteil barrierefrei</text>
+       <text x="-15" y="25">(Bahnsteigshöhe 80 cm, vor-</text>
+       <text x="-15" y="35">derer und hinterer Teil 60 cm)</text>
+     </g>
      <g class="bs_strecke kilometer te"><g transform="rotate(-60) translate(0,-60) rotate(60)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 11,43</text></g><use xlink:href="#punkt2" transform="rotate(-60)" /></g>
    </g>
    <g id="hst616" transform="translate(275,1305)"> <use xlink:href="#drei_ausen" onclick="toggle_details(this)" />
