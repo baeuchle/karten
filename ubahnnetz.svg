@@ -134,11 +134,13 @@
   #signal_fbox rect { fill:#808080; }
   #signal_fbox circle { fill:#000000; }
   #signal_balken { stroke:none; fill:#ffffd0; }
+  #signal_ledbalken { stroke:none; fill:#ffc000; }
   #signalhp0 circle { fill: #ff0000; stroke: none; }
   #signalhp1 circle { fill: #00c000; stroke: none; }
   #signalhp3 circle { fill: #ffc000; stroke: none; }
   #signal_a7 circle { fill: #ffff00; stroke: none; }
   #signal_f7 circle { fill: #ffffff; stroke: none; }
+  #signal_a12 path { stroke:#ffc000; fill:none; }
   #signal_a16 path { stroke:#ffffd0; fill:none; }
   #signal_vor circle.vr1 { fill: #00c000; stroke: none; }
   #signal_vor circle.vr0 { fill: #ffc000; stroke: none; }
@@ -429,6 +431,14 @@
    <use xlink:href="#dreiabstell" />
    <use xlink:href="#dreiabstell" transform="translate(0,15)" />
   </g>
+  <g id="siebabstell">
+   <use xlink:href="#dreiabstell" />
+   <use xlink:href="#vierabstell" transform="translate(0,15)" />
+  </g>
+  <g id="zwolabstell">
+   <use xlink:href="#sechabstell" />
+   <use xlink:href="#sechabstell" transform="translate(0,35)" />
+  </g>
   <g id="hstgrid" class="hilfslinie">
     <path class="grid1" d="M 0,0 h 5 M 0,0 h -5 M 0,0 v 7.5 M 0,0 v -7.5" />
     <path class="grid2" d="M 0,0 l 10,15" />
@@ -457,6 +467,7 @@
    <circle r="4" />
   </g>
   <rect id="signal_balken" x="-3" y="-1" width="6" height="2" />
+  <rect id="signal_ledbalken" x="-3" y="-1" width="6" height="2" />
   <g id="signalhp0">
    <use xlink:href="#signal_lichtbox" />
    <circle cx="0" cy="-5" r="3.5" />
@@ -496,6 +507,16 @@
    <circle transform="rotate(120) translate(0,2)" r="1" />
    <circle transform="rotate(240) translate(0,2)" r="1" />
    <circle transform="rotate(0)   translate(0,2)" r="1" />
+  </g>
+  <g id="signal_f01">
+   <use xlink:href="#signal_fbox" />
+   <use xlink:href="#signal_ledbalken" />
+   <use xlink:href="#signal_ledbalken" transform="rotate(90)" />
+  </g>
+  <g id="signal_a12">
+   <use xlink:href="#signal_fbox" />
+   <path d="M -2.5,-1.5 h 2 l -2,4" />
+   <path d="M 0.5,-1.5 h 2 l -2,4" />
   </g>
   <g id="signal_a16">
    <use xlink:href="#signal_fbox" />
@@ -588,6 +609,25 @@
     <use xlink:href="#signal_f2" transform="translate(0,-10)" />
     <use xlink:href="#signal_f1" transform="translate(0,-20)" />
     <use xlink:href="#signal_f0" transform="translate(0,-30)" />
+  </g>
+  <g id="signal_f_bb">
+    <use xlink:href="#signalfuss" />
+    <use xlink:href="#signal_a12" transform="translate(0,-10)" />
+    <use xlink:href="#signal_f01" transform="translate(0,-20)" />
+  </g>
+  <g id="signal_f_012b">
+    <use xlink:href="#signalfuss" />
+    <use xlink:href="#signal_a12" transform="translate(0,-10)" />
+    <use xlink:href="#signal_f2" transform="translate(0,-20)" />
+    <use xlink:href="#signal_f1" transform="translate(0,-30)" />
+    <use xlink:href="#signal_f0" transform="translate(0,-40)" />
+  </g>
+  <g id="signal_f_013b">
+    <use xlink:href="#signalfuss" />
+    <use xlink:href="#signal_a12" transform="translate(0,-10)" />
+    <use xlink:href="#signal_f3" transform="translate(0,-20)" />
+    <use xlink:href="#signal_f1" transform="translate(0,-30)" />
+    <use xlink:href="#signal_f0" transform="translate(0,-40)" />
   </g>
  </defs>
  <rect id="aussen" width="1765" height="2147" x="-815" y="-180" />
@@ -754,8 +794,8 @@
    <path id="gw_hbf" class="tb" d="M -222,1620 c 0,-10 -10,-10 -10,-20 m 10,0 c 0,10 -10,10 -10,20" />
   </g>
   <g id="strecke_debene" class="tunnel">
-   <path id="ul_b_bbost_1" d="M 611,1190 h -70 a 35,35 0,0,0 -35,35 c 0,10 5,10 5,20" />
-   <path id="ul_b_bbost_2" d="M 526,1220 a 20,20 0,0,1 20,-20 h 65" />
+   <path id="ul_b_bbost_1" d="M 600,1165 h -59 a 35,35 0,0,0 -35,35 v 25 c 0,10 5,10 5,20" />
+   <path id="ul_b_bbost_2" d="M 526,1220 q 0,-8 6,-14 l 23,-23 q 8,-8 14,-8 h 31" />
    <path id="b_1_stamm" class="tunnel faeng" d="M -282,1550 a 50,50 0,0,1 50,50 v 50 q 0,24 18,42 q 18,18 42,18 h 2 h 400 a 60,60 0,0,0 60,-60" />
    <path id="b_2_stamm" class="tunnel endet" d="M 280,1650 a 50,50 0,0,1 -50,50 h -400 h -2 q -20,0 -35,-15 q -15,-15 -15,-35 v -50 a 60,60 0,0,0 -60,-60" />
    <path id="europaviertel_1.1" class="geplant verlaengerung_europaviertel" d="M -282,1540 h -78" />
@@ -845,8 +885,8 @@
  <g id="uberwerf_d_c" class="uberwerf">
   <rect id="ebene_wbp" width="30" height="30" x="100" y="1690" />
   <rect id="uw_hbf_no" width="17" height="20" x="-237" y="1580" />
-  <rect id="uw_seckbacher_ldstr_l" width="12" height="30" x="508" y="1187" />
-  <rect id="uw_seckbacher_ldstr_r" width="12" height="15" x="520" y="1187" />
+  <rect id="uw_seckbacher_ldstr_l" width="12" height="30" x="508" y="1162" />
+  <rect id="uw_seckbacher_ldstr_r" width="12" height="15" x="520" y="1162" />
  </g>
  <g id="c_ebene">
   <g id="betrieb_cebene" class="strecke tb">
@@ -1010,11 +1050,11 @@
     </a>
     <g class="as_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 7,90</text></g><use xlink:href="#punkt2" transform="rotate(30)" /></g>
     <g class="hstdetails">
-      <g id="sig913H11" transform="translate(5,37)" onmouseover="highlight(this)">
+      <g id="sig913H12" transform="translate(5,37)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 60,15 c 0,10 -58,10 -58,-15" />
         <use xlink:href="#signalplatz" />
         <use xlink:href="#signal_haupt_02v" transform="translate(60,15)" />
-        <text x="66" y="-00">913H11</text>
+        <text x="66">913H12</text>
       </g>
       <g id="sig913R13" transform="translate(5,17) rotate(180)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 30,0 c 0,5 -28,5 -28,0" />
@@ -1690,7 +1730,7 @@
        <text x="10" y="-2">Seckbacher</text>
        <text x="10" y="14">Landstraße<tspan class="hstdetails"> (SL-714)</tspan></text>
      </a>
-     <g class="b2_strecke kilometer te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 12,9</text></g><use xlink:href="#punkt2" transform="rotate(15)"/></g>
+     <g class="b2_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 12,9</text></g><use xlink:href="#punkt2" transform="rotate(30)"/></g>
      <g class="hstdetails">
        <g id="sig713V11" transform="translate(-5,25) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 L 20,0" />
@@ -1733,11 +1773,11 @@
          <use xlink:href="#signal_haupt_02v" transform="translate(55,-15)" />
          <text class="te" transform="rotate(180) translate(-141,75)">714R26</text>
        </g>
-       <g id="sig714H31" transform="translate(80,-80) rotate(-90)" onmouseover="highlight(this)">
-         <path class="signalverbinder" d="M 2,0 C 2,5 15,10 20,10" />
+       <g id="sig714H31" transform="translate(80,-105) rotate(-90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,5 20,5 20,0" />
          <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_haupt_02v" transform="translate(20,10)" />
-         <text transform="rotate(90) translate(-12.5,-26)" class="tm">714H31</text>
+         <use xlink:href="#signal_haupt_02v" transform="translate(20,0)" />
+         <text transform="rotate(90) translate(-22.5,-26)" class="tm">714H31</text>
        </g>
        <g id="sig714H32" transform="translate(-10,-45) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,20 115,20 115,5" />
@@ -1745,11 +1785,10 @@
          <use xlink:href="#signal_haupt_02v" transform="translate(115,5)" />
          <text class="te" transform="rotate(180) translate(-121,15)">714H32</text>
        </g>
-       <g id="sig714V32" transform="translate(40,-80) rotate(-90)" onmouseover="highlight(this)">
-         <path class="signalverbinder" d="M 2,0 C 2,-5 20,-5 20,0" />
+       <g id="sig714V32" transform="translate(-10,-70) rotate(180)" onmouseover="highlight(this)">
          <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_vor" transform="translate(20,0)" />
-         <text transform="rotate(90) translate(-11,-26)" class="tm">714V32</text>
+         <use xlink:href="#signal_vor" transform="translate(15,15)" />
+         <text class="te" transform="rotate(180) translate(-21,5)">714V32</text>
        </g>
        <g id="sig714R46" transform="translate(30,-50)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M -15,-15 C -30,-30 -55,-20 -55,0" />
@@ -1757,17 +1796,17 @@
          <use xlink:href="#signal_haupt_03v" transform="rotate(180) translate(55,0)" />
          <text class="te" transform="translate(-161,70)">714R46</text>
        </g>
-       <g id="sig714H48" transform="translate(80,-70) rotate(90)" onmouseover="highlight(this)">
+       <g id="sig714H48" transform="translate(80,-95) rotate(90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-5 20,-5 20,0" />
          <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_haupt_02v" transform="translate(20,0)" />
-         <text transform="rotate(-90) translate(22.5,14)" class="tm">714H48</text>
+         <use xlink:href="#signal_haupt_02v" transform="translate(20,40)" />
+         <text transform="rotate(-90) translate(-17.5,14)" class="tm">714H48</text>
        </g>
-       <g id="sig714V48" transform="translate(35,-70) rotate(90)" onmouseover="highlight(this)">
-         <path class="signalverbinder" d="M 2,0 C 2,-12 8,-20 20,-20" />
-         <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_vor" transform="translate(20,-20)" />
-         <text transform="rotate(-90) translate(16,34)">714V48</text>
+       <g id="sig714V48" transform="translate(35,-83) rotate(90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,-2 C 24,24 8,-20 28,-20" />
+         <use xlink:href="#signalplatz" transform="rotate(-45)" />
+         <use xlink:href="#signal_vor" transform="translate(28,-20)" />
+         <text transform="rotate(-90) translate(43,32)">714V48</text>
        </g>
        <g id="sig714H61" transform="translate(0,-40) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,20 85,20 85,10" />
@@ -1800,7 +1839,7 @@
   <use id="rampe_industriehof" xlink:href="#tunnelrampe" transform="translate(-330.5,1221.5) rotate(-45)" />
   <use id="rampe_eissporthalle" xlink:href="#tunnelrampe" transform="translate(662.5,1394.5) rotate(45)" />
   <use id="rampe_scheffeleck" xlink:href="#tunnelrampe" transform="translate(275,1515)" />
-  <use id="rampe_ost" xlink:href="#tunnelrampe" transform="translate(615,1256) rotate(90)" />
+  <use id="rampe_ost" xlink:href="#tunnelrampe" transform="translate(600,1170) rotate(90)" />
   <use id="rampe_gonzenheim" class="geplant verlaengerung_badhomburg" xlink:href="#tunnelrampe" transform="translate(510,61) rotate(180)" />
   <use id="rampe_badhomburg" class="geplant verlaengerung_badhomburg" xlink:href="#tunnelrampe" transform="translate(510,-4)" />
   <use id="rampe_gueterplatz" class="verlaengerung_europaviertel" xlink:href="#tunnelrampe" transform="translate(-360,1545) rotate(-90)" />
@@ -2055,80 +2094,49 @@
     <path class="gebaude wand" id="bom_hal2" d="M 42.5,-22.5 m 1.25,-1.25 l 14,14 l -10,10 l -14,-14 l 10,-10" />
    </g>
   </g>
-  <g id="bb_ost" class="strecke" transform="translate(800,1245)">
-   <a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Betriebshof_Ost">
-    <text x="-115" y="2" class="ab_bb te">BB Ost</text>
-   </a>
+  <g id="bb_ost" transform="translate(800,1160)">
+   <path class="gebaude wand" id="ost_hal" d="M -125,147.5 v 5 h -5 v 10 h 5 v 10 h -5 v 5 h 45 v -15 h -5 v -10 h 5 v -5 h -40" />
    <g class="bb">
-    <path id="ost_16" d="M  -80,21 q 2,0 3.5,1.5 l 46,46" />
-    <path id="ost_15" d="M -86.5,22.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5" />
-    <path id="ost_14" d="M  -90,21 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5" />
-    <path id="ost_13" d="M -96.5,22.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5" />
-    <path id="ost_12" d="M -100,21 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5" />
-    <path id="ost_11" d="M -106.5,22.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5" />
-    <path id="ost_10" d="M -110,21 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5" />
-    <path id="ost_09" d="M -116.5,22.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5" />
-    <path id="ost_08" d="M -120,21 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5" />
-    <path id="ost_07" d="M -126.5,22.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5" />
-    <path id="ost_06" d="M -130,21 q 2,0 3.5,1.5 l 40,40 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5" />
-    <path id="ost_51" d="M -146.5,22.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 l 20.5,20.5 q 1.5,1.5 1.5,3.5 v 5" />
-    <path id="ost_52" d="M -140,21 q 2,0 3.5,1.5 l 18.5,18.5 q 1.5,1.5 1.5,3.5 v 5" />
-    <path id="ost_53" d="M -136.5,22.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 l 10.5,10.5 q 1.5,1.5 1.5,3.5 v 5" />
-    <path id="ost_60" d="M -116.5,60.5 q 0,2 1.5,3.5 l 7.5,7.5" />
-    <path id="ost_61" class="endet" d="M -101.5,77.5 l 6,6 q 1.5,1.5 3.5,1.5 h 36" />
-    <path id="ost_62" class="endet" d="M -97,79 q 2,0 3.5,1.5 q 1.5,1.5 3.5,1.5 h 30" />
-    <path id="ost_63" class="endet" d="M -107.5,71.5 l 6,6 q 1.5,1.5 3.5,1.5 h 38" />
-    <path id="ost_64" d="M -104,73 q 2,0 3.5,1.5 q 1.5,1.5 3.5,1.5 h 44.5 q 2,0 3.5,-1.5 q 1.5,-1.5 3.5,-1.5" />
-    <path id="ost_65" d="M -107.5,71.5 q 1.5,1.5 3.5,1.5 h 76 q 2,0 3.5,1.5" />
-    <path id="ost_66" d="M -108.5,65.5 l 3,3 q 1.5,1.5 3.5,1.5 h 71 q 2,0 3.5,1.5" />
-    <path id="ost_71" class="faeng" d="M -170,21 h 20" />
-    <path id="ost_72" class="faeng" d="M -148,26 l 8.5,8.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5" />
-    <path id="ost_73" d="M -150,21 q 2,0 3.5,1.5 l 14.5,14.5" />
-    <path id="ost_75" d="M -132,37 l 14,14 q 1.5,1.5 1.5,3.5 v 6" />
-    <path id="ost_77" class="endet" d="M -21.5,77.5 l 5,5 q 1.5,1.5 3.5,1.5 h 25" />
-    <path id="ost_84" class="faeng" d="M -113.5,50.5 l 15,15 q 1.5,1.5 3.5,1.5" />
-    <path id="ost_85" class="faeng" d="M -111,48 l 14.5,14.5 q 1.5,1.5 3.5,1.5 h 1 q 2,0 3.5,1.5 " />
-    <path id="ost_86" d="M -118,36 l 29.5,29.5 q 1.5,1.5 3.5,1.5" />
-    <path id="ost_SW" d="M -116.5,55.5 q 0,2 1.5,3.5 l 6.5,6.5 q 1.5,1.5 3.5,1.5 h 71 q 2,0 3.5,1.5 l 9,9 q 1.5,1.5 3.5,1.5 h 11 c 10,0 10,-10 20,-10 a 20,20 0,0,1 20,20 m -10,0 a 10,10 0,0,0 -10,-10" />
-    <path id="ost_NW" d="M -175,6 c 7.5,0 7.5,10 15,10 c 5,0 5,5 10,5 h 70" />
-    <path id="wa_schaefflestrasse" class="endet" d="M 33,24 c 0,-10 -10,-10 -10,-20 c 0,-5 -5,-5 -5,-10 v -25" />
+    <path id="ost_NW" d="M -185,5 c 7.5,0 7.5,10 15,10 c 5,0 5,5 10,5 h 75" />
+    <path id="ost_06" d="M -135,20 a 5,5 0,0,1 5,5 v 105 c 0,5 5,5 5,10" />
+    <path id="ost_07" d="M -130,25 c 0,5 5,5 5,10 v 105 a 5,5 0,0,0 5,5" />
+    <path id="ost_08" d="M -125,20 a 5,5 0,0,1 5,5 v 105 c 0,5 5,5 5,10" />
+    <path id="ost_09" d="M -120,25 c 0,5 5,5 5,10 v 105 a 5,5 0,0,0 5,5" />
+    <path id="ost_10" d="M -115,20 a 5,5 0,0,1 5,5 v 105 c 0,5 5,5 5,10" />
+    <path id="ost_11" d="M -110,25 c 0,5 5,5 5,10 v 105 a 5,5 0,0,0 5,5" />
+    <path id="ost_12" d="M -105,20 a 5,5 0,0,1 5,5 v 105 c 0,5 5,5 5,10" />
+    <path id="ost_13" d="M -100,25 c 0,5 5,5 5,10 v 105 a 5,5 0,0,0 5,5" />
+    <path id="ost_14" d="M -95,20 a 5,5 0,0,1 5,5 v 105 c 0,5 5,5 5,10" />
+    <path id="ost_15" d="M -90,25 c 0,5 5,5 5,10 v 105 a 5,5 0,0,0 5,5" />
+    <path id="ost_16" d="M -85,20 a 5,5 0,0,1 5,5 v 115 a 5,5 0,0,0 5,5" />
+    <path id="ost_51" d="M -150,25 c 0,5 5,5 5,10 v 55 q 0,2 -1.5,3.5" />
+    <path id="ost_52" d="M -145,20 a 5,5 0,0,1 5,5 v 60 q 0,2 -1.5,3.5" />
+    <path id="ost_53" d="M -140,25 c 0,5 5,5 5,10 v 45 q 0,2 -1.5,3.5 l -15,15" />
+    <path id="ost_60" d="M -151.5,98.5 l -7,7 q -1.5,1.5 -1.5,3.5 v 36 a 10,10 0,0,0 10,10 h 10" />
+    <path id="ost_61" class="endet" d="M -160,150 v 5 a 20,20 0,0,0 20,20 h 50" />
+    <path id="ost_62" class="endet" d="M -145,165 c 5,0 5,5 10,5 h 40" />
+    <path id="ost_63" class="endet" d="M -160,145 v 5 a 15,15 0,0,0 15,15 h 50" />
+    <path id="ost_64" d="M -145,155 c 5,0 5,5 10,5 h 51 q 2,0 3.5,-1.5 l 12,-12 q 1.5,-1.5 3.5,-1.5" />
+    <path id="ost_65" d="M -140,155 h 61 q 2,0 3.5,-1.5" />
+    <path id="ost_66" d="M -155,140 v 5 a 5,5 0,0,0 5,5 h 70 c 5,0 5,-5 10,-5" />
+    <path id="ost_71" class="faeng" d="M -205,25 h 35 c 5,0 5,-5 10,-5" />
+    <path id="ost_72" class="endet" d="M -150,62.5 q 0,-2 -1.5,-3.5 l -30,-30" />
+    <path id="ost_73" d="M -155,20 a 5,5 0,0,1 5,5 v 40" />
+    <path id="ost_75" d="M -150,65 v 30 q 0,2 -1.5,3.5" />
+    <path id="ost_77" class="endet" d="M -65,145 h 45" />
+    <path id="ost_83" d="M -153.5,100.5 q -1.5,1.5 -1.5,3.5 v 36 a 5,5 0,0,0 5,5 h 85 c 5,0 5,-5 10,-5 h 10 c 7.5,0 7.5,-10 15,-10 " />
+    <path id="ost_84" class="faeng" d="M -145,95 v 45 a 5,5 0,0,0 5,5" />
+    <path id="ost_85" class="faeng" d="M -140,90 v 40 c 0,5 5,5 5,10" />
+    <path id="ost_86" d="M -135,80 v 60 a 5,5 0,0,0 5,5" />
    </g>
-   <g id="gleisnummern_ost">
-    <path class="gebaude wand" id="ost_hal" d="M -85,68.5 v 3 h -3 v 6 h 3 v 6 h -3 v 3 h 33 v -9 h -3 v -6 h 3 v -3 h -30" />
-    <g class="bgleisnummer" transform="translate(-110,40)"><circle cy="-1" r="2" /><text>6</text></g>
-    <g class="bgleisnummer" transform="translate(-105,40)"><circle cy="-1" r="2" /><text>7</text></g>
-    <g class="bgleisnummer" transform="translate(-100,40)"><circle cy="-1" r="2" /><text>8</text></g>
-    <g class="bgleisnummer" transform="translate(-95,40)"><circle cy="-1" r="2" /><text>9</text></g>
-    <g class="bgleisnummer" transform="translate(-90,40)"><circle cy="-1" r="2" /><text>10</text></g>
-    <g class="bgleisnummer" transform="translate(-85,40)"><circle cy="-1" r="2" /><text>11</text></g>
-    <g class="bgleisnummer" transform="translate(-80,40)"><circle cy="-1" r="2" /><text>12</text></g>
-    <g class="bgleisnummer" transform="translate(-75,40)"><circle cy="-1" r="2" /><text>13</text></g>
-    <g class="bgleisnummer" transform="translate(-70,40)"><circle cy="-1" r="2" /><text>14</text></g>
-    <g class="bgleisnummer" transform="translate(-65,40)"><circle cy="-1" r="2" /><text>15</text></g>
-    <g class="bgleisnummer" transform="translate(-60,40)"><circle cy="-1" r="2" /><text>16</text></g>
-    <g class="bgleisnummer" transform="translate(-135,30)"><circle cy="-1" r="2" /><text>51</text></g>
-    <g class="bgleisnummer" transform="translate(-130,30)"><circle cy="-1" r="2" /><text>52</text></g>
-    <g class="bgleisnummer" transform="translate(-125,30)"><circle cy="-1" r="2" /><text>53</text></g>
-    <g class="bgleisnummer" transform="translate(-115,65)"><circle cy="-1" r="2" /><text>60</text></g>
-    <g class="bgleisnummer" transform="translate(-80,86)"><circle cy="-1" r="2" /><text>61</text></g>
-    <g class="bgleisnummer" transform="translate(-77,83)"><circle cy="-1" r="2" /><text>62</text></g>
-    <g class="bgleisnummer" transform="translate(-80,80)"><circle cy="-1" r="2" /><text>63</text></g>
-    <g class="bgleisnummer" transform="translate(-77,77)"><circle cy="-1" r="2" /><text>64</text></g>
-    <g class="bgleisnummer" transform="translate(-80,74)"><circle cy="-1" r="2" /><text>65</text></g>
-    <g class="bgleisnummer" transform="translate(-77,71)"><circle cy="-1" r="2" /><text>66</text></g>
-    <g class="bgleisnummer" transform="translate(-160,22)"><circle cy="-1" r="2" /><text>71</text></g>
-    <g class="bgleisnummer" transform="translate(-145,30)"><circle cy="-1" r="2" /><text>72</text></g>
-    <g class="bgleisnummer" transform="translate(-140,30)"><circle cy="-1" r="2" /><text>73</text></g>
-    <g class="bgleisnummer" transform="translate(-125,45)"><circle cy="-1" r="2" /><text>75</text></g>
-    <g class="bgleisnummer" transform="translate(-5,85)"><circle cy="-1" r="2" /><text>77</text></g>
-    <g class="bgleisnummer" transform="translate(-110,55)"><circle cy="-1" r="2" /><text>84</text></g>
-    <g class="bgleisnummer" transform="translate(-105,55)"><circle cy="-1" r="2" /><text>85</text></g>
-    <g class="bgleisnummer" transform="translate(-100,55)"><circle cy="-1" r="2" /><text>86</text></g>
+   <g class="bb" transform="translate(0,-150)">
+    <path id="alt_wa_schaefflestrasse" class="endet" d="M 33,24 c 0,-10 -10,-10 -10,-20 c 0,-5 -5,-5 -5,-10 v -25" />
    </g>
-   <path id="bbost_strecke_1" d="M -185,16 h 105 q 4,0 7,3 l 55.5,55.5 q 4.5,4.5 10.5,4.5 h 20 a 20,20 0,0,0 20,-20" />
-   <path id="bbost_strecke_2" d="M 23,59 a 10,10 0,0,1 -10,10 h -20 q -2,0 -3.5,-1.5 l -55.5,-55.5 q -6,-6 -14,-6 h -105" />
+   <path id="bbost_strecke_1" d="M -200,15 h 115 a 15,15 0,0,1 15,15 v 85 a 25,25 0,0,0 25,25 h 58 a 20,20 0,0,0 20,-20" />
+   <path id="bbost_strecke_2" d="M 23,120 a 10,10 0,0,1 -10,10 h -58 a 15,15 0,0,1 -15,-15 v -85 a 25,25 0,0,0 -25,-25 h -115" />
   </g>
   </g>
+ 
   <g id="strecke_oberirdisch" class="strecke">
    <path id="eschersheimer_1" d="M 120,1130 V 690" />
    <path id="eschersheimer_2" d="M 110,690 V 1130" />
@@ -3394,13 +3402,346 @@
     <g class="a2_strecke kilometer"><g transform="rotate(-120) translate(0,-60) rotate(120)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 25,24</text></g><use xlink:href="#punkt2" transform="rotate(-120)" /></g>
     <g class="a2_strecke kilometer" transform="translate(0,-45)"><g transform="rotate(-120) translate(0,-60) rotate(120)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 25,40</text></g><use xlink:href="#punkt2" transform="rotate(-120)" /></g>
    </g>
+   <g id="bst792" transform="translate(800,1160)">
+     <a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Betriebshof_Ost">
+      <text x="-160" y="2" class="ab_bb">BB Ost<tspan class="hstdetails"> (BOS-792)</tspan></text>
+     </a>
+     <g onclick="toggle_details(this)">
+       <use id="bos_06" xlink:href="#zwolabstell" transform="translate(-130,45)" />
+       <use id="bos_07" xlink:href="#zwolabstell" transform="translate(-125,45)" />
+       <use id="bos_08" xlink:href="#zwolabstell" transform="translate(-120,45)" />
+       <use id="bos_09" xlink:href="#zwolabstell" transform="translate(-115,45)" />
+       <use id="bos_10" xlink:href="#zwolabstell" transform="translate(-110,45)" />
+       <use id="bos_11" xlink:href="#zwolabstell" transform="translate(-105,45)" />
+       <use id="bos_12" xlink:href="#zwolabstell" transform="translate(-100,45)" />
+       <use id="bos_13" xlink:href="#zwolabstell" transform="translate(-95,45)" />
+       <use id="bos_14" xlink:href="#zwolabstell" transform="translate(-90,45)" />
+       <use id="bos_15" xlink:href="#zwolabstell" transform="translate(-85,45)" />
+       <use id="bos_16" xlink:href="#zwolabstell" transform="translate(-80,45)" />
+       <use id="bos_51" xlink:href="#siebabstell" transform="translate(-145,45)" />
+       <use id="bos_52" xlink:href="#funfabstell" transform="translate(-140,45)" />
+       <use id="bos_53" xlink:href="#funfabstell" transform="translate(-135,45)" />
+       <use id="bos_71" xlink:href="#vierabstell" transform="translate(-195,25) rotate(-90)" />
+       <use id="bos_72a" xlink:href="#dreiabstell" transform="translate(-176,34.5) rotate(-45)" />
+       <use id="bos_72b" xlink:href="#einsabstell" transform="translate(-162,48.5) rotate(-45)" />
+       <use id="bos_73" xlink:href="#einsabstell" transform="translate(-150,45)" />
+       <use id="bos_75" xlink:href="#dreiabstell" transform="translate(-150,75)" />
+       <use id="bos_71" xlink:href="#vierabstell" transform="translate(-45,145) rotate(-90)" />
+       <use id="bos_84" xlink:href="#funfabstell" transform="translate(-145,105)" />
+       <use id="bos_85" xlink:href="#funfabstell" transform="translate(-140,100)" />
+       <use id="bos_86" xlink:href="#sechabstell" transform="translate(-135,95)" />
+     </g>
+     <g class="hstdetails">
+       <g class="bgleisnummer">
+         <g transform="translate(-130,41)"><circle cy="-1" r="2" /><text>6</text></g>
+         <g transform="translate(-125,41)"><circle cy="-1" r="2" /><text>7</text></g>
+         <g transform="translate(-120,41)"><circle cy="-1" r="2" /><text>8</text></g>
+         <g transform="translate(-115,41)"><circle cy="-1" r="2" /><text>9</text></g>
+         <g transform="translate(-110,41)"><circle cy="-1" r="2" /><text>10</text></g>
+         <g transform="translate(-105,41)"><circle cy="-1" r="2" /><text>11</text></g>
+         <g transform="translate(-100,41)"><circle cy="-1" r="2" /><text>12</text></g>
+         <g transform="translate(-95,41)"><circle cy="-1" r="2" /><text>13</text></g>
+         <g transform="translate(-90,41)"><circle cy="-1" r="2" /><text>14</text></g>
+         <g transform="translate(-85,41)"><circle cy="-1" r="2" /><text>15</text></g>
+         <g transform="translate(-80,41)"><circle cy="-1" r="2" /><text>16</text></g>
+         <g transform="translate(-145,41)"><circle cy="-1" r="2" /><text>51</text></g>
+         <g transform="translate(-140,41)"><circle cy="-1" r="2" /><text>52</text></g>
+         <g transform="translate(-135,41)"><circle cy="-1" r="2" /><text>53</text></g>
+         <g transform="translate(-160,116)"><circle cy="-1" r="2" /><text>60</text></g>
+         <g transform="translate(-100,176)"><circle cy="-1" r="2" /><text>61</text></g>
+         <g transform="translate(-100,171)"><circle cy="-1" r="2" /><text>62</text></g>
+         <g transform="translate(-100,166)"><circle cy="-1" r="2" /><text>63</text></g>
+         <g transform="translate(-100,161)"><circle cy="-1" r="2" /><text>64</text></g>
+         <g transform="translate(-100,156)"><circle cy="-1" r="2" /><text>65</text></g>
+         <g transform="translate(-100,151)"><circle cy="-1" r="2" /><text>66</text></g>
+         <g transform="translate(-200,26)"><circle cy="-1" r="2" /><text>71</text></g>
+         <g transform="translate(-179.5,32)"><circle cy="-1" r="2" /><text>72</text></g>
+         <g transform="translate(-150,41)"><circle cy="-1" r="2" /><text>73</text></g>
+         <g transform="translate(-150,71)"><circle cy="-1" r="2" /><text>75</text></g>
+         <g transform="translate(-50,146)"><circle cy="-1" r="2" /><text>77</text></g>
+         <g transform="translate(-145,101)"><circle cy="-1" r="2" /><text>84</text></g>
+         <g transform="translate(-140,96)"><circle cy="-1" r="2" /><text>85</text></g>
+         <g transform="translate(-135,91)"><circle cy="-1" r="2" /><text>86</text></g>
+       </g>
+       <g id="792Y14" transform="translate(-145,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(-23,-45)" />
+         <text transform="translate(-23,-70) rotate(-45)">792Y14</text>
+       </g>
+       <g id="792Y15" transform="translate(-140,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(-16,-45)" />
+         <text transform="translate(-16,-70) rotate(-45)">792Y15</text>
+       </g>
+       <g id="792Y16" transform="translate(-135,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(-9,-45)" />
+         <text transform="translate(-9,-70) rotate(-45)">792Y16</text>
+       </g>
+       <g id="792Y17" transform="translate(-130,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(-2,-45)" />
+         <text transform="translate(-2,-70) rotate(-45)">792Y17</text>
+       </g>
+       <g id="792Y18" transform="translate(-125,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(5,-45)" />
+         <text transform="translate(5,-70) rotate(-45)">792Y18</text>
+       </g>
+       <g id="792Y19" transform="translate(-120,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(11,-45)" />
+         <text transform="translate(11,-70) rotate(-45)">792Y19</text>
+       </g>
+       <g id="792Y20" transform="translate(-115,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(18,-45)" />
+         <text transform="translate(18,-70) rotate(-45)">792Y20</text>
+       </g>
+       <g id="792Y21" transform="translate(-110,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(25,-45)" />
+         <text transform="translate(25,-70) rotate(-45)">792Y21</text>
+       </g>
+       <g id="792Y22" transform="translate(-105,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(32,-45)" />
+         <text transform="translate(32,-70) rotate(-45)">792Y22</text>
+       </g>
+       <g id="792Y23" transform="translate(-100,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(39,-45)" />
+         <text transform="translate(39,-70) rotate(-45)">792Y23</text>
+       </g>
+       <g id="792Y24" transform="translate(-95,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(46,-45)" />
+         <text transform="translate(46,-70) rotate(-45)">792Y24</text>
+       </g>
+       <g id="792Y25" transform="translate(-90,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(53,-45)" />
+         <text transform="translate(53,-70) rotate(-45)">792Y25</text>
+       </g>
+       <g id="792Y26" transform="translate(-85,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(60,-45)" />
+         <text transform="translate(60,-70) rotate(-45)">792Y26</text>
+       </g>
+       <g id="792Y27" transform="translate(-80,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(67,-45)" />
+         <text transform="translate(67,-70) rotate(-45)">792Y27</text>
+       </g>
+       <g id="792Y34" transform="translate(-175,5) rotate(-90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,-10 10,-25 20,-25" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(20,-25)" />
+         <text transform="rotate(90) translate(-51,-16)" class="te">792Y34</text>
+       </g>
+       <g id="792Y31" transform="translate(-25,130) rotate(-90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,20 48,20 58,20" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_012b" transform="translate(58,20)" />
+         <text transform="rotate(90) translate(-2.5,-64)" class="tm">792Y31</text>
+       </g>
+       <g id="792Y35R" transform="translate(-190,5) rotate(90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,20 20,20 30,20" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(30,20)" />
+         <text transform="rotate(-90) translate(-21,34)" class="te">792Y35R</text>
+       </g>
+       <g id="792Y41" transform="translate(-190,15) rotate(90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,10 10,40 35,40" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_013b" transform="translate(35,40)" />
+         <text transform="rotate(-90) translate(-41,39)" class="te">792Y41</text>
+       </g>
+       <g id="792Y44" transform="translate(-70,110) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(73,-70)" />
+         <text transform="translate(67,-80) rotate(180)">792Y44</text>
+       </g>
+       <g id="792Y45R" transform="translate(-25,140) rotate(-90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,5 56,5 56,0" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(56,0)" />
+         <text transform="rotate(90) translate(1,-51)">792Y45R</text>
+       </g>
+       <g id="792Y51" transform="translate(-145,90) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(49,-40)" />
+         <text transform="translate(45,-70) rotate(135)" class="te">792Y51</text>
+       </g>
+       <g id="792Y52" transform="translate(-140,85) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(42,-45)" />
+         <text transform="translate(38,-75) rotate(135)" class="te">792Y52</text>
+       </g>
+       <g id="792Y53" transform="translate(-135,80) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(35,-50)" />
+         <text transform="translate(31,-80) rotate(135)" class="te">792Y53</text>
+       </g>
+       <g id="792Y54" transform="translate(-135,85)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(102,-40)" />
+         <text transform="translate(102,-65) rotate(-45)">792Y54</text>
+       </g>
+       <g id="792Y63" transform="translate(-95,160) rotate(90)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(31,0)" />
+         <text transform="translate(25,-12.5) rotate(-90)" class="tm">792Y63</text>
+       </g>
+       <g id="792Y64" transform="translate(-160,110)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(141,-65)" />
+         <text transform="translate(141,-90) rotate(-45)">792Y64</text>
+       </g>
+       <g id="792Y65" transform="translate(-95,155) rotate(90)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(24,-40)" />
+         <text transform="translate(28,-66) rotate(-90)">792Y65</text>
+       </g>
+       <g id="792Y67" transform="translate(-72,150) rotate(90)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" transform="rotate(-45)" />
+         <use xlink:href="#signal_f_bb" transform="translate(5,-17)" />
+         <text transform="translate(9,-43) rotate(-90)">792Y67</text>
+       </g>
+       <g id="792Y68" transform="translate(-120,150) rotate(-90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 30,0 30,0 30,75" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(30,95)" />
+         <text transform="rotate(90) translate(96,-26)">792Y68</text>
+       </g>
+       <g id="792Y69" transform="translate(-95,150) rotate(90)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(17,-40)" />
+         <text transform="translate(21,-66) rotate(-90)">792Y69</text>
+       </g>
+       <g id="792Y71" transform="translate(-170,25) rotate(90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 10,0 40,10 40,20" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(40,40)" />
+         <text transform="rotate(-90) translate(-41,44)" class="te">792Y71</text>
+       </g>
+       <g id="792Y72" transform="translate(-155,55.5) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" transform="rotate(-45)" />
+         <use xlink:href="#signal_f_bb" transform="translate(27,-19.5)" />
+         <text transform="translate(23,-49.5) rotate(135)" class="te">792Y72</text>
+       </g>
+       <g id="792Y73" transform="translate(-150,35)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(-30,-45)" />
+         <text transform="translate(-30,-70) rotate(-45)">792Y73</text>
+       </g>
+       <g id="792Y74" transform="translate(-150,55) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(20,-20)" />
+         <text transform="translate(16,-50) rotate(135)" class="te">792Y74</text>
+       </g>
+       <g id="792Y75" transform="translate(-150,65)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 0,10 100,10 100,0" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(105,-20)" />
+         <text transform="translate(105,-45) rotate(-45)">792Y75</text>
+       </g>
+       <g id="792Y76" transform="translate(-150,95) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(56,-35)" />
+         <text transform="translate(52,-65) rotate(135)" class="te">792Y76</text>
+       </g>
+       <g id="792Y77" transform="translate(-55,145) rotate(-90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 10,0 49,0 49,10" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(49,30)" />
+         <text transform="rotate(90) translate(31,-45)">792Y77</text>
+       </g>
+       <g id="792Y83" transform="translate(-150,145) rotate(-90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 37,0 37,0 37,105" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(37,125)" />
+         <text transform="rotate(90) translate(126,-33)">792Y83</text>
+       </g>
+       <g id="792Y84" transform="translate(-145,135) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(166,-65)" />
+         <text transform="translate(162,-95) rotate(135)" class="te">792Y84</text>
+       </g>
+       <g id="792Y85" transform="translate(-140,130) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(159,-70)" />
+         <text transform="translate(155,-100) rotate(135)" class="te">792Y85</text>
+       </g>
+       <g id="792Y86" transform="translate(-135,130) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(152,-70)" />
+         <text transform="translate(148,-100) rotate(135)" class="te">792Y86</text>
+       </g>
+       <g id="792Y87" transform="translate(-130,130) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(145,-70)" />
+         <text transform="translate(141,-100) rotate(135)" class="te">792Y87</text>
+       </g>
+       <g id="792Y88" transform="translate(-125,130) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(138,-70)" />
+         <text transform="translate(134,-100) rotate(135)" class="te">792Y88</text>
+       </g>
+       <g id="792Y89" transform="translate(-120,130) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(131,-70)" />
+         <text transform="translate(127,-100) rotate(135)" class="te">792Y89</text>
+       </g>
+       <g id="792Y90" transform="translate(-115,130) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(124,-70)" />
+         <text transform="translate(120,-100) rotate(135)" class="te">792Y90</text>
+       </g>
+       <g id="792Y91" transform="translate(-110,130) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(117,-70)" />
+         <text transform="translate(113,-100) rotate(135)" class="te">792Y91</text>
+       </g>
+       <g id="792Y92" transform="translate(-105,130) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(110,-70)" />
+         <text transform="translate(106,-100) rotate(135)" class="te">792Y92</text>
+       </g>
+       <g id="792Y93" transform="translate(-100,130) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(103,-70)" />
+         <text transform="translate(99,-100) rotate(135)" class="te">792Y93</text>
+       </g>
+       <g id="792Y94" transform="translate(-95,130) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(96,-70)" />
+         <text transform="translate(92,-100) rotate(135)" class="te">792Y94</text>
+       </g>
+       <g id="792Y95" transform="translate(-90,130) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(89,-70)" />
+         <text transform="translate(85,-100) rotate(135)" class="te">792Y95</text>
+       </g>
+       <g id="792Y96" transform="translate(-85,130) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(82,-70)" />
+         <text transform="translate(78,-100) rotate(135)" class="te">792Y96</text>
+       </g>
+       <g id="792Y97" transform="translate(-80,130) rotate(180)" onmouseover="highlight(this)">
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_bb" transform="translate(75,-70)" />
+         <text transform="translate(71,-100) rotate(135)" class="te">792Y97</text>
+       </g>
+     </g>
+   </g>
    <g id="hst821" transform="translate(766,1363)">
     <use xlink:href="#bstg_tramb" transform="translate(-23,0) rotate(-90)" />
     <use xlink:href="#bstg_ausen" transform="rotate(90)" />
     <text x="-25" y="22">Johanna-Tesch-Platz</text>
     <g class="c1_strecke kilometer"><g transform="rotate(150) translate(0,-60) rotate(-150)"><use xlink:href="#kasten9" /><text x="6" y="-1">km 2,50→</text><text x="6" y="9">km 2,80←</text></g><use xlink:href="#punkt2" transform="rotate(150)" /></g>
    </g>
-   <g id="hst822" transform="translate(828,1284)">
+   <g id="hst822" transform="translate(828,1260)">
     <use xlink:href="#bstg_ausen" />
     <text x="15" y="5">Schäfflestraße</text>
     <g class="c1_strecke kilometer te"><g transform="rotate(-60) translate(0,-60) rotate(60)"><use xlink:href="#kastenJ" /><text x="-6" y="-1">km 3,20→</text><text x="-6" y="9">km 3,50←</text></g><use xlink:href="#punkt2" transform="rotate(-60)" /></g>
@@ -3492,8 +3833,8 @@
    </g>
   </g>
   <g class="b2_strecke kilometer">
-   <path class="kilometrierung" d="M 285,1580 v -16 q 0,-22 16.5,-38.5 l 290,-290" />
-   <g transform="translate(591.5,1235.5)" class="te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenD" /><text x="-6" y="4">km 13,65</text></g><use xlink:href="#punkt3"  transform="rotate(15)"/></g>
+   <path class="kilometrierung" d="M 285,1580 v -16 q 0,-22 16.5,-38.5 l 199.5,-199.5 q 15,-15 15,-35 v -41 c 0,-10 2.5,-10 2.5,-20 v -55" />
+   <g transform="translate(518.5,1175)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 13,65</text></g><use xlink:href="#punkt3" transform="rotate(30)"/></g>
   </g>
   <g class="cs_strecke kilometer">
    <path class="kilometrierung" d="M -385.5,1166.5 l 397,397 q 16.5,16.5 38.5,16.5 h 399 q 18,0 31.5,13.5 l 75,75" />
@@ -3534,12 +3875,4 @@
    <g transform="translate(-158,271)"><g transform="rotate(90) translate(0,-60) rotate(-90)"><use xlink:href="#kasten3" /><text x="6" y="4">km*0,00</text></g><use xlink:href="#punkt3" transform="rotate(90)" /></g>
   </g>
  </g>
- <path class="mitte hilfslinie" d="M 115,1955 v -2.5 h 5,-5 v -20 h 5,-5 v -2.5 h 5,-5 v -20 h 5,-5 v -30 h 5,-5 v -20 h 5,-5 v -65 h 5,-5 v -100 h 5,-5 v -50 h 5,-5 v -75 h 5,-5 v -1250" />
- <path class="mitte hilfslinie" d="M -690,1545 v 5,-5 h 2.5 v 5,-5 h 20 v 5,-5 h 2.5 v 5,-5 h 20 v 5,-5 h 15 v 5,-5 h 30 v 5,-5 h 60 v 5,-5 h 230 v 5,-5 h 30 h -2 v 5,-5
-                                   a 55,55 0,0,1 55,55 h 5,-5 v 20 h 5,-5 v 30 h 5,-5 q 0,22 16.5,38.5 l 3.5,-3.5 -3.5,3.5 q 16.5,16.5 38.5,16.5 h2 h 270 v 5,-5 h 15 v 5,-5 h 85 v 5,-5 h 30 a 55,55 0,0,0 55,-55 h 5,-5" />
- <path class="mitte hilfslinie" d="M 285,1650 h -5,5 v -82 h -5,5 v -8 h 5,-5 v 4
-                                                    q 0,-22 16.5,-38.5 l 5,5 -5,-5 l -2,2 l 5,5 -5,-5 l 4,-4 l 5,5 -5,-5 l 197.5,-197.5
-                                                    q 15,-15 15,-35
-                                                    v -41 c 0,-10 2.5,-10 2.5,-20 v -30
-                                                    " /> 
 </svg> 
