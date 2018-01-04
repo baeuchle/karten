@@ -912,8 +912,8 @@
   <g id="strecke_cebene" class="tunnel">
    <path id="a_1_stamm" class="faeng" d="M 120,1955 V 1130" />
    <path id="a_2_stamm" class="endet" d="M 110,1130 V 1955" />
-   <path id="d_1" class="faeng endet" d="M -212,1670 v -171 q 0,-20 15,-35 l 51,-51 q 27,-27 27,-63 v -50" />
-   <path id="d_2" class="faeng endet" d="M -131,1300 v 56 q 0,28 -21,49 l -52,52 q -18,18 -18,42 v 81 c 0,10 -20,20 -20,30 v 100" />
+   <path id="d_1" class="faeng endet" d="M -212,1670 v -175 q 0,-20 15,-35 l 51,-51 q 27,-27 27,-63 h -5,5 v -50" />
+   <path id="d_2" class="faeng endet" d="M -131,1300 v 52 q 0,28 -21,49 l -52,52 q -18,18 -18,42 v 85 c 0,10 -20,20 -20,30 v 100" />
    <path id="ginnheimertunnel_1" class="geplant ginnheimer_kurve" d="M -130,1280 v 4 c 0,8 -1,8 -1,16" />
    <path id="ginnheimertunnel_2" class="geplant ginnheimer_kurve" d="M -119,1300 c 0,-8 -1,-8 -1,-16 v -4" />
    <path id="ostbahnhof_1" class="faeng" d="M 564,1670 l -64,-64 q -9,-9 -9,-21 a 20,20 0,0,0 -20,-20 h -62 c -10,0 -10,10 -20,10" />
@@ -1031,6 +1031,12 @@
         <use xlink:href="#signal_haupt_02v" transform="translate(40,0)" />
         <text class="te" transform="translate(46,-10) rotate(180)">211H44</text>
       </g>
+       <g id="sig251V11" transform="translate(25,-70)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 L 20,0" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_vor" transform="translate(20,0)" />
+         <text x="26" y="0" class="ta">251V11</text>
+       </g>
        <g id="sig611V21" transform="translate(105,75) rotate(90)" onmouseover="highlight(this)">
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_vor" transform="translate(20,0)" />
@@ -1301,14 +1307,6 @@
         <use xlink:href="#signal_haupt_02v" transform="translate(40,0)" />
         <text x="46" class="ta">515H14</text>
       </g>
-      <g class="signal" transform="translate(0,-37) rotate(180)">
-        <use xlink:href="#signalplatz" transform="translate(-5,0)" />
-        <use xlink:href="#signalplatz" transform="translate( 5,0)" />
-        <text class="te" transform="translate(51,-10) rotate(180)">515H21</text>
-        <text class="te" transform="translate(51,-20) rotate(180)">515R15</text>
-        <use xlink:href="#signal_haupt_02v" transform="translate(45,25)" />
-        <use xlink:href="#signal_haupt_02v" transform="translate(25,25)" />
-      </g>
       <g id="sig515R15" transform="translate(5,-37) rotate(180)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 30,-15 c -10,0 -28,10 -28,15" />
         <use xlink:href="#signalplatz" />
@@ -1335,11 +1333,38 @@
     </g>
    </g>
    <g id="hst251" transform="translate(-217,1515)">
-    <use xlink:href="#bstg_mitte" />
+    <use xlink:href="#hstgrid" />
+    <use xlink:href="#bstg_mitte" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Festhalle/Messe">
-     <text x="10" y="5">Festhalle/Messe</text>
+     <text x="10" y="5">Festhalle/Messe<tspan class="hstdetails"> (FM, 251)</tspan></text>
     </a>
     <g class="ds_strecke kilometer te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 10,7</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
+    <g class="hstdetails">
+      <g id="sig251H11" transform="translate(5,35)" onmouseover="highlight(this)">
+        <path class="signalverbinder" d="M 2,0 C 2,30 40,30 40,20" />
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(40,20)" />
+        <text transform="translate(46,20)">251H11</text>
+      </g>
+      <g id="sig251H14" transform="translate(5,-17)" onmouseover="highlight(this)">
+        <path class="signalverbinder" d="M 2,0 C 2,20 40,20 40,10" />
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(40,10)" />
+        <text transform="translate(46,10)">251H14</text>
+      </g>
+      <g id="sig251R23" transform="translate(-5,-17)" onmouseover="highlight(this)">
+        <path class="signalverbinder" d="M 2,0 C 2,20 30,20 30,10" />
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(30,10)" />
+        <text transform="translate(56,0)">251R23</text>
+      </g>
+      <g id="sig251R25" transform="translate(-5,35)" onmouseover="highlight(this)">
+        <path class="signalverbinder" d="M 2,0 C 2,20 30,30 30,20" />
+        <use xlink:href="#signalplatz" />
+        <use xlink:href="#signal_haupt_02v" transform="translate(30,20)" />
+        <text transform="translate(56,10)">251R25</text>
+      </g>
+    </g>
    </g>
    <g id="hst411" transform="translate(-161.5,1421.5)">
     <use xlink:href="#bstg_mitte" transform="rotate(45)"/>
@@ -1458,17 +1483,43 @@
     </a>
     <g class="cs_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 10,65</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
    </g>
-   <g id="hst311" transform="translate(115,1580) rotate(90)">
+   <g id="hst311" transform="translate(115,1580)">
      <g onclick="toggle_details(this)">
-       <use xlink:href="#bahnsteig" transform="translate(-15,0) rotate(180)" />
-       <use xlink:href="#sbahn" transform="translate(-5,0)" />
-       <use xlink:href="#sbahn" transform="translate(5,0) rotate(180) translate(0,-35)" />
-       <use xlink:href="#bahnsteig" transform="translate(15,0)" />
+       <use xlink:href="#bahnsteig" transform="translate(0,-15) rotate(-90)" />
+       <use xlink:href="#sbahn" transform="translate(0,-5) rotate(90)" />
+       <use xlink:href="#sbahn" transform="translate(0,5) rotate(-90) translate(0,-35)" />
+       <use xlink:href="#bahnsteig" transform="translate(0,15) rotate(90)" />
      </g>
-     <g class="cs_strecke kilometer" transform="rotate(-90)"><g transform="rotate(30) translate(0,-99) rotate(-30)"><use xlink:href="#kasten3" /><text x="10" y="4">km 10,0</text></g><use xlink:href="#punkt1" transform="rotate(30)"/></g>
-      <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Hauptwache">
-        <text transform="rotate(-90) translate(35,30)" class="ta hstdetails">(C-Ebene: HWC, 311)</text>
-      </a>
+     <g class="cs_strecke kilometer"><g transform="rotate(30) translate(0,-99) rotate(-30)"><use xlink:href="#kasten3" /><text x="10" y="4">km 10,0</text></g><use xlink:href="#punkt1" transform="rotate(30)"/></g>
+     <g class="hstdetails">
+       <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Hauptwache">
+         <text transform="translate(35,30)" class="ta">(C-Ebene: HWC, 311)</text>
+       </a>
+       <g id="sig311H11" transform="translate(30,-15) rotate(-90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,10 10,20 20,20" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_01v" transform="translate(20,20)" />
+         <text transform="rotate(90) translate(2.5,-26)" class="tm">311H11</text>
+       </g>
+       <g id="sig311H14_312V11" transform="translate(-17,-15) rotate(-90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,10 30,10 30,0" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_02v_vor" transform="translate(30,0)" />
+         <text transform="rotate(90) translate(-32.5,-36)" class="tm">311H14 + 312V11</text>
+       </g>
+       <g id="sig311H21" transform="translate(-30,15) rotate(90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,10 10,20 20,20" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_01v" transform="translate(20,20)" />
+         <text transform="rotate(-90) translate(-2.5,35)" class="tm">311H21</text>
+       </g>
+       <g id="sig311H24_811V21" transform="translate(17,15) rotate(90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,10 30,10 30,0" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_01v_vor" transform="translate(30,0)" />
+         <text transform="rotate(-90) translate(27.5,45)" class="tm">311H24 + 811V21</text>
+       </g>
+     </g>
    </g>
    <g id="hst811" transform="translate(260,1580)">
     <g onclick="toggle_details(this)">
@@ -1477,11 +1528,11 @@
       <use xlink:href="#bahnsteig" transform="translate(0,-15) rotate(90)" />
       <use xlink:href="#bahnsteig" transform="translate(0,15) rotate(-90)" />
     </g>
-    <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Konstablerwache">
-     <text transform="translate(5,30)" class="hstdetails te">(D-Ebene: KWD, 811)</text>
-    </a>
     <g class="cs_strecke kilometer te"><g transform="rotate(-150) translate(0,-60) rotate(150)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 9,50</text></g><use xlink:href="#punkt2" transform="rotate(210)"/></g>
     <g class="hstdetails">
+      <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Konstablerwache">
+        <text transform="translate(5,30)" class="te">(D-Ebene: KWD, 811)</text>
+      </a>
       <g id="sig811H11" transform="translate(28,-15) rotate(-90)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 C 2,-10 20,-10 20,-20" />
         <use xlink:href="#signalplatz" />
@@ -2406,8 +2457,8 @@
     <path id="ost_85" class="faeng" d="M -140,90 v 40 c 0,5 5,5 5,10" />
     <path id="ost_86" d="M -135,80 v 60 a 5,5 0,0,0 5,5" />
    </g>
-   <path id="bbost_strecke_1" d="M -200,15 h 115 a 15,15 0,0,1 15,15 v 85 a 25,25 0,0,0 25,25 h 60 a 20,20 0,0,0 20,-20" />
-   <path id="bbost_strecke_2" d="M 25,120 a 10,10 0,0,1 -10,10 h -60 a 15,15 0,0,1 -15,-15 v -85 a 25,25 0,0,0 -25,-25 h -115" />
+   <path class="strecke" id="bbost_strecke_1" d="M -200,15 h 115 a 15,15 0,0,1 15,15 v 85 a 25,25 0,0,0 25,25 h 60 a 20,20 0,0,0 20,-20" />
+   <path class="strecke" id="bbost_strecke_2" d="M 25,120 a 10,10 0,0,1 -10,10 h -60 a 15,15 0,0,1 -15,-15 v -85 a 25,25 0,0,0 -25,-25 h -115" />
   </g>
   </g>
  
