@@ -2981,13 +2981,13 @@
    </g>
    <g id="hst327" transform="translate(-470,505)" class="geplant rtw te"><use xlink:href="#bstg_mitte" /><text x="-10" y="5">Gewerbegebiet Praunheim</text></g>
    <g id="hst351" transform="translate(-390,1041)">
-    <use xlink:href="#bstg_vers1" />
-    <text x="15" y="5">Große Nelkenstraße</text>
+    <use xlink:href="#bstg_vers1" onclick="toggle_details(this)" />
+    <text x="15" y="5">Große Nelkenstraße<tspan class="hstdetails"> (GN, 351)</text></text>
     <g class="c3_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 0,46</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
    <g id="hst353" transform="translate(-390,926)">
-    <use xlink:href="#bstg_mitte" />
-    <text x="10" y="5">Hausen</text>
+    <use xlink:href="#bstg_mitte" onclick="toggle_details(this)" />
+    <text x="10" y="5">Hausen<tspan class="hstdetails"> (HN, 353)</tspan></text>
     <g class="c3_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 1,12</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
    <g id="hst410" transform="translate(-125,1260)" class="geplant ginnheimer_kurve te">
