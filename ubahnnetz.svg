@@ -1561,22 +1561,40 @@
     <g class="cs_strecke kilometer" transform="rotate(45)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 13,3</text></g><use xlink:href="#punkt2" transform="rotate(30)"  /></g>
     <g class="hstdetails">
        <g id="sig316H11" transform="rotate(45) translate(32.5,50)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 H 20" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_01v" transform="translate(20,0)" />
+         <text transform="translate(26,0)">316H11</text>
        </g>
        <g id="sig316R13" transform="translate(5,17) rotate(180)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,17 50,20 50,37" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_01v" transform="translate(50,67)" />
+         <text transform="translate(50,68) rotate(-135)" class="te">316R13</text>
        </g>
        <g id="sig316H14" transform="translate(5,-17)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,20 40,20 40,10" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_02v" transform="translate(40,10)" />
+         <text transform="translate(46,10)">316H14</text>
        </g>
        <g id="sig316H21" transform="translate(-5,-30) rotate(180)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,15 7,20 20,20" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_01v" transform="translate(20,20)" />
+         <text transform="translate(20,21) rotate(-135)" class="te">316H21</text>
        </g>
        <g id="sig316R23" transform="translate(-5,-17)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,10 30,20 30,10" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_02v" transform="translate(30,10)" />
+         <text transform="translate(56,0)">316R23</text>
        </g>
        <g id="sig316H24" transform="translate(-5,17) rotate(180)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 20,0 60,17 60,37" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_01v" transform="translate(60,67)" />
+         <text transform="translate(60,68) rotate(-135)" class="te">316H24</text>
        </g>
     </g>
    </g>
@@ -1592,16 +1610,28 @@
       <use xlink:href="#ebened" transform="translate(-1,5.00)" />
       <use xlink:href="#ebenec" transform="translate(-6,1.25)" />
        <g id="sig315H11" transform="translate(0,26.5)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 H 20" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_01v" transform="translate(20,0)" />
+         <text transform="translate(26,0)" class="ta">315H11</text>
        </g>
        <g id="sig315H14_316V11" transform="translate(0,-13.5)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 H 20" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_01v_vor" transform="translate(20,0)" />
+         <text transform="translate(26,0)" class="ta">314H14 + 316V11</text>
        </g>
        <g id="sig315H21" transform="translate(-5,-30) rotate(180)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 H 20" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_01v" transform="translate(20,10)" />
+         <text transform="rotate(180) translate(-20,-11)" class="tm">315H21</text>
        </g>
        <g id="sig315H24_314V21" transform="translate(-5,17) rotate(180)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 H 20" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_01v_vor" transform="translate(20,0)" />
+         <text transform="rotate(180) translate(-26,10)">315H24 + 314V21</text>
        </g>
     </g>
    </g>
@@ -2834,46 +2864,120 @@
      <text transform="rotate(45) translate(8,-8)">Industriehof<tspan class="hstdetails"> (IH, 317)</tspan></text>
      <g class="hstdetails">
        <g id="sig316V21" transform="translate(-5,40) rotate(180)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 H 20" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_vor" transform="translate(20,0)" />
+         <text transform="translate(40,-16) rotate(-135)">316V21</text>
        </g>
        <g id="sig317R13" transform="translate(5,17) rotate(180)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,25 20,25 30,25" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_02v" transform="translate(30,25)" />
+         <text transform="translate(30,25) rotate(-135)" class="te">317R13</text>
        </g>
        <g id="sig317H24" transform="translate(-5,17) rotate(180)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,40 40,40 40,25" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_02v" transform="translate(40,25)" />
+         <text transform="translate(40,25) rotate(-135)" class="te">317H24</text>
        </g>
        <g id="sig317R26" transform="translate(-5,40)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 16,0 16,45 30,45" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_02v" transform="translate(30,45)" />
+         <text transform="translate(30,50) rotate(45)">317R26</text>
        </g>
        <g id="sig317H32" transform="translate(13,40)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,-10 40,-10 40,15" />
          <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_haupt_02v" transform="translate(40,55)" />
+         <text transform="translate(40,60) rotate(45)">317H32</text>
        </g>
      </g>
    </g>
    <g id="hst321" transform="translate(-442.5,1109.5)" class="te">
-    <use xlink:href="#bstg_ausen" transform="rotate(-45)" />
+    <use xlink:href="#bstg_ausen" transform="rotate(-45)" onclick="toggle_details(this)" />
     <text x="-5.5" y="21.5">Fischstein</text>
+    <text x="-5.5" y="30.5" class="hstdetails">(FS, 321)</text>
     <g class="c2_strecke kilometer te"><g transform="rotate(-75) translate(0,-60) rotate(75)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 0,36</text></g><use xlink:href="#punkt2" transform="rotate(-75)"/></g>
    </g>
    <g id="hst322" transform="translate(-470,1025)" class="te">
-    <use xlink:href="#bstg_ausen" />
+    <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Hausener Weg</text>
+    <text x="-15" y="15" class="hstdetails">(HU, 322)</text>
     <g class="c2_strecke kilometer te"><g transform="rotate(-120) translate(0,-60) rotate(120)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 0,80</text></g><use xlink:href="#punkt2" transform="rotate(-120)" /></g>
    </g>
    <g id="hst323" transform="translate(-470,925)" class="te">
-    <use xlink:href="#bstg_ausen" />
+    <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Stephan-Heise-Straße</text>
+    <text x="-15" y="15" class="hstdetails">(SH, 323)</text>
     <g class="c2_strecke kilometer te"><g transform="rotate(-120) translate(0,-60) rotate(120)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 1,50</text></g><use xlink:href="#punkt2" transform="rotate(-120)" /></g>
    </g>
    <g id="hst324" transform="translate(-470,825)" class="te">
-    <use xlink:href="#bstg_ausen" />
+    <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Friedhof Westhausen</text>
+    <text x="-15" y="15" class="hstdetails">(FW, 324)</text>
     <g class="c2_strecke kilometer te"><g transform="rotate(-120) translate(0,-60) rotate(120)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 1,80</text></g><use xlink:href="#punkt2" transform="rotate(-120)"/></g>
    </g>
    <g id="hst326" transform="translate(-470,725)" class="te">
-    <use xlink:href="#bstg_mitte" />
-    <text x="-10" y="5">Heerstraße</text>
-    <g class="c2_strecke kilometer te"><g transform="rotate(-120) translate(0,-60) rotate(120)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 2,40</text></g><use xlink:href="#punkt2" transform="rotate(-120)"/></g>
+     <g onclick="toggle_details(this)">
+       <use xlink:href="#bstg_mitte" onclick="toggle_details(this)" />
+       <use id="he_15" xlink:href="#vierabstell" transform="translate(5,-90)" />
+       <use id="he_22" xlink:href="#vierabstell" transform="translate(-5,-90)" />
+     </g>
+     <text x="-10" y="5">Heerstraße</text>
+     <text x="-15" y="15" class="hstdetails">(HE, 326)</text>
+     <g class="c2_strecke kilometer te"><g transform="rotate(-120) translate(0,-60) rotate(120)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 2,40</text></g><use xlink:href="#punkt2" transform="rotate(-120)"/></g>
+     <g class="hstdetails">
+       <g id="326Y10" transform="translate(5,65)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 c 10,0 38,-5 38,-15" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_01v" transform="translate(40,-15)" />
+         <text x="46" y="-15" class="ta">326Y10</text>
+       </g>
+       <g id="326Y11" transform="translate(5,50)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 H 20" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_012v" transform="translate(20,0)" />
+         <text x="46" y="-10" class="ta">326Y11</text>
+       </g>
+       <g id="326Y13" transform="translate(5,17) rotate(180)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,5 30,5 30,0" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_01v" transform="translate(30,0)" />
+         <text transform="rotate(180) translate(-56,20)">326Y13</text>
+       </g>
+       <g id="326Y14" transform="translate(5,-17)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 H 20" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_012v" transform="translate(20,0)" />
+         <text x="26" y="0" class="ta">326Y14</text>
+       </g>
+       <g id="326Y15" transform="translate(5,-65) rotate(180)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,25 30,25 30,15" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_03v" transform="translate(30,15)" />
+         <text transform="rotate(180) translate(-56,5)">326Y15</text>
+       </g>
+       <g id="326Y22" transform="translate(-5,-65) rotate(180)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,25 40,25 40,15" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_01v" transform="translate(40,15)" />
+         <text transform="rotate(180) translate(-46,-5)">326Y22</text>
+       </g>
+       <g id="326Y24" transform="translate(-5,17) rotate(180)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 2,5 40,5 40,0" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_012v" transform="translate(40,0)" />
+         <text transform="rotate(180) translate(-46,10)">326Y24</text>
+       </g>
+       <g id="326Y62" transform="translate(-20,-35) rotate(90)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 C 11,0 11,5 20,5" />
+         <use xlink:href="#signalplatz" />
+         <use xlink:href="#signal_f_01v" transform="translate(20,35)" />
+         <text transform="rotate(-90) translate(-36,24)">326Y62</text>
+       </g>
+     </g>
    </g>
    <g id="hst327" transform="translate(-470,505)" class="geplant rtw te"><use xlink:href="#bstg_mitte" /><text x="-10" y="5">Gewerbegebiet Praunheim</text></g>
    <g id="hst351" transform="translate(-390,1041)">
