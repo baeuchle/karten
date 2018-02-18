@@ -572,12 +572,6 @@
     <use xlink:href="#signal_f0" transform="translate(0,-30)" />
     <use xlink:href="#signal_a16" transform="translate(0,-40)" />
   </g>
-  <g id="signal_f_03v">
-    <use xlink:href="#signalfuss" />
-    <use xlink:href="#signal_f7" transform="translate(0,-10)" />
-    <use xlink:href="#signal_f3" transform="translate(0,-20)" />
-    <use xlink:href="#signal_f0" transform="translate(0,-30)" />
-  </g>
   <g id="signal_f_012v">
     <use xlink:href="#signalfuss" />
     <use xlink:href="#signal_f7" transform="translate(0,-10)" />
@@ -598,6 +592,18 @@
     <use xlink:href="#signal_f3" transform="translate(0,-20)" />
     <use xlink:href="#signal_f2" transform="translate(0,-30)" />
     <use xlink:href="#signal_f0" transform="translate(0,-40)" />
+  </g>
+  <g id="signal_f_02v">
+    <use xlink:href="#signalfuss" />
+    <use xlink:href="#signal_f7" transform="translate(0,-10)" />
+    <use xlink:href="#signal_f2" transform="translate(0,-20)" />
+    <use xlink:href="#signal_f0" transform="translate(0,-30)" />
+  </g>
+  <g id="signal_f_03v">
+    <use xlink:href="#signalfuss" />
+    <use xlink:href="#signal_f7" transform="translate(0,-10)" />
+    <use xlink:href="#signal_f3" transform="translate(0,-20)" />
+    <use xlink:href="#signal_f0" transform="translate(0,-30)" />
   </g>
   <g id="signal_f_01">
     <use xlink:href="#signalfuss" />
@@ -946,10 +952,10 @@
     <g class="bs_strecke kilometer ta" transform="translate(10,0)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 7,75</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
     <g class="ds_strecke kilometer ta" transform="translate(20,0)"><g transform="rotate(30) translate(0,-99) rotate(-30)"><use xlink:href="#kasten3" /><text x="10" y="4">km 10,0</text></g><use xlink:href="#punkt1" transform="rotate(30)" /></g>
      <g class="hstdetails">
-       <use xlink:href="#gleis1" transform="translate(-5,0)" />
+       <use xlink:href="#gleis4" transform="translate(-5,0)" />
        <use xlink:href="#gleis2" transform="translate(5,0)" />
-       <use xlink:href="#gleis3" transform="translate(15,0)" />
-       <use xlink:href="#gleis4" transform="translate(25,0)" />
+       <use xlink:href="#gleis1" transform="translate(15,0)" />
+       <use xlink:href="#gleis3" transform="translate(25,0)" />
        <g class="ta" transform="translate(-150,85)">
         <text>Gleis 4 und der anschließende Tunnelstutzen</text>
         <text y="10">werden nur für Feuerwehrübungen benutzt.</text>
@@ -2152,8 +2158,8 @@
    <path id="gw_613w33w21" d="M 280,1615 c 0,-10 10,-10 10,-20" />
    <path id="gw_613w14w24" d="M 270,1540 c 0,-10 10,-10 10,-20" />
    <g id="wa_seckbacher_ldstr" transform="translate(516,1250)">
-    <path id="g714A61" class="endet" d="M -5,0 c 0,-5 5,-5 5,-10 v -65" />
-    <path id="g714A62" class="endet" d="M 5,0 v -75" />
+    <path id="g714A61" class="endet" d="M -5,0 c 0,-5 5,-5 5,-10 v -70" />
+    <path id="g714A62" class="endet" d="M 5,0 v -80" />
     <path id="g714K60_1" d="M 0,-10 c 0,-5 5,-5 5,-10 c 0,-5 5,-5 5,-10" />
     <path id="g714K60_2" d="M 5,-10 c 0,-5 -5,-5 -5,-10" />
    </g>
@@ -2161,8 +2167,8 @@
   <g id="strecke_aebene" class="tunnel">
    <path id="badhomburg_1b" class="geplant verlaengerung_badhomburg" d="M 515,61 v -35 c 0,-5 -5,-5 -5,-10 v -20" />
    <path id="badhomburg_2b" class="geplant verlaengerung_badhomburg" d="M 510,16 c 0,5 -5,5 -5,10 v 35" />
-   <path id="b_1_stamm2" class="endet" d="M 290,1650 v -90 q 0,-20 15,-35 l 198,-198 q 18,-18 18,-42 v -35 c 0,-10 5,-10 5,-20 v -55" />
-   <path id="b_2_stamm2" class="faeng" d="M 511,1175 v 122 q 0,16 -12,28 l -201,201 q -18,18 -18,42 v 82" />
+   <path id="b_1_stamm2" class="endet" d="M 290,1650 v -90 q 0,-20 15,-35 l 198,-198 q 18,-18 18,-42 v -35 c 0,-10 5,-10 5,-20 v -60" />
+   <path id="b_2_stamm2" class="faeng" d="M 511,1170 v 127 q 0,16 -12,28 l -201,201 q -18,18 -18,42 v 82" />
    <path id="scheffeleck_2" class="tunnel" d="M 270,1515 v 90 c 0,10 10,10 10,20"/>
   </g>
   <g id="hst_aebene">
@@ -2412,6 +2418,14 @@
      </a>
      <g class="b2_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 12,9</text></g><use xlink:href="#punkt2" transform="rotate(30)"/></g>
      <g class="hstdetails">
+       <g>
+         <g transform="translate(-10,-65)" class="bgleisnummer"><circle cy="-1" r="2" /><text>15</text></g>
+         <g transform="translate(-5,-95)" class="bgleisnummer"><circle cy="-1" r="2" /><text>13</text></g>
+         <g transform="translate(0,-95)" class="bgleisnummer"><circle cy="-1" r="2" /><text>131</text></g>
+         <g transform="translate(5,-95)" class="bgleisnummer"><circle cy="-1" r="2" /><text>141</text></g>
+         <g transform="translate(10,-95)" class="bgleisnummer"><circle cy="-1" r="2" /><text>14</text></g>
+         <g transform="translate(23,-70)" class="bgleisnummer"><circle cy="-1" r="2" /><text>16</text></g>
+       </g>
        <g id="sig713V11" transform="translate(-5,25) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 H 20" />
          <use xlink:href="#signalplatz" />
@@ -2467,6 +2481,7 @@
          <text class="te" transform="rotate(180) translate(-121,15)">714H32</text>
        </g>
        <g id="sig714V32" transform="translate(-10,-70) rotate(180)" onmouseover="highlight(this)">
+         <path class="signalverbinder" d="M 2,0 H 15" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_vor" transform="translate(15,15)" />
          <text class="te" transform="rotate(180) translate(-21,5)">714V32</text>
@@ -4724,7 +4739,7 @@
        <g id="sig822Y13R" transform="translate(-5,-17)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,5 30,5 30,0" />
          <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_f_01v" transform="translate(30,0)" />
+         <use xlink:href="#signal_f_02v" transform="translate(30,0)" />
          <text transform="translate(56,-35)">822Y13R</text>
        </g>
        <g id="sig822Y14" transform="translate(-5,17) rotate(180)" onmouseover="highlight(this)">
