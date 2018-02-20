@@ -8,6 +8,7 @@
   viewBox="-815 -169 1765 2129"
   onload="readquery()"
   >
+ <title>U-Bahn-Gleisplan Frankfurt am Main</title>
  <metadata>
   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -642,94 +643,102 @@
  <text class="te ab_bb" x="947" y="1958">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <g id="textboxen">
   <g id="legende" transform="translate(550,-169)">
-   <rect class="box" width="400" height="304" />
+   <rect class="box" width="400" height="785" />
    <a xlink:href="https://de.wikipedia.org/wiki/U-Bahn_Frankfurt">
     <text class="ueberschrift" x="15" y="35">U-Bahn Frankfurt am Main</text>
    </a>
    <text class="unterschrift" x="15" y="60">Streckennetz (ohne Maßstab)</text>
    <text class="stand"        x="15" y="80">Stand: <tspan class="stand_monat"/></text>
-   <g id="legende_strecke" transform="translate(30,120)">
-    <path class="tunnel" d="M 0 -6 h 30" />
-    <path class="strecke" d="M 30 -6 h 30" />
-    <use xlink:href="#tunnelrampe" transform="translate(30,-6) rotate(90)" />
-    <text x="75">Tunnelstrecke / Portal / Oberirdisch</text>
-   </g>
-   <g id="legende_straße" transform="translate(30,150)">
-    <path class="strasse" d="M 0 -6 h 20" />
-    <path class="eigen" d="M 40 -6 h 20" />
-    <path class="strecke" d="M 0 -6 h 60" />
-    <use xlink:href="#weg" transform="translate(30,-6)" />
-    <text x="75" y="-5">Besonderer Ausbauzustand:</text>
-    <text x="75" y="5" class="ab_bb">straßenbahnmäßig / gesperrt / kreuzungsfrei</text>
-   </g>
-   <g id="legende_dosto"  transform="translate(30,180)">
-    <path class="tunnel"  d="M 0 -10 h 20 c 8.5,0 10,3 18.5,3 h 21.5 m 0,5 h -21.5 c -8.5,0 -10,3 -18.5,3 h -20" />
-    <text x="75">Normaler / Doppelstöckiger Tunnel</text>
-   </g>
-   <g id="legende_ansch" transform="translate(30,210)">
-    <path class="uberg strecke" d="M 0 -6 h 30" />
-    <path class="tramg strecke" d="M 30,-6 h 30" />
-    <text x="35" class="tm ref">X</text>
-    <text x="75">Anschluss an <a xlink:href="strassenbahnnetz.svg/0000000000000000000000000000000000000000">Straßenbahn-Netz Frankfurt</a></text>
-    <text x="75" y="10" class="ab_bb">(mit kurzem Ausschnitt der Straßenbahngleise)</text>
-   </g>
-   <g id="legende_inbau" transform="translate(30,250)">
-    <path class="strecke geplant" d="M 0,-6 h 30" />
-    <path class="tunnel geplant" d="M 30,-6 h 30" />
-    <text x="75">Abschnitt in Bau
-     <tspan class="nowiki">/ geplant <tspan class="ab_bb">(siehe Legende links)</tspan></tspan>
-    </text>
-   </g>
-   <g class="nowiki" id="legende_db" transform="translate(30,280)">
-    <path class="nowiki strecke ansch" d="M 0 -6 h 40" />
-    <text x="75" class="nowiki">Anschluss an DB-Netz</text>
-   </g>
-   <text class="ab_bb" transform="translate(30,298)">BB: Betriebsbahnhof, AB: Abstellbahnhof</text>
-    <g class="nowiki">
-    <text class="ab_bb te" transform="translate(382,298)"><a xlink:href="https://commons.wikimedia.org/wiki/File:U-Netz_Frankfurt.svg">Dieser Plan bei Wikipedia</a></text>
-    <!--<a xlink:href="https://commons.wikimedia.org/wiki/File:U-Netz_Frankfurt.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(383,286)"/></a>-->
-   </g>
-  </g>
-  <g id="bahnsteigshoehen" transform="translate(740,135)">
-   <rect class="box" width="210" height="370" x="0" y="0" />
-   <text x="105" y="20" class="tm headline">Haltestellen</text>
-   <path class="strecke" d="M 15,35 v 300 M 25,35 v 300" />
-   <use xlink:href="#bstg_tramb" transform="translate(20,41.5)" />
-   <text x="35" y="50">Straßenbahn-Bahnsteig</text>
-   <use xlink:href="#drei_ausen" transform="translate(20,80)" />
-   <text x="35" y="79">3-Wagen-Bahnsteig (78 m)</text>
-   <text x="35" y="91" class="ab_bb">Höhe 80 cm (über <a xlink:href="https://de.wikipedia.org/wiki/Schienenoberkante">SOK</a>)</text>
-   <use xlink:href="#bstg_nidda" transform="translate(20,120)" />
-   <use xlink:href="#bstg_feuer" transform="translate(25,120)" />
-   <text x="35" y="119">4-Wagen-Bahnsteig (105 m)</text>
-   <text x="35" y="131" class="ab_bb">Höhe 56 cm / 87 cm</text>
-   <use xlink:href="#kameliger" transform="translate(25,160)" />
-   <use xlink:href="#kameliger" transform="translate(15,160) rotate(180)" />
-   <text x="35" y="153">3-Wagen-Bahnsteig (73 m)</text>
-   <text x="35" y="165" class="ab_bb">Außen 60 cm, Mitte 80 cm,</text>
-   <text x="35" y="177" class="ab_bb">dazwischen Rampen</text>
-   <use xlink:href="#haltestel" transform="translate(25,190)" />
-   <text x="35" y="195">Einsteig von Straße</text>
-   <use xlink:href="#drei_ausen" transform="translate(20,220)" />
-   <use xlink:href="#bau" transform="translate(30,220)" />
-   <use xlink:href="#uml" transform="translate(10,220) rotate(90)" />
-   <text x="35" y="219">Umbauten</text>
-   <text x="35" y="231" class="ab_bb">Ersatzhaltestelle / Halt entfällt</text>
-   <text x="35" y="255">Abstellkapazitäten</text>
-   <use xlink:href="#einsabstell" transform="translate(15,260)" />
-   <use xlink:href="#zweiabstell" transform="translate(25,260)" />
-   <text x="35" y="268.5" class="ab_bb">1 Wagen / 2 Wagen</text>
-   <use xlink:href="#dreiabstell" transform="translate(15,275)" />
-   <use xlink:href="#vierabstell" transform="translate(25,275)" />
-   <text x="35" y="288.5" class="ab_bb">3 Wagen / 4 Wagen</text>
-   <use xlink:href="#funfabstell" transform="translate(15,300)" />
-   <use xlink:href="#sechabstell" transform="translate(25,300)" />
-   <text x="35" y="318.5" class="ab_bb">5 Wagen / 6 Wagen</text>
-   <g class="nowiki" transform="translate(5,345)">
-    <text class="ab_bb">Durch Anklicken der Bahnsteigs- und</text>
-    <text y="10" class="ab_bb">Abstellsymbole können Details zur</text>
-    <text y="20" class="ab_bb">jeweiligen Haltestelle angezeigt werden</text>
-   </g>
+   <path d="M 20,125 c 0,10 10,10 10,20" class="strecke bb" />
+   <path d="M 30,125 c 0,10 -10,10 -10,20" class="strecke bb" />
+   <path d="M 20,145 c 0,5 5,5 5,10 v 15" class="strecke bb endet" />
+   <path d="M 30,145 c 0,5 -5,5 -5,10" class="strecke bb" />
+   <path d="M 20,100 v 70" class="strecke faeng" />
+   <path d="M 30,100 v 70" class="strecke faeng" />
+   <path d="M 20,170 v 30" class="strecke geplant" />
+   <path d="M 30,170 v 30" class="strecke geplant" />
+   <path d="M 20,230 v 20" class="strasse" />
+   <path d="M 30,230 v 20" class="strasse" />
+   <path d="M 20,250 v 20" class="eigen" />
+   <path d="M 30,250 v 20" class="eigen" />
+   <path d="M 20,200 v 450" class="strecke" />
+   <path d="M 30,200 v 450" class="strecke" />
+   <path d="M 20,650 v 87" class="strecke bb endet" />
+   <path d="M 30,650 v 87" class="strecke bb endet" />
+   <path d="M 30,650 c 0,5 -5,5 -5,10" class="strecke bb" />
+   <path d="M 20,650 c 0,5 5,5 5,10 v 77" class="strecke bb endet" />
+   <path d="M 45,275 a 25,25 0,0,0 -25,25 a 20,20 0,0,0 20,20 h 15" class="strecke uberg" />
+   <path d="M 45,285 a 15,15 0,0,0 -15,15 a 15,15 0,0,0 15,15 h 10" class="strecke uberg" />
+   <path d="M 55,315 h 10 a 10,10 0,0,1 10,10 v 10 m 0,-10 v -20" class="strecke tramg" />
+   <path d="M 55,320 h 10 a 5,5 0,0,1 5,5 v 10 m 0,-10 v -20" class="strecke tramg" />
+   <path d="M 20,335 a 25,25 0,0,0 25,25 h 10" class="strecke ansch nowiki" />
+   <path d="M 30,335 a 15,15 0,0,0 15,15 h 10" class="strecke ansch nowiki" />
+   <text transform="translate(60,322)" class="tm ref">X</text>
+   <use xlink:href="#tunnelrampe" transform="translate(45,280) rotate(-90)" />
+   <use xlink:href="#weg" transform="translate(20,375)" />
+   <path class="tor" d="M 25,375 h 10" />
+   <path d="M 60,125 c 0,10 10,10 10,20" class="tunnel tb" />
+   <path d="M 60,145 c 0,5 5,5 5,10 v 15" class="tunnel tb endet" />
+   <path d="M 70,145 c 0,5 -5,5 -5,10" class="tunnel tb" />
+   <path d="M 60,100 v 70" class="tunnel faeng" />
+   <path d="M 70,100 v 70" class="tunnel faeng" />
+   <path d="M 60,170 v 30" class="tunnel geplant" />
+   <path d="M 70,170 v 30" class="tunnel geplant" />
+   <path d="M 60,200 c 0,5 2.5,5 2.5,10 v 20 c 0,5 -2.5,5 -2.5,10 v 20 a 15,15 0,0,1 -15,15" class="tunnel" />
+   <path d="M 70,200 c 0,5 -2.5,5 -2.5,10 v 20 c 0,5 2.5,5 2.5,10 v 20 a 25,25 0,0,1 -25,25" class="tunnel" />
+   <text transform="translate(80,105)">Gleisende</text>
+   <text transform="translate(80,120)">Zweigleisige Strecke (Hauptgleise)</text>
+   <text transform="translate(80,140)">Gleiswechsel</text>
+   <text transform="translate(80,160)">Betriebsgleis / Wendeanlage</text>
+   <text transform="translate(80,180)">Abschnitt in Bau</text>
+   <text transform="translate(80,195)" class="nowiki">/ geplant <tspan class="ab_bb">(siehe Legende links)</tspan></text>
+   <text transform="translate(80,225)">Doppelstöckiger Tunnel</text>
+   <text transform="translate(80,245)">Keine bauliche Trennung zur Straße</text>
+   <text transform="translate(80,265)">Kreuzungsfreie Trassierung</text>
+   <text transform="translate(80,285)">Tunnelportal</text>
+   <text transform="translate(80,310)">Anschluss an <a xlink:href="strassenbahnnetz.svg/0000000000000000000000000000000000000000">Straßenbahn-Netz Frankfurt</a></text>
+   <text transform="translate(80,325)">mit Referenz</text>
+   <text transform="translate(80,340)" class="ab_bb">(und kurzem Ausschnitt der Straßenbahngleise)</text>
+   <text transform="translate(80,360)">Anschluss an DB-Netz</text>
+   <text transform="translate(80,380)">Gleis gesperrt / Tor</text>
+   <text transform="translate(60,400)" class="headline">Haltestellen</text>
+   <text transform="translate(80,415)" class="ab_bb">Die Farbe der Bahnsteige gibt die Höhe an,</text>
+   <text transform="translate(80,425)" class="ab_bb">die Anzahl der Unterteilungen die Länge</text>
+   <text transform="translate(80,435)" class="ab_bb">(ein Segment = ein Stadtbahnwagen).</text>
+   <text transform="translate(70,455)">Einsteig von der Straße</text>
+   <text transform="translate(70,475)">Straßenbahn-Bahnsteig</text>
+   <text transform="translate(70,505)">Höhe 80 cm (über <a xlink:href="https://de.wikipedia.org/wiki/Schienenoberkante">SOK</a>), Länge 105 m</text>
+   <text transform="translate(70,535)">Sonderform für Musterschule und Glauburgstraße:</text>
+   <text transform="translate(70,545)" class="ab_bb">Nur im Mittelteil 80 cm, vorderer und hinterer Teil 60 cm. Länge 73 m</text>
+   <text transform="translate(70,570)">Umbauten</text>
+   <text transform="translate(70,580)" class="ab_bb">Ersatzhaltestelle / Halt entfällt</text>
+   <text transform="translate(70,612)">Links: Höhe 56 cm (nur Niddapark und Römerstadt)</text>
+   <text transform="translate(70,626)">Rechts: Höhe 87 cm (nur Hauptbahnhof Gleis 3)</text>
+   <text transform="translate(60,650)" class="headline">Betriebshöfe (BB) und Abstellanlagen (AB)</text>
+   <text transform="translate(70,675)" class="ab_bb">Abstell- und Wendegleise,</text>
+   <text transform="translate(70,690)" class="ab_bb">jedes Segment für die Länge eines Stadtbahnwagens</text>
+   <text transform="translate(70,727)">Gebäude (Waschanlage, Werkstadt, Halle)</text>
+   <text transform="translate(20,750)" class="nowiki ab_bb">Durch Anklicken der Bahnsteigs- und Abstellsymbole können Details zur</text>
+   <text transform="translate(20,760)" class="nowiki ab_bb">jeweiligen Halte-/Betriebsstelle angezeigt werden</text>
+   <text transform="translate(382,778)" class="nowiki ab_bb te"><a xlink:href="https://commons.wikimedia.org/wiki/File:U-Netz_Frankfurt.svg">Dieser Plan bei Wikipedia</a></text>
+   <a class="nowiki" xlink:href="https://commons.wikimedia.org/wiki/File:U-Netz_Frankfurt.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(383,766)"/></a>
+   <use xlink:href="#haltestel" transform="translate(30,450)" />
+   <use xlink:href="#bstg_tramb" transform="translate(25,467)" />
+   <use xlink:href="#bstg_ausen" transform="translate(25,501)" />
+   <use xlink:href="#kameliger" transform="translate(30,536)" />
+   <use xlink:href="#kameliger" transform="translate(20,536) rotate(180)" />
+   <use xlink:href="#bstg_ausen" transform="translate(25,571)" />
+   <use xlink:href="#bau" transform="translate(15,571)" />
+   <use xlink:href="#uml" transform="translate(35,571) rotate(90)" />
+   <use xlink:href="#bstg_nidda" transform="translate(25,616)" />
+   <use xlink:href="#bstg_feuer" transform="translate(30,616)" />
+   <use xlink:href="#einsabstell" transform="translate(20,665)" />
+   <use xlink:href="#zweiabstell" transform="translate(25,665)" />
+   <use xlink:href="#dreiabstell" transform="translate(30,665)" />
+   <use xlink:href="#vierabstell" transform="translate(30,685)" />
+   <use xlink:href="#funfabstell" transform="translate(25,680)" />
+   <use xlink:href="#sechabstell" transform="translate(20,675)" />
+   <path class="gebaude wand" d="M 16,710 h 18 v 30 h -18 v -30" />
   </g>
   <g id="ausbauprojekte" transform="translate(-815,0)">
    <rect class="box" width="305" height="310" />
@@ -922,8 +931,8 @@
    <path id="a_2_stamm" class="endet" d="M 110,1130 V 1955" />
    <path id="d_1" class="faeng endet" d="M -200,1705 v -285 c 0,-7.5 2.5,-7.5 2.5,-15 v -45" />
    <path id="d_2" class="faeng endet" d="M -212.5,1360 v 45 c 0,7.5 2.5,7.5 2.5,15 v 175 c 0,25 -20,25 -20,50 v 80" />
-   <path id="ginnheimertunnel_1" class="geplant ginnheimer_kurve" d="M -130,1280 v 4 c 0,8 -1,8 -1,16" />
-   <path id="ginnheimertunnel_2" class="geplant ginnheimer_kurve" d="M -119,1300 c 0,-8 -1,-8 -1,-16 v -4" />
+   <path id="ginnheimertunnel_1" class="geplant ginnheimer_kurve" d="M -130,1280 a 30,30 0,0,1 -30,30 h -12.5 a 40,40 0,0,0 -40,40 v 10" />
+   <path id="ginnheimertunnel_2" class="geplant ginnheimer_kurve" d="M -197.5,1360 v -10 a 30,30 0,0,1 30,-30 h 7.5 a 40,40 0,0,0 40,-40" />
    <path id="ostbahnhof_1" class="faeng" d="M 564,1670 l -64,-64 q -9,-9 -9,-21 a 20,20 0,0,0 -20,-20 h -62 c -10,0 -10,10 -20,10" />
    <path id="ostbahnhof_2" class="endet" d="M 449,1585 q 16,0 28,12 l 80,80" />
   </g>
@@ -957,9 +966,9 @@
        <use xlink:href="#gleis1" transform="translate(15,0)" />
        <use xlink:href="#gleis3" transform="translate(25,0)" />
        <g class="ta" transform="translate(-150,85)">
-        <text>Gleis 4 und der anschließende Tunnelstutzen</text>
+        <text>Gleis 3 und der anschließende Tunnelstutzen</text>
         <text y="10">werden nur für Feuerwehrübungen benutzt.</text>
-        <text y="20">(Bahnsteigshöhe Gleis 4 87 cm)</text>
+        <text y="20">(Bahnsteigshöhe Gleis 3 87 cm)</text>
        </g>
        <g id="sig211H11_211V12" transform="translate(160,65) rotate(-90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 H 20" />
@@ -4146,17 +4155,17 @@
    </g>
    <g id="hst633" transform="translate(435,550)" class="geplant frankfurter_berg">
     <use xlink:href="#drei_ausen" />
-    <text x="15" y="5">August-Schanz-Straße</text>
+    <text x="-15" y="5" class="te">August-Schanz-Straße</text>
     <g class="bs_strecke kilometer"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 16,15</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
    </g>
    <g id="hst634" transform="translate(435,470)" class="geplant frankfurter_berg">
     <use xlink:href="#drei_ausen" />
-    <text x="15" y="5">Berkersheimer Weg</text>
+    <text x="-15" y="5" class="te">Berkersheimer Weg</text>
     <g class="bs_strecke kilometer"><g transform="rotate(60) translate(0,-60) rotate(-60)"><use xlink:href="#kasten4" /><text x="6" y="4">km 16,65</text></g><use xlink:href="#punkt2" transform="rotate(60)" /></g>
    </g>
-   <g id="hst635" transform="translate(435,380)" class="geplant frankfurter_berg">
+   <g id="hst635" transform="translate(435,380)" class="geplant frankfurter_berg te">
     <use xlink:href="#drei_mitte" />
-    <text x="15" y="5">Frankfurter Berg</text>
+    <text x="-15" y="5">Frankfurter Berg</text>
    </g>
    <g id="hst641" transform="translate(65,391)"><use xlink:href="#hstgrid" />
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
@@ -4850,11 +4859,11 @@
    <g transform="translate(-800,-139)"><g transform="rotate(180) translate(0,-60) rotate(-180)"><use xlink:href="#kasten4" /><text x="6" y="4">km 27,24</text></g><use xlink:href="#punkt3" transform="rotate(180)" /></g>
   </g>
   <g class="bs_strecke kilometer">
-   <path class="kilometrierung" d="M -275,1580 a 55,55 0,0,1 55,55 v 50 q 0,22 16.5,38.5 q 16.5,16.5 38.5,16.5 h 100 q 21,0 36,-16.5 l 2,-2 q 16.5,-16.5 36,-16.5 h 221 a 55,55 0,0,0 55,-55 v -76" />
+   <path class="kilometrierung" d="M -270,1580 a 55,55 0,0,1 55,55 v 50 q 0,22 16.5,38.5 q 16.5,16.5 38.5,16.5 h 95 q 21,0 36,-16.5 l 2,-2 q 16.5,-16.5 36,-16.5 h 221 a 55,55 0,0,0 55,-55 v -76" />
    <g transform="translate(285,1580)"><g transform="rotate(150) translate(0,-99) rotate(210)"><use xlink:href="#kasten3" /><text x="10" y="4">km 10,0</text></g><use xlink:href="#punkt1" transform="rotate(150)"/></g>
    <g transform="translate(-275,1580)" class="te"><g transform="rotate(-30) translate(0,-60) rotate(30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 7,45</text></g><use xlink:href="#punkt3" transform="rotate(-30)" /></g>
    <g class="verlaengerung_europaviertel geplant">
-    <path class="kilometrierung" d="M -690,1580 h 408" />
+    <path class="kilometrierung" d="M -690,1580 h 413" />
     <g transform="translate(-360,1580)" class="te"><g transform="rotate(-30) translate(0,-60) rotate( 30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 6,35</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
     <g transform="translate(-460,1580)" class="te"><g transform="rotate(-30) translate(0,-60) rotate( 30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 5,79</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
     <g transform="translate(-540,1580)" class="te"><g transform="rotate(-30) translate(0,-60) rotate( 30)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 5,50</text></g><use xlink:href="#punkt2" transform="rotate(-30)"/></g>
@@ -4903,7 +4912,7 @@
    <g transform="translate(-390,906)"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 1,17</text></g><use xlink:href="#punkt3" transform="rotate(30)" /></g>
   </g>
   <g class="ds_strecke kilometer">
-   <path class="kilometrierung" d="M -210,1670 v -310" />
+   <path class="kilometrierung" d="M -205,1670 v -310" />
    <g transform="translate(-210,1360)"><g transform="rotate(90) translate(0,-60) rotate(-90)"><use xlink:href="#kasten3" /><text x="6" y="4">km 12,0</text></g><use xlink:href="#punkt3" transform="rotate(90)" /></g>
    <path class="kilometrierung" d="M -125,521 v -33 q 0,-22 -16.5,-38.5 M -158,271 a 55,55 0,0,1 55,-55 h 234" />
    <path class="kilometrierung klein" d="M -141.5,449.5 q -16.5,-16.5 -16.5,-38.5 v -140" />
