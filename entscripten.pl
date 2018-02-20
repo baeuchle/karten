@@ -10,6 +10,8 @@ my $g_wiki = 0;
 while (<>) {
   $script = 1 if /<script\b/;
   s/onclick="[^"]+"//g;
+  s/onmouseover="[^"]+"//g;
+  s/\.nowiki\s+\{\s+display\:inline/.nowiki \{ display:none/g;
 
   if (/<g/) {
     $g_ausbau++ if /<g/ && $g_ausbau > 0;

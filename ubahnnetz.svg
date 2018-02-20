@@ -164,6 +164,8 @@
   .keinewand { stroke:none; }
   .beschrift path { fill:none; stroke:#93799a; stroke-width:.5; }
   .beschrift text { fill:black; stroke:none; font-size:3pt; }
+
+  .nowiki { display:inline; }
  ]]>
  </style>
  <script type="application/ecmascript"><![CDATA[
@@ -699,7 +701,7 @@
    <text transform="translate(80,310)">Anschluss an <a xlink:href="strassenbahnnetz.svg/0000000000000000000000000000000000000000">Straßenbahn-Netz Frankfurt</a></text>
    <text transform="translate(80,325)">mit Referenz</text>
    <text transform="translate(80,340)" class="ab_bb">(und kurzem Ausschnitt der Straßenbahngleise)</text>
-   <text transform="translate(80,360)">Anschluss an DB-Netz</text>
+   <text transform="translate(80,360)" class="nowiki">Anschluss an DB-Netz</text>
    <text transform="translate(80,380)">Gleis gesperrt / Tor</text>
    <text transform="translate(60,400)" class="headline">Haltestellen</text>
    <text transform="translate(80,415)" class="ab_bb">Die Farbe der Bahnsteige gibt die Höhe an,</text>
