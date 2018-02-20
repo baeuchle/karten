@@ -757,9 +757,9 @@
    <text class="hochstatio" x="10" y="220" onclick="geplant('frankfurter_berg')">Frankfurter Berg: <tspan class="link" id="frankfurter_berg_aktion">anzeigen</tspan></text>
    <text class="hochstatio" x="15" y="235" onclick="geplant('frankfurter_berg')">Preungesheim → Frankfurter Berg</text>
    <text class="ab_bb"      x="20" y="250">Status: Planfeststellung wird vorbereitet</text>
-   <text class="hochstatio" x="10" y="270" onclick="geplant('rtw')">Regionaltangente West: <tspan class="link" id="rtw_aktion">anzeigen</tspan></text>
-   <text class="hochstatio" x="15" y="285" onclick="geplant('rtw')">(Eschborn →) Praunheim</text>
-   <text class="ab_bb"      x="20" y="300">Status: Genauer Verlauf wird noch untersucht</text>
+   <text class="hochstatio" x="10" y="270" onclick="geplant('rtw')">Regionaltangente West (PFA Nord): <tspan class="link" id="rtw_aktion">anzeigen</tspan></text>
+   <text class="hochstatio" x="15" y="285" onclick="geplant('rtw')">Sossenheim → Praunheim</text>
+   <text class="ab_bb"      x="20" y="300">Status: <a xlink:href="https://rp-darmstadt.hessen.de/pressemitteilungen/rp-leitet-anhörung-für-regionaltangente-west-ein-abschnitt-nord">Planfeststellung beantragt</a> (am 18.12.2017)</text>
   </g>
   <g id="kilometrierungen" transform="translate(-120,-169)">
    <rect class="box" width="400" height="160" />
@@ -2651,18 +2651,19 @@
  <g id="betriebshoefe" class="strecke bb">
   <g id="stzw" transform="translate(-660,775)">
    <a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Stadtbahnzentralwerkstatt">
-     <text class="ab_bb te">Stadtbahn-</text>
-     <text class="ab_bb te" y="10">zentralwerkstatt</text>
+     <text class="ab_bb te" x="25">Stadtbahn-</text>
+     <text class="ab_bb te" x="25" y="10">zentralwerkstatt</text>
    </a>
    <path id="ausf_heerstrasse" d="M 195,-70 a 20,20 0,0,0 -20,-20 h -20 c -5,0 -5,5 -10,5" />
-   <path id="ring_betriebsstrecke" d="M 40,35 a 30,30 0,0,1 -30,-30 v -20 a 30,30 0,0,1 60,0 v 20 a 30,30 0,0,1 -30,30 a 25,25 0,0,1 -25,-25 v -55 a 40,40 0,0,1 40,-40 h 120 a 10,10 0,0,1 10,10" />
-   <path id="ausziehgleis" class="endet" d="M 15,-45 q 0,-12 9,-21 q 9,-9 21,-9 h 10" />
-   <path d="M 40,-45 a 17.5,17.5 0,0,1 -17.5,-17.5 q 0,-2 1.5,-3.5" />
-   <path d="M 15,-42 q 0,2 1.5,3.5 l 27,27 q 1.5,1.5 1.5,3.5 v 10" />
-   <path d="M 23.5,-31.5 q 1.5,1.5 1.5,3.5 v 30" />
-   <path d="M 28.5,-26.5 q 1.5,1.5 1.5,3.5 v 25" />
-   <path d="M 33.5,-21.5 q 1.5,1.5 1.5,3.5 v 20" />
-   <path d="M 38.5,-16.5 q 1.5,1.5 1.5,3.5 v 15" />
+   <path id="ring_betriebsstrecke" d="M 50,35 a 20,20 0,0,1 -20,-20 v -40 a 20,20 0,0,1 40,0 v 40 a 20,20 0,0,1 -20,20 a 14,14 0,0,1 -14,-14 v -86 a 20,20 0,0,1 20,-20 h 119 a 10,10 0,0,1 10,10" />
+   <path d="M 36,15 c 0,-3 -3,-3 -3,-6 v -30 q 0,-1.5 1.5,-3.5" />
+   <path d="M 30,-18 q 0,-1.5 1.5,-3.5 l 3,-3 q 1.5,-1.5 1.5,-3.5" />
+   <path class="faeng" d="M 39,-70 v 15 a 10,10 0,0,0 10,10" />
+   <path d="M 39,-55 c 0,3 -3,3 -3,6 c 0,6 6,6 6,12 v 31" />
+   <path d="M 43.5,-23.5 q 1.5,1.5 1.5,3.5 v 14" />
+   <path d="M 46.5,-20.5 q 1.5,1.5 1.5,3.5 v 11" />
+   <path d="M 49.5,-17.5 q 1.5,1.5 1.5,3.5 v 8" />
+   <path d="M 42,-27 q 0,2 1.5,3.5 l 9,9 q 1.5,1.5 1.5,3.5 v 5" />
   </g>
   <g id="wa_roemerstadt" transform="translate(-120,761)">
    <text x="-20" y="50" class="ab_bb te">AB Römerstadt</text>
