@@ -66,7 +66,7 @@
   .eigen { stroke-width:10px; stroke:#e0e0a0; fill:none; }
   .strecke, .strasse, .ebobahn, .tunnel { fill: none; }
   .geplant text { stroke:none; stroke-dasharray:none; font-size:70%; font-style:italic; }
-  .ebobahn text { font-size:10pt; fill:#008000; stroke:none; }
+  .ebobahn text { fill:#008000; stroke:none; }
   #tunnelrampe { fill:none; stroke:#000000; stroke-width:1px; }
   /* Text / Legenden */
   #aussen { fill:white; stroke:#0000c0; stroke-width:.1px; }
@@ -2609,6 +2609,11 @@
    <path id="wa_heerstrasse_2" d="M +5,0 c 0,-10 -10,-10 -10,-20" />
   </g>
   <path id="gw_heerstrasse" d="M -475,740 c 0,10 10,10 10,20 c 0,10 -10,10 -10,20" />
+  <path id="gw_ggheerstrasse" class="geplant rtw" d="M -425,575 c 10,0 10,10 20,10" /> 
+  <path id="wa_ggheersttasse" class="geplant rtw" d="M -375,575 c 10,0 10,10 20,10 m -20,0 c 10,0 10,-10 20,-10" />
+  <path id="wa_eschborn_3" class="geplant rtw endet" d="M -520,575 c -10,0 -10,10 -20,10 q -4,0 -7,3 l -9,9 q -3,3 -7,3 h -35" />
+  <path id="wa_eschborn_2" class="geplant rtw endet" d="M -551,592 q -3,3 -7,3 h -40" />
+  <path id="wa_eschborn_1" class="geplant rtw endet" d="M -558,595 c -5,0 -5,-5 -10,-5 h -30" />
   <path id="gw_hausen" d="M -395,941 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20" />
   <path id="gw_nelkenstraße" d="M -385,1121 c 0,10 -10,10 -10,20" />
   <path id="gw_industriehof" d="M -355,1190 c 7,7 0,14 7,21 c 7,7 14,0 21,7 M -340,1193 c -6,-6 -12,0 -18,-6 M -328,1260 c 0,-5 5,-5 5,-10" />
@@ -2645,7 +2650,10 @@
  </g>
  <g id="betriebshoefe" class="strecke bb">
   <g id="stzw" transform="translate(-660,775)">
-   <text class="ab_bb te"><a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Stadtbahnzentralwerkstatt">Stadtbahnzentralwerkstatt</a></text>
+   <a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Stadtbahnzentralwerkstatt">
+     <text class="ab_bb te">Stadtbahn-</text>
+     <text class="ab_bb te" y="10">zentralwerkstatt</text>
+   </a>
    <path id="ausf_heerstrasse" d="M 195,-70 a 20,20 0,0,0 -20,-20 h -20 c -5,0 -5,5 -10,5" />
    <path id="ring_betriebsstrecke" d="M 40,35 a 30,30 0,0,1 -30,-30 v -20 a 30,30 0,0,1 60,0 v 20 a 30,30 0,0,1 -30,30 a 25,25 0,0,1 -25,-25 v -55 a 40,40 0,0,1 40,-40 h 120 a 10,10 0,0,1 10,10" />
    <path id="ausziehgleis" class="endet" d="M 15,-45 q 0,-12 9,-21 q 9,-9 21,-9 h 10" />
@@ -2884,10 +2892,18 @@
    <path id="frankfurterberg_2" class="geplant frankfurter_berg faeng" d="M 430,360 v 210 c 0,20 -10,20 -10,40" />
    <path id="heerstrasse_1" class="faeng" d="M -475,625 v 435 q 0,24 18,42 l 123,123" />
    <path id="heerstrasse_2" class="endet" d="M -327,1218 l -123,-123 q -15,-15 -15,-35 v -435" />
-   <path id="rtw1" class="geplant rtw faeng ansch" d="M -475,485 v 40 a 50,50 0,0,1 -50,50 h -20" />
-   <path id="rtw2" class="geplant rtw endet" d="M -465,625 v -140" />
-   <path id="u6_1" class="geplant rtw ansch" d="M -465,525 a 60,60 0,0,1 -60,60 h -20" />
-   <path id="u6_2" class="geplant rtw" d="M -475,525 v 100" />
+   <path id="u6_1" class="geplant rtw" d="M -465,625 a 40,40 0,0,1 40,-40" />
+   <path id="u6_2" class="geplant rtw" d="M -425,575 a 50,50 0,0,0 -50,50" />
+   <path id="rtw_sossenheim_1" class="geplant rtw ebobahn" d="M -805,710 v 70" />
+   <path id="rtw_sossenheim_2" class="geplant rtw ebobahn" d="M -795,710 v 70" />
+   <path id="rtw_homburg_1" class="geplant rtw ebobahn" d="M -470,525 v -25 c 0,-7.5 5,-7.5 5,-15 c 0,-5 5,-5 5,-10 c 0,-5 -5,-5 -5,-10" />
+   <path id="rtw_homburg_2" class="geplant rtw ebobahn" d="M -455,525 v -25 c 0,-7.5 -5,-7.5 -5,-15" />
+   <path id="s5_1" class="geplant rtw ebobahn" d="M -460,565 v -115" />
+   <path id="s5_2" class="geplant rtw ebobahn" d="M -465,450 v 115" />
+   <path id="rtw1" class="geplant rtw faeng ansch" d="M -320,585 h -425 a 50,50 0,0,0 -50,50 v 75" />
+   <path id="rtw2" class="geplant rtw faeng ansch" d="M -320,575 h -425 a 60,60 0,0,0 -60,60 v 75" />
+   <path id="rtw_hauptgipfelslach_1" class="geplant rtw ansch" d="M -515,585 a 60,60 0,0,0 60,-60" />
+   <path id="rtw_hauptgipfelslach_2" class="geplant rtw ansch" d="M -520,575 a 50,50 0,0,0 50,-50" />
    <path id="enkheim_1" class="endet" d="M 716,1368 h 84 a 35,35 0,0,0 35,-35 v -513" />
    <path id="enkheim_2" class="faeng" d="M 825,820 v 513 a 25,25 0,0,1 -25,25 h -84" />
    <path id="hausen_1" class="faeng" d="M -395,906 v 250 q 0,8 6,14" />
@@ -3041,7 +3057,42 @@
        </g>
      </g>
    </g>
-   <g id="hst327" transform="translate(-470,505)" class="geplant rtw te"><use xlink:href="#bstg_mitte" /><text x="-10" y="5">Gewerbegebiet Praunheim</text></g>
+   <g id="hst327" transform="translate(-390,580)" class="geplant rtw tm">
+     <g transform="rotate(90)">
+       <use xlink:href="#bstg_mitte" />
+       <use xlink:href="#vierabstell" transform="translate(-5,-60)" />
+       <use xlink:href="#vierabstell" transform="translate(5,-60)" />
+     </g>
+     <text x="0" y="25">Gewerbegebiet</text>
+     <text x="0" y="36">Praunheim</text>
+     <text x="0" y="46"><tspan class="hstdetails">(GP, 327)</tspan></text>
+   </g>
+   <g id="hstfhga" transform="translate(-462.5,480)" class="geplant rtw ebobahn">
+     <use xlink:href="#hstgrid" />
+     <text x="10" y="5" class="sb">Abzw. Hauptgipfelslach</text>
+   </g>
+   <g id="hst331" transform="translate(-625,580)" class="geplant rtw tm">
+     <g transform="rotate(90)">
+       <use xlink:href="#bstg_ausen" />
+       <use xlink:href="#vierabstell" transform="translate(10,-50)" />
+       <use xlink:href="#vierabstell" transform="translate(15,-50)" />
+       <use xlink:href="#vierabstell" transform="translate(20,-50)" />
+     </g>
+     <text x="0" y="-15">Eschborn Ost</text>
+   </g>
+   <g id="hst332" transform="translate(-725,580)" class="geplant rtw tm">
+     <use xlink:href="#bstg_ausen" transform="rotate(90)" />
+     <text x="0" y="-15">Eschborn Süd</text>
+   </g>
+   <g id="hst333" transform="translate(-800,650)" class="geplant rtw">
+     <use xlink:href="#bstg_ausen" />
+     <text x="15" y="-6">Carl-Sonnenschein-Siedlung /</text>
+     <text x="15" y="5">Düsseldorferstraße</text>
+   </g>
+   <g id="hst334" transform="translate(-800,750)" class="geplant rtw">
+     <use xlink:href="#bstg_ausen" />
+     <text x="15" y="5">Dunant-Siedlung</text>
+   </g>
    <g id="hst351" transform="translate(-390,1041)">
      <use xlink:href="#bstg_vers1" onclick="toggle_details(this)" />
      <text x="15" y="5">Große Nelkenstraße<tspan class="hstdetails"> (GN, 351)</tspan></text>
