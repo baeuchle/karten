@@ -550,13 +550,16 @@
    <g transform="translate(-12,5)"><text y="-8">Stresemannallee/</text><text y="6">Gartenstraße</text></g>
   </g>
   <g id="hgrsbf" transform="translate(215,430)">
-   <path class="hstgruppe" d="M 25,10 c 30,0 65,0 65,-15 s -55,-20 -65,-20 c -55,0 -70,25 -70,35 s 0,30 20,30 c 25,0 25,-30 50,-30 Z" />
+   <path class="hstgruppe" d="M 25,10 c 15,0 30,0 30,-15 s -20,-20 -30,-20 c -55,0 -70,25 -70,35 s 0,30 20,30 c 25,0 25,-30 50,-30 Z" />
    <g id="hstsss" transform="translate(-25,30)"><use xlink:href="#hstl_ausen" /><g transform="translate(20,10)"><text y="-12" class="hstgrtitel">Südbahnhof/</text><text>Schweizer Straße</text></g></g>
-   <g id="hst3725" transform="translate(25,-10)" class="nullzig">
+   <g id="hst3725" transform="translate(25,-10)" class="nullzig tm">
     <use xlink:href="#dobs_ausen" transform="rotate(90)" />
-    <use xlink:href="#haltestel"  transform="translate(45,5) rotate(-90)" />
-    <text x="-15" y="25">Südbahnhof</text>
+    <text x="0" y="20">Südbahnhof</text>
    </g>
+  </g>
+  <g id="hstbrus" transform="translate(290,425)" class="zehnzig">
+   <use xlink:href="#bahnsteig" transform="rotate(-90)" />
+   <text x="0" y="15">Bruchstraße</text>
   </g>
   <g id="hstbts" transform="translate(285,390)" class="te"><use xlink:href="#hstl_ausen" transform="rotate(90)" /><g transform="translate(0,-20)"><text y="-7">Brücken-/</text><text y="5">Textorstraße</text></g></g>
   <g id="hgr3102" transform="translate(365,390)" class="dreizig">
@@ -981,7 +984,7 @@
   <path id="gw_offenbach_1" d="M 795,515 c 5,0 5,10 10,10" />
   <path id="gw_offenbach_2" d="M 795,525 c 5,0 5,-10 10,-10" />
   <path id="wa_südbahnhof_1" d="M 250,415 h 20 c 5,0 5,10 10,10" />
-  <path id="wa_südbahnhof_2" class="endet" d="M 250,425 h 40" />
+  <path id="wa_südbahnhof_2" class="endet" d="M 250,425 h 50" />
   <path id="gw_hbfsüd" d="M -60,210 c 5,0 5,10 10,10" />
   <path id="schleife_pforzheimerstraße_1" d="M -80,210 a 20,20 0,0,0 -20,20 v 20 a 10,10 0,0,0 10,10 h 10 a 10,10 0,0,0 10,-10 v -20 a 10,10 0,0,1 10,-10" />
   <path id="schleife_pforzheimerstraße_2" d="M -100,240 a 10,10 0,0,0 10,10 h 10 a 10,10 0,0,0 10,-10" />
