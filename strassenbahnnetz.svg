@@ -6,7 +6,9 @@
   width="1900px"
   height="1180px"
   viewBox="-865 -425 1900 1180"
+  onload="readquery()"
   >
+  <title>Straßenbahn-Gleisplan Frankfurt am Main</title>
  <rect id="aussen"
     width="1900"  height="1190"
     x="-865" y="-425"
@@ -109,21 +111,69 @@
   #kies     circle { stroke:black; stroke-width:.1; fill:#f0d0a0; }
   #pflaster   path { stroke:black; stroke-width:.1; fill:#bfa0a8; fill-opacity:.5; stroke-opacity: .5; }
 
-  .ausbau_kleyer { visibility:hidden; }
-  .ausbau_ring { visibility:hidden; }
-  .hilfslinie { visibility:hidden; }
+  .ausbau_kleyer { display:none; }
+  .ausbau_ring { display:none; }
+  .hilfslinie { display:none; }
+  svg.debug .hilfslinie { display:inline; }
  ]]>
  </style>
  <script type="application/ecmascript"><![CDATA[
+   /// Zeigt oder versteckt geplante Strecke
+   ///
+   /// Detektiert, ob an- oder ausgeschaltet werden soll anhand des
+   /// Textes im Linkelement mit dem Namen <name>_aktion.
+   /// @param name Name der geplanten Strecke.
    function geplant(name) {
      var linkElement = document.getElementById(name + "_aktion");
      var aktion = linkElement.firstChild.data == "anzeigen";
+     geplant_onoff(name, aktion);
+   }
+
+   /// Zeigt oder versteckt geplante Strecke
+   /// @param name Name der geplanten Strecke
+   /// @param aktion Wenn \c true, dann wird versteckt.
+   function geplant_onoff(name, aktion) {
+     var linkElement = document.getElementById(name + "_aktion");
      var allStyledElements = document.getElementsByClassName(name);
      for (var i = 0; i < allStyledElements.length; ++i) {
        var classedElement = allStyledElements[i];
-       classedElement.style.visibility = aktion ? 'visible' : 'hidden';
+       classedElement.style.display = aktion ? 'inline' : 'none';
      }
      linkElement.firstChild.data = aktion ? 'verstecken' : 'anzeigen';
+   }
+
+   function readquery() {
+     var query = location.search;
+     if (query == "") {
+       return;
+     }
+     if (query.indexOf("?") == 0) {
+       query = query.substring(1);
+     }
+     var fields = query.split("&").sort();
+     for (var i = 0; i < fields.length; ++i) {
+       var key = fields[i];
+       if (key == "debug") {
+         document.firstChild.setAttribute("class","debug");
+         continue;
+       }
+       if (key.startsWith("geplant=")) {
+         var value = key.substring(key.indexOf("=") + 1);
+         if (value == "") {
+           continue;
+         }
+         geplant_onoff(value, true);
+         continue;
+       }
+       if (key.startsWith("nogeplant=")) {
+         var value = key.substring(key.indexOf("=") + 1);
+         if (value == "") {
+           continue;
+         }
+         geplant_onoff(value, false);
+         continue;
+       }
+     }
    }
  ]]>
  </script>
@@ -289,8 +339,6 @@
   </g>
   <g id="legende_bahnsteige" transform="translate(-865,-425)">
    <rect class="box" width="360" height="285" />
-   <rect fill="#fff" stroke="none" width="5" height="5" x="1" y="1" onclick="geplant('hilfslinie')"/>
-   <text visibility="hidden" id="hilfslinie_aktion">anzeigen</text>
    <text x="15" y="20" style="font-weight:bold;">Bahnsteige/Haltestellen</text>
    <text class="hstgrtitel" x="33" y="40">↓ Symbol für Doppel- oder lange Haltestelle</text>
    <g class="legende_normal" transform="translate(15,55)">
@@ -321,7 +369,7 @@
    <text class="ab_bb" transform="translate(6,275)">²:</text>
    <text class="ab_bb" transform="translate(18,275)">Als Bahnsteig zählt jede Fläche, die nicht dem Autoverkehr zur Verfügung steht.</text>
   </g>
-  <g id="ausbauprojekte" transform="translate(-505,-425)" style="visibility:visible">
+  <g id="ausbauprojekte" transform="translate(-505,-425)">
    <rect class="box" width="200" height="155" />
    <text class="unterschrift" x="5" y="20">Ausbauprojekte</text>
    <text class="hochstatio" x="5" y="40" onclick="geplant('ausbau_ring')">Ringstraßenbahn <tspan class="link" id="ausbau_ring_aktion">anzeigen</tspan></text>
@@ -746,8 +794,16 @@
    <use xlink:href="#haltestel" transform="translate(-15,5) rotate(+90)" />
    <text class="te" transform="translate(-10,20) rotate(-45)">Rebstöcker Straße</text>
   </g>
-  <g id="hstwic_" transform="translate(-362,75) rotate(-90)" class="te"><use xlink:href="#hstgrid" /><use xlink:href="#hstl_vers1" /><text x="-15" y="10" transform="rotate(45)">Wickerer Straße</text></g>
-  <g id="hst3205" transform="translate(-402,75) rotate(-90)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#dobs_ausen" /><text x="-15" y="10" transform="rotate(45)">Mönchhofstraße</text></g>
+  <g id="hstwic_" transform="translate(-352,75) rotate(-90)" class="te">
+    <use xlink:href="#hstgrid" />
+    <use xlink:href="#hstl_vers1" />
+    <text x="-15" y="10" transform="rotate(45)">Wickerer Straße</text>
+  </g>
+  <g id="hst3205" transform="translate(-402,75) rotate(-90)" class="dreizig te">
+    <use xlink:href="#hstgrid" />
+    <use xlink:href="#dobs_ausen" />
+    <text x="-15" y="10" transform="rotate(45)">Mönchhofstraße</text>
+  </g>
   <g id="hstwsc_" transform="translate(-462,75) rotate(-90)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text x="-15" y="10" transform="rotate(45)">Waldschulstraße</text></g>
   <g id="hstlin_" transform="translate(-502,75) rotate(-90)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text x="-15" y="10" transform="rotate(45)">Linnegraben</text></g>
   <g id="hstjäa_" transform="translate(-542,75) rotate(-90)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text x="-15" y="10" transform="rotate(45)">Jägerallee</text></g>
