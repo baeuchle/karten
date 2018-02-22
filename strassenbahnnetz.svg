@@ -507,7 +507,6 @@
    <path id="moerfelder2" d="M 120,475 h -5 v 10 h 5 z"/>
   </g>
  </g>
- <g style="opacity: 1">
  <g id="haltestellen" class="haltestellen">
   <g id="hstnis" transform="translate(-15,720)" class="dreizig">
    <path class="bstggruppe" d="M -15,30 c 20,0 30,-15 30,-20 c 0,-50 -10,-70 -20,-70 c -35,0 -35,0 -35,15 v 50 a 25,25 0,0,0 25,25" />
@@ -571,27 +570,50 @@
    <use xlink:href="#bahnsteig" transform="translate(-15,-20)" />
    <text x="25" y="5" transform="rotate(-45)">Lokalbahnhof</text>
   </g>
-  <g id="hsthss" transform="translate(440,390) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text x="20" y="0" transform="rotate(45)">Heister-/Seehofstraße</text></g>
-  <g id="hstmüb" transform="translate(490,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_ausen" /><text x="20" y="0" transform="rotate(45)">Mühlberg</text></g>
-  <g id="hstlkw" transform="translate(530,390) rotate(-90)"><use xlink:href="#hstl_vers1" /><text x="20" y="0" transform="rotate(45)">Lettigkautweg</text></g>
-  <g id="hstbds" transform="translate(580,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_ausen" /><text x="20" y="0" transform="rotate(45)">Balduinstraße</text></g>
-  <g id="hstbws" transform="translate(610,390) rotate(-90)" class="dreizig">
-   <use xlink:href="#bahnsteig" transform="rotate(180) translate(5,5)" />
-   <use xlink:href="#bahnsteig" transform="translate(5,5)" />
-   <text x="20" y="0" transform="rotate(45)">Bleiweißstraße</text>
+  <use xlink:href="#hstgrid" transform="translate(417.5,397.5)" />
+  <g id="hsthss" transform="translate(440,420)" class="zehnzig">
+    <use xlink:href="#hstgrid" transform="rotate(-45)" />
+    <use xlink:href="#bstg_vers1" transform="rotate(-45)"/>
+    <text x="20">Heister-/Seehofstraße</text>
   </g>
-  <g id="hstbrp" transform="translate(650,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_ausen" /><text x="20" y="0" transform="rotate(45)">Buchrainplatz</text></g>
-  <g id="hstfbs" transform="translate(690,390) rotate(-90)" class="zehnzig">
+  <g id="hstmüb" transform="translate(475,455)" class="dreizig">
+    <use xlink:href="#bstg_ausen" transform="rotate(-45)" />
+    <text x="20">Mühlberg</text>
+  </g>
+  <g id="hstlkw" transform="translate(510,490)">
+    <use xlink:href="#hstl_vers1" transform="rotate(-45)" />
+    <text x="-20" y="10" class="te">Lettigkautweg</text>
+  </g>
+  <use xlink:href="#hstgrid" transform="translate(550,520)" />
+  <g id="hstbds" transform="translate(565,520) rotate(-90)" class="dreizig">
+    <use xlink:href="#hstgrid" />
+    <use xlink:href="#bstg_ausen" />
+    <text x="20" transform="rotate(45)">Balduinstraße</text>
+  </g>
+  <g id="hstbws" transform="translate(615,520) rotate(-90)" class="dreizig">
+   <use xlink:href="#bstg_vers1" />
+   <text x="20" transform="rotate(45)">Bleiweißstraße</text>
+  </g>
+  <g id="hstbrp" transform="translate(665,520) rotate(-90)" class="dreizig">
+    <use xlink:href="#bstg_ausen" />
+    <text x="20" transform="rotate(45)">Buchrainplatz</text>
+  </g>
+  <g id="hstfbs" transform="translate(715,520) rotate(-90)" class="zehnzig">
    <use xlink:href="#bahnsteig" transform="rotate(180) translate(5,5)" />
    <use xlink:href="#haltestel" transform="translate(5,5)" />
-   <text x="20" y="0" transform="rotate(45)">Flaschenburgstraße</text>
+   <text x="20" transform="rotate(45)">Flaschenburgstraße</text>
   </g>
-  <g id="hstwis" transform="translate(730,390) rotate(-90)" class="zehnzig">
+  <g id="hstwis" transform="translate(765,520) rotate(-90)" class="zehnzig">
    <use xlink:href="#haltestel" transform="translate(5,5)" />
    <use xlink:href="#bahnsteig" transform="translate(-5,-5) rotate(180)" />
-   <text x="20" y="0" transform="rotate(45)">Wiener Straße</text>
+   <text x="20" transform="rotate(45)">Wiener Straße</text>
   </g>
-  <g id="hst3719" transform="translate(780,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_mitte" /><g transform="rotate(45) translate(20,0)"><text y="-7">Offenbach Stadtgrenze/</text><text y="5">August-Bebel-Ring</text></g></g>
+  <g id="hst3719" transform="translate(815,520) rotate(-90)" class="dreizig">
+    <use xlink:href="#bstg_mitte" />
+    <g transform="rotate(45) translate(20,0)">
+      <text y="-7">Offenbach Stadtgrenze/</text><text y="5">August-Bebel-Ring</text>
+    </g>
+  </g>
   <g id="hstbow" transform="translate(365,310)" class="dreizig te"><use xlink:href="#bstg_ausen" transform="rotate(180)" /><g transform="translate(-15,5)"><text y="-7">Frankensteiner</text><text y="5">Platz</text></g></g>
   <g id="hsthhg" transform="translate(365,260)" class="zehnzig te"><use xlink:href="#bstg_vers2" /><text x="-15" y="5">Hospital zum Heiligen Geist</text></g>
   <g id="hstbas" transform="translate(-20,250)" class="dreizig"><use xlink:href="#dobs_ausen" /><text x="15" y="5">Baseler Platz</text></g>
@@ -954,10 +976,10 @@
   <path id="gw_burgstraße" d="M 445,-55 c 5,0 5,10 10,10" />
   <path id="gw_eissporthalle" d="M 680,-55 c 5,0 5,10 10,10" />
   <path id="schleife_zoo" d="M 470,130 a 5,5 0,0,0 -5,-5 h -15 a 10,10 0,1,1 10,-10" />
-  <path id="gw_oberrad_1" d="M 670,395 c -5,0 -5,-10 -10,-10" />
-  <path id="gw_oberrad_2" d="M 570,395 c -5,0 -5,-10 -10,-10" />
-  <path id="gw_offenbach_1" d="M 770,385 c -5,0 -5,10 -10,10" />
-  <path id="gw_offenbach_2" d="M 770,395 c -5,0 -5,-10 -10,-10" />
+  <path id="gw_buchrainplatz" d="M 675,515 c 5,0 5,10 10,10" />
+  <path id="gw_balduinstrasse" d="M 550,515 c 5,0 5,10 10,10" />
+  <path id="gw_offenbach_1" d="M 795,515 c 5,0 5,10 10,10" />
+  <path id="gw_offenbach_2" d="M 795,525 c 5,0 5,-10 10,-10" />
   <path id="wa_südbahnhof_1" d="M 250,415 h 20 c 5,0 5,10 10,10" />
   <path id="wa_südbahnhof_2" class="endet" d="M 250,425 h 40" />
   <path id="gw_hbfsüd" d="M -60,210 c 5,0 5,10 10,10" />
@@ -1090,10 +1112,9 @@
   <path id="textorstraße_2" d="M 380,385 h -100 a 20,20 0,0,0 -20,20 a 10,10 0,0,1 -10,10 h -45 a 10,10 0,0,1 -10,-10" />
   <path id="langestraße_1" d="M 380,170 a 20,20 0,0,0 -20,20 v 155 c 0,10 -10,10 -10,20 v 10 a 10,10 0,0,1 -10,10" />
   <path id="langestraße_2" d="M 350,395 a 20,20 0 0 0 20,-20 v -185 a 10,10 0,0,1 10,-10" />
-  <path id="oberrad_alt1" class="endet" d="M 360,345 v 30 a 20,20 0,0,0 20,20 h 410" />
-  <path id="oberrad_alt2" class="faeng" d="M 790,385 h -410 a 10,10 0,0,1 -10,-10 v -30" />
-  <path id="oberrad_1" class="endet" d="M 360,345 v 30 h 5,-5 a 20,20 0,0,0 20,20 h 410" />
-  <path id="oberrad_2" class="faeng" d="M 790,385 h -410 a 10,10 0,0,1 -10,-10 v -30" />
+  <path id="oberrad_m" class="mitte hilfslinie" d="M 380,390 h 20 q 10,0 17.5,7.5 l 5,-5 -5,5 l 115,115 q 7.5,7.5 17.5,7.5 v 5,-10,5 h 275" />
+  <path id="oberrad_1" class="endet" d="M 360,345 v 30 a 20,20 0,0,0 20,20 h 20 q 8,0 14,6 l 115,115 q 9,9 21,9 h 275" />
+  <path id="oberrad_2" class="faeng" d="M 825,515 h -275 q -8,0 -14,-6 l -115,-115 q -9,-9 -21,-9 h -20 a 10,10 0,0,1 -10,-10" />
   <path id="gartenstraße_1" d="M 195,435 v -75 a 20,20 0,0,0 -20,-20 h -170 a 10,10 0,0,1 -10,-10" />
   <path id="gartenstraße_2" d="M -25,300 c 0,10 10,10 10,20 v 10 a 20,20 0,0,0 20,20 h 170 a 10,10 0,0,1 10,10 v 75" />
   <path id="friedensbrücke_1" d="M -35,390 h 5 a 15,15 0,0,0 15,-15 v -15 c 0,-10 10,-10 10,-20 v -20 c 0,-10 -10,-10 -10,-20 v -100" />
@@ -1199,17 +1220,16 @@
   <path id="stresemannallee_2" d="M -15,495 v -100 c 0,-5, 10,-5, 10,-10 v -25 a 10,10 0,0,1 10,-10" />
   <path id="hippodrom_1" d="M -15,400 v -25" />
   <path id="hippodrom_2" d="M -35,390 h 10 a 20,20 0,0,0 20,-20" />
- <g transform="translate(-174,-64)" id="baeume">
-  <circle r="1.5" cx="00" />
-  <circle r="1.5" cx="05" />
-  <circle r="1.5" cx="10" />
-  <circle r="1.5" cx="15" />
-  <circle r="1.5" cx="20" />
-  <circle r="1.5" cx="25" />
- </g>
- </g>
+   <g transform="translate(-174,-64)" id="baeume">
+    <circle r="1.5" cx="00" />
+    <circle r="1.5" cx="05" />
+    <circle r="1.5" cx="10" />
+    <circle r="1.5" cx="15" />
+    <circle r="1.5" cx="20" />
+    <circle r="1.5" cx="25" />
+   </g>
  </g>
   <use xlink:href="#weg" transform="translate(380,395)" />
   <use xlink:href="#weg" transform="translate(380,385)" />
-  <text x="420" y="420">Strecke nach Oberrad noch bis 2018 gesperrt</text>
+  <text x="440" y="380">Strecke nach Oberrad noch bis 2018 gesperrt</text>
 </svg>
