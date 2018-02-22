@@ -62,7 +62,7 @@
   .geplant { stroke-dasharray: 3,1; }
   .verbot circle, path.verbot { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; }
   .verbot text { stroke:black; fill:black; text-anchor:middle; font-size:8pt; }
-  path.abreis { stroke:red; stroke-width:1; fill:none; }
+  path#weg { stroke:red; stroke-width:2; fill:none; }
   path.umleit { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; }
 
   text { font-size:9pt; font-family:Sans-Serif; }
@@ -198,7 +198,7 @@
    <circle r="3.5" cx="5" cy="0" class="hschild" />
    <path class="htext" d="M 6.5,-1.9 L 6.5,1.9 M 3.5,-1.9 L 3.5,1.9 M 3.5,0 L 6.5,0" />
   </g>
-  <path id="weg" class="abreis" d="M -1.2,-1.2 l 2.4,2.4 m -2.4,0 l 2.4,-2.4" />
+  <path id="weg" d="M -3.6,-3.6 l 7.2,7.2 m -7.2,0 l 7.2,-7.2" />
   <path id="bau" class="verbot" d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" />
   <path id="uml" class="umleit" d="M -5,3 h 7 l 3,-3 l -3,-3 h -7 v 6 h 1" />
   <g id="hstgrid" class="hilfslinie">
@@ -564,15 +564,12 @@
    <path class="hstgruppe" d="M 5,20 c 25,0 40,-5 40,-30 s -20,-40 -45,-40 s -50,30 -50,50 s 30,20 55,20 Z"/>
    <path class="bstggruppe" d="M 5,15 c 20,0 35,-5 35,-25 s -20,-35 -40,-35 s -30,15 -30,35 s 10,25 35,25 Z" />
    <g id="hstlts" transform="translate(-40,0)"><use xlink:href="#hstl_ausen" transform="rotate(90)" /><g transform="translate(0,25)"><text class="hstgrtitel">Lokalbahnhof/</text><text y="12">Textorstraße</text></g></g>
-   <use xlink:href="#weg" transform="translate(15,5)" />
-   <use xlink:href="#weg" transform="translate(15,-5)" />
    <use xlink:href="#bahnsteig" transform="translate(0,5) rotate(90)" />
    <use xlink:href="#bahnsteig" transform="translate(25,-5) rotate(-90)" />
    <use xlink:href="#bahnsteig" transform="translate(5,-25)" />
    <use xlink:href="#bahnsteig" transform="translate(-5,-20) rotate(180)" />
    <use xlink:href="#bahnsteig" transform="translate(-15,-20)" />
    <text x="25" y="5" transform="rotate(-45)">Lokalbahnhof</text>
-   <text x="55" y="30">Strecke nach Oberrad noch bis 2018 gesperrt</text>
   </g>
   <g id="hsthss" transform="translate(440,390) rotate(-90)" class="zehnzig"><use xlink:href="#bstg_vers1" /><text x="20" y="0" transform="rotate(45)">Heister-/Seehofstraße</text></g>
   <g id="hstmüb" transform="translate(490,390) rotate(-90)" class="dreizig"><use xlink:href="#bstg_ausen" /><text x="20" y="0" transform="rotate(45)">Mühlberg</text></g>
@@ -1093,7 +1090,9 @@
   <path id="textorstraße_2" d="M 380,385 h -100 a 20,20 0,0,0 -20,20 a 10,10 0,0,1 -10,10 h -45 a 10,10 0,0,1 -10,-10" />
   <path id="langestraße_1" d="M 380,170 a 20,20 0,0,0 -20,20 v 155 c 0,10 -10,10 -10,20 v 10 a 10,10 0,0,1 -10,10" />
   <path id="langestraße_2" d="M 350,395 a 20,20 0 0 0 20,-20 v -185 a 10,10 0,0,1 10,-10" />
-  <path id="oberrad_1" class="endet" d="M 360,345 v 30 a 20,20 0,0,0 20,20 h 410" />
+  <path id="oberrad_alt1" class="endet" d="M 360,345 v 30 a 20,20 0,0,0 20,20 h 410" />
+  <path id="oberrad_alt2" class="faeng" d="M 790,385 h -410 a 10,10 0,0,1 -10,-10 v -30" />
+  <path id="oberrad_1" class="endet" d="M 360,345 v 30 h 5,-5 a 20,20 0,0,0 20,20 h 410" />
   <path id="oberrad_2" class="faeng" d="M 790,385 h -410 a 10,10 0,0,1 -10,-10 v -30" />
   <path id="gartenstraße_1" d="M 195,435 v -75 a 20,20 0,0,0 -20,-20 h -170 a 10,10 0,0,1 -10,-10" />
   <path id="gartenstraße_2" d="M -25,300 c 0,10 10,10 10,20 v 10 a 20,20 0,0,0 20,20 h 170 a 10,10 0,0,1 10,10 v 75" />
@@ -1210,4 +1209,7 @@
  </g>
  </g>
  </g>
+  <use xlink:href="#weg" transform="translate(380,395)" />
+  <use xlink:href="#weg" transform="translate(380,385)" />
+  <text x="420" y="420">Strecke nach Oberrad noch bis 2018 gesperrt</text>
 </svg>
