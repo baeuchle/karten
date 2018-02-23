@@ -563,8 +563,8 @@
       <text x="0" y="20">Südbahnhof</text>
     </g>
     <g id="hstbrus" transform="translate(75,-5)" class="zehnzig">
-      <use xlink:href="#bahnsteig" transform="rotate(-90)" />
-     <g transform="translate(0,22)">
+      <use xlink:href="#bahnsteig" transform="rotate(90)" />
+     <g transform="translate(0,27)">
        <text y="-12" class="hstgrtitel">Südbahnhof/</text>
        <text>Bruchstraße</text>
      </g>
@@ -1241,7 +1241,7 @@
     <circle r="1.5" cx="25" />
    </g>
  </g>
-  <use xlink:href="#weg" transform="translate(380,395)" />
-  <use xlink:href="#weg" transform="translate(380,385)" />
-  <text x="440" y="380">Strecke nach Oberrad noch bis 2018 gesperrt</text>
+  <use xlink:href="#weg" transform="translate(580,515)" />
+  <use xlink:href="#weg" transform="translate(580,525)" />
+  <text x="580" y="550">Strecke nach Oberrad noch bis 2018 gesperrt</text>
 </svg>
