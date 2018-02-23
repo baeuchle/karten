@@ -622,9 +622,7 @@
   </g>
   <g id="hst3719" transform="translate(815,520) rotate(-90)" class="dreizig">
     <use xlink:href="#bstg_mitte" />
-    <g transform="rotate(45) translate(20,0)">
-      <text y="-7">Offenbach Stadtgrenze/</text><text y="5">August-Bebel-Ring</text>
-    </g>
+    <text transform="rotate(45) translate(20,0)">Offenbach Stadtgrenze</text>
   </g>
   <g id="hstbow" transform="translate(365,310)" class="dreizig te"><use xlink:href="#bstg_ausen" transform="rotate(180)" /><g transform="translate(-15,5)"><text y="-7">Frankensteiner</text><text y="5">Platz</text></g></g>
   <g id="hsthhg" transform="translate(365,260)" class="zehnzig te"><use xlink:href="#bstg_vers2" /><text x="-15" y="5">Hospital zum Heiligen Geist</text></g>
