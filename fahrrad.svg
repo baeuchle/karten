@@ -339,6 +339,20 @@ var fahrrad = [
  { date : new Date("2017-11-05"), distance : 8602, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2017-11-12"), distance : 8656, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2017-11-19"), distance : 8704, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-11-26"), distance : 8726, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-12-03"), distance : 8751, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-12-10"), distance : 8778, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-12-17"), distance : 8795, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-12-24"), distance : 8824, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2017-12-31"), distance : 8831, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-01-07"), distance : 8866, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-01-14"), distance : 8910, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-01-21"), distance : 8935, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-01-28"), distance : 8997, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-02-04"), distance : 9070, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-02-11"), distance : 9118, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-02-18"), distance : 9143, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-02-25"), distance : 9158, link: "", text: "Quelle: Protokoll" }
 
 ];
 var regionen = [
