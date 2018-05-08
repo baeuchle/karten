@@ -38,7 +38,6 @@
   .yaxis text { text-anchor: end; }
   .xaxis text.xaxislabel, .yaxis text.yaxislabel { font-size: 120%; font-weight: bold; text-anchor: middle; }
   .monthlabel { font-size: 70%; }
-  .inletRect { fill: #ffffff; fill-opacity: .2; stroke: #000000; stroke-opacity: .2; }
 
   .datapoint { stroke: none; fill: #ff0000; fill-opacity: 1; }
   .dataarea { stroke: none; fill: #00c000; fill-opacity: .2; }
@@ -54,7 +53,7 @@
     popupStay: false,
     x: {
       min: new Date(2005, 0, 1, 0, 0, 0, 0),
-      max: new Date(2018, 0, 1, 0, 0, 0, 0),
+      max: new Date(2019, 0, 1, 0, 0, 0, 0),
       del: 13,
       labeltext: "Jahr"
     },
@@ -69,29 +68,6 @@
     area: "dataarea",
     dataname: "data",
     overflow: true,
-    pathdata: ""
-  };
-  var inletparams = {
-    showPosition: false,
-    currentPopup: -1,
-    popupStay: false,
-    x: {
-      min: new Date(2017, 0, 1, 0, 0, 0, 0),
-      max: new Date(2018, 0, 1, 0, 0, 0, 0),
-      del: 2,
-      labeltext: ""
-    },
-    y: {
-      min: 7000,
-      max: 9000,
-      del: 250,
-      labeltext: ""
-    },
-    width: 250,
-    height: 150,
-    area: "inlet_dataarea",
-    dataname: "inletdata",
-    overflow: false,
     pathdata: ""
   };
 
@@ -116,6 +92,7 @@
     }
     if (!localwidth && !localheight) {
       var rect = element.getBoundingClientRect();
+      console.log("rect: " + rect.x + "/" + rect.y + "; " + rect.width + "x" + rect.height)
       var ul = document.documentElement.createSVGPoint();
       var dr = document.documentElement.createSVGPoint();
       ul.x = 0; ul.y = 0;
@@ -350,10 +327,19 @@ var fahrrad = [
  { date : new Date("2018-01-21"), distance : 8935, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2018-01-28"), distance : 8997, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2018-02-04"), distance : 9070, link: "", text: "Quelle: Protokoll" },
- { date : new Date("2018-02-11"), distance : 9118, link: "", text: "Quelle: Protokoll" },
- { date : new Date("2018-02-18"), distance : 9143, link: "", text: "Quelle: Protokoll" },
- { date : new Date("2018-02-25"), distance : 9158, link: "", text: "Quelle: Protokoll" }
-
+ { date : new Date("2018-02-11"), distance : 9097, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-02-18"), distance : 9118, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-02-25"), distance : 9143, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-03-04"), distance : 9158, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-03-11"), distance : 9208, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-03-18"), distance : 9243, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-03-25"), distance : 9313, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-04-01"), distance : 9354, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-04-08"), distance : 9355, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-04-15"), distance : 9411, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-04-22"), distance : 9474, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-04-29"), distance : 9530, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2018-05-06"), distance : 9552, link: "", text: "Quelle: Protokoll" },
 ];
 var regionen = [
  { date: [ new Date("2005-09-03"), new Date("2005-09-20")], dateText: "September 2005", km: [ 3390,  4752], link: "", text: "Fahrradtour zur Ostsee mit Caro und Derek B." },
@@ -440,14 +426,10 @@ var regionen = [
  ]]></script>
  <script type="application/ecmascript" id="initialize"><![CDATA[
   function initialize() {
-     drawInlet(inletparams, plotparams);
      drawXaxis(document.getElementById("xaxis"), plotparams)
      drawYaxis(document.getElementById("yaxis"), plotparams)
      drawData(plotparams);
      //
-     drawXaxis(document.getElementById("inlet_xaxis"), inletparams)
-     drawYaxis(document.getElementById("inlet_yaxis"), inletparams)
-     drawData(inletparams);
   }
 
   function drawXaxis(group, plot) {
@@ -506,19 +488,6 @@ var regionen = [
     axislabel.setAttribute("class", "yaxislabel");
   }
 
-  function drawInlet(inlet, plot) {
-    var inletRect = document.createElementNS("http://www.w3.org/2000/svg", 'rect');
-    document.getElementById(plot.area).appendChild(inletRect);
-    var upper = get_ypos(inlet.y.max, plot);
-    var lower = get_ypos(inlet.y.min, plot);
-    var left = get_xpos(inlet.x.min, plot);
-    var right = get_xpos(inlet.x.max, plot);
-    inletRect.setAttribute("x", left);
-    inletRect.setAttribute("y", upper);
-    inletRect.setAttribute("width", right - left);
-    inletRect.setAttribute("height", lower - upper);
-    inletRect.setAttribute("class", "inletRect");
-  }
  ]]></script>
  <script type="application/ecmascript" id="show_coordinates"><![CDATA[
   function toggle_coordinateshow(evt) {
@@ -747,11 +716,5 @@ var regionen = [
     <text id="datainfo_geo" x="3" />
   </g>
   <text id="koordinaten" visibility="hidden">Koordinaten</text>
- </g>
- <g transform="translate(225,500)">
-  <rect x="0" y="-150" height="150" width="250" style="fill: #ffffff; stroke: #000000; fill-opacity:.8" />
-  <g class="xaxis" id="inlet_xaxis" />
-  <g class="yaxis" id="inlet_yaxis" />
-  <g id="inlet_dataarea" />
  </g>
 </svg>
