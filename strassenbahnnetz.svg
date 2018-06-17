@@ -1239,7 +1239,4 @@
     <circle r="1.5" cx="25" />
    </g>
  </g>
-  <use xlink:href="#weg" transform="translate(580,515)" />
-  <use xlink:href="#weg" transform="translate(580,525)" />
-  <text x="580" y="550">Strecke nach Oberrad noch bis 2018 gesperrt</text>
 </svg>
