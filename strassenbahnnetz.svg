@@ -649,8 +649,8 @@
   </g>
   <g id="hstkarm" transform="translate(145,175)">
    <use xlink:href="#hstgrid" />
-   <use xlink:href="#bahnsteig" transform="rotate(90) translate(5,0)" class="zehnzig" />
-   <use xlink:href="#bahnsteig" transform="rotate(-90) translate(5,0)" class="nullzig" />
+   <use xlink:href="#bahnsteig" transform="rotate(-90) translate(5,0)" class="zehnzig" />
+   <use xlink:href="#bahnsteig" transform="rotate(90) translate(5,0)" class="nullzig" />
    <text transform="translate(5,-10) rotate(-45)">Karmeliterkloster</text>
   </g>
   <g id="hström" transform="translate(185,175)" class="dreizig te">
