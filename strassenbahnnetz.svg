@@ -866,14 +866,13 @@
   <g id="hstkri_" transform="translate(-297,150)" class="">
    <use xlink:href="#hstgrid" />
    <use xlink:href="#hstgrid"   transform="translate(15,0) rotate(150) translate(20,0)" />
-   <use xlink:href="#bahnsteig" transform="translate(15,0) rotate(150) translate(20,0)" class="nullzig"/>
-   <use xlink:href="#haltestel" transform="translate(5,-10)" />
-   <text transform="translate(0,30)">Ordnungsamt</text>
+   <use xlink:href="#haltestel" transform="translate(5,0)" />
+   <text class="te" transform="translate(0,5) rotate(-45)">Ordnungsamt</text>
   </g>
   <g id="hstgust" transform="translate(-297,115)" class="dreizig">
    <use xlink:href="#hstgrid" />
    <use xlink:href="#bahnsteig" transform="translate(5,0)"/>
-   <text class="te" transform="translate(-5,5) rotate(-45)">Gustavsburgplatz</text>
+   <text class="te" transform="translate(0,5) rotate(-45)">Gustavsburgplatz</text>
   </g>
   <g id="hst3601" transform="translate(-297,75)"><use xlink:href="#hstgrid" />
    <path class="bstggruppe" d="M -25,10 c 0,15 35,15 40,10 s 15,-25 5,-35 s -45,10 -45,25 z" />
@@ -1274,8 +1273,8 @@
   <path id="güterplatz_2" d="M -312,80 h 90 q 4,0 7,3 l 6,6 q 6,6 14,6 h 100 a 10,10 0,0,1 10,10" />
   <path id="kleyerstraße_m" class="mitte hilfslinie" d="M -195,90 v 5,-5 q -6,0 -10.5,4.5 l 3.5,3.5 -3.5,-3.5 l -66,66 l 3.5,3.5 -3.5,-3.5 q -4.5,4.5 -10.5,4.5 a 15,15 0,0,1 -15,-15 h 5,-5 v -60 a 15,15 0,0,1 15,-15" />
   <path id="kleyerstraße_1" d="M -195,85 q -8,0 -14,6 l -66,66 q -4,3 -7,3 a 10,10 0,0,1 -10,-10 v -60 a 10,10 0,0,1 10,-10" />
-  <path id="kleyerstraße_2" d="M -292,140 c 0,5 -10,5 -10,10 a 20,20 0,0,0 20,20 q 8,0 14,-6 l 66,-66 q 4,-3 7,-3" />
-  <path id="zweitesgleis_rebstöcker" class="ausbau_kleyer geplant" d="M -302,90 v 60" />
+  <path id="kleyerstraße_2" d="M -292,150 a 15,15 0,0,0 15,15 q 8,0 14,-6 l 61,-61 q 4,-3 7,-3" />
+  <path id="zweitesgleis_rebstöcker" class="ausbau_kleyer geplant" d="M -302,90 v 60 a 20,20 0,0,0 20,20 q 8,0 14,-6 l 5,-5" />
   <path id="höchst" d="M -292,90 a 20,20 0,0,0 -20,-20 h -525 a 20,20 0,0,0 0,40
                        h 30 a 20,20 0,0,0 20,-20 a 10,10 0,0,1 10,-10 h 465 a 10,10 0,0,1 10,10 c 0,5 10,5 10,10" />
   <path id="höchst_m" class="mitte hilfslinie" d="M -297,90 a 15,15 0,0,0 -15,-15 h -525 a 15,15 0,0,0 0,30 h 30 a 15,15 0,0,0 15,-15 a 15,15 0,0,1 15,-15" />
