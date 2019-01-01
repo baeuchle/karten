@@ -242,15 +242,15 @@
   <g id="dobs_mitte"><use xlink:href="#bstg_mitte" /><use xlink:href="#trennstrich" transform="translate(-4,0)" /></g>
   <g id="dobs_ausen"><use xlink:href="#doppelbst" transform="translate(-5,0) rotate(180)" /><use xlink:href="#doppelbst" transform="translate(5,0)" /></g>
   <g id="dobs_vers2"><use xlink:href="#doppelbst" transform="translate(-5,9) rotate(180)" /><use xlink:href="#doppelbst" transform="translate(5,-9)" /></g>
-  <pattern id="backslash" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" viewbox="0 0 10 10">
+  <pattern id="backslash" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10">
    <path d="M 0,0 l 10,10 v -5 l -5,-5"/>
    <path d="M 0,10 h 5 l -5,-5"/>
   </pattern>
-  <pattern id="slash" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" viewbox="0 0 10 10">
+  <pattern id="slash" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10">
    <path d="M 10,0 l -10,10 h 2 l 8,-8"/><path d="M 0,0 h 2 l -2,2"/>
    <path d="M 5,0 l -5,5 v 2 l 7,-7"/><path d="M 10,5 l -5,5 h 2 l 5,-5"/>
   </pattern>
-  <pattern id="schotter" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" viewbox="0 0 10 10">
+  <pattern id="schotter" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10">
    <!-- Die folgenden "Schottersteine" sind zufällig erzeugt worden. -->
    <circle cx="6.4" cy="7.7" r="1.9"  /><circle cx="1.8" cy="1.5" r="3.6" /><circle cx="11.8" cy="1.5" r="3.6" />
    <circle cx="1.8" cy="11.5" r="3.6" /><circle cx="3.1" cy="9.1" r="1.8" /><circle cx="3.1" cy="-0.9" r="1.8" />
@@ -261,7 +261,7 @@
    <circle cx="-1.0" cy="6.1" r="2.2" /><circle cx="9.3" cy="3.8" r="3.1" /><circle cx="-0.7" cy="3.8" r="3.1" />
    <circle cx="2.1" cy="5.2" r="3.4" /><circle cx="12.1" cy="5.2" r="3.4" />
   </pattern>
-  <pattern id="gras" patternUnits="userSpaceOnUse" x="0" y="0" width="18" height="18" viewbox="0 0 10 10">
+  <pattern id="gras" patternUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
    <path d="M 1,1 v -4"/><path d="M 1,1 q 0,-2 1.5,-3.5"/><path d="M 1,1 q 0,-2 -1.5,-3.5"/>
    <path d="M 4,2 v -4"/><path d="M 4,2 q 0,-2 1.5,-3.5"/><path d="M 4,2 q 0,-2 -1.5,-3.5"/>
    <path d="M 7,3 v -4"/><path d="M 7,3 q 0,-2 1.5,-3.5"/><path d="M 7,3 q 0,-2 -1.5,-3.5"/>
@@ -287,7 +287,7 @@
    <path d="M 4,20 v -4"/><path d="M 4,20 q 0,-2 1.5,-3.5"/><path d="M 4,20 q 0,-2 -1.5,-3.5"/>
    <path d="M 7,21 v -4"/><path d="M 7,21 q 0,-2 1.5,-3.5"/><path d="M 7,21 q 0,-2 -1.5,-3.5"/>
   </pattern>
-  <pattern id="kies" patternUnits="userSpaceOnUse" x="0" y="0" width="5" height="5" viewbox="0 0 5 5">
+  <pattern id="kies" patternUnits="userSpaceOnUse" x="0" y="0" width="5" height="5">
    <!-- Die folgenden "Kiessteine" sind zufällig erzeugt worden. -->
    <circle cx="4.1" cy="4.2" r="0.4" /> <circle cx="2.2" cy="2.1" r="0.5" /> <circle cx="4.6" cy="4.2" r="0.4" />
    <circle cx="1.3" cy="4.1" r="0.4" /> <circle cx="3.7" cy="0.3" r="0.5" /> <circle cx="3.7" cy="5.3" r="0.5" />
@@ -312,7 +312,7 @@
    <circle cx="1.3" cy="2.8" r="0.6" /> <circle cx="4.0" cy="2.8" r="0.5" /> <circle cx="1.8" cy="2.9" r="0.7" />
    <circle cx="3.6" cy="2.0" r="0.4" /> <circle cx="0.6" cy="0.6" r="0.4" /> <circle cx="3.3" cy="2.7" r="0.6" />
   </pattern>
-  <pattern id="pflaster" patternUnits="userSpaceOnUse" x="0" y="0" width="4" height="5" viewbox="0 0 4 5">
+  <pattern id="pflaster" patternUnits="userSpaceOnUse" x="0" y="0" width="4" height="5">
    <path d="M 00,0.0 h 1 v 1 h 2 v -1 h 1 v 3.5 h -1 v -1 h -2 v 1 h -1 z" />
    <path d="M 02,2.5 h 1 v 1 h 2 v -1 h 1 v 3.5 h -1 v -1 h -2 v 1 h -1 z" />
    <path d="M -2,2.5 h 1 v 1 h 2 v -1 h 1 v 3.5 h -1 v -1 h -2 v 1 h -1 z" />
@@ -326,9 +326,9 @@
    <text class="ueberschrift tm" x="175" y="30">Straßenbahn Frankfurt am Main</text>
    <text class="unterschrift" x="15" y="55">Streckennetz (ohne Maßstab)</text>
    <text class="stand"        x="15" y="75">Stand: <tspan class="stand_monat"/></text>
-   <g id="legende_normal" transform="translate(30,105)"><path class="strecke" d="M 0 -6 h 30" /><path class="strecke geplant" d="M 30 -6 h 30" /><text x="75">Straßenbahngleis (geplant)</text></g>
-   <g id="legende_normal" transform="translate(30,125)"><path class="strecke ubergabe" d="M 0 -6 h 50" /><text x="55" class="tm ref">A</text><text x="75">Anschluss an U-Bahn-Netz mit Referenz¹</text></g>
-   <g id="legende_normal" transform="translate(30,145)"><path class="strecke anschluss" d="M 0 -6 h 45" /><text x="75">Anschluss an DB-Netz</text></g>
+   <g class="legende_normal" transform="translate(30,105)"><path class="strecke" d="M 0 -6 h 30" /><path class="strecke geplant" d="M 30 -6 h 30" /><text x="75">Straßenbahngleis (geplant)</text></g>
+   <g class="legende_normal" transform="translate(30,125)"><path class="strecke ubergabe" d="M 0 -6 h 50" /><text x="55" class="tm ref">A</text><text x="75">Anschluss an U-Bahn-Netz mit Referenz¹</text></g>
+   <g class="legende_normal" transform="translate(30,145)"><path class="strecke anschluss" d="M 0 -6 h 45" /><text x="75">Anschluss an DB-Netz</text></g>
    <text class="ab_bb"   transform="translate(30,165)">BB: Betriebsbahnhof</text>
    <text class="ab_bb" transform="translate(6,200)">¹:</text>
    <text class="ab_bb" transform="translate(18,200)">Siehe <a class="link" xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000">U-Bahn-Netz Frankfurt</a></text>
@@ -392,119 +392,13 @@
   <g id="landuses" transform="translate(1035,755) translate(-350,-185)" style="visibility:hidden">
    <rect class="box" width="350" height="185" />
    <text class="ueberschrift tm" x="175" y="30">Fahrbahn</text>
-   <g id="legende_normal" transform="translate(10,50)" class="aufstrasse"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Gleis auf Fahrbahn des übrigen Verkehrs</text></g>
-   <g id="legende_normal" transform="translate(10,70)" class="abmarkiert"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Gleis auf eigenem Fahrstreifen</text></g>
-   <g id="legende_normal" transform="translate(10,90)" class="opnvspur"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Gleis baulich abgetrennt, mit Bus</text></g>
-   <g id="legende_normal" transform="translate(10,110)" class="asphalt"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; geteert/gepflastert</text></g>
-   <g id="legende_normal" transform="translate(10,130)" class="schotter"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; Schotter</text></g>
-   <g id="legende_normal" transform="translate(10,150)" class="gras"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; Rasengleis</text></g>
-   <g id="legende_normal" transform="translate(10,170)" class="kies"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; Kies</text></g>
-  </g>
- </g>
- <g id="fahrwege" style="opacity: 0">
-  <g class="aufstrasse">
-   <path id="friedberger_3" d="M 255,40 h 10 v -15 h -5 v -15 h 5 v -45 a 10,10 0,0,1 10,-10 h 27 v -10
-                               h -27 a 10,10 0,0,1 -10,-10 v -5 h -10 v5 a 10,10 0,0,1 -10,10 h -50 v 10
-                               h 50 a 10,10 0,0,1 10,10 z" />
-   <path id="innenstadt_1" d="M -8,180 v -10 h 93 v 10 z" />
-   <path id="innenstadt_5" d="M 135,180 v -5 h 10 v 5 z" />
-   <path id="innenstadt_6" d="M 150,180 v -10 h 65 v 10 z" />
-   <path id="innenstadt_9" d="M 290,180 v -5 h 20 v -5 h 70 a 20,20 0,0,0 -20,20 a 10,10 0,0,0 -10,-10 z" />
-   <path id="bubisbruecke" d="M 360,280 h 5 v 10 h -5 z" />
-   <path id="zoo_2" d="M 460,155 h 10 v -5 h -10 z" />
-   <path id="zoo_4" d="M 460,114 h 10 q 0,-4 4,-8 l 2,-2 l -3.5,-3.5 l -3,3 l -3.5,-3.5 q -6,6 -6,14 z" />
-   <path id="zoo_6" d="M 481,99 l 25,-25 l -7,-7 l -25,25 z" />
-   <path id="bornheim_2" d="M 307,-45 h 103 v -10 h -83 v 5 h -20 z"/>
-   <path id="bornheim_4" d="M 465,-45 h 50 v -5 h 10 v -5 h -40 v 5 h -20 z"/>
-   <path id="vogelweid3" d="M -42,380 v 10 h 7 a 10,10 0,0,1 10,10 v -30 a 10,10 0,0,1 -10,10 z"/>
-   <path id="gartenstr1" d="M -5,360 a 10,10 0,0,1 10,-10 h 40 l 5,-5,-5,-5 h -27 v 5 h -13 v -5 a 10,10 0,0,1 -10,-10 z"/>
-   <path id="gartenstr7" d="M 135,340 l -5,5,5,5 h 20 v -5 h 20 v 5 a 10,10 0,0,1 10,10 v 10 h 10 v -10 a 20,20 0,0,0 -20,-20 z"/>
-   <path id="bockenheim1" d="M 40,-285 h 10 v 75 h -5 v -10 h -5 z"/>
-   <path id="ginnheim" d="M 40,-340 h 10 v 20 h -10 z"/>
-   <path id="schweizerstr1" d="M 185,375 h 10 v 30 a 10,10 0,0,0 10,10 v 5 h 20 v -5 h 5 v 10 h -25 a 10,10 0,0,0 -10,10 v 20 h -5 v -50 h -5 z"/>
-   <path id="moerfelder1" d="M 185,460 h 5 v 5 h 5 a 20,20 0,0,1 -20,20 h -55 v -10 h 55 a 10,10 0,0,0 10,-10 z"/>
-   <path id="suedbf_wa1" d="M 270,425 h 10 v -5 c -5,0 -5,-5 -10,-5 z"/>
-   <path id="textorstr1" d="M 250,415 h 20 v -10 a 10,10 0,0,1 10,-10 h 40 v -5 h 10 v -5 h -50 a 20,20 0,0,0 -20,20 a 10,10 0,0,1 -10,10 z"/>
-  </g>
-  <g class="abmarkiert">
-   <path id="mainzer_1" d="M -30,70 h -130 v 10 h 130" />
-   <path id="friedberger_1" d="M 255,70 h 10 v -30 h -10 z" />
-   <path id="innenstadt_2" d="M 85,180 v -10 h 5 v 10 z" />
-   <path id="innenstadt_4" d="M 125,180 v -10 h 25 v 10 h -5 v -5 h -10 v 5 z" />
-   <path id="innenstadt_8" d="M 290,175 v -5 h 20 v 5 z" />
-   <path id="zoo_5" d="M 476,104 l 5,-5 l -7,-7 l -8,8 l 3.5,3.5 l 3,-3 z" />
-   <path id="bornheim_1" d="M 302,-45 h 5 v -5 h 20 v -5 h -25 z"/>
-   <path id="bornheim_3" d="M 410,-45 h 55 v -5 h 20 v -5 h -75 z"/>
-   <path id="bornheim_5" d="M 515,-45 h 20 v -10 h -10 v 5 h -10 z"/>
-   <path id="friedensbruecke" d="M -25,300 h 10 v -35 h -10 " />
-   <path id="abzwghaardtwald" d="M -231,471 l 7,7 l 26,-26 l -7,-7"/>
-   <path id="blutspende" d="M -188,428 l 7,7 l 17,-17 l -7,-7"/>
-   <path id="gartenstr1" d="M 5,340 h 13 v 5 h -13 z"/>
-   <path id="gartenstr8" d="M 155,350 v -5 h 20 v 5 z"/>
-   <path id="suedbf1" d="M 205,415 h 20 v 5 h -20 z"/>
-   <path id="schweizerstr2" d="M 185,405 h 5 v 50 h 5 v 10 h -5 v -5 h -5 z"/>
-   <path id="suedbf_wa2" d="M 280,425 h 10 v -5 h -10 z"/>
-   <path id="textorstr2" d="M 320,395 h 10 v -5 h -10 z"/>
-  </g>
-  <g class="opnvspur">
-   <path id="friedberger_2" d="M 255,-70 h 10 v -220 h -10" />
-   <path id="friedbergerplatz" d="M 260,25 h 5 v -15 h -5" />
-   <path id="konstabler" d="M 255,105 h 10 v 65 h -10 z" />
-   <path id="innenstadt_1" d="M -60,220 v -10 h 25 v 10 z" />
-   <path id="zoo_1" d="M 460,160 h 10 v -5 h -10 z" />
-   <path id="stresemannallee_3" d="M -25,395 h 10 c 0,-5 10,-5 10,-10 v -65 c 0,-10 -10,-10 -10,-20 h -10 " />
-   <path id="triftstrasse" d="M -280,520 l 7,7 l 3,-3 v 5 h 10 v -11 q 0,-4 4,-8 l 32,-32 l -7,-7"/>
-   <path id="suedbf3" d="M 230,415 v 10 h 40 v -10 z"/>
-  </g>
-  <g class="gras">
-   <path id="frankfurterbogen" d="M 255,-290 v -130 h 10 v 130 z" />
-   <path id="hessendenkmal" d="M 255,100 h 10 v -30 h -10 z" />
-   <path id="zoo_schleife" d="M 455,130 h -5 a 15,15 0,1,1 0,-30 a 10,15 0,0,1 10,15
-                              a 10,10 0,1,0 -10,10 h 5 z" />
-   <path id="stresemannallee_2" d="M -25,495 h 10 a 10,10 0,0,1 10,-10 v -10 a 10,10 0,0,1 -10,-10 h -10 z"/>
-   <path id="rebstock_schotter" d="M -35,-135 h -70 v 10 h 70 z" />
-   <path id="niederrad12" d="M -355,570 v 10 h 21 q 8,0 14,-6 l 47,-47 l -7,-7 l -46,46 q -4,4 -8,4 z" />
-  </g>
-  <g class="kies">
-   <path id="luisa_2" d="M -15,605 h 5 v -5 h -5 z"/>
-   <path id="vogelweid1" d="M -82,380 v 10 h 25 v -10 z"/>
-  </g>
-  <g class="schotter">
-   <path id="huju_schotter" d="M 895,190 v 40 a 20,20 0,0,0 40,0 v -40 h -10 v 40 a 10,10 0,0,1 -20,0 c 0,-5 10,-5 10,-10 v -10 c 0,-5 -10,-5 -10,-10 v -10"/>
-   <path id="zoo_7" d="M 506,74 l 83,-83 q 6,-6 6,-14 v -13 h -10
-                       v 13 q 0,4 -4,8 l -82,82 z" />
-   <path id="neuisenburg_1" d="M -25,700 h 10 v -13 h -5 v 3 h -5 z"/>
-   <path id="stresemannallee_1" d="M -25,672 h 10 v -177 h -10 z"/>
-   <path id="baselerplatz" d="M -25,265 h 10 v -35 h -10 z" />
-   <path id="markuskrankenhaus" d="M 40,-320 h 10 v 35 h -10 z"/>
-   <path id="ginnheim_wa" d="M 40,-415 h 10 v 20 l 7,4 l -9,9 q -3,3 -3,7 v 5 c 0,5 5,5 5,10 v 20 h -10 z"/>
-   <path id="schwanheim" d="M -800,570 v 5 h 30 v 5 h 140 v -10 z" />
-   <path id="goldstein_schleife" d="M -630,585 a 15,15 0,0,0 15,15 a 10,10 0,0,0 10,-10 h -5 a 5,5 0,0,1 -5,5 a 10,10 0,0,1 -10,-10 z" />
-   <path id="buerostadt" d="M -580,570 c -5,0 -5,-5 -10,-5 h -10 v 5 h -20 v 5 h 25 v 5 h 240 v -10 z" />
-   <path id="uniklinik" d="M -171,411 l 7,7 l 24,-24 q 4,-4 8,-4 h 50 v -10 h -50 q -8,0 -14,6 z"/>
-   <path id="moerfelder3" d="M 115,475 v 10 h -120 v -10 z"/>
-  </g>
-  <g class="asphalt">
-   <path id="hessendenkmal_2" d="M 255,105 h 10 v -5 h -10 z"/>
-   <path id="innenstadt_3" d="M 90,180 v -10 h 35 v 10 z" />
-   <path id="innenstadt_7" d="M 215,180 v -10 h 30 a 10,10 0,0,0 10,-10 v 10 h 10 v -10 a 10,10 0,0,0 10,10 h 15 v 10 z" />
-   <path id="lokal_hanauer" d="M 330,395 v -10 h 10 a 10,10 0,0,0 10,-10 v -10 c 0,-10 10,-10 10,-20 v -55 h 5 v -10 h -5 v -90
-                               a 20,20 0,0,1 20,-20 h 70 a 10,10 0,0,0 10,-10 h 10 a 10,10 0,0,0 10,10 h 30 v 10
-                               h -130 a 10,10 0,0,0 -10,10 v 185 a 10,10 0,0,0 10,10 l 5,5 -5,5 z" />
-   <path id="zoo_3" d="M 460,150 h 10 v -36 h -10 v 11 h -5 v 5 h 5 z" />
-   <path id="bornheim_6" d="M 535,-45 h 40 a 10,10 0,0,1 10,10 h 10 a 10,10 0,0,1 10,-10 h 15 v -10
-                            h -25 v -5 h -10 v 5 h -50 z"/>
-   <path id="neuisenburg_2" d="M -25,690 h 5 v -3 h 5 v -15 h -15 l -10,-10 h -10 v 21 h 10 l 4,-4 h 11 z"/>
-   <path id="hauptbahnhof" d="M -25,230 h 10 v -40 a 10,10 0,0,1 10,-10 h -3 v -10 h 3 a 10,10 0,0,1 -10,-10 v -20 l -5,-5 -5,5
-                              v 60 a 10,10 0,0,1 -10,10 v 10 a 10,10 0,0,1 10,10 z" />
-   <path id="bockenheimerwarte" d="M 40,-220 h 5 v 10 h 5 v 25 h -10 z"/>
-   <path id="luisa_1" d="M -15,570 a 10,10 0,0,0 10,10 a 10,10 0,0,1 10,10 a 15,15 0,0,1 -15,15 v -5 a 5,5 0,0,0 5,-5 v -10 h -10 z"/>
-   <path id="museum" d="M -800,570 h -10 a 17.5,17.5 0,0,0 0,35 h 8 q 2,0 3.5,-1.5 l 2,-2 q 1.5,-1.5 3.5,-1.5 h 43 v -20 h -20 v -5 h -30 z" />
-   <path id="goldstein" d="M -630,570 v 15 h 5 v -5 h 15 v 10 h 5 a 10,10 0,0,1 10,-10 v -5 h -25 v -5 z" />
-   <path id="niederraederldstr" d="M -205,445 l 7,7 l 17,-17 l -7,-7 z"/>
-   <path id="vogelweid2" d="M -57,380 v 10 h 15 v -10 z"/>
-   <path id="schweizerplatz" d="M 185,370 h 10 v 5 h -10 z"/>
-   <path id="moerfelder2" d="M 120,475 h -5 v 10 h 5 z"/>
+   <g transform="translate(10,50)"  class="legende_normal aufstrasse"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Gleis auf Fahrbahn des übrigen Verkehrs</text></g>
+   <g transform="translate(10,70)"  class="legende_normal abmarkiert"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Gleis auf eigenem Fahrstreifen</text></g>
+   <g transform="translate(10,90)"  class="legende_normal opnvspur"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Gleis baulich abgetrennt, mit Bus</text></g>
+   <g transform="translate(10,110)" class="legende_normal asphalt"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; geteert/gepflastert</text></g>
+   <g transform="translate(10,130)" class="legende_normal schotter"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; Schotter</text></g>
+   <g transform="translate(10,150)" class="legende_normal gras"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; Rasengleis</text></g>
+   <g transform="translate(10,170)" class="legende_normal kies"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; Kies</text></g>
   </g>
  </g>
  <g id="haltestellen" class="haltestellen">
@@ -740,7 +634,7 @@
    <text x="-10" y="15">Pforzheimer Straße</text>
   </g>
   <g id="hstpdr" transform="translate(-20,100)" class="dreizig"><use xlink:href="#dobs_ausen" /><text x="15" y="5">Platz der Republik</text></g>
-  <g id="hstpdr" transform="translate(-20,40)" class="dreizig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Hohenstaufenstraße</text></g>
+  <g id="hsthhs" transform="translate(-20,40)" class="dreizig"><use xlink:href="#bstg_ausen" /><text x="15" y="5">Hohenstaufenstraße</text></g>
   <g id="hstfhm" transform="translate(-31.5,12.5) rotate(-45)">
    <path class="bstggruppe" d="M 15,0 a 15,15 0,0,1 -15,15 a 30,30 0,0,1 0,-60 a 15,45 0,0,1 15,45 z" />
    <use xlink:href="#bstg_ausen" class="dreizig" />
@@ -800,7 +694,7 @@
    <text transform="rotate(45) translate(15,0)">Rothschildallee</text>
   </g>
   <g id="hstgbp" transform="translate(355,-50) rotate(-90)"><use xlink:href="#hstl_ausen" /><text transform="rotate(45) translate(15,0)">Günthersburgpark</text></g>
-  <g id="hstgbp" transform="translate(395,-50) rotate(-90)"><use xlink:href="#hstl_links" /><text transform="rotate(45) translate(15,0)">Hartmann-Ibach-Straße</text></g>
+  <g id="hsthis" transform="translate(395,-50) rotate(-90)"><use xlink:href="#hstl_links" /><text transform="rotate(45) translate(15,0)">Hartmann-Ibach-Straße</text></g>
   <g id="hstbgs" transform="translate(435,-50) rotate(-90)" class="zehnzig">
    <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" />
    <use xlink:href="#haltestel" transform="translate(+5,0)" />
@@ -1243,8 +1137,8 @@
   <text transform="translate(770,-115) translate(0,-5)" class="ref tm">O</text>
   <path id="hanauerlandstraße_1" d="M 765,160 a 20,20 0,0,0 20,20 h 220 a 10,10 0,0,1 10,10 v 105 c 0,10 10,10 10,20 " />
   <path id="hanauerlandstraße_2" class="faeng" d="M 1025,345 v -155 a 20,20 0,0,0 -20,-20 h -220 a 10,10 0,0,1 -10,-10" />
-  <path id="hauptbahnhof" d="M -15,190 v -130" />
-  <path id="hauptbahnhof" d="M -25,60 v 130"/>
+  <path id="hauptbahnhof_1" d="M -15,190 v -130" />
+  <path id="hauptbahnhof_2" d="M -25,60 v 130"/>
   <path id="niddastraße_m" class="mitte hilfslinie" d="M -20,135 a 15,15 0,0,0 -15,-15 h -30 a 15,15 0,0,1 -15,-15 a 15,15 0,0,1 15,-15" />
   <path id="niddastraße_1" d="M -15,135 a 20,20 0,0,0 -20,-20 h -30 a 10,10 0,0,1 -10,-10 a 10,10 0,0,1 10,-10" />
   <path id="niddastraße_2" d="M -65,85 a 20,20 0,0,0 -20,20 a 20,20 0,0,0 20,20 h 30 a 10,10 0,0,1 10,10" />

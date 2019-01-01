@@ -1541,7 +1541,7 @@
         <use xlink:href="#signal_haupt_02v" transform="translate(30,0)" />
         <text transform="rotate(-135) translate(-23,23)" class="te">851R15</text>
       </g>
-      <g id="sig812H21" transform="translate(-37.5,-30.5) rotate(135)" onmouseover="highlight(this)">
+      <g id="sig851H21" transform="translate(-37.5,-30.5) rotate(135)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 C 2,5 40,5 40,0" />
         <use xlink:href="#signalplatz" />
         <use xlink:href="#signal_haupt_02v" transform="translate(40,0)" />
@@ -2534,7 +2534,7 @@
  <g id="uberwerf_a_0" class="uberwerf">
   <rect id="uw_kw_bb" width="10" height="15" x="278" y="1545" />
  </g>
- <g id="0_ebene">
+ <g id="null_ebene">
   <g id="strecke_0ebene" class="tunnel">
    <path id="scheffeleck_1" class="tunnel" d="M 290,1560 q 0,-4 -3,-7 l -4,-4 q -3,-3 -3,-7 v -27" />
   </g>
@@ -2611,7 +2611,7 @@
   <g id="gueterverwaltung_oberursel">
    <path id="g556a53" class="endet" d="M -225,56 h 70"/>
    <path id="g556w33w43" d="M -205,66 c 10,0 10,-10 20,-10" />
-   <path id="g556a53" class="endet" d="M -225,66 h 70" />
+   <path id="g556a54" class="endet" d="M -225,66 h 70" />
    <use xlink:href="#weg" transform="translate(-195,66)" />
   </g>
   <path id="gw_gloecknerwiese" d="M -340,-134 c -10,0 -10,-10 -20,-10" />
@@ -2672,7 +2672,7 @@
    <text transform="translate(-12.5,47)" class="ref tm">O</text>
   </g>
   <path id="dreieck_schaeffle_1" d="M 815,1300 a 10,10 0,0,1 10,10" />
-  <path id="dreieck_schaeffle_1" d="M 835,1310 a 20,20 0,0,0 -20,-20" />
+  <path id="dreieck_schaeffle_2" d="M 835,1310 a 20,20 0,0,0 -20,-20" />
   <path id="wa_schaefflestrasse" class="endet" d="M 835,1240 c 0,-10 -10,-10 -10,-20 c 0,-5 -5,-5 -5,-10 v -35" />
   <path id="gw_kruppstr" d="M 835,1090 c 0,10 -10,10 -10,20" />
   <path id="gw_enkheim" d="M 825,860 c 0,10 10,10 10,20 c 0,10 -10,10 -10,20" />
@@ -4205,31 +4205,31 @@
        <use xlink:href="#gleis2" transform="translate(-15,0)" />
        <use xlink:href="#gleis3" transform="translate(-5,0)" />
        <use xlink:href="#gleis1" transform="translate(5,0)" />
-       <g id="623Y10" transform="translate(5,80)" onmouseover="highlight(this)">
+       <g id="sig623Y10" transform="translate(5,80)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 c 10,0 38,-5 38,-15" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_01v" transform="translate(40,-15)" />
          <text x="46" y="-15">632Y10</text>
        </g>
-       <g id="632Y11" transform="translate(5,65)" onmouseover="highlight(this)">
+       <g id="sig632Y11" transform="translate(5,65)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 H 20" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_012v" transform="translate(20,0)" />
          <text x="46" y="-10">632Y11</text>
        </g>
-       <g id="632Y13" transform="translate(5,17) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig632Y13" transform="translate(5,17) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,5 40,5 40,0" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_03v" transform="translate(40,0)" />
          <text transform="rotate(180) translate(-86,30)" class="te">632Y13</text>
        </g>
-       <g id="632Y24" transform="translate(-15,17) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig632Y24" transform="translate(-15,17) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,5 60,5 60,0" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_01v" transform="translate(60,0)" />
          <text transform="rotate(180) translate(-66,10)" class="te">632Y24</text>
        </g>
-       <g id="632Y34" transform="translate(-5,17) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig632Y34" transform="translate(-5,17) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,5 50,5 50,0" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_01v" transform="translate(50,0)" />
@@ -4422,7 +4422,7 @@
        <use id="bos_72b" xlink:href="#einsabstell" transform="translate(-162,48.5) rotate(-45)" />
        <use id="bos_73" xlink:href="#einsabstell" transform="translate(-150,45)" />
        <use id="bos_75" xlink:href="#dreiabstell" transform="translate(-150,75)" />
-       <use id="bos_71" xlink:href="#vierabstell" transform="translate(-45,145) rotate(-90)" />
+       <use id="bos_77" xlink:href="#vierabstell" transform="translate(-45,145) rotate(-90)" />
        <use id="bos_84" xlink:href="#funfabstell" transform="translate(-145,105)" />
        <use id="bos_85" xlink:href="#funfabstell" transform="translate(-140,100)" />
        <use id="bos_86" xlink:href="#sechabstell" transform="translate(-135,95)" />
@@ -4459,313 +4459,313 @@
          <g transform="translate(-140,96)"><circle cy="-1" r="2" /><text>85</text></g>
          <g transform="translate(-135,91)"><circle cy="-1" r="2" /><text>86</text></g>
        </g>
-       <g id="792Y14" transform="translate(-145,35)" onmouseover="highlight(this)">
+       <g id="sig792Y14" transform="translate(-145,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 -23,-35 -23,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(-23,-45)" />
          <text transform="translate(-23,-70) rotate(-45)">792Y14</text>
        </g>
-       <g id="792Y15" transform="translate(-140,35)" onmouseover="highlight(this)">
+       <g id="sig792Y15" transform="translate(-140,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 -16,-35 -16,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(-16,-45)" />
          <text transform="translate(-16,-70) rotate(-45)">792Y15</text>
        </g>
-       <g id="792Y16" transform="translate(-135,35)" onmouseover="highlight(this)">
+       <g id="sig792Y16" transform="translate(-135,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 -9,-35 -9,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(-9,-45)" />
          <text transform="translate(-9,-70) rotate(-45)">792Y16</text>
        </g>
-       <g id="792Y17" transform="translate(-130,35)" onmouseover="highlight(this)">
+       <g id="sig792Y17" transform="translate(-130,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 -2,-35 -2,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(-2,-45)" />
          <text transform="translate(-2,-70) rotate(-45)">792Y17</text>
        </g>
-       <g id="792Y18" transform="translate(-125,35)" onmouseover="highlight(this)">
+       <g id="sig792Y18" transform="translate(-125,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 5,-35 5,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(5,-45)" />
          <text transform="translate(5,-70) rotate(-45)">792Y18</text>
        </g>
-       <g id="792Y19" transform="translate(-120,35)" onmouseover="highlight(this)">
+       <g id="sig792Y19" transform="translate(-120,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 12,-35 12,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(12,-45)" />
          <text transform="translate(12,-70) rotate(-45)">792Y19</text>
        </g>
-       <g id="792Y20" transform="translate(-115,35)" onmouseover="highlight(this)">
+       <g id="sig792Y20" transform="translate(-115,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 19,-35 19,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(19,-45)" />
          <text transform="translate(19,-70) rotate(-45)">792Y20</text>
        </g>
-       <g id="792Y21" transform="translate(-110,35)" onmouseover="highlight(this)">
+       <g id="sig792Y21" transform="translate(-110,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 26,-35 26,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(26,-45)" />
          <text transform="translate(26,-70) rotate(-45)">792Y21</text>
        </g>
-       <g id="792Y22" transform="translate(-105,35)" onmouseover="highlight(this)">
+       <g id="sig792Y22" transform="translate(-105,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 33,-35 33,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(33,-45)" />
          <text transform="translate(33,-70) rotate(-45)">792Y22</text>
        </g>
-       <g id="792Y23" transform="translate(-100,35)" onmouseover="highlight(this)">
+       <g id="sig792Y23" transform="translate(-100,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 40,-35 40,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(40,-45)" />
          <text transform="translate(40,-70) rotate(-45)">792Y23</text>
        </g>
-       <g id="792Y24" transform="translate(-95,35)" onmouseover="highlight(this)">
+       <g id="sig792Y24" transform="translate(-95,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 47,-35 47,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(47,-45)" />
          <text transform="translate(47,-70) rotate(-45)">792Y24</text>
        </g>
-       <g id="792Y25" transform="translate(-90,35)" onmouseover="highlight(this)">
+       <g id="sig792Y25" transform="translate(-90,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 54,-35 54,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(54,-45)" />
          <text transform="translate(54,-70) rotate(-45)">792Y25</text>
        </g>
-       <g id="792Y26" transform="translate(-85,35)" onmouseover="highlight(this)">
+       <g id="sig792Y26" transform="translate(-85,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 61,-35 61,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(61,-45)" />
          <text transform="translate(61,-70) rotate(-45)">792Y26</text>
        </g>
-       <g id="792Y27" transform="translate(-80,35)" onmouseover="highlight(this)">
+       <g id="sig792Y27" transform="translate(-80,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 68,-35 68,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(68,-45)" />
          <text transform="translate(68,-70) rotate(-45)">792Y27</text>
        </g>
-       <g id="792Y31" transform="translate(-25,130) rotate(-90)" onmouseover="highlight(this)">
+       <g id="sig792Y31" transform="translate(-25,130) rotate(-90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,20 48,20 58,20" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_012b" transform="translate(58,20)" />
          <text transform="rotate(90) translate(-2.5,-64)" class="tm">792Y31</text>
        </g>
-       <g id="792Y34" transform="translate(-175,5) rotate(-90)" onmouseover="highlight(this)">
+       <g id="sig792Y34" transform="translate(-175,5) rotate(-90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 10,-25 20,-25" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(20,-25)" />
          <text transform="rotate(90) translate(-51,-16)" class="te">792Y34</text>
        </g>
-       <g id="792Y35R" transform="translate(-190,5) rotate(90)" onmouseover="highlight(this)">
+       <g id="sig792Y35R" transform="translate(-190,5) rotate(90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,20 20,20 30,20" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(30,20)" />
          <text transform="rotate(-90) translate(-21,34)" class="te">792Y35R</text>
        </g>
-       <g id="792Y41" transform="translate(-190,15) rotate(90)" onmouseover="highlight(this)">
+       <g id="sig792Y41" transform="translate(-190,15) rotate(90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,10 10,40 35,40" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_013b" transform="translate(35,40)" />
          <text transform="rotate(-90) translate(-41,39)" class="te">792Y41</text>
        </g>
-       <g id="792Y44" transform="translate(-70,110) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y44" transform="translate(-70,110) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-70 43,-70 73,-70" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(73,-70)" />
          <text transform="translate(67,-80) rotate(180)">792Y44</text>
        </g>
-       <g id="792Y45R" transform="translate(-25,140) rotate(-90)" onmouseover="highlight(this)">
+       <g id="sig792Y45R" transform="translate(-25,140) rotate(-90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,5 56,5 56,0" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(56,0)" />
          <text transform="rotate(90) translate(1,-51)">792Y45R</text>
        </g>
-       <g id="792Y51" transform="translate(-145,90) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y51" transform="translate(-145,90) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-40 49,-20 49,-40" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(49,-40)" />
          <text transform="translate(45,-70) rotate(135)" class="te">792Y51</text>
        </g>
-       <g id="792Y52" transform="translate(-140,85) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y52" transform="translate(-140,85) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-40 42,-25 42,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(42,-45)" />
          <text transform="translate(38,-75) rotate(135)" class="te">792Y52</text>
        </g>
-       <g id="792Y53" transform="translate(-135,80) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y53" transform="translate(-135,80) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-40 35,-30 35,-50" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(35,-50)" />
          <text transform="translate(31,-80) rotate(135)" class="te">792Y53</text>
        </g>
-       <g id="792Y54" transform="translate(-135,85)" onmouseover="highlight(this)">
+       <g id="sig792Y54" transform="translate(-135,85)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-40 82,-4 102,-40" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(102,-40)" />
          <text transform="translate(102,-65) rotate(-45)">792Y54</text>
        </g>
-       <g id="792Y63" transform="translate(-95,160) rotate(90)" onmouseover="highlight(this)">
+       <g id="sig792Y63" transform="translate(-95,160) rotate(90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,10 31,10 31,0" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(31,0)" />
          <text transform="translate(25,-12.5) rotate(-90)" class="tm">792Y63</text>
        </g>
-       <g id="792Y64" transform="translate(-160,110)" onmouseover="highlight(this)">
+       <g id="sig792Y64" transform="translate(-160,110)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 42,-40 134,-55 141,-65" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(141,-65)" />
          <text transform="translate(141,-90) rotate(-45)">792Y64</text>
        </g>
-       <g id="792Y65" transform="translate(-95,155) rotate(90)" onmouseover="highlight(this)">
+       <g id="sig792Y65" transform="translate(-95,155) rotate(90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-20 24,-20 24,-40" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(24,-40)" />
          <text transform="translate(28,-66) rotate(-90)">792Y65</text>
        </g>
-       <g id="792Y67" transform="translate(-72,150) rotate(90)" onmouseover="highlight(this)">
+       <g id="sig792Y67" transform="translate(-72,150) rotate(90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-8 5,-9 5,-17" />
          <use xlink:href="#signalplatz" transform="rotate(-45)" />
          <use xlink:href="#signal_f_bb" transform="translate(5,-17)" />
          <text transform="translate(9,-43) rotate(-90)">792Y67</text>
        </g>
-       <g id="792Y68" transform="translate(-120,150) rotate(-90)" onmouseover="highlight(this)">
+       <g id="sig792Y68" transform="translate(-120,150) rotate(-90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 30,0 30,0 30,75" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(30,95)" />
          <text transform="rotate(90) translate(96,-26)">792Y68</text>
        </g>
-       <g id="792Y69" transform="translate(-95,150) rotate(90)" onmouseover="highlight(this)">
+       <g id="sig792Y69" transform="translate(-95,150) rotate(90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-20 17,-20 17,-40" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(17,-40)" />
          <text transform="translate(21,-66) rotate(-90)">792Y69</text>
        </g>
-       <g id="792Y71" transform="translate(-170,25) rotate(90)" onmouseover="highlight(this)">
+       <g id="sig792Y71" transform="translate(-170,25) rotate(90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 10,0 40,10 40,20" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(40,40)" />
          <text transform="rotate(-90) translate(-41,44)" class="te">792Y71</text>
        </g>
-       <g id="792Y72" transform="translate(-155,55.5) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y72" transform="translate(-155,55.5) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 10,-8 17,-9.5 27,-19.5" />
          <use xlink:href="#signalplatz" transform="rotate(-45)" />
          <use xlink:href="#signal_f_bb" transform="translate(27,-19.5)" />
          <text transform="translate(23,-49.5) rotate(135)" class="te">792Y72</text>
        </g>
-       <g id="792Y73" transform="translate(-150,35)" onmouseover="highlight(this)">
+       <g id="sig792Y73" transform="translate(-150,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 -30,-35 -30,-45" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(-30,-45)" />
          <text transform="translate(-30,-70) rotate(-45)">792Y73</text>
        </g>
-       <g id="792Y74" transform="translate(-150,55) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y74" transform="translate(-150,55) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-10 20,-10 20,-20" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(20,-20)" />
          <text transform="translate(16,-50) rotate(135)" class="te">792Y74</text>
        </g>
-       <g id="792Y75" transform="translate(-150,65)" onmouseover="highlight(this)">
+       <g id="sig792Y75" transform="translate(-150,65)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 12,0 105,-10 105,-20" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(105,-20)" />
          <text transform="translate(105,-45) rotate(-45)">792Y75</text>
        </g>
-       <g id="792Y76" transform="translate(-150,95) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y76" transform="translate(-150,95) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-40 56,-15 56,-35" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(56,-35)" />
          <text transform="translate(52,-65) rotate(135)" class="te">792Y76</text>
        </g>
-       <g id="792Y77" transform="translate(-55,145) rotate(-90)" onmouseover="highlight(this)">
+       <g id="sig792Y77" transform="translate(-55,145) rotate(-90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 10,0 49,0 49,10" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(49,30)" />
          <text transform="rotate(90) translate(31,-45)">792Y77</text>
        </g>
-       <g id="792Y83" transform="translate(-150,145) rotate(-90)" onmouseover="highlight(this)">
+       <g id="sig792Y83" transform="translate(-150,145) rotate(-90)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 37,0 37,0 37,105" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(37,125)" />
          <text transform="rotate(90) translate(126,-33)">792Y83</text>
        </g>
-       <g id="792Y84" transform="translate(-145,135) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y84" transform="translate(-145,135) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-65 166,-55 166,-65" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(166,-65)" />
          <text transform="translate(162,-95) rotate(135)" class="te">792Y84</text>
        </g>
-       <g id="792Y85" transform="translate(-140,130) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y85" transform="translate(-140,130) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-60 159,-55 159,-70" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(159,-70)" />
          <text transform="translate(155,-100) rotate(135)" class="te">792Y85</text>
        </g>
-       <g id="792Y86" transform="translate(-135,130) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y86" transform="translate(-135,130) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-60 152,-55 152,-70" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(152,-70)" />
          <text transform="translate(148,-100) rotate(135)" class="te">792Y86</text>
        </g>
-       <g id="792Y87" transform="translate(-130,130) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y87" transform="translate(-130,130) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-60 145,-55 145,-70" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(145,-70)" />
          <text transform="translate(141,-100) rotate(135)" class="te">792Y87</text>
        </g>
-       <g id="792Y88" transform="translate(-125,130) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y88" transform="translate(-125,130) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-60 138,-55 138,-70" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(138,-70)" />
          <text transform="translate(134,-100) rotate(135)" class="te">792Y88</text>
        </g>
-       <g id="792Y89" transform="translate(-120,130) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y89" transform="translate(-120,130) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-60 131,-55 131,-70" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(131,-70)" />
          <text transform="translate(127,-100) rotate(135)" class="te">792Y89</text>
        </g>
-       <g id="792Y90" transform="translate(-115,130) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y90" transform="translate(-115,130) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-20 124,-55 124,-70" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(124,-70)" />
          <text transform="translate(120,-100) rotate(135)" class="te">792Y90</text>
        </g>
-       <g id="792Y91" transform="translate(-110,130) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y91" transform="translate(-110,130) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-60 117,-55 117,-70" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(117,-70)" />
          <text transform="translate(113,-100) rotate(135)" class="te">792Y91</text>
        </g>
-       <g id="792Y92" transform="translate(-105,130) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y92" transform="translate(-105,130) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-60 110,-40 110,-70" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(110,-70)" />
          <text transform="translate(106,-100) rotate(135)" class="te">792Y92</text>
        </g>
-       <g id="792Y93" transform="translate(-100,130) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y93" transform="translate(-100,130) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-50 103,-45 103,-70" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(103,-70)" />
          <text transform="translate(99,-100) rotate(135)" class="te">792Y93</text>
        </g>
-       <g id="792Y94" transform="translate(-95,130) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y94" transform="translate(-95,130) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-45 96,-40 96,-70" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(96,-70)" />
          <text transform="translate(92,-100) rotate(135)" class="te">792Y94</text>
        </g>
-       <g id="792Y95" transform="translate(-90,130) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y95" transform="translate(-90,130) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-40 89,-35 89,-70" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(89,-70)" />
          <text transform="translate(85,-100) rotate(135)" class="te">792Y95</text>
        </g>
-       <g id="792Y96" transform="translate(-85,130) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y96" transform="translate(-85,130) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-20 82,-25 82,-70" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(82,-70)" />
          <text transform="translate(78,-100) rotate(135)" class="te">792Y96</text>
        </g>
-       <g id="792Y97" transform="translate(-80,130) rotate(180)" onmouseover="highlight(this)">
+       <g id="sig792Y97" transform="translate(-80,130) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,-15 75,-20 75,-70" />
          <use xlink:href="#signalplatz" />
          <use xlink:href="#signal_f_bb" transform="translate(75,-70)" />
