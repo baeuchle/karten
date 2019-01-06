@@ -456,7 +456,7 @@
       <use xlink:href="#dobs_ausen" transform="rotate(90)" />
       <text x="0" y="20">Südbahnhof</text>
     </g>
-    <g id="hstbrus" transform="translate(75,-5)" class="zehnzig">
+    <g id="hstbrus" transform="translate(75,-5)" class="zehnzig" style="visibility:hidden">
       <use xlink:href="#bahnsteig" transform="rotate(90)" />
      <g transform="translate(0,27)">
        <text y="-12" class="hstgrtitel">Südbahnhof/</text>
@@ -660,16 +660,20 @@
    <use xlink:href="#hstgrid"/>
    <g id="hstgin_" class="dreizig tm"><use xlink:href="#bstg_ausen" transform="rotate(-90)" /><text x="0" y="-20">Ginnheim</text></g>
   </g>
-  <g id="hgrwes" class="tm" transform="translate(-225,-121.5)">
-   <path class="hstgruppe" d="M -15,70 c 40,0 40,-10 40,-40 c 0,-30 0,-50 -20,-50 s -60,40 -60,75 c 0,15 20,15 40,15 " />
-   <g id="hstwbf" transform="translate(6,0)" class="nullzig">
-    <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" />
-    <use xlink:href="#bahnsteig" transform="translate(+5,0) rotate(180)" />
+  <g id="hstwbf" transform="translate(-219,-121.5)" class="nullzig te">
+   <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" />
+   <use xlink:href="#bahnsteig" transform="translate(+5,0) rotate(180)" />
+   <use xlink:href="#hstgrid" />
+   <text x="-10" y="5">Westbahnhof</text>
+  </g>
+  <g id="hstnhs" transform="translate(-215,-69) rotate(-90)" class="dreizig te">
     <use xlink:href="#hstgrid" />
-    <text x="-10" y="5" class="te">Westbahnhof</text>
-   </g>
-   <g id="hstnhs" transform="translate(10,52.5) rotate(-90)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text x="-15" y="10" transform="rotate(45)">Nauheimer Straße</text></g>
-  <g id="hstkws" transform="translate(-30,52.5) rotate(-90)" class="dreizig te"><use xlink:href="#wien_ausen" /><text x="-15" y="10" transform="rotate(45)">Kuhwaldstraße</text></g>
+    <use xlink:href="#bstg_ausen" />
+    <text x="-15" y="10" transform="rotate(45)">Nauheimer Straße</text>
+  </g>
+  <g id="hstkws" transform="translate(-255,-69) rotate(-90)" class="dreizig te">
+    <use xlink:href="#wien_ausen" />
+    <text x="-15" y="10" transform="rotate(45)">Kuhwaldstraße</text>
   </g>
   <g id="hstadd" transform="translate(-295,-69) rotate(-90)" class="dreizig te"><use xlink:href="#wien_ausen" /><text x="-15" y="10" transform="rotate(45)">An der Dammheide</text></g>
   <g id="hstldv" transform="translate(-335,-69) rotate(-90)" class="dreizig te"><use xlink:href="#bstg_ausen" /><text x="-15" y="10" transform="rotate(45)">Leonardo-da-Vinci-Allee</text></g>
@@ -931,7 +935,7 @@
   <path id="schleife_hugojunkersstraß2" d="M 900,200 c 0,5 10,5 10,10 v 10 c 0,5 -10,5 -10,10" />
   <path id="gw_schießhüttenstraße" d="M 1015,295 v 20 c 0,10 10,10 10,20" />
   <path id="gw_münzenberger" d="M 278.5,-96.5 c 3.5,-3.5 10.5,3.5 14,0" />
-  <use xlink:href="#weg" transform="translate(285.5,-96.5) rotate(45)"/>
+  <use xlink:href="#weg" transform="translate(285.5,-96.5) scale(0.5,0.5)"/>
   <path id="gw_gravensteinerplatz" d="M 492,-310 c -3.5,3.5 3.5,10.5 0,14 c -3.5,3.5 -10.5,-3.5 -14,0" />
   <path id="gw_burgstraße" d="M 445,-55 c 5,0 5,10 10,10" />
   <path id="gw_eissporthalle" d="M 680,-55 c 5,0 5,10 10,10" />
