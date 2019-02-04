@@ -3731,7 +3731,7 @@
         <path class="signalverbinder" d="M -33,38 c 20,0 25,-30 32,-37" />
         <use xlink:href="#signalplatz" transform="rotate(135)"/>
         <use xlink:href="#signal_haupt_02v" transform="translate(-33,38) rotate(180)" />
-        <text transform="translate(-28,88) rotate(-90)" class="te">526H63</text>
+        <text transform="translate(-28,88) rotate(-90)" class="te">526H62</text>
       </g>
       <g id="sig526H63" transform="translate(-17,-42.5)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M -52,42.5 c 20,0 45,-34.5 52,-41.5" />
