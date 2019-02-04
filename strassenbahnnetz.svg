@@ -15,7 +15,7 @@
     style="fill:white;stroke:#0000c0;stroke-width:.1px" />
  <text class="ab_bb" x="-865" y="732"><a xlink:href="strassenbahnnetz.svg/0000000000000000000000000000000000000000" class="rev">Permalink zu dieser Version</a></text>
  <text class="ab_bb" x="-865" y="742"><a xlink:href="strassenbahnnetz.svg/0000000000000000000000000000000000000000" class="rev">(<tspan class="hash"/>)</a></text>
-  <text class="ab_bb" x="-865" y="752">© CC-BY-SA 4.0 or later 2011-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
+ <text class="ab_bb" x="-865" y="752">© CC-BY-SA 4.0 or later 2011-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <metadata>
   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -60,8 +60,10 @@
   .doppelstrich path { fill:none; stroke:black; stroke-width:.5px; }
 
   .geplant { stroke-dasharray: 3,1; }
-  .verbot circle, path.verbot { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; }
-  .verbot text { stroke:black; fill:black; text-anchor:middle; font-size:8pt; }
+  path.verbot { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; }
+  .ubahng { stroke-dasharray: .5,.5; }
+  .ubahnt { stroke-dasharray: .5,.5; stroke:#000080; }
+  #tunnelrampe { fill:none; stroke:#000000; stroke-width:1px; }
   path#weg { stroke:red; stroke-width:2; fill:none; }
   path.umleit { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; }
 
@@ -90,8 +92,9 @@
   .hstgrtitel { font-size:6pt; }
 
   .box { fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:2; }
-  .ueberschrift { font-size:16pt;fill:black;fill-opacity:1;stroke:none; }
-  .unterschrift { font-size:14pt;fill:#ff0000;fill-opacity:1;stroke:none; }
+  .headline { font-weight: bold; }
+  .ueberschrift { font-size:22pt;fill:black;fill-opacity:1;stroke:none; }
+  .unterschrift { font-size:18pt;fill:#ff0000;fill-opacity:1;stroke:none; }
   .stand {  font-size:12pt;fill:#000000;fill-opacity:1;stroke:none; }
 
   #baeume circle { fill:#008000; stroke:none; }
@@ -233,6 +236,7 @@
   <g id="hstl_vers1"><use xlink:href="#haltestel" transform="translate(-5,-5) rotate(180)" /><use xlink:href="#haltestel" transform="translate(5,5)" /></g>
   <g id="hstl_vers2"><use xlink:href="#haltestel" transform="translate(-5,5) rotate(180)" /><use xlink:href="#haltestel" transform="translate(5,-5)" /></g>
   <g id="hstl_links"><use xlink:href="#haltestel" transform="translate(-5,0) rotate(180)" /></g>
+  <g id="wien_einzl"><use xlink:href="#bahnsteig"  class="dreizig" /><use xlink:href="#haltestel" /></g>
   <g id="wien_ausen"><use xlink:href="#bstg_ausen" class="dreizig" /><use xlink:href="#hstl_ausen" /></g>
   <g id="wien_vers2">
    <use xlink:href="#bstg_vers2" class="dreizig" />
@@ -242,6 +246,7 @@
   <g id="dobs_mitte"><use xlink:href="#bstg_mitte" /><use xlink:href="#trennstrich" transform="translate(-4,0)" /></g>
   <g id="dobs_ausen"><use xlink:href="#doppelbst" transform="translate(-5,0) rotate(180)" /><use xlink:href="#doppelbst" transform="translate(5,0)" /></g>
   <g id="dobs_vers2"><use xlink:href="#doppelbst" transform="translate(-5,9) rotate(180)" /><use xlink:href="#doppelbst" transform="translate(5,-9)" /></g>
+  <path id="tunnelrampe" d="M -6,-3 L -4,0 L 4,0 L 6,-3" />
   <pattern id="backslash" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10">
    <path d="M 0,0 l 10,10 v -5 l -5,-5"/>
    <path d="M 0,10 h 5 l -5,-5"/>
@@ -321,55 +326,92 @@
   </pattern>
  </defs>
  <g id="textboxen">
-  <g id="legende" transform="translate(1035,-425) translate(-350)">
-   <rect class="box" width="350" height="205" />
-   <text class="ueberschrift tm" x="175" y="30">Straßenbahn Frankfurt am Main</text>
-   <text class="unterschrift" x="15" y="55">Streckennetz (ohne Maßstab)</text>
-   <text class="stand"        x="15" y="75">Stand: <tspan class="stand_monat"/></text>
-   <g class="legende_normal" transform="translate(30,105)"><path class="strecke" d="M 0 -6 h 30" /><path class="strecke geplant" d="M 30 -6 h 30" /><text x="75">Straßenbahngleis (geplant)</text></g>
-   <g class="legende_normal" transform="translate(30,125)"><path class="strecke ubergabe" d="M 0 -6 h 50" /><text x="55" class="tm ref">A</text><text x="75">Anschluss an U-Bahn-Netz mit Referenz¹</text></g>
-   <g class="legende_normal" transform="translate(30,145)"><path class="strecke anschluss" d="M 0 -6 h 45" /><text x="75">Anschluss an DB-Netz</text></g>
-   <text class="ab_bb"   transform="translate(30,165)">BB: Betriebsbahnhof</text>
-   <text class="ab_bb" transform="translate(6,200)">¹:</text>
-   <text class="ab_bb" transform="translate(18,200)">Siehe <a class="link" xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000">U-Bahn-Netz Frankfurt</a></text>
-   <g class="nowiki">
-    <text class="ab_bb te" transform="translate(332,201)"><a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg">Dieser Plan bei Wikipedia</a></text>
-    <a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(333,188)"/></a>
+  <g id="ueberschrift_box" transform="translate(1035,-425) translate(-450)">
+   <rect class="box" width="450" height="85" />
+   <text class="ueberschrift" x="15" y="35">Straßenbahn Frankfurt am Main</text>
+   <text class="unterschrift" x="15" y="60">Streckennetz (ohne Maßstab)</text>
+   <text class="stand"        x="15" y="80">Stand: <tspan class="stand_monat"/></text>
+   <g class="nowiki" transform="translate(450,80)">
+    <text class="ab_bb te" transform="translate(-18,1)"><a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg">Dieser Plan bei Wikipedia</a></text>
+    <a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(-17,-12)"/></a>
    </g>
   </g>
-  <g id="legende_bahnsteige" transform="translate(-865,-425)">
-   <rect class="box" width="360" height="285" />
-   <text x="15" y="20" style="font-weight:bold;">Bahnsteige/Haltestellen</text>
-   <text class="hstgrtitel" x="33" y="40">↓ Symbol für Doppel- oder lange Haltestelle</text>
-   <g class="legende_normal" transform="translate(15,55)">
-    <use xlink:href="#haltestel" transform="rotate(90)" />
-    <!--<use xlink:href="#doppelhst" transform="translate(20,0) rotate(90)" />-->
-    <text x="35" y="5">Einstieg von der Straße, 0 cm</text>
+  <g id="legende" transform="translate(1035,755) translate(-830,0) rotate(-90)">
+   <rect class="box" style="fill-color:#ffffff; fill-opacity:1;" width="150" height="830" />
+   <text transform="rotate(+90) translate(20,-120)" class="ueberschrift">Legende</text>
+   <path d="M 20,20 v 105" class="strecke faeng"/>
+   <path d="M 30,20 v 105" class="strecke faeng" />
+   <path d="M 30,80 c 0,5 -10,5 -10,10" class="strecke bb" />
+   <path d="M 20,110 a 15,15 0,0,0 30,0 a 10,10 0,0,0 -10,-10 a 10,10 0,0,1 -10,-10" class="strecke bb" />
+   <path d="M 30,125 v 60" class="strecke geplant" />
+   <path d="M 20,125 v 60" class="strecke geplant" />
+   <path d="M 30,185 v 550 a 10,10 0,0,0 10,10 a 10,10 0,0,1 10,10 v 5 a 15,15 0,0,1 -30,0 v -575" class="strecke" />
+   <path d="M 20,200 a 20,20 0,0,0 20,20 h 15" class="strecke ubergabe" />
+   <path d="M 30,200 a 15,15 0,0,0 15,15 h 10" class="strecke ubergabe" />
+   <path d="M 55,215 h 10 a 10,10 0,0,1 10,10 v 10 m 0,-10 v -20" class="strecke ubahng" />
+   <path d="M 55,220 h 10 a 5,5 0,0,1 5,5 v 10 m 0,-10 v -20" class="strecke ubahng" />
+   <text transform="translate(35,25) rotate(45)">Gleisende</text>
+   <text transform="translate(35,45) rotate(45)">Zweigleisige Strecke</text>
+   <text transform="translate(35,60) rotate(45)">(Hauptgleise)</text>
+   <text transform="translate(35,85) rotate(45)">Gleiswechsel</text>
+   <text transform="translate(35,110) rotate(45) translate(20,0)">Schleife</text>
+   <text transform="translate(35,135) rotate(45)">Abschnitt in Bau</text>
+   <text transform="translate(35,155) rotate(45)" class="nowiki">/ geplant <tspan class="ab_bb">(siehe Legende oben)</tspan></text>
+   <text transform="translate(60,222)" class="tm ref">X</text>
+   <text transform="translate(35,230) rotate(45)">Anschluss an <a xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000">U-Bahn-Netz</a></text>
+   <text transform="translate(35,250) rotate(45)"><a xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000">Frankfurt</a> mit Referenz</text>
+   <text transform="translate(35,265) rotate(45)" class="ab_bb">(und kurzem Ausschnitt der U-Bahn-Gleise)</text>
+   <use xlink:href="#weg" transform="translate(30,285)"/>
+   <text transform="translate(35,290) rotate(45)">Gleis gesperrt</text>
+   <g id="bahnsteig_legende" transform="translate(0,330)">
+     <text transform="translate(100,55) rotate(45)" class="headline tm">Haltestellen</text>
+     <text transform="translate(55,30) rotate(45)" class="ab_bb">Als Bahnsteig zählt jede Fläche,</text>
+     <text transform="translate(55,45) rotate(45)" class="ab_bb">die nicht dem Autoverkehr zur</text>
+     <text transform="translate(55,60) rotate(45)" class="ab_bb">Verfügung steht.</text>
+     <text transform="translate(10,-10) rotate(90)" class="ab_bb">Doppel- oder lange Haltestelle</text>
+     <text transform="translate(35,-10) rotate(90)" class="ab_bb">Einfachhaltestelle</text>
+     <use xlink:href="#haltestel" transform="translate(30,75)" />
+     <text transform="translate(40,80) rotate(45)">Einstieg von Straße, 0 cm</text>
+     <use xlink:href="#wien_einzl" class="dreizig" transform="translate(30,110)" />
+     <text transform="translate(40,105) rotate(45)">Barrierefreier Einstieg</text>
+     <text transform="translate(40,120) rotate(45)">von Straße</text>
+     <text transform="translate(40,130) rotate(45)" class="ab_bb">(Wiener Modell)</text>
+     <use xlink:href="#doppelbst" class="nullzig" transform="translate(20,155) rotate(180)" />
+     <use xlink:href="#bahnsteig" class="nullzig" transform="translate(30,155)" />
+     <text transform="translate(40,160) rotate(45)">Bahnsteig, 0 cm</text>
+     <use xlink:href="#doppelbst" class="zehnzig" transform="translate(20,190) rotate(180)" />
+     <use xlink:href="#bahnsteig" class="zehnzig" transform="translate(30,190)" />
+     <text transform="translate(40,195) rotate(45)">Bahnsteig &gt; 0 cm</text>
+     <text transform="translate(40,205) rotate(45)" class="ab_bb">nicht barrierefrei</text>
+     <use xlink:href="#doppelbst" class="dreizig" transform="translate(20,225) rotate(180)" />
+     <use xlink:href="#bahnsteig" class="dreizig" transform="translate(30,225)" />
+     <text transform="translate(40,230) rotate(45)">Bahnsteig, 18-24 cm</text>
+     <text transform="translate(40,240) rotate(45)" class="ab_bb">barrierefreier Einstieg</text>
+     <use xlink:href="#bstg_ausen" class="dreizig" transform="translate(25,265)" />
+     <use xlink:href="#uml" transform="translate(15,265) rotate(90)" />
+     <use xlink:href="#bau" transform="translate(35,265) rotate(90)" />
+     <text transform="translate(40,270) rotate(45)">Umbauten</text>
+     <text transform="translate(40,280) rotate(45)" class="ab_bb">Ersatzhaltestelle / Halt entfällt</text>
+     <use xlink:href="#bstg_ubahn" transform="translate(30,300) rotate(180)" />
+     <text transform="translate(40,310) rotate(45)">U-Bahn-Bahnsteig</text>
+     <g class="legende_normal" transform="translate(25,350)">
+       <circle class="bstggruppe" r="20" />
+       <use xlink:href="#haltestel" transform="translate(5,-5)" />
+       <use xlink:href="#haltestel" transform="translate(-15,5)" />
+       <text transform="translate(30, 0) rotate(45)">Zusammenhängende</text>
+       <text transform="translate(30, 15) rotate(45)">Haltepositionen</text>
+       <text transform="translate(30, 25) rotate(45)" class="ab_bb">(gleiche Haltestelle)</text>
+     </g>
+     <g class="legende_normal" transform="translate(25,400)">
+       <circle class="hstgruppe" r="20" />
+       <use xlink:href="#haltestel" transform="translate(5,-5)" />
+       <use xlink:href="#haltestel" transform="translate(-15,5)" />
+       <text transform="translate(30, 0) rotate(45)">Haltestellengruppe</text>
+       <text transform="translate(30, 10) rotate(45)" class="ab_bb">(verschiedene Haltestellen)</text>
+     </g>
    </g>
-   <g class="legende_normal nullzig" transform="translate(15,75)">
-    <use xlink:href="#bahnsteig" transform="rotate(90)" />
-    <use xlink:href="#doppelbst" transform="translate(20,0) rotate(90)" />
-    <text x="35" y="5">Bahnsteig² 0 cm</text>
-   </g>
-   <g class="legende_normal zehnzig" transform="translate(15,95)"><use xlink:href="#doppelbst" transform="translate(20,0) rotate(90)" /><use xlink:href="#bahnsteig" transform="rotate(90)" /><text x="35" y="5">Bahnsteig &gt; 0cm, aber nicht barrierefrei</text></g>
-   <g class="legende_normal dreizig" transform="translate(15,115)">
-    <use xlink:href="#bahnsteig" transform="rotate(90)" />
-    <use xlink:href="#doppelbst" transform="translate(20,0) rotate(90)" />
-    <text x="35" y="5">Bahnsteig, 18-24cm (barrierefreier Einstieg)</text>
-   </g>
-   <g class="legende_normal dreizig" transform="translate(15,135)">
-    <use xlink:href="#bahnsteig" transform="rotate(90)" /><use xlink:href="#haltestel" transform="rotate(90)"/>
-    <text x="35" y="5">Barrierefreier Einstieg von der Straße <tspan class="hstgrtitel">(Wiener Modell)</tspan></text>
-   </g>
-   <g class="legende_normal achtzig" transform="translate(15,155)"><use xlink:href="#bahnsteig" transform="rotate(90) translate(0,-7.5) scale(1,2)" /><text x="35" y="5">80 cm (U-Bahnsteig)</text></g>
-   <g class="legende_normal        " transform="translate(15,175)"><use xlink:href="#bau" /><text x="35" y="5">im Bau/Umbau</text></g>
-   <g class="legende_normal        " transform="translate(15,195)"><use xlink:href="#uml" /><text x="35" y="5">Haltestelle vorübergehend verschoben</text></g>
-   <g class="legende_normal" transform="translate(35,235)"><circle class="bstggruppe" r="20" /><use xlink:href="#haltestel" transform="translate(0,-5)" /><use xlink:href="#haltestel" transform="translate(-15,5)" /><text x="15" y="-15">Zusammenhängende Haltepositionen</text><text x="15" y="-3">(gleiche Haltestelle)</text></g>
-   <g class="legende_normal te" transform="translate(325,235)"><circle class="hstgruppe" r="20" /><use xlink:href="#haltestel" transform="translate(10,-5)" /><use xlink:href="#haltestel" transform="translate(-5,5)" /><text x="-10" y="9">Haltestellengruppe</text><text x="-10" y="21">(verschiedene Haltestellen)</text></g>
-   <text class="ab_bb" transform="translate(6,275)">²:</text>
-   <text class="ab_bb" transform="translate(18,275)">Als Bahnsteig zählt jede Fläche, die nicht dem Autoverkehr zur Verfügung steht.</text>
   </g>
-  <g id="ausbauprojekte" transform="translate(-505,-425)">
+  <g id="ausbauprojekte" transform="translate(835,-340)">
    <rect class="box" width="200" height="155" />
    <text class="unterschrift" x="5" y="20">Ausbauprojekte</text>
    <text class="hochstatio" x="5" y="40" onclick="geplant('ausbau_ring')">Ringstraßenbahn <tspan class="link" id="ausbau_ring_aktion">anzeigen</tspan></text>
@@ -383,8 +425,8 @@
    <text class="ab_bb" x="10" y="140">Status: Planfeststellung fertig;</text>
    <text class="ab_bb" x="10" y="150">Baubeginn nicht absehbar</text>
   </g>
-  <text transform="translate(770,-115) translate(10,-5)" class="ab_bb">Anschluss Richtung BB Ost (via Johanna-Tesch-Platz)</text>
-  <text transform="translate(-350,220)" class="ab_bb te">BB Gutleut</text>
+  <text transform="translate(753.5,-63.5)" class="ab_bb tm">Anschluss Richtung BB Ost</text>
+  <text transform="translate(753.5,-53.5)" class="ab_bb tm">(via Johanna-Tesch-Platz)</text>
   <text transform="translate(685,128)" class="ab_bb te">Zentrale</text>
   <text transform="translate(685,135)" class="ab_bb te">Werkstätten</text>
   <text transform="translate(685,142)" class="ab_bb te">Infrastruktur</text>
@@ -657,8 +699,9 @@
   <g id="hstmkh_" transform="translate(-148,-310)" class="zehnzig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_ausen" /><text x="-15" y="3">Markus-Krankenhaus</text></g>
   <g id="hstggin" transform="translate(-173,-375)">
    <use id="bstg_ginnheim_3" xlink:href="#bstg_ubahn" transform="translate(-7.5,-15) rotate(-90)" />
+   <use id="bstg_ginnheim_45" xlink:href="#bstg_ubahn" transform="translate(-7.5,-26) rotate(-90)" />
    <use xlink:href="#hstgrid"/>
-   <g id="hstgin_" class="dreizig tm"><use xlink:href="#bstg_ausen" transform="rotate(-90)" /><text x="0" y="-20">Ginnheim</text></g>
+   <g id="hstgin_" class="dreizig te"><use xlink:href="#bstg_ausen" transform="rotate(-90)" /><text x="0" y="20">Ginnheim</text></g>
   </g>
   <g id="hstwbf" transform="translate(-219,-121.5)" class="nullzig te">
    <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" />
@@ -938,7 +981,7 @@
   <use xlink:href="#weg" transform="translate(285.5,-96.5) scale(0.5,0.5)"/>
   <path id="gw_gravensteinerplatz" d="M 492,-310 c -3.5,3.5 3.5,10.5 0,14 c -3.5,3.5 -10.5,-3.5 -14,0" />
   <path id="gw_burgstraße" d="M 445,-55 c 5,0 5,10 10,10" />
-  <path id="gw_eissporthalle" d="M 680,-55 c 5,0 5,10 10,10" />
+  <path id="gw_eissporthalle" d="M 684,-49 c 3.5,3.5 -3.5,10.5 0,14" />
   <path id="schleife_zoo" d="M 470,130 a 5,5 0,0,0 -5,-5 h -15 a 10,10 0,1,1 10,-10" />
   <path id="gw_buchrainplatz" d="M 675,515 c 5,0 5,10 10,10" />
   <path id="gw_balduinstrasse" d="M 550,515 c 5,0 5,10 10,10" />
@@ -1091,9 +1134,15 @@
   <path id="altstadt_2" d="M 275,170 h -280 a 10,10 0,0,1 -10,-10" />
   <path id="konstablerwache_1" d="M 245,180 a 20,20 0,0,0 20,-20 v -195 a 10,10 0,0,1 10,-10" />
   <path id="konstablerwache_2" d="M 275,-55 a 20,20 0,0,0 -20,20 v 195 a 10,10 0,0,1 -10,10" />
-  <path id="glauburgstraße_1" class="ubergabe" d="M 265,-35 a 20,20 0,0,0 -20,-20 h -50" />
-  <path id="glauburgstraße_2" class="zugabe" d="M 195,-45 h 50 a 10,10 0,0,1 10,10" />
-  <text transform="translate(195,-50) translate(-5,5)" class="ref te">B</text>
+  <g id="uberg_glauburg" transform="translate(215,-50)">
+    <path id="glauburgstr_1" class="ubergabe" d="M 50,15 a 20,20 0,0,0 -20,-20 h -30" />
+    <path id="glauburgstr_2" class="zugabe" d="M 0,5 h 30 a 10,10 0,0,1 10,10" />
+    <path class="ubahng" d="M 0,-5 h -10 a 5,5 0,0,1 -5,-5" />
+    <path class="ubahng" d="M -20,-5 a 10,10 0,0,0 10,10 h 10" />
+    <path class="ubahng" d="M -15,-15 v 30" />
+    <path class="ubahng" d="M -20,15 v -30" />
+    <text transform="translate(0,4)" class="ref te">B</text>
+  </g>
   <path id="friedbergerlandstraße_1" class="endet" d="M 265,-35 v -30 q 0,-4 3,-7 l 245,-245" />
   <path id="friedbergerlandstraße_2" class="faeng" d="M 506,-324 l -245,245 q -6,6 -6,14 v 30" />
   <path id="friedbergerlandstraße_n" class="mitte hilfslinie"    d="M 260,-35 v -30 q 0,-6 4.5,-10.5 l 3.5,3.5 -7,-7 3.5,3.5 l 245,-245" />
@@ -1120,8 +1169,25 @@
   </g>
   <path id="bornheim_1" d="M 255,-65 a 20,20 0,0,0 20,20 h 300 a 10,10 0,0,1 10,10" />
   <path id="bornheim_2" d="M 595,-35 a 20,20 0,0,0 -20,-20 h -300 a 10,10 0,0,1 -10,-10" />
-  <path id="eissporthalle_1" d="M 575,-45 h 180 a 10,10 0,0,1 10,10" />
-  <path id="eissporthalle_2" d="M 775,-35 a 20,20 0,0,0 -20,-20 h -180" />
+  <path id="eissporthalle_m" class="mitte hilfslinie" d="M 575,-50 h 95 q 6,0 10.5,4.5 l 53,53 h -5,5" />
+  <path id="eissporthalle_1" d="M 575,-45 h 95 q 4,0 7,3 l 53,53" />
+  <path id="eissporthalle_2" d="M 737,4 l -53,-53 q -6,-6 -14,-6 h -95" />
+  <path id="ratsweg_m" class="mitte hilfslinie" d="M 733.5,-13.5 v -5,5 h -5,5 q -4.5,4.5 -4.5,10.5 q 0,6 4.5,10.5 h 5,-5 l 32,32 q 4.5,4.5 4.5,10.5 v 110 h 5,-5 a 15,15 0,0,1 -15,15" />
+  <path id="ratsweg_1" d="M 730,-17 q -6,6 -6,14 q 0,8 6,14 l 32,32 q 3,3 3,7 v 110 a 10,10 0,0,1 -10,10" />
+  <path id="ratsweg_2" d="M 755,180 a 20,20 0,0,0 20,-20 v -110 q 0,-8 -6,-14 l -32,-32 q -3,-3 -3,-7 q 0,-4 3,-7" />
+  <g id="ueberg_johanna_tesh_platz" transform="translate(753.5,-33.5)">
+    <path id="johannateschplatz_m" class="mitte hilfslinie" d="M -41,20 q 4.5,4.5 10.5,4.5 q 6,0 10.5,-4.5 h 5,-5 v 5,-5 l 20,-20" />
+    <path id="johannateschplatz_1" class="ubergabe" d="M -44.5,23.5 q 6,6 14,6 q 8,0 14,-6 l 20,-20" />
+    <path id="johannateschplatz_2" class="zugabe" d="M -3.5,-3.5 l -20,20 q -3,3 -7,3 q -4,0 -7,-3" />
+    <path class="ubahng" d="M 3.5,3.5 l 9.5,-9.5 q 3,-3 7,-3" />
+    <path class="ubahng" d="M 15,-14 q -8,0 -14,6 l -4.5,4.5" />
+    <path class="ubahng" d="M 40,-9 h -50" />
+    <path class="ubahng" d="M -10,-14 h 50" />
+    <path class="ubahnt" d="M -10,-9 h -10" />
+    <path class="ubahnt" d="M -20,-14 h 10" />
+    <use xlink:href="#tunnelrampe" transform="translate(-10,-11.5) rotate(90)" />
+    <text transform="rotate(45) translate(0,-1)" class="ref tm">O</text>
+  </g>
   <path id="batonstraße_1" d="M 255,160 a 20,20 0,0,0 20,20 h 75 a 10,10 0,0,1 10,10" />
   <path id="batonstraße_2" d="M 370,190 a 20,20 0,0,0 -20,-20 h -75 a 10,10 0,0,1 -10,-10" />
   <path id="allerheiligentor_1" d="M 350,180 h 130" />
@@ -1132,11 +1198,6 @@
   <path id="inheidenerstraße" d="M 595,-35 v -85 a 15,15 0,1,0 -30,0 a 10,10 0,0,0 10,10 a 10,10 0,0,1 10,10 v 65" />
   <path id="ostbahnhof_1" d="M 460,160 a 20,20 0,0,0 20,20 h 305" />
   <path id="ostbahnhof_2" d="M 785,170 h -305 a 10,10 0,0,1 -10,-10" />
-  <path id="ratsweg_1" d="M 755,180 a 20,20 0,0,0 20,-20 v -225" />
-  <path id="ratsweg_2" d="M 765,-65 v 225 a 10,10 0,0,1 -10,10" />
-  <path id="johannateschplatz_1" class="ubergabe" d="M 755,-45 a 20,20 0,0,0 20,-20 v -50" />
-  <path id="johannateschplatz_2" class="zugabe" d="M 765,-115 v 50 a 10,10 0,0,1 -10,10" />
-  <text transform="translate(770,-115) translate(0,-5)" class="ref tm">O</text>
   <path id="hanauerlandstraße_1" d="M 765,160 a 20,20 0,0,0 20,20 h 220 a 10,10 0,0,1 10,10 v 105 c 0,10 10,10 10,20 " />
   <path id="hanauerlandstraße_2" class="faeng" d="M 1025,345 v -155 a 20,20 0,0,0 -20,-20 h -220 a 10,10 0,0,1 -10,-10" />
   <path id="hauptbahnhof_1" d="M -15,190 v -130" />
@@ -1147,16 +1208,34 @@
   <path id="friedrichebertanlage_1" d="M -153,-140 v 30 q 0,8 6,14 l 119,119 q 3,3 3,7 v 30 a 10,10 0,0,1 -10,10" />
   <path id="friedrichebertanlage_2" d="M -35,80 a 20,20 0,0,0 20,-20 v -30 q 0,-8 -6,-14 l -119,-119 q -3,-3 -3,-7 v -30" />
   <path id="friedrichebertanlage_m" class="mitte hilfslinie" d="M -35,75 a 15,15 0,0,0 15,-15 v -30 q 0,-6 -4.5,-10.5 l 3.5,-3.5 -7,7 3.5,-3.5 l -119,-119 l 3.5,-3.5 -7,7 3.5,-3.5 q -4.5,-4.5 -4.5,-10.5 h 5 -5 v -30 h 5" />
-  <path id="schlossstraße_1" class="bb ubergabe" d="M -140,-103 l -70,-70" />
-  <path id="schlossstraße_2" class="bb zugabe" d="M -217,-166 l 70,70" />
-  <path id="schlossstraße_m" class="mitte hilfslinie" d="M -143.5,-99.5 l -35,-35 l 3.5,-3.5 -3.5,3.5 l -35,-35" />
-  <text transform="translate(-213.5,-169.5) rotate(-45) translate(0,-5)" class="ref tm">C</text>
+  <g id="ubergabe_schlossstr" transform="translate(-198.5,-154.5)">
+    <path id="schlossstr_m" class="mitte hilfslinie" d="M 55,55 l -35,-35 l 3.5,-3.5 -3.5,3.5 l -20,-20" />
+    <path id="schlossstr_1" class="bb ubergabe" d="M 58.5,51.5 l -55,-55" />
+    <path id="schlossstr_2" class="bb zugabe" d="M -3.5,3.5 l 55,55" />
+    <path class="ubahng" d="M -40,-9 c 5,0 5,5 10,5 h 15 q 4,0 7,3 l 4.5,4.5" />
+    <path class="ubahng" d="M -30,-19 c -5,0 -5,5 -10,5" />
+    <path class="ubahng endet" d="M 3.5,-3.5 l -9.5,-9.5 q -6,-6 -14,-6 h -20" />
+    <path class="ubahng" d="M -45,-9 h 30" />
+    <path class="ubahng" d="M -15,-14 h -30" />
+    <path class="ubahnt" d="M -15,-9 h 20" />
+    <path class="ubahnt" d="M 5,-14 h -20" />
+    <path class="ubahng" d="M -15,-14 c -5,0 -5,5 -10,5 c -5,0 -5,-5 -10,-5" />
+    <use xlink:href="#tunnelrampe" transform="translate(-15,-11.5) rotate(-90)" />
+    <text transform="rotate(-45)" class="ref tm">C</text>
+  </g>
   <path id="ginnheim_1" d="M -177,-126 q 6,6 14,6 a 20,20 0,0,0 20,-20 v -220 a 20,20 0,0,0 -20,-20 h -20 c -5,0 -5,10 -10,10" />
-  <path id="ginnheim_u" class="ubergabe" d="M -193,-370 q -4,0 -7,-3 l -14,-14" />
   <path id="ginnheim_3" class="endet" d="M -213,-370 c -5,0 -5,-10 -10,-10 h -20" />
   <path id="ginnheim_2" class="faeng" d="M -243,-370 h 80 a 10,10 0,0,1 10,10 v 220 a 10,10 0,0,1 -10,10 q -4,0 -7,-3" />
-  <path id="ginnheim_n" class="mitte hilfslinie" d="M -173.5,-129.5 q 4.5,4.5 10.5,4.5 a 15,15 0,0,0 15,-15 h -5 5 v -220 h 5 -5 a 15,15 0,0,0 -15,-15 h -80" />
-  <text transform="translate(-214,-387) rotate(-45) translate(0,-5)" class="ref tm">A</text>
+  <path id="ginnheim_m" class="mitte hilfslinie" d="M -173.5,-129.5 q 4.5,4.5 10.5,4.5 a 15,15 0,0,0 15,-15 h -5 5 v -220 h 5 -5 a 15,15 0,0,0 -15,-15 h -80" />
+  <g id="ginnheim_gleise" transform="translate(-193,-370)">
+    <path id="ginnheim_u" class="ubergabe" d="M 0,0 q -4,0 -7,-3 l -9,-9" />
+    <path class="ubahng" d="M -16,-12 l -5,-5 q -3,-3 -7,-3 " />
+    <path class="ubahng endet" d="M -55,-20 h 85" />
+    <path class="ubahng faeng" d="M 30,-25 h -85" />
+    <path class="ubahng faeng" d="M 30,-30 h -35 c -5,0 -5,5 -10,5" />
+    <path class="ubahng" d="M -25,-25 c -5,0 -5,5 -10,5 c -5,0 -5,-5 -10,-5" />
+    <text transform="translate(-16,-12) rotate(-45)" class="ref tm">A</text>
+  </g>
   <path id="rebstock_1" class="endet" d="M -105,-68 q -6,-6, -14,-6 h -276" />
   <path id="rebstock_2a" class="faeng" d="M -395,-64 h 200 c 10,0 10,-10 20,-10" />
   <path id="rebstock_2b" d="M -150,-74 c 10,0 10,10 20,10 h 11 q 4,0 7,3" />
