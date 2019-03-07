@@ -36,12 +36,14 @@
     </h1>
     <p>
       Move around the upper map. The position of your mouse is used as north pole in the lower map.
+    </p>
     <canvas id="normal_world" width="720" height="360"
     onmousemove="track_poles(event)"
     onclick="set_poles(event)">
     </canvas>
     <canvas id="false_world" width="720" height="360"
-       style="background-color: #c6ecff; ">
+       style="background-color: #c6ecff; margin-top: 1em;"
+       >
     </canvas>
   </body>
     <script type="application/ecmascript">//<![CDATA[
