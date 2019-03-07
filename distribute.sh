@@ -7,6 +7,7 @@ for i in strassenbahnnetz.svg ubahnnetz.svg; do
     ./update.pl $revision < $i > $i.dist
     ./entscripten.pl < $i.dist > ${i/svg/wiki.svg}
 done
+./update.pl $revision < false-pole.html > false-pole.html.dist
 
 if [ -d /var/www/plan ]; then
     if [ $(which convert) ]; then

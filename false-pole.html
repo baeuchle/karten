@@ -4,16 +4,8 @@
    >
   <head>
     <title>False Pole</title>
-    <style type="text/css"><![CDATA[
-      .sea  { fill: #C6ECFF; fill-opacity:1; 
-              stroke:none;       
-            }
-      .land { fill: #FEFEE9; fill-opacity:1; fill-rule:nonzero;    
-              stroke:#646464;stroke-width:1;stroke-miterlimit:1;       
-            }
-    ]]></style>
-    <script type="application/javascript" src="shapes.js"></script>
-    <script type="application/javascript">
+    <script type="application/ecmascript" src="shapes.js"></script>
+    <script type="application/ecmascript">//<![CDATA[
       function sind(val) {
         return Math.sin(val * Math.PI / 180);
       }
@@ -35,20 +27,24 @@
       function atan2d(y, x) {
         return 180 / Math.PI * Math.atan2(y, x);
       }
+      //]]>
     </script>
   </head>
   <body onload="draw_normal()">
-    <p>
+    <h1>
       What would our maps look like if our poles were somewhere else?
-    </p>
-    <canvas id="normal_world" width="360" height="180"
+    </h1>
+    <p>
+      Move around the upper map. The position of your mouse is used as north pole in the lower map.
+    <canvas id="normal_world" width="720" height="360"
     onmousemove="track_poles(event)"
     onclick="set_poles(event)">
     </canvas>
-    <canvas id="false_world" width="360" height="180">
+    <canvas id="false_world" width="720" height="360"
+       style="background-color: #c6ecff; ">
     </canvas>
   </body>
-    <script type="application/javascript">
+    <script type="application/ecmascript">//<![CDATA[
       normalworld = {};
       function angles_to_canvas(canvas, angles) {
         if (angles.length == 2) {
@@ -128,13 +124,10 @@
       var last_angles = false;
       var last_detour = 0;
       function get_outside_y(canvas) {
-        console.log("Jump " + last_angles.theta + " " + last_detour);
         if ((last_angles.theta > 0 && (last_detour != -1)) || last_detour == 1) {
-          console.log("UP");
           last_detour = 1;
           return -2;
         }
-        console.log("DOWN");
         last_detour = -1;
         return canvas.height + 2;
       }
@@ -205,7 +198,7 @@
         ctx.fillRect(0, 0, can.width, can.height);
         ctx.lineWidth = 1;
         ctx.strokeStyle = "#646464";
-        ctx.fillStyle = "#fefef980";
+        ctx.fillStyle = "#fefef9";
         for (var i = 0; i < shapes.length; i++) {
           curr_shape = shapes[i];
           for (var j = 0; j < curr_shape.length; j++) {
@@ -214,6 +207,29 @@
           close_line(ctx);
           ctx.stroke();
           ctx.fill();
+        }
+        ctx.lineWidth = .5;
+        ctx.strokeStyle = "#ff0000";
+        var theta_start = 90;
+        /* längengrade */
+        for (var phi_m = 0; phi_m < 360; phi_m += 45) {
+          ctx.beginPath();
+          for (var theta_m = theta_start; theta_m >= -75; theta_m -= 1) {
+            draw_line(can, ctx, false_from_plain(north_pole, { phi: phi_m, theta: theta_m }));
+          }
+          end_line();
+          ctx.stroke();
+          ctx.strokeStyle = "#008000";
+          theta_start = 75;
+        }
+        /* breitengrade */
+        for (var theta_l = -75; theta_l <= 75; theta_l += 15) {
+          ctx.strokeStyle = theta_l == 0 ? "#000000" : "#000080";
+          for (var phi_l = 0; phi_l <= 360; phi_l += 5) {
+            draw_line(can, ctx, false_from_plain(north_pole, { phi: phi_l, theta: theta_l }));
+          }
+          end_line();
+          ctx.stroke();
         }
       }
 
@@ -231,20 +247,10 @@
         sp_coords = angles_to_canvas(can, south_pole);
         np = plain_from_false(north_pole, { phi: 0, theta:90 });
         np2= plain_from_false(north_pole, { phi:37, theta:90 });
-        // console.log(north_pole.phi + "," + north_pole.theta
-        //           + "..." + np.phi + "," + np.theta
-        //           + "..." + np2.phi+ "," + np2.theta);
         ctx.fillRect(np_coords.x - 1, np_coords.y - 1, 2, 2);
         ctx.fillStyle = "#0000ff";
         ctx.fillRect(sp_coords.x - 1, sp_coords.y - 1, 2, 2);
-        /* now the equator */
-        ctx.strokeStyle = "#000000";
         ctx.lineWidth = .5;
-        for (var phi = -180; phi <= 180; phi += 2) {
-          draw_line(can, ctx, { phi: phi, theta : equator(north_pole, phi) });
-        }
-        end_line();
-        ctx.stroke();
         ctx.strokeStyle = "#ff0000";
         var theta_start = 90;
         /* längengrade */
@@ -260,9 +266,9 @@
           ctx.strokeStyle = "#008000";
           theta_start = 75;
         }
-        ctx.strokeStyle = "#000080";
         /* breitengrade */
         for (var theta_l = -75; theta_l <= 75; theta_l += 15) {
+          ctx.strokeStyle = theta_l == 0 ? "#000000" : "#000080";
           for (var phi_l = 0; phi_l <= 360; phi_l += 5) {
             draw_line(can, ctx, plain_from_false(north_pole, { phi: phi_l, theta: theta_l }));
           }
@@ -277,5 +283,15 @@
         north_pole = canvas_to_angles(orig_can, [ev.offsetX, ev.offsetY]);
         draw_false(north_pole);
       }
+      //]]>
     </script>
+    <p style="font-size: 8pt;">
+      <a
+      href="https://plan.frankfurtium.de/false-pole.html/0000000000000000000000000000000000000000">
+      Permalink zu dieser Version
+      (<tspan class="hash"/>)</a><br/>
+      © CC-BY-SA 4.0 or later 2019-<tspan class="stand_jahr"/> Bjørn Bäuchle<br/>
+      Shapes extracted from <a href="https://commons.wikimedia.org/wiki/File:World_location_map-mini.svg">File:World location map-mini.svg</a> by <a href="https://commons.wikimedia.org/wiki/User:STyx">User STyx on Wikimedia</a>.
+    </p>
+  </body>
 </html>
