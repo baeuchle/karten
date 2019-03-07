@@ -25,6 +25,8 @@ if [ -d /var/www/plan ]; then
     echo "Moving Netzplaene"
     mv ubahnnetz.svg.dist /var/www/plan/ubahnnetz.svg
     mv strassenbahnnetz.svg.dist /var/www/plan/strassenbahnnetz.svg
+    mv false-pole.html.dist /var/www/plan/false-pole.html
+    cp shapes.js /var/www/plan/shapes.js
     cp fahrrad.svg /var/www/plan/
     cp oldrev.pl /var/www/plan/
 fi
