@@ -1282,7 +1282,7 @@
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Grüneburgweg">
      <text x="-15" y="5">Grüneburgweg</text>
-     <text x="-15" y="15"><tspan class="hstdetails">(GW, 513)</tspan></text>
+     <text x="-15" y="15"><tspan class="hstdetails">(GB, 513)</tspan></text>
     </a>
     <g class="as_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 11,1</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
     <g class="hstdetails">
@@ -1331,7 +1331,7 @@
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Miquel-/Adickesallee">
      <text x="-15" y="-3">Miquel-/Adickesallee/</text>
      <text x="-15" y="13">Polizeipräsidium</text>
-     <text x="-15" y="23"><tspan class="hstdetails">(MI. 515)</tspan></text>
+     <text x="-15" y="23"><tspan class="hstdetails">(MI, 515)</tspan></text>
     </a>
     <g class="as_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 12,1</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
     <g class="hstdetails">
@@ -1371,7 +1371,7 @@
     <use xlink:href="#hstgrid" />
     <use xlink:href="#bstg_mitte" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Festhalle/Messe">
-     <text x="10" y="5">Festhalle/Messe<tspan class="hstdetails"> (FM, 251)</tspan></text>
+     <text x="10" y="5">Festhalle/Messe<tspan class="hstdetails"> (MS, 251)</tspan></text>
     </a>
     <g class="ds_strecke kilometer"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 10,7</text></g><use xlink:href="#punkt2" transform="rotate(30)"/></g>
     <g class="hstdetails">
@@ -2375,7 +2375,7 @@
    <g id="hst713" transform="translate(485,1345)">
     <use xlink:href="#bstg_dosto" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Bornheim_Mitte">
-     <text x="12" y="11">Bornheim Mitte<tspan class="hstdetails"> (BM, 713)</tspan></text>
+     <text x="12" y="11">Bornheim Mitte<tspan class="hstdetails"> (BO, 713)</tspan></text>
     </a>
     <g transform="translate(0.5,-1.5)" class="b2_strecke kilometer te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 12,0</text></g><use xlink:href="#punkt2" transform="rotate(15)"/></g>
     <g class="hstdetails">
@@ -3096,7 +3096,7 @@
      </g>
      <text x="0" y="25">Gewerbegebiet</text>
      <text x="0" y="36">Praunheim</text>
-     <text x="0" y="46"><tspan class="hstdetails">(GP, 327)</tspan></text>
+     <text x="0" y="46"><tspan class="hstdetails">(??, 327)</tspan></text>
    </g>
    <g id="hstfhga" transform="translate(-462.5,480)" class="geplant rtw ebobahn">
      <use xlink:href="#hstgrid" />
@@ -3488,8 +3488,8 @@
     </g>
    </g>
    <g id="bst502" transform="translate(-115,466)" class="te"><use xlink:href="#hstgrid"/>
-    <text x="-25" y="27" class="ab_bb"><tspan class="hstdetails">(ANW, 502)</tspan></text>
-    <text x="-25" y="17" class="ab_bb" onclick="toggle_details(this)">Abzweig Nordwest</text>
+    <text x="-25" y="27" class="ab_bb"><tspan class="hstdetails">(DNW, 502)</tspan></text>
+    <text x="-25" y="17" class="ab_bb" onclick="toggle_details(this)">Dreieck Nordwest</text>
     <g class="a1_strecke kilometer te" transform="translate(45,0)"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 2,05</text></g><use xlink:href="#punkt2" transform="rotate(15)"/></g>
     <g class="a3_strecke kilometer ta" transform="translate(45,0)"><g transform="rotate(210) translate(0,-60) rotate(-210)"><use xlink:href="#kasten3" /><text x="6" y="4">km 17,05</text></g><use xlink:href="#punkt3" transform="rotate(150)" /></g>
     <g class="hstdetails">
@@ -4053,7 +4053,7 @@
    <g id="hst562" transform="translate(-380,-139)" class="tm">
     <use xlink:href="#drei_ausen" transform="rotate(90)" onclick="toggle_details(this)"/>
     <text x="0" y="25">Glöcknerwiese</text>
-    <text x="0" y="35"><tspan class="hstdetails">(GW, 562)</tspan></text>
+    <text x="0" y="35"><tspan class="hstdetails">(GL, 562)</tspan></text>
     <g class="a3_strecke kilometer ta"><g transform="rotate(150) translate(0,-60) rotate(-150)"><use xlink:href="#kasten3" /><text x="6" y="4">km 25,45</text></g><use xlink:href="#punkt2" transform="rotate(150)" /></g>
    </g>
    <g id="hst563" transform="translate(-480,-139)" class="tm">
@@ -4117,7 +4117,7 @@
        <use xlink:href="#kameliger" transform="translate(-5,-15) rotate(180)" />
      </g>
      <text x="-15" y="6">Musterschule</text>
-     <text x="-15" y="-5" class="hstdetails">(MS, 614)</text>
+     <text x="-15" y="-5" class="hstdetails">(MU, 614)</text>
      <g class="hstdetails">
        <text x="-15" y="15">Nur im Mittelteil barrierefrei</text>
        <text x="-15" y="25">(Bahnsteigshöhe 80 cm, vor-</text>
@@ -4169,7 +4169,7 @@
     <text x="-15" y="-31">Marbachweg/</text>
     <text x="-15" y="-15">Sozialzentrum</text>
    </g>
-   <g id="hstXXX" transform="translate(262,913)">
+   <g id="hst691" transform="translate(262,913)">
      <use xlink:href="#bstg_schwb" />
      <text x="10" y="4" class="ab_bb">Schwabstraße</text>
    </g>
@@ -4306,7 +4306,7 @@
    <g id="hst652" transform="translate(300,216)" class="tm">
     <use xlink:href="#bstg_ausen" transform="rotate(90)" onclick="toggle_details(this)" />
     <text x="0" y="25">Bonames Mitte</text>
-    <text x="0" y="35"><tspan class="hstdetails">(BM, 652)</tspan></text>
+    <text x="0" y="35"><tspan class="hstdetails">(BO, 652)</tspan></text>
     <g class="a2_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten4" /><text x="6" y="4">km 19,40</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
    </g>
    <g id="hst653" transform="translate(400,216)" class="tm">
@@ -4400,7 +4400,7 @@
    </g>
    <g id="bst792" transform="translate(800,1160)">
      <a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Betriebshof_Ost">
-      <text x="-160" y="2" class="ab_bb">BB Ost<tspan class="hstdetails"> (BOS, 792)</tspan></text>
+      <text x="-160" y="2" class="ab_bb">BB Ost<tspan class="hstdetails"> (BBOS, 792)</tspan></text>
      </a>
      <g onclick="toggle_details(this)">
        <use id="bos_06" xlink:href="#zwolabstell" transform="translate(-130,45)" />
@@ -4870,7 +4870,7 @@
    <g id="hst823" transform="translate(830,1140)">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="15" y="5">Gwinnerstraße</text>
-    <text x="15" y="15" class="hstdetails">(GW, 823)</text>
+    <text x="15" y="15" class="hstdetails">(GR, 823)</text>
     <g class="c1_strecke kilometer te"><g transform="rotate(-60) translate(0,-60) rotate(60)"><use xlink:href="#kastenJ" /><text x="-6" y="-1">km 3,85→</text><text x="-6" y="9">km 4,15←</text></g><use xlink:href="#punkt2" transform="rotate(-60)" /></g>
    </g>
    <g id="hst824" transform="translate(830,1040)">
