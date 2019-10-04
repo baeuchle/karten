@@ -1282,7 +1282,7 @@
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Grüneburgweg">
      <text x="-15" y="5">Grüneburgweg</text>
-     <text x="-15" y="15"><tspan class="hstdetails">(GB, 513)</tspan></text>
+     <text x="-15" y="15"><tspan class="hstdetails">(GW, 513)</tspan></text>
     </a>
     <g class="as_strecke kilometer ta"><g transform="rotate(30) translate(0,-60) rotate(-30)"><use xlink:href="#kasten3" /><text x="6" y="4">km 11,1</text></g><use xlink:href="#punkt2"  transform="rotate(30)" /></g>
     <g class="hstdetails">
@@ -2375,7 +2375,7 @@
    <g id="hst713" transform="translate(485,1345)">
     <use xlink:href="#bstg_dosto" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Bornheim_Mitte">
-     <text x="12" y="11">Bornheim Mitte<tspan class="hstdetails"> (BO, 713)</tspan></text>
+     <text x="12" y="11">Bornheim Mitte<tspan class="hstdetails"> (BM, 713)</tspan></text>
     </a>
     <g transform="translate(0.5,-1.5)" class="b2_strecke kilometer te"><g transform="rotate(15) translate(0,-60) rotate(-15)"><use xlink:href="#kastenC" /><text x="-6" y="4">km 12,0</text></g><use xlink:href="#punkt2" transform="rotate(15)"/></g>
     <g class="hstdetails">
