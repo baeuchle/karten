@@ -707,7 +707,7 @@
    <text transform="translate(80,415)" class="ab_bb">Die Farbe der Bahnsteige gibt die Höhe an,</text>
    <text transform="translate(80,425)" class="ab_bb">die Anzahl der Unterteilungen die Länge</text>
    <text transform="translate(80,435)" class="ab_bb">(ein Segment = ein Stadtbahnwagen).</text>
-   <text transform="translate(70,455)">Einsteig von der Straße</text>
+   <text transform="translate(70,455)">Einstieg von der Straße</text>
    <text transform="translate(70,475)">Straßenbahn-Bahnsteig</text>
    <text transform="translate(70,505)">Höhe 80 cm (über <a xlink:href="https://de.wikipedia.org/wiki/Schienenoberkante">SOK</a>), Länge 105 m</text>
    <text transform="translate(70,535)">Sonderform für Musterschule und Glauburgstraße:</text>
