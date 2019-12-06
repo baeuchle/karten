@@ -751,9 +751,12 @@
    <text class="hochstatio" x="10" y="120" onclick="geplant('verlaengerung_europaviertel')">Europaviertel: <tspan class="link" id="verlaengerung_europaviertel_aktion">verstecken</tspan></text>
    <text class="hochstatio" x="15" y="135" onclick="geplant('verlaengerung_europaviertel')">Hauptbahnhof → Wohnpark</text>
    <text class="ab_bb"      x="20" y="150">Status: <a xlink:href="https://www.sbev-frankfurt.de/de/home/">in Bau</a></text>
-   <text class="hochstatio" x="10" y="170" onclick="geplant('ginnheimer_kurve')">Ginnheimer Kurve: <tspan class="link" id="ginnheimer_kurve_aktion">anzeigen</tspan></text>
+   <text class="hochstatio" x="10" y="170" onclick="geplant('ginnheimer_kurve')">Lückenschluss DⅡ: <tspan class="link" id="ginnheimer_kurve_aktion">anzeigen</tspan></text>
    <text class="hochstatio" x="15" y="185" onclick="geplant('ginnheimer_kurve')">Ginnheim → Bockenheimer Warte</text>
-   <text class="ab_bb"      x="20" y="200">Status: Abwägung der <a xlink:href="https://www.stvv.frankfurt.de/parlisobj/B_292_2015_AN_Ergebnisbericht.pdf">Machbarkeitsstudie</a></text>
+   <text class="ab_bb"      x="20" y="200">Status: Abwägung der
+    <a xlink:href="https://frankfurt.de/sixcms/media.php/738/2019-12-05d_VGF_UBahn%20DII-final_Entwurf%20SPI_Teil-1.pdf">Variantenuntersuchung</a>
+    <a xlink:href="https://frankfurt.de/sixcms/media.php/738/2019-12-05d_VGF_UBahn%20DII-final_Entwurf%20SPI_Teil-2.pdf">(Teil 2)</a>
+   </text>
    <text class="hochstatio" x="10" y="220" onclick="geplant('frankfurter_berg')">Frankfurter Berg: <tspan class="link" id="frankfurter_berg_aktion">anzeigen</tspan></text>
    <text class="hochstatio" x="15" y="235" onclick="geplant('frankfurter_berg')">Preungesheim → Frankfurter Berg</text>
    <text class="ab_bb"      x="20" y="250">Status: Planfeststellung wird vorbereitet</text>
@@ -3164,13 +3167,18 @@
    </g>
    <g id="hst410" transform="translate(-125,1260)" class="geplant ginnheimer_kurve te">
     <use xlink:href="#bstg_ausen" />
-    <text x="-15" y="5">Grüneburgpark</text>
+    <text x="-15" y="-5">Botanischer Garten</text>
+    <text x="-15" y="+5"><tspan style="font-weight: bold;">ODER</tspan> (je nach Variante)</text>
+    <text x="-15" y="15">Campus Westend</text>
    </g>
    <g id="hst412" transform="translate(-125,1160)" class="geplant ginnheimer_kurve te">
     <use xlink:href="#bstg_ausen" />
     <text x="-15" y="5">Bundesbank</text>
    </g>
-   <g id="hst413" transform="translate(-125, 1060)" class="geplant ginnheimer_kurve te"><use xlink:href="#bstg_ausen" /><text x="-15" y="5">Platenstraße</text></g>
+   <g id="hst413" transform="translate(-125, 1060)" class="geplant ginnheimer_kurve te">
+    <use xlink:href="#bstg_ausen" />
+    <text x="-15" y="5">Platensiedlung</text>
+   </g>
    <g id="hst414" transform="translate(-125,981)" class="te">
     <g onclick="toggle_details(this)">
      <use xlink:href="#bstg_tramb" transform="translate(-20,0)" />
