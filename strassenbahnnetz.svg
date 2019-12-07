@@ -145,6 +145,20 @@
      linkElement.firstChild.data = aktion ? 'verstecken' : 'anzeigen';
    }
 
+   /// Zeigt nur einen bestimmten Ausschnitt an:
+   ///
+   /// @param requested_numbers Zahlen für die neue viewBox
+   function set_viewbox(requested_numbers) {
+     var old_viewbox = document.documentElement.getAttribute("viewBox")
+     var old_numbers = old_viewbox.split(/\s+/)
+     var new_numbers = old_numbers
+     if (requested_numbers.length == 4) {
+         new_numbers = requested_numbers
+     }
+     var new_viewbox = new_numbers.join(" ")
+     document.documentElement.setAttribute("viewBox", new_viewbox)
+   }
+
    function readquery() {
      var query = location.search;
      if (query == "") {
@@ -174,6 +188,14 @@
            continue;
          }
          geplant_onoff(value, false);
+         continue;
+       }
+       if (key.startsWith("viewbox=")) {
+         var value = key.substring(key.indexOf("=") + 1);
+         if (value == "") {
+           continue;
+         }
+         set_viewbox(value.split("/"))
          continue;
        }
      }
