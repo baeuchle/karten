@@ -190,6 +190,11 @@
        var classedElement = allStyledElements[i];
        classedElement.style.display = aktion ? 'inline' : 'none';
      }
+     var allNonStyledElements = document.getElementsByClassName("no_" + name);
+     for (var i = 0; i < allNonStyledElements.length; ++i) {
+       var classedElement = allNonStyledElements[i];
+       classedElement.style.display = !aktion ? 'inline' : 'none';
+     }
      linkElement.firstChild.data = aktion ? 'verstecken' : 'anzeigen';
    }
   
@@ -2623,7 +2628,7 @@
  <g id="betrieb_oberirdisch" class="strecke bb">
   <path id="gw_schwalbenschwanz" d="M 110,830 c 0,-10 10,-10 10,-20" />
   <path id="gw_zeilweg" d="M 20,471 c 10,0 10,-10 20,-10" />
-  <g id="wa_ginnheim" transform="translate(-120,946)">
+  <g id="wa_ginnheim" transform="translate(-120,946)" class="no_ginnheimer_kurve">
    <path id="wa_ginnheim_a" d="M 0,-40 c 0,10 -10,10 -10,20" />
    <path id="wa_ginnheim_b" d="M -10,-20 c 0,10 10,10 10,20" />
    <path id="wa_ginnheim_5" class="endet" d="M 0,0 c 0,10 10,10 10,20 v 35" />
@@ -3212,7 +3217,7 @@
     <text x="-15" y="5">Platensiedlung</text>
    </g>
    <g id="hst414" transform="translate(-125,981)" class="te">
-    <g onclick="toggle_details(this)">
+    <g onclick="toggle_details(this)" class="no_ginnheimer_kurve">
      <use xlink:href="#bstg_tramb" transform="translate(-20,0)" />
      <use xlink:href="#bstg_tramb" transform="translate(-20,7.5)" />
      <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" />
