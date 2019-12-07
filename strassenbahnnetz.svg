@@ -149,14 +149,26 @@
    ///
    /// @param requested_numbers Zahlen für die neue viewBox
    function set_viewbox(requested_numbers) {
-     var old_viewbox = document.documentElement.getAttribute("viewBox")
-     var old_numbers = old_viewbox.split(/\s+/)
-     var new_numbers = old_numbers
-     if (requested_numbers.length == 4) {
-         new_numbers = requested_numbers
+     var root_element = document.documentElement;
+     var old_viewbox = root_element.getAttribute("viewBox").split(/\s+/);
+     switch (requested_numbers.length) {
+       case 4:
+         console.log("4 things")
+         new_viewbox = requested_numbers.join(" ");
+         new_width = requested_numbers[2];
+         new_height = requested_numbers[3];
+         break;
+       case 6:
+         new_height = requested_numbers.pop();
+         new_width = requested_numbers.pop();
+         new_viewbox = requested_numbers.join(" ");
+         break;
+       default:
+         return;
      }
-     var new_viewbox = new_numbers.join(" ")
-     document.documentElement.setAttribute("viewBox", new_viewbox)
+     root_element.setAttribute("height", new_height);
+     root_element.setAttribute("width", new_width)
+     root_element.setAttribute("viewBox", new_viewbox);
    }
 
    function readquery() {
@@ -195,7 +207,7 @@
          if (value == "") {
            continue;
          }
-         set_viewbox(value.split("/"))
+         set_viewbox(value.split("/"));
          continue;
        }
      }
