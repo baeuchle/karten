@@ -173,6 +173,60 @@
  ]]>
  </style>
  <script type="application/ecmascript"><![CDATA[
+    function get_deeplink() {
+      var dl_element = document.getElementById("deep_link");
+      var href = dl_element.getAttributeNS('http://www.w3.org/1999/xlink','href');
+      var url = href;
+      var query_str = "";
+      if (url.indexOf("?") != -1) {
+        query_str = url.substr(url.indexOf("?") + 1);
+        url = url.substr(0, url.indexOf("?"));
+      }
+      var query = query_str.split("&");
+      if (query.length == 1 && query[0] == "") {
+        query = [];
+      }
+      link = { 'url': url, 'query': query, 'href': href };
+      return link;
+    }
+
+    function set_deeplink(new_link) {
+      var dl_element = document.getElementById("deep_link");
+      var new_url = new_link.url + "?" + new_link.query.join("&");
+      dl_element.setAttributeNS('http://www.w3.org/1999/xlink','href', encodeURI(new_url));
+      console.log(new_url, encodeURI(new_url));
+    }
+
+    function add_to_deeplink(text) {
+      var deep_link = get_deeplink();
+      deep_link.query.push(text);
+      set_deeplink(deep_link);
+    }
+
+    function remove_from_deeplink(text) {
+      var deep_link = get_deeplink();
+      new_q = []
+      for (var q = 0; q < deep_link.query.length; ++q) {
+        if (deep_link.query[q] != text) {
+          new_q.push(deep_link.query[q]);
+        }
+      }
+      deep_link.query = new_q;
+      set_deeplink(deep_link);
+    }
+
+    function purge_from_deeplink(text) {
+      var deep_link = get_deeplink();
+      new_q = []
+      for (var q = 0; q < deep_link.query.length; ++q) {
+        if (! deep_link.query[q].startsWith(text)) {
+          new_q.push(deep_link.query[q]);
+        }
+      }
+      deep_link.query = new_q;
+      set_deeplink(deep_link);
+    }
+
    /// Zeigt oder versteckt geplante Strecke
    ///
    /// Detektiert, ob an- oder ausgeschaltet werden soll anhand des
@@ -200,6 +254,12 @@
        classedElement.style.display = !aktion ? 'inline' : 'none';
      }
      linkElement.firstChild.data = aktion ? 'verstecken' : 'anzeigen';
+     if (aktion) {
+       add_to_deeplink("geplant=" + name);
+     }
+     else {
+       remove_from_deeplink("geplant=" + name);
+     }
    }
   
   /// Zeigt die Kilometrierung für eine Strecke an oder versteckt sie wieder.
@@ -216,6 +276,12 @@
     for (var i = 0; i < allStyledElements.length; ++i) {
       var classedElement = allStyledElements[i];
       classedElement.style.display = zeigen ? 'inline' : 'none';
+    }
+    if (zeigen) {
+      add_to_deeplink("kilometer=" + classname);
+    }
+    else {
+      remove_from_deeplink("kilometer=" + classname);
     }
   }
 
@@ -241,9 +307,11 @@
       var detailelement = alldetails[i];
       detailelement.style.display = 'none';
     }
+    purge_from_deeplink("showdetails");
     if (! aktion) {
       return;
     }
+    add_to_deeplink("showdetails=" + domobj.id);
     // gewünschte einschalten.
     for (var i = 0; i < detailobjects.length; ++i) {
       var detailelement = detailobjects[i];
@@ -287,29 +355,52 @@
     }
   }
 
+  function apply_viewBox(viewbox, width, height) {
+    var root_element = document.documentElement;
+    root_element.setAttribute("viewBox", viewbox);
+    root_element.setAttribute("width", width)
+    root_element.setAttribute("height", height);
+    purge_from_deeplink("viewbox");
+    add_to_deeplink("viewbox=" + viewbox.replace(/\s+/g, "/") + "/" + width + "/" + height);
+  }
+
+  function move_link_box(coords) {
+    var width = Number(coords[2]);
+    var height = Number(coords[3]);
+    var right = Number(coords[0]) + width;
+    var bottom= Number(coords[1]) + height;
+    var translation = "translate(" + right + "," + bottom + ")";
+    // make sure there is no overflow:
+    var width_ratio = width / 32;
+    var height_ratio = height / 16;
+    if (width_ratio < 1 || height_ratio < 1) {
+      translation = translation + " scale(" + Math.min(width_ratio, height_ratio) + ")";
+    }
+    document.getElementById("always_links").setAttribute("transform", translation);
+  }
+
   // Zeigt nur einen bestimmten Ausschnitt an:
   function set_viewbox(value) {
-    console.log("set_viewbox(" + value + ")")
-    requested_numbers = value.split(/[\/ ]+/)
-    var root_element = document.documentElement;
-    var always_links = document.getElementById("always_links");
-    var old_viewattr = root_element.getAttribute("viewBox");
-    var old_viewbox = old_viewattr.split(/\s+/);
+    var requested_numbers = value.split(/[\/ ]+/);
+    var new_viewbox;
+    var new_width;
+    var new_height;
     switch (requested_numbers.length) {
-      case 1:
-        break;
       case 4:
+        // take width and height from viewBox itself
         new_viewbox = requested_numbers.join(" ");
         new_width = requested_numbers[2];
         new_height = requested_numbers[3];
         break;
       case 5:
+        // take 5th entry to be the scaling factor
         factor = requested_numbers.pop();
         new_viewbox = requested_numbers.join(" ");
         new_width = factor * requested_numbers[2];
         new_height = factor * requested_numbers[3];
         break;
       case 6:
+        // take 5th entry as width, 6th as height.
         new_height = requested_numbers.pop();
         new_width = requested_numbers.pop();
         new_viewbox = requested_numbers.join(" ");
@@ -318,14 +409,9 @@
         return;
     }
     // set viewBox:
-    root_element.setAttribute("height", new_height);
-    root_element.setAttribute("width", new_width)
-    root_element.setAttribute("viewBox", new_viewbox);
+    apply_viewBox(new_viewbox, new_width, new_height);
     // set link position:
-    var right = Number(requested_numbers[0]) + Number(requested_numbers[2])
-    var bottom= Number(requested_numbers[1]) + Number(requested_numbers[3])
-    var translation = "translate(" + right + "," + bottom + ")";
-    always_links.setAttribute("transform", translation);
+    move_link_box(requested_numbers);
   }
 
   function set_whole_link() {
@@ -333,8 +419,12 @@
     var old_viewattr = root_element.getAttribute("viewBox");
     var whole_link = document.getElementById("whole_view_link");
     var clickstring = "set_viewbox('" + old_viewattr + "/" + root_element.getAttribute("width") + "/" + root_element.getAttribute("height") + "')";
-    console.log("set_whole_link:" , clickstring);
     whole_link.setAttribute("onclick", clickstring);
+  }
+
+  function set_debug() {
+    document.documentElement.setAttribute("class","debug");
+    add_to_deeplink("debug");
   }
 
   function readquery() {
@@ -352,7 +442,7 @@
     for (var i = 0; i < fields.length; ++i) {
       var key = fields[i];
       if (key == "debug") {
-        document.firstChild.setAttribute("class","debug");
+        set_debug();
         continue;
       }
       if (key.startsWith("showdetails=")) {
@@ -5088,7 +5178,7 @@
  <text class="te ab_bb" x="915" y="1948"><a xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">(<tspan class="hash"/>)</a></text>
  <text class="te ab_bb" x="915" y="1958">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <g id="always_links" transform="translate(947, 1949)">
-   <use xlink:href="#whole_view" id="whole_view_link" transform="translate(-24,-8)" onclick="set_viewbox(0)" />
+   <use xlink:href="#whole_view" id="whole_view_link" transform="translate(-24,-8)" />
    <a id="deep_link" xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">
      <use xlink:href="#link_symbol" transform="translate(-8,-8)" />
    </a>
