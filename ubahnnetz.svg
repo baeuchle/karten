@@ -82,7 +82,7 @@
   text { font-size:10pt; font-family:Sans-Serif; fill:black; stroke:none; }
   #bau { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; stroke-dasharray:none; }
   #uml { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; } 
-  #weg { stroke:red; stroke-width:1; fill:none; }
+  .weg { stroke:red; stroke-width:1; fill:none; }
   .link, a text, text a { fill:blue; visibility:visible; }
   .script { visibility:visible; }
   .ref { font-size:9pt; fill:#0080ff; stroke:none; font-weight:bold; }
@@ -164,6 +164,10 @@
   .keinewand { stroke:none; }
   .beschrift path { fill:none; stroke:#93799a; stroke-width:.5; }
   .beschrift text { fill:black; stroke:none; font-size:3pt; }
+
+  #link_symbol rect, #whole_view rect { fill: white; fill-opacity: .3; stroke: none; }
+  path.link_symbol  { fill: none; stroke-width: 1; stroke: blue; stroke-opacity: .5; }
+  #whole_view { cursor: pointer; }
 
   .nowiki { display:inline; }
  ]]>
@@ -284,15 +288,26 @@
   }
 
   // Zeigt nur einen bestimmten Ausschnitt an:
-  function set_viewbox(requested_numbers) {
+  function set_viewbox(value) {
+    console.log("set_viewbox(" + value + ")")
+    requested_numbers = value.split(/[\/ ]+/)
     var root_element = document.documentElement;
-    var old_viewbox = root_element.getAttribute("viewBox").split(/\s+/);
+    var always_links = document.getElementById("always_links");
+    var old_viewattr = root_element.getAttribute("viewBox");
+    var old_viewbox = old_viewattr.split(/\s+/);
     switch (requested_numbers.length) {
+      case 1:
+        break;
       case 4:
-        console.log("4 things")
         new_viewbox = requested_numbers.join(" ");
         new_width = requested_numbers[2];
         new_height = requested_numbers[3];
+        break;
+      case 5:
+        factor = requested_numbers.pop();
+        new_viewbox = requested_numbers.join(" ");
+        new_width = factor * requested_numbers[2];
+        new_height = factor * requested_numbers[3];
         break;
       case 6:
         new_height = requested_numbers.pop();
@@ -302,12 +317,30 @@
       default:
         return;
     }
+    // set viewBox:
     root_element.setAttribute("height", new_height);
     root_element.setAttribute("width", new_width)
     root_element.setAttribute("viewBox", new_viewbox);
+    // set link position:
+    var right = Number(requested_numbers[0]) + Number(requested_numbers[2])
+    var bottom= Number(requested_numbers[1]) + Number(requested_numbers[3])
+    var translation = "translate(" + right + "," + bottom + ")";
+    always_links.setAttribute("transform", translation);
+  }
+
+  function set_whole_link() {
+    var root_element = document.documentElement;
+    var old_viewattr = root_element.getAttribute("viewBox");
+    var whole_link = document.getElementById("whole_view_link");
+    var clickstring = "set_viewbox('" + old_viewattr + "/" + root_element.getAttribute("width") + "/" + root_element.getAttribute("height") + "')";
+    console.log("set_whole_link:" , clickstring);
+    whole_link.setAttribute("onclick", clickstring);
   }
 
   function readquery() {
+    // first: not query-related: set whole_view_link to original viewbox.
+    set_whole_link();
+
     var query = location.search;
     if (query == "") {
       return;
@@ -359,7 +392,7 @@
         if (value == "") {
           continue;
         }
-        set_viewbox(value.split(/[,_\/\s]+/))
+        set_viewbox(value)
         continue;
       }
     }
@@ -427,7 +460,7 @@
   </g>
   <path id="bau" d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" />
   <path id="uml" d="M 0,3 h 7 l 3,-3 l -3,-3 h -17 v 6 h 11" />
-  <path id="weg" d="M -1.2,-1.2 l 2.4,2.4 m -2.4,0 l 2.4,-2.4" />
+  <path id="weg" class="weg" d="M -1.2,-1.2 l 2.4,2.4 m -2.4,0 l 2.4,-2.4" />
   <g id="punkt1" class="kmpkt"><path d="M 0,0 l -2,-20 v -72 h 4 v 72 z" /><circle cx="0" cy="-99" r="7" /></g>
   <g id="punkt2" class="kmpkt"><path d="M 0,0 l -1,-10 v -46 h 2 v 46 z" /><circle cx="0" cy="-60" r="4" /></g>
   <g id="punkt3" class="kmpkt"><path d="M 0,0 l -1,-10 v -50 h 2 v 50 z" /><rect height="5" width="10" x="-5" y="-62.5"/></g>
@@ -675,11 +708,21 @@
     <use xlink:href="#signal_f1" transform="translate(0,-30)" />
     <use xlink:href="#signal_f0" transform="translate(0,-40)" />
   </g>
+  <g id="link_symbol">
+   <rect x="-8" y="-8" width="16" height="16" />
+   <g transform="translate(-4.5,-8.4) scale(1.3) rotate(45)">
+    <path class="link_symbol" d="M 2,4 a 2,2 0,0,1 0,-4 h 4 a 2,2 0,0,1 0,4 z" />
+    <path class="link_symbol" d="M 8,4 a 2,2 0,0,1 0,-4 h 4 a 2,2 0,0,1 0,4 z" />
+   </g>
+  </g>
+  <g id="whole_view">
+   <rect x="-8" y="-8" width="16" height="16" />
+   <path class="link_symbol" d="M 3,0 a 4,4 0,0,0 0,-8 a 4,4 0,0,0 0,8" />
+   <path class="link_symbol" d="M -7,6 l 7,-7" />
+   <path class="weg" d="M -6,-6 l 12,12" />
+  </g>
  </defs>
  <rect id="aussen" width="1765" height="2147" x="-815" y="-180" />
- <text class="te ab_bb" x="947" y="1938"><a xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">Permalink zu dieser Version</a></text>
- <text class="te ab_bb" x="947" y="1948"><a xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">(<tspan class="hash"/>)</a></text>
- <text class="te ab_bb" x="947" y="1958">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <g id="textboxen">
   <g id="legende" transform="translate(550,-169)">
    <rect class="box" width="400" height="785" />
@@ -5040,5 +5083,14 @@
    <g transform="translate(-141.5,449.5)"><g transform="rotate(0) translate(0,-60) rotate(0)"><use xlink:href="#kasten3" /><text x="6" y="4">km+0,50</text></g><use xlink:href="#punkt3" transform="rotate(0)" /></g>
    <g transform="translate(-158,271)"><g transform="rotate(90) translate(0,-60) rotate(-90)"><use xlink:href="#kasten3" /><text x="6" y="4">km*0,00</text></g><use xlink:href="#punkt3" transform="rotate(90)" /></g>
   </g>
+ </g>
+ <text class="te ab_bb" x="915" y="1938"><a id="plain_link" xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">Permalink zu dieser Version</a></text>
+ <text class="te ab_bb" x="915" y="1948"><a xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">(<tspan class="hash"/>)</a></text>
+ <text class="te ab_bb" x="915" y="1958">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
+ <g id="always_links" transform="translate(947, 1949)">
+   <use xlink:href="#whole_view" id="whole_view_link" transform="translate(-24,-8)" onclick="set_viewbox(0)" />
+   <a id="deep_link" xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">
+     <use xlink:href="#link_symbol" transform="translate(-8,-8)" />
+   </a>
  </g>
 </svg> 
