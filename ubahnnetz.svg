@@ -7,6 +7,8 @@
   height="2129px"
   viewBox="-815 -169 1765 2129"
   onload="readquery()"
+  onclick="start_selectview(event)"
+  onmousemove="selectview(event)"
   >
  <title>U-Bahn-Gleisplan Frankfurt am Main</title>
  <metadata>
@@ -165,66 +167,93 @@
   .beschrift path { fill:none; stroke:#93799a; stroke-width:.5; }
   .beschrift text { fill:black; stroke:none; font-size:3pt; }
 
-  #link_symbol rect, #whole_view rect { fill: white; fill-opacity: .3; stroke: none; }
-  path.link_symbol  { fill: none; stroke-width: 1; stroke: blue; stroke-opacity: .5; }
-  #whole_view { cursor: pointer; }
+  .always_links rect { fill: white; fill-opacity: .3; stroke: none; }
+  path.link_symbol { fill: none; stroke-width: 1; stroke: blue; stroke-opacity: .5; }
+  path.make_view_inactive { fill: none; stroke-width: 1.5; stroke: blue; stroke-opacity: .5; }
+  path.make_view_active { fill: none; stroke-width: 2; stroke: red; stroke-opacity: 1; }
+  rect.frame_inactive { fill: none; stroke: none; display: none; }
+  rect.frame_active { fill: #ff8080; fill-opacity: .5; stroke-width: 1; stroke: red; stroke-opacity: 1; stroke-dasharray:1,1; }
+  .always_links { cursor: pointer; }
 
   .nowiki { display:inline; }
  ]]>
  </style>
  <script type="application/ecmascript"><![CDATA[
-    function get_deeplink() {
-      var dl_element = document.getElementById("deep_link");
-      var href = dl_element.getAttributeNS('http://www.w3.org/1999/xlink','href');
-      var url = href;
-      var query_str = "";
-      if (url.indexOf("?") != -1) {
-        query_str = url.substr(url.indexOf("?") + 1);
-        url = url.substr(0, url.indexOf("?"));
-      }
-      var query = query_str.split("&");
-      if (query.length == 1 && query[0] == "") {
-        query = [];
-      }
-      link = { 'url': url, 'query': query, 'href': href };
-      return link;
+    function get_viewbox() {
+      var root = document.documentElement;
+      var box = root.getAttribute("viewBox").split(/\s+/);
+      var viewbox = {};
+      viewbox.show_height = Number(root.getAttribute("height").replace("px", ""));
+      viewbox.show_width = Number(root.getAttribute("width").replace("px", ""));
+      viewbox.left = Number(box[0]);
+      viewbox.top = Number(box[1]);
+      viewbox.width = Number(box[2]);
+      viewbox.height = Number(box[3]);
+      viewbox.right = viewbox.left + viewbox.width;
+      viewbox.bottom = viewbox.top + viewbox.height;
+      return viewbox;
     }
 
-    function set_deeplink(new_link) {
+    function linkable_viewbox(box) {
+      var result = box.left + "/";
+      result += box.top + "/";
+      result += box.width + "/";
+      result += box.height + "/";
+      if (box.show_height / box.height == box.show_width / box.width) {
+        result += (box.show_height / box.height);
+      }
+      else {
+        result += box.show_width + "/" + box.show_height;
+      }
+      return result;
+    }
+
+    function boxable_viewbox(box) {
+      var result = box.left + " ";
+      result += box.top + " ";
+      result += box.width + " ";
+      result += box.height;
+      return result;
+    }
+
+    var original_viewbox = get_viewbox();
+    var deep_link_parts = { 'base': '', 'query': [] };
+
+    function set_deeplink() {
+      if (deep_link_parts.base == "") {
+        var base = document.getElementById("plain_link").getAttributeNS('http://www.w3.org/1999/xlink', 'href');
+        deep_link_parts.base = base;
+      }
+      var new_url = deep_link_parts.base + "?" + deep_link_parts.query.join("&");
       var dl_element = document.getElementById("deep_link");
-      var new_url = new_link.url + "?" + new_link.query.join("&");
-      dl_element.setAttributeNS('http://www.w3.org/1999/xlink','href', encodeURI(new_url));
-      console.log(new_url, encodeURI(new_url));
+      dl_element.setAttributeNS('http://www.w3.org/1999/xlink', 'href', encodeURI(new_url));
     }
 
     function add_to_deeplink(text) {
-      var deep_link = get_deeplink();
-      deep_link.query.push(text);
-      set_deeplink(deep_link);
+      deep_link_parts.query.push(text);
+      set_deeplink();
     }
 
     function remove_from_deeplink(text) {
-      var deep_link = get_deeplink();
       new_q = []
-      for (var q = 0; q < deep_link.query.length; ++q) {
-        if (deep_link.query[q] != text) {
-          new_q.push(deep_link.query[q]);
+      for (var q = 0; q < deep_link_parts.query.length; ++q) {
+        if (deep_link_parts.query[q] != text) {
+          new_q.push(deep_link_parts.query[q]);
         }
       }
-      deep_link.query = new_q;
-      set_deeplink(deep_link);
+      deep_link_parts.query = new_q;
+      set_deeplink();
     }
 
     function purge_from_deeplink(text) {
-      var deep_link = get_deeplink();
       new_q = []
-      for (var q = 0; q < deep_link.query.length; ++q) {
-        if (! deep_link.query[q].startsWith(text)) {
-          new_q.push(deep_link.query[q]);
+      for (var q = 0; q < deep_link_parts.query.length; ++q) {
+        if (! deep_link_parts.query[q].startsWith(text)) {
+          new_q.push(deep_link_parts.query[q]);
         }
       }
-      deep_link.query = new_q;
-      set_deeplink(deep_link);
+      deep_link_parts.query = new_q;
+      set_deeplink();
     }
 
    /// Zeigt oder versteckt geplante Strecke
@@ -361,7 +390,7 @@
     root_element.setAttribute("width", width)
     root_element.setAttribute("height", height);
     purge_from_deeplink("viewbox");
-    add_to_deeplink("viewbox=" + viewbox.replace(/\s+/g, "/") + "/" + width + "/" + height);
+    add_to_deeplink("viewbox=" + linkable_viewbox(get_viewbox()));
   }
 
   function move_link_box(coords) {
@@ -372,7 +401,7 @@
     var translation = "translate(" + right + "," + bottom + ")";
     // make sure there is no overflow:
     var width_ratio = width / 32;
-    var height_ratio = height / 16;
+    var height_ratio = height / 32;
     if (width_ratio < 1 || height_ratio < 1) {
       translation = translation + " scale(" + Math.min(width_ratio, height_ratio) + ")";
     }
@@ -415,16 +444,93 @@
   }
 
   function set_whole_link() {
-    var root_element = document.documentElement;
-    var old_viewattr = root_element.getAttribute("viewBox");
     var whole_link = document.getElementById("whole_view_link");
-    var clickstring = "set_viewbox('" + old_viewattr + "/" + root_element.getAttribute("width") + "/" + root_element.getAttribute("height") + "')";
-    whole_link.setAttribute("onclick", clickstring);
+    var clickstring = "javascript:set_viewbox('" + linkable_viewbox(original_viewbox) + "')";
+    whole_link.setAttributeNS('http://www.w3.org/1999/xlink', 'href', clickstring);
   }
 
   function set_debug() {
     document.documentElement.setAttribute("class","debug");
     add_to_deeplink("debug");
+  }
+
+  function get_global_coords(event) {
+    var bounding = document.documentElement.getBoundingClientRect();
+    var view = get_viewbox();
+    real = {}
+    real.x = view.width * (event.pageX - bounding.left) / bounding.width + bounding.left + view.left;
+    real.y = view.height * (event.pageY - bounding.top) / bounding.height + bounding.top + view.top;
+    real.x = Math.round(real.x);
+    real.y = Math.round(real.y);
+    return real;
+  }
+
+  var selectview_status = false;
+  var select_start = { 'x': "", 'y': "" };
+
+  function selectview(event) {
+    if (select_start.x == "") {
+      return;
+    }
+    var real = get_global_coords(event);
+    var rect = document.getElementById("frame");
+    rect.setAttribute("x", Math.min(real.x, select_start.x));
+    rect.setAttribute("y", Math.min(real.y, select_start.y));
+    rect.setAttribute("width", Math.abs(real.x - select_start.x));
+    rect.setAttribute("height", Math.abs(real.y - select_start.y));
+  }
+ 
+  function start_selectview(event) {
+    if (! selectview_status) {
+      return;
+    }
+    var rect = document.getElementById("frame");
+    if (select_start.x == "") {
+      select_start = get_global_coords(event);
+      rect.setAttribute("class", "frame_active");
+      rect.setAttribute("x", select_start.x);
+      rect.setAttribute("y", select_start.y);
+      rect.setAttribute("width", "20");
+      rect.setAttribute("height", "20");
+      return;
+    }
+    else {
+      rect.setAttribute("class", "frame_inactive");
+      select_start.x = "";
+      if (event.altKey || event.shiftKey || event.ctrlKey) {
+        toggle_makeview(event);
+        var new_viewbox = rect.getAttribute("x") + "/";
+        new_viewbox += rect.getAttribute("y") + "/";
+        new_viewbox += rect.getAttribute("width") + "/";
+        new_viewbox += rect.getAttribute("height") + "/";
+        var factor = 1;
+        if (event.shiftKey) {
+          factor = 2;
+        }
+        if (event.altKey) {
+          factor = 5;
+        }
+        new_viewbox += factor
+        set_viewbox(new_viewbox);
+      }
+    }
+  }
+
+  function toggle_makeview(event) {
+    var element = document.getElementById("make_view_frame");
+    var curr_style = element.getAttribute("class");
+    if (curr_style == "make_view_inactive") {
+      element.setAttribute("class", "make_view_active");
+      selectview_status = true;
+      select_start.x = "";
+    }
+    else {
+      element.setAttribute("class", "make_view_inactive");
+      selectview_status = false;
+      select_start.x = "";
+    }
+    // prevent from global click handler starting a rect right away:
+    event.stopPropagation();
   }
 
   function readquery() {
@@ -798,14 +904,14 @@
     <use xlink:href="#signal_f1" transform="translate(0,-30)" />
     <use xlink:href="#signal_f0" transform="translate(0,-40)" />
   </g>
-  <g id="link_symbol">
+  <g id="link_symbol" class="always_links">
    <rect x="-8" y="-8" width="16" height="16" />
    <g transform="translate(-4.5,-8.4) scale(1.3) rotate(45)">
     <path class="link_symbol" d="M 2,4 a 2,2 0,0,1 0,-4 h 4 a 2,2 0,0,1 0,4 z" />
     <path class="link_symbol" d="M 8,4 a 2,2 0,0,1 0,-4 h 4 a 2,2 0,0,1 0,4 z" />
    </g>
   </g>
-  <g id="whole_view">
+  <g id="whole_view" class="always_links">
    <rect x="-8" y="-8" width="16" height="16" />
    <path class="link_symbol" d="M 3,0 a 4,4 0,0,0 0,-8 a 4,4 0,0,0 0,8" />
    <path class="link_symbol" d="M -7,6 l 7,-7" />
@@ -5178,9 +5284,21 @@
  <text class="te ab_bb" x="915" y="1948"><a xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">(<tspan class="hash"/>)</a></text>
  <text class="te ab_bb" x="915" y="1958">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <g id="always_links" transform="translate(947, 1949)">
-   <use xlink:href="#whole_view" id="whole_view_link" transform="translate(-24,-8)" />
+   <g id="make_view_link" class="always_links" transform="translate(-8,-24)" onclick="toggle_makeview(event)" >
+    <title>Starte Auswahl mit Mausklick. Abbrechen mit erneutem Klick, übernehmen mit Klick + Ctrl (Originalgröße), Shift (doppelt so groß) oder Alt (×5).</title>
+    <rect x="-8" y="-8" width="16" height="16" />
+    <path class="make_view_inactive" id="make_view_frame" d="M -7,-3 v -5 h 5 m 4,0 h 5 v 5 m 0,4 v 5 h -5 m -4,0 h -5 v -5" />
+   </g>
+   <a xlink:href="#" id="whole_view_link">
+    <title>Zeige ganzen Plan an</title>
+    <use xlink:href="#whole_view" transform="translate(-24,-8)" />
+   </a>
    <a id="deep_link" xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">
-     <use xlink:href="#link_symbol" transform="translate(-8,-8)" />
+    <title>Direkter Link zu dieser Ansicht</title>
+    <use xlink:href="#link_symbol" transform="translate(-8,-8)" />
    </a>
  </g>
+ <rect x="0" y="0" width="0" height="0" id="frame" class="frame_inactive">
+  <title>Bereich für Detailansicht auswählen. Mit Mausklick Auswahl abbrechen, mit Strg + Mausklick Auswahl übernehmen. Alt + Mausklick: Auswahl zweifach vergrößert übernehmen, Shift + Mausklick: Auswahl fünffach vergrößert übernehmen.</title>
+ </rect>
 </svg> 
