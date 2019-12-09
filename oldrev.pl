@@ -21,7 +21,15 @@ chdir $repository;
 ## read and check file input:
 my $file = $query->param('file');
 &missing_parameter unless $file;
-my @file_whitelist = qw ! fahrrad.svg ubahnnetz.svg strassenbahnnetz.svg false-pole.html netz.js !;
+my @file_whitelist = qw ! fahrrad.svg ubahnnetz.svg strassenbahnnetz.svg false-pole.html
+    viewbox.js
+    deep_link.js
+    geplant.js
+    kilometer.js
+    hstdetails.js
+    selection.js
+    query.js
+    !;
 my $file_is_allowed = 0;
 foreach my $allowed_file (@file_whitelist) {
   $file_is_allowed = 1 if $file eq $allowed_file;
