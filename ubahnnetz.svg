@@ -5285,7 +5285,7 @@
  <text class="te ab_bb" x="915" y="1958">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <g id="always_links" transform="translate(947, 1949)">
    <g id="make_view_link" class="always_links" transform="translate(-8,-24)" onclick="toggle_makeview(event)" >
-    <title>Starte Auswahl mit Mausklick. Abbrechen mit erneutem Klick, übernehmen mit Klick + Ctrl (Originalgröße), Shift (doppelt so groß) oder Alt (×5).</title>
+    <title>Starte Auswahl mit Mausklick. Abbrechen mit erneutem Klick, übernehmen mit Klick + Strg (Originalgröße), Klick + Shift (doppelt so groß) oder Klick + Alt (×5).</title>
     <rect x="-8" y="-8" width="16" height="16" />
     <path class="make_view_inactive" id="make_view_frame" d="M -7,-3 v -5 h 5 m 4,0 h 5 v 5 m 0,4 v 5 h -5 m -4,0 h -5 v -5" />
    </g>
@@ -5299,6 +5299,6 @@
    </a>
  </g>
  <rect x="0" y="0" width="0" height="0" id="frame" class="frame_inactive">
-  <title>Bereich für Detailansicht auswählen. Mit Mausklick Auswahl abbrechen, mit Strg + Mausklick Auswahl übernehmen. Alt + Mausklick: Auswahl zweifach vergrößert übernehmen, Shift + Mausklick: Auswahl fünffach vergrößert übernehmen.</title>
+  <title>Bereich für Detailansicht auswählen. Abbrechen mit erneutem Klick, übernehmen mit Klick + Strg (Originalgröße), Klick + Shift (doppelt so groß) oder Klick + Alt (×5).</title>
  </rect>
 </svg> 
