@@ -7,13 +7,15 @@
   height="1180px"
   viewBox="-865 -425 1900 1180"
   onload="readquery()"
+  onclick="start_selectview(event)"
+  onmousemove="selectview(event)"
   >
   <title>Straßenbahn-Gleisplan Frankfurt am Main</title>
  <rect id="aussen"
     width="1900"  height="1190"
     x="-865" y="-425"
     style="fill:white;stroke:#0000c0;stroke-width:.1px" />
- <text class="ab_bb" x="-865" y="732"><a xlink:href="strassenbahnnetz.svg/0000000000000000000000000000000000000000" class="rev">Permalink zu dieser Version</a></text>
+ <text class="ab_bb" x="-865" y="732"><a id="plain_link" xlink:href="strassenbahnnetz.svg/0000000000000000000000000000000000000000" class="rev">Permalink zu dieser Version</a></text>
  <text class="ab_bb" x="-865" y="742"><a xlink:href="strassenbahnnetz.svg/0000000000000000000000000000000000000000" class="rev">(<tspan class="hash"/>)</a></text>
  <text class="ab_bb" x="-865" y="752">© CC-BY-SA 4.0 or later 2011-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <metadata>
@@ -64,7 +66,7 @@
   .ubahng { stroke-dasharray: .5,.5; }
   .ubahnt { stroke-dasharray: .5,.5; stroke:#000080; }
   #tunnelrampe { fill:none; stroke:#000000; stroke-width:1px; }
-  path#weg { stroke:red; stroke-width:2; fill:none; }
+  .weg { stroke:red; stroke-width:2; fill:none; }
   path.umleit { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; }
 
   text { font-size:9pt; font-family:Sans-Serif; }
@@ -118,102 +120,23 @@
   .ausbau_ring { display:none; }
   .hilfslinie { display:none; }
   svg.debug .hilfslinie { display:inline; }
+
+  .always_links rect { fill: white; fill-opacity: .3; stroke: none; }
+  path.link_symbol { fill: none; stroke-width: 1; stroke: blue; stroke-opacity: .5; }
+  path.make_view_inactive { fill: none; stroke-width: 1.5; stroke: blue; stroke-opacity: .5; }
+  path.make_view_active { fill: none; stroke-width: 2; stroke: red; stroke-opacity: 1; }
+  rect.frame_inactive { fill: none; stroke: none; display: none; }
+  rect.frame_active { fill: #ff8080; fill-opacity: .5; stroke-width: 1; stroke: red; stroke-opacity: 1; stroke-dasharray:1,1; }
+  .always_links { cursor: pointer; }
+
+  .nowiki { display:inline; }
  ]]>
  </style>
- <script type="application/ecmascript"><![CDATA[
-   /// Zeigt oder versteckt geplante Strecke
-   ///
-   /// Detektiert, ob an- oder ausgeschaltet werden soll anhand des
-   /// Textes im Linkelement mit dem Namen <name>_aktion.
-   /// @param name Name der geplanten Strecke.
-   function geplant(name) {
-     var linkElement = document.getElementById(name + "_aktion");
-     var aktion = linkElement.firstChild.data == "anzeigen";
-     geplant_onoff(name, aktion);
-   }
-
-   /// Zeigt oder versteckt geplante Strecke
-   /// @param name Name der geplanten Strecke
-   /// @param aktion Wenn \c true, dann wird versteckt.
-   function geplant_onoff(name, aktion) {
-     var linkElement = document.getElementById(name + "_aktion");
-     var allStyledElements = document.getElementsByClassName(name);
-     for (var i = 0; i < allStyledElements.length; ++i) {
-       var classedElement = allStyledElements[i];
-       classedElement.style.display = aktion ? 'inline' : 'none';
-     }
-     linkElement.firstChild.data = aktion ? 'verstecken' : 'anzeigen';
-   }
-
-   /// Zeigt nur einen bestimmten Ausschnitt an:
-   ///
-   /// @param requested_numbers Zahlen für die neue viewBox
-   function set_viewbox(requested_numbers) {
-     var root_element = document.documentElement;
-     var old_viewbox = root_element.getAttribute("viewBox").split(/\s+/);
-     switch (requested_numbers.length) {
-       case 4:
-         console.log("4 things")
-         new_viewbox = requested_numbers.join(" ");
-         new_width = requested_numbers[2];
-         new_height = requested_numbers[3];
-         break;
-       case 6:
-         new_height = requested_numbers.pop();
-         new_width = requested_numbers.pop();
-         new_viewbox = requested_numbers.join(" ");
-         break;
-       default:
-         return;
-     }
-     root_element.setAttribute("height", new_height);
-     root_element.setAttribute("width", new_width)
-     root_element.setAttribute("viewBox", new_viewbox);
-   }
-
-   function readquery() {
-     var query = location.search;
-     if (query == "") {
-       return;
-     }
-     if (query.indexOf("?") == 0) {
-       query = query.substring(1);
-     }
-     var fields = query.split("&").sort();
-     for (var i = 0; i < fields.length; ++i) {
-       var key = fields[i];
-       if (key == "debug") {
-         document.firstChild.setAttribute("class","debug");
-         continue;
-       }
-       if (key.startsWith("geplant=")) {
-         var value = key.substring(key.indexOf("=") + 1);
-         if (value == "") {
-           continue;
-         }
-         geplant_onoff(value, true);
-         continue;
-       }
-       if (key.startsWith("nogeplant=")) {
-         var value = key.substring(key.indexOf("=") + 1);
-         if (value == "") {
-           continue;
-         }
-         geplant_onoff(value, false);
-         continue;
-       }
-       if (key.startsWith("viewbox=")) {
-         var value = key.substring(key.indexOf("=") + 1);
-         if (value == "") {
-           continue;
-         }
-         set_viewbox(value.split("/"));
-         continue;
-       }
-     }
-   }
- ]]>
- </script>
+ <script type="application/ecmascript" href="viewbox.js"></script>
+ <script type="application/ecmascript" href="deep_link.js"></script>
+ <script type="application/ecmascript" href="geplant.js"></script>
+ <script type="application/ecmascript" href="selection.js"></script>
+ <script type="application/ecmascript" href="query.js"></script>
  <defs>
   <linearGradient id="bs00" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ff8080" /><stop offset="100%" stop-opacity="100%" stop-color="#ff8080" /></linearGradient>
   <linearGradient id="bs10" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#0080ff" /><stop offset="100%" stop-opacity="100%" stop-color="#0080ff" /></linearGradient>
@@ -235,7 +158,7 @@
    <circle r="3.5" cx="5" cy="0" class="hschild" />
    <path class="htext" d="M 6.5,-1.9 L 6.5,1.9 M 3.5,-1.9 L 3.5,1.9 M 3.5,0 L 6.5,0" />
   </g>
-  <path id="weg" d="M -3.6,-3.6 l 7.2,7.2 m -7.2,0 l 7.2,-7.2" />
+  <path id="weg" class="weg" d="M -3.6,-3.6 l 7.2,7.2 m -7.2,0 l 7.2,-7.2" />
   <path id="bau" class="verbot" d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" />
   <path id="uml" class="umleit" d="M -5,3 h 7 l 3,-3 l -3,-3 h -7 v 6 h 1" />
   <g id="hstgrid" class="hilfslinie">
@@ -358,6 +281,19 @@
    <path d="M 02,-2.5 h 1 v 1 h 2 v -1 h 1 v 3.5 h -1 v -1 h -2 v 1 h -1 z" />
    <path d="M -2,-2.5 h 1 v 1 h 2 v -1 h 1 v 3.5 h -1 v -1 h -2 v 1 h -1 z" />
   </pattern>
+  <g id="link_symbol" class="always_links">
+   <rect x="-8" y="-8" width="16" height="16" />
+   <g transform="translate(-4.5,-8.4) scale(1.3) rotate(45)">
+    <path class="link_symbol" d="M 2,4 a 2,2 0,0,1 0,-4 h 4 a 2,2 0,0,1 0,4 z" />
+    <path class="link_symbol" d="M 8,4 a 2,2 0,0,1 0,-4 h 4 a 2,2 0,0,1 0,4 z" />
+   </g>
+  </g>
+  <g id="whole_view" class="always_links">
+   <rect x="-8" y="-8" width="16" height="16" />
+   <path class="link_symbol" d="M 3,0 a 4,4 0,0,0 0,-8 a 4,4 0,0,0 0,8" />
+   <path class="link_symbol" d="M -7,6 l 7,-7" />
+   <path class="weg" d="M -6,-6 l 12,12" />
+  </g>
  </defs>
  <g id="textboxen">
   <g id="ueberschrift_box" transform="translate(1035,-425) translate(-450)">
@@ -1307,4 +1243,22 @@
     <circle r="1.5" cx="25" />
    </g>
  </g>
+ <g id="always_links" transform="translate(1035, 755)">
+   <g id="make_view_link" class="always_links" transform="translate(-8,-24)" onclick="toggle_makeview(event)" >
+    <title>Starte Auswahl mit Mausklick. Abbrechen mit erneutem Klick, übernehmen mit Klick + Strg (Originalgröße), Klick + Shift (doppelt so groß) oder Klick + Alt (×5).</title>
+    <rect x="-8" y="-8" width="16" height="16" />
+    <path class="make_view_inactive" id="make_view_frame" d="M -7,-3 v -5 h 5 m 4,0 h 5 v 5 m 0,4 v 5 h -5 m -4,0 h -5 v -5" />
+   </g>
+   <a xlink:href="#" id="whole_view_link">
+    <title>Zeige ganzen Plan an</title>
+    <use xlink:href="#whole_view" transform="translate(-24,-8)" />
+   </a>
+   <a id="deep_link" xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">
+    <title>Direkter Link zu dieser Ansicht</title>
+    <use xlink:href="#link_symbol" transform="translate(-8,-8)" />
+   </a>
+ </g>
+ <rect x="0" y="0" width="0" height="0" id="frame" class="frame_inactive">
+  <title>Bereich für Detailansicht auswählen. Abbrechen mit erneutem Klick, übernehmen mit Klick + Strg (Originalgröße), Klick + Shift (doppelt so groß) oder Klick + Alt (×5).</title>
+ </rect>
 </svg>

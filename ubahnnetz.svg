@@ -178,20 +178,13 @@
   .nowiki { display:inline; }
  ]]>
  </style>
- <script type="application/ecmascript" href="viewbox.js">
- </script>
- <script type="application/ecmascript" href="deep_link.js">
- </script>
- <script type="application/ecmascript" href="geplant.js">
- </script>
- <script type="application/ecmascript" href="kilometer.js">
- </script>
- <script type="application/ecmascript" href="hstdetails.js">
- </script>
- <script type="application/ecmascript" href="selection.js">
- </script>
- <script type="application/ecmascript" href="query.js">
- </script>
+ <script type="application/ecmascript" href="viewbox.js"></script>
+ <script type="application/ecmascript" href="deep_link.js"></script>
+ <script type="application/ecmascript" href="geplant.js"></script>
+ <script type="application/ecmascript" href="kilometer.js"></script>
+ <script type="application/ecmascript" href="hstdetails.js"></script>
+ <script type="application/ecmascript" href="selection.js"></script>
+ <script type="application/ecmascript" href="query.js"></script>
  <defs>
   <linearGradient id="bs00" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ff8080" /><stop offset="100%" stop-opacity="100%" stop-color="#ff8080" /></linearGradient>
   <linearGradient id="bs56" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#80e0ff" /><stop offset="100%" stop-opacity="100%" stop-color="#80e0ff" /></linearGradient>
