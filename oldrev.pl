@@ -21,7 +21,7 @@ chdir $repository;
 ## read and check file input:
 my $file = $query->param('file');
 &missing_parameter unless $file;
-my @file_whitelist = qw ! fahrrad.svg ubahnnetz.svg strassenbahnnetz.svg false-pole.html !;
+my @file_whitelist = qw ! fahrrad.svg ubahnnetz.svg strassenbahnnetz.svg false-pole.html netz.js !;
 my $file_is_allowed = 0;
 foreach my $allowed_file (@file_whitelist) {
   $file_is_allowed = 1 if $file eq $allowed_file;
@@ -42,7 +42,7 @@ my $content = &get_content($rev, $file);
 $content = &get_content($rev, 'straßenbahnnetz.svg') if ! $content && $file eq 'strassenbahnnetz.svg';
 
 if ($content) {
-  my $type = $file =~ /\.svg$/ ? 'image/svg+xml' : 'text/html';
+  my $type = $file =~ /\.svg$/ ? 'image/svg+xml' : $file =~ /\.html$/ ? 'text/html' : 'text/javascript';
   print <<"HTTP";
 Content-Type: $type
 
