@@ -34,6 +34,7 @@ var select_state = {
   // 3: selection ended, rect is visible, waiting for cancel or apply
   'status': 0,
   'position': { 'x': 0, 'y': 0 },
+  'start': { 'x': 0, 'y': 0 },
   'size': { 'x': 0, 'y': 0 }
 };
 
@@ -42,10 +43,10 @@ function select_move(event) {
     return;
   }
   var real = get_global_coords(event);
-  select_state.position.x = Math.min(real.x, select_state.position.x);
-  select_state.position.y = Math.min(real.y, select_state.position.y);
-  select_state.size.x = Math.abs(real.x - select_state.position.x);
-  select_state.size.y = Math.abs(real.y - select_state.position.y);
+  select_state.position.x = Math.min(real.x, select_state.start.x);
+  select_state.position.y = Math.min(real.y, select_state.start.y);
+  select_state.size.x = Math.abs(real.x - select_state.start.x);
+  select_state.size.y = Math.abs(real.y - select_state.start.y);
   apply_select_state_to_rect(document.getElementById("frame"));
 }
 
@@ -62,6 +63,8 @@ function select_click(event) {
     return;
   case 1:
     select_state.position = get_global_coords(event);
+    select_state.start.x = select_state.position.x;
+    select_state.start.y = select_state.position.y;
     select_state.size.x = 20;
     select_state.size.y = 20;
     select_state.status = 2;
