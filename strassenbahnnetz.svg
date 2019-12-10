@@ -348,7 +348,7 @@
      <text transform="translate(40,130) rotate(45)" class="ab_bb">(Wiener Modell)</text>
      <use xlink:href="#doppelbst" class="nullzig" transform="translate(20,155) rotate(180)" />
      <use xlink:href="#bahnsteig" class="nullzig" transform="translate(30,155)" />
-     <text transform="translate(40,160) rotate(45)">Bahnsteig, 0 cm</text>
+     <text transform="translate(40,160) rotate(45)">Bahnsteig, 0 cm (ü. <a xlink:href="https://de.wikipedia.org/wiki/Schienenoberkante">SOK</a>)</text>
      <use xlink:href="#doppelbst" class="zehnzig" transform="translate(20,190) rotate(180)" />
      <use xlink:href="#bahnsteig" class="zehnzig" transform="translate(30,190)" />
      <text transform="translate(40,195) rotate(45)">Bahnsteig &gt; 0 cm</text>
