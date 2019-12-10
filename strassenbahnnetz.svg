@@ -838,7 +838,8 @@
   <g id="hstfdw_" transform="translate(-723,564) rotate(-90)" class="dreizig te"><use xlink:href="#hstgrid" /><use xlink:href="#bstg_vers1" /><text x="-15" y="10" transform="rotate(45)">Ferdinand-Dirichs-Weg</text></g>
   <g id="hstrls_" transform="translate(-821,564) rotate(-90)" class="dreizig"><use xlink:href="#hstgrid" />
    <path class="bstggruppe" transform="rotate(90)" d="M 0,35 c 50,0 65,-5 65,-25 s -50,-25 -65,-25 a 35,25 0,0,0 0,50" />
-   <use xlink:href="#doppelbst" transform="translate(5,0)" />
+   <use xlink:href="#bahnsteig" transform="translate(5,0)" />
+   <use xlink:href="#bahnsteig" transform="translate(5,20)" />
    <text x="20" y="0" transform="rotate(45)">Rheinlandstraße</text>
   </g>
   <g id="hstfhs_" transform="translate(-259,450) rotate(-90)" class="te"><use xlink:href="#hstgrid" /><use xlink:href="#hstl_links" transform="rotate(180)"/><text x="-15" y="10" transform="rotate(45)">Frauenhofstraße</text></g>
