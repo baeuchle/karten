@@ -948,7 +948,7 @@
   <path id="gw_theaterplatz" d="M 85,170 c 5,0 5,10 10,10" />
   <path id="schleife_hugojunkersstraße" d="M 890,180 a 10,10 0,0,1 10,10 v 40 a 15,15 0,0,0 30,0 v -45 a 15,15 0,0,0 -15,-15" />
   <path id="schleife_hugojunkersstraß2" d="M 900,200 c 0,5 10,5 10,10 v 10 c 0,5 -10,5 -10,10" />
-  <path id="gw_schießhüttenstraße" d="M 1015,295 v 20 c 0,10 10,10 10,20" />
+  <path id="gw_schießhüttenstraße" d="M 1015,295 c 0,10 10,10 10,20" />
   <path id="gw_münzenberger" d="M 278.5,-96.5 c 3.5,-3.5 10.5,3.5 14,0" />
   <use xlink:href="#weg" transform="translate(285.5,-96.5) scale(0.5,0.5)"/>
   <path id="gw_gravensteinerplatz" d="M 492,-310 c -3.5,3.5 3.5,10.5 0,14 c -3.5,3.5 -10.5,-3.5 -14,0" />
@@ -1170,7 +1170,7 @@
   <path id="inheidenerstraße" d="M 595,-35 v -85 a 15,15 0,1,0 -30,0 a 10,10 0,0,0 10,10 a 10,10 0,0,1 10,10 v 65" />
   <path id="ostbahnhof_1" d="M 460,160 a 20,20 0,0,0 20,20 h 305" />
   <path id="ostbahnhof_2" d="M 785,170 h -305 a 10,10 0,0,1 -10,-10" />
-  <path id="hanauerlandstraße_1" d="M 765,160 a 20,20 0,0,0 20,20 h 220 a 10,10 0,0,1 10,10 v 105 c 0,10 10,10 10,20 " />
+  <path id="hanauerlandstraße_1" d="M 765,160 a 20,20 0,0,0 20,20 h 220 a 10,10 0,0,1 10,10 v 125 c 0,10 10,10 10,20 " />
   <path id="hanauerlandstraße_2" class="faeng" d="M 1025,345 v -155 a 20,20 0,0,0 -20,-20 h -220 a 10,10 0,0,1 -10,-10" />
   <path id="hauptbahnhof_1" d="M -15,190 v -130" />
   <path id="hauptbahnhof_2" d="M -25,60 v 130"/>
