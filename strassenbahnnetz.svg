@@ -605,13 +605,14 @@
   </g>
   <g id="hgr2715" transform="translate(910,175)">
    <ellipse cx="0" cy="30" rx="30" ry="50" class="hstgruppe" />
-   <g id="hsthjr" transform="rotate(-90)" class="dreizig">
+   <circle cx="0" cy="10" r="25" class="bstggruppe" />
+   <g id="hsthjr" transform="rotate(-90)">
     <text x="20" y="0" transform="rotate(45)">Hugo-Junkers-Straße</text>
-    <use xlink:href="#bstg_ausen" />
+    <use xlink:href="#bstg_ausen" class="dreizig" />
+    <use xlink:href="#bahnsteig" class="nullzig" transform="translate(-20,-10) rotate(-90) scale(1,0.65)" />
    </g>
-   <g id="hsthjs" transform="translate(-5,35) rotate(180)" class="te nullzig">
-    <use xlink:href="#bahnsteig" transform="translate(+5,-5)" />
-    <use xlink:href="#bahnsteig" transform="translate(+5,+15) scale(1,.65)" />
+   <g id="hsthjs" transform="translate(-5,40) rotate(180)" class="te nullzig">
+    <use xlink:href="#bahnsteig" transform="translate(+5,0)" />
     <text x="-15" y="5" transform="rotate(180)"><tspan class="hstgrtitel">Hugo-Junkers-Straße/</tspan>Schleife</text>
    </g>
   </g>
