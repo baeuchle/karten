@@ -609,10 +609,9 @@
     <text x="20" y="0" transform="rotate(45)">Hugo-Junkers-Straße</text>
     <use xlink:href="#bstg_ausen" />
    </g>
-   <g id="hsthjs" transform="translate(-5,35) rotate(180)" class="te">
-    <use xlink:href="#bahnsteig" transform="translate(-5,-5) scale(1,.65)" class="nullzig" />
-    <use xlink:href="#bahnsteig" transform="translate(+5,-5)" class="zehnzig" />
-    <use xlink:href="#bahnsteig" transform="translate(+5,+15) scale(1,.65)" class="zehnzig" />
+   <g id="hsthjs" transform="translate(-5,35) rotate(180)" class="te nullzig">
+    <use xlink:href="#bahnsteig" transform="translate(+5,-5)" />
+    <use xlink:href="#bahnsteig" transform="translate(+5,+15) scale(1,.65)" />
     <text x="-15" y="5" transform="rotate(180)"><tspan class="hstgrtitel">Hugo-Junkers-Straße/</tspan>Schleife</text>
    </g>
   </g>
