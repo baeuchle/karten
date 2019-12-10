@@ -72,7 +72,7 @@ Content-Type: text/html
 <html><head><title>Fehler: Datei und Revision passen nicht</title></head>
 <body><h1>Fehler: Datei und Revision passen nicht</h1>
 <p>Entweder konnte keine Revision $rev gefunden werden oder diese Revision enthält Datei $file nicht!</p>
-<p><a href="$file">Aktuelle Version dieser Datei</a></p>
+<p><a href="/$file">Aktuelle Version dieser Datei</a></p>
 </body></html>
 FEHLER
   exit 1;
@@ -102,7 +102,7 @@ Content-Type: text/html
 <html><head><title>Fehler: Revision ungültig</title></head>
 <body><h1>Fehler: Revision ungültig</h1>
 <p>$rev ist keine gültige Revisionsangabe</p>
-<p><a href="$filename">Aktuelle Version dieser Datei</a></p>
+<p><a href="/$filename">Aktuelle Version dieser Datei</a></p>
 </body></html>
 FEHLER
   exit 1;
