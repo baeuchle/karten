@@ -9,69 +9,113 @@ function get_global_coords(event) {
   return real;
 }
 
-var selectview_status = false;
-var select_start = { 'x': "", 'y': "" };
+function apply_select_state_to_rect(rect) {
+  rect.setAttribute("x", select_state.position.x);
+  rect.setAttribute("y", select_state.position.y);
+  rect.setAttribute("width", select_state.size.x);
+  rect.setAttribute("height", select_state.size.y);
+}
 
-function selectview(event) {
-  if (select_start.x == "") {
+function turn_off_frame() {
+  select_state.status = 0;
+  select_state.position.x = 0;
+  select_state.position.y = 0;
+  select_state.size.x = 0;
+  select_state.size.y = 0;
+  var rect = document.getElementById("frame");
+  rect.setAttribute("class", "frame_inactive");
+  apply_select_state_to_rect(rect);
+}
+
+var select_state = {
+  // 0: no selection
+  // 1: selectable, waiting for click
+  // 2: selection started, waiting for second click
+  // 3: selection ended, rect is visible, waiting for cancel or apply
+  'status': 0,
+  'position': { 'x': 0, 'y': 0 },
+  'size': { 'x': 0, 'y': 0 }
+};
+
+function select_move(event) {
+  if (select_state.status != 2) {
     return;
   }
   var real = get_global_coords(event);
-  var rect = document.getElementById("frame");
-  rect.setAttribute("x", Math.min(real.x, select_start.x));
-  rect.setAttribute("y", Math.min(real.y, select_start.y));
-  rect.setAttribute("width", Math.abs(real.x - select_start.x));
-  rect.setAttribute("height", Math.abs(real.y - select_start.y));
+  select_state.position.x = Math.min(real.x, select_state.position.x);
+  select_state.position.y = Math.min(real.y, select_state.position.y);
+  select_state.size.x = Math.abs(real.x - select_state.position.x);
+  select_state.size.y = Math.abs(real.y - select_state.position.y);
+  apply_select_state_to_rect(document.getElementById("frame"));
 }
 
-function start_selectview(event) {
-  if (! selectview_status) {
+/// ctrl + click: toggle makeview.
+/// first click: start rect
+/// second click: fix rect
+/// third click: delete rect
+function select_click(event) {
+  if (event.ctrlKey) {
+    toggle_makeview(event);
+  }
+  switch(select_state.status) {
+  case 0:
+    return;
+  case 1:
+    select_state.position = get_global_coords(event);
+    select_state.size.x = 20;
+    select_state.size.y = 20;
+    select_state.status = 2;
+    var rect = document.getElementById("frame");
+    rect.setAttribute("class", "frame_active");
+    apply_select_state_to_rect(rect);
+    break;
+  case 2:
+    // same as move, really; this is necessary if we do not have a move
+    // (e.g., on a touch screen)
+    select_move(event);
+    select_state.status = 3;
+    break;
+  case 3:
+    turn_off_frame();
+    select_state.status = 1;
+    break;
+  }
+}
+
+function select_apply(event) {
+  if (select_state.status != 3) {
     return;
   }
   var rect = document.getElementById("frame");
-  if (select_start.x == "") {
-    select_start = get_global_coords(event);
-    rect.setAttribute("class", "frame_active");
-    rect.setAttribute("x", select_start.x);
-    rect.setAttribute("y", select_start.y);
-    rect.setAttribute("width", "20");
-    rect.setAttribute("height", "20");
-    return;
+  var new_viewbox = select_state.position.x + "/";
+  new_viewbox += select_state.position.y + "/";
+  new_viewbox += select_state.size.x + "/";
+  new_viewbox += select_state.size.y + "/";
+  var factor = 1;
+  if (event.ctrlKey) {
+    factor *= 1.5
   }
-  else {
-    rect.setAttribute("class", "frame_inactive");
-    select_start.x = "";
-    if (event.altKey || event.shiftKey || event.ctrlKey) {
-      toggle_makeview(event);
-      var new_viewbox = rect.getAttribute("x") + "/";
-      new_viewbox += rect.getAttribute("y") + "/";
-      new_viewbox += rect.getAttribute("width") + "/";
-      new_viewbox += rect.getAttribute("height") + "/";
-      var factor = 1;
-      if (event.shiftKey) {
-        factor = 2;
-      }
-      if (event.altKey) {
-        factor = 5;
-      }
-      new_viewbox += factor
-      set_viewbox(new_viewbox);
-    }
+  if (event.shiftKey) {
+    factor *= 2;
   }
+  if (event.altKey) {
+    factor *= 2.5;
+  }
+  new_viewbox += factor
+  toggle_makeview(event);
+  set_viewbox(new_viewbox);
 }
 
 function toggle_makeview(event) {
   var element = document.getElementById("make_view_frame");
   var curr_style = element.getAttribute("class");
-  if (curr_style == "make_view_inactive") {
+  if (select_state.status == 0) {
     element.setAttribute("class", "make_view_active");
-    selectview_status = true;
-    select_start.x = "";
+    select_state.status = 1;
   }
   else {
     element.setAttribute("class", "make_view_inactive");
-    selectview_status = false;
-    select_start.x = "";
+    turn_off_frame();
   }
   // prevent from global click handler starting a rect right away:
   event.stopPropagation();

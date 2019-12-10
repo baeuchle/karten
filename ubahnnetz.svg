@@ -7,8 +7,8 @@
   height="2129px"
   viewBox="-815 -169 1765 2129"
   onload="readquery()"
-  onclick="start_selectview(event)"
-  onmousemove="selectview(event)"
+  onclick="select_click(event)"
+  onmousemove="select_move(event)"
   >
  <title>U-Bahn-Gleisplan Frankfurt am Main</title>
  <metadata>
@@ -4875,7 +4875,12 @@
  <text class="te ab_bb" x="915" y="1958">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <g id="always_links" transform="translate(950, 1960)">
    <g id="make_view_link" class="always_links" transform="translate(-8,-24)" onclick="toggle_makeview(event)" >
-    <title>Starte Auswahl mit Mausklick. Abbrechen mit erneutem Klick, übernehmen mit Klick + Strg (Originalgröße), Klick + Shift (doppelt so groß) oder Klick + Alt (×5).</title>
+    <title>
+Starte Auswahl mit Mausklick.
+Bereich fixieren mit zweitem Klick.
+Bereich übernehen mit Klick auf Bereich
+Auswahl abbrechen mit Strg + Klick oder Klick hier
+    </title>
     <rect x="-8" y="-8" width="16" height="16" />
     <path class="make_view_inactive" id="make_view_frame" d="M -7,-3 v -5 h 5 m 4,0 h 5 v 5 m 0,4 v 5 h -5 m -4,0 h -5 v -5" />
    </g>
@@ -4888,7 +4893,15 @@
     <use xlink:href="#link_symbol" transform="translate(-8,-8)" />
    </a>
  </g>
- <rect x="0" y="0" width="0" height="0" id="frame" class="frame_inactive">
-  <title>Bereich für Detailansicht auswählen. Abbrechen mit erneutem Klick, übernehmen mit Klick + Strg (Originalgröße), Klick + Shift (doppelt so groß) oder Klick + Alt (×5).</title>
+ <rect x="0" y="0" width="0" height="0" id="frame" class="frame_inactive" onclick="select_apply">
+  <title>
+Klick: Auswahl mit markiertem Bereich zeigen.
+Abbrechen mit Klick außerhalb des Bereiches.
+Der neue Ausschnitt kann mit Klick + Tasten vergrößert sein:
+Strg: 1.5×
+Shift: 2×
+Alt: 2.5×
+(Kumulativ: Strg + Shift = 3×)
+  </title>
  </rect>
 </svg> 
