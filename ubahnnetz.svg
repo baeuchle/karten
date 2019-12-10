@@ -38,7 +38,7 @@
   .endet { marker-end: url(#prell); }
   .faeng { marker-start: url(#prell); }
   .ansch { marker-end: url(#ArrDB); }
-  #ArrDB rect { stroke:#ff0000; fill:none; } 
+  #ArrDB rect { stroke:#ff0000; fill:none; }
   #prell path { stroke: currentColor; }
   marker { overflow:visible; }
   /* Bahnsteige */
@@ -83,7 +83,7 @@
   .ab_bb { font-size:8pt; stroke:none; }
   text { font-size:10pt; font-family:Sans-Serif; fill:black; stroke:none; }
   #bau { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; stroke-dasharray:none; }
-  #uml { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; } 
+  #uml { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; }
   .weg { stroke:red; stroke-width:1; fill:none; }
   .link, a text, text a { fill:blue; visibility:visible; }
   .script { visibility:visible; }
@@ -2519,7 +2519,7 @@
    <path id="wa_heerstrasse_2" d="M +5,0 c 0,-10 -10,-10 -10,-20" />
   </g>
   <path id="gw_heerstrasse" d="M -475,740 c 0,10 10,10 10,20 c 0,10 -10,10 -10,20" />
-  <path id="gw_ggheerstrasse" class="geplant rtw" d="M -425,575 c 10,0 10,10 20,10" /> 
+  <path id="gw_ggheerstrasse" class="geplant rtw" d="M -425,575 c 10,0 10,10 20,10" />
   <path id="wa_ggheersttasse" class="geplant rtw" d="M -375,575 c 10,0 10,10 20,10 m -20,0 c 10,0 10,-10 20,-10" />
   <path id="wa_eschborn_3" class="geplant rtw endet" d="M -520,575 c -10,0 -10,10 -20,10 q -4,0 -7,3 l -9,9 q -3,3 -7,3 h -35" />
   <path id="wa_eschborn_2" class="geplant rtw endet" d="M -551,592 q -3,3 -7,3 h -40" />
@@ -2776,7 +2776,7 @@
    <path class="strecke" id="bbost_strecke_2" d="M 25,120 a 10,10 0,0,1 -10,10 h -60 a 15,15 0,0,1 -15,-15 v -85 a 25,25 0,0,0 -25,-25 h -115" />
   </g>
   </g>
- 
+
   <g id="strecke_oberirdisch" class="strecke">
    <path id="eschersheimer_1" d="M 120,1130 V 690" />
    <path id="eschersheimer_2" d="M 110,690 V 1130" />
@@ -2823,13 +2823,13 @@
   <!-- <path id="ginnheimerkurve_2" class="geplant ginnheimer_kurve" d="M -120,1280 v -380" />-->
    <path id="d_ii_23_m" class="mitte" d="M -125,1001 v 79 a 35,35 0,0,1 -35,35 h -10 a 35,35 0,0,0 -35,35 v 25 a 35,35 0,0,0 35,35 h 5" />
    <path id="d_ii_23_1" class="geplant ginnheimer_kurve" d="M -130,1001 v 79 a 30,30 0,0,1 -30,30 h -10 a 40,40 0,0,0 -40,40 v 25 a 40,40 0,0,0 40,40 h 5" />
-   <path id="d_ii_23_2" class="geplant ginnheimer_kurve" d="M -165,1205 h -5 a 30,30 0,0,1 -30,-30 v -25 a 30,30 0,0,1 30,-30 h 10 a 40,40 0,0,0 40,-40 v -79" /> 
+   <path id="d_ii_23_2" class="geplant ginnheimer_kurve" d="M -165,1205 h -5 a 30,30 0,0,1 -30,-30 v -25 a 30,30 0,0,1 30,-30 h 10 a 40,40 0,0,0 40,-40 v -79" />
    <path id="d_ii_2b_m" class="mitte" d="M -125,1080 v 50 " />
    <path id="d_ii_2b_1" class="geplant ginnheimer_kurve" d="M -130,1080 v 50 " />
    <path id="d_ii_2b_2" class="geplant ginnheimer_kurve" d="M -120,1130 v -50 " />
    <path id="d_ii_v1_m" class="mitte" d="M -205,1175 v 105" />
-   <path id="d_ii_v1_1" class="geplant ginnheimer_kurve" d="M -210,1175 v 105" /> 
-   <path id="d_ii_v1_2" class="geplant ginnheimer_kurve" d="M -200,1280 v -105" /> 
+   <path id="d_ii_v1_1" class="geplant ginnheimer_kurve" d="M -210,1175 v 105" />
+   <path id="d_ii_v1_2" class="geplant ginnheimer_kurve" d="M -200,1280 v -105" />
    <path id="strecke_D-IV_1" d="M -153,271 a 50,50 0,0,1 50,-50 h 234" />
    <path id="strecke_D-IV_2" d="M 131,211 h -234 a 60,60 0,0,0 -60,60" />
    <path id="gd_wiesenau_1" d="M -120,521 v -33 q 0,-24 -18,-42" />
@@ -4936,4 +4936,4 @@ Alt: 2.5×
 (Kumulativ: Strg + Shift = 3×)
   </title>
  </rect>
-</svg> 
+</svg>
