@@ -1258,7 +1258,7 @@ Auswahl abbrechen mit Strg + Klick oder Klick hier
     <title>Zeige ganzen Plan an</title>
     <use xlink:href="#whole_view" transform="translate(-24,-8)" />
    </a>
-   <a id="deep_link" xlink:href="ubahnnetz.svg" class="rev">
+   <a id="deep_link" xlink:href="strassenbahnnetz.svg" class="rev">
     <title>Direkter Link zu dieser Ansicht</title>
     <use xlink:href="#link_symbol" transform="translate(-8,-8)" />
    </a>
