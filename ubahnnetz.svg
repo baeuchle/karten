@@ -4893,7 +4893,7 @@ Auswahl abbrechen mit Strg + Klick oder Klick hier
     <use xlink:href="#link_symbol" transform="translate(-8,-8)" />
    </a>
  </g>
- <rect x="0" y="0" width="0" height="0" id="frame" class="frame_inactive" onclick="select_apply">
+ <rect x="0" y="0" width="0" height="0" id="frame" class="frame_inactive" onclick="select_apply(event)">
   <title>
 Klick: Auswahl mit markiertem Bereich zeigen.
 Abbrechen mit Klick außerhalb des Bereiches.
