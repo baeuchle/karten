@@ -1066,7 +1066,7 @@
     <g transform="translate(-140,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>27</text></g>
    </g>
   </g>
-  <g id="verkehrsmuseum" transform="translate(-821,564)"> 
+  <g id="verkehrsmuseum" transform="translate(-821,564)">
    <use xlink:href="#hstgrid" transform="rotate(90)"/>
    <path id="vmi_01" class="endet" d="M 37,5 h -56" />
    <path id="vmi_02" class="endet" d="M 21,15 q -2,0 -3.5,-1.5 l -2,-2 q -1.5,-1.5 -3.5,-1.5 h -32" />
