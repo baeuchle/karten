@@ -178,13 +178,13 @@
   .nowiki { display:inline; }
  ]]>
  </style>
- <script type="application/ecmascript" href="https://plan.frankfurtium.de/viewbox.js/0000000000000000000000000000000000000000"></script>
- <script type="application/ecmascript" href="https://plan.frankfurtium.de/deep_link.js/0000000000000000000000000000000000000000"></script>
- <script type="application/ecmascript" href="https://plan.frankfurtium.de/geplant.js/0000000000000000000000000000000000000000"></script>
- <script type="application/ecmascript" href="https://plan.frankfurtium.de/kilometer.js/0000000000000000000000000000000000000000"></script>
- <script type="application/ecmascript" href="https://plan.frankfurtium.de/hstdetails.js/0000000000000000000000000000000000000000"></script>
- <script type="application/ecmascript" href="https://plan.frankfurtium.de/selection.js/0000000000000000000000000000000000000000"></script>
- <script type="application/ecmascript" href="https://plan.frankfurtium.de/query.js/0000000000000000000000000000000000000000"></script>
+ <script type="application/ecmascript" href="./viewbox.js"></script>
+ <script type="application/ecmascript" href="./deep_link.js"></script>
+ <script type="application/ecmascript" href="./geplant.js"></script>
+ <script type="application/ecmascript" href="./kilometer.js"></script>
+ <script type="application/ecmascript" href="./hstdetails.js"></script>
+ <script type="application/ecmascript" href="./selection.js"></script>
+ <script type="application/ecmascript" href="./query.js"></script>
  <defs>
   <linearGradient id="bs00" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ff8080" /><stop offset="100%" stop-opacity="100%" stop-color="#ff8080" /></linearGradient>
   <linearGradient id="bs56" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#80e0ff" /><stop offset="100%" stop-opacity="100%" stop-color="#80e0ff" /></linearGradient>
@@ -564,7 +564,7 @@
    <text transform="translate(80,245)">Keine bauliche Trennung zur Straße</text>
    <text transform="translate(80,265)">Kreuzungsfreie Trassierung</text>
    <text transform="translate(80,285)">Tunnelportal</text>
-   <text transform="translate(80,310)">Anschluss an <a xlink:href="strassenbahnnetz.svg/0000000000000000000000000000000000000000">Straßenbahn-Netz Frankfurt</a></text>
+   <text transform="translate(80,310)">Anschluss an <a xlink:href="strassenbahnnetz.svg">Straßenbahn-Netz Frankfurt</a></text>
    <text transform="translate(80,325)">mit Referenz</text>
    <text transform="translate(80,340)" class="ab_bb">(und kurzem Ausschnitt der Straßenbahngleise)</text>
    <text transform="translate(80,360)" class="nowiki">Anschluss an DB-Netz</text>
@@ -4870,8 +4870,8 @@
    <g transform="translate(-158,271)"><g transform="rotate(90) translate(0,-60) rotate(-90)"><use xlink:href="#kasten3" /><text x="6" y="4">km*0,00</text></g><use xlink:href="#punkt3" transform="rotate(90)" /></g>
   </g>
  </g>
- <text class="te ab_bb" x="915" y="1938"><a id="plain_link" xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">Permalink zu dieser Version</a></text>
- <text class="te ab_bb" x="915" y="1948"><a xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">(<tspan class="hash"/>)</a></text>
+ <text class="te ab_bb" x="915" y="1938"><a id="plain_link" xlink:href="ubahnnetz.svg" class="rev">Permalink zu dieser Version</a></text>
+ <text class="te ab_bb" x="915" y="1948"><a xlink:href="ubahnnetz.svg" class="rev">(<tspan class="hash"/>)</a></text>
  <text class="te ab_bb" x="915" y="1958">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <g id="always_links" transform="translate(950, 1960)">
    <g id="make_view_link" class="always_links" transform="translate(-8,-24)" onclick="toggle_makeview(event)" >
@@ -4883,7 +4883,7 @@
     <title>Zeige ganzen Plan an</title>
     <use xlink:href="#whole_view" transform="translate(-24,-8)" />
    </a>
-   <a id="deep_link" xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">
+   <a id="deep_link" xlink:href="ubahnnetz.svg" class="rev">
     <title>Direkter Link zu dieser Ansicht</title>
     <use xlink:href="#link_symbol" transform="translate(-8,-8)" />
    </a>

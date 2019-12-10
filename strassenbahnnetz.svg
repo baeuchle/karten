@@ -15,8 +15,8 @@
     width="1900"  height="1190"
     x="-865" y="-425"
     style="fill:white;stroke:#0000c0;stroke-width:.1px" />
- <text class="ab_bb" x="-865" y="732"><a id="plain_link" xlink:href="strassenbahnnetz.svg/0000000000000000000000000000000000000000" class="rev">Permalink zu dieser Version</a></text>
- <text class="ab_bb" x="-865" y="742"><a xlink:href="strassenbahnnetz.svg/0000000000000000000000000000000000000000" class="rev">(<tspan class="hash"/>)</a></text>
+ <text class="ab_bb" x="-865" y="732"><a id="plain_link" xlink:href="strassenbahnnetz.svg" class="rev">Permalink zu dieser Version</a></text>
+ <text class="ab_bb" x="-865" y="742"><a xlink:href="strassenbahnnetz.svg" class="rev">(<tspan class="hash"/>)</a></text>
  <text class="ab_bb" x="-865" y="752">© CC-BY-SA 4.0 or later 2011-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <metadata>
   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -132,11 +132,11 @@
   .nowiki { display:inline; }
  ]]>
  </style>
- <script type="application/ecmascript" href="https://plan.frankfurtium.de/viewbox.js/0000000000000000000000000000000000000000"></script>
- <script type="application/ecmascript" href="https://plan.frankfurtium.de/deep_link.js/0000000000000000000000000000000000000000"></script>
- <script type="application/ecmascript" href="https://plan.frankfurtium.de/geplant.js/0000000000000000000000000000000000000000"></script>
- <script type="application/ecmascript" href="https://plan.frankfurtium.de/selection.js/0000000000000000000000000000000000000000"></script>
- <script type="application/ecmascript" href="https://plan.frankfurtium.de/query.js/0000000000000000000000000000000000000000"></script>
+ <script type="application/ecmascript" href="./viewbox.js"></script>
+ <script type="application/ecmascript" href="./deep_link.js"></script>
+ <script type="application/ecmascript" href="./geplant.js"></script>
+ <script type="application/ecmascript" href="./selection.js"></script>
+ <script type="application/ecmascript" href="./query.js"></script>
  <defs>
   <linearGradient id="bs00" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ff8080" /><stop offset="100%" stop-opacity="100%" stop-color="#ff8080" /></linearGradient>
   <linearGradient id="bs10" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#0080ff" /><stop offset="100%" stop-opacity="100%" stop-color="#0080ff" /></linearGradient>
@@ -328,8 +328,8 @@
    <text transform="translate(35,135) rotate(45)">Abschnitt in Bau</text>
    <text transform="translate(35,155) rotate(45)" class="nowiki">/ geplant <tspan class="ab_bb">(siehe Legende oben)</tspan></text>
    <text transform="translate(60,222)" class="tm ref">X</text>
-   <text transform="translate(35,230) rotate(45)">Anschluss an <a xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000">U-Bahn-Netz</a></text>
-   <text transform="translate(35,250) rotate(45)"><a xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000">Frankfurt</a> mit Referenz</text>
+   <text transform="translate(35,230) rotate(45)">Anschluss an <a xlink:href="ubahnnetz.svg">U-Bahn-Netz</a></text>
+   <text transform="translate(35,250) rotate(45)"><a xlink:href="ubahnnetz.svg">Frankfurt</a> mit Referenz</text>
    <text transform="translate(35,265) rotate(45)" class="ab_bb">(und kurzem Ausschnitt der U-Bahn-Gleise)</text>
    <use xlink:href="#weg" transform="translate(30,285)"/>
    <text transform="translate(35,290) rotate(45)">Gleis gesperrt</text>
@@ -1253,7 +1253,7 @@
     <title>Zeige ganzen Plan an</title>
     <use xlink:href="#whole_view" transform="translate(-24,-8)" />
    </a>
-   <a id="deep_link" xlink:href="ubahnnetz.svg/0000000000000000000000000000000000000000" class="rev">
+   <a id="deep_link" xlink:href="ubahnnetz.svg" class="rev">
     <title>Direkter Link zu dieser Ansicht</title>
     <use xlink:href="#link_symbol" transform="translate(-8,-8)" />
    </a>
