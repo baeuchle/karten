@@ -32,6 +32,7 @@ var select_state = {
   // 1: selectable, waiting for click
   // 2: selection started, waiting for second click
   // 3: selection ended, rect is visible, waiting for cancel or apply
+  // 4: like 2, but first click was center of area
   'status': 0,
   'position': { 'x': 0, 'y': 0 },
   'start': { 'x': 0, 'y': 0 },
@@ -39,14 +40,24 @@ var select_state = {
 };
 
 function select_move(event) {
-  if (select_state.status != 2) {
+  if (select_state.status != 2 && select_state.status != 4) {
     return;
   }
   var real = get_global_coords(event);
-  select_state.position.x = Math.min(real.x, select_state.start.x);
-  select_state.position.y = Math.min(real.y, select_state.start.y);
-  select_state.size.x = Math.abs(real.x - select_state.start.x);
-  select_state.size.y = Math.abs(real.y - select_state.start.y);
+  dx = Math.abs(real.x - select_state.start.x);
+  dy = Math.abs(real.y - select_state.start.y);
+  if (select_state.status == 2) {
+    select_state.position.x = Math.min(real.x, select_state.start.x);
+    select_state.position.y = Math.min(real.y, select_state.start.y);
+    select_state.size.x = dx;
+    select_state.size.y = dy;
+  }
+  else {
+    select_state.position.x = select_state.start.x - dx;
+    select_state.position.y = select_state.start.y - dy;
+    select_state.size.x = 2 * dx;
+    select_state.size.y = 2 * dy;
+  }
   apply_select_state_to_rect(document.getElementById("frame"));
 }
 
@@ -62,17 +73,24 @@ function select_click(event) {
   case 0:
     return;
   case 1:
-    select_state.position = get_global_coords(event);
-    select_state.start.x = select_state.position.x;
-    select_state.start.y = select_state.position.y;
+    select_state.start = get_global_coords(event);
+    if (event.altKey) {
+      select_state.position.x = select_state.start.x - 10;
+      select_state.position.y = select_state.start.y - 10;
+      select_state.status = 4;
+    } else {
+      select_state.position.x = select_state.start.x;
+      select_state.position.y = select_state.start.y;
+      select_state.status = 2;
+    }
     select_state.size.x = 20;
     select_state.size.y = 20;
-    select_state.status = 2;
     var rect = document.getElementById("frame");
     rect.setAttribute("class", "frame_active");
     apply_select_state_to_rect(rect);
     break;
   case 2:
+  case 4:
     // same as move, really; this is necessary if we do not have a move
     // (e.g., on a touch screen)
     select_move(event);
