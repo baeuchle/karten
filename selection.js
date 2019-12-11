@@ -74,7 +74,7 @@ function select_click(event) {
     return;
   case 1:
     select_state.start = get_global_coords(event);
-    if (event.altKey) {
+    if (event.ctrlKey && event.shiftKey) {
       select_state.position.x = select_state.start.x - 10;
       select_state.position.y = select_state.start.y - 10;
       select_state.status = 4;
