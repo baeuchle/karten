@@ -2476,7 +2476,9 @@
    <path id="wa_ginnheim_tram1" class="tramg" d="M -20,9 l -7,7 q -3,3 -3,7 v 32 a 5,5 0,0,1 -5,5" />
    <path id="wa_ginnheim_tram2" class="tramg endet" d="M -35,70 a 15,15 0,0,0 15,-15 v -22 c 0,-5 -10,-5 -10,-10 v -13 c 0,-5 10,-5 10,-10 v -20" />
    <path id="wa_ginnheim_tram3" class="tramg faeng" d="M -30,-20 v 30" />
-   <text transform="translate(-17,6) rotate(-45) translate(-5,5)" class="ref te">A</text>
+   <a xlink:href="strassenbahnnetz.svg?viewbox=-289/-420/169/128">
+     <text transform="translate(-17,6) rotate(-45) translate(-5,5)" class="ref te">A</text>
+   </a>
   </g>
   <path id="gw_riedwiese" d="M 70,311 c 0,10 -10,10 -10,20" />
   <g transform="translate(420,221)">
@@ -2511,7 +2513,9 @@
    <path class="tramg" d="M 60,5 a 10,10 0,0,0 10,10" />
    <path class="tramg" d="M 60,-7.5 v 40" />
    <path class="tramg" d="M 65,-7.5 v 40" />
-   <text transform="translate(25,15) translate(5,2.5)" class="ref">B</text>
+   <a xlink:href="strassenbahnnetz.svg?viewbox=141/-135/234/153">
+     <text transform="translate(25,15) translate(5,2.5)" class="ref">B</text>
+   </a>
   </g>
   <path id="gw_emserbrücke" class="geplant verlaengerung_europaviertel" d="M -470,1575 c 10,0 10,10 20,10" />
   <g id="wa_heerstrasse" transform="translate(-470,685)">
@@ -2538,7 +2542,9 @@
    <path class="tramg" d="M 37,55 a 10,10 0,0,1 10,-10" />
    <path class="tramg" d="M 42,40 a 5,5 0,0,0 5,5" />
    <path class="tramg" d="M 37,40 a 10,10 0,0,0 10,10" />
-   <text transform="translate(40.5,12)" class="ref tm">C</text>
+   <a xlink:href="strassenbahnnetz.svg?viewbox=-311/-201/316/118">
+     <text transform="translate(40.5,12)" class="ref tm">C</text>
+   </a>
   </g>
   <g id="abzw_johanna_tesch_platz" transform="translate(755,1363)">
    <path id="abzw_johanna_tesch_platz_1" class="uberg" d="M 0,+5 a 10,10 0,0,0 -10,10 v 20" />
@@ -2549,7 +2555,9 @@
    <path class="tramg" d="M -20,75 h 20" />
    <path class="tramg" d="M -5,70 a 5,5 0,0,1 -5,-5" />
    <path class="tramg" d="M 0,70 h -20" />
-   <text transform="translate(-12.5,47)" class="ref tm">O</text>
+   <a xlink:href="strassenbahnnetz.svg?viewbox=645/-127/178/159">
+     <text transform="translate(-12.5,47)" class="ref tm">O</text>
+   </a>
   </g>
   <path id="dreieck_schaeffle_1" d="M 815,1300 a 10,10 0,0,1 10,10" />
   <path id="dreieck_schaeffle_2" d="M 835,1310 a 20,20 0,0,0 -20,-20" />

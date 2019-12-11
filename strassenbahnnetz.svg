@@ -1113,7 +1113,9 @@
     <path class="ubahng" d="M -20,-5 a 10,10 0,0,0 10,10 h 10" />
     <path class="ubahng" d="M -15,-15 v 30" />
     <path class="ubahng" d="M -20,15 v -30" />
-    <text transform="translate(0,4)" class="ref te">B</text>
+    <a xlink:href="ubahnnetz.svg?viewbox=168/1350/208/165">
+     <text transform="translate(0,4)" class="ref te">B</text>
+    </a>
   </g>
   <path id="friedbergerlandstraße_1" class="endet" d="M 265,-35 v -30 q 0,-4 3,-7 l 245,-245" />
   <path id="friedbergerlandstraße_2" class="faeng" d="M 506,-324 l -245,245 q -6,6 -6,14 v 30" />
@@ -1158,7 +1160,9 @@
     <path class="ubahnt" d="M -10,-9 h -10" />
     <path class="ubahnt" d="M -20,-14 h 10" />
     <use xlink:href="#tunnelrampe" transform="translate(-10,-11.5) rotate(90)" />
-    <text transform="rotate(45) translate(0,-1)" class="ref tm">O</text>
+    <a xlink:href="ubahnnetz.svg?viewbox=575/1151/336/318">
+      <text transform="rotate(45) translate(0,-1)" class="ref tm">O</text>
+    </a>
   </g>
   <path id="batonstraße_1" d="M 255,160 a 20,20 0,0,0 20,20 h 75 a 10,10 0,0,1 10,10" />
   <path id="batonstraße_2" d="M 370,190 a 20,20 0,0,0 -20,-20 h -75 a 10,10 0,0,1 -10,-10" />
@@ -1193,7 +1197,9 @@
     <path class="ubahnt" d="M 5,-14 h -20" />
     <path class="ubahng" d="M -15,-14 c -5,0 -5,5 -10,5 c -5,0 -5,-5 -10,-5" />
     <use xlink:href="#tunnelrampe" transform="translate(-15,-11.5) rotate(-90)" />
-    <text transform="rotate(-45)" class="ref tm">C</text>
+    <a xlink:href="ubahnnetz.svg?viewbox=-516/1091/225/243">
+      <text transform="rotate(-45)" class="ref tm">C</text>
+    </a>
   </g>
   <path id="ginnheim_1" d="M -177,-126 q 6,6 14,6 a 20,20 0,0,0 20,-20 v -220 a 20,20 0,0,0 -20,-20 h -20 c -5,0 -5,10 -10,10" />
   <path id="ginnheim_3" class="endet" d="M -213,-370 c -5,0 -5,-10 -10,-10 h -20" />
@@ -1206,7 +1212,9 @@
     <path class="ubahng faeng" d="M 30,-25 h -85" />
     <path class="ubahng faeng" d="M 30,-30 h -35 c -5,0 -5,5 -10,5" />
     <path class="ubahng" d="M -25,-25 c -5,0 -5,5 -10,5 c -5,0 -5,-5 -10,-5" />
-    <text transform="translate(-16,-12) rotate(-45)" class="ref tm">A</text>
+    <a xlink:href="ubahnnetz.svg?viewbox=-233/884/147/138">
+      <text transform="translate(-16,-12) rotate(-45)" class="ref tm">A</text>
+    </a>
   </g>
   <path id="rebstock_1" class="endet" d="M -105,-68 q -6,-6, -14,-6 h -276" />
   <path id="rebstock_2a" class="faeng" d="M -395,-64 h 200 c 10,0 10,-10 20,-10" />
