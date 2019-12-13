@@ -10,7 +10,7 @@
   onclick="select_click(event)"
   onmousemove="select_move(event)"
   >
- <title>U-Bahn-Gleisplan Frankfurt am Main</title>
+  <title>U-Bahn-Gleisplan Frankfurt am Main</title>
  <metadata>
   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -27,18 +27,17 @@
     <dc:title>U-Bahn-Gleisplan Frankfurt am Main</dc:title>
     <dc:date/>
     <dc:language>de</dc:language>
-    <dc:contributor>Users of Frankfurter Nahverkehrsforum frankfurter-nahverkehrsforum.de/forum/index.php?thread/20627-gleisnetz-u-bahn-frankfurt/</dc:contributor>
+    <dc:contributor>Users of Frankfurter Nahverkehrsforum https://frankfurter-nahverkehrsforum.de/forum/index.php?thread/20627-gleisnetz-u-bahn-frankfurt/</dc:contributor>
    </rdf:Description>
   </rdf:RDF>
  </metadata>
  <style type="text/css"><![CDATA[
-  /* markers */
-  .uberg { marker-end: url(#Arr1L); }
-  .zugab { marker-start: url(#Arr2L); }
+  .ubergabe { marker-end: url(#Arrow1Lend); }
+  .zugabe { marker-start: url(#Arrow2Lend); }
   .endet { marker-end: url(#prell); }
   .faeng { marker-start: url(#prell); }
-  .ansch { marker-end: url(#ArrDB); }
-  #ArrDB rect { stroke:#ff0000; fill:none; }
+  .anschluss { marker-end: url(#ArrowDB); }
+  #ArrowDB rect { stroke:#ff0000; fill:none; }
   #prell path { stroke: currentColor; }
   marker { overflow:visible; }
   /* Bahnsteige */
@@ -56,7 +55,7 @@
   .miquel { fill: #ffffff; }
   /* Strecken */
   .uberwerf { fill-opacity:0.40; fill:#ffffff; stroke:none; }
-  .strecke { stroke-width:1px; stroke:#000000; }
+  .strecke { stroke-width:1px; stroke:#000000; fill:none; }
   .bb { stroke-width:.7px; stroke:#404040; }
   .geplant { stroke-dasharray: 1,1; }
   .tramg { stroke-dasharray: .5,.5; }
@@ -70,6 +69,7 @@
   .geplant text { stroke:none; stroke-dasharray:none; font-size:70%; font-style:italic; }
   .ebobahn text { fill:#008000; stroke:none; }
   #tunnelrampe { fill:none; stroke:#000000; stroke-width:1px; }
+  .weg { stroke:red; stroke-width:2; fill:none; }
   /* Text / Legenden */
   #aussen { fill:white; stroke:#0000c0; stroke-width:.1px; }
   .headline { font-weight: bold; }
@@ -84,7 +84,6 @@
   text { font-size:10pt; font-family:Sans-Serif; fill:black; stroke:none; }
   #bau { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; stroke-dasharray:none; }
   #uml { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; }
-  .weg { stroke:red; stroke-width:1; fill:none; }
   .link, a text, text a { fill:blue; visibility:visible; }
   .script { visibility:visible; }
   .ref { font-size:9pt; fill:#0080ff; stroke:none; font-weight:bold; }
@@ -186,17 +185,21 @@
  <script type="application/ecmascript" href="./hstdetails.js"></script>
  <script type="application/ecmascript" href="./selection.js"></script>
  <script type="application/ecmascript" href="./query.js"></script>
- <defs>
+ <defs id="defs_gradients">
   <linearGradient id="bs00" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ff8080" /><stop offset="100%" stop-opacity="100%" stop-color="#ff8080" /></linearGradient>
   <linearGradient id="bs56" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#80e0ff" /><stop offset="100%" stop-opacity="100%" stop-color="#80e0ff" /></linearGradient>
   <linearGradient id="bs80" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#80c080" /><stop offset="100%" stop-opacity="100%" stop-color="#80c080" /></linearGradient>
   <linearGradient id="bs87" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#c080ff" /><stop offset="100%" stop-opacity="100%" stop-color="#c080ff" /></linearGradient>
   <linearGradient id="bs99" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#808080" /><stop offset="100%" stop-opacity="100%" stop-color="#808080" /></linearGradient>
   <linearGradient id="grau" spreadMethod="reflect" x1=".5" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-color="#c0c0c0" /><stop offset="100%" stop-color="#808080" /></linearGradient>
-  <marker id="Arr1L" refX="0" refY="0" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" /></marker>
-  <marker id="Arr2L" refX="0" refY="0" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" transform="scale(-1,-1)" /></marker>
-  <marker id="ArrDB" refX="0" refY="0" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" /><rect x="5" y="-5" width="15" height="10" rx="1" ry="1" /></marker>
+ </defs>
+ <defs id="defs_pathdecorations">
+  <marker id="Arrow1Lend" refX="0" refY="0" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" /></marker>
+  <marker id="Arrow2Lend" refX="0" refY="0" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" transform="scale(-1,-1)" /></marker>
+  <marker id="ArrowDB" refX="0" refY="0" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" /><rect x="5" y="-5" width="15" height="10" rx="1" ry="1" /></marker>
   <marker id="prell" refX="0" refY="0" orient="auto"><path d="M 0,-1 L 0,1" /></marker>
+ </defs>
+ <defs id="defs_bahnsteige">
   <path id="einwagen" d="M 6,0 L 2,0 L 2,7.5 L 6,7.5" class="bahnsteig" />
   <g id="viersteig">
    <use xlink:href="#einwagen" transform="translate(0,-15.0)" />
@@ -231,7 +234,31 @@
    <circle r="3.5" cx="5" cy="0" />
    <path d="M 6.5,-1.9 L 6.5,1.9 M 3.5,-1.9 L 3.5,1.9 M 3.5,0 L 6.5,0" />
   </g>
+  <g id="bstg_mitte"><use xlink:href="#bahnsteig" transform="translate(5,0) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(-5,0)" /></g>
+  <g id="bstg_ausen"><use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,0)" /></g>
+  <g id="bstg_vers1"><use xlink:href="#bahnsteig" transform="translate(-5,-15) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,15)" /></g>
+  <g id="bstg_dosto"><use xlink:href="#bahnsteig" transform="rotate(45)" /><use xlink:href="#bahnsteig" transform="translate(5,0) rotate(45)" /></g>
+  <g id="drei_mitte"><use xlink:href="#bstg_dreiw" transform="translate(5,0) rotate(180)" /><use xlink:href="#bstg_dreiw" transform="translate(-5,0)" /></g>
+  <g id="drei_ausen"><use xlink:href="#bstg_dreiw" transform="translate(-5,0) rotate(180)" /><use xlink:href="#bstg_dreiw" transform="translate(5,0)" /></g>
+  <g id="drei_ecke1"><use xlink:href="#bstg_dreiw" transform="translate(5,0)" /><use xlink:href="#bstg_dreiw" transform="translate(-30,-25) rotate(90)" /></g>
+ </defs>
+ <defs>
   <path id="tunnelrampe" d="M -10,-5 L -7,0 L 7,0 L 10,-5" />
+  <path id="weg" class="weg" d="M -3.6,-3.6 l 7.2,7.2 m -7.2,0 l 7.2,-7.2" />
+  <path id="bau" d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" />
+  <path id="uml" d="M 0,3 h 7 l 3,-3 l -3,-3 h -17 v 6 h 11" />
+ </defs>
+ <defs id="defs_grid">
+  <g id="hstgrid" class="hilfslinie">
+    <path class="grid1" d="M 0,0 h 5 M 0,0 h -5 M 0,0 v 7.5 M 0,0 v -7.5" />
+    <path class="grid2" d="M 0,0 l 10,15" />
+    <path class="grid3" d="M 0,0 l -5,+7.5" />
+    <path class="grid3" d="M 0,0 l +5,-7.5" />
+    <path class="grid3" d="M 0,0 l -5,-7.5" />
+    <path class="grid3" d="M 0,0 l 10,15" />
+    <path class="grid4" d="M -5,-15 h 10" />
+    <path class="grid4" d="M -5,+15 h 10" />
+  </g>
   <g id="grid">
    <path class="grid1" d="M -1000   0 H 1000" /><path class="grid1" d="M   0 -1000 V 1000" />
    <path class="grid3" d="M -1000  10 H 1000" /><path class="grid3" d="M  10 -1000 V 1000" />
@@ -245,23 +272,11 @@
    <path class="grid3" d="M -1000  90 H 1000" /><path class="grid3" d="M  90 -1000 V 1000" />
    <path class="grid1" d="M -1000 100 H 1000" /><path class="grid1" d="M 100 -1000 V 1000" />
   </g>
-  <path id="bau" d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" />
-  <path id="uml" d="M 0,3 h 7 l 3,-3 l -3,-3 h -17 v 6 h 11" />
-  <path id="weg" class="weg" d="M -1.2,-1.2 l 2.4,2.4 m -2.4,0 l 2.4,-2.4" />
+ </defs>
+ <defs id="defs_kilometer">
   <g id="punkt1" class="kmpkt"><path d="M 0,0 l -2,-20 v -72 h 4 v 72 z" /><circle cx="0" cy="-99" r="7" /></g>
   <g id="punkt2" class="kmpkt"><path d="M 0,0 l -1,-10 v -46 h 2 v 46 z" /><circle cx="0" cy="-60" r="4" /></g>
   <g id="punkt3" class="kmpkt"><path d="M 0,0 l -1,-10 v -50 h 2 v 50 z" /><rect height="5" width="10" x="-5" y="-62.5"/></g>
-  <g id="bstg_legen"><use xlink:href="#bstg_dreiw" transform="translate(-75,-10) rotate(90)" /><use xlink:href="#bahnsteig" transform="translate(-35,-10) rotate(90)" /></g>
-  <g id="bstg_mitte"><use xlink:href="#bahnsteig" transform="translate(5,0) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(-5,0)" /></g>
-  <g id="bstg_ausen"><use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,0)" /></g>
-  <g id="bstg_vers1"><use xlink:href="#bahnsteig" transform="translate(-5,-15) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,15)" /></g>
-  <g id="bstg_dosto"><use xlink:href="#bahnsteig" transform="rotate(45)" /><use xlink:href="#bahnsteig" transform="translate(5,0) rotate(45)" /></g>
-  <g id="drei_mitte"><use xlink:href="#bstg_dreiw" transform="translate(5,0) rotate(180)" /><use xlink:href="#bstg_dreiw" transform="translate(-5,0)" /></g>
-  <g id="drei_ausen"><use xlink:href="#bstg_dreiw" transform="translate(-5,0) rotate(180)" /><use xlink:href="#bstg_dreiw" transform="translate(5,0)" /></g>
-  <g id="drei_ecke1"><use xlink:href="#bstg_dreiw" transform="translate(5,0)" /><use xlink:href="#bstg_dreiw" transform="translate(-30,-25) rotate(90)" /></g>
-  <g id="drei_vers1"><use xlink:href="#bstg_dreiw" transform="translate(-5,25) rotate(180)" /><use xlink:href="#bstg_dreiw" transform="translate(5,-25)" /></g>
-  <g id="drei_vers2"><use xlink:href="#bstg_dreiw" transform="translate(-5,-25) rotate(180)" /><use xlink:href="#bstg_dreiw" transform="translate(5,25)" /></g>
-  <g id="drei_vers3"><use xlink:href="#bstg_dreiw" transform="translate(-5,-10) rotate(180)" /><use xlink:href="#bstg_dreiw" transform="translate(5,10)" /></g>
   <rect id="kasten3" class="label" y="-6" width="58" height="12" rx="2" ry="2" />
   <rect id="kasten4" class="label" y="-6" width="60" height="12" rx="2" ry="2" />
   <rect id="kasten8" class="label" y="-6" width="63" height="12" rx="2" ry="2" />
@@ -270,6 +285,8 @@
   <use id="kastenC" xlink:href="#kasten3" x="-58" />
   <use id="kastenD" xlink:href="#kasten4" x="-60" />
   <use id="kastenJ" xlink:href="#kasten9" x="-63" />
+ </defs>
+ <defs id="defs_abstell">
   <rect id="einsabstell" class="abstell" x="-1.5" width="3" y="0" height="5" />
   <g id="zweiabstell">
    <use xlink:href="#einsabstell" />
@@ -299,16 +316,8 @@
    <use xlink:href="#sechabstell" />
    <use xlink:href="#sechabstell" transform="translate(0,35)" />
   </g>
-  <g id="hstgrid" class="hilfslinie">
-    <path class="grid1" d="M 0,0 h 5 M 0,0 h -5 M 0,0 v 7.5 M 0,0 v -7.5" />
-    <path class="grid2" d="M 0,0 l 10,15" />
-    <path class="grid3" d="M 0,0 l -5,+7.5" />
-    <path class="grid3" d="M 0,0 l +5,-7.5" />
-    <path class="grid3" d="M 0,0 l -5,-7.5" />
-    <path class="grid3" d="M 0,0 l 10,15" />
-    <path class="grid4" d="M -5,-15 h 10" />
-    <path class="grid4" d="M -5,+15 h 10" />
-  </g>
+ </defs>
+ <defs id="defs_hstdetails">
   <g id="gleis1" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>1</text></g>
   <g id="gleis2" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>2</text></g>
   <g id="gleis3" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>3</text></g>
@@ -316,6 +325,8 @@
   <g id="gleis5" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" /><text>5</text></g>
   <g id="ebenec" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" transform="rotate(45)" /><text x="1">C</text></g>
   <g id="ebened" class="gleisnummer"><rect x="-3" width="6" y="-4.5" height="6" transform="rotate(45)" /><text x="1">D</text></g>
+ </defs>
+ <defs id="defs_signale">
   <path id="signalplatz" d="M 0,.5 h 1 l 2,1.5 v -4 l -2,1.5 h -1 z" />
   <g id="highlightedsignalplatz">
     <path d="M 0,.5 h 1 l 2,1.5 v -4 l -2,1.5 h -1 z" />
@@ -495,6 +506,8 @@
     <use xlink:href="#signal_f1" transform="translate(0,-30)" />
     <use xlink:href="#signal_f0" transform="translate(0,-40)" />
   </g>
+ </defs>
+ <defs id="defs_links">
   <g id="link_symbol" class="always_links">
    <rect x="-8" y="-8" width="16" height="16" />
    <g transform="translate(-4.5,-8.4) scale(1.3) rotate(45)">
@@ -536,12 +549,12 @@
    <path d="M 30,650 v 87" class="strecke bb endet" />
    <path d="M 30,650 c 0,5 -5,5 -5,10" class="strecke bb" />
    <path d="M 20,650 c 0,5 5,5 5,10 v 77" class="strecke bb endet" />
-   <path d="M 45,275 a 25,25 0,0,0 -25,25 a 20,20 0,0,0 20,20 h 15" class="strecke uberg" />
-   <path d="M 45,285 a 15,15 0,0,0 -15,15 a 15,15 0,0,0 15,15 h 10" class="strecke uberg" />
+   <path d="M 45,275 a 25,25 0,0,0 -25,25 a 20,20 0,0,0 20,20 h 15" class="strecke ubergabe" />
+   <path d="M 45,285 a 15,15 0,0,0 -15,15 a 15,15 0,0,0 15,15 h 10" class="strecke ubergabe" />
    <path d="M 55,315 h 10 a 10,10 0,0,1 10,10 v 10 m 0,-10 v -20" class="strecke tramg" />
    <path d="M 55,320 h 10 a 5,5 0,0,1 5,5 v 10 m 0,-10 v -20" class="strecke tramg" />
-   <path d="M 20,335 a 25,25 0,0,0 25,25 h 10" class="strecke ansch nowiki" />
-   <path d="M 30,335 a 15,15 0,0,0 15,15 h 10" class="strecke ansch nowiki" />
+   <path d="M 20,335 a 25,25 0,0,0 25,25 h 10" class="strecke anschluss nowiki" />
+   <path d="M 30,335 a 15,15 0,0,0 15,15 h 10" class="strecke anschluss nowiki" />
    <text transform="translate(60,322)" class="tm ref">X</text>
    <use xlink:href="#tunnelrampe" transform="translate(45,280) rotate(-90)" />
    <use xlink:href="#weg" transform="translate(20,375)" />
@@ -2472,7 +2485,7 @@
    <path id="wa_ginnheim_a" d="M 0,-40 c 0,10 -10,10 -10,20" />
    <path id="wa_ginnheim_b" d="M -10,-20 c 0,10 10,10 10,20" />
    <path id="wa_ginnheim_5" class="endet" d="M 0,0 c 0,10 10,10 10,20 v 35" />
-   <path id="wa_ginnheim_u" class="uberg" d="M -10,-5 q 0,4 -3,7 l -7,7" />
+   <path id="wa_ginnheim_u" class="ubergabe" d="M -10,-5 q 0,4 -3,7 l -7,7" />
    <path id="wa_ginnheim_tram1" class="tramg" d="M -20,9 l -7,7 q -3,3 -3,7 v 32 a 5,5 0,0,1 -5,5" />
    <path id="wa_ginnheim_tram2" class="tramg endet" d="M -35,70 a 15,15 0,0,0 15,-15 v -22 c 0,-5 -10,-5 -10,-10 v -13 c 0,-5 10,-5 10,-10 v -20" />
    <path id="wa_ginnheim_tram3" class="tramg faeng" d="M -30,-20 v 30" />
@@ -2505,8 +2518,8 @@
   <path id="gw_sigmund_freud_straße" d="M 430,770 c 0,-10 10,-10 10,-20" />
   <path id="gw_hauptfriedhof" d="M 270,1275 c 0,-10 10,-10 10,-20" />
   <g id="abzw_glauburgstrasse" transform="translate(270,1415)">
-   <path id="abzw_glauburgstrasse_1" class="zugab" d="M 25,10 h -5 a 10,10 0,0,1 -10,-10" />
-   <path id="abzw_glauburgstrasse_2" class="uberg" d="M 0,0 a 15,15 0,0,0 15,15 h 10" />
+   <path id="abzw_glauburgstrasse_1" class="zugabe" d="M 25,10 h -5 a 10,10 0,0,1 -10,-10" />
+   <path id="abzw_glauburgstrasse_2" class="ubergabe" d="M 0,0 a 15,15 0,0,0 15,15 h 10" />
    <path class="tramg" d="M 25,15 h 30 a 5,5 0,0,1 5,5 a 10,10 0,0,1 10,-10 h 10" />
    <path class="tramg" d="M 25,10 h 30 a 10,10 0,0,1 10,10 a 5,5 0,0,1 5,-5 h 10" />
    <path class="tramg" d="M 65,5 a 5,5 0,0,0 5,5" />
@@ -2532,8 +2545,8 @@
   <path id="gw_nelkenstraße" d="M -385,1121 c 0,10 -10,10 -10,20" />
   <path id="gw_industriehof" d="M -355,1190 c 7,7 0,14 7,21 c 7,7 14,0 21,7 M -340,1193 c -6,-6 -12,0 -18,-6 M -328,1260 c 0,-5 5,-5 5,-10" />
   <g id="ug_industriehof" transform="translate(-365,1274)">
-   <path id="g317A44" class="uberg" d="M 0,-80 c 6,6 0,12 6,18 l 28,28 q 3,3 3,7 v 27" />
-   <path id="g317A31" class="zugab endet" d="M 42,0 v -56 q 0,-8 -6,-14 l -22,-22" />
+   <path id="g317A44" class="ubergabe" d="M 0,-80 c 6,6 0,12 6,18 l 28,28 q 3,3 3,7 v 27" />
+   <path id="g317A31" class="zugabe endet" d="M 42,0 v -56 q 0,-8 -6,-14 l -22,-22" />
    <path class="tramg" d="M 37,0 v 60" />
    <path class="tramg" d="M 42,60 v -60" />
    <path class="tramg" d="M 42,25 a 10,10 0,0,0 -10,-10 h -10 a 10,10 0,0,0 -10,10 v 10 a 10,10 0,0,0 10,10 h 30" />
@@ -2547,8 +2560,8 @@
    </a>
   </g>
   <g id="abzw_johanna_tesch_platz" transform="translate(755,1363)">
-   <path id="abzw_johanna_tesch_platz_1" class="uberg" d="M 0,+5 a 10,10 0,0,0 -10,10 v 20" />
-   <path id="abzw_johanna_tesch_platz_2" class="uberg" d="M 0,-5 a 15,15 0,0,0 -15,15 v 25" />
+   <path id="abzw_johanna_tesch_platz_1" class="ubergabe" d="M 0,+5 a 10,10 0,0,0 -10,10 v 20" />
+   <path id="abzw_johanna_tesch_platz_2" class="ubergabe" d="M 0,-5 a 15,15 0,0,0 -15,15 v 25" />
    <path class="tramg" d="M -15,35 v 30 a 5,5 0,0,1 -5,5 h -5" />
    <path class="tramg" d="M -15,65 a 10,10 0,0,0 10,10" />
    <path class="tramg" d="M -25,75 h 5 a 10,10 0,0,0 10,-10 v -30 " />
@@ -2692,10 +2705,10 @@
     <path class="tor" d="M -19,-19 h -5" />
     <path class="tor" d="M -25,-19 h -5" />
     <path class="tor" d="M -31,-19 h -5" />
-    <use xlink:href="#weg" transform="translate(-2,-61)" />
-    <use xlink:href="#weg" transform="translate(-5,-61)" />
-    <use xlink:href="#weg" transform="translate(-8,-61)" />
-    <use xlink:href="#weg" transform="translate(-11,-61)" />
+    <use xlink:href="#weg" transform="translate(-2,-61) scale(.5)" />
+    <use xlink:href="#weg" transform="translate(-5,-61) scale(.5)" />
+    <use xlink:href="#weg" transform="translate(-8,-61) scale(.5)" />
+    <use xlink:href="#weg" transform="translate(-11,-61) scale(.5)" />
     <g transform="translate(40,-20)" class="bgleisnummer"><circle cy="-1" r="2" /><text>1</text></g>
     <g transform="translate(37,-23)" class="bgleisnummer"><circle cy="-1" r="2" /><text>2</text></g>
     <g transform="translate(34,-20)" class="bgleisnummer"><circle cy="-1" r="2" /><text>3</text></g>
@@ -2819,10 +2832,10 @@
    <path id="rtw_homburg_2" class="geplant rtw ebobahn" d="M -455,525 v -25 c 0,-7.5 -5,-7.5 -5,-15" />
    <path id="s5_1" class="geplant rtw ebobahn" d="M -460,565 v -115" />
    <path id="s5_2" class="geplant rtw ebobahn" d="M -465,450 v 115" />
-   <path id="rtw1" class="geplant rtw faeng ansch" d="M -320,585 h -425 a 50,50 0,0,0 -50,50 v 75" />
-   <path id="rtw2" class="geplant rtw faeng ansch" d="M -320,575 h -425 a 60,60 0,0,0 -60,60 v 75" />
-   <path id="rtw_hauptgipfelslach_1" class="geplant rtw ansch" d="M -515,585 a 60,60 0,0,0 60,-60" />
-   <path id="rtw_hauptgipfelslach_2" class="geplant rtw ansch" d="M -520,575 a 50,50 0,0,0 50,-50" />
+   <path id="rtw1" class="geplant rtw faeng anschluss" d="M -320,585 h -425 a 50,50 0,0,0 -50,50 v 75" />
+   <path id="rtw2" class="geplant rtw faeng anschluss" d="M -320,575 h -425 a 60,60 0,0,0 -60,60 v 75" />
+   <path id="rtw_hauptgipfelslach_1" class="geplant rtw anschluss" d="M -515,585 a 60,60 0,0,0 60,-60" />
+   <path id="rtw_hauptgipfelslach_2" class="geplant rtw anschluss" d="M -520,575 a 50,50 0,0,0 50,-50" />
    <path id="enkheim_1" class="endet" d="M 716,1368 h 84 a 35,35 0,0,0 35,-35 v -513" />
    <path id="enkheim_2" class="faeng" d="M 825,820 v 513 a 25,25 0,0,1 -25,25 h -84" />
    <path id="hausen_1" class="faeng" d="M -395,906 v 250 q 0,8 6,14" />
@@ -4069,8 +4082,8 @@
      <g onclick="toggle_details(this)">
        <use xlink:href="#haltestel" transform="translate(+5,+5)" />
        <use xlink:href="#haltestel" transform="translate(-5,-5) rotate(180)" />
-       <use xlink:href="#weg" transform="translate(-10,-5) scale(2)" />
-       <use xlink:href="#weg" transform="translate(+10,+5) scale(2)" />
+       <use xlink:href="#weg" transform="translate(-10,-5)" />
+       <use xlink:href="#weg" transform="translate(+10,+5)" />
      </g>
      <text x="17" y="5">Neuer Jüdischer Friedhof</text>
      <text class="ab_bb" x="17" y="15">Wird b.a.w. nicht bedient</text>

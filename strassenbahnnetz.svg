@@ -11,13 +11,6 @@
   onmousemove="select_move(event)"
   >
   <title>Straßenbahn-Gleisplan Frankfurt am Main</title>
- <rect id="aussen"
-    width="1900"  height="1190"
-    x="-865" y="-425"
-    style="fill:white;stroke:#0000c0;stroke-width:.1px" />
- <text class="ab_bb" x="-865" y="732"><a id="plain_link" xlink:href="strassenbahnnetz.svg" class="rev">Permalink zu dieser Version</a></text>
- <text class="ab_bb" x="-865" y="742"><a xlink:href="strassenbahnnetz.svg" class="rev">(<tspan class="hash"/>)</a></text>
- <text class="ab_bb" x="-865" y="752">© CC-BY-SA 4.0 or later 2011-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <metadata>
   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -41,11 +34,16 @@
  <style type="text/css"><![CDATA[
   .ubergabe { marker-end: url(#Arrow1Lend); }
   .zugabe { marker-start: url(#Arrow2Lend); }
+  .endet { marker-end: url(#prell); }
+  .faeng { marker-start: url(#prell); }
   .anschluss { marker-end: url(#ArrowDB); }
+  #ArrowDB rect { stroke:#ff0000; fill:none; }
+  #prell path { stroke: currentColor; }
+  marker { overflow:visible; }
+  #haltestel circle { stroke:#00c000; stroke-width:1px; fill:#ffff00; }
+  #haltestel path { stroke:#00c000; fill:none; }
   .strecke { stroke-width:1px; stroke:#000000; fill:none; }
   .bb { stroke-width:.7px; stroke:#404040; }
-  .endet { marker-end:   url(#prell); }
-  .faeng { marker-start: url(#prell); }
   .mitte { stroke: #404080; stroke-dasharray:2,1; stroke-width:.7px; }
   .ubahn { stroke: #0000c0; stroke-width:1; }
   .drehscheibe { fill:white; }
@@ -54,23 +52,21 @@
   .zehnzig use, use.zehnzig { stroke:#0000ff; fill:url(#bs10); }
   .dreizig use, use.dreizig { stroke:#00c000; fill:url(#bs30); }
   .achtzig use, use.achtzig { stroke:#ffc000; fill:url(#bs80); }
-  .hschild { stroke:#00c000; stroke-width:1px; fill:#ffff00; }
-  .htext { stroke:#00c000; fill:none; }
   .uberwerf { fill-opacity:0.40; fill:#ffffff; stroke:none; }
   .bahnsteig { stroke-width:1px; }
   .doppelstrich rect { fill:white; stroke:none; }
   .doppelstrich path { fill:none; stroke:black; stroke-width:.5px; }
 
   .geplant { stroke-dasharray: 3,1; }
-  path.verbot { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; }
   .ubahng { stroke-dasharray: .5,.5; }
   .ubahnt { stroke-dasharray: .5,.5; stroke:#000080; }
   #tunnelrampe { fill:none; stroke:#000000; stroke-width:1px; }
   .weg { stroke:red; stroke-width:2; fill:none; }
-  path.umleit { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; }
-
+  #aussen { fill:white; stroke:#0000c0; stroke-width:.1px; }
   text { font-size:9pt; font-family:Sans-Serif; }
   .ab_bb { font-size:6pt; }
+  #bau { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; stroke-dasharray:none; }
+  #uml { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; }
   .link, a text, text a { fill:blue; visibility:visible; }
   .ref { font-size:9pt; fill:#0080ff; stroke:none; font-weight:bold; }
   .rev { font-size: 7pt; fill-opacity: .5; }
@@ -81,6 +77,10 @@
 
   .te { text-anchor:end; }
   .tm { text-anchor:middle; }
+  .grid1 { stroke-width:.5px; stroke:#000000; }
+  .grid2 { stroke-width:.4px; stroke:#444444; }
+  .grid3 { stroke-width:.2px; stroke:#888888; }
+  .grid4 { stroke-width:.2px; stroke:#000000; stroke-dasharray:1,1; }
 
   .beschrift text { fill:black; stroke:none; font-size:3pt; text-anchor:middle; }
   .bgleisnummer circle { fill:white; fill-opacity:.8; stroke:black; stroke-width:.3; }
@@ -137,15 +137,19 @@
  <script type="application/ecmascript" href="./geplant.js"></script>
  <script type="application/ecmascript" href="./selection.js"></script>
  <script type="application/ecmascript" href="./query.js"></script>
- <defs>
+ <defs id="defs_gradients">
   <linearGradient id="bs00" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ff8080" /><stop offset="100%" stop-opacity="100%" stop-color="#ff8080" /></linearGradient>
   <linearGradient id="bs10" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#0080ff" /><stop offset="100%" stop-opacity="100%" stop-color="#0080ff" /></linearGradient>
   <linearGradient id="bs30" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#80c080" /><stop offset="100%" stop-opacity="100%" stop-color="#80c080" /></linearGradient>
   <linearGradient id="bs80" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ffc000" /><stop offset="100%" stop-opacity="100%" stop-color="#ffc000" /></linearGradient>
-  <marker id="Arrow1Lend" refX="0" refY="0" style="overflow:visible" orient="auto"><path style="stroke:none;fill:currentColor;" d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" /></marker>
-  <marker id="Arrow2Lend" refX="0" refY="0" style="overflow:visible" orient="auto"><path style="stroke:none;fill:currentColor;" d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" transform="scale(-1,-1)" /></marker>
-  <marker id="ArrowDB" refX="0" refY="0" style="overflow:visible" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" /><rect x="5" y="-5" width="15" height="10" rx="1" ry="1" style="stroke:red; fill:none;" /></marker>
-  <marker id="prell" refX="0" refY="0" style="overflow:visible" orient="auto"><path d="M 0,-1 L 0,1" style="stroke:currentColor; " /></marker>
+ </defs>
+ <defs id="defs_pathdecorations">
+  <marker id="Arrow1Lend" refX="0" refY="0" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" /></marker>
+  <marker id="Arrow2Lend" refX="0" refY="0" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" transform="scale(-1,-1)" /></marker>
+  <marker id="ArrowDB" refX="0" refY="0" orient="auto"><path d="M 1,0 L -10,5 L -8,0 L -10,-5 L 1,0 z" /><rect x="5" y="-5" width="15" height="10" rx="1" ry="1" /></marker>
+  <marker id="prell" refX="0" refY="0" orient="auto"><path d="M 0,-1 L 0,1" /></marker>
+ </defs>
+ <defs id="defs_bahnsteige">
   <path id="bahnsteig" d="M 6,-7.5 L 2,-7.5 L 2,7.5 L 6,7.5" class="bahnsteig" />
   <g id="doppelbst">
    <use xlink:href="#bahnsteig" />
@@ -155,33 +159,8 @@
    </g>
   </g>
   <g id="haltestel">
-   <circle r="3.5" cx="5" cy="0" class="hschild" />
-   <path class="htext" d="M 6.5,-1.9 L 6.5,1.9 M 3.5,-1.9 L 3.5,1.9 M 3.5,0 L 6.5,0" />
-  </g>
-  <path id="weg" class="weg" d="M -3.6,-3.6 l 7.2,7.2 m -7.2,0 l 7.2,-7.2" />
-  <path id="bau" class="verbot" d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" />
-  <path id="uml" class="umleit" d="M -5,3 h 7 l 3,-3 l -3,-3 h -7 v 6 h 1" />
-  <g id="hstgrid" class="hilfslinie">
-    <path class="bb" style="fill:none;"  d="M 0,0 h 5 M 0,0 h -5 M 0,0 v 7.5 M 0,0 v -7.5" />
-    <path class="bb" style="fill:none;"  d="M 0,0 l 10,15" />
-    <path class="bb" style="fill:none;"  d="M 0,0 l -5,+7.5" />
-    <path class="bb" style="fill:none;"  d="M 0,0 l +5,-7.5" />
-    <path class="bb" style="fill:none;"  d="M 0,0 l -5,-7.5" />
-    <path class="bb" style="fill:none;"  d="M 0,0 l 10,15" />
-    <path class="bb" style="fill:none; stroke-dasharray:1,1"  d="M -5,-10 h 10" />
-    <path class="bb" style="fill:none; stroke-dasharray:1,1"  d="M -5,+10 h 10" />
-  </g>
-  <g id="grid">
-   <path style="stroke-width:.5px; stroke:#f00;" d="M -3000   0 H 3000" /><path style="stroke-width:.5px; stroke:#00f;" d="M   0 -3000 V 3000" />
-   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  10 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  10 -3000 V 3000" />
-   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  20 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  20 -3000 V 3000" />
-   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  30 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  30 -3000 V 3000" />
-   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  40 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  40 -3000 V 3000" />
-   <path style="stroke-width:.4px; stroke:#f44;" d="M -3000  50 H 3000" /><path style="stroke-width:.4px; stroke:#44f;" d="M  50 -3000 V 3000" />
-   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  60 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  60 -3000 V 3000" />
-   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  70 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  70 -3000 V 3000" />
-   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  80 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  80 -3000 V 3000" />
-   <path style="stroke-width:.2px; stroke:#f88;" d="M -3000  90 H 3000" /><path style="stroke-width:.2px; stroke:#88f;" d="M  90 -3000 V 3000" />
+   <circle r="3.5" cx="5" cy="0" />
+   <path d="M 6.5,-1.9 L 6.5,1.9 M 3.5,-1.9 L 3.5,1.9 M 3.5,0 L 6.5,0" />
   </g>
   <g id="bstg_ubahn"><use xlink:href="#bahnsteig" transform="rotate(180) scale(1,2)" class="achtzig" /></g>
   <g id="bstg_mitte"><use xlink:href="#bahnsteig" transform="translate(5,0) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(-5,0)" /></g>
@@ -191,7 +170,6 @@
   <g id="bstg_vers3"><use xlink:href="#bahnsteig" transform="translate(-5,-19) rotate(180)" /><use xlink:href="#bahnsteig" transform="translate(5,19)" /></g>
   <g id="hstl_ausen"><use xlink:href="#haltestel" transform="translate(-5,0) rotate(180)" /><use xlink:href="#haltestel" transform="translate(5,0)" /></g>
   <g id="hstl_vers1"><use xlink:href="#haltestel" transform="translate(-5,-5) rotate(180)" /><use xlink:href="#haltestel" transform="translate(5,5)" /></g>
-  <g id="hstl_vers2"><use xlink:href="#haltestel" transform="translate(-5,5) rotate(180)" /><use xlink:href="#haltestel" transform="translate(5,-5)" /></g>
   <g id="hstl_links"><use xlink:href="#haltestel" transform="translate(-5,0) rotate(180)" /></g>
   <g id="wien_einzl"><use xlink:href="#bahnsteig"  class="dreizig" /><use xlink:href="#haltestel" /></g>
   <g id="wien_ausen"><use xlink:href="#bstg_ausen" class="dreizig" /><use xlink:href="#hstl_ausen" /></g>
@@ -203,7 +181,39 @@
   <g id="dobs_mitte"><use xlink:href="#bstg_mitte" /><use xlink:href="#trennstrich" transform="translate(-4,0)" /></g>
   <g id="dobs_ausen"><use xlink:href="#doppelbst" transform="translate(-5,0) rotate(180)" /><use xlink:href="#doppelbst" transform="translate(5,0)" /></g>
   <g id="dobs_vers2"><use xlink:href="#doppelbst" transform="translate(-5,9) rotate(180)" /><use xlink:href="#doppelbst" transform="translate(5,-9)" /></g>
+ </defs>
+ <defs>
   <path id="tunnelrampe" d="M -6,-3 L -4,0 L 4,0 L 6,-3" />
+  <path id="weg" class="weg" d="M -3.6,-3.6 l 7.2,7.2 m -7.2,0 l 7.2,-7.2" />
+  <path id="bau" d="M -3,2.88 H 5 L 0,-5.77 L -5,2.88 H 3" />
+  <path id="uml" d="M -5,3 h 7 l 3,-3 l -3,-3 h -7 v 6 h 1" />
+ </defs>
+ <defs id="defs_grid">
+  <g id="hstgrid" class="hilfslinie">
+    <path class="grid1" d="M 0,0 h 5 M 0,0 h -5 M 0,0 v 7.5 M 0,0 v -7.5" />
+    <path class="grid2" d="M 0,0 l 10,15" />
+    <path class="grid3" d="M 0,0 l -5,+7.5" />
+    <path class="grid3" d="M 0,0 l +5,-7.5" />
+    <path class="grid3" d="M 0,0 l -5,-7.5" />
+    <path class="grid3" d="M 0,0 l 10,15" />
+    <path class="grid4" d="M -5,-10 h 10" />
+    <path class="grid4" d="M -5,+10 h 10" />
+  </g>
+  <g id="grid">
+   <path class="grid1" d="M -1000   0 H 1000" /><path class="grid1" d="M   0 -1000 V 1000" />
+   <path class="grid3" d="M -1000  10 H 1000" /><path class="grid3" d="M  10 -1000 V 1000" />
+   <path class="grid3" d="M -1000  20 H 1000" /><path class="grid3" d="M  20 -1000 V 1000" />
+   <path class="grid3" d="M -1000  30 H 1000" /><path class="grid3" d="M  30 -1000 V 1000" />
+   <path class="grid3" d="M -1000  40 H 1000" /><path class="grid3" d="M  40 -1000 V 1000" />
+   <path class="grid2" d="M -1000  50 H 1000" /><path class="grid2" d="M  50 -1000 V 1000" />
+   <path class="grid3" d="M -1000  60 H 1000" /><path class="grid3" d="M  60 -1000 V 1000" />
+   <path class="grid3" d="M -1000  70 H 1000" /><path class="grid3" d="M  70 -1000 V 1000" />
+   <path class="grid3" d="M -1000  80 H 1000" /><path class="grid3" d="M  80 -1000 V 1000" />
+   <path class="grid3" d="M -1000  90 H 1000" /><path class="grid3" d="M  90 -1000 V 1000" />
+   <path class="grid1" d="M -1000 100 H 1000" /><path class="grid1" d="M 100 -1000 V 1000" />
+  </g>
+ </defs>
+ <defs id="defs_fahrwege">
   <pattern id="backslash" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10">
    <path d="M 0,0 l 10,10 v -5 l -5,-5"/>
    <path d="M 0,10 h 5 l -5,-5"/>
@@ -295,6 +305,7 @@
    <path class="weg" d="M -6,-6 l 12,12" />
   </g>
  </defs>
+ <rect id="aussen" width="1900"  height="1190" x="-865" y="-425" />
  <g id="textboxen">
   <g id="ueberschrift_box" transform="translate(1035,-425) translate(-450)">
    <rect class="box" width="450" height="85" />
@@ -1259,6 +1270,9 @@
     <circle r="1.5" cx="25" />
    </g>
  </g>
+ <text class="ab_bb" x="-865" y="732"><a id="plain_link" xlink:href="strassenbahnnetz.svg" class="rev">Permalink zu dieser Version</a></text>
+ <text class="ab_bb" x="-865" y="742"><a xlink:href="strassenbahnnetz.svg" class="rev">(<tspan class="hash"/>)</a></text>
+ <text class="ab_bb" x="-865" y="752">© CC-BY-SA 4.0 or later 2011-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <g id="always_links" transform="translate(1035, 755)">
    <g id="make_view_link" class="always_links" transform="translate(-8,-24)" onclick="toggle_makeview(event)" >
     <title>
