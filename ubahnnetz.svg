@@ -2644,7 +2644,7 @@
    </g>
   </g>
   <g id="bb_eckenheim" transform="translate(205,965)">
-   <text x="5" y="9" class="ab_bb te" id="bst691"><a xlink:href="https://de.wikipedia.org/wiki/Eckenheimer_Depot">AB Eckenheim</a></text>
+   <text x="5" y="9" class="ab_bb te" id="bst691"><a xlink:href="https://de.wikipedia.org/wiki/Eckenheimer_Depot">BB Eckenheim</a></text>
    <path class="strasse" d="M 75,5 v -10 m -10,0 v 15 M 65,-7.5 h -110" />
    <g id="betriebsstrecken_eckenheim">
     <path id="marbachweg_1" d="M -95,75 a 20,20 0,0,0 20,20 h 130 a 20,20 0,0,0 20,-20 m -10,0 a 10,10 0,0,1 -10,10 h -15 c -10,0 -10,10 -20,10 m -70,0 c -10,0 -10,-10 -20,-10 h -5 a 10,10 0,0,1 -10,-10" />
@@ -2705,10 +2705,6 @@
     <path class="tor" d="M -19,-19 h -5" />
     <path class="tor" d="M -25,-19 h -5" />
     <path class="tor" d="M -31,-19 h -5" />
-    <use xlink:href="#weg" transform="translate(-2,-61) scale(.5)" />
-    <use xlink:href="#weg" transform="translate(-5,-61) scale(.5)" />
-    <use xlink:href="#weg" transform="translate(-8,-61) scale(.5)" />
-    <use xlink:href="#weg" transform="translate(-11,-61) scale(.5)" />
     <g transform="translate(40,-20)" class="bgleisnummer"><circle cy="-1" r="2" /><text>1</text></g>
     <g transform="translate(37,-23)" class="bgleisnummer"><circle cy="-1" r="2" /><text>2</text></g>
     <g transform="translate(34,-20)" class="bgleisnummer"><circle cy="-1" r="2" /><text>3</text></g>
