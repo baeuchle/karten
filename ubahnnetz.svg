@@ -2697,14 +2697,9 @@
     <path class="gebaude keinewand" id="bbe_hal" d="M 20.5,-19 v -42 h -57 v 42 h 57" />
     <path class="gebaude wand" id="bbe_wsa" d="M -36.5,-19 v -19 h -3 v 19 h 3" />
     <path class="wand" d="M 20.5,-61 h -12 m -9,0 v 42 m -36,0 v -42" />
-    <path class="tor" d="M 20,-19 h -5"/>
-    <path class="tor" d="M 14,-19 h -5" />
-    <path class="tor" d="M -1,-19 h -5" />
-    <path class="tor" d="M -7,-19 h -5" />
-    <path class="tor" d="M -13,-19 h -5" />
-    <path class="tor" d="M -19,-19 h -5" />
     <path class="tor" d="M -25,-19 h -5" />
     <path class="tor" d="M -31,-19 h -5" />
+    <use xlink:href="#weg" transform="translate(-16,-5) scale(.5)" />
     <g transform="translate(40,-20)" class="bgleisnummer"><circle cy="-1" r="2" /><text>1</text></g>
     <g transform="translate(37,-23)" class="bgleisnummer"><circle cy="-1" r="2" /><text>2</text></g>
     <g transform="translate(34,-20)" class="bgleisnummer"><circle cy="-1" r="2" /><text>3</text></g>
