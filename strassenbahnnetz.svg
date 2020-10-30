@@ -101,6 +101,23 @@
 
   #baeume circle { fill:#008000; stroke:none; }
 
+  /* Overlays */
+  .overlay { fill: white; fill-opacity: 70%; }
+
+  /* Streckennummern */
+  .streckennummer { stroke-width: 5px; stroke-dasharray:4,1; }
+  .sn_00, .sn_11, .sn_23, .sn_42, .sn_56, .sn_73, .sn_84, .sn_91, .sn_53
+    { stroke: #f80; fill: #f80; }
+  .sn_12, .sn_28, .sn_60, .sn_52, .sn_82, .sn_93
+    { stroke: #080; fill: #080; }
+  .sn_10, .sn_22, .sn_64, .sn_41, .sn_55, .sn_70, .sn_80, .sn_90
+    { stroke: #00f; fill: #00f; }
+  .sn_20, .sn_62, .sn_71, .sn_83, .sn_94
+    { stroke: #c0f; fill: #c0f; }
+  .streckennummern text { stroke: none; font-weight: bold; }
+  .streckennummern path { fill: none; }
+  .streckennummern { display: none; }
+
   .aufstrasse path { stroke:none; fill:#e0e0e0; }
   .abmarkiert path { stroke:none; fill:url(#slash); }
   .opnvspur   path { stroke:none; fill:url(#backslash); }
@@ -135,6 +152,7 @@
  <script type="application/ecmascript" href="./viewbox.js"></script>
  <script type="application/ecmascript" href="./deep_link.js"></script>
  <script type="application/ecmascript" href="./geplant.js"></script>
+ <script type="application/ecmascript" href="./overlay.js"></script>
  <script type="application/ecmascript" href="./selection.js"></script>
  <script type="application/ecmascript" href="./query.js"></script>
  <defs id="defs_gradients">
@@ -306,128 +324,6 @@
   </g>
  </defs>
  <rect id="aussen" width="1900"  height="1190" x="-865" y="-425" />
- <g id="textboxen">
-  <g id="ueberschrift_box" transform="translate(1035,-425) translate(-450)">
-   <rect class="box" width="450" height="85" />
-   <text class="ueberschrift" x="15" y="35">Straßenbahn Frankfurt am Main</text>
-   <text class="unterschrift" x="15" y="60">Streckennetz (ohne Maßstab)</text>
-   <text class="stand"        x="15" y="80">Stand: <tspan class="stand_monat"/></text>
-   <g class="nowiki" transform="translate(450,80)">
-    <text class="ab_bb te" transform="translate(-18,1)"><a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg">Dieser Plan bei Wikipedia</a></text>
-    <a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(-17,-12)"/></a>
-   </g>
-  </g>
-  <g id="legende" transform="translate(1035,755) translate(-830,0) rotate(-90)">
-   <rect class="box" style="fill-color:#ffffff; fill-opacity:1;" width="150" height="830" />
-   <text transform="rotate(+90) translate(20,-120)" class="ueberschrift">Legende</text>
-   <path d="M 20,20 v 105" class="strecke faeng"/>
-   <path d="M 30,20 v 105" class="strecke faeng" />
-   <path d="M 30,80 c 0,5 -10,5 -10,10" class="strecke bb" />
-   <path d="M 20,110 a 15,15 0,0,0 30,0 a 10,10 0,0,0 -10,-10 a 10,10 0,0,1 -10,-10" class="strecke bb" />
-   <path d="M 30,125 v 60" class="strecke geplant" />
-   <path d="M 20,125 v 60" class="strecke geplant" />
-   <path d="M 30,185 v 550 a 10,10 0,0,0 10,10 a 10,10 0,0,1 10,10 v 5 a 15,15 0,0,1 -30,0 v -575" class="strecke" />
-   <path d="M 20,200 a 20,20 0,0,0 20,20 h 15" class="strecke ubergabe" />
-   <path d="M 30,200 a 15,15 0,0,0 15,15 h 10" class="strecke ubergabe" />
-   <path d="M 55,215 h 10 a 10,10 0,0,1 10,10 v 10 m 0,-10 v -20" class="strecke ubahng" />
-   <path d="M 55,220 h 10 a 5,5 0,0,1 5,5 v 10 m 0,-10 v -20" class="strecke ubahng" />
-   <text transform="translate(35,25) rotate(45)">Gleisende</text>
-   <text transform="translate(35,45) rotate(45)">Zweigleisige Strecke</text>
-   <text transform="translate(35,60) rotate(45)">(Hauptgleise)</text>
-   <text transform="translate(35,85) rotate(45)">Gleiswechsel</text>
-   <text transform="translate(35,110) rotate(45) translate(20,0)">Schleife</text>
-   <text transform="translate(35,135) rotate(45)">Abschnitt in Bau</text>
-   <text transform="translate(35,155) rotate(45)" class="nowiki">/ geplant <tspan class="ab_bb">(siehe Legende oben)</tspan></text>
-   <text transform="translate(60,222)" class="tm ref">X</text>
-   <text transform="translate(35,230) rotate(45)">Anschluss an <a xlink:href="ubahnnetz.svg">U-Bahn-Netz</a></text>
-   <text transform="translate(35,250) rotate(45)"><a xlink:href="ubahnnetz.svg">Frankfurt</a> mit Referenz</text>
-   <text transform="translate(35,265) rotate(45)" class="ab_bb">(und kurzem Ausschnitt der U-Bahn-Gleise)</text>
-   <use xlink:href="#weg" transform="translate(30,285)"/>
-   <text transform="translate(35,290) rotate(45)">Gleis gesperrt</text>
-   <g id="bahnsteig_legende" transform="translate(0,330)">
-     <text transform="translate(100,55) rotate(45)" class="headline tm">Haltestellen</text>
-     <text transform="translate(55,30) rotate(45)" class="ab_bb">Als Bahnsteig zählt jede Fläche,</text>
-     <text transform="translate(55,45) rotate(45)" class="ab_bb">die nicht dem Autoverkehr zur</text>
-     <text transform="translate(55,60) rotate(45)" class="ab_bb">Verfügung steht.</text>
-     <text transform="translate(10,-10) rotate(90)" class="ab_bb">Doppel- oder lange Haltestelle</text>
-     <text transform="translate(35,-10) rotate(90)" class="ab_bb">Einfachhaltestelle</text>
-     <use xlink:href="#haltestel" transform="translate(30,75)" />
-     <text transform="translate(40,80) rotate(45)">Einstieg von Straße, 0 cm</text>
-     <use xlink:href="#wien_einzl" class="dreizig" transform="translate(30,110)" />
-     <text transform="translate(40,105) rotate(45)">Barrierefreier Einstieg</text>
-     <text transform="translate(40,120) rotate(45)">von Straße</text>
-     <text transform="translate(40,130) rotate(45)" class="ab_bb">(Wiener Modell)</text>
-     <use xlink:href="#doppelbst" class="nullzig" transform="translate(20,155) rotate(180)" />
-     <use xlink:href="#bahnsteig" class="nullzig" transform="translate(30,155)" />
-     <text transform="translate(40,160) rotate(45)">Bahnsteig, 0 cm (ü. <a xlink:href="https://de.wikipedia.org/wiki/Schienenoberkante">SOK</a>)</text>
-     <use xlink:href="#doppelbst" class="zehnzig" transform="translate(20,190) rotate(180)" />
-     <use xlink:href="#bahnsteig" class="zehnzig" transform="translate(30,190)" />
-     <text transform="translate(40,195) rotate(45)">Bahnsteig &gt; 0 cm</text>
-     <text transform="translate(40,205) rotate(45)" class="ab_bb">nicht barrierefrei</text>
-     <use xlink:href="#doppelbst" class="dreizig" transform="translate(20,225) rotate(180)" />
-     <use xlink:href="#bahnsteig" class="dreizig" transform="translate(30,225)" />
-     <text transform="translate(40,230) rotate(45)">Bahnsteig, 18-24 cm</text>
-     <text transform="translate(40,240) rotate(45)" class="ab_bb">barrierefreier Einstieg</text>
-     <use xlink:href="#bstg_ausen" class="dreizig" transform="translate(25,265)" />
-     <use xlink:href="#uml" transform="translate(15,265) rotate(90)" />
-     <use xlink:href="#bau" transform="translate(35,265) rotate(90)" />
-     <text transform="translate(40,270) rotate(45)">Umbauten</text>
-     <text transform="translate(40,280) rotate(45)" class="ab_bb">Ersatzhaltestelle / Halt entfällt</text>
-     <use xlink:href="#bstg_ubahn" transform="translate(30,300) rotate(180)" />
-     <text transform="translate(40,310) rotate(45)">U-Bahn-Bahnsteig</text>
-     <g class="legende_normal" transform="translate(25,350)">
-       <circle class="bstggruppe" r="20" />
-       <use xlink:href="#haltestel" transform="translate(5,-5)" />
-       <use xlink:href="#haltestel" transform="translate(-15,5)" />
-       <text transform="translate(30, 0) rotate(45)">Zusammenhängende</text>
-       <text transform="translate(30, 15) rotate(45)">Haltepositionen</text>
-       <text transform="translate(30, 25) rotate(45)" class="ab_bb">(gleiche Haltestelle)</text>
-     </g>
-     <g class="legende_normal" transform="translate(25,400)">
-       <circle class="hstgruppe" r="20" />
-       <use xlink:href="#haltestel" transform="translate(5,-5)" />
-       <use xlink:href="#haltestel" transform="translate(-15,5)" />
-       <text transform="translate(30, 0) rotate(45)">Haltestellengruppe</text>
-       <text transform="translate(30, 10) rotate(45)" class="ab_bb">(verschiedene Haltestellen)</text>
-     </g>
-   </g>
-  </g>
-  <g id="ausbauprojekte" transform="translate(835,-340)">
-   <rect class="box" width="200" height="155" />
-   <text class="unterschrift" x="5" y="20">Ausbauprojekte</text>
-   <text class="hochstatio" x="5" y="40" onclick="geplant('ausbau_ring')">Ringstraßenbahn <tspan class="link" id="ausbau_ring_aktion">anzeigen</tspan></text>
-   <text class="ab_bb" x="10" y="55">Markus-Krankenhaus - Friedberger Warte</text>
-   <text class="ab_bb" x="10" y="65">mit Anschluss an Stadtbahnstrecken</text>
-   <text class="ab_bb" x="15" y="75">- A (Dornbusch) und</text>
-   <text class="ab_bb" x="15" y="85">- B (Eckenheimer Landstraße / Gießener Straße)</text>
-   <text class="ab_bb" x="10" y="95">Status: Abwägung der <a xlink:href="https://www.stvv.frankfurt.de/parlisobj/B_381_2015_AN_Machbarkeitsstudie.pdf">Machbarkeitsstudie</a></text>
-   <text class="hochstatio" x="5" y="115" onclick="geplant('ausbau_kleyer')">Rebstöcker Straße <tspan class="link" id="ausbau_kleyer_aktion">anzeigen</tspan></text>
-   <text class="ab_bb" x="10" y="130">Zweigleisiger Ausbau</text>
-   <text class="ab_bb" x="10" y="140">Status: Planfeststellung fertig;</text>
-   <text class="ab_bb" x="10" y="150">Baubeginn nicht absehbar</text>
-  </g>
-  <text transform="translate(753.5,-63.5)" class="ab_bb tm">Anschluss Richtung BB Ost</text>
-  <text transform="translate(753.5,-53.5)" class="ab_bb tm">(via Johanna-Tesch-Platz)</text>
-  <text transform="translate(685,128)" class="ab_bb te">Zentrale</text>
-  <text transform="translate(685,135)" class="ab_bb te">Werkstätten</text>
-  <text transform="translate(685,142)" class="ab_bb te">Infrastruktur</text>
-  <text transform="translate(-370,255)" class="ab_bb te">BB Gutleut gesperrt</text>
-  <text transform="translate(-370,265)" class="ab_bb te">Oktober 2020 - März 2021</text>
-  <text transform="translate(-370,275)" class="ab_bb te">Zufahrt Werkstattgleise 8-10 frei</text>
-  <text transform="translate(-370,285)" class="ab_bb te">über Gleis 27</text>
-  <text transform="translate(-801,564) rotate(-45) translate(20,0)" class="ab_bb">Verkehrsmuseum</text>
-  <g id="landuses" transform="translate(1035,755) translate(-350,-185)" style="visibility:hidden">
-   <rect class="box" width="350" height="185" />
-   <text class="ueberschrift tm" x="175" y="30">Fahrbahn</text>
-   <g transform="translate(10,50)"  class="legende_normal aufstrasse"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Gleis auf Fahrbahn des übrigen Verkehrs</text></g>
-   <g transform="translate(10,70)"  class="legende_normal abmarkiert"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Gleis auf eigenem Fahrstreifen</text></g>
-   <g transform="translate(10,90)"  class="legende_normal opnvspur"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Gleis baulich abgetrennt, mit Bus</text></g>
-   <g transform="translate(10,110)" class="legende_normal asphalt"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; geteert/gepflastert</text></g>
-   <g transform="translate(10,130)" class="legende_normal schotter"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; Schotter</text></g>
-   <g transform="translate(10,150)" class="legende_normal gras"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; Rasengleis</text></g>
-   <g transform="translate(10,170)" class="legende_normal kies"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; Kies</text></g>
-  </g>
- </g>
  <g id="haltestellen" class="haltestellen">
   <g id="hstNISG" transform="translate(-15,720)">
    <path class="bstggruppe" d="M -15,30 c 20,0 30,-15 30,-20 c 0,-50 -10,-70 -20,-70 c -35,0 -35,0 -35,15 v 50 a 25,25 0,0,0 25,25" />
@@ -1286,6 +1182,205 @@
     <circle r="1.5" cx="25" />
    </g>
  </g>
+ <g class="streckennummern">
+  <rect class="overlay" id="overlay_sn" width="1900"  height="1190" x="-865" y="-425" />
+  <path class="streckennummer sn_00" id="sn_00" d="M -20,135 v 25 a 15,15 0,0,0 15,15 h 370" />
+  <path class="streckennummer sn_10" id="sn_10" d="M -20,75 h -15 q -6,0 -10.5,4.5 l -6,6 q -4.5,4.5 -10.5,4.5 h -133 q -6,0 -10.5,-4.5 l -6,-6 q -4.5,-4.5 -10.5,-4.5 h -615 a 15,15 0,0,0 0,30 h 30 a 15,15 0,0,0 15,-15 a 15,15 0,0,1 15,-15" />
+  <path class="streckennummer sn_11" id="sn_11" d="M -195,90 q -6,0 -10.5,4.5 l -66,66 q -4.5,4.5 -10.5,4.5 a 15,15 0,0,1 -15,-15 v -75" />
+  <path class="streckennummer sn_12" id="sn_12" d="M -20,135 a 15,15 0,0,0 -15,-15 h -30 a 15,15 0,0,1 -15,-15 v -15" />
+  <path class="streckennummer sn_20" id="sn_20" d="M -20,135 v -105 q 0,-6 -4.5,-10.5 l -174,-174 l -5.5,-5.5 q -6,-6 -20,-6 h -19.5" />
+  <path class="streckennummer sn_22" id="sn_22" d="M -108.5,-64.5 q -4.5,-4.5 -10.5,-4.5 h -276" />
+  <path class="streckennummer sn_23" id="sn_23" d="M -183,-139 h -26 a 10,10 0,0,0 -10,10 v 15 a 10,10 0,0,0 10,10 h 51 a 10,10 0,0,0 10,-10 v -56" />
+  <path class="streckennummer sn_28" id="sn_28" d="M -148,-170 v -190 a 15,15 0,0,0 -15,-15 h -80" />
+  <path class="streckennummer sn_41" id="sn_41" d="M 260,60 v -125 q 0,-6 4.5,-10.5 l 245,-245" />
+  <path class="streckennummer sn_42" id="sn_42" d="M 197.5,-50 h 17.5 h 250" />
+  <path class="streckennummer sn_52" id="sn_52" d="M 465,-50 h 205 q 6,0 10.5,4.5 l 53,53" />
+  <path class="streckennummer sn_53" id="sn_53" d="M 260,100 v -40" />
+  <path class="streckennummer sn_55" id="sn_55" d="M 465,114 q 0,-6 4.5,-10.5 l 116,-116 q 4.5,-4.5 4.5,-10.5 v -97 a 10,10 0,1,0 -20,0 a 5,5 0,0,0 5,5 a 15,15 0,0,1 15,15" />
+  <path class="streckennummer sn_56" id="sn_56" d="M 465,175 v -61" />
+  <path class="streckennummer sn_60" id="sn_60" d="M 365,175 h 620" />
+  <path class="streckennummer sn_62" id="sn_62" d="M 770,175 v -125 q 0,-6 -4.5,-10.5 l -32,-32 q -4.5,-4.5 -4.5,-10.5 q 0,-6 4.5,-10.5 l 20,-20 l 5.5,-5.5 q 6,-6 20,-6 l 14.5,0" />
+  <path class="streckennummer sn_64" id="sn_64" d="M 985,175 h 20 a 15,15 0,0,1 15,15 v 155" />
+  <path class="streckennummer sn_70" id="sn_70" d="M 365,175 v 215" />
+  <path class="streckennummer sn_71" id="sn_71" d="M 260,175 v -75 M 365,390 h 35 q 10,0 17.5,7.5 l 45,45" />
+  <path class="streckennummer sn_73" id="sn_73" d="M 462.5,442.5 l 70,70 q 7.5,7.5 17.5,7.5 h 275" />
+  <path class="streckennummer sn_80" id="sn_80" d="M 190,345 v 120 a 15,15 0,0,1 -15,15 h -195" />
+  <path class="streckennummer sn_82" id="sn_82" d="M 365,390 h -85 a 15,15 0,0,0 -15,15 a 15,15 0,0,1 -15,15 h -60" />
+  <path class="streckennummer sn_83" id="sn_83" d="M 190,345 h -210" />
+  <path class="streckennummer sn_84" id="sn_84" d="M -20,370 v 340 a 15,15 0,0,1 -15,15 a 5,5 0,0,0 -5,5 a 10,10 0,0,0 20,0 v -20" />
+  <path class="streckennummer sn_90" id="sn_90" d="M -20,160 v 210 a 15,15 0,0,1 -15,15 h -97 q -6,0 -10.5,4.5 l -170,170 q -4.5,4.5 -10.5,4.5 h -206
+                                                   M -247.5,494.5 q -4.5,4.5 -4.5,10.5 v 140 q 0,6 -4.5,10.5 l -26,26 q -4.5,4.5 -4.5,10.5 v 15 a 15,15 0,0,0 15,15 h 5 a 15,15 0,0,0 15,-15 v -62" />
+  <path class="streckennummer sn_91" id="sn_91" d="M -20,215 h -175" />
+  <path class="streckennummer sn_93" id="sn_93" d="M -198.5,445.5 q -4.5,4.5 -10.5,4.5 h -160 a 15,15 0,0,1 -15,-15 a 10,10 0,0,0 -20,0 a 15,15 0,0,0 15,15 h 20"/>
+  <path class="streckennummer sn_94" id="sn_94" d="M -529,564 h -302 a 10,10 0,0,0 -10,10 v 5 a 10,10 0,0,0 10,10 h 10 q 6,0 10.5,-4.5 l 16,-16 q 4.5,-4.5 10.5,-4.5"/>
+  <text class="sn_00" x="20" y="165">00</text>
+  <text class="sn_00" x="305" y="190">00</text>
+  <text class="sn_10" x="-60" y="65">10</text>
+  <text class="sn_10" x="-605" y="65">10</text>
+  <text class="sn_11" x="-240" y="100">11</text>
+  <text class="sn_12" x="-80" y="135">12</text>
+  <text class="sn_20" x="-40" y="-5">20</text>
+  <text class="sn_22" x="-200" y="-50">22</text>
+  <text class="sn_23" x="-200" y="-110">23</text>
+  <text class="sn_28" x="-138" y="-210">28</text>
+  <text class="sn_41" x="270" y="15">41</text>
+  <text class="sn_41" x="500" y="-290">41</text>
+  <text class="sn_42" x="280" y="-30">42</text>
+  <text class="sn_52" x="520" y="-30">52</text>
+  <text class="sn_53" x="270" y="70">53</text>
+  <text class="sn_55" x="480" y="65">55</text>
+  <text class="sn_56" x="480" y="130">56</text>
+  <text class="sn_60" x="405" y="190">60</text>
+  <text class="sn_60" x="720" y="190">60</text>
+  <text class="sn_60" x="935" y="190">60</text>
+  <text class="sn_62" x="780" y="120">62</text>
+  <text class="sn_64" x="990" y="190">64</text>
+  <text class="sn_70" x="375" y="290">70</text>
+  <text class="sn_71" x="270" y="140">71 <tspan dy="-5" class="ab_bb">(Nord)</tspan></text>
+  <text class="sn_71" x="420" y="390">71 <tspan dy="-5" class="ab_bb">(Süd)</tspan></text>
+  <text class="sn_73" x="520" y="530">73</text>
+  <text class="sn_80" x="20" y="470">80</text>
+  <text class="sn_82" x="250" y="390">82</text>
+  <text class="sn_83" x="85" y="365">83</text>
+  <text class="sn_84" x="-10" y="450">84</text>
+  <text class="sn_84" x="-10" y="650">84</text>
+  <text class="sn_90" x="-45" y="300">90</text>
+  <text class="sn_90" x="-85" y="370">90</text>
+  <text class="sn_90" x="-330" y="550">90<tspan dy="-5" class="ab_bb">4</tspan></text>
+  <text class="sn_90" x="-240" y="590">90<tspan dy="-5" class="ab_bb">1</tspan></text>
+  <text class="sn_91" x="-200" y="200">91</text>
+  <text class="sn_93" x="-370" y="440">93</text>
+  <text class="sn_94" x="-600" y="550">94</text>
+ </g>
+ <g id="textboxen">
+  <g id="ueberschrift_box" transform="translate(1035,-425) translate(-450)">
+   <rect class="box" width="450" height="85" />
+   <text class="ueberschrift" x="15" y="35">Straßenbahn Frankfurt am Main</text>
+   <text class="unterschrift" x="15" y="60">Streckennetz (ohne Maßstab)</text>
+   <text class="stand"        x="15" y="80">Stand: <tspan class="stand_monat"/></text>
+   <g class="nowiki" transform="translate(450,80)">
+    <text class="ab_bb te" transform="translate(-18,1)"><a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg">Dieser Plan bei Wikipedia</a></text>
+    <a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(-17,-12)"/></a>
+   </g>
+  </g>
+  <g id="legende" transform="translate(1035,755) translate(-830,0) rotate(-90)">
+   <rect class="box" style="fill-color:#ffffff; fill-opacity:1;" width="150" height="830" />
+   <text transform="rotate(+90) translate(20,-120)" class="ueberschrift">Legende</text>
+   <path d="M 20,20 v 105" class="strecke faeng"/>
+   <path d="M 30,20 v 105" class="strecke faeng" />
+   <path d="M 30,80 c 0,5 -10,5 -10,10" class="strecke bb" />
+   <path d="M 20,110 a 15,15 0,0,0 30,0 a 10,10 0,0,0 -10,-10 a 10,10 0,0,1 -10,-10" class="strecke bb" />
+   <path d="M 30,125 v 60" class="strecke geplant" />
+   <path d="M 20,125 v 60" class="strecke geplant" />
+   <path d="M 30,185 v 550 a 10,10 0,0,0 10,10 a 10,10 0,0,1 10,10 v 5 a 15,15 0,0,1 -30,0 v -575" class="strecke" />
+   <path d="M 20,200 a 20,20 0,0,0 20,20 h 15" class="strecke ubergabe" />
+   <path d="M 30,200 a 15,15 0,0,0 15,15 h 10" class="strecke ubergabe" />
+   <path d="M 55,215 h 10 a 10,10 0,0,1 10,10 v 10 m 0,-10 v -20" class="strecke ubahng" />
+   <path d="M 55,220 h 10 a 5,5 0,0,1 5,5 v 10 m 0,-10 v -20" class="strecke ubahng" />
+   <text transform="translate(35,25) rotate(45)">Gleisende</text>
+   <text transform="translate(35,45) rotate(45)">Zweigleisige Strecke</text>
+   <text transform="translate(35,60) rotate(45)">(Hauptgleise)</text>
+   <text transform="translate(35,85) rotate(45)">Gleiswechsel</text>
+   <text transform="translate(35,110) rotate(45) translate(20,0)">Schleife</text>
+   <text transform="translate(35,135) rotate(45)">Abschnitt in Bau</text>
+   <text transform="translate(35,155) rotate(45)" class="nowiki">/ geplant <tspan class="ab_bb">(siehe Legende oben)</tspan></text>
+   <text transform="translate(60,222)" class="tm ref">X</text>
+   <text transform="translate(35,230) rotate(45)">Anschluss an <a xlink:href="ubahnnetz.svg">U-Bahn-Netz</a></text>
+   <text transform="translate(35,250) rotate(45)"><a xlink:href="ubahnnetz.svg">Frankfurt</a> mit Referenz</text>
+   <text transform="translate(35,265) rotate(45)" class="ab_bb">(und kurzem Ausschnitt der U-Bahn-Gleise)</text>
+   <use xlink:href="#weg" transform="translate(30,285)"/>
+   <text transform="translate(35,290) rotate(45)">Gleis gesperrt</text>
+   <g id="bahnsteig_legende" transform="translate(0,330)">
+     <text transform="translate(100,55) rotate(45)" class="headline tm">Haltestellen</text>
+     <text transform="translate(55,30) rotate(45)" class="ab_bb">Als Bahnsteig zählt jede Fläche,</text>
+     <text transform="translate(55,45) rotate(45)" class="ab_bb">die nicht dem Autoverkehr zur</text>
+     <text transform="translate(55,60) rotate(45)" class="ab_bb">Verfügung steht.</text>
+     <text transform="translate(10,-10) rotate(90)" class="ab_bb">Doppel- oder lange Haltestelle</text>
+     <text transform="translate(35,-10) rotate(90)" class="ab_bb">Einfachhaltestelle</text>
+     <use xlink:href="#haltestel" transform="translate(30,75)" />
+     <text transform="translate(40,80) rotate(45)">Einstieg von Straße, 0 cm</text>
+     <use xlink:href="#wien_einzl" class="dreizig" transform="translate(30,110)" />
+     <text transform="translate(40,105) rotate(45)">Barrierefreier Einstieg</text>
+     <text transform="translate(40,120) rotate(45)">von Straße</text>
+     <text transform="translate(40,130) rotate(45)" class="ab_bb">(Wiener Modell)</text>
+     <use xlink:href="#doppelbst" class="nullzig" transform="translate(20,155) rotate(180)" />
+     <use xlink:href="#bahnsteig" class="nullzig" transform="translate(30,155)" />
+     <text transform="translate(40,160) rotate(45)">Bahnsteig, 0 cm (ü. <a xlink:href="https://de.wikipedia.org/wiki/Schienenoberkante">SOK</a>)</text>
+     <use xlink:href="#doppelbst" class="zehnzig" transform="translate(20,190) rotate(180)" />
+     <use xlink:href="#bahnsteig" class="zehnzig" transform="translate(30,190)" />
+     <text transform="translate(40,195) rotate(45)">Bahnsteig &gt; 0 cm</text>
+     <text transform="translate(40,205) rotate(45)" class="ab_bb">nicht barrierefrei</text>
+     <use xlink:href="#doppelbst" class="dreizig" transform="translate(20,225) rotate(180)" />
+     <use xlink:href="#bahnsteig" class="dreizig" transform="translate(30,225)" />
+     <text transform="translate(40,230) rotate(45)">Bahnsteig, 18-24 cm</text>
+     <text transform="translate(40,240) rotate(45)" class="ab_bb">barrierefreier Einstieg</text>
+     <use xlink:href="#bstg_ausen" class="dreizig" transform="translate(25,265)" />
+     <use xlink:href="#uml" transform="translate(15,265) rotate(90)" />
+     <use xlink:href="#bau" transform="translate(35,265) rotate(90)" />
+     <text transform="translate(40,270) rotate(45)">Umbauten</text>
+     <text transform="translate(40,280) rotate(45)" class="ab_bb">Ersatzhaltestelle / Halt entfällt</text>
+     <use xlink:href="#bstg_ubahn" transform="translate(30,300) rotate(180)" />
+     <text transform="translate(40,310) rotate(45)">U-Bahn-Bahnsteig</text>
+     <g class="legende_normal" transform="translate(25,350)">
+       <circle class="bstggruppe" r="20" />
+       <use xlink:href="#haltestel" transform="translate(5,-5)" />
+       <use xlink:href="#haltestel" transform="translate(-15,5)" />
+       <text transform="translate(30, 0) rotate(45)">Zusammenhängende</text>
+       <text transform="translate(30, 15) rotate(45)">Haltepositionen</text>
+       <text transform="translate(30, 25) rotate(45)" class="ab_bb">(gleiche Haltestelle)</text>
+     </g>
+     <g class="legende_normal" transform="translate(25,400)">
+       <circle class="hstgruppe" r="20" />
+       <use xlink:href="#haltestel" transform="translate(5,-5)" />
+       <use xlink:href="#haltestel" transform="translate(-15,5)" />
+       <text transform="translate(30, 0) rotate(45)">Haltestellengruppe</text>
+       <text transform="translate(30, 10) rotate(45)" class="ab_bb">(verschiedene Haltestellen)</text>
+     </g>
+   </g>
+  </g>
+  <g id="ausbauprojekte" transform="translate(835,-340)">
+   <rect class="box" width="200" height="155" />
+   <text class="unterschrift" x="5" y="20">Ausbauprojekte</text>
+   <text class="hochstatio" x="5" y="40" onclick="geplant('ausbau_ring')">Ringstraßenbahn <tspan class="link" id="ausbau_ring_aktion">anzeigen</tspan></text>
+   <text class="ab_bb" x="10" y="55">Markus-Krankenhaus - Friedberger Warte</text>
+   <text class="ab_bb" x="10" y="65">mit Anschluss an Stadtbahnstrecken</text>
+   <text class="ab_bb" x="15" y="75">- A (Dornbusch) und</text>
+   <text class="ab_bb" x="15" y="85">- B (Eckenheimer Landstraße / Gießener Straße)</text>
+   <text class="ab_bb" x="10" y="95">Status: Abwägung der <a xlink:href="https://www.stvv.frankfurt.de/parlisobj/B_381_2015_AN_Machbarkeitsstudie.pdf">Machbarkeitsstudie</a></text>
+   <text class="hochstatio" x="5" y="115" onclick="geplant('ausbau_kleyer')">Rebstöcker Straße <tspan class="link" id="ausbau_kleyer_aktion">anzeigen</tspan></text>
+   <text class="ab_bb" x="10" y="130">Zweigleisiger Ausbau</text>
+   <text class="ab_bb" x="10" y="140">Status: Planfeststellung fertig;</text>
+   <text class="ab_bb" x="10" y="150">Baubeginn nicht absehbar</text>
+  </g>
+  <text transform="translate(753.5,-63.5)" class="ab_bb tm">Anschluss Richtung BB Ost</text>
+  <text transform="translate(753.5,-53.5)" class="ab_bb tm">(via Johanna-Tesch-Platz)</text>
+  <text transform="translate(685,128)" class="ab_bb te">Zentrale</text>
+  <text transform="translate(685,135)" class="ab_bb te">Werkstätten</text>
+  <text transform="translate(685,142)" class="ab_bb te">Infrastruktur</text>
+  <text transform="translate(-370,255)" class="ab_bb te">BB Gutleut gesperrt</text>
+  <text transform="translate(-370,265)" class="ab_bb te">Oktober 2020 - März 2021</text>
+  <text transform="translate(-370,275)" class="ab_bb te">Zufahrt Werkstattgleise 8-10 frei</text>
+  <text transform="translate(-370,285)" class="ab_bb te">über Gleis 27</text>
+  <text transform="translate(-801,564) rotate(-45) translate(20,0)" class="ab_bb">Verkehrsmuseum</text>
+  <g id="landuses" transform="translate(1035,755) translate(-350,-185)" style="visibility:hidden">
+   <rect class="box" width="350" height="185" />
+   <text class="ueberschrift tm" x="175" y="30">Fahrbahn</text>
+   <g transform="translate(10,50)"  class="legende_normal aufstrasse"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Gleis auf Fahrbahn des übrigen Verkehrs</text></g>
+   <g transform="translate(10,70)"  class="legende_normal abmarkiert"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Gleis auf eigenem Fahrstreifen</text></g>
+   <g transform="translate(10,90)"  class="legende_normal opnvspur"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Gleis baulich abgetrennt, mit Bus</text></g>
+   <g transform="translate(10,110)" class="legende_normal asphalt"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; geteert/gepflastert</text></g>
+   <g transform="translate(10,130)" class="legende_normal schotter"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; Schotter</text></g>
+   <g transform="translate(10,150)" class="legende_normal gras"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; Rasengleis</text></g>
+   <g transform="translate(10,170)" class="legende_normal kies"><path d="M 0 0 h 50 v -10 h -50 z" /><text x="55">Eigener Gleiskörper; Kies</text></g>
+  </g>
+  <g id="overlay_box" transform="translate(-865,-425)">
+   <rect class="box" width="280" height="70" />
+   <text class="unterschrift" x="20" y="25">Zusatzinformationen</text>
+   <text class="hochstatio" x="20" y="45" onclick="overlay('streckennummern')">VGF-Streckennummern <tspan class="link" id="streckennummern_aktion">anzeigen</tspan></text>
+   <text class="ab_bb" x="40" y="55">Zeigt die offiziellen Streckenbezeichnungen der VGF-Infrastruktur</text>
+  </g>
+ </g>
+ <g id="links">
  <text class="ab_bb" x="-865" y="732"><a id="plain_link" xlink:href="strassenbahnnetz.svg" class="rev">Permalink zu dieser Version</a></text>
  <text class="ab_bb" x="-865" y="742"><a xlink:href="strassenbahnnetz.svg" class="rev">(<tspan class="hash"/>)</a></text>
  <text class="ab_bb" x="-865" y="752">© CC-BY-SA 4.0 or later 2011-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
@@ -1320,4 +1415,5 @@ Alt: 2.5×
 (Kumulativ: Strg + Shift = 3×)
   </title>
  </rect>
+ </g>
 </svg>

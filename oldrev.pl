@@ -28,6 +28,7 @@ my @file_whitelist = qw ! fahrrad.svg ubahnnetz.svg strassenbahnnetz.svg false-p
     kilometer.js
     hstdetails.js
     selection.js
+    overlay.js
     query.js
     !;
 my $file_is_allowed = 0;

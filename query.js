@@ -53,6 +53,14 @@ function readquery() {
       geplant_onoff(value, false);
       continue;
     }
+    if (key.startsWith("overlay=")) {
+      var value = key.substring(key.indexOf("=") + 1);
+      if (value == "") {
+        continue;
+      }
+      overlay(value)
+      continue;
+    }
     if (key.startsWith("viewbox=")) {
       var value = key.substring(key.indexOf("=") + 1);
       if (value == "") {
