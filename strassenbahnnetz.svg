@@ -118,6 +118,16 @@
   .streckennummern path { fill: none; }
   .streckennummern { display: none; }
 
+  /* Kilometrierungen */
+  /* .kilometrierung { stroke-width:3px; stroke-dasharray:20,4,4,4; fill:none; stroke:#000; } */
+  .kilometrierung { stroke-width:3px; fill:none; stroke:#c80; }
+  .klein { stroke-width:1.5px; stroke-dasharray:10,2,2,2; }
+  .kilometer text { font-size:.7em; }
+  .kmpkt path { fill:url(#grau); stroke:none; fill-opacity:.5; }
+  /* Kilometrierungen-Gruppen */
+  .as_strecke { display:none; }
+  .s10_strecke { display:inline; }
+
   .aufstrasse path { stroke:none; fill:#e0e0e0; }
   .abmarkiert path { stroke:none; fill:url(#slash); }
   .opnvspur   path { stroke:none; fill:url(#backslash); }
@@ -152,6 +162,7 @@
  <script type="application/ecmascript" href="./viewbox.js"></script>
  <script type="application/ecmascript" href="./deep_link.js"></script>
  <script type="application/ecmascript" href="./geplant.js"></script>
+ <script type="application/ecmascript" href="./kilometer.js"></script>
  <script type="application/ecmascript" href="./overlay.js"></script>
  <script type="application/ecmascript" href="./selection.js"></script>
  <script type="application/ecmascript" href="./query.js"></script>
@@ -1181,6 +1192,26 @@
     <circle r="1.5" cx="20" />
     <circle r="1.5" cx="25" />
    </g>
+ </g>
+ <g id="kilometrierungen_gruppen" class="kilometer">
+  <g class="s00_strecke">
+   <path class="kilometrierung" d="M -20,150 v 10 a 15,15 0,0,0 15,15 h 1010 a 15,15 0,0,1 15,15 v 155" />
+  </g>
+  <g class="s10_strecke">
+   <path class="kilometrierung klein" d="M -20,150 v -75" />
+   <path class="kilometrierung" d="M -20,75 h -15 q -6,0 -10.5,4.5 l -6,6 q -4.5,4.5 -10.5,4.5 h -133 q -6,0 -10.5,-4.5 l -6,-6 q -4.5,-4.5 -10.5,-4.5 h -615 a 15,15 0,0,0 0,30 h 30 a 15,15 0,0,0 15,-15 a 15,15 0,0,1 15,-15" />
+  </g>
+  <g class="s70_strecke">
+   <path class="kilometrierung" d="M -20,150 v 180 a 15,15 0,0,0 15,15 h 180 a 15,15 0,0,1 15,15 v 45 a 15,15 0,0,0 15,15 h 45 a 15,15 0,0,0 15,-15 a 15,15 0,0,1 15,-15 h 120 q 10,0 17.5,7.5 l 115,115 q 7.5,7.5 17.5,7.5 h 275" />
+  </g>
+  <g class="s80_strecke">
+   <path class="kilometrierung" d="M -20,150 v 560 a 15,15 0,0,1 -15,15 a 5,5 0,0,0 -5,5 a 10,10 0,0,0 20,0 v -20" />
+  </g>
+  <g class="s90_strecke">
+   <path class="kilometrierung" d="M -20,150 v 220 a 15,15 0,0,1 -15,15 h -97 q -6,0 -10.5,4.5 l -170,170 q -4.5,4.5 -10.5,4.5 h -508 a 10,10 0,0,0 -10,10 v 5 a 10,10 0,0,0 10,10 h 10 q 6,0 10.5,-4.5 l 16,-16 q 4.5,-4.5 10.5,-4.5
+                                   M -247.5,494.5 q -4.5,4.5 -4.5,10.5 v 140 q 0,6 -4.5,10.5 l -26,26 q -4.5,4.5 -4.5,10.5 v 15 a 15,15 0,0,0 15,15 h 5 a 15,15 0,0,0 15,-15 v -62" />
+   <path class="kilometrierung" d="M -529,564 "/>
+  </g>
  </g>
  <g class="streckennummern">
   <rect class="overlay" id="overlay_sn" width="1900"  height="1190" x="-865" y="-425" />
