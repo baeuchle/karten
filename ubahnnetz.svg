@@ -2529,7 +2529,7 @@
    <path id="wa_heerstrasse_2" d="M +5,0 c 0,-10 -10,-10 -10,-20" />
   </g>
   <path id="gw_heerstrasse" d="M -475,740 c 0,10 10,10 10,20 c 0,10 -10,10 -10,20" />
-  <path id="gw_ggheerstrasse" class="geplant rtw" d="M -425,575 c 10,0 10,10 20,10" />
+  <path id="gw_ggheerstrasse" class="geplant rtw" d="M -425,575 c 10,0 10,10 20,10 m -20,0 c 10,0 10,-10 20,-10" />
   <path id="wa_ggheersttasse" class="geplant rtw" d="M -375,575 c 10,0 10,10 20,10 m -20,0 c 10,0 10,-10 20,-10" />
   <path id="wa_eschborn_3" class="geplant rtw endet" d="M -520,575 c -10,0 -10,10 -20,10 q -4,0 -7,3 l -9,9 q -3,3 -7,3 h -35" />
   <path id="wa_eschborn_2" class="geplant rtw endet" d="M -551,592 q -3,3 -7,3 h -40" />
@@ -2589,6 +2589,7 @@
    </a>
    <path id="ausf_heerstrasse" d="M 195,-70 a 20,20 0,0,0 -20,-20 h -20 c -5,0 -5,5 -10,5" />
    <path id="ring_betriebsstrecke" d="M 50,35 a 20,20 0,0,1 -20,-20 v -40 a 20,20 0,0,1 40,0 v 40 a 20,20 0,0,1 -20,20 a 14,14 0,0,1 -14,-14 v -86 a 20,20 0,0,1 20,-20 h 119 a 10,10 0,0,1 10,10" />
+   <desc class="kmdata">km 17,72|cs|2|r|-90|translate(36,-50)</desc>
    <path d="M 36,15 c 0,-3 -3,-3 -3,-6 v -30 q 0,-1.5 1.5,-3.5" />
    <path d="M 30,-18 q 0,-1.5 1.5,-3.5 l 3,-3 q 1.5,-1.5 1.5,-3.5" />
    <path class="faeng" d="M 39,-70 v 15 a 10,10 0,0,0 10,10" />
@@ -2874,7 +2875,7 @@
    <g id="hst317" transform="translate(-372.5,1179.5) rotate(-45)">
      <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
      <text transform="rotate(45) translate(8,-8)">Industriehof<tspan class="hstdetails"> (IH, 317)</tspan></text>
-     <desc class="kmdata">km 3,45 (20)\nkm 13,9 (C)|cs,c2,c3|2|r|-75|rotate(45)</desc>
+     <desc class="kmdata">km 3,45 (20)\nkm 13,9 (C,24)|cs,c3|2|r|-75|rotate(45)</desc>
      <g class="hstdetails">
        <g id="sig316V21" transform="translate(-5,40) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 H 20" />
@@ -2912,25 +2913,25 @@
     <use xlink:href="#bstg_ausen" transform="rotate(-45)" onclick="toggle_details(this)" />
     <text x="-5.5" y="21.5">Fischstein</text>
     <text x="-5.5" y="30.5" class="hstdetails">(FS, 321)</text>
-    <desc class="kmdata">km 0,36|c2|2|r|-75</desc>
+    <desc class="kmdata">km 14,31|cs|2|r|-75</desc>
    </g>
    <g id="hst322" transform="translate(-470,1025)" class="te">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Hausener Weg</text>
     <text x="-15" y="15" class="hstdetails">(HU, 322)</text>
-    <desc class="kmdata">km 0,80|c2|2|r|-120</desc>
+    <desc class="kmdata">km 14,80|cs|2|r|-120</desc>
    </g>
    <g id="hst323" transform="translate(-470,925)" class="te">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Stephan-Heise-Straße</text>
     <text x="-15" y="15" class="hstdetails">(SH, 323)</text>
-    <desc class="kmdata">km 1,50|c2|2|r|-120</desc>
+    <desc class="kmdata">km 15,44|cs|2|r|-120</desc>
    </g>
    <g id="hst324" transform="translate(-470,825)" class="te">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Friedhof Westhausen</text>
     <text x="-15" y="15" class="hstdetails">(FW, 324)</text>
-    <desc class="kmdata">km 1,80|c2|2|r|-120</desc>
+    <desc class="kmdata">km 15,73|cs|2|r|-120</desc>
    </g>
    <g id="hst326" transform="translate(-470,725)" class="te">
      <g onclick="toggle_details(this)">
@@ -2940,7 +2941,7 @@
      </g>
      <text x="-10" y="5">Heerstraße</text>
      <text x="-15" y="15" class="hstdetails">(HE, 326)</text>
-     <desc class="kmdata">km 2,40|c2|2|r|-120</desc>
+     <desc class="kmdata">km 16,39|cs|2|r|-120</desc>
      <g class="hstdetails">
        <g id="sig326Y10" transform="translate(5,65)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 c 10,0 38,-5 38,-15" />
@@ -3001,6 +3002,7 @@
      <text x="0" y="25">Gewerbegebiet</text>
      <text x="0" y="36">Praunheim</text>
      <text x="0" y="46"><tspan class="hstdetails">(??, 327)</tspan></text>
+     <desc class="kmdata">km 2,50 (RTW)|cs|2|l|120</desc>
    </g>
    <g id="hstfhga" transform="translate(-462.5,480)" class="geplant rtw ebobahn">
      <use xlink:href="#hstgrid" />
@@ -3014,15 +3016,18 @@
        <use xlink:href="#vierabstell" transform="translate(20,-50)" />
      </g>
      <text x="0" y="-15">Eschborn Ost</text>
+     <desc class="kmdata">km 4,50 (RTW)|cs|2|l|180</desc>
    </g>
    <g id="hst332" transform="translate(-725,580)" class="geplant rtw tm">
      <use xlink:href="#bstg_ausen" transform="rotate(90)" />
      <text x="0" y="-15">Eschborn Süd</text>
+     <desc class="kmdata">km 5,30 (RTW)|cs|2|r|30</desc>
    </g>
    <g id="hst333" transform="translate(-800,650)" class="geplant rtw">
      <use xlink:href="#bstg_ausen" />
      <text x="15" y="-6">Carl-Sonnenschein-Siedlung /</text>
      <text x="15" y="5">Düsseldorferstraße</text>
+     <desc class="kmdata">km 6,50 (RTW)|cs|2|l|120</desc>
    </g>
    <g id="hst334" transform="translate(-800,750)" class="geplant rtw">
      <use xlink:href="#bstg_ausen" />
@@ -4887,10 +4892,22 @@
     <g><desc class="kmdata">km 13,65|b2|3|l|30|translate(518.5,1175)</desc></g>
   </g>
   <g class="cs_strecke">
-   <path class="kilometrierung" d="M -385.5,1166.5 l 92.5,92.5 q 15.5,15.5 15.5,37.5 v 100 a 32.5,32.5 0,0,0 32.5,32.5 h 100 q 22,0 38.5,16.5 l 118,118 q 16.5,16.5 38.5,16.5 h 399 q 18,0 31.5,13.5 l 82,82" />
-    <g><desc class="kmdata">km 14,1|cs|3|l|60|translate(-385.5,1166.5)</desc></g>
+    <path class="kilometrierung" d="M -385.5,1166.5 l 92.5,92.5 q 15.5,15.5 15.5,37.5 v 100 a 32.5,32.5 0,0,0 32.5,32.5 h 100 q 22,0 38.5,16.5 l 118,118 q 16.5,16.5 38.5,16.5 h 399 q 18,0 31.5,13.5 l 82,82" />
+    <path class="kilometrierung" d="M -470,625 v 435 q 0,22 16.5,38.5 l 68,68" />
     <g><desc class="kmdata">km 7,80|cs|3|r|210|translate(562.5,1675.5)</desc></g>
     <g><desc class="kmdata">km 8,66|cs|2|l|225|translate(449,1580)</desc></g>
+    <g><desc class="kmdata">km 16,57|cs|2|l|90|translate(-470,705)</desc></g>
+    <g><desc class="kmdata">km 16,85|cs|3|l|90|translate(-470,625)</desc></g>
+    <g><desc class="kmdata">km 16,82|cs|2|r|-75|translate(-515,690)</desc></g>
+    <g class="geplant rtw">
+      <path class="kilometrierung" d="M -470,625 a 45,45 0,0,1 45,-45" />
+      <g><desc class="kmdata">km 17,14 (24)\nkm 2,70 (RTW)|cs|2|l|0|translate(-425,580)</desc></g>
+      <path class="kilometrierung" d="M -320,580 h -105" />
+      <g><desc class="kmdata">km 2,15 (RTW)|cs|3|l|0|translate(-320,580)</desc></g>
+      <desc class="kmdata">km 3,70 (RTW)|cs|2|l|180|translate(-515,585)</desc>
+      <desc class="kmdata">km 4,00 (RTW)|cs|2|r|0|translate(-520,575)</desc>
+      <desc class="kmdata">km 4,20 (RTW)|cs|2|r|-30|translate(-540,580)</desc>
+    </g>
   </g>
   <g class="c1_strecke">
    <path class="kilometrierung" d="M 449,1580 h 6 q 22,0 38.5,-16.5 l 184,-184 q 16.5,-16.5 38.5,-16.5 h 39" />
@@ -4902,12 +4919,8 @@
    <g><desc class="kmdata">km 7,10|c1|2|r|-60|translate(830,1295)</desc></g>
    <g><desc class="kmdata">km 9,32|c1|3|r|-30|translate(830,820)</desc></g>
   </g>
-  <g><desc class="kmdata">km 0,00|c2|3|l|30|translate(-385.5,1166.5)</desc></g>
-  <g><desc class="kmdata">km 3,53 (20)\nkm 14,0 (C)|cs,c3|2|l|30|translate(   -385.5,1166.5)</desc></g>
-  <g class="c2_strecke">
-    <path class="kilometrierung" d="M -470,625 v 435 q 0,22 16.5,38.5 l 68,68" />
-    <g><desc class="kmdata">km 2,61|c2|2|l|90|translate(-470,705)</desc></g>
-    <g><desc class="kmdata">km 2,88|c2|3|l|90|translate(-470,625)</desc></g>
+  <g><desc class="kmdata">km 3,53 (20)\nkm 14,0 (C,24)|cs,c3|2|l|30|translate(-385.5,1166.5)</desc></g>
+  <g class="cs_strecke">
   </g>
   <g class="c3_strecke">
     <path class="kilometrierung" d="M -390,906 v 250 q 0,6 4.5,10.5" />
