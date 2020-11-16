@@ -1996,7 +1996,7 @@
      <text x="8" y="25">Festplatz</text>
      <text x="8" y="35" class="hstdetails">(EH, 815)</text>
     </a>
-    <desc class="kmdata">km 1,80→\nkm 2,20←|c1|2|l|120</desc>
+    <desc class="kmdata">km 1,80→\nkm 2,20←|c1|2|l|135</desc>
     <g class="hstdetails">
       <g id="sig815H11" transform="translate(17.5,-24.5) rotate(-135)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 C 2,5 2,10 20,10" />
@@ -2574,7 +2574,10 @@
   <path id="dreieck_schaeffle_1" d="M 815,1300 a 10,10 0,0,1 10,10" />
   <path id="dreieck_schaeffle_2" d="M 835,1310 a 20,20 0,0,0 -20,-20" />
   <path id="wa_schaefflestrasse" class="endet" d="M 835,1240 c 0,-10 -10,-10 -10,-20 c 0,-5 -5,-5 -5,-10 v -35" />
-  <path id="gw_kruppstr" d="M 835,1090 c 0,10 -10,10 -10,20" />
+  <g id="gw_kruppstr" transform="translate(830,1065)">
+   <path d="M 5,-10 c 0,10 -10,10 -10,20" />
+   <desc class="kmdata">km 8,31|c1|2|r|-60</desc>
+  </g>
   <path id="gw_enkheim" d="M 825,860 c 0,10 10,10 10,20 c 0,10 -10,10 -10,20" />
   <path id="wa_riedberg" class="endet" d="M 30,221 c 5,0 5,-5 10,-5 M 30,211 c 5,0 5,5 10,5 h 24" />
  </g>
@@ -4699,7 +4702,7 @@
       <use xlink:href="#bstg_ausen" transform="rotate(90)" />
     </g>
     <text x="-25" y="22">Johanna-Tesch-Platz<tspan class="hstdetails"> (JT, 821)</tspan></text>
-    <desc class="kmdata">km 2,50→\nkm 2,80←|c1|2|l|150</desc>
+    <desc class="kmdata">km 6,46|c1|2|l|150</desc>
     <g class="hstdetails">
       <g id="sig821Y11" transform="translate(40,-30) rotate(180)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 C 2,20 10,25 20,25" />
@@ -4739,7 +4742,7 @@
        <use id="g822A61" xlink:href="#vierabstell" transform="translate(-10,-75)" />
      </g>
      <text x="15" y="5">Schäfflestraße</text>
-     <desc class="kmdata">km 3,20→\nkm 3,50←|c1|2|r|-60</desc>
+     <desc class="kmdata">km 7,24|c1|2|r|-60</desc>
      <g class="hstdetails">
        <text x="15" y="15">(SC, 822)</text>
        <g transform="translate(-10,-79)" class="bgleisnummer"><circle cy="-1" r="2" /><text>6</text></g>
@@ -4791,24 +4794,24 @@
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="15" y="5">Gwinnerstraße</text>
     <text x="15" y="15" class="hstdetails">(GR, 823)</text>
-    <desc class="kmdata">km 3,85→\nkm 4,15←|c1|2|r|-60</desc>
+    <desc class="kmdata">km 7,89|c1|2|r|-60</desc>
    </g>
    <g id="hst824" transform="translate(830,1040)">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="15" y="5">Kruppstraße</text>
     <text x="15" y="15" class="hstdetails">(KR, 824)</text>
-    <desc class="kmdata">km 4,40→\nkm 4,70←|c1|2|r|-60</desc>
+    <desc class="kmdata">km 8,39|c1|2|r|-60</desc>
    </g>
    <g id="hst825" transform="translate(830,940)">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="15" y="5">Hessen-Center</text>
     <text x="15" y="15" class="hstdetails">(HC, 825)</text>
-    <desc class="kmdata">km 4,85→\nkm 5,15←|c1|2|r|-60</desc>
+    <desc class="kmdata">km 8,79|c1|2|r|-60</desc>
    </g>
    <g id="hst826" transform="translate(830,840)">
      <use xlink:href="#bstg_mitte" onclick="toggle_details(this)" />
      <text x="10" y="5">Enkheim</text>
-     <desc class="kmdata">km 5,24→\nkm 5,24←|c1|2|r|-60</desc>
+     <desc class="kmdata">km 9,26|c1|2|r|-60</desc>
      <g class="hstdetails">
        <text x="10" y="15">(EN, 826)</text>
        <g id="sig826Y14" transform="translate(-5,17) rotate(180)" onmouseover="highlight(this)">
@@ -4890,13 +4893,14 @@
     <g><desc class="kmdata">km 8,66|cs|2|l|225|translate(449,1580)</desc></g>
   </g>
   <g class="c1_strecke">
-   <path class="kilometrierung" d="M 449,1580 h 6 q 22,0 38.5,-16.5 l 184,-184 q 16.5,-16.5 38.5,-16.5 h 84 a 30,30 0,0,0 30,-30 v -513" />
+   <path class="kilometrierung" d="M 449,1580 h 6 q 22,0 38.5,-16.5 l 184,-184 q 16.5,-16.5 38.5,-16.5 h 39" />
+   <path class="kilometrierung" d="M 755,1435.5 h -5 a 7.5,7.5 0,0,1 -7.5,-7.5 v -52.5 a 12.5,12.5 0,0,1 12.5,-12.5 h 45 a 30,30 0,0,0 30,-30 v -513" />
    <path class="kilometrierung klein" d="M 390,1580 h 59" />
    <g><desc class="kmdata">km 0,00←|c1|3|l|-30|translate(390,1575)</desc></g>
    <g><desc class="kmdata">km 0,00→\nkm 0,45←|c1|3|l|185|translate(449,1585)</desc></g>
-   <g><desc class="kmdata">km 2,36→\nkm 2,66←|c1|2|r|-60|translate(746,1363)</desc></g>
-   <g><desc class="kmdata">km 3,06→\nkm 3,36←|c1|2|r|-60|translate(830,1295)</desc></g>
-   <g><desc class="kmdata">km 5,29→\nkm 5,59←|c1|3|r|-30|translate(830,820)</desc></g>
+   <g><desc class="kmdata">km 2,36⇥\nkm 2,66↤\nkm 6,40↱|c1|2|r|-60|translate(746,1363)</desc></g>
+   <g><desc class="kmdata">km 7,10|c1|2|r|-60|translate(830,1295)</desc></g>
+   <g><desc class="kmdata">km 9,32|c1|3|r|-30|translate(830,820)</desc></g>
   </g>
   <g><desc class="kmdata">km 0,00|c2|3|l|30|translate(-385.5,1166.5)</desc></g>
   <g><desc class="kmdata">km 3,53 (20)\nkm 14,0 (C)|cs,c3|2|l|30|translate(   -385.5,1166.5)</desc></g>
