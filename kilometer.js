@@ -179,6 +179,10 @@ function get_pin_data(text, id) {
     if (data.pin_type == 1) {
       data.pin_length = 99;
     }
+    if (data.pin_type > 3) {
+      // trambahn
+      data.pin_length = 40;
+    }
   }
   if (ary.length > 3) {
     var align = ary[3].toLowerCase();
