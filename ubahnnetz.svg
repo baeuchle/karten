@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <svg
-  xmlns:svg="http://www.w3.org/2000/svg"
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
   width="1765px"
@@ -81,7 +80,8 @@
   .rev { font-size:7pt; fill-opacity: .5; }
   /* Text im Plan selbst */
   .ab_bb { font-size:8pt; stroke:none; }
-  text { font-size:10pt; font-family:Sans-Serif; fill:black; stroke:none; }
+  text { font-size:10pt; font-family:Helvetica, Arial, Sans-Serif; fill:black; stroke:none; }
+  text.boxtext { font-size: 9pt; font-family: Helvetica, Arial, Sans-Serif; }
   #bau { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; stroke-dasharray:none; }
   #uml { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; }
   .link, a text, text a { fill:blue; visibility:visible; }
@@ -126,8 +126,6 @@
   .b2_strecke { display:none; }
   .cs_strecke { display:none; }
   .c1_strecke { display:none; }
-  .c2_strecke { display:none; }
-  .c3_strecke { display:none; }
   .ds_strecke { display:none; }
   /* Haltestellendetails */
   .abstell { stroke-width:.5; stroke:#000000; fill:#ffffff; fill-opacity:0.8; }
@@ -275,7 +273,7 @@
   </g>
  </defs>
  <defs id="defs_kilometer">
-  <g id="punkt1" class="kmpkt"><path d="M 0,0 l -2,-20 v -72 h 4 v 72 z" /><circle cx="0" cy="-99" r="7" /></g>
+  <g id="punkt1" class="kmpkt"><path d="M 0,0 l -2,-20 v -52 h 4 v 52 z" /><circle cx="0" cy="-79" r="7" /></g>
   <g id="punkt2" class="kmpkt"><path d="M 0,0 l -1,-10 v -46 h 2 v 46 z" /><circle cx="0" cy="-60" r="4" /></g>
   <g id="punkt3" class="kmpkt"><path d="M 0,0 l -1,-10 v -50 h 2 v 50 z" /><rect height="5" width="10" x="-5" y="-62.5"/></g>
  </defs>
@@ -618,57 +616,102 @@
   <g id="ausbauprojekte" transform="translate(-815,0)">
    <rect class="box" width="305" height="320" />
    <text class="unterschrift" x="15" y="25">Ausbauprojekte</text>
-   <text class="hochstatio" x="10" y="70" onclick="geplant('verlaengerung_badhomburg')">Bad Homburg: <tspan class="link" id="verlaengerung_badhomburg_aktion">anzeigen</tspan></text>
-   <text class="hochstatio" x="15" y="85" onclick="geplant('verlaengerung_badhomburg')">Gonzenheim → Bad Homburg Bahnhof</text>
+   <text class="boxtext" x="10" y="70" onclick="geplant('verlaengerung_badhomburg')">Bad Homburg: <tspan class="link" id="verlaengerung_badhomburg_aktion">anzeigen</tspan></text>
+   <text class="boxtext" x="15" y="85" onclick="geplant('verlaengerung_badhomburg')">Gonzenheim → Bad Homburg Bahnhof</text>
    <text class="ab_bb"      x="20" y="100">Status: Planfestgestellt (seit <a xlink:href="https://www.bad-homburg-u2.de/downloads.html?file=files/content/downloads/Planfeststellungsbeschluss_Verl%C3%A4ngerung_U2_-_Durchschrift.pdf">25.01.2016</a>)</text>
-   <text class="hochstatio" x="10" y="120" onclick="geplant('verlaengerung_europaviertel')">Europaviertel: <tspan class="link" id="verlaengerung_europaviertel_aktion">verstecken</tspan></text>
-   <text class="hochstatio" x="15" y="135" onclick="geplant('verlaengerung_europaviertel')">Hauptbahnhof → Wohnpark</text>
+   <text class="boxtext" x="10" y="120" onclick="geplant('verlaengerung_europaviertel')">Europaviertel: <tspan class="link" id="verlaengerung_europaviertel_aktion">verstecken</tspan></text>
+   <text class="boxtext" x="15" y="135" onclick="geplant('verlaengerung_europaviertel')">Hauptbahnhof → Wohnpark</text>
    <text class="ab_bb"      x="20" y="150">Status: <a xlink:href="https://www.sbev-frankfurt.de/de/home/">in Bau</a></text>
-   <text class="hochstatio" x="10" y="170" onclick="geplant('ginnheimer_kurve')">Lückenschluss DⅡ: <tspan class="link" id="ginnheimer_kurve_aktion">anzeigen</tspan></text>
-   <text class="hochstatio" x="15" y="185" onclick="geplant('ginnheimer_kurve')">Ginnheim → Bockenheimer Warte</text>
+   <text class="boxtext" x="10" y="170" onclick="geplant('ginnheimer_kurve')">Lückenschluss DⅡ: <tspan class="link" id="ginnheimer_kurve_aktion">anzeigen</tspan></text>
+   <text class="boxtext" x="15" y="185" onclick="geplant('ginnheimer_kurve')">Ginnheim → Bockenheimer Warte</text>
    <text class="ab_bb"      x="20" y="200">Status: Abwägung der
     <a xlink:href="https://web.archive.org/web/20191215212000/https://frankfurt.de/sixcms/media.php/738/2019-12-05d_VGF_UBahn%20DII-final_Entwurf%20SPI_Teil-1.pdf">Variantenuntersuchung</a>
     <a xlink:href="https://web.archive.org/web/20191215212000/https://frankfurt.de/sixcms/media.php/738/2019-12-05d_VGF_UBahn%20DII-final_Entwurf%20SPI_Teil-2.pdf">(Teil 2)</a>
    </text>
    <text class="ab_bb"      x="20" y="210">(Mehrere Varianten)</text>
-   <text class="hochstatio" x="10" y="230" onclick="geplant('frankfurter_berg')">Frankfurter Berg: <tspan class="link" id="frankfurter_berg_aktion">anzeigen</tspan></text>
-   <text class="hochstatio" x="15" y="245" onclick="geplant('frankfurter_berg')">Preungesheim → Frankfurter Berg</text>
+   <text class="boxtext" x="10" y="230" onclick="geplant('frankfurter_berg')">Frankfurter Berg: <tspan class="link" id="frankfurter_berg_aktion">anzeigen</tspan></text>
+   <text class="boxtext" x="15" y="245" onclick="geplant('frankfurter_berg')">Preungesheim → Frankfurter Berg</text>
    <text class="ab_bb"      x="20" y="260">Status: Planfeststellung wird vorbereitet</text>
-   <text class="hochstatio" x="10" y="280" onclick="geplant('rtw')">Regionaltangente West (PFA Nord): <tspan class="link" id="rtw_aktion">anzeigen</tspan></text>
-   <text class="hochstatio" x="15" y="295" onclick="geplant('rtw')">Sossenheim → Praunheim</text>
+   <text class="boxtext" x="10" y="280" onclick="geplant('rtw')">Regionaltangente West (PFA Nord): <tspan class="link" id="rtw_aktion">anzeigen</tspan></text>
+   <text class="boxtext" x="15" y="295" onclick="geplant('rtw')">Sossenheim → Praunheim</text>
    <text class="ab_bb"      x="20" y="310">Status: <a xlink:href="https://rp-darmstadt.hessen.de/pressemitteilungen/rp-leitet-anhörung-für-regionaltangente-west-ein-abschnitt-nord">Planfeststellung beantragt</a> (am 18.12.2017)</text>
   </g>
-  <g id="kilometrierungen" transform="translate(-120,-169)">
+  <g id="kilometrierungen" transform="translate(-100,-169)">
    <rect class="box" width="400" height="160" />
    <text class="unterschrift" x="20" y="25">Kilometrierungen anzeigen</text>
-   <text class="hochstatio" x="20" y="45">
-    <tspan id="as_strecke_tx" onclick="kilometer('as_strecke')">A-Stamm</tspan>
-    <tspan id="a1_strecke_tx" onclick="kilometer('a1_strecke')">A1</tspan>
-    <tspan id="a2_strecke_tx" onclick="kilometer('a2_strecke')">A2</tspan>
-    <tspan id="a3_strecke_tx" onclick="kilometer('a3_strecke')">A3</tspan>
+   <text class="boxtext" x="20" y="45">
+    <tspan id="as_strecke_tx" onclick="kilometer('as_strecke')">
+      <title>
+A-Stammstrecke: Südbahnhof - Weißer Stein
+      </title>
+      A-Stamm</tspan>
+    •
+    <tspan id="a1_strecke_tx" onclick="kilometer('a1_strecke')">
+      <title>
+A1: Weißer Stein - Ginnheim
+      </title>
+      A1</tspan>
+    •
+    <tspan id="a2_strecke_tx" onclick="kilometer('a2_strecke')">
+      <title>
+A2: (Weißer Stein-) Heddernheim - Bad Homburg
+      </title>
+      A2</tspan>
+    •
+    <tspan id="a3_strecke_tx" onclick="kilometer('a3_strecke')">
+      <title>
+A3: (Weißer Stein-) Dreieck Nordwest - Oberursel
+      </title>
+      A3</tspan>
    </text>
-   <text class="hochstatio" x="20" y="60">
-    <tspan id="bs_strecke_tx" onclick="kilometer('bs_strecke')">B+B1</tspan>
-    <tspan id="b2_strecke_tx" onclick="kilometer('b2_strecke')">B2</tspan>
+   <text class="boxtext" x="20" y="60">
+    <tspan id="bs_strecke_tx" onclick="kilometer('bs_strecke')">
+      <title>
+B-Stammstrecke: Europaviertel - Konstablerwache
+B1: Konstablerwache - Preungesheim (-Frankfurter Berg)
+      </title>
+    B + B1
+    </tspan>
+    •
+    <tspan id="b2_strecke_tx" onclick="kilometer('b2_strecke')">
+      <title>
+B2: Konstablerwache - Seckbacher Landstraße
+54: BB Ost (Seckbacher Landstraße - Schäfflestraße)
+      </title>
+    B2 + 54
+    </tspan>
    </text>
-   <text class="hochstatio" x="20" y="75">
-    <tspan id="cs_strecke_tx" onclick="kilometer('cs_strecke')">C-Stamm</tspan>
-    <tspan id="c1_strecke_tx" onclick="kilometer('c1_strecke')">C1</tspan>
-    <tspan id="c2_strecke_tx" onclick="kilometer('c2_strecke')">Heerstr.</tspan>
-    <tspan id="c3_strecke_tx" onclick="kilometer('c3_strecke')">20 (Hausen)</tspan>
+   <text class="boxtext" x="20" y="75">
+    <tspan id="cs_strecke_tx" onclick="kilometer('cs_strecke')">
+      <title>
+C-Stammstrecke: Ostbahnhof - Industriehof
+Strecke 20: Hauptbahnhof - Hausen
+Strecke 24: Industriehof - Heerstraße (-Gewerbegebiet Praunheim/StZW)
+      </title>C + 20,24 (West)</tspan>
+    •
+    <tspan id="c1_strecke_tx" onclick="kilometer('c1_strecke')"><title>
+C1: Zoo-Abzweig Johanna-Tesch-Platz
+62: Ratswegkreisel - Enkheim (Kilometrierung ab Hauptbahnhof)
+    </title>C1 + 62 (Enkheim)</tspan>
    </text>
-   <text class="hochstatio" x="20" y="90">
-    <tspan id="ds_strecke_tx" onclick="kilometer('ds_strecke')">D-Strecke</tspan>
+   <text class="boxtext" x="20" y="90">
+    <tspan id="ds_strecke_tx" onclick="kilometer('ds_strecke')">
+      <title>
+DⅠ, DⅡ: Hauptbahnhof - Bockenheimer Warte (-Ginnheim)
+DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
+      </title>D-Strecke
+    </tspan>
    </text>
-   <use xlink:href="#punkt1" transform="translate(125,116) rotate(-90)" /><text x="135" y="120">Eichpunkt für Kilometrierung</text>
-   <use xlink:href="#punkt2" transform="translate(125,131) rotate(-90)" /><text x="135" y="135">Kilometrierungspunkt</text>
-   <use xlink:href="#punkt3" transform="translate(125,146) rotate(-90)" /><text x="135" y="150">Strecken-/Gleisende</text>
+   <use xlink:href="#punkt1" transform="translate(105,116) rotate(-90)" /><text x="115" y="120">Eichpunkt für Kilometrierung</text>
+   <use xlink:href="#punkt2" transform="translate(105,131) rotate(-90)" /><text x="115" y="135">Kilometrierungspunkt</text>
+   <use xlink:href="#punkt3" transform="translate(105,146) rotate(-90)" /><text x="115" y="150">Strecken-/Gleisende</text>
    <g transform="translate(250,35)">
-   <rect width="140" height="60" rx="5" ry="5" class="box info" />
+   <rect width="140" height="72" rx="5" ry="5" class="box info" />
    <text x="4" y="18">Streckenname links</text>
    <text x="4" y="30">anklicken, um</text>
    <text x="4" y="42">Kilometrierungen</text>
-   <text x="4" y="54">anzuzeigen</text>
+   <text x="4" y="54">anzuzeigen (Hover</text>
+   <text x="4" y="66">für mehr Info)</text>
    </g>
   </g>
  </g>
@@ -2536,11 +2579,11 @@
   <path id="wa_eschborn_1" class="geplant rtw endet" d="M -558,595 c -5,0 -5,-5 -10,-5 h -30" />
   <g id="gw_hausen" transform="translate(-390,951)">
     <path d="M -5,-10 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20" />
-    <desc class="kmdata">km 4,50|c3|2|l|30</desc>
+    <desc class="kmdata">km 4,50|cs|2|l|30</desc>
   </g>
   <g id="gw_amhohenweg" transform="translate(-390,1131)">
     <path d="M 5,-10 c 0,10 -10,10 -10,20" />
-    <desc class="kmdata">km 3,66|c3|2|l|30</desc>
+    <desc class="kmdata">km 3,66|cs|2|l|30</desc>
   </g>
   <path id="gw_industriehof" d="M -355,1190 c 7,7 0,14 7,21 c 7,7 14,0 21,7 M -340,1193 c -6,-6 -12,0 -18,-6 M -328,1260 c 0,-5 5,-5 5,-10" />
   <g id="ug_industriehof" transform="translate(-365,1274)">
@@ -2875,7 +2918,7 @@
    <g id="hst317" transform="translate(-372.5,1179.5) rotate(-45)">
      <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
      <text transform="rotate(45) translate(8,-8)">Industriehof<tspan class="hstdetails"> (IH, 317)</tspan></text>
-     <desc class="kmdata">km 3,45 (20)\nkm 13,9 (C,24)|cs,c3|2|r|-75|rotate(45)</desc>
+     <desc class="kmdata">km 3,45 (20)\nkm 13,9 (C,24)|cs|2|r|-75|rotate(45)</desc>
      <g class="hstdetails">
        <g id="sig316V21" transform="translate(-5,40) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 H 20" />
@@ -3036,7 +3079,7 @@
    <g id="hst351" transform="translate(-390,1041)">
      <use xlink:href="#bstg_vers1" onclick="toggle_details(this)" />
      <text x="15" y="5">Große Nelkenstraße<tspan class="hstdetails"> (GN, 351)</tspan></text>
-     <desc class="kmdata">km 4,00|c3|2|l|30</desc>
+     <desc class="kmdata">km 4,00|cs|2|l|30</desc>
      <g class="hstdetails">
        <g id="sig353YD14" transform="translate(5,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 H 20" />
@@ -3055,7 +3098,7 @@
    <g id="hst353" transform="translate(-390,926)">
      <use xlink:href="#bstg_mitte" onclick="toggle_details(this)" />
      <text x="10" y="5">Hausen<tspan class="hstdetails"> (HN, 353)</tspan></text>
-     <desc class="kmdata">km 4,61|c3|2|l|30</desc>
+     <desc class="kmdata">km 4,61|cs|2|l|30</desc>
      <g class="hstdetails">
        <g id="sig353Y11" transform="rotate(180) translate(-5,-17)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,10 30,10 30,0" />
@@ -4919,12 +4962,12 @@
    <g><desc class="kmdata">km 7,10|c1|2|r|-60|translate(830,1295)</desc></g>
    <g><desc class="kmdata">km 9,32|c1|3|r|-30|translate(830,820)</desc></g>
   </g>
-  <g><desc class="kmdata">km 3,53 (20)\nkm 14,0 (C,24)|cs,c3|2|l|30|translate(-385.5,1166.5)</desc></g>
+  <g><desc class="kmdata">km 3,53 (20)\nkm 14,0 (C,24)|cs|2|l|30|translate(-385.5,1166.5)</desc></g>
   <g class="cs_strecke">
   </g>
-  <g class="c3_strecke">
+  <g class="cs_strecke">
     <path class="kilometrierung" d="M -390,906 v 250 q 0,6 4.5,10.5" />
-    <g><desc class="kmdata">km 4,68|c3|3|l|30|translate(-390,906)</desc></g>
+    <g><desc class="kmdata">km 4,68|cs|3|l|30|translate(-390,906)</desc></g>
   </g>
   <g class="ds_strecke">
     <path class="kilometrierung" d="M -205,1670 v -310" />
