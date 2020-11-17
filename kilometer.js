@@ -177,7 +177,7 @@ function get_pin_data(text, id) {
   if (ary.length > 2) {
     data.pin_type = Number(ary[2]);
     if (data.pin_type == 1) {
-      data.pin_length = 99;
+      data.pin_length = 80;
     }
     if (data.pin_type > 3) {
       // trambahn
