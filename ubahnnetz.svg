@@ -521,7 +521,7 @@
     <text class="ueberschrift" x="15" y="35">U-Bahn Frankfurt am Main</text>
    </a>
    <text class="unterschrift" x="15" y="60">Streckennetz (ohne Maßstab)</text>
-   <text class="stand"        x="15" y="80">Stand: <tspan class="stand_monat"/></text>
+   <text class="stand"        x="15" y="80">Stand: <tspan class="stand_monat"/></tspan></text>
    <path d="M 20,125 c 0,10 10,10 10,20" class="strecke bb" />
    <path d="M 30,125 c 0,10 -10,10 -10,20" class="strecke bb" />
    <path d="M 20,145 c 0,5 5,5 5,10 v 15" class="strecke bb endet" />
@@ -4965,8 +4965,8 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
   </g>
  </g>
  <text class="te ab_bb" x="915" y="1938"><a id="plain_link" xlink:href="ubahnnetz.svg" class="rev">Permalink zu dieser Version</a></text>
- <text class="te ab_bb" x="915" y="1948"><a xlink:href="ubahnnetz.svg" class="rev">(<tspan class="hash"/>)</a></text>
- <text class="te ab_bb" x="915" y="1958">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
+ <text class="te ab_bb" x="915" y="1948"><a xlink:href="ubahnnetz.svg" class="rev">(<tspan class="hash">0000000000000000000000000000000000000000</tspan>)</a></text>
+ <text class="te ab_bb" x="915" y="1958">© CC-BY-SA 4.0 or later 2009-<tspan id="stand_jahr">2020</tspan> Bjørn Bäuchle</text>
  <g id="always_links" transform="translate(950, 1960)">
    <g id="make_view_link" class="always_links" transform="translate(-8,-24)" onclick="toggle_makeview(event)" >
     <title>
