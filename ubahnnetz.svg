@@ -2487,7 +2487,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     </g>
     <g id="rampe_europapark_west" transform="translate(-600,1580)">
       <use xlink:href="#tunnelrampe" transform="rotate(-90)" />
-      <desc class="kmdata">km 4,85|bs|2|r|210</desc>
+      <desc class="kmdata">km 5,05|bs|2|r|210</desc>
     </g>
   </g>
   <use id="rampe_ost" xlink:href="#tunnelrampe" transform="translate(600,1170) rotate(90)" />
