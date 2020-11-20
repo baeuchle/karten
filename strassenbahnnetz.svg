@@ -1349,7 +1349,7 @@
    <path class="kilometrierung" d="M -20,150 v 50 a 15,15 0,0,1 -15,15 h -160" />
   </g>
  </g>
- <g class="streckennummern">
+ <g class="streckennummern layer">
   <rect class="overlay" id="overlay_sn" width="1900"  height="1190" x="-865" y="-425" />
   <path class="streckennummer sn_00" id="sn_00" d="M -20,135 v 25 a 15,15 0,0,0 15,15 h 370" />
   <path class="streckennummer sn_10" id="sn_10" d="M -20,75 h -15 q -6,0 -10.5,4.5 l -6,6 q -4.5,4.5 -10.5,4.5 h -133 q -6,0 -10.5,-4.5 l -6,-6 q -4.5,-4.5 -10.5,-4.5 h -615 a 15,15 0,0,0 0,30 h 30 a 15,15 0,0,0 15,-15 a 15,15 0,0,1 15,-15" />
