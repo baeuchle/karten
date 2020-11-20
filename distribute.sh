@@ -1,13 +1,35 @@
 #!/bin/bash
 
 revision=$(git log -1 --pretty=format:%H)
+day=$(date +%Y-%m-%d)
+month="$(date +'%B %Y')"
+year=$(date +%Y)
 
-echo "Update date and version ($revision)"
+echo "Update date and version ($revision $day)"
 for i in strassenbahnnetz.svg ubahnnetz.svg; do
-    ./update.pl $revision < $i > $i.dist
-    ./entscripten.pl < $i.dist > ${i/svg/wiki.svg}
+    xsltproc pretty.xsl $i |\
+    tee ${i/.svg/-pretty.svg} |\
+    xsltproc \
+        --stringparam VERSION $revision \
+        --stringparam DATE    $day \
+        --stringparam MONTH  "$month" \
+        --stringparam YEAR    $year \
+        dates.xsl \
+        - |\
+    tee $i.dist |\
+    xsltproc \
+        entscripten.xsl \
+        - \
+        > ${i/svg/wiki.svg};
 done
-./update.pl $revision < false-pole.html > false-pole.html.dist
+xsltproc \
+    --stringparam VERSION $revision \
+    --stringparam DATE    $day \
+    --stringparam MONTH  "$month" \
+    --stringparam YEAR    $year \
+    dates.xsl \
+    false-pole.html \
+    > false-pole.html.dist
 
 if [ -d /var/www/plan ]; then
     if [ $(which convert) ]; then

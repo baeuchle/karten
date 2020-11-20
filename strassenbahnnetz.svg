@@ -159,13 +159,13 @@
   .nowiki { display:inline; }
  ]]>
  </style>
- <script type="application/ecmascript" href="./viewbox.js"></script>
- <script type="application/ecmascript" href="./deep_link.js"></script>
- <script type="application/ecmascript" href="./geplant.js"></script>
- <script type="application/ecmascript" href="./kilometer.js"></script>
- <script type="application/ecmascript" href="./overlay.js"></script>
- <script type="application/ecmascript" href="./selection.js"></script>
- <script type="application/ecmascript" href="./query.js"></script>
+ <script type="application/ecmascript" href="viewbox.js"></script>
+ <script type="application/ecmascript" href="deep_link.js"></script>
+ <script type="application/ecmascript" href="geplant.js"></script>
+ <script type="application/ecmascript" href="kilometer.js"></script>
+ <script type="application/ecmascript" href="overlay.js"></script>
+ <script type="application/ecmascript" href="selection.js"></script>
+ <script type="application/ecmascript" href="query.js"></script>
  <defs id="defs_gradients">
   <linearGradient id="bs00" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ff8080" /><stop offset="100%" stop-opacity="100%" stop-color="#ff8080" /></linearGradient>
   <linearGradient id="bs10" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#0080ff" /><stop offset="100%" stop-opacity="100%" stop-color="#0080ff" /></linearGradient>
@@ -1136,7 +1136,7 @@
     <path class="ubahng" d="M -20,-5 a 10,10 0,0,0 10,10 h 10" />
     <path class="ubahng" d="M -15,-15 v 30" />
     <path class="ubahng" d="M -20,15 v -30" />
-    <a xlink:href="ubahnnetz.svg?viewbox=168/1350/208/165">
+    <a class="viewboxlink" xlink:href="ubahnnetz.svg?viewbox=168/1350/208/165">
      <text transform="translate(0,4)" class="ref te">B</text>
     </a>
   </g>
@@ -1183,7 +1183,7 @@
     <path class="ubahnt" d="M -10,-9 h -10" />
     <path class="ubahnt" d="M -20,-14 h 10" />
     <use xlink:href="#tunnelrampe" transform="translate(-10,-11.5) rotate(90)" />
-    <a xlink:href="ubahnnetz.svg?viewbox=575/1151/336/318">
+    <a class="viewboxlink" xlink:href="ubahnnetz.svg?viewbox=575/1151/336/318">
       <text transform="rotate(45) translate(0,-1)" class="ref tm">O</text>
     </a>
   </g>
@@ -1227,7 +1227,7 @@
    <path id="s25a1g2" class="ubahng" d="M -312,-242 h 15" />
    <path id="s25gw1" class="ubahng" d="M -307,-247 c 5,0 5,5 10,5" />
    <use xlink:href="#tunnelrampe" transform="translate(-297,-244.5) rotate(-90)" />
-   <a xlink:href="ubahnnetz.svg?viewbox=-516/1091/225/243">
+   <a class="viewboxlink" xlink:href="ubahnnetz.svg?viewbox=-516/1091/225/243">
     <text class="ref ta" transform="translate(-259,-240.5)">C</text>
     <text class="ref te" transform="translate(-390,-240.5)">C</text>
     <text class="ref tm" transform="translate(-379.5,-267) rotate(-45)">C</text>
@@ -1244,7 +1244,7 @@
     <path class="ubahng faeng" d="M 30,-25 h -85" />
     <path class="ubahng faeng" d="M 30,-30 h -35 c -5,0 -5,5 -10,5" />
     <path class="ubahng" d="M -25,-25 c -5,0 -5,5 -10,5 c -5,0 -5,-5 -10,-5" />
-    <a xlink:href="ubahnnetz.svg?viewbox=-233/884/147/138">
+    <a class="viewboxlink" xlink:href="ubahnnetz.svg?viewbox=-233/884/147/138">
       <text transform="translate(-16,-12) rotate(-45)" class="ref tm">A</text>
     </a>
   </g>
@@ -1425,7 +1425,7 @@
    <rect class="box" width="450" height="85" />
    <text class="ueberschrift" x="15" y="35">Straßenbahn Frankfurt am Main</text>
    <text class="unterschrift" x="15" y="60">Streckennetz (ohne Maßstab)</text>
-   <text class="stand"        x="15" y="80">Stand: <tspan class="stand_monat"/></text>
+   <text class="stand"        x="15" y="80">Stand: <tspan class="stand_monat"/><tspan class="stand_monat"/></text>
    <g class="nowiki" transform="translate(450,80)">
     <text class="ab_bb te" transform="translate(-18,1)"><a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg">Dieser Plan bei Wikipedia</a></text>
     <a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(-17,-12)"/></a>
@@ -1453,8 +1453,8 @@
    <text transform="translate(35,135) rotate(45)">Abschnitt in Bau</text>
    <text transform="translate(35,155) rotate(45)" class="nowiki">/ geplant <tspan class="ab_bb">(siehe Legende oben)</tspan></text>
    <text transform="translate(60,222)" class="tm ref">X</text>
-   <text transform="translate(35,230) rotate(45)">Anschluss an <a xlink:href="ubahnnetz.svg">U-Bahn-Netz</a></text>
-   <text transform="translate(35,250) rotate(45)"><a xlink:href="ubahnnetz.svg">Frankfurt</a> mit Referenz</text>
+   <text transform="translate(35,230) rotate(45)">Anschluss an <a class="rev" xlink:href="ubahnnetz.svg">U-Bahn-Netz</a></text>
+   <text transform="translate(35,250) rotate(45)"><a class="rev" xlink:href="ubahnnetz.svg">Frankfurt</a> mit Referenz</text>
    <text transform="translate(35,265) rotate(45)" class="ab_bb">(und kurzem Ausschnitt der U-Bahn-Gleise)</text>
    <use xlink:href="#weg" transform="translate(30,285)"/>
    <text transform="translate(35,290) rotate(45)">Gleis gesperrt</text>

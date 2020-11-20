@@ -14,7 +14,7 @@ xmlns:svg="http://www.w3.org/2000/svg"
     <xsl:value-of select="normalize-space()" />
   </xsl:template>
   <!-- Copy style attribute as-is (no normalize-space()) -->
-  <xsl:template match="svg:style">
+  <xsl:template match="svg:style/text()|svg:text/text()|svg:tspan/text()">
     <xsl:copy-of select="."/>
   </xsl:template>
   <xsl:template match="@onclick|@onload|@onmousemove|@onmousemove"/>
@@ -27,9 +27,12 @@ xmlns:svg="http://www.w3.org/2000/svg"
   <xsl:template match="svg:g[@id='kilometrierungen_gruppen']"/>
   <xsl:template match="svg:g[@id='always_links']"/>
   <xsl:template match="svg:g[@id='frame']"/>
+  <xsl:template match="svg:rect[contains(@class, 'frame_inactive')]"/>
   <xsl:template match="svg:g[@id='ausbauprojekte']"/>
   <xsl:template match="svg:g[@id='kilometrierungen']"/>
   <xsl:template match="svg:g[@id='overlay_box']"/>
-  <xsl:template match="*[contains(@class, 'nowiki')]" />
-  <xsl:template match="svg:g[contains(@class, 'layer')]" />
+  <xsl:template match="*[contains(@class, 'nowiki')]"/>
+  <xsl:template match="svg:g[contains(@class, 'layer')]"/>
+  <xsl:template match="svg:*[contains(@class, 'hstdetails')]"/>
+  <xsl:template match="svg:desc[contains(@class, 'kmdata')]"/>
 </xsl:stylesheet>

@@ -178,13 +178,13 @@
   .nowiki { display:inline; }
  ]]>
  </style>
- <script type="application/ecmascript" href="./viewbox.js"></script>
- <script type="application/ecmascript" href="./deep_link.js"></script>
- <script type="application/ecmascript" href="./geplant.js"></script>
- <script type="application/ecmascript" href="./kilometer.js"></script>
- <script type="application/ecmascript" href="./hstdetails.js"></script>
- <script type="application/ecmascript" href="./selection.js"></script>
- <script type="application/ecmascript" href="./query.js"></script>
+ <script type="application/ecmascript" href="viewbox.js"/>
+ <script type="application/ecmascript" href="deep_link.js"/>
+ <script type="application/ecmascript" href="geplant.js"/>
+ <script type="application/ecmascript" href="kilometer.js"/>
+ <script type="application/ecmascript" href="hstdetails.js"/>
+ <script type="application/ecmascript" href="selection.js"/>
+ <script type="application/ecmascript" href="query.js"/>
  <defs id="defs_gradients">
   <linearGradient id="bs00" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#ff8080" /><stop offset="100%" stop-opacity="100%" stop-color="#ff8080" /></linearGradient>
   <linearGradient id="bs56" spreadMethod="pad" x1="1" x2="0" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-opacity="0%" stop-color="#80e0ff" /><stop offset="100%" stop-opacity="100%" stop-color="#80e0ff" /></linearGradient>
@@ -521,7 +521,7 @@
     <text class="ueberschrift" x="15" y="35">U-Bahn Frankfurt am Main</text>
    </a>
    <text class="unterschrift" x="15" y="60">Streckennetz (ohne Maßstab)</text>
-   <text class="stand"        x="15" y="80">Stand: <tspan class="stand_monat"/></tspan></text>
+   <text class="stand"        x="15" y="80">Stand: <tspan class="stand_monat"/><tspan class="stand_monat"/></text>
    <path d="M 20,125 c 0,10 10,10 10,20" class="strecke bb" />
    <path d="M 30,125 c 0,10 -10,10 -10,20" class="strecke bb" />
    <path d="M 20,145 c 0,5 5,5 5,10 v 15" class="strecke bb endet" />
@@ -569,7 +569,7 @@
    <text transform="translate(80,245)">Keine bauliche Trennung zur Straße</text>
    <text transform="translate(80,265)">Kreuzungsfreie Trassierung</text>
    <text transform="translate(80,285)">Tunnelportal</text>
-   <text transform="translate(80,310)">Anschluss an <a xlink:href="strassenbahnnetz.svg">Straßenbahn-Netz Frankfurt</a></text>
+   <text transform="translate(80,310)">Anschluss an <a class="rev" xlink:href="strassenbahnnetz.svg">Straßenbahn-Netz Frankfurt</a></text>
    <text transform="translate(80,325)">mit Referenz</text>
    <text transform="translate(80,340)" class="ab_bb">(und kurzem Ausschnitt der Straßenbahngleise)</text>
    <text transform="translate(80,360)" class="nowiki">Anschluss an DB-Netz</text>
@@ -2515,7 +2515,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    <path id="wa_ginnheim_tram1" class="tramg" d="M -20,9 l -7,7 q -3,3 -3,7 v 32 a 5,5 0,0,1 -5,5" />
    <path id="wa_ginnheim_tram2" class="tramg endet" d="M -35,70 a 15,15 0,0,0 15,-15 v -22 c 0,-5 -10,-5 -10,-10 v -13 c 0,-5 10,-5 10,-10 v -20" />
    <path id="wa_ginnheim_tram3" class="tramg faeng" d="M -30,-20 v 30" />
-   <a xlink:href="strassenbahnnetz.svg?viewbox=-289/-420/169/128">
+   <a class="viewboxlink" xlink:href="strassenbahnnetz.svg?viewbox=-289/-420/169/128">
      <text transform="translate(-17,6) rotate(-45) translate(-5,5)" class="ref te">A</text>
    </a>
   </g>
@@ -2552,7 +2552,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    <path class="tramg" d="M 60,5 a 10,10 0,0,0 10,10" />
    <path class="tramg" d="M 60,-7.5 v 40" />
    <path class="tramg" d="M 65,-7.5 v 40" />
-   <a xlink:href="strassenbahnnetz.svg?viewbox=141/-135/234/153">
+   <a class="viewboxlink" xlink:href="strassenbahnnetz.svg?viewbox=141/-135/234/153">
      <text transform="translate(25,15) translate(5,2.5)" class="ref">B</text>
    </a>
   </g>
@@ -2587,7 +2587,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    <path class="tramg" d="M 37,55 a 10,10 0,0,1 10,-10" />
    <path class="tramg" d="M 42,40 a 5,5 0,0,0 5,5" />
    <path class="tramg" d="M 37,40 a 10,10 0,0,0 10,10" />
-   <a xlink:href="strassenbahnnetz.svg?viewbox=-311/-201/316/118">
+   <a class="viewboxlink" xlink:href="strassenbahnnetz.svg?viewbox=-311/-201/316/118">
      <text transform="translate(40.5,12)" class="ref tm">C</text>
    </a>
   </g>
@@ -2600,7 +2600,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    <path class="tramg" d="M -20,75 h 20" />
    <path class="tramg" d="M -5,70 a 5,5 0,0,1 -5,-5" />
    <path class="tramg" d="M 0,70 h -20" />
-   <a xlink:href="strassenbahnnetz.svg?viewbox=645/-127/178/159">
+   <a class="viewboxlink" xlink:href="strassenbahnnetz.svg?viewbox=645/-127/178/159">
      <text transform="translate(-12.5,47)" class="ref tm">O</text>
    </a>
   </g>
@@ -4965,8 +4965,8 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
   </g>
  </g>
  <text class="te ab_bb" x="915" y="1938"><a id="plain_link" xlink:href="ubahnnetz.svg" class="rev">Permalink zu dieser Version</a></text>
- <text class="te ab_bb" x="915" y="1948"><a xlink:href="ubahnnetz.svg" class="rev">(<tspan class="hash">0000000000000000000000000000000000000000</tspan>)</a></text>
- <text class="te ab_bb" x="915" y="1958">© CC-BY-SA 4.0 or later 2009-<tspan id="stand_jahr">2020</tspan> Bjørn Bäuchle</text>
+ <text class="te ab_bb" x="915" y="1948"><a xlink:href="ubahnnetz.svg" class="rev">(<tspan class="hash"/>)</a></text>
+ <text class="te ab_bb" x="915" y="1958">© CC-BY-SA 4.0 or later 2009-<tspan class="stand_jahr"/> Bjørn Bäuchle</text>
  <g id="always_links" transform="translate(950, 1960)">
    <g id="make_view_link" class="always_links" transform="translate(-8,-24)" onclick="toggle_makeview(event)" >
     <title>
