@@ -31,25 +31,26 @@ xsltproc \
     false-pole.html \
     > false-pole.html.dist
 
-if [ -d /var/www/plan ]; then
+target_dir=/var/www/plan
+if [ -d $target_dir ]; then
     if [ $(which convert) ]; then
-        echo "1024"
-        convert -resize 1024x454 countries-ive-been-to.svg countries-ive-been-to-1024.png
-        echo "512"
-        convert -resize  512x227 countries-ive-been-to.svg countries-ive-been-to-512.png
-        echo "256"
-        convert -resize  256x113 countries-ive-been-to.svg countries-ive-been-to-256.png
-        echo "128"
-        convert -resize  128x57  countries-ive-been-to.svg countries-ive-been-to-128.png
+        for s in 128 256 512 1024; do
+            echo $s
+            convert \
+                -resize ${s}x${s} \
+                countries-ive-been-to.svg \
+                countries-ive-been-to-$s.png
+        done
         echo "Moving countries"
-        mv countries-ive-been-to*.png /var/www/plan/
+        mv countries-ive-been-to*.png $target_dir
     fi
-    cp countries-ive-been-to.svg  /var/www/plan/
+    cp countries-ive-been-to.svg  $target_dir
     echo "Moving Netzplaene"
-    mv ubahnnetz.svg.dist /var/www/plan/ubahnnetz.svg
-    mv strassenbahnnetz.svg.dist /var/www/plan/strassenbahnnetz.svg
-    mv false-pole.html.dist /var/www/plan/false-pole.html
-    cp shapes.js /var/www/plan/shapes.js
-    cp fahrrad.svg /var/www/plan/
-    cp oldrev.pl /var/www/plan/
+    for mvfile in $(./oldrev.py --show-whitelist) oldrev.py; do
+        if [ -f $mvfile.dist ]; then
+            mv $mvfile.dist $target_dir/$mvfile
+        elif [ -f $mvfile ]; then
+            cp $mvfile $target_dir
+        fi
+    done
 fi
