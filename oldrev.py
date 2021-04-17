@@ -188,10 +188,10 @@ def parse_cmdline():
     return result
 
 if __name__ == '__main__':
-    aruments = {}
+    arguments = {}
     if len(sys.argv) > 1:
-        aruments = parse_cmdline()
+        arguments = parse_cmdline()
     else:
         cgidata = cgi.FieldStorage()
-        aruments = {x: cgidata[x].value for x in cgidata}
-    process_request(aruments)
+        arguments = {x: cgidata[x].value for x in cgidata}
+    process_request(arguments)
