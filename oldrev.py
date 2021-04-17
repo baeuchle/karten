@@ -142,6 +142,17 @@ def print_content(rev, filename):
         print(transformed)
         return errors is not None
 
+def translate_revision(oldrev: str) -> str:
+    with open('rev_translate', 'r') as rt:
+        all_revs = rt.readlines()
+        for line in all_revs:
+            pair = line.split(' ')
+            if len(pair) < 2:
+                continue
+            if pair[0] == oldrev:
+                return pair[1]
+    return oldrev
+
 def process_request(data):
     if not check_parameters(data):
         return False
@@ -149,9 +160,14 @@ def process_request(data):
         return False
     if not check_revision(data['rev'], data['file']):
         return False
-    result = print_content(data['rev'], data['file'])
+    revision = data['rev']
+    try:
+        revision = translate_revision(data['rev'])
+    except FileNotFoundError:
+        pass
+    result = print_content(revision, data['file'])
     if not result and data['file'] == 'straßenbahnnetz.svg':
-        return print_content(data['rev'], 'strassenbahnnetz.svg')
+        return print_content(revision, 'strassenbahnnetz.svg')
     return result
 
 def parse_cmdline():
