@@ -2530,10 +2530,13 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
   <path id="gw_niederursel" d="M -178,236 c -7,-7 0,-14 -7,-21" />
   <path id="gw_weisskirchen" d="M -250,164 c -7,-7 0,-14 -7,-21" />
   <g id="gueterverwaltung_oberursel">
-   <path id="g556a53" class="endet" d="M -225,56 h 70"/>
+   <path id="g556a53" d="M -135,66 c -10,0 -10,-10 -20,-10 h -70"/>
    <path id="g556w33w43" d="M -205,66 c 10,0 10,-10 20,-10" />
-   <path id="g556a54" class="endet" d="M -225,66 h 70" />
-   <use xlink:href="#weg" transform="translate(-195,66)" />
+   <path id="g556a54" d="M -225,66 h 90" />
+   <path id="g556a11" class="endet" d="M -135,66 q 4,0 7,-3 l 4,-4 q 3,-3 7,-3 h 30" />
+   <path id="g556a12" class="endet" d="M -128,63 q 3,-3 7,-3 h 34" />
+   <path id="g556a13" class="endet" d="M -135,66 h 4 c 5,0 5,-2 10,-2 h 34" />
+   <path id="g556a14" class="endet" d="M -131,66 c 5,0 5,2 10,2 h 34" />
   </g>
   <path id="gw_gloecknerwiese" d="M -340,-134 c -10,0 -10,-10 -20,-10" />
   <path id="gw_frankfurterberg" class="frankfurter_berg geplant" d="M 430,435 c 0,-10 10,-10 10,-20 c 0,-10 -10,-10 -10,-20" />
@@ -3951,6 +3954,10 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <g onclick="toggle_details(this)">
      <use xlink:href="#drei_ausen" transform="rotate(90)" />
      <use xlink:href="#vierabstell" transform="translate(120,-5) rotate(-90)" />
+     <use xlink:href="#vierabstell" transform="translate(185,-5) rotate(-90)" />
+     <use xlink:href="#vierabstell" transform="translate(185,-1) rotate(-90)" />
+     <use xlink:href="#vierabstell" transform="translate(185,3) rotate(-90)" />
+     <use xlink:href="#vierabstell" transform="translate(185,7) rotate(-90)" />
     </g>
     <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Oberursel_(Taunus)">
      <text x="0" y="-37" class="hstdetails">(OU, 556)</text>
@@ -3959,6 +3966,12 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     </a>
     <desc class="kmdata">km 22,75|as|2|r|-30</desc>
     <g class="hstdetails">
+      <g class="bgleisnummer">
+        <g transform="translate(209,-4)"><circle cy="-1" r="2" /><text>11</text></g>
+        <g transform="translate(209,0)"><circle cy="-1" r="2" /><text>12</text></g>
+        <g transform="translate(209,4)"><circle cy="-1" r="2" /><text>13</text></g>
+        <g transform="translate(209,8)"><circle cy="-1" r="2" /><text>14</text></g>
+      </g>
       <g id="sig555V21" transform="translate(-90,-5) rotate(-90) " onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
         <use xlink:href="#signalplatz" />
