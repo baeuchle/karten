@@ -2539,10 +2539,12 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    <path id="g556a14" class="endet" d="M -131,66 c 5,0 5,2 10,2 h 34" />
   </g>
   <path id="gw_gloecknerwiese" d="M -340,-134 c -10,0 -10,-10 -20,-10" />
-  <path id="gw_frankfurterberg" class="frankfurter_berg geplant" d="M 430,435 c 0,-10 10,-10 10,-20 c 0,-10 -10,-10 -10,-20" />
+  <path id="gw_frankfurterberg" class="frankfurter_berg geplant" d="M 430,390 c 0,-10 10,-10 10,-20 c 0,-10 -10,-10 -10,-20" />
   <g id="wa_preungesheim" transform="translate(430,665)">
-   <path id="wa_preungesheim_1" d="M 10,30 c 0,-10 -10,-10 -10,-20 m 0,-10 c 0,-10 10,-10 10,-20" />
-   <path id="wa_preungesheim_2" class="endet" d="M 0,10 v -65" />
+   <path id="g632_gw" d="M 10,30 c 0,-10 -10,-10 -10,-20 m 0,-10 c 0,-10 10,-10 10,-20" />
+   <path id="g632_a3" class="endet" d="M 0,10 v -65" />
+   <path id="g632_a13" class="endet frankfurter_berg" d="M 10,-55 c 0,-10 -10,-10 -10,-20 v -25" />
+   <path id="g632_gw13" class="frankfurter_berg" d="M -10,-55 c 0,-10 10,-10 10,-20" />
   </g>
   <path id="gw_sigmund_freud_straße" d="M 430,770 c 0,-10 10,-10 10,-20" />
   <path id="gw_hauptfriedhof" d="M 270,1275 c 0,-10 10,-10 10,-20" />
@@ -2850,8 +2852,8 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    <path id="europaviertel_4.2" class="geplant verlaengerung_europaviertel" d="M -665,1575 c 10,0 10,10 20,10 h 45" />
    <path id="preungesheim_1" class="endet" d="M 280,1515 V 1070 a 10,10 0,0,1 10,-10 h 130 a 20,20 0,0,0 20,-20 v -430" />
    <path id="preungesheim_2" class="faeng" d="M 420,610 v 45 c 0,10 10,10 10,20 v 365 a 10,10 0,0,1 -10,10 h -130 a 20,20 0,0,0 -20,20 V 1515" />
-   <path id="frankfurterberg_1" class="geplant frankfurter_berg endet" d="M 440,610 v -250" />
-   <path id="frankfurterberg_2" class="geplant frankfurter_berg faeng" d="M 430,360 v 210 c 0,20 -10,20 -10,40" />
+   <path id="frankfurterberg_1" class="geplant frankfurter_berg endet" d="M 440,610 v -295" />
+   <path id="frankfurterberg_2" class="geplant frankfurter_berg faeng" d="M 430,315 v 210 c 0,20 -10,20 -10,40 v 45" />
    <path id="heerstrasse_1" class="faeng" d="M -475,625 v 435 q 0,24 18,42 l 123,123" />
    <path id="heerstrasse_2" class="endet" d="M -327,1218 l -123,-123 q -15,-15 -15,-35 v -435" />
    <path id="u6_1" class="geplant rtw" d="M -465,625 v -20 a 20,20 0,0,1 20,-20" />
@@ -4170,6 +4172,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <g onclick="toggle_details(this)">
        <use id="bstg_preungesheim_3" xlink:href="#bstg_dreiw" transform="translate(+5,0)" />
        <use xlink:href="#drei_mitte" transform="translate(-10,0)" />
+       <use id="g632_13" class="frankfurter_berg" xlink:href="#dreiabstell" transform="translate(-5,-57)" />
      </g>
      <text x="15" y="5">Preungesheim<tspan class="hstdetails"> (PH, 632)</tspan></text>
      <desc class="kmdata">km 15,47|bs|2|l|30</desc>
@@ -4177,6 +4180,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
        <use xlink:href="#gleis2" transform="translate(-15,0)" />
        <use xlink:href="#gleis3" transform="translate(-5,0)" />
        <use xlink:href="#gleis1" transform="translate(5,0)" />
+       <g class="bgleisnummer frankfurter_berg" transform="translate(-5,-60)"><circle cy="-1" r="2" /><text>13</text></g>
        <g id="sig623Y10" transform="translate(5,80)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 c 10,0 38,-5 38,-15" />
          <use xlink:href="#signalplatz" />
@@ -4209,17 +4213,17 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
        </g>
      </g>
    </g>
-   <g id="hst633" transform="translate(435,550)" class="geplant frankfurter_berg">
+   <g id="hst633" transform="translate(435,505)" class="geplant frankfurter_berg">
      <use xlink:href="#drei_ausen" />
      <text x="-15" y="5" class="te">August-Schanz-Straße</text>
      <desc class="kmdata">km 16,15|bs|2|l|30</desc>
    </g>
-   <g id="hst634" transform="translate(435,470)" class="geplant frankfurter_berg">
+   <g id="hst634" transform="translate(435,425)" class="geplant frankfurter_berg">
      <use xlink:href="#drei_ausen" />
      <text x="-15" y="5" class="te">Berkersheimer Weg</text>
      <desc class="kmdata">km 16,65|bs|2|l|30</desc>
    </g>
-   <g id="hst635" transform="translate(435,380)" class="geplant frankfurter_berg te">
+   <g id="hst635" transform="translate(435,335)" class="geplant frankfurter_berg te">
      <use xlink:href="#drei_mitte" />
      <text x="-15" y="5">Frankfurter Berg</text>
      <desc class="kmdata">km 17,00|bs|2|l|30</desc>
@@ -4923,8 +4927,8 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    <g><desc class="kmdata">km 13,15|bs|2|r|-30|translate(275,1055)</desc></g>
    <g><desc class="kmdata">km 15,50|bs|3|r|-45|translate(435,610)</desc></g>
    <g class="frankfurter_berg geplant">
-    <path class="kilometrierung" d="M 435,610 v -250" />
-    <g><desc class="kmdata">km 17,05|bs|3|r|-30|translate(435,360)</desc></g>
+    <path class="kilometrierung" d="M 435,610 v -295" />
+    <g><desc class="kmdata">km 17,05|bs|3|r|-30|translate(435,315)</desc></g>
    </g>
   </g>
   <g class="b2_strecke">
