@@ -1522,7 +1522,7 @@
   </g>
   <g id="kilometrierungen" transform="translate(-865,-355)">
    <rect class="box" width="400" height="204" />
-   <text class="unterschrift" x="20" y="25">Kilometrierungen anzeigen</text>
+   <text class="unterschrift" x="20" y="25">Entfernungen anzeigen</text>
    <text class="boxtext" x="25" y="40">Quelle: Messung auf <a xlink:href="https://openstreetmap.org">OpenStreetMap</a>.</text>
    <text class="boxtext" x="20" y="57">
     <tspan id="s00_strecke_tx" onclick="kilometer('s00_strecke')">00/60: Altstadt - Fechenheim</tspan>

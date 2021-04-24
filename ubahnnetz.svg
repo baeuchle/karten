@@ -97,6 +97,9 @@
   #punkt3 rect { stroke:none; fill:#008000; }
   /* This is needed in JS */
   .label { fill:#fff; fill-opacity:.9; stroke-width:1px; stroke:#000; }
+  .kmfixed { stroke:#080; fill: #cfc; }
+  .kminterpolation { stroke: #080; fill: #ff8; }
+  .kmguess { stroke: #f00; fill: #fee; }
   desc.kmdata { display: none; }
   /* Text-Helfer */
   .ta { text-anchor:start; }
@@ -637,8 +640,8 @@
    <text class="ab_bb"      x="20" y="310">Status: <a xlink:href="https://rp-darmstadt.hessen.de/pressemitteilungen/rp-leitet-anhörung-für-regionaltangente-west-ein-abschnitt-nord">Planfeststellung beantragt</a> (am 18.12.2017)</text>
   </g>
   <g id="kilometrierungen" transform="translate(-100,-169)">
-   <rect class="box" width="400" height="160" />
-   <text class="unterschrift" x="20" y="25">Kilometrierungen anzeigen</text>
+   <rect class="box" width="470" height="160" />
+   <text class="unterschrift" x="20" y="25">Kilometrierungen/Entfernungen anzeigen</text>
    <text class="boxtext" x="20" y="45">
     <tspan id="as_strecke_tx" onclick="kilometer('as_strecke')">
       <title>
@@ -646,7 +649,7 @@ A-Stammstrecke: Südbahnhof - Weißer Stein
 A2: (Weißer Stein-) Heddernheim - Bad Homburg
 A3: (Weißer Stein-) Dreieck Nordwest - Oberursel
       </title>
-      A-Stamm + A2,A3</tspan>
+      A + A2,A3</tspan>
     •
     <tspan id="a1_strecke_tx" onclick="kilometer('a1_strecke')">
       <title>
@@ -668,21 +671,21 @@ B1: Konstablerwache - Preungesheim (-Frankfurter Berg)
 B2: Konstablerwache - Seckbacher Landstraße
 54: BB Ost (Seckbacher Landstraße - Schäfflestraße)
       </title>
-    B2 + 54
+    B2 + 54 (BB Ost)
     </tspan>
    </text>
    <text class="boxtext" x="20" y="75">
     <tspan id="cs_strecke_tx" onclick="kilometer('cs_strecke')">
       <title>
 C-Stammstrecke: Ostbahnhof - Industriehof
-Strecke 20: Hauptbahnhof - Hausen
-Strecke 24: Industriehof - Heerstraße (-Gewerbegebiet Praunheim/StZW)
-      </title>C + 20,24 (West)</tspan>
+Strecke 20: (Straßenbahn: Hauptbahnhof -) Industriehof - Hausen
+Strecke 24: Industriehof - Heerstraße (- Gewerbegebiet Praunheim/StZW)
+      </title>C + 20,24 (Praunheim, Hausen)</tspan>
     •
     <tspan id="c1_strecke_tx" onclick="kilometer('c1_strecke')"><title>
-C1: Zoo-Abzweig Johanna-Tesch-Platz
-62: Ratswegkreisel - Enkheim (Kilometrierung ab Hauptbahnhof)
-    </title>C1 + 62 (Enkheim)</tspan>
+C1: Zoo-Enkheim
+62: (Straßenbahn: Ratswegkreisel -) Johanna-Tesch-Platz - Enkheim (Kilometrierung ab Hauptbahnhof)
+    </title>C1 (Enkheim)</tspan>
    </text>
    <text class="boxtext" x="20" y="90">
     <tspan id="ds_strecke_tx" onclick="kilometer('ds_strecke')">
@@ -692,16 +695,38 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
       </title>D-Strecke
     </tspan>
    </text>
-   <use xlink:href="#punkt1" transform="translate(105,116) rotate(-90)" /><text x="115" y="120">Eichpunkt für Kilometrierung</text>
-   <use xlink:href="#punkt2" transform="translate(105,131) rotate(-90)" /><text x="115" y="135">Kilometrierungspunkt</text>
-   <use xlink:href="#punkt3" transform="translate(105,146) rotate(-90)" /><text x="115" y="150">Strecken-/Gleisende</text>
-   <g transform="translate(250,35)">
-   <rect width="140" height="72" rx="5" ry="5" class="box info" />
-   <text x="4" y="18">Streckenname links</text>
-   <text x="4" y="30">anklicken, um</text>
-   <text x="4" y="42">Kilometrierungen</text>
-   <text x="4" y="54">anzuzeigen (Hover</text>
-   <text x="4" y="66">für mehr Info)</text>
+   <g id="kmlegende" transform="translate(70,116)">
+     <use xlink:href="#punkt1" transform="translate(0,0)  rotate(-90) scale(.7)" /><text x="5" y="4">Eichpunkt für Kilometrierung</text>
+     <use xlink:href="#punkt2" transform="translate(0,15) rotate(-90) scale(.7)" /><text x="5" y="19">Kilometrierungspunkt</text>
+     <use xlink:href="#punkt3" transform="translate(0,30) rotate(-90) scale(.7)" /><text x="5" y="34">Strecken-/Gleisende</text>
+   </g>
+   <g transform="translate(250,116)">
+     <g>
+       <title>Dieser Kilometrierungspunkt kommt aus einer gesicherten Quelle:
+Pläne im Planfeststellungsverfahren, Kilometrierungsschild oder andere offizielle Quellen</title>
+       <desc class="kmdata">km 1,23||0|l:f|0</desc>
+       <text x="62" y="4">Gesicherte Quelle</text>
+     </g>
+     <g transform="translate(0,15)">
+       <title>Dieser Kilometrierungspunkt ist aus den gesichert bekannten Daten auf der gleichen Strecke extrapoliert.
+Die Entfernungen zu den bekannten Daten sind dabei aus OpenStreetMap gemessen.</title>
+       <desc class="kmdata">km 5,22||0|l:i|0</desc>
+       <text x="62" y="4">Extrapolation mit <a xlink:href="https://openstreetmap.org">OSM</a></text>
+     </g>
+     <g transform="translate(0,30)">
+       <title>Dieser Kilometrierungspunkt ist aus der Streckenlänge, gemessen mit OpenStreetMap, generiert.
+Dabei wurde eine sinnvolle Fortführung einer anderen Strecke gewählt.</title>
+       <desc class="kmdata">km 21,1||0|l:g|0</desc>
+       <text x="62" y="4">Beliebige Fortsetzung</text>
+     </g>
+   </g>
+   <g transform="translate(320,35)">
+   <rect width="140" height="67" rx="5" ry="5" class="box info" />
+   <text x="4" y="15">Streckenname links</text>
+   <text x="4" y="27">anklicken, um</text>
+   <text x="4" y="39">Kilometrierungen</text>
+   <text x="4" y="51">anzuzeigen (Hover</text>
+   <text x="4" y="63">für mehr Info)</text>
    </g>
   </g>
  </g>
@@ -735,14 +760,14 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <use xlink:href="#bstg_mitte" transform="rotate(90)" />
     <use xlink:href="#bau" />
     <text x="0" y="-15">Güterplatz</text>
-    <desc class="kmdata">km 6,95|bs|2|r|210</desc>
+    <desc class="kmdata">km 6,95|bs|2|r:i|210</desc>
    </g>
    <g id="hst611" transform="translate(100,1705)" class="te">
     <use xlink:href="#bstg_ausen" transform="rotate(90)" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Willy-Brandt-Platz">
      <text y="20" class="hstdetails">(D-Ebene: WBD, 611)</text>
     </a>
-    <desc class="kmdata">km 8,70|bs|2|r|-30</desc>
+    <desc class="kmdata">km 8,70|bs|2|r:f|-30</desc>
     <g class="hstdetails">
       <g id="sig611H11" transform="translate(30,-5) rotate(-90)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 C 10,0 10,5 20,5" />
@@ -777,7 +802,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="0" y="20">Dom/Römer</text>
      <text y="30" class="hstdetails">(RM, 612)</text>
     </a>
-    <desc class="kmdata">km 9,30|bs|2|r|30</desc>
+    <desc class="kmdata">km 9,30|bs|2|r:f|30</desc>
     <g class="hstdetails">
       <g id="sig612H11" transform="translate(30,-5) rotate(-90)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -877,8 +902,8 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <path class="tor" d="M 20,-20 h 10" />
     <path class="tor" d="M 20,20 h 10" />
     <use xlink:href="#weg" transform="translate(25,-25)" />
-     <desc class="kmdata">km 10,0|ds|1|l|30|translate(20,0)</desc>
-     <desc class="kmdata">km 7,75|bs|2|l|30|translate(10,0)</desc>
+     <desc class="kmdata">km 10,0|ds|1|l:f|30|translate(20,0)</desc>
+     <desc class="kmdata">km 7,75|bs|2|l:f|30|translate(10,0)</desc>
      <g class="hstdetails">
        <use xlink:href="#gleis4" transform="translate(-5,0)" />
        <use xlink:href="#gleis2" transform="translate(5,0)" />
@@ -992,7 +1017,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Süd">
      <text x="10" y="5">Südbahnhof<tspan class="hstdetails"> (SB, 913)</tspan></text>
     </a>
-    <desc class="kmdata">km 7,90|as|2|l|30</desc>
+    <desc class="kmdata">km 7,90|as|2|l:f|30</desc>
     <g class="hstdetails">
       <g id="sig913H12" transform="translate(5,37)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 60,15 c 0,10 -58,10 -58,-15" />
@@ -1055,7 +1080,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Schweizer_Platz">
      <text x="10" y="5">Schweizer Platz <tspan class="hstdetails">(SP, 912)</tspan></text>
     </a>
-    <desc class="kmdata">km 8,50|as|2|l|30</desc>
+    <desc class="kmdata">km 8,50|as|2|l:f|30</desc>
     <g class="hstdetails">
       <g id="sig912H11" transform="translate(5,42)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -1089,7 +1114,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="-15" y="-5">Willy-Brandt-Platz</text>
      <text x="-15" y="30" class="hstdetails">(C-Ebene: WBC, 911)</text>
     </a>
-    <desc class="kmdata">km 9,40|as|2|l|30</desc>
+    <desc class="kmdata">km 9,40|as|2|l:f|30</desc>
     <g class="hstdetails">
       <g id="sig911H11" transform="translate(5,42)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -1129,7 +1154,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="-10" y="-40">Hauptwache</text>
      <text x="35" y="15" class="ta hstdetails">(D-Ebene: HWD, 511)</text>
     </a>
-    <desc class="kmdata">km 10,0|as|1|l|30</desc>
+    <desc class="kmdata">km 10,0|as|1|l:f|30</desc>
     <g class="hstdetails ta">
       <g id="sig511H11" transform="translate(5,42)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -1167,7 +1192,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="-15" y="5">Eschenheimer Tor</text>
      <text x="-15" y="15" class="hstdetails">(ET, 512)</text>
     </a>
-    <desc class="kmdata">km 10,4|as|2|r|-30</desc>
+    <desc class="kmdata">km 10,4|as|2|r:f|-30</desc>
     <g class="hstdetails">
       <g id="sig512H14" transform="translate(5,-17)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 C 2,5 40,5 40,0" />
@@ -1201,7 +1226,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="-15" y="5">Grüneburgweg</text>
      <text x="-15" y="15" class="hstdetails">(GW, 513)</text>
     </a>
-    <desc class="kmdata">km 11,1|as|2|l|30</desc>
+    <desc class="kmdata">km 11,1|as|2|l:f|30</desc>
     <g class="hstdetails">
       <g id="sig513H14" transform="translate(5,-17)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -1223,7 +1248,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="-15" y="5">Holzhausenstraße</text>
      <text x="-15" y="15" class="hstdetails">(HO, 514)</text>
     </a>
-    <desc class="kmdata">km 11,5|as|2|l|30</desc>
+    <desc class="kmdata">km 11,5|as|2|l:f|30</desc>
     <g class="hstdetails">
       <g id="sig514H14" transform="translate(5,-17)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -1250,7 +1275,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="-15" y="13">Polizeipräsidium</text>
      <text x="-15" y="23" class="hstdetails">(MI, 515)</text>
     </a>
-    <desc class="kmdata">km 12,1|as|2|l|30</desc>
+    <desc class="kmdata">km 12,1|as|2|l:f|30</desc>
     <g class="hstdetails">
       <g id="sig515H14" transform="translate(5,-17)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 40,0 c 0,5 -38,5 -38,0" />
@@ -1290,7 +1315,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Festhalle/Messe">
      <text x="10" y="5">Festhalle/Messe<tspan class="hstdetails"> (MS, 251)</tspan></text>
     </a>
-    <desc class="kmdata">km 10,7|as|2|l|30</desc>
+    <desc class="kmdata">km 10,7|ds|2|l:f|30</desc>
     <g class="hstdetails">
       <g id="sig251H11" transform="translate(5,35)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 C 2,30 40,30 40,20" />
@@ -1351,7 +1376,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
       <use id="g411G6" xlink:href="#vierabstell" transform="translate(0,35)" />
       <use id="g411G7" xlink:href="#vierabstell" transform="translate(-2.5,-80)" />
     </g>
-    <desc class="kmdata">km 11,7|ds|2|l|30</desc>
+    <desc class="kmdata">km 11,7|ds|2|l:f|30</desc>
     <g class="hstdetails">
       <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Bockenheimer_Warte">
        <text x="-10" y="6" class="hstdetails te">(D-Ebene: BWD, 411)</text>
@@ -1438,7 +1463,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Ost">
      <text x="5.5" y="-5.5">Ostbahnhof<tspan class="hstdetails"> (OB, 851)</tspan></text>
     </a>
-    <desc class="kmdata">km 7,90|cs|2|r|210</desc>
+    <desc class="kmdata">km 7,90|cs|2|r:f|210</desc>
     <g class="hstdetails">
       <g id="sig812V11" transform="translate(-28.5,-35.5) rotate(-45)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 C 2,-5 10,-20 20,-20" />
@@ -1512,7 +1537,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Kirchplatz_(Frankfurt_am_Main)">
      <text transform="rotate(45) translate(5.5,-5.5)">Kirchplatz<tspan class="hstdetails"> (KI, 316)</tspan></text>
     </a>
-    <desc class="kmdata">km 13,3|cs|2|l|30|rotate(45)</desc>
+    <desc class="kmdata">km 13,3|cs|2|l:f|30|rotate(45)</desc>
     <g class="hstdetails">
        <g id="sig316H11" transform="rotate(45) translate(32.5,50)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 H 20" />
@@ -1559,7 +1584,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="-12" y="5">Leipziger Straße</text>
      <text x="-12" y="15" class="hstdetails">(LE, 315)</text>
     </a>
-    <desc class="kmdata">km 12,6|cs|2|l|30</desc>
+    <desc class="kmdata">km 12,6|cs|2|l:f|30</desc>
     <g class="hstdetails">
       <use xlink:href="#ebened" transform="translate(-1,5.00)" />
       <use xlink:href="#ebenec" transform="translate(-6,1.25)" />
@@ -1598,7 +1623,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
        <text x="10" y="17">Bockenheimer Warte</text>
        <text x="10" y="27" class="hstdetails">(C-Ebene: BWC, 314)</text>
      </a>
-     <desc class="kmdata">km 12,0|cs|2|l|-120</desc>
+     <desc class="kmdata">km 12,0|cs|2|l:f|-120</desc>
      <g class="hstdetails">
        <g transform="translate(75,11)" class="bgleisnummer"><circle cy="-1" r="2" /><text>3</text></g>
        <g id="sig313V21" transform="translate(50,5) rotate(90)" onmouseover="highlight(this)">
@@ -1677,7 +1702,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text transform="rotate(45) translate(-14.5,6.5)">Westend</text>
      <text transform="rotate(45) translate(-14.5,16.5)" class="hstdetails">(WD, 313)</text>
     </a>
-    <desc class="kmdata">km 11,3|cs|2|l|30|rotate(45)</desc>
+    <desc class="kmdata">km 11,3|cs|2|l:f|30|rotate(45)</desc>
     <g class="hstdetails">
       <g id="sig313H11" transform="translate(5,30)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -1711,7 +1736,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text transform="rotate(45) translate(-14.5,6.5)">Alte Oper</text>
      <text transform="rotate(45) translate(-14.5,16.5)" class="hstdetails">(AO, 312)</text>
     </a>
-    <desc class="kmdata">km 10,65|cs|2|l|30|rotate(45)</desc>
+    <desc class="kmdata">km 10,65|cs|2|l:f|30|rotate(45)</desc>
     <g class="hstdetails">
       <g id="sig312H11" transform="translate(5,35)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 C 2,5 40,5 40,0" />
@@ -1770,7 +1795,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
        <use xlink:href="#sbahn" transform="translate(0,5) rotate(-90) translate(0,-35)" />
        <use xlink:href="#bahnsteig" transform="translate(0,15) rotate(90)" />
      </g>
-     <desc class="kmdata">km 10,0|cs|1|l|30</desc>
+     <desc class="kmdata">km 10,0|cs|1|l:f|30</desc>
      <g class="hstdetails">
        <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Hauptwache">
          <text transform="translate(35,30)" class="ta">(C-Ebene: HWC, 311)</text>
@@ -1808,7 +1833,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
       <use xlink:href="#bahnsteig" transform="translate(0,-15) rotate(90)" />
       <use xlink:href="#bahnsteig" transform="translate(0,15) rotate(-90)" />
     </g>
-    <desc class="kmdata">km 9,50|cs|2|r|240</desc>
+    <desc class="kmdata">km 9,50|cs|2|r:f|240</desc>
     <g class="hstdetails">
       <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Frankfurt_(Main)_Konstablerwache">
         <text transform="translate(5,30)" class="te">(D-Ebene: KWD, 811)</text>
@@ -1867,7 +1892,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="0" y="30" class="tm">Zoo</text>
      <text x="0" y="40" class="tm hstdetails">(ZO, 812)</text>
     </a>
-    <desc class="kmdata">km 8,60|cs|2|r|210|translate(0,10)</desc>
+    <desc class="kmdata">km 8,60|cs|2|r:f|210|translate(0,10)</desc>
     <g class="hstdetails">
       <g transform="translate(-95,11)" class="bgleisnummer"><circle cy="-1" r="2" /><text>61</text></g>
       <g id="sig811V11" transform="translate(-78,5) rotate(-90)" onmouseover="highlight(this)">
@@ -1955,7 +1980,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Habsburgerallee">
      <text x="9.5" y="15.5">Habsburgerallee<tspan class="hstdetails"> (HA, 813)</tspan></text>
     </a>
-    <desc class="kmdata">km 0,65→\nkm 1,10←|c1|2|l|75</desc>
+    <desc class="kmdata">km 0,65→\nkm 1,10←|c1|2|l:f|75</desc>
     <g class="hstdetails">
       <g id="sig812V31" transform="translate(-40.5,33.5) rotate(-135)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 40" />
@@ -1994,7 +2019,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Parlamentsplatz">
      <text x="4.5" y="19.5">Parlamentsplatz<tspan class="hstdetails"> (PP, 814)</tspan></text>
     </a>
-    <desc class="kmdata">km 1,20→\nkm 1,65←|c1|2|l|85</desc>
+    <desc class="kmdata">km 1,20→\nkm 1,65←|c1|2|l:f|85</desc>
     <g class="hstdetails">
       <g id="sig814H11" transform="translate(17.5,-24.5) rotate(-135)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -2029,7 +2054,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="8" y="25">Festplatz</text>
      <text x="8" y="35" class="hstdetails">(EH, 815)</text>
     </a>
-    <desc class="kmdata">km 1,80→\nkm 2,20←|c1|2|l|135</desc>
+    <desc class="kmdata">km 1,80→\nkm 2,20←|c1|2|l:f|135</desc>
     <g class="hstdetails">
       <g id="sig815H11" transform="translate(17.5,-24.5) rotate(-135)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 C 2,5 2,10 20,10" />
@@ -2110,7 +2135,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="10" y="-20">Konstablerwache</text>
      <text x="-20" y="30" class="hstdetails te">(C-Ebene: KWC, 613)</text>
     </a>
-    <desc class="kmdata">km 10,0|bs|1|l|150</desc>
+    <desc class="kmdata">km 10,0|bs|1|l:f|150</desc>
     <g class="hstdetails">
       <use xlink:href="#gleis1" transform="translate(-15,0)" />
       <use xlink:href="#gleis2" transform="translate(5,0)" />
@@ -2217,7 +2242,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Merianplatz">
      <text x="12" y="11">Merianplatz<tspan class="hstdetails"> (ME, 711)</tspan></text>
     </a>
-    <desc class="kmdata">km 10,9|b2|2|r|15|translate(-1.5,-1.5)</desc>
+    <desc class="kmdata">km 10,9|b2|2|r:f|15|translate(-1.5,-1.5)</desc>
     <g class="hstdetails">
       <use xlink:href="#ebened" transform="translate(-3.5,-2.5)" />
       <use xlink:href="#ebenec" transform="translate(1.5,-1.5)" />
@@ -2258,7 +2283,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_H%C3%B6henstra%C3%9Fe">
      <text x="12" y="11">Höhenstraße<tspan class="hstdetails"> (HS, 712)</tspan></text>
     </a>
-    <desc class="kmdata">km 11,45|b2|2|r|15|translate(-1.5,-1.5)</desc>
+    <desc class="kmdata">km 11,45|b2|2|r:f|15|translate(-1.5,-1.5)</desc>
     <g class="hstdetails">
       <use xlink:href="#ebened" transform="translate(-3.5,-2.5)" />
       <use xlink:href="#ebenec" transform="translate(1.5,-1.5)" />
@@ -2294,7 +2319,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Bornheim_Mitte">
      <text x="12" y="11">Bornheim Mitte<tspan class="hstdetails"> (BM, 713)</tspan></text>
     </a>
-    <desc class="kmdata">km 12,0|b2|2|r|15|translate(0.5,-1.5)</desc>
+    <desc class="kmdata">km 12,0|b2|2|r:f|15|translate(0.5,-1.5)</desc>
     <g class="hstdetails">
       <use xlink:href="#ebened" transform="translate(-3.5,-2.5)" />
       <use xlink:href="#ebenec" transform="translate(1.5,-1.5)" />
@@ -2344,7 +2369,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
        <text x="10" y="-2">Seckbacher</text>
        <text x="10" y="14">Landstraße<tspan class="hstdetails"> (SL, 714)</tspan></text>
      </a>
-     <desc class="kmdata">km 12,9|b2|2|l|30</desc>
+     <desc class="kmdata">km 12,9|b2|2|l:f|30</desc>
      <g class="hstdetails">
        <g>
          <g transform="translate(-10,-65)" class="bgleisnummer"><circle cy="-1" r="2" /><text>15</text></g>
@@ -2459,7 +2484,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
  <g id="tunnelrampen">
   <g id="rampe_humserstrasse" transform="translate(115,1130)" class="te">
     <use xlink:href="#tunnelrampe" />
-    <desc class="kmdata">km 12,4|as|2|r|-90</desc>
+    <desc class="kmdata">km 12,4|as|2|r:i|-90</desc>
   </g>
   <g id="rampe_hedd_ldstr" transform="translate(-125,561)">
     <use xlink:href="#tunnelrampe" />
@@ -2470,34 +2495,34 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
   <use id="rampe_gonzenheim" class="geplant verlaengerung_badhomburg" xlink:href="#tunnelrampe" transform="translate(510,61) rotate(180)" />
   <g id="rampe_badhomburg" class="geplant verlaengerung_badhomburg" transform="translate(510,-4)">
     <use xlink:href="#tunnelrampe" transform="rotate(0)" />
-    <desc class="kmdata">km 24,45|as|2|r|-60</desc>
+    <desc class="kmdata">km 24,45|as|2|r:i|-60</desc>
   </g>
   <g id="rampe_scheffeleck" transform="translate(275,1515)">
     <use xlink:href="#tunnelrampe" />
-    <desc class="kmdata">km 10,45|bs|2|r|-120</desc>
+    <desc class="kmdata">km 10,45|bs|2|r:i|-120</desc>
   </g>
   <g class="verlaengerung_europaviertel geplant">
     <g id="rampe_gueterplatz" transform="translate(-360,1580)">
       <use xlink:href="#tunnelrampe" transform="rotate(-90)" />
-      <desc class="kmdata">km 6,35|bs|2|r|-30</desc>
+      <desc class="kmdata">km 6,35|bs|2|r:i|-30</desc>
     </g>
     <g id="rampe_europapark_ost" transform="translate(-540,1580)">
       <use xlink:href="#tunnelrampe" transform="rotate(90)" />
-      <desc class="kmdata">km 5,50|bs|2|r|-30</desc>
+      <desc class="kmdata">km 5,50|bs|2|r:i|-30</desc>
     </g>
     <g id="rampe_europapark_west" transform="translate(-600,1580)">
       <use xlink:href="#tunnelrampe" transform="rotate(-90)" />
-      <desc class="kmdata">km 5,05|bs|2|r|210</desc>
+      <desc class="kmdata">km 5,05|bs|2|r:i|210</desc>
     </g>
   </g>
   <use id="rampe_ost" xlink:href="#tunnelrampe" transform="translate(600,1170) rotate(90)" />
   <g id="rampe_industriehof" transform="translate(-330.5,1221.5)">
     <use xlink:href="#tunnelrampe" transform="rotate(-45)" />
-    <desc class="kmdata">km 13,8|cs|2|l|30</desc>
+    <desc class="kmdata">km 13,8|cs|2|l:i|30</desc>
   </g>
   <g id="rampe_eissporthalle" transform="translate(716,1363)">
     <use xlink:href="#tunnelrampe" transform="rotate(90)" />
-    <desc class="kmdata">km 2,10→\nkm 2,40←|c1|2|r|-90</desc>
+    <desc class="kmdata">km 2,10→\nkm 2,40←|c1|2|r:i|-90</desc>
   </g>
   <use id="rampe_ginnheimerkurve_2b" class="ginnheimer_kurve" xlink:href="#tunnelrampe" transform="translate(-125,1130)" />
   <use id="rampe_ginnheimerkurve_23" class="ginnheimer_kurve" xlink:href="#tunnelrampe" transform="translate(-165,1210) rotate(-90)" />
@@ -2574,11 +2599,11 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
   <path id="wa_eschborn_1" class="geplant rtw endet" d="M -558,595 c -5,0 -5,-5 -10,-5 h -30" />
   <g id="gw_hausen" transform="translate(-390,951)">
     <path d="M -5,-10 c 0,10 10,10 10,20 m 0,-20 c 0,10 -10,10 -10,20" />
-    <desc class="kmdata">km 4,50|cs|2|l|30</desc>
+    <desc class="kmdata">km 4,50|cs|2|l:g|30</desc>
   </g>
   <g id="gw_amhohenweg" transform="translate(-390,1131)">
     <path d="M 5,-10 c 0,10 -10,10 -10,20" />
-    <desc class="kmdata">km 3,66|cs|2|l|30</desc>
+    <desc class="kmdata">km 3,66|cs|2|l:g|30</desc>
   </g>
   <path id="gw_industriehof" d="M -355,1190 c 7,7 0,14 7,21 c 7,7 14,0 21,7 M -340,1193 c -6,-6 -12,0 -18,-6 M -328,1260 c 0,-5 5,-5 5,-10" />
   <g id="ug_industriehof" transform="translate(-365,1274)">
@@ -2614,7 +2639,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
   <path id="wa_schaefflestrasse" class="endet" d="M 835,1240 c 0,-10 -10,-10 -10,-20 c 0,-5 -5,-5 -5,-10 v -35" />
   <g id="gw_kruppstr" transform="translate(830,1065)">
    <path d="M 5,-10 c 0,10 -10,10 -10,20" />
-   <desc class="kmdata">km 8,31|c1|2|r|-60</desc>
+   <desc class="kmdata">km 8,31|c1|2|r:g|-60</desc>
   </g>
   <path id="gw_enkheim" d="M 825,860 c 0,10 10,10 10,20 c 0,10 -10,10 -10,20" />
   <path id="wa_riedberg" class="endet" d="M 30,221 c 5,0 5,-5 10,-5 M 30,211 c 5,0 5,5 10,5 h 24" />
@@ -2627,7 +2652,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    </a>
    <path id="ausf_heerstrasse" d="M 195,-70 a 20,20 0,0,0 -20,-20 h -20 c -5,0 -5,5 -10,5" />
    <path id="ring_betriebsstrecke" d="M 50,35 a 20,20 0,0,1 -20,-20 v -40 a 20,20 0,0,1 40,0 v 40 a 20,20 0,0,1 -20,20 a 14,14 0,0,1 -14,-14 v -86 a 20,20 0,0,1 20,-20 h 119 a 10,10 0,0,1 10,10" />
-   <desc class="kmdata">km 17,72|cs|2|r|-90|translate(36,-50)</desc>
+   <desc class="kmdata">km 17,72|cs|2|r:g|-90|translate(36,-50)</desc>
    <path d="M 36,15 c 0,-3 -3,-3 -3,-6 v -30 q 0,-1.5 1.5,-3.5" />
    <path d="M 30,-18 q 0,-1.5 1.5,-3.5 l 3,-3 q 1.5,-1.5 1.5,-3.5" />
    <path class="faeng" d="M 39,-70 v 15 a 10,10 0,0,0 10,10" />
@@ -2894,26 +2919,26 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <use xlink:href="#bau" transform="translate(0,-10)" />
     <use xlink:href="#bau" transform="translate(0,10)" />
     <text x="0" y="-15">Emser Brücke</text>
-    <desc class="kmdata">km 6,15|bs|2|r|210</desc>
+    <desc class="kmdata">km 6,15|bs|2|r:i|210</desc>
    </g>
    <g id="hst214" transform="translate(-510,1580)" class="geplant verlaengerung_europaviertel tm">
     <use xlink:href="#drei_ausen" transform="rotate(90)" />
     <use xlink:href="#bau" transform="translate(0,-10)" />
     <use xlink:href="#bau" transform="translate(0,10)" />
     <text x="0" y="-15">Europapark</text>
-    <desc class="kmdata">km 5,65|bs|2|r|210</desc>
+    <desc class="kmdata">km 5,65|bs|2|r:i|210</desc>
    </g>
    <g id="hst215" transform="translate(-630,1580)" class="geplant verlaengerung_europaviertel tm">
     <use xlink:href="#drei_ausen" transform="rotate(90)" />
     <use xlink:href="#bau" transform="translate(0,-10)" />
     <use xlink:href="#bau" transform="translate(0,10)" />
     <text x="0" y="-15">Wohnpark</text>
-    <desc class="kmdata">km 4,85|bs|2|r|-30</desc>
+    <desc class="kmdata">km 4,85|bs|2|r:i|-30</desc>
    </g>
    <g id="hst317" transform="translate(-372.5,1179.5) rotate(-45)">
      <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
      <text transform="rotate(45) translate(8,-8)">Industriehof<tspan class="hstdetails"> (IH, 317)</tspan></text>
-     <desc class="kmdata">km 3,45 (20)\nkm 13,9 (C,24)|cs|2|r|-75|rotate(45)</desc>
+     <desc class="kmdata">km 3,45 (20)\nkm 13,9 (C,24)|cs|2|r:g|-75|rotate(45)</desc>
      <g class="hstdetails">
        <g id="sig316V21" transform="translate(-5,40) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 H 20" />
@@ -2951,25 +2976,25 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <use xlink:href="#bstg_ausen" transform="rotate(-45)" onclick="toggle_details(this)" />
     <text x="-5.5" y="21.5">Fischstein</text>
     <text x="-5.5" y="30.5" class="hstdetails">(FS, 321)</text>
-    <desc class="kmdata">km 14,31|cs|2|r|-75</desc>
+    <desc class="kmdata">km 14,31|cs|2|r:g|-75</desc>
    </g>
    <g id="hst322" transform="translate(-470,1025)" class="te">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Hausener Weg</text>
     <text x="-15" y="15" class="hstdetails">(HU, 322)</text>
-    <desc class="kmdata">km 14,80|cs|2|r|-120</desc>
+    <desc class="kmdata">km 14,80|cs|2|r:g|-120</desc>
    </g>
    <g id="hst323" transform="translate(-470,925)" class="te">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Stephan-Heise-Straße</text>
     <text x="-15" y="15" class="hstdetails">(SH, 323)</text>
-    <desc class="kmdata">km 15,44|cs|2|r|-120</desc>
+    <desc class="kmdata">km 15,44|cs|2|r:g|-120</desc>
    </g>
    <g id="hst324" transform="translate(-470,825)" class="te">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Friedhof Westhausen</text>
     <text x="-15" y="15" class="hstdetails">(FW, 324)</text>
-    <desc class="kmdata">km 15,73|cs|2|r|-120</desc>
+    <desc class="kmdata">km 15,73|cs|2|r:g|-120</desc>
    </g>
    <g id="hst326" transform="translate(-470,725)" class="te">
      <g onclick="toggle_details(this)">
@@ -2979,7 +3004,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      </g>
      <text x="-10" y="5">Heerstraße</text>
      <text x="-15" y="15" class="hstdetails">(HE, 326)</text>
-     <desc class="kmdata">km 16,39|cs|2|r|-120</desc>
+     <desc class="kmdata">km 16,39|cs|2|r:g|-120</desc>
      <g class="hstdetails">
        <g id="sig326Y10" transform="translate(5,65)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 c 10,0 38,-5 38,-15" />
@@ -3040,7 +3065,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="0" y="25">Gewerbegebiet</text>
      <text x="0" y="36">Praunheim</text>
      <text x="0" y="46" class="hstdetails">(??, 327)</text>
-     <desc class="kmdata">km 2,50 (RTW)|cs|2|l|120</desc>
+     <desc class="kmdata">km 2,50 (RTW)|cs|2|l:f|120</desc>
    </g>
    <g id="hstfhga" transform="translate(-472.5,470)" class="geplant rtw ebobahn">
      <use xlink:href="#hstgrid" />
@@ -3054,18 +3079,18 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
        <use xlink:href="#vierabstell" transform="translate(20,-50)" />
      </g>
      <text x="0" y="-15">Eschborn Ost</text>
-     <desc class="kmdata">km 4,50 (RTW)|cs|2|l|180</desc>
+     <desc class="kmdata">km 4,50 (RTW)|cs|2|l:f|180</desc>
    </g>
    <g id="hst332" transform="translate(-725,580)" class="geplant rtw tm">
      <use xlink:href="#bstg_ausen" transform="rotate(90)" />
      <text x="0" y="-15">Eschborn Süd</text>
-     <desc class="kmdata">km 5,30 (RTW)|cs|2|r|30</desc>
+     <desc class="kmdata">km 5,30 (RTW)|cs|2|r:f|30</desc>
    </g>
    <g id="hst333" transform="translate(-800,650)" class="geplant rtw">
      <use xlink:href="#bstg_ausen" />
      <text x="15" y="-6">Carl-Sonnenschein-Siedlung /</text>
      <text x="15" y="5">Düsseldorferstraße</text>
-     <desc class="kmdata">km 6,50 (RTW)|cs|2|l|120</desc>
+     <desc class="kmdata">km 6,50 (RTW)|cs|2|l:f|120</desc>
    </g>
    <g id="hst334" transform="translate(-800,750)" class="geplant rtw">
      <use xlink:href="#bstg_ausen" />
@@ -3074,7 +3099,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    <g id="hst351" transform="translate(-390,1041)">
      <use xlink:href="#bstg_vers1" onclick="toggle_details(this)" />
      <text x="15" y="5">Große Nelkenstraße<tspan class="hstdetails"> (GN, 351)</tspan></text>
-     <desc class="kmdata">km 4,00|cs|2|l|30</desc>
+     <desc class="kmdata">km 4,00|cs|2|l:g|30</desc>
      <g class="hstdetails">
        <g id="sig353YD14" transform="translate(5,35)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 H 20" />
@@ -3093,7 +3118,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    <g id="hst353" transform="translate(-390,926)">
      <use xlink:href="#bstg_mitte" onclick="toggle_details(this)" />
      <text x="10" y="5">Hausen<tspan class="hstdetails"> (HN, 353)</tspan></text>
-     <desc class="kmdata">km 4,61|cs|2|l|30</desc>
+     <desc class="kmdata">km 4,61|cs|2|l:g|30</desc>
      <g class="hstdetails">
        <g id="sig353Y11" transform="rotate(180) translate(-5,-17)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 C 2,10 30,10 30,0" />
@@ -3146,7 +3171,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="-35" y="-6">Ginnheim</text>
      <text x="-35" y="4" class="hstdetails">(GI, 414)</text>
     </a>
-    <desc class="kmdata">km 5,28|a1|2|r|-30</desc>
+    <desc class="kmdata">km 5,28|a1|2|r:i|-30</desc>
     <g class="hstdetails">
       <use xlink:href="#gleis1" transform="translate(-25,9)" />
       <use xlink:href="#gleis2" transform="translate(-15,9)" />
@@ -3204,7 +3229,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <use xlink:href="#bstg_nidda" onclick="toggle_details(this)" />
     <text x="-15" y="5">Niddapark</text>
     <text x="-15" y="15" class="hstdetails">(Bahnsteigshöhe 56 cm) (NI, 415)</text>
-    <desc class="kmdata">km 4,75|a1|2|r|-45</desc>
+    <desc class="kmdata">km 4,75|a1|2|r:i|-45</desc>
     <g class="hstdetails">
       <g id="sig415H11" transform="translate(5,30)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -3241,7 +3266,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     </g>
     <text x="-15" y="5">Römerstadt</text>
     <text x="-15" y="15" class="hstdetails">(Bahnsteigshöhe 56 cm) (RS, 421)</text>
-    <desc class="kmdata">km 3,70|a1|2|r|-30</desc>
+    <desc class="kmdata">km 3,70|a1|2|r:i|-30</desc>
     <g class="hstdetails">
       <g transform="translate(-2.5,80)" class="bgleisnummer"><circle cy="-1" r="2" /><text>31</text></g>
       <g transform="translate(2.5,67.5)" class="bgleisnummer"><circle cy="-1" r="2" /><text>32</text></g>
@@ -3301,7 +3326,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="-15" y="5">Nordwestzentrum</text>
      <text x="-15" y="15" class="hstdetails">(NW, 422)</text>
     </a>
-    <desc class="kmdata">km 3,10|a1|2|r|-30</desc>
+    <desc class="kmdata">km 3,10|a1|2|r:f|-30</desc>
     <g class="hstdetails">
       <g id="sig421V21" transform="translate(-5,40) rotate(180)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 C 2,-40 40,-40 40,-20" />
@@ -3357,7 +3382,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Heddernheimer Landstraße</text>
     <text x="-15" y="15" class="hstdetails">(HL, 423)</text>
-    <desc class="kmdata">km 2,40|a1|2|r|-30</desc>
+    <desc class="kmdata">km 2,40|a1|2|r:i|-30</desc>
     <g class="hstdetails">
       <g id="sig422V21" transform="translate(-5,30) rotate(180)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 C 2,-40 40,-40 40,-20" />
@@ -3402,7 +3427,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <text x="0" y="25">Uni Campus</text>
     <text x="0" y="36">Riedberg</text>
     <text x="0" y="46" class="hstdetails">(UR, 424)</text>
-    <desc class="kmdata">km*0,90|ds|2|l|30</desc>
+    <desc class="kmdata">km*0,90|ds|2|l:g|30</desc>
    </g>
    <g id="hst425" transform="translate(12,216)" class="tm">
     <g onclick="toggle_details(this)" transform="rotate(-90)">
@@ -3411,7 +3436,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     </g>
     <text x="0" y="-15">Riedberg</text>
     <text x="0" y="-26" class="hstdetails">(RB, 425)</text>
-    <desc class="kmdata">km*1,60|ds|2|l|30</desc>
+    <desc class="kmdata">km*1,60|ds|2|l:g|30</desc>
     <g class="hstdetails">
       <g id="sig425Y11" transform="translate(-30,5) rotate(90)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -3454,7 +3479,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    <g id="bst502" transform="translate(-115,466)" class="te"><use xlink:href="#hstgrid"/>
     <text x="-25" y="27" class="ab_bb hstdetails">(DNW, 502)</text>
     <text x="-25" y="17" class="ab_bb" onclick="toggle_details(this)">Dreieck Nordwest</text>
-    <desc class="kmdata">km 2,05 (A1)\nkm 17,05 (A3)|a1,as|3|l|210|translate(45,0)</desc>
+    <desc class="kmdata">km 2,05 (A1)\nkm 17,05 (A3)|a1,as|3|l:i|210|translate(45,0)</desc>
     <g class="hstdetails">
      <g class="signal te" transform="translate(55,0) rotate(-90)" onmouseover="highlight(this)">
        <use xlink:href="#signalplatz" transform="translate(5,0)" />
@@ -3485,7 +3510,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="-15" y="-3">Dornbusch</text>
      <text x="-15" y="13">(Hessischer Rundfunk)</text>
     </a>
-    <desc class="kmdata">km 12,40|as|2|r|-30</desc>
+    <desc class="kmdata">km 12,40|as|2|r:i|-30</desc>
     <g class="hstdetails">
       <g id="sig515V21" transform="translate(-5,40) rotate(180)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -3511,13 +3536,13 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Fritz-Tarnow-Straße</text>
     <text x="-15" y="15" class="hstdetails">(FT, 522)</text>
-    <desc class="kmdata">km 13,40|as|2|r|-30</desc>
+    <desc class="kmdata">km 13,40|as|2|r:i|-30</desc>
    </g>
    <g id="hst523" transform="translate(115,865)" class="te">
     <use xlink:href="#bstg_vers1" onclick="toggle_details(this)" />
     <text x="-15" y="5">Hügelstraße</text>
     <text x="-15" y="15" class="hstdetails">(HG, 523)</text>
-    <desc class="kmdata">km 13,95|as|2|r|-30</desc>
+    <desc class="kmdata">km 13,95|as|2|r:i|-30</desc>
     <g class="hstdetails">
       <g id="sig523Y11" transform="translate(5,-32)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 40,0 c 0,5 -38,5 -38,0" />
@@ -3548,14 +3573,14 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    <g id="hst524" transform="translate(115,750)">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="15" y="5">Lindenbaum<tspan class="hstdetails"> (LB, 524)</tspan></text>
-    <desc class="kmdata">km 14,60|as|2|r|-30</desc>
+    <desc class="kmdata">km 14,60|as|2|r:i|-30</desc>
    </g>
    <g id="hst525" transform="translate(115,650)">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <a xlink:href="https://de.wikipedia.org/wiki/Stadtbahnstation_Weißer_Stein">
      <text x="15" y="5">Weißer Stein<tspan class="hstdetails"> (WS, 525)</tspan></text>
     </a>
-    <desc class="kmdata">km 0,10 (A1)\nkm 15,10 (A2, A3)|as,a1|2|l|30</desc>
+    <desc class="kmdata">km 0,10 (A1)\nkm 15,10 (A2, A3)|as,a1|2|l:i|30</desc>
    </g>
    <g id="hst526" transform="translate(115,550)">
     <g onclick="toggle_details(this)">
@@ -3589,7 +3614,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      </g>
     </g>
     <text x="20" y="5">Heddernheim<tspan class="hstdetails"> (HD, 526)</tspan></text>
-    <desc class="kmdata">km 0,85 (A1)\nkm 15,85 (A2, A3)|as,a1|2|l|30</desc>
+    <desc class="kmdata">km 0,85 (A1)\nkm 15,85 (A2, A3)|as,a1|2|l:i|30</desc>
     <g class="hstdetails">
      <use xlink:href="#gleis2" transform="translate(-5,1.5)" />
      <use xlink:href="#gleis1" transform="translate(05,1.5)" />
@@ -3714,7 +3739,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <use xlink:href="#bstg_ausen" transform="rotate(90)" onclick="toggle_details(this)" />
     <text x="0" y="-26" class="hstdetails">(ZW, 527)</text>
     <text x="0" y="-15">Zeilweg</text>
-    <desc class="kmdata">km 1,45 (A1)\nkm 16,45 (A3)|as,a1|2|r|30</desc>
+    <desc class="kmdata">km 1,45 (A1)\nkm 16,45 (A3)|as,a1|2|r:i|30</desc>
     <g class="hstdetails">
      <g id="sig527Y15" transform="translate(-37,-5) rotate(-90)" onmouseover="highlight(this)">
        <path class="signalverbinder" d="M 2,0 H 20" />
@@ -3740,7 +3765,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Wiesenau</text>
     <text x="-15" y="15" class="hstdetails">(WI, 551)</text>
-    <desc class="kmdata">km 17,55|as|2|r|-120</desc>
+    <desc class="kmdata">km 17,55|as|2|r:i|-120</desc>
     <g class="hstdetails">
       <g id="sig551Y24" transform="translate(0,17) rotate(180)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -3754,7 +3779,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Niederursel</text>
     <text x="-15" y="15" class="hstdetails">(NU, 552)</text>
-    <desc class="kmdata">km 18,10|as|2|r|-120</desc>
+    <desc class="kmdata">km 18,10|as|2|r:f|-120</desc>
     <g class="hstdetails">
       <g id="sig552Y14" transform="translate(5,-17)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 40,-5 c 0,-10 -38,-10 -38,5" />
@@ -3822,7 +3847,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <use xlink:href="#drei_ausen" onclick="toggle_details(this)" transform="rotate(-45)" />
     <text x="-5.5" y="21.5">Weißkirchen Ost</text>
     <text x="-5.5" y="31.5" class="hstdetails">(WK, 554)</text>
-    <desc class="kmdata">km 20,50|as|2|l|-15</desc>
+    <desc class="kmdata">km 20,50|as|2|l:i|-15</desc>
    </g>
    <g id="hst555" transform="translate(-333,111)" class="tm">
     <g onclick="toggle_details(this)">
@@ -3843,7 +3868,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     </g>
     <text x="0" y="-15">Bommersheim</text>
     <text x="0" y="-25" class="hstdetails">(BH, 555)</text>
-    <desc class="kmdata">km 21,55|as|2|l|-150</desc>
+    <desc class="kmdata">km 21,55|as|2|l:i|-150</desc>
     <g class="hstdetails">
      <g id="gleisnummern_bommersheim" class="bgleisnummer" transform="translate(-82,40)">
       <g transform="translate(52,-22)"><circle cy="-1" r="2" /><text>1</text></g>
@@ -3966,7 +3991,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="0" y="-26">Oberursel</text>
      <text x="0" y="-15">Bahnhof</text>
     </a>
-    <desc class="kmdata">km 22,75|as|2|r|-30</desc>
+    <desc class="kmdata">km 22,75|as|2|r:i|-30</desc>
     <g class="hstdetails">
       <g class="bgleisnummer">
         <g transform="translate(209,-4)"><circle cy="-1" r="2" /><text>11</text></g>
@@ -4009,31 +4034,31 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    <g id="hst557" transform="translate(-210,6)">
     <use xlink:href="#drei_ausen" onclick="toggle_details(this)"/>
     <text x="15" y="5">Oberursel Stadtmitte<tspan class="hstdetails"> (OS, 557)</tspan></text>
-    <desc class="kmdata">km 23,35|as|2|l|30</desc>
+    <desc class="kmdata">km 23,35|as|2|l:i|30</desc>
    </g>
    <g id="hst558" transform="translate(-210,-69)"  class="te">
     <use xlink:href="#drei_ausen" onclick="toggle_details(this)"/>
     <text x="-15" y="5">Oberursel Altstadt</text>
     <text x="-15" y="15" class="hstdetails">(OA, 558)</text>
-    <desc class="kmdata">km 23,95|as|2|l|30</desc>
+    <desc class="kmdata">km 23,95|as|2|l:i|30</desc>
    </g>
    <g id="hst561" transform="translate(-280,-139)" class="tm">
     <use xlink:href="#drei_ausen" transform="rotate(90)" onclick="toggle_details(this)"/>
     <text x="0" y="-15">Lahnstraße</text>
     <text x="0" y="25" class="hstdetails">(LA, 561)</text>
-    <desc class="kmdata">km 24,65|as|2|l|90</desc>
+    <desc class="kmdata">km 24,65|as|2|l:i|90</desc>
    </g>
    <g id="hst562" transform="translate(-380,-139)" class="tm">
     <use xlink:href="#drei_ausen" transform="rotate(90)" onclick="toggle_details(this)"/>
     <text x="0" y="25">Glöcknerwiese</text>
     <text x="0" y="35" class="hstdetails">(GL, 562)</text>
-    <desc class="kmdata">km 25,45|as|2|l|150</desc>
+    <desc class="kmdata">km 25,45|as|2|l:i|150</desc>
    </g>
    <g id="hst563" transform="translate(-480,-139)" class="tm">
     <use xlink:href="#drei_mitte" transform="rotate(90)" onclick="toggle_details(this)"/>
     <text x="0" y="-10">Kupferhammer</text>
     <text x="0" y="25" class="ta hstdetails">(KU, 563)</text>
-    <desc class="kmdata">km 25,80|as|2|l|150</desc>
+    <desc class="kmdata">km 25,80|as|2|l:i|150</desc>
     <g class="hstdetails">
      <g id="sig563Y21" transform="translate(-37,5) rotate(90)" onmouseover="highlight(this)">
       <path class="signalverbinder" d="M 2,0 H 20" />
@@ -4053,20 +4078,20 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <use xlink:href="#bstg_dreiw" transform="rotate(90)" onclick="toggle_details(this)"/>
     <text x="0" y="20">Rosengärtchen</text>
     <text x="0" y="30" class="hstdetails">(RG, 564)</text>
-    <desc class="kmdata">km 26,35|as|2|l|150</desc>
+    <desc class="kmdata">km 26,35|as|2|l:i|150</desc>
    </g>
    <g id="hst565" transform="translate(-680,-134)" class="tm">
     <use xlink:href="#bstg_dreiw" transform="rotate(-90)" onclick="toggle_details(this)"/>
     <text x="0" y="-10">Waldlust</text>
     <text x="0" y="20" class="hstdetails">(WA, 565)</text>
-    <desc class="kmdata">km 26,80|as|2|l|150</desc>
+    <desc class="kmdata">km 26,80|as|2|l:i|150</desc>
    </g>
    <g id="hst566" transform="translate(-780,-139)" class="tm">
     <use xlink:href="#drei_mitte" transform="rotate(90)" onclick="toggle_details(this)"/>
     <text x="0" y="20">Oberursel</text>
     <text x="0" y="36">Hohemark</text>
     <text x="0" y="46" class="hstdetails">(HM, 566)</text>
-    <desc class="kmdata">km 27,20|as|2|l|135</desc>
+    <desc class="kmdata">km 27,20|as|2|l:i|135</desc>
     <g class="hstdetails">
       <use xlink:href="#gleis1" transform="translate(0,-4)" />
       <use xlink:href="#gleis2" transform="translate(0,6)" />
@@ -4091,7 +4116,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      </g>
      <text x="-15" y="6">Musterschule</text>
      <text x="-15" y="-5" class="hstdetails">(MU, 614)</text>
-     <desc class="kmdata">km 10,78|bs|2|r|-60</desc>
+     <desc class="kmdata">km 10,78|bs|2|r:i|-60</desc>
      <g class="hstdetails">
        <text x="-15" y="15">Nur im Mittelteil barrierefrei</text>
        <text x="-15" y="25">(Bahnsteigshöhe 80 cm, vor-</text>
@@ -4105,7 +4130,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      </g>
      <text x="-15" y="5">Glauburgstraße</text>
      <text x="-15" y="-6" class="hstdetails">(GB, 615)</text>
-     <desc class="kmdata">km 11,43|bs|2|r|-60</desc>
+     <desc class="kmdata">km 11,43|bs|2|r:i|-60</desc>
      <g class="hstdetails">
        <text x="-15" y="15">Nur im Mittelteil barrierefrei</text>
        <text x="-15" y="25">(Bahnsteigshöhe 80 cm, vor-</text>
@@ -4116,13 +4141,13 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <text x="15" y="0">Deutsche</text>
     <text x="15" y="11">Nationalbibliothek</text>
     <text x="15" y="21" class="hstdetails">(DN, 616)</text>
-    <desc class="kmdata">km 11,90|bs|2|l|30</desc>
+    <desc class="kmdata">km 11,90|bs|2|l:i|30</desc>
    </g>
    <g id="hst617" transform="translate(275,1225)">
     <use xlink:href="#drei_ausen" onclick="toggle_details(this)" />
     <text x="15" y="5">Hauptfriedhof</text>
     <text x="15" y="15" class="hstdetails">(HF, 617)</text>
-    <desc class="kmdata">km 12,35|bs|2|l|45</desc>
+    <desc class="kmdata">km 12,35|bs|2|l:i|45</desc>
    </g>
    <g id="hst621" transform="translate(275,1155)">
      <g onclick="toggle_details(this)">
@@ -4134,7 +4159,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <text x="17" y="5">Neuer Jüdischer Friedhof</text>
      <text class="ab_bb" x="17" y="15">Wird b.a.w. nicht bedient</text>
      <text x="17" y="25" class="hstdetails">(NJ, 621)</text>
-     <desc class="kmdata">km 12,75|bs|2|l|30</desc>
+     <desc class="kmdata">km 12,75|bs|2|l:i|30</desc>
    </g>
    <g id="hst623" transform="translate(305,1055)">
     <use xlink:href="#drei_ausen" transform="rotate(90)" onclick="toggle_details(this)" />
@@ -4150,23 +4175,23 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
      <use xlink:href="#bstg_dreiw" onclick="toggle_details(this)" transform="rotate(90) translate(5,0)" />
      <use xlink:href="#bstg_dreiw" onclick="toggle_details(this)" transform="translate(25,-30) rotate(180)" />
      <text x="35" y="5">Gießener Straße<tspan class="hstdetails"> (GS, 624)</tspan></text>
-     <desc class="kmdata">km 13,70|bs|2|l|120|translate(0,5)</desc>
-     <desc class="kmdata">km 13,85|bs|2|l|30|translate(30,-30)</desc>
+     <desc class="kmdata">km 13,70|bs|2|l:i|120|translate(0,5)</desc>
+     <desc class="kmdata">km 13,85|bs|2|l:i|30|translate(30,-30)</desc>
    </g>
    <g id="hst625" transform="translate(435,910)">
      <use xlink:href="#drei_ausen" onclick="toggle_details(this)" />
      <text x="15" y="5">Theobald-Ziegler-Straße<tspan class="hstdetails"> (TZ, 625)</tspan></text>
-     <desc class="kmdata">km 14,20|bs|2|l|30</desc>
+     <desc class="kmdata">km 14,20|bs|2|l:i|30</desc>
    </g>
    <g id="hst626" transform="translate(435,815)">
      <use xlink:href="#drei_ausen" onclick="toggle_details(this)" />
      <text x="15" y="5">Ronneburgstraße<tspan class="hstdetails"> (RO, 626)</tspan></text>
-     <desc class="kmdata">km 14,55|bs|2|l|30</desc>
+     <desc class="kmdata">km 14,55|bs|2|l:i|30</desc>
    </g>
    <g id="hst631" transform="translate(435,730)">
      <use xlink:href="#drei_ausen" onclick="toggle_details(this)" />
      <text x="15" y="5">Sigmund-Freud-Straße<tspan class="hstdetails"> (SF, 631)</tspan></text>
-     <desc class="kmdata">km 15,00|bs|2|l|30</desc>
+     <desc class="kmdata">km 15,00|bs|2|l:i|30</desc>
    </g>
    <g id="hst632" transform="translate(435,630)">
      <g onclick="toggle_details(this)">
@@ -4175,7 +4200,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
        <use id="g632_13" class="frankfurter_berg" xlink:href="#dreiabstell" transform="translate(-5,-57)" />
      </g>
      <text x="15" y="5">Preungesheim<tspan class="hstdetails"> (PH, 632)</tspan></text>
-     <desc class="kmdata">km 15,47|bs|2|l|30</desc>
+     <desc class="kmdata">km 15,47|bs|2|l:i|30</desc>
      <g class="hstdetails">
        <use xlink:href="#gleis2" transform="translate(-15,0)" />
        <use xlink:href="#gleis3" transform="translate(-5,0)" />
@@ -4216,36 +4241,36 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    <g id="hst633" transform="translate(435,505)" class="geplant frankfurter_berg">
      <use xlink:href="#drei_ausen" />
      <text x="-15" y="5" class="te">August-Schanz-Straße</text>
-     <desc class="kmdata">km 16,15|bs|2|l|30</desc>
+     <desc class="kmdata">km 16,15|bs|2|l:i|30</desc>
    </g>
    <g id="hst634" transform="translate(435,425)" class="geplant frankfurter_berg">
      <use xlink:href="#drei_ausen" />
      <text x="-15" y="5" class="te">Berkersheimer Weg</text>
-     <desc class="kmdata">km 16,65|bs|2|l|30</desc>
+     <desc class="kmdata">km 16,65|bs|2|l:i|30</desc>
    </g>
    <g id="hst635" transform="translate(435,335)" class="geplant frankfurter_berg te">
      <use xlink:href="#drei_mitte" />
      <text x="-15" y="5">Frankfurter Berg</text>
-     <desc class="kmdata">km 17,00|bs|2|l|30</desc>
+     <desc class="kmdata">km 17,00|bs|2|l:i|30</desc>
    </g>
    <g id="hst641" transform="translate(65,391)"><use xlink:href="#hstgrid" />
      <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
      <text x="15" y="5">Sandelmühle<tspan class="hstdetails"> (SM, 641)</tspan></text>
-     <desc class="kmdata">km 16,50|as|2|l|60</desc>
+     <desc class="kmdata">km 16,50|as|2|l:i|60</desc>
    </g>
    <g id="hst642" transform="translate(65,291)">
      <use xlink:href="#hstgrid" />
      <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
      <text x="15" y="5">Riedwiese/Mertonviertel <tspan class="hstdetails"> (RW, 642)</tspan></text>
-     <desc class="kmdata">km 17,10|as|2|l|60</desc>
+     <desc class="kmdata">km 17,10|as|2|l:i|60</desc>
    </g>
    <g id="hst651" transform="translate(200,216)" class="tm">
     <use xlink:href="#bstg_ausen" transform="rotate(90)" onclick="toggle_details(this)" />
     <text x="0" y="-15">Kalbach</text>
     <text x="0" y="-26" class="hstdetails">(KA, 651)</text>
-    <desc class="kmdata">km*3,05|ds|3|l|30|translate(-69,0)</desc>
-    <desc class="kmdata">km 18,50|as|2|l|120|translate(-69,0)</desc>
-    <desc class="kmdata">km 18,90|as|2|l|30</desc>
+    <desc class="kmdata">km*3,05|ds|3|l:g|30|translate(-69,0)</desc>
+    <desc class="kmdata">km 18,50|as|2|l:i|120|translate(-69,0)</desc>
+    <desc class="kmdata">km 18,90|as|2|l:i|30</desc>
     <g class="hstdetails">
       <g id="sig651Y10" transform="translate(-69,65) rotate(90)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M -40,40 L -20,20" />
@@ -4284,7 +4309,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <use xlink:href="#bstg_ausen" transform="rotate(90)" onclick="toggle_details(this)" />
     <text x="0" y="25">Bonames Mitte</text>
     <text x="0" y="35" class="hstdetails">(BO, 652)</text>
-    <desc class="kmdata">km 19,40|as|2|l|30</desc>
+    <desc class="kmdata">km 19,40|as|2|l:i|30</desc>
    </g>
    <g id="hst653" transform="translate(400,216)" class="tm">
     <g onclick="toggle_details(this)" transform="rotate(90)">
@@ -4294,7 +4319,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     </g>
     <text x="0" y="-15">Nieder-Eschbach</text>
     <text x="0" y="-26" class="hstdetails">(NE, 653)</text>
-    <desc class="kmdata">km 21,40|as|2|l|30</desc>
+    <desc class="kmdata">km 21,40|as|2|l:i|30</desc>
     <g class="hstdetails">
       <g id="sig653Y10" transform="translate(-30,5) rotate(90)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -4338,13 +4363,13 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Ober-Eschbach</text>
     <text x="-15" y="15" class="hstdetails">(OE, 655)</text>
-    <desc class="kmdata">km 23,80|as|2|r|-30</desc>
+    <desc class="kmdata">km 23,80|as|2|r:i|-30</desc>
    </g>
    <g id="hst656" transform="translate(510,41)" class="te">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="-6" class="hstdetails">(GO, 656)</text>
     <text x="-15" y="5">Bad Homburg Gonzenheim</text>
-    <desc class="kmdata">km 24,10|as|2|r|-60</desc>
+    <desc class="kmdata">km 24,10|as|2|r:i|-60</desc>
     <g class="hstdetails">
       <g id="sig656Y11" transform="translate(5,60)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -4372,8 +4397,8 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <a xlink:href="https://de.wikipedia.org/wiki/Bahnhof_Bad_Homburg">
      <text x="-15" y="5">Bad Homburg Bahnhof</text>
     </a>
-    <desc class="kmdata">km 25,24|as|2|r|-120</desc>
-    <desc class="kmdata">km 25,40|as|2|r|-120|translate(0,-45)</desc>
+    <desc class="kmdata">km 25,24|as|2|r:i|-120</desc>
+    <desc class="kmdata">km 25,40|as|2|r:i|-120|translate(0,-45)</desc>
    </g>
    <g id="bst792" transform="translate(800,1160)">
      <a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Betriebshof_Ost">
@@ -4756,7 +4781,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
       <use xlink:href="#bstg_ausen" transform="rotate(90)" />
     </g>
     <text x="-25" y="22">Johanna-Tesch-Platz<tspan class="hstdetails"> (JT, 821)</tspan></text>
-    <desc class="kmdata">km 6,46|c1|2|l|150</desc>
+    <desc class="kmdata">km 6,46|c1|2|l:g|150</desc>
     <g class="hstdetails">
       <g id="sig821Y11" transform="translate(40,-30) rotate(180)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 C 2,20 10,25 20,25" />
@@ -4796,7 +4821,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
        <use id="g822A61" xlink:href="#vierabstell" transform="translate(-10,-75)" />
      </g>
      <text x="15" y="5">Schäfflestraße</text>
-     <desc class="kmdata">km 7,24|c1|2|r|-60</desc>
+     <desc class="kmdata">km 7,24|c1|2|r:g|-60</desc>
      <g class="hstdetails">
        <text x="15" y="15">(SC, 822)</text>
        <g transform="translate(-10,-79)" class="bgleisnummer"><circle cy="-1" r="2" /><text>6</text></g>
@@ -4848,24 +4873,24 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="15" y="5">Gwinnerstraße</text>
     <text x="15" y="15" class="hstdetails">(GR, 823)</text>
-    <desc class="kmdata">km 7,89|c1|2|r|-60</desc>
+    <desc class="kmdata">km 7,89|c1|2|r:g|-60</desc>
    </g>
    <g id="hst824" transform="translate(830,1040)">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="15" y="5">Kruppstraße</text>
     <text x="15" y="15" class="hstdetails">(KR, 824)</text>
-    <desc class="kmdata">km 8,39|c1|2|r|-60</desc>
+    <desc class="kmdata">km 8,39|c1|2|r:g|-60</desc>
    </g>
    <g id="hst825" transform="translate(830,940)">
     <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="15" y="5">Hessen-Center</text>
     <text x="15" y="15" class="hstdetails">(HC, 825)</text>
-    <desc class="kmdata">km 8,79|c1|2|r|-60</desc>
+    <desc class="kmdata">km 8,79|c1|2|r:g|-60</desc>
    </g>
    <g id="hst826" transform="translate(830,840)">
      <use xlink:href="#bstg_mitte" onclick="toggle_details(this)" />
      <text x="10" y="5">Enkheim</text>
-     <desc class="kmdata">km 9,26|c1|2|r|-60</desc>
+     <desc class="kmdata">km 9,26|c1|2|r:g|-60</desc>
      <g class="hstdetails">
        <text x="10" y="15">(EN, 826)</text>
        <g id="sig826Y14" transform="translate(-5,17) rotate(180)" onmouseover="highlight(this)">
@@ -4896,89 +4921,89 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
    <path class="kilometrierung klein" d="M 115,690 V 523 q 0,-10 -7.5,-17.5 l -32,-32 q -7.5,-7.5 -17.5,-7.5 h -128" />
    <path class="kilometrierung" d="M 75.5,473.5 q -10.5,-10.5 -10.5,-24.5 V 281 a 65,65 0,0,1 65,-65 h 325 a 55,55 0,0,0, 55,-55 v -140" />
    <path class="kilometrierung" d="M -70,466 h -33 q -22,0 -38.5,-16.5 q -16.5,-16.5 -16.5,-38.5 v -140 q 0,-22 -16.5,-38.5 l -105,-105 q -16.5,-16.5 -38.5,-16.5 h -120 a 25,25 0,0,1 0,-50 h 213 a 15,15 0,0,0 15,-15 v -130 a 55,55 0,0,0 -55,-55 h -535" />
-   <g><desc class="kmdata">km 7,65|as|3|r|-30|translate(115,1955)</desc></g>
-   <g><desc class="kmdata">km 12,91|as|2|r|-75|translate(115,1020)</desc></g>
-   <g><desc class="kmdata">km 24,15|as|3|r|-60|translate(510,21)</desc></g>
+   <g id="end_as"><desc class="kmdata">km 7,65|as|3|r:i|-30|translate(115,1955)</desc></g>
+   <g id="abzw_dornbusch"><desc class="kmdata">km 12,91|as|2|r:i|-75|translate(115,1020)</desc></g>
+   <g id="end_a2"><desc class="kmdata">km 24,15|as|3|r:i|-60|translate(510,21)</desc></g>
    <g class="verlaengerung_badhomburg geplant">
     <path class="kilometrierung" d="M 510,21 v -185" />
-    <desc class="kmdata">km 25,49|as|3|r|-95|translate(515,-164)</desc>
+    <desc class="kmdata">km 25,49|as|3|r:i|-95|translate(515,-164)</desc>
    </g>
-   <g><desc class="kmdata">km 22,09|as|2|r|-150|translate(-433,111)</desc></g>
-   <g><desc class="kmdata">km 22,89|as|2|l|135|translate(-225,61)</desc></g>
-   <g><desc class="kmdata">km 25,90|as|3|r|-60|translate(-515,-134)</desc></g>
-   <g><desc class="kmdata">km 27,07|as|3|l|60|translate(-745,-134)</desc></g>
-   <g><desc class="kmdata">km 27,24|as|3|l|180|translate(-800,-139)</desc></g>
+   <g><desc class="kmdata">km 22,09|as|2|r:i|-150|translate(-433,111)</desc></g>
+   <g><desc class="kmdata">km 22,89|as|2|l:i|135|translate(-225,61)</desc></g>
+   <g><desc class="kmdata">km 25,90|as|3|r:i|-60|translate(-515,-134)</desc></g>
+   <g><desc class="kmdata">km 27,07|as|3|l:i|60|translate(-745,-134)</desc></g>
+   <g><desc class="kmdata">km 27,24|as|3|l:i|180|translate(-800,-139)</desc></g>
   </g>
-  <g><desc class="kmdata">km 15,00 (A, A2, A3)\nkm 0,00 (A1)|a1,as|3|r|-30|translate(115,690)</desc></g>
-  <g><desc class="kmdata">km 1,10 (A1)\nkm 16,10 (A2, A3)|as,a1|3|l|45|translate(75.5,473.5)</desc></g>
+  <g><desc class="kmdata">km 15,00 (A, A2, A3)\nkm 0,00 (A1)|a1,as|3|r:f|-30|translate(115,690)</desc></g>
+  <g><desc class="kmdata">km 1,10 (A1)\nkm 16,10 (A2, A3)|as,a1|3|l:i|45|translate(75.5,473.5)</desc></g>
   <g class="a1_strecke">
    <path class="kilometrierung" d="M 115,690 V 523 q 0,-10 -7.5,-17.5 l -32,-32 q -7.5,-7.5 -17.5,-7.5 h -128 a 55,55 0,0,0 -55,55 V 1001" />
   </g>
   <g class="bs_strecke">
    <path class="kilometrierung" d="M -270,1580 a 55,55 0,0,1 55,55 v 50 q 0,22 16.5,38.5 q 16.5,16.5 38.5,16.5 h 95 q 21,0 36,-16.5 l 2,-2 q 16.5,-16.5 36,-16.5 h 221 a 55,55 0,0,0 55,-55 v -76" />
-   <g><desc class="kmdata">km 10,0|bs|1|l|150|translate(285,1580)</desc></g>
-   <g><desc class="kmdata">km 7,45|bs|3|r|-30|translate(-275,1580)</desc></g>
+   <g><desc class="kmdata">km 10,0|bs|1|l:f|150|translate(285,1580)</desc></g>
+   <g><desc class="kmdata">km 7,45|bs|3|r:i|-30|translate(-275,1580)</desc></g>
    <g class="verlaengerung_europaviertel geplant">
     <path class="kilometrierung" d="M -690,1580 h 413" />
-    <g><desc class="kmdata">km 5,79|bs|2|r|-30|translate(-460,1580)</desc></g>
-    <g><desc class="kmdata">km 4,70|bs|3|r|180|translate(-690,1575)</desc></g>
+    <g><desc class="kmdata">km 5,79|bs|2|r:i|-30|translate(-460,1580)</desc></g>
+    <g><desc class="kmdata">km 4,70|bs|3|r:i|180|translate(-690,1575)</desc></g>
    </g>
    <path class="kilometrierung" d="M 275,1590 V 1070 a 15,15 0,0,1 15,-15 h 130 a 15,15 0,0,0 15,-15 v -430" />
-   <g><desc class="kmdata">km 13,15|bs|2|r|-30|translate(275,1055)</desc></g>
-   <g><desc class="kmdata">km 15,50|bs|3|r|-45|translate(435,610)</desc></g>
+   <g><desc class="kmdata">km 13,15|bs|2|r:i|-30|translate(275,1055)</desc></g>
+   <g><desc class="kmdata">km 15,50|bs|3|r:i|-45|translate(435,610)</desc></g>
    <g class="frankfurter_berg geplant">
     <path class="kilometrierung" d="M 435,610 v -295" />
-    <g><desc class="kmdata">km 17,05|bs|3|r|-30|translate(435,315)</desc></g>
+    <g><desc class="kmdata">km 17,05|bs|3|r:i|-30|translate(435,315)</desc></g>
    </g>
   </g>
   <g class="b2_strecke">
     <path class="kilometrierung" d="M 285,1580 v -16 q 0,-22 16.5,-38.5 l 199.5,-199.5 q 15,-15 15,-35 v -41 c 0,-10 2.5,-10 2.5,-20 v -55" />
-    <g><desc class="kmdata">km 13,65|b2|3|l|30|translate(518.5,1175)</desc></g>
+    <g><desc class="kmdata">km 13,65|b2|3|l:i|30|translate(518.5,1175)</desc></g>
   </g>
   <g class="cs_strecke">
     <path class="kilometrierung" d="M -385.5,1166.5 l 92.5,92.5 q 15.5,15.5 15.5,37.5 v 100 a 32.5,32.5 0,0,0 32.5,32.5 h 100 q 22,0 38.5,16.5 l 118,118 q 16.5,16.5 38.5,16.5 h 399 q 18,0 31.5,13.5 l 82,82" />
     <path class="kilometrierung" d="M -470,625 v 435 q 0,22 16.5,38.5 l 68,68" />
-    <g><desc class="kmdata">km 7,80|cs|3|r|210|translate(562.5,1675.5)</desc></g>
-    <g><desc class="kmdata">km 8,66|cs|2|l|225|translate(449,1580)</desc></g>
-    <g><desc class="kmdata">km 16,57|cs|2|l|90|translate(-470,705)</desc></g>
-    <g><desc class="kmdata">km 16,85|cs|3|l|90|translate(-470,625)</desc></g>
-    <g><desc class="kmdata">km 16,82|cs|2|r|-75|translate(-515,690)</desc></g>
+    <g><desc class="kmdata">km 7,80|cs|3|r:i|210|translate(562.5,1675.5)</desc></g>
+    <g><desc class="kmdata">km 8,66|cs|2|l:i|225|translate(449,1580)</desc></g>
+    <g><desc class="kmdata">km 16,57|cs|2|l:g|90|translate(-470,705)</desc></g>
+    <g><desc class="kmdata">km 16,85|cs|3|l:g|90|translate(-470,625)</desc></g>
+    <g><desc class="kmdata">km 16,82|cs|2|r:g|-75|translate(-515,690)</desc></g>
     <g class="geplant rtw">
       <path class="kilometrierung" d="M -470,625 v -20 a 25,25 0,0,1 25,-25" />
-      <g><desc class="kmdata">km 17,14 (24)\nkm 2,70 (RTW)|cs|2|l|0|translate(-445,580)</desc></g>
+      <g><desc class="kmdata">km 17,14 (24)\nkm 2,70 (RTW)|cs|2|l:g|0|translate(-445,580)</desc></g>
       <path class="kilometrierung klein" d="M -340,580 h -105" />
       <path class="kilometrierung klein" d="M -445,580 h -300 a 55,55 0,0,0 -55,55 v 75" />
-      <g><desc class="kmdata">km 2,15 (RTW)|cs|3|l|0|translate(-340,580)</desc></g>
-      <desc class="kmdata">km 3,70 (RTW)|cs|2|l|180|translate(-505,585)</desc>
-      <desc class="kmdata">km 4,00 (RTW)|cs|2|r|0|translate(-520,575)</desc>
-      <desc class="kmdata">km 4,20 (RTW)|cs|2|r|-30|translate(-540,580)</desc>
+      <g><desc class="kmdata">km 2,15 (RTW)|cs|3|l:f|0|translate(-340,580)</desc></g>
+      <desc class="kmdata">km 3,70 (RTW)|cs|2|l:f|180|translate(-505,585)</desc>
+      <desc class="kmdata">km 4,00 (RTW)|cs|2|r:f|0|translate(-520,575)</desc>
+      <desc class="kmdata">km 4,20 (RTW)|cs|2|r:f|-30|translate(-540,580)</desc>
     </g>
   </g>
   <g class="c1_strecke">
    <path class="kilometrierung" d="M 449,1580 h 6 q 22,0 38.5,-16.5 l 184,-184 q 16.5,-16.5 38.5,-16.5 h 39" />
    <path class="kilometrierung" d="M 755,1435.5 h -5 a 7.5,7.5 0,0,1 -7.5,-7.5 v -52.5 a 12.5,12.5 0,0,1 12.5,-12.5 h 45 a 30,30 0,0,0 30,-30 v -513" />
    <path class="kilometrierung klein" d="M 390,1580 h 59" />
-   <g><desc class="kmdata">km 0,00←|c1|3|l|-30|translate(390,1575)</desc></g>
-   <g><desc class="kmdata">km 0,00→\nkm 0,45←|c1|3|l|185|translate(449,1585)</desc></g>
-   <g><desc class="kmdata">km 2,36⇥\nkm 2,66↤\nkm 6,40↱|c1|2|r|-60|translate(746,1363)</desc></g>
-   <g><desc class="kmdata">km 7,10|c1|2|r|-60|translate(830,1295)</desc></g>
-   <g><desc class="kmdata">km 9,32|c1|3|r|-30|translate(830,820)</desc></g>
+   <g><desc class="kmdata">km 0,00←|c1|3|l:f|-30|translate(390,1575)</desc></g>
+   <g><desc class="kmdata">km 0,00→\nkm 0,45←|c1|3|l:f|185|translate(449,1585)</desc></g>
+   <g><desc class="kmdata">km 2,36⇥\nkm 2,66↤\nkm 6,40↱|c1|2|r:g|-60|translate(746,1363)</desc></g>
+   <g><desc class="kmdata">km 7,10|c1|2|r:g|-60|translate(830,1295)</desc></g>
+   <g><desc class="kmdata">km 9,32|c1|3|r:g|-30|translate(830,820)</desc></g>
   </g>
-  <g><desc class="kmdata">km 3,53 (20)\nkm 14,0 (C,24)|cs|2|l|30|translate(-385.5,1166.5)</desc></g>
+  <g><desc class="kmdata">km 3,53 (20)\nkm 14,0 (C,24)|cs|2|l:g|30|translate(-385.5,1166.5)</desc></g>
   <g class="cs_strecke">
   </g>
   <g class="cs_strecke">
     <path class="kilometrierung" d="M -390,906 v 250 q 0,6 4.5,10.5" />
-    <g><desc class="kmdata">km 4,68|cs|3|l|30|translate(-390,906)</desc></g>
+    <g><desc class="kmdata">km 4,68|cs|3|l:g|30|translate(-390,906)</desc></g>
   </g>
   <g class="ds_strecke">
     <path class="kilometrierung" d="M -205,1670 v -310" />
-    <g><desc class="kmdata">km 12,0|ds|3|l|90|translate(-210,1360)</desc></g>
+    <g><desc class="kmdata">km 12,0|ds|3|l:f|90|translate(-210,1360)</desc></g>
     <path class="kilometrierung" d="M -125,521 v -33 q 0,-22 -16.5,-38.5 M -158,271 a 55,55 0,0,1 55,-55 h 234" />
     <path class="kilometrierung klein" d="M -141.5,449.5 q -16.5,-16.5 -16.5,-38.5 v -140" />
-    <g><desc class="kmdata">km+0,00|ds|3|r|-30|translate(-125,521)</desc></g>
-    <g><desc class="kmdata">km+0,50|ds|3|l|0|translate(-141.5,449.5)</desc></g>
-    <g><desc class="kmdata">km*0,00|ds|3|l|90|translate(-158,271)</desc></g>
+    <g><desc class="kmdata">km+0,00|ds|3|r:g|-30|translate(-125,521)</desc></g>
+    <g><desc class="kmdata">km+0,50|ds|3|l:g|0|translate(-141.5,449.5)</desc></g>
+    <g><desc class="kmdata">km*0,00|ds|3|l:g|90|translate(-158,271)</desc></g>
   </g>
  </g>
  <text class="te ab_bb" x="915" y="1938"><a id="plain_link" xlink:href="ubahnnetz.svg" class="rev">Permalink zu dieser Version</a></text>

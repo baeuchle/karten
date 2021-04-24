@@ -80,6 +80,19 @@ function create_textbox(data) {
   var textelement = create_textelement(data);
   var kasten = document.createElementNS(SVGNS, "rect");
   kasten.classList.add('label');
+  switch(data.kmsource) {
+    case "f":
+      kasten.classList.add("kmfixed");
+      break;
+    case "i":
+      kasten.classList.add("kminterpolation");
+      break;
+    case "g":
+      kasten.classList.add("kmguess");
+      break;
+    default:
+      break;
+  }
   width = 23 + 5 * textelement.extend.x;
   kasten.setAttribute("width", width);
   kasten.setAttribute("height", 2 + 10 * textelement.extend.y);
@@ -169,6 +182,7 @@ function get_pin_data(text, id) {
     pin_type: 2,
     pin_length: 60,
     align: 'l',
+    kmsource: 'n', // *g*uess, *f*ixed by official statement, *i*nterpolated from *f*, *n*one
     angle: 0,
     transform: undefined
   };
@@ -176,6 +190,9 @@ function get_pin_data(text, id) {
   data.strecken = ary[1].split(",");
   if (ary.length > 2) {
     data.pin_type = Number(ary[2]);
+    if (data.pin_type == 0) {
+      data.pin_length = 0;
+    }
     if (data.pin_type == 1) {
       data.pin_length = 80;
     }
@@ -185,12 +202,22 @@ function get_pin_data(text, id) {
     }
   }
   if (ary.length > 3) {
-    var align = ary[3].toLowerCase();
+    var boxprops = ary[3].split(':');
+    var align = boxprops[0]
     if (align == 'r' || align == 'l' || align == 'c') {
       data.align = align;
     }
     else {
-      console.warn("Text alignment '" + ary[3] + "' not recognized in id='" + id + "'");
+      console.warn("Text alignment '" + align + "' not recognized in id='" + id + "'");
+    }
+    if (boxprops.length > 1) {
+      var kmsource = boxprops[1];
+      if (kmsource == 'g' || kmsource == 'f' || kmsource == 'i') {
+        data.kmsource = kmsource;
+      }
+      else {
+        console.warn("Kilometer source '" + kmsource + "' not recognized in id='" + id + "'");
+      }
     }
   }
   if (ary.length > 4) {
