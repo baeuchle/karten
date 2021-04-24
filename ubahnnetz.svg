@@ -4956,7 +4956,7 @@ DⅣ: Heddernheimer Landstraße - Wiesenau, Niederursel - Kalbach
   </g>
   <g class="ds_strecke">
     <path class="kilometrierung" d="M -205,1670 v -310" />
-    <g><desc class="kmdata">km 1,17|ds|3|l|90|translate(-210,1360)</desc></g>
+    <g><desc class="kmdata">km 12,0|ds|3|l|90|translate(-210,1360)</desc></g>
     <path class="kilometrierung" d="M -125,521 v -33 q 0,-22 -16.5,-38.5 M -158,271 a 55,55 0,0,1 55,-55 h 234" />
     <path class="kilometrierung klein" d="M -141.5,449.5 q -16.5,-16.5 -16.5,-38.5 v -140" />
     <g><desc class="kmdata">km+0,00|ds|3|r|-30|translate(-125,521)</desc></g>
