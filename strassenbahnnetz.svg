@@ -1078,18 +1078,6 @@
     <g transform="translate(-135,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>26</text></g>
     <g transform="translate(-140,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>27</text></g>
    </g>
-   <use xlink:href="#bau" transform="translate(-100,50) scale(5)" />
-   <use xlink:href="#weg" transform="translate(145,15)"/>
-   <use xlink:href="#weg" transform="translate(114,16)"/>
-   <use xlink:href="#weg" transform="translate(13,12)"/>
-   <use xlink:href="#weg" transform="translate(-107,12)"/>
-   <use xlink:href="#weg" transform="translate(-135,75)"/>
-   <use xlink:href="#weg" transform="translate(-130,80)"/>
-   <use xlink:href="#weg" transform="translate(-125,85)"/>
-   <use xlink:href="#weg" transform="translate(-45,100)"/>
-   <use xlink:href="#weg" transform="translate(-45,30)"/>
-   <use xlink:href="#weg" transform="translate(-50,30)"/>
-   <use xlink:href="#weg" transform="translate(-55,30)"/>
   </g>
   <g id="verkehrsmuseum" transform="translate(-821,564)">
    <use xlink:href="#hstgrid" transform="rotate(90)"/>
@@ -1525,10 +1513,6 @@
   <text transform="translate(685,128)" class="ab_bb te">Zentrale</text>
   <text transform="translate(685,135)" class="ab_bb te">Werkstätten</text>
   <text transform="translate(685,142)" class="ab_bb te">Infrastruktur</text>
-  <text transform="translate(-370,255)" class="ab_bb te">BB Gutleut gesperrt</text>
-  <text transform="translate(-370,265)" class="ab_bb te">Oktober 2020 - März 2021</text>
-  <text transform="translate(-370,275)" class="ab_bb te">Zufahrt Werkstattgleise 8-10 frei</text>
-  <text transform="translate(-370,285)" class="ab_bb te">über Gleis 27</text>
   <text transform="translate(-801,564) rotate(-45) translate(20,0)" class="ab_bb">Verkehrsmuseum</text>
   <g id="overlay_box" transform="translate(-865,-425)">
    <rect class="box" width="280" height="70" />
