@@ -82,8 +82,10 @@ def check_revision(rev, filename):
         except ValueError:
             pass
     write_error(404, page_title="Revision ungültig", message="""
-        <p>{} ist keine gültige Revisionsangabe</p>
-        <p><a href="/{}">Aktuelle Version dieser Datei</a></p>
+        <div>
+          <p>{0} ist keine gültige Revisionsangabe</p>
+          <p><a href="/{1}">Aktuelle Version dieser Datei</a></p>
+        </div>
     """.format(rev, filename))
     return False
 
