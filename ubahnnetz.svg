@@ -524,7 +524,7 @@
     <text class="ueberschrift" x="15" y="35">U-Bahn Frankfurt am Main</text>
    </a>
    <text class="unterschrift" x="15" y="60">Streckennetz (ohne Maßstab)</text>
-   <text class="stand"        x="15" y="80">Stand: <tspan class="stand_monat"/><tspan class="stand_monat"/></text>
+   <text class="stand"        x="15" y="80">Stand: <tspan class="stand_monat"/></text>
    <path d="M 20,125 c 0,10 10,10 10,20" class="strecke bb" />
    <path d="M 30,125 c 0,10 -10,10 -10,20" class="strecke bb" />
    <path d="M 20,145 c 0,5 5,5 5,10 v 15" class="strecke bb endet" />

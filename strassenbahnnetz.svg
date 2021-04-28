@@ -1413,7 +1413,7 @@
    <rect class="box" width="450" height="85" />
    <text class="ueberschrift" x="15" y="35">Straßenbahn Frankfurt am Main</text>
    <text class="unterschrift" x="15" y="60">Streckennetz (ohne Maßstab)</text>
-   <text class="stand"        x="15" y="80">Stand: <tspan class="stand_monat"/><tspan class="stand_monat"/></text>
+   <text class="stand"        x="15" y="80">Stand: <tspan class="stand_monat"/></text>
    <g class="nowiki" transform="translate(450,80)">
     <text class="ab_bb te" transform="translate(-18,1)"><a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg">Dieser Plan bei Wikipedia</a></text>
     <a xlink:href="https://commons.wikimedia.org/wiki/File:Gleisplan_Straßenbahn_Frankfurt_am_Main.svg"><image xlink:href="https://de.wikipedia.org/favicon.ico" width="16" height="16" transform="translate(-17,-12)"/></a>
