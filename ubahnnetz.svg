@@ -82,7 +82,7 @@
   .ab_bb { font-size:8pt; stroke:none; }
   text { font-size:10pt; font-family:Helvetica, Arial, Sans-Serif; fill:black; stroke:none; }
   text.boxtext { font-size: 9pt; font-family: Helvetica, Arial, Sans-Serif; }
-  text.smalltext { font-size: 6pt; }
+  .smalltext { font-size: 6pt; }
   #bau { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; stroke-dasharray:none; }
   #uml { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; }
   .link, a text, text a { fill:blue; visibility:visible; }
@@ -126,13 +126,22 @@
   .streckennummern text { stroke: none; font-weight: bold; }
   .streckennummern path { fill: none; }
   .streckennummern { display: none; }
-  .stadtbahnstrecken text { stroke: none; font-weight: bold; }
+  .stadtbahnstrecken text { strokes: none; font-weight: bold; }
   .stadtbahnstrecken path { fill: none; }
   .stadtbahnstrecken { display: none; }
+  .stadtbahnstrecke { stroke-width: 5px; stroke-dasharray:5,2; }
+  .stadtbahnstrecke.unten { stroke-dasharray:2,5; }
+  .ss_as, .ss_d1, .ss_d4
+  { stroke: #f80; fill: #f80; }
+  .ss_a1, .ss_bs, .ss_c1
+  { stroke: #080; fill: #080; }
+  .ss_a2, .ss_d2, .ss_b2
+  { stroke: #00f; fill: #00f; }
+  .ss_a3, .ss_b1, .ss_cs
+  { stroke: #c0f; fill: #c0f; }
   /* Kilometrierungen */
   .as_strecke { display:none; }
   .a1_strecke { display:none; }
-  .a2_strecke { display:none; }
   .a3_strecke { display:none; }
   .bs_strecke { display:none; }
   .b2_strecke { display:none; }
@@ -4714,10 +4723,10 @@
  </g>
  <g id="kilometrierungen_gruppen" class="kilometer">
   <g class="as_strecke">
-   <path class="kilometrierung" d="M 115,1955 V 690" />
-   <path class="kilometrierung klein" d="M 115,690 V 523 q 0,-10 -7.5,-17.5 l -32,-32 q -7.5,-7.5 -17.5,-7.5 h -128" />
-   <path class="kilometrierung" d="M 75.5,473.5 q -10.5,-10.5 -10.5,-24.5 V 281 a 65,65 0,0,1 65,-65 h 325 a 55,55 0,0,0, 55,-55 v -140" />
-   <path class="kilometrierung" d="M -70,466 h -33 q -22,0 -38.5,-16.5 q -16.5,-16.5 -16.5,-38.5 v -140 q 0,-22 -16.5,-38.5 l -105,-105 q -16.5,-16.5 -38.5,-16.5 h -120 a 25,25 0,0,1 0,-50 h 213 a 15,15 0,0,0 15,-15 v -130 a 55,55 0,0,0 -55,-55 h -535" />
+   <path id="km_as" class="kilometrierung" d="M 115,1955 V 690" />
+   <path id="km_a23" class="kilometrierung klein" d="M 115,690 V 523 q 0,-10 -7.5,-17.5 l -32,-32 q -7.5,-7.5 -17.5,-7.5 h -128" />
+   <path id="km_a2" class="kilometrierung" d="M 75.5,473.5 q -10.5,-10.5 -10.5,-24.5 V 281 a 65,65 0,0,1 65,-65 h 325 a 55,55 0,0,0, 55,-55 v -140" />
+   <path id="km_a3" class="kilometrierung" d="M -70,466 h -33 q -22,0 -38.5,-16.5 q -16.5,-16.5 -16.5,-38.5 v -140 q 0,-22 -16.5,-38.5 l -105,-105 q -16.5,-16.5 -38.5,-16.5 h -120 a 25,25 0,0,1 0,-50 h 213 a 15,15 0,0,0 15,-15 v -130 a 55,55 0,0,0 -55,-55 h -535" />
    <g id="end_as"><desc class="kmdata">km 7,65|as|3|r:i|-30|translate(115,1955)</desc></g>
    <g id="abzw_dornbusch"><desc class="kmdata">km 12,91|as|2|r:i|-75|translate(115,1020)</desc></g>
    <g id="end_a2"><desc class="kmdata">km 24,15|as|3|r:i|-60|translate(510,21)</desc></g>
@@ -4788,8 +4797,6 @@
   </g>
   <g><desc class="kmdata">km 3,53 (20)\nkm 14,0 (C,24)|cs|2|l:g|30|translate(-385.5,1166.5)</desc></g>
   <g class="cs_strecke">
-  </g>
-  <g class="cs_strecke">
     <path class="kilometrierung" d="M -390,906 v 250 q 0,6 4.5,10.5" />
     <g><desc class="kmdata">km 4,68|cs|3|l:g|30|translate(-390,906)</desc></g>
   </g>
@@ -4808,6 +4815,43 @@
   </g>
   <g class="stadtbahnstrecken layer">
     <rect class="overlay" id="overlay_ss" width="1765" height="2147" x="-815" y="-180" />
+    <path id="ss_as" class="stadtbahnstrecke ss_as" d="M 115,1955 v -350 m 0,-50 v -865" />
+    <path id="ss_aS" class="stadtbahnstrecke unten ss_as" d="M 115,1605 v -50" />
+    <path id="ss_a1" class="stadtbahnstrecke ss_a1" d="M 115,690  V 523 q 0,-10 -7.5,-17.5 l -32,-32 q -7.5,-7.5 -17.5,-7.5 h -128 a 55,55 0,0,0 -55,55 V 1001" />
+    <path id="ss_a2" class="stadtbahnstrecke ss_a2" d="M 75.5,473.5 q -10.5,-10.5 -10.5,-24.5 V 281 a 65,65 0,0,1 65,-65 h 325 a 55,55 0,0,0, 55,-55 v -140" />
+    <path id="ss_a3" class="stadtbahnstrecke ss_a3" d="M -70,466 h -33 q -22,0 -38.5,-16.5 q -16.5,-16.5 -16.5,-38.5 v -140 q 0,-22 -16.5,-38.5 l -105,-105 q -16.5,-16.5 -38.5,-16.5 h -120 a 25,25 0,0,1 0,-50 h 213 a 15,15 0,0,0 15,-15 v -130 a 55,55 0,0,0 -55,-55 h -535" />
+    <path id="ss_bs" class="stadtbahnstrecke ss_bs" d="M -690,1580 h 420 a 55,55 0,0,1 55,55 v 50 q 0,22 16.5,38.5 q 16.5,16.5 38.5,16.5 h 95 q 21,0 36,-16.5 l 2,-2 q 16.5,-16.5 36,-16.5 h 91 m 30,0 h 100 a 55,55 0,0,0 55,-55 v -75 c 0,-20 -10,-20 -10,-40 v -20" />
+    <path id="ss_bS" class="stadtbahnstrecke ss_bs unten" d="M 100,1705 h 30" />
+    <path id="ss_b1" class="stadtbahnstrecke ss_b1" d="M 275,1515 V 1070 a 15,15 0,0,1 15,-15 h 130 a 15,15 0,0,0 15,-15 v -430" />
+    <path id="ss_b2" class="stadtbahnstrecke ss_b2" d="M 285,1580 v -16 q 0,-22 16.5,-38.5 l 199.5,-199.5 q 15,-15 15,-35 v -41 c 0,-10 2.5,-10 2.5,-20 v -55" />
+    <path id="ss_cs" class="stadtbahnstrecke ss_cs" d="M -385.5,1166.5 l 92.5,92.5 q 15.5,15.5 15.5,37.5 v 100 a 32.5,32.5 0,0,0 32.5,32.5 h 100 q 22,0 38.5,16.5 l 118,118 q 16.5,16.5 38.5,16.5 h 210 m 40,0 h 149 q 18,0 31.5,13.5 l 82,82" />
+    <path id="ss_c1" class="stadtbahnstrecke ss_c1" d="M 449,1580 h 6 q 22,0 38.5,-16.5 l 184,-184 q 16.5,-16.5 38.5,-16.5 h 84 a 30,30 0,0,0 30,-30 v -513" />
+    <path id="ss_cS" class="stadtbahnstrecke unten ss_cs" d="M 260,1580 h 40" />
+    <path id="ss_d1" class="stadtbahnstrecke ss_d1" d="M -205,1670 v -230 m 0,-20 v -60" />
+    <path id="ss_dS" class="stadtbahnstrecke unten ss_d1" d="M -205,1440 v -20" />
+    <path id="ss_d2" class="stadtbahnstrecke unten ss_d2" d="M -205,1360 L -125,1001" />
+    <path id="ss_d4" class="stadtbahnstrecke ss_d4" d="M -125,521 v -33 q 0,-22 -16.5,-38.5 M -158,271 a 55,55 0,0,1 55,-55 h 234" />
+    <text class="ss_as" x="125" y="1850">A</text>
+    <text class="ss_as" x="125" y="850">A</text>
+    <text class="ss_a1" x="125" y="600">A1</text>
+    <text class="ss_a1" x="-115" y="850">A1</text>
+    <text class="ss_a2" x="75" y="340">A2</text>
+    <text class="ss_a3" x="-148" y="340">A3</text>
+    <text class="ss_a3" x="-200" y="-30">A3</text>
+    <text class="ss_bs" x="200" y="1695">B</text>
+    <text class="ss_bs" x="-460" y="1570">B</text>
+    <text class="ss_b1" x="285" y="1275">B1</text>
+    <text class="ss_b1" x="445" y="860">B1</text>
+    <text class="ss_b2" x="415" y="1385">B2</text>
+    <text class="ss_cs" x="-265" y="1304">C</text>
+    <text class="ss_cs" x="165" y="1560">C</text>
+    <text class="ss_cs" x="520" y="1613">C</text>
+    <text class="ss_c1" x="622" y="1455">C1</text>
+    <text class="ss_c1" x="850" y="1090">C1</text>
+    <text class="ss_d1" x="-195" y="1500">D<tspan dy="-5" class="smalltext">Ⅰ</tspan></text>
+    <text class="ss_d2" x="-160" y="1200">D<tspan dy="-5" class="smalltext">Ⅱ</tspan></text>
+    <text class="ss_d4" x="-150" y="500">D<tspan dy="-5" class="smalltext">Ⅳ</tspan></text>
+    <text class="ss_d4" x="-38" y="201">D<tspan dy="-5" class="smalltext">Ⅳ</tspan></text>
   </g>
   <g id="textboxen">
   <g id="legende" transform="translate(550,-169)">
@@ -4932,11 +4976,13 @@
    <text class="ab_bb"      x="20" y="310">Status: <a xlink:href="https://rp-darmstadt.hessen.de/pressemitteilungen/rp-leitet-anhörung-für-regionaltangente-west-ein-abschnitt-nord">Planfeststellung beantragt</a> (am 18.12.2017)</text>
   </g>
     <g id="overlay_box" transform="translate(0,-9)">
-      <rect class="box" width="280" height="80" />
+      <rect class="box" width="280" height="98" />
       <text class="unterschrift" x="20" y="25">Zusatzinformationen</text>
       <text class="boxtext" x="20" y="45" onclick="overlay('streckennummern')">VGF-Streckennummern <tspan class="link" id="streckennummern_aktion">anzeigen</tspan></text>
       <text class="smalltext" x="40" y="55">Zeigt die offiziellen Streckenbezeichnungen der VGF-Infrastruktur</text>
       <text class="boxtext" x="20" y="70" onclick="overlay('stadtbahnstrecken')">Stadtbahnstrecken <tspan class="link" id="stadtbahnstrecken_aktion">anzeigen</tspan></text>
+      <text class="smalltext" x="40" y="80">Benannte Stadtbahnstrecken. Nicht alle von Stadtbahnen</text>
+      <text class="smalltext" x="40" y="88">befahrenen Strecken sind in diesem Schema erfasst.</text>
     </g>
   <g id="kilometrierungen" transform="translate(-100,-169)">
    <rect class="box" width="470" height="160" />
