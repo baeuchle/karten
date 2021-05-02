@@ -60,13 +60,13 @@
   .tramg { stroke-dasharray: .5,.5; }
   .tunnel  { stroke-width:2px; stroke:#000080; }
   .tb { stroke-width:1.4px; stroke:#404080; }
-  .ebobahn { stroke-width:1px; stroke:#008000; fill:none; }
+  .ebobahn path { stroke-width:1px; stroke:#008000; fill:none; }
   .sb { stroke-width:.7px; }
   .strasse { stroke-width:10px; stroke:#e0e0e0; fill:none; }
   .eigen { stroke-width:10px; stroke:#e0e0a0; fill:none; }
   .strecke, .strasse, .ebobahn, .tunnel { fill: none; }
-  .geplant text { stroke:none; stroke-dasharray:none; font-size:70%; font-style:italic; }
-  .ebobahn text { fill:#008000; stroke:none; }
+  .geplant text { stroke-dasharray:none; font-size:70%; font-style:italic; }
+  .ebobahn text { fill:#008000; }
   #tunnelrampe { fill:none; stroke:#000000; stroke-width:1px; }
   .weg { stroke:red; stroke-width:2; fill:none; }
   /* Text / Legenden */
@@ -74,20 +74,20 @@
   .headline { font-weight: bold; }
   .box { fill:#ffffff; fill-opacity:1; stroke:#ff0000; stroke-width:2; }
   .info {stroke-dasharray: 2,2; }
-  .ueberschrift { font-size:22pt;fill:#0000c0;fill-opacity:1;stroke:none; }
-  .unterschrift { font-size:18pt;fill:#ff0000;fill-opacity:1;stroke:none; }
-  .stand {  font-size:14pt;fill:#000000;fill-opacity:1;stroke:none; }
+  .ueberschrift { font-size:22pt;fill:#0000c0;fill-opacity:1; }
+  .unterschrift { font-size:18pt;fill:#ff0000;fill-opacity:1; }
+  .stand {  font-size:14pt;fill:#000000;fill-opacity:1; }
   .rev { font-size:7pt; fill-opacity: .5; }
   /* Text im Plan selbst */
-  .ab_bb { font-size:8pt; stroke:none; }
-  text { font-size:10pt; font-family:Helvetica, Arial, Sans-Serif; fill:black; stroke:none; }
+  .ab_bb { font-size:8pt; }
+  text { font-size:10pt; font-family:Helvetica, Arial, Sans-Serif; fill:black; stroke-width: 0px; }
   text.boxtext { font-size: 9pt; font-family: Helvetica, Arial, Sans-Serif; }
   .smalltext { font-size: 6pt; }
   #bau { stroke:red; stroke-width:2px; fill:white; stroke-linejoin:round; stroke-dasharray:none; }
   #uml { stroke:black; stroke-width:.4; fill:#ffcc33; stroke-linejoin:round; }
   .link, a text, text a { fill:blue; visibility:visible; }
   .script { visibility:visible; }
-  .ref { font-size:9pt; fill:#0080ff; stroke:none; font-weight:bold; }
+  .ref { font-size:9pt; fill:#0080ff; font-weight:bold; }
   /* Kilometrierung */
   .kilometrierung { stroke-width:3px; stroke-dasharray:20,4,4,4; fill:none; stroke:#000; }
   .klein { stroke-width:1.5px; stroke-dasharray:10,2,2,2; }
@@ -123,21 +123,22 @@
   .rtw { display:none; }
   /* Overlays */
   .overlay { fill: white; fill-opacity: 70%; }
-  .streckennummern text { stroke: none; font-weight: bold; }
-  .streckennummern path { fill: none; }
-  .streckennummern { display: none; }
-  .stadtbahnstrecken text { strokes: none; font-weight: bold; }
-  .stadtbahnstrecken path { fill: none; }
-  .stadtbahnstrecken { display: none; }
-  .stadtbahnstrecke { stroke-width: 5px; stroke-dasharray:5,2; }
+  .streckennummern text, .stadtbahnstrecken text
+  { font-weight: bold; }
+  .streckennummern path, .stadtbahnstrecken path
+  { fill: none; }
+  .streckennummern, .stadtbahnstrecken
+  { display: none; }
+  .stadtbahnstrecke, .streckennummer
+  { stroke-width: 5px; stroke-dasharray:5,2; }
   .stadtbahnstrecke.unten { stroke-dasharray:2,5; }
-  .ss_as, .ss_d1, .ss_d4
+  .ss_as, .ss_d1, .ss_d4, .sn_30, .sn_20, .sn_65, .sn_54
   { stroke: #f80; fill: #f80; }
-  .ss_a1, .ss_bs, .ss_c1
+  .ss_a1, .ss_bs, .ss_c1, .sn_29, .sn_37, .sn_35, .sn_50
   { stroke: #080; fill: #080; }
-  .ss_a2, .ss_d2, .ss_b2
+  .ss_a2, .ss_d2, .ss_b2, .sn_36, .sn_41, .sn_43, .sn_24
   { stroke: #00f; fill: #00f; }
-  .ss_a3, .ss_b1, .ss_cs
+  .ss_a3, .ss_b1, .ss_cs, .sn_38, .sn_40, .sn_25, .sn_62
   { stroke: #c0f; fill: #c0f; }
   /* Kilometrierungen */
   .as_strecke { display:none; }
@@ -178,15 +179,15 @@
   #highlightedsignalplatz { stroke:#ffc080; stroke-width:2; fill:#000000; }
 
   .gleisnummer rect { fill:white; fill-opacity:.7; stroke:black; stroke-width:.3; }
-  .gleisnummer text { fill:black; stroke:none; font-size:3pt; text-anchor:middle; }
+  .gleisnummer text { fill:black; font-size:3pt; text-anchor:middle; }
   .bgleisnummer circle { fill:white; fill-opacity:.8; stroke:black; stroke-width:.3; }
-  .bgleisnummer text { fill:black; stroke:none; font-size:2pt; text-anchor:middle; }
+  .bgleisnummer text { fill:black; font-size:2pt; text-anchor:middle; }
   .wand { stroke:#93799a; stroke-width:.2; }
   .tor { stroke:black; stroke-width:.3; marker-end:url(#prell); marker-start: url(#prell); }
   .gebaude { fill:#beadad; fill-opacity:.5; }
   .keinewand { stroke:none; }
   .beschrift path { fill:none; stroke:#93799a; stroke-width:.5; }
-  .beschrift text { fill:black; stroke:none; font-size:3pt; }
+  .beschrift text { fill:black; font-size:3pt; }
 
   .always_links rect { fill: white; fill-opacity: .3; stroke: none; }
   path.link_symbol { fill: none; stroke-width: 1; stroke: blue; stroke-opacity: .5; }
@@ -4812,12 +4813,66 @@
  </g>
   <g class="streckennummern layer">
     <rect class="overlay" id="overlay_sn" width="1765" height="2147" x="-815" y="-180" />
+    <path id="sn_20" class="streckennummer sn_20" d="M -325.5,1334 v -95.5 q 0,-12 -9,-21 l -51,-51 q -4.5,-4.5 -4.5,-10.5 v -250" />
+    <path id="sn_24" class="streckennummer sn_24" d="M -385.5,1166.5 l -68,-68 q -16.5,-16.5 -16.5,-38.5 v -435 m 0,65 h -134 a 20,20 0,0,0 -20,20 v 85" />
+    <path id="sn_25" class="streckennummer sn_25" d="M -334.5,1217.5 l 41.5,41.5 q 15.5,15.5 15.5,37.5 v 100 a 32.5,32.5 0,0,0 32.5,32.5 h 100 q 22,0 38.5,16.5 l 118,118 q 16.5,16.5 38.5,16.5 h 210 m 40,0 h 149 q 18,0 31.5,13.5 l 82,82" />
+    <path id="sn_29" class="streckennummer sn_29" d="M -125,521 v -33 q 0,-22 -16.5,-38.5 M -70,466 a 55,55 0,0,0 -55,55 V 1001 M -205,1360 v 60 m 0,20 v 80" />
+    <path id="sn_30" class="streckennummer sn_30" d="M 115,1955 v -350 m 0,-50 V 523 q 0,-10 -7.5,-17.5 l -32,-32 q -7.5,-7.5 -17.5,-7.5 h -161 q -22,0 -38.5,-16.5 q -16.5,-16.5 -16.5,-38.5 v -140 q 0,-22 -16.5,-38.5 l -40,-40" />
+    <path id="sn_35" class="streckennummer sn_35" d="M 115,1055 h 160" />
+    <path id="sn_36" class="streckennummer sn_36" d="M -158,271 a 55,55 0,0,1 55,-55 h 234 v -4 h 50" />
+    <path id="sn_37" class="streckennummer sn_37" d="M 75.5,473.5 q -10.5,-10.5 -10.5,-24.5 M -214.5,192.5 l -65,-65 q -16.5,-16.5 -38.5,-16.5 h -120 a 25,25 0,0,1 0,-50 h 213 a 15,15 0,0,0 15,-15 v -130 a 55,55 0,0,0 -55,-55 h -535" />
+    <path id="sn_38" class="streckennummer sn_38" d="M 65,449  V 281 a 65,65 0,0,1 65,-65 h 325 a 55,55 0,0,0, 55,-55 v -140" />
+    <path id="sn_40" class="streckennummer sn_40" d="M 275,1510 V 970 c 0,-10 -12.5,-10 -12.5,-20 v -52.5" />
+    <path id="sn_41" class="streckennummer sn_41" d="M -205,1520 v 75 c 0,20 -10,20 -10,40 v 50 q 0,22 16.5,38.5 q 16.5,16.5 38.5,16.5 h 95 q 21,0 36,-16.5 l 2,-2 q 16.5,-16.5 36,-16.5 h 91 m 30,0 h 100 a 55,55 0,0,0 55,-55 v -75 c 0,-20 -10,-20 -10,-40 v -25" />
+    <path id="sn_43" class="streckennummer sn_43" d="M 275,1055 h 145 a 15,15 0,0,0 15,-15 v -430" />
+    <path id="sn_50" class="streckennummer sn_50" d="M 285,1580 v -16 q 0,-22 16.5,-38.5 l 199.5,-199.5 q 15,-15 15,-35 v -96 a 25,25 0,0,1 25,-25 h 59" />
+    <path id="sn_54" class="streckennummer sn_54" d="M 600,1170 h 115 a 20,20 0,0,1 20,20 v 85 a 20,20 0,0,0 20,20 h 75" />
+    <path id="sn_62" class="streckennummer sn_62" d="M 726,1363 h 29 M 755,1435.5 h -5 a 7.5,7.5 0,0,1 -7.5,-7.5 v -52.5 a 12.5,12.5 0,0,1 12.5,-12.5 h 45 a 30,30 0,0,0 30,-30 v -513" />
+    <path id="sn_65" class="streckennummer sn_65" d="M 449,1580 h 6 q 22,0 38.5,-16.5 l 184,-184 q 16.5,-16.5 38.5,-16.5 h 10" />
+    <text class="sn_20 te" x="-335.5" y="1304">20</text>
+    <text class="sn_20" x="-375" y="991">20</text>
+    <text class="sn_24" x="-460" y="875">24</text>
+    <text class="sn_24" x="-460" y="655">24</text>
+    <text class="sn_24" x="-550" y="680">24</text>
+    <text class="sn_25" x="-265" y="1304">25</text>
+    <text class="sn_25" x="165" y="1560">25</text>
+    <text class="sn_25" x="520" y="1613">25</text>
+    <text class="sn_29" x="-195" y="1500">29<tspan dy="-5" class="smalltext">(Süd)</tspan></text>
+    <text class="sn_29" x="-115" y="520">29<tspan dy="-5" class="smalltext">(Nord)</tspan></text>
+    <text class="sn_29" x="-115" y="950">29<tspan dy="-5" class="smalltext">(Nord)</tspan></text>
+    <text class="sn_30" x="125" y="1850">30</text>
+    <text class="sn_30" x="125" y="1350">30</text>
+    <text class="sn_30" x="125" y="600">30</text>
+    <text class="sn_30" x="-148" y="340">30</text>
+    <text class="sn_30" x="-190" y="210">30</text>
+    <text class="sn_35" x="175" y="1045">35</text>
+    <text class="sn_36" x="-38" y="201">36</text>
+    <text class="tm" x="150" y="201"><tspan class="sn_36">36</tspan> + <tspan class="sn_38">38</tspan></text>
+    <text class="sn_37" x="75" y="460">37<tspan dy="-5" class="smalltext">00</tspan></text>
+    <text class="sn_37" x="-250" y="150">37</text>
+    <text class="sn_37" x="-200" y="-30">37</text>
+    <text class="sn_38" x="75" y="340">38</text>
+    <text class="sn_38" x="330" y="201">38</text>
+    <text class="sn_40" x="285" y="1355">40</text>
+    <text class="sn_40" x="275" y="940">40</text>
+    <text class="sn_41" x="-195" y="1570">41</text>
+    <text class="sn_41" x="200" y="1695">41</text>
+    <text class="sn_41" x="-100" y="1730">41</text>
+    <text class="sn_41 te" x="265" y="1525">41</text>
+    <text class="sn_43" x="445" y="860">43</text>
+    <text class="sn_50" x="415" y="1385">50</text>
+    <text class="sn_50" x="550" y="1160">50</text>
+    <text class="sn_54" x="700" y="1160">54</text>
+    <text class="sn_62" x="850" y="1090">62</text>
+    <text class="sn_62" x="735" y="1353">62</text>
+    <text class="sn_62" x="755" y="1410">62</text>
+    <text class="sn_65" x="622" y="1455">65</text>
   </g>
   <g class="stadtbahnstrecken layer">
     <rect class="overlay" id="overlay_ss" width="1765" height="2147" x="-815" y="-180" />
     <path id="ss_as" class="stadtbahnstrecke ss_as" d="M 115,1955 v -350 m 0,-50 v -865" />
     <path id="ss_aS" class="stadtbahnstrecke unten ss_as" d="M 115,1605 v -50" />
-    <path id="ss_a1" class="stadtbahnstrecke ss_a1" d="M 115,690  V 523 q 0,-10 -7.5,-17.5 l -32,-32 q -7.5,-7.5 -17.5,-7.5 h -128 a 55,55 0,0,0 -55,55 V 1001" />
+    <path id="ss_a1" class="stadtbahnstrecke ss_a1" d="M 115,690 V 523 q 0,-10 -7.5,-17.5 l -32,-32 q -7.5,-7.5 -17.5,-7.5 h -128 a 55,55 0,0,0 -55,55 V 1001" />
     <path id="ss_a2" class="stadtbahnstrecke ss_a2" d="M 75.5,473.5 q -10.5,-10.5 -10.5,-24.5 V 281 a 65,65 0,0,1 65,-65 h 325 a 55,55 0,0,0, 55,-55 v -140" />
     <path id="ss_a3" class="stadtbahnstrecke ss_a3" d="M -70,466 h -33 q -22,0 -38.5,-16.5 q -16.5,-16.5 -16.5,-38.5 v -140 q 0,-22 -16.5,-38.5 l -105,-105 q -16.5,-16.5 -38.5,-16.5 h -120 a 25,25 0,0,1 0,-50 h 213 a 15,15 0,0,0 15,-15 v -130 a 55,55 0,0,0 -55,-55 h -535" />
     <path id="ss_bs" class="stadtbahnstrecke ss_bs" d="M -690,1580 h 420 a 55,55 0,0,1 55,55 v 50 q 0,22 16.5,38.5 q 16.5,16.5 38.5,16.5 h 95 q 21,0 36,-16.5 l 2,-2 q 16.5,-16.5 36,-16.5 h 91 m 30,0 h 100 a 55,55 0,0,0 55,-55 v -75 c 0,-20 -10,-20 -10,-40 v -20" />
