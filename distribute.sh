@@ -46,7 +46,7 @@ if [ -d $target_dir ]; then
     fi
     cp countries-ive-been-to.svg  $target_dir
     echo "Moving Netzplaene"
-    for mvfile in $(./oldrev.py --show-whitelist) oldrev.py; do
+    for mvfile in $(./oldrev.py --show-whitelist) oldrev.py rev_translate; do
         if [ -f $mvfile.dist ]; then
             mv $mvfile.dist $target_dir/$mvfile
         elif [ -f $mvfile ]; then
