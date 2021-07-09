@@ -283,7 +283,7 @@
    <use xlink:href="#bstg_vers1" />
    <text transform="translate(15,5)">Oberschweinstiege</text>
   </g>
-  <g id="hstLOUI" transform="translate(-20,565)" class="zehnzig te">
+  <g id="hstLOUI" transform="translate(-20,565)" class="dreizig te">
    <use xlink:href="#doppelbst" transform="translate(-5,0) rotate(180)" />
    <use xlink:href="#bahnsteig" transform="translate(5,0)" />
    <text transform="rotate(-45) translate(-15,0)">Louisa Bahnhof</text>
