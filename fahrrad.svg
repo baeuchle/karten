@@ -53,12 +53,12 @@
     popupStay: false,
     x: {
       min: new Date(2005, 0, 1, 0, 0, 0, 0),
-      max: new Date(2022, 0, 1, 0, 0, 0, 0),
+      max: new Date(2023, 0, 1, 0, 0, 0, 0),
       del: 13,
       labeltext: "Jahr"
     },
     y: {
-      min: 1000,
+      min: 000,
       max: 14500,
       del: 1000,
       labeltext: "km"
@@ -513,6 +513,35 @@ var fahrrad = [
  { date : new Date("2021-10-10"), distance :14320, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2021-10-17"), distance :14320, link: "", text: "Quelle: Protokoll" },
  { date : new Date("2021-10-24"), distance :14324, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2021-11-07"), distance :14349, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2021-11-08"), distance :    0, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2021-11-14"), distance :   41, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2021-11-21"), distance :   50, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2021-11-28"), distance :   79, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2021-12-05"), distance :  105, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2021-12-12"), distance :  128, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2021-12-19"), distance :  177, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2021-12-26"), distance :  206, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2021-12-31"), distance :  208, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-01-02"), distance :  212, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-01-09"), distance :  243, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-01-16"), distance :  275, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-01-23"), distance :  314, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-01-30"), distance :  338, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-02-06"), distance :  349, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-02-13"), distance :  383, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-02-20"), distance :  419, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-02-27"), distance :  426, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-03-06"), distance :  497, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-03-13"), distance :  517, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-03-20"), distance :  548, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-03-27"), distance :  577, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-04-03"), distance :  604, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-04-10"), distance :  658, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-04-17"), distance :  684, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-04-24"), distance :  713, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-05-01"), distance :  747, link: "", text: "Quelle: Protokoll" },
+ { date : new Date("2022-05-08"), distance :  787, link: "", text: "Quelle: Protokoll" },
 ];
 var regionen = [
  { date: [ new Date("2005-09-03"), new Date("2005-09-20")], dateText: "September 2005", km: [ 3390,  4752], link: "", text: "Fahrradtour zur Ostsee mit Caro und Derek B." },
@@ -582,7 +611,7 @@ var regionen = [
     if (! plot.overflow && (value.date < plot.x.min || value.date > plot.x.max || value.distance < plot.y.min || value.distance > plot.y.max)) {
       return;
     }
-    var point = document.createElementNS("http://www.w3.org/2000/svg", 'circle'); 
+    var point = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
     document.getElementById(plot.area).appendChild(point);
     point.setAttribute("class", "datapoint");
     point.setAttribute("id", plot.dataname + index);
