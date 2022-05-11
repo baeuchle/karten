@@ -3064,9 +3064,9 @@
       </g>
     </g>
    </g>
-   <g id="hst421" transform="translate(-125,741)" class="te">
+   <g id="hst421" transform="translate(-125,741)" class="dreizig te">
     <g onclick="toggle_details(this)">
-     <use xlink:href="#bstg_nidda" />
+     <use xlink:href="#bstg_ausen" />
      <use id="rs_31"  xlink:href="#vierabstell" transform="translate( 2.5,42.5)" />
      <use id="rs_32a" xlink:href="#dreiabstell" transform="translate(-2.5,42.5)" />
      <use id="rs_32b" xlink:href="#dreiabstell" transform="translate(-2.5,60)" />
@@ -4979,7 +4979,7 @@
    <text transform="translate(70,545)" class="ab_bb">Nur im Mittelteil 80 cm, vorderer und hinterer Teil 60 cm. Länge 73 m</text>
    <text transform="translate(70,570)">Umbauten</text>
    <text transform="translate(70,580)" class="ab_bb">Ersatzhaltestelle / Halt entfällt</text>
-   <text transform="translate(70,612)">Links: Höhe 56 cm (nur Niddapark und Römerstadt)</text>
+   <text transform="translate(70,612)">Links: Höhe 56 cm (nur Niddapark)</text>
    <text transform="translate(70,626)">Rechts: Höhe 87 cm (nur Hauptbahnhof Gleis 3)</text>
    <text transform="translate(60,650)" class="headline">Betriebshöfe (BB) und Abstellanlagen (AB)</text>
    <text transform="translate(70,675)" class="ab_bb">Abstell- und Wendegleise,</text>
