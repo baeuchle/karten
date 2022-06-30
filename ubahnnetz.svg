@@ -149,6 +149,7 @@
   .cs_strecke { display:none; }
   .c1_strecke { display:none; }
   .ds_strecke { display:none; }
+  .s35_strecke { display:none; }
   /* Haltestellendetails */
   .abstell { stroke-width:.5; stroke:#000000; fill:#ffffff; fill-opacity:0.8; }
   text.hstdetails, tspan.hstdetails, .hstdetails text { font-size:7pt; }
@@ -3317,7 +3318,7 @@
      <text x="-15" y="-3">Dornbusch</text>
      <text x="-15" y="13">(Hessischer Rundfunk)</text>
     </a>
-    <desc class="kmdata">km 12,40|as|2|r:i|-30</desc>
+    <desc class="kmdata">km 12,70|as|2|r:i|-30</desc>
     <g class="hstdetails">
       <g id="sig515V21" transform="translate(-5,40) rotate(180)" onmouseover="highlight(this)">
         <path class="signalverbinder" d="M 2,0 H 20" />
@@ -4729,7 +4730,6 @@
    <path id="km_a2" class="kilometrierung" d="M 75.5,473.5 q -10.5,-10.5 -10.5,-24.5 V 281 a 65,65 0,0,1 65,-65 h 325 a 55,55 0,0,0, 55,-55 v -140" />
    <path id="km_a3" class="kilometrierung" d="M -70,466 h -33 q -22,0 -38.5,-16.5 q -16.5,-16.5 -16.5,-38.5 v -140 q 0,-22 -16.5,-38.5 l -105,-105 q -16.5,-16.5 -38.5,-16.5 h -120 a 25,25 0,0,1 0,-50 h 213 a 15,15 0,0,0 15,-15 v -130 a 55,55 0,0,0 -55,-55 h -535" />
    <g id="end_as"><desc class="kmdata">km 7,65|as|3|r:i|-30|translate(115,1955)</desc></g>
-   <g id="abzw_dornbusch"><desc class="kmdata">km 12,91|as|2|r:i|-75|translate(115,1020)</desc></g>
    <g id="end_a2"><desc class="kmdata">km 24,15|as|3|r:i|-60|translate(510,21)</desc></g>
    <g class="verlaengerung_badhomburg geplant">
     <path class="kilometrierung" d="M 510,21 v -185" />
@@ -4755,14 +4755,21 @@
     <g><desc class="kmdata">km 5,79|bs|2|r:i|-30|translate(-460,1580)</desc></g>
     <g><desc class="kmdata">km 4,70|bs|3|r:i|180|translate(-690,1575)</desc></g>
    </g>
-   <path class="kilometrierung" d="M 275,1590 V 1070 a 15,15 0,0,1 15,-15 h 130 a 15,15 0,0,0 15,-15 v -430" />
-   <g><desc class="kmdata">km 13,15|bs|2|r:i|-30|translate(275,1055)</desc></g>
+   <path class="kilometrierung" d="M 275,1590 V 1070 v -90 c 0,-20 -12.5,-20 -12.5,-40 v -42.5" />
+   <path class="kilometrierung" d="M 275,1070 a 15,15 0,0,1 15,-15 h 130 a 15,15 0,0,0 15,-15 v -430" />
+   <g><desc class="kmdata">km 13,37|bs|3|l:i|60|translate(275,960)</desc></g>
+   <g><desc class="kmdata">km 13,47|bs|3|l:i|60|translate(262.5,897.5)</desc></g>
    <g><desc class="kmdata">km 15,50|bs|3|r:i|-45|translate(435,610)</desc></g>
    <g class="frankfurter_berg geplant">
     <path class="kilometrierung" d="M 435,610 v -295" />
     <g><desc class="kmdata">km 17,05|bs|3|r:i|-30|translate(435,315)</desc></g>
    </g>
   </g>
+  <g id="abzw_dornbusch"><desc class="kmdata">km 12,91 (A) ↑\nkm 0,0 (35) ↦|as,s35|3|l:i|45|translate(115,1040)</desc></g>
+  <path class="kilometrierung s35_strecke" d="M 115,1040 a 15,15 0,0,0 15,15 h 145" />
+  <g><desc class="kmdata">km 0,3|s35|3|l:g|105|translate(155,1060)</desc></g>
+  <g><desc class="kmdata">km 0,7|s35|3|l:g|-60|translate(225,1060)</desc></g>
+  <g id="eckenheimer_marbachweg"><desc class="kmdata">km 13,15 (B1/40) ↑↱\nkm 1,00 (35) ⇥|bs,s35|2|l:i|30|translate(275,1055)</desc></g>
   <g class="b2_strecke">
     <path class="kilometrierung" d="M 285,1580 v -16 q 0,-22 16.5,-38.5 l 199.5,-199.5 q 15,-15 15,-35 v -41 c 0,-10 2.5,-10 2.5,-20 v -55" />
     <g><desc class="kmdata">km 13,65|b2|3|l:i|30|translate(518.5,1175)</desc></g>
@@ -5056,6 +5063,9 @@ A3: (Weißer Stein-) Dreieck Nordwest - Oberursel
 A1: Weißer Stein - Ginnheim
       </title>
       A1</tspan>
+    •
+    <tspan id="s35_strecke_tx" onclick="kilometer('s35_strecke')">
+      35 (Marbachweg)</tspan>
    </text>
    <text class="boxtext" x="20" y="60">
     <tspan id="bs_strecke_tx" onclick="kilometer('bs_strecke')">
