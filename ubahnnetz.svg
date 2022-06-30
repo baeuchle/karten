@@ -2604,7 +2604,7 @@
    </g>
   </g>
   <g id="bb_bommersheim" transform="translate(-415,151)" class="strecke">
-   <text x="18" y="10" class="ab_bb te"><a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Wagenhalle_Bommersheim">AB Bommersheim</a></text>
+   <text x="12" y="0" class="ab_bb te"><a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Wagenhalle_Bommersheim">AB Bommersheim</a></text>
    <g class="bb">
     <path id="bomm_O1" class="endet" d="M 70,-35 c -5,0 -5,5 -10,5 h -82" />
     <path id="bomm_01" class="endet" d="M 43,-30 q 2,0 3.5,1.5 l 8,8" />
@@ -2746,7 +2746,7 @@
    <g id="hst317" transform="translate(-372.5,1179.5) rotate(-45)">
      <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
      <text transform="rotate(45) translate(8,-8)">Industriehof<tspan class="hstdetails"> (IH, 317)</tspan></text>
-     <desc class="kmdata">km 3,45 (20)\nkm 13,9 (C,24)|cs|2|r:g|-75|rotate(45)</desc>
+     <desc class="kmdata">km 3,45 (20) ↑\nkm 13,9 (C,24) ↖|cs|2|r:g|-75|rotate(45)</desc>
      <g class="hstdetails">
        <g id="sig316V21" transform="translate(-5,40) rotate(180)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 H 20" />
@@ -4735,7 +4735,7 @@
     <path class="kilometrierung" d="M 510,21 v -185" />
     <desc class="kmdata">km 25,49|as|3|r:i|-95|translate(515,-164)</desc>
    </g>
-   <g><desc class="kmdata">km 22,09|as|2|r:i|-150|translate(-433,111)</desc></g>
+   <g><desc class="kmdata">km 22,09|as|2|l:i|-150|translate(-433,111)</desc></g>
    <g><desc class="kmdata">km 22,89|as|2|l:i|135|translate(-225,61)</desc></g>
    <g><desc class="kmdata">km 25,90|as|3|r:i|-60|translate(-515,-134)</desc></g>
    <g><desc class="kmdata">km 27,07|as|3|l:i|60|translate(-745,-134)</desc></g>
@@ -4784,7 +4784,7 @@
     <g><desc class="kmdata">km 16,82|cs|2|r:g|-75|translate(-515,690)</desc></g>
     <g class="geplant rtw">
       <path class="kilometrierung" d="M -470,625 v -20 a 25,25 0,0,1 25,-25" />
-      <g><desc class="kmdata">km 17,14 (24)\nkm 2,70 (RTW)|cs|2|l:g|0|translate(-445,580)</desc></g>
+      <g><desc class="kmdata">km 17,14 (24) ↱\nkm 2,70 (RTW) ←|cs|2|l:g|0|translate(-445,580)</desc></g>
       <path class="kilometrierung klein" d="M -340,580 h -105" />
       <path class="kilometrierung klein" d="M -445,580 h -300 a 55,55 0,0,0 -55,55 v 75" />
       <g><desc class="kmdata">km 2,15 (RTW)|cs|3|l:f|0|translate(-340,580)</desc></g>
@@ -4803,7 +4803,7 @@
    <g><desc class="kmdata">km 7,10|c1|2|r:g|-60|translate(830,1295)</desc></g>
    <g><desc class="kmdata">km 9,32|c1|3|r:g|-30|translate(830,820)</desc></g>
   </g>
-  <g><desc class="kmdata">km 3,53 (20)\nkm 14,0 (C,24)|cs|2|l:g|30|translate(-385.5,1166.5)</desc></g>
+  <g><desc class="kmdata">km 3,53 (20) ↑\nkm 14,0 (C,24) ↖|cs|2|l:g|30|translate(-385.5,1166.5)</desc></g>
   <g class="cs_strecke">
     <path class="kilometrierung" d="M -390,906 v 250 q 0,6 4.5,10.5" />
     <g><desc class="kmdata">km 4,68|cs|3|l:g|30|translate(-390,906)</desc></g>
