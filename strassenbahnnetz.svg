@@ -278,33 +278,75 @@
    <use xlink:href="#doppelbst" class="dreizig" />
    <use xlink:href="#bahnsteig" transform="translate(5,-15)" class="nullzig" />
    <text x="10" y="5">Neu-Isenburg/Stadtgrenze</text>
+   <desc class="kmdata">km 0,0|s84|6|r|0</desc>
   </g>
   <g id="hstOBSS" transform="translate(-20,635)" class="dreizig">
    <use xlink:href="#bstg_vers1" />
    <text transform="translate(15,5)">Oberschweinstiege</text>
+   <desc class="kmdata">km 0,0|s84|6|r|0</desc>
   </g>
   <g id="hstLOUI" transform="translate(-20,565)" class="dreizig te">
    <use xlink:href="#doppelbst" transform="translate(-5,0) rotate(180)" />
    <use xlink:href="#bahnsteig" transform="translate(5,0)" />
    <text transform="rotate(-45) translate(-15,0)">Louisa Bahnhof</text>
+   <desc class="kmdata">km 0,0|s84|6|r|0</desc>
   </g>
-  <g id="hstSTRM" transform="translate(-20,505)" class="zehnzig te"><use xlink:href="#bstg_ausen" /><g transform="rotate(-45) translate(-15,0)"><text y="-7">Stresemannallee/</text><text y="5">Mörfelder Landstraße</text></g></g>
-  <g id="hstSTBF" transform="translate(-20,425)" class="dreizig te"><use xlink:href="#bstg_ausen" /><text transform="rotate(-45) translate(-15,0)">Stresemannallee</text></g>
-  <g id="hstBEUT" transform="translate(50,480)" class="zehnzig te"><use xlink:href="#bstg_vers1" transform="rotate(90)" /><g transform="rotate(-45) translate(-20,15)"><text y="-7">Beuthener</text><text y="5">Straße</text></g></g>
-  <g id="hstBRES" transform="translate(95,480)" class="zehnzig te"><use xlink:href="#bstg_ausen" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Breslauer Straße</text></g>
-  <g id="hstOPPE" transform="translate(135,480)" class="te"><use xlink:href="#hstl_vers1" transform="rotate(90)" /><text x="-15" y="10" transform="rotate(-45)">Oppenheimer Landstraße</text></g>
-  <g id="hstSWMO" transform="translate(170,480)" class="te"><use xlink:href="#haltestel" transform="translate(0,5) rotate(90)" /><g transform="rotate(-45) translate(-15,10)"><text y="-7">Schweizer Straße/</text><text y="5">Mörfelder Landstraße</text></g></g>
-  <g id="hstSWAN" transform="translate(190,390)" class="te"><use xlink:href="#hstl_ausen" /><text x="-15" y="5">Schwanthalerstraße</text></g>
+  <g id="hstSTRM" transform="translate(-20,505)" class="zehnzig te">
+   <use xlink:href="#bstg_ausen" />
+   <g transform="rotate(-45) translate(-15,0)">
+    <text y="-7">Stresemannallee/</text>
+    <text y="5">Mörfelder Landstraße</text>
+   </g>
+   <desc class="kmdata">km 0,0|s84|6|r|0</desc>
+  </g>
+  <g id="hstSTBF" transform="translate(-20,425)" class="dreizig te">
+   <use xlink:href="#bstg_ausen" />
+   <text transform="rotate(-45) translate(-15,0)">Stresemannallee</text>
+   <desc class="kmdata">km 0,0|s84|6|r|0</desc>
+  </g>
+  <g id="hstBEUT" transform="translate(50,480)" class="zehnzig te">
+   <use xlink:href="#bstg_vers1" transform="rotate(90)" />
+   <g transform="rotate(-45) translate(-20,15)">
+    <text y="-7">Beuthener</text>
+    <text y="5">Straße</text>
+   </g>
+   <desc class="kmdata">km 0,0|s80|6|r|0</desc>
+  </g>
+  <g id="hstBRES" transform="translate(95,480)" class="zehnzig te">
+   <use xlink:href="#bstg_ausen" transform="rotate(90)" />
+   <text x="-15" y="10" transform="rotate(-45)">Breslauer Straße</text>
+   <desc class="kmdata">km 0,0|s80|6|r|0</desc>
+  </g>
+  <g id="hstOPPE" transform="translate(135,480)" class="te">
+   <use xlink:href="#hstl_vers1" transform="rotate(90)" />
+   <text x="-15" y="10" transform="rotate(-45)">Oppenheimer Landstraße</text>
+   <desc class="kmdata">km 0,0|s80|6|r|0</desc>
+  </g>
+  <g id="hstSWMO" transform="translate(170,480)" class="te">
+   <use xlink:href="#haltestel" transform="translate(0,5) rotate(90)" />
+   <g transform="rotate(-45) translate(-15,10)">
+    <text y="-7">Schweizer Straße/</text>
+    <text y="5">Mörfelder Landstraße</text>
+   </g>
+   <desc class="kmdata">km 0,0|s80|6|r|0</desc>
+  </g>
+  <g id="hstSWAN" transform="translate(190,390)" class="te">
+   <use xlink:href="#hstl_ausen" />
+   <text x="-15" y="5">Schwanthalerstraße</text>
+   <desc class="kmdata">km 0,0|s80|6|r|0</desc>
+  </g>
   <g id="hstSWGA" transform="translate(190,345)" class="tm">
    <circle class="bstggruppe" cx="-5" cy="10" r="20" />
    <use xlink:href="#haltestel" transform="translate(5,15)" />
    <use xlink:href="#haltestel" transform="translate(-15,5) rotate(90)" />
    <g transform="translate(0,-10)"><text y="-12">Schweizer-/</text><text y="0">Gartenstraße</text></g>
+   <desc class="kmdata">km 0,0|s80|6|r|0</desc>
   </g>
   <g id="hstOTTO" transform="translate(70,345)" class="dreizig">
    <use xlink:href="#doppelbst" transform="translate(0,+5) rotate(+90)" />
    <use xlink:href="#bahnsteig" transform="translate(0,-5) rotate(-90)" />
    <text x="20" y="0" transform="rotate(-45)">Otto-Hahn-Platz</text>
+   <desc class="kmdata">km 0,0|s80|6|r|0</desc>
   </g>
   <g id="hstSTRG" transform="translate(-20,345)" class="te">
    <path class="bstggruppe" d="M 0,50 c 20,0 40,-40  40,-60 s -20,-35 -40,-35 c -30,0 -30,95 0,95" />
@@ -314,6 +356,7 @@
    <use xlink:href="#doppelbst" class="dreizig" transform="translate(5,20)" />
    <use xlink:href="#bahnsteig" class="dreizig" transform="translate(15,20) rotate(180)" />
    <g transform="translate(-12,5)"><text y="-8">Stresemannallee/</text><text y="6">Gartenstraße</text></g>
+   <desc class="kmdata">km 0,0|s80,s84,s90|6|r|0</desc>
   </g>
   <g id="hgrSB" transform="translate(215,430)">
     <path class="hstgruppe" d="M 25,10 c 30,0 65,0 65,-15 s -55,-20 -65,-20 c -55,0 -70,25 -70,35 s 0,30 20,30 c 25,0 25,-30 50,-30 Z" />
@@ -323,72 +366,99 @@
         <text y="-12" class="hstgrtitel">Südbahnhof/</text>
         <text>Schweizer Straße</text>
       </g>
+      <desc class="kmdata">km 0,0|s80|6|r|0</desc>
     </g>
     <g id="hstSB" transform="translate(25,-10)" class="nullzig tm">
       <use xlink:href="#dobs_ausen" transform="rotate(90)" />
       <text x="0" y="20">Südbahnhof</text>
+      <desc class="kmdata">km 0,0|s73|6|r|0</desc>
     </g>
     <g id="hstSBBR" transform="translate(75,-5)" class="zehnzig" style="visibility:hidden">
       <use xlink:href="#bahnsteig" transform="rotate(90)" />
-     <g transform="translate(0,27)">
-       <text y="-12" class="hstgrtitel">Südbahnhof/</text>
-       <text>Bruchstraße</text>
-     </g>
+      <g transform="translate(0,27)">
+        <text y="-12" class="hstgrtitel">Südbahnhof/</text>
+        <text>Bruchstraße</text>
+      </g>
+      <desc class="kmdata">km 0,0|s73|6|r|0</desc>
     </g>
   </g>
-  <g id="hstBRUE" transform="translate(285,390)" class="te"><use xlink:href="#hstl_ausen" transform="rotate(90)" /><g transform="translate(0,-20)"><text y="-7">Brücken-/</text><text y="5">Textorstraße</text></g></g>
+  <g id="hstBRUE" transform="translate(285,390)" class="te">
+   <use xlink:href="#hstl_ausen" transform="rotate(90)" />
+   <g transform="translate(0,-20)">
+    <text y="-7">Brücken-/</text>
+    <text y="5">Textorstraße</text>
+   </g>
+   <desc class="kmdata">km 0,0|s73|6|r|0</desc>
+  </g>
   <g id="hgrLOKA" transform="translate(365,390)" class="dreizig">
    <path class="hstgruppe" d="M 5,20 c 25,0 40,-5 40,-30 s -20,-40 -45,-40 s -50,30 -50,50 s 30,20 55,20 Z"/>
    <path class="bstggruppe" d="M 5,15 c 20,0 35,-5 35,-25 s -20,-35 -40,-35 s -30,15 -30,35 s 10,25 35,25 Z" />
-   <g id="hstLOTE" transform="translate(-40,0)"><use xlink:href="#hstl_ausen" transform="rotate(90)" /><g transform="translate(0,25)"><text class="hstgrtitel">Lokalbahnhof/</text><text y="12">Textorstraße</text></g></g>
+   <g id="hstLOTE" transform="translate(-40,0)">
+    <use xlink:href="#hstl_ausen" transform="rotate(90)" />
+    <g transform="translate(0,25)">
+     <text class="hstgrtitel">Lokalbahnhof/</text>
+     <text y="12">Textorstraße</text>
+    </g>
+    <desc class="kmdata">km 0,0|s73|6|r|0</desc>
+   </g>
    <use xlink:href="#bahnsteig" transform="translate(0,5) rotate(90)" />
    <use xlink:href="#bahnsteig" transform="translate(25,-5) rotate(-90)" />
    <use xlink:href="#bahnsteig" transform="translate(5,-25)" />
    <use xlink:href="#bahnsteig" transform="translate(-5,-20) rotate(180)" />
    <use xlink:href="#bahnsteig" transform="translate(-15,-20)" />
    <text x="25" y="5" transform="rotate(-45)">Lokalbahnhof</text>
+   <desc class="kmdata">km 0,0|s70,s73|4|r|0</desc>
   </g>
   <use xlink:href="#hstgrid" transform="translate(417.5,397.5)" />
   <g id="hstHEIS" transform="translate(440,420)" class="zehnzig">
     <use xlink:href="#hstgrid" transform="rotate(-45)" />
     <use xlink:href="#bstg_vers1" transform="rotate(-45)"/>
     <text x="20">Heister-/Seehofstraße</text>
+    <desc class="kmdata">km 0,0|s73|4|r|0</desc>
   </g>
   <g id="hstMUEB" transform="translate(475,455)" class="dreizig">
     <use xlink:href="#bstg_ausen" transform="rotate(-45)" />
     <text x="20">Mühlberg</text>
+    <desc class="kmdata">km 0,0|s73|4|r|0</desc>
   </g>
   <g id="hstLETT" transform="translate(510,490)">
     <use xlink:href="#hstl_vers1" transform="rotate(-45)" />
     <text x="-20" y="10" class="te">Lettigkautweg</text>
+    <desc class="kmdata">km 0,0|s73|4|r|0</desc>
   </g>
   <use xlink:href="#hstgrid" transform="translate(550,520)" />
   <g id="hstBALD" transform="translate(565,520) rotate(-90)" class="dreizig">
     <use xlink:href="#hstgrid" />
     <use xlink:href="#bstg_ausen" />
     <text x="20" transform="rotate(45)">Balduinstraße</text>
+    <desc class="kmdata">km 0,0|s73|4|r|0</desc>
   </g>
   <g id="hstBLEI" transform="translate(615,520) rotate(-90)" class="dreizig">
    <use xlink:href="#bstg_vers1" />
    <text x="20" transform="rotate(45)">Bleiweißstraße</text>
+   <desc class="kmdata">km 0,0|s73|4|r|0</desc>
   </g>
   <g id="hstBUCH" transform="translate(665,520) rotate(-90)" class="dreizig">
     <use xlink:href="#bstg_ausen" />
     <text x="20" transform="rotate(45)">Buchrainplatz</text>
+    <desc class="kmdata">km 0,0|s73|4|r|0</desc>
   </g>
   <g id="hstFLAS" transform="translate(715,520) rotate(-90)" class="zehnzig">
    <use xlink:href="#bahnsteig" transform="rotate(180) translate(5,5)" />
    <use xlink:href="#haltestel" transform="translate(5,5)" />
    <text x="20" transform="rotate(45)">Flaschenburgstraße</text>
+   <desc class="kmdata">km 0,0|s73|4|r|0</desc>
   </g>
   <g id="hstWIEN" transform="translate(765,520) rotate(-90)" class="zehnzig">
    <use xlink:href="#haltestel" transform="translate(5,5)" />
    <use xlink:href="#bahnsteig" transform="translate(-5,-5) rotate(180)" />
    <text x="20" transform="rotate(45)">Wiener Straße</text>
+   <desc class="kmdata">km 0,0|s73|4|r|0</desc>
   </g>
   <g id="hstOFSG" transform="translate(815,520) rotate(-90)" class="dreizig">
     <use xlink:href="#bstg_mitte" />
     <text transform="rotate(45) translate(20,0)">Offenbach Stadtgrenze</text>
+    <desc class="kmdata">km 0,0|s73|4|r|0</desc>
   </g>
   <g id="hstFRAN" transform="translate(365,310)" class="dreizig te">
    <use xlink:href="#bstg_ausen" transform="rotate(180)" />
@@ -584,15 +654,18 @@
    <use xlink:href="#haltestel" transform="translate(5,0)"/>
    <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)"/>
    <text x="20" y="0" transform="rotate(45)">Heilbronner Straße</text>
+   <desc class="kmdata">km 0,0|s91|4|r|0</desc>
   </g>
   <g id="hstHAFS" transform="translate(-135,215) rotate(-90)">
    <use xlink:href="#hstl_ausen" />
    <text x="20" y="0" transform="rotate(45)">Hafenstraße</text>
+   <desc class="kmdata">km 0,0|s91|4|r|0</desc>
   </g>
   <g id="hstPFOR" transform="translate(-85,260)" class="dreizig te">
    <use xlink:href="#hstgrid" />
    <use xlink:href="#bahnsteig" transform="rotate(-90)" />
    <text x="0" y="10">Pforzheimer Straße</text>
+   <desc class="kmdata">km 0,0|s91|4|r|0</desc>
   </g>
   <g id="hstPLDR" transform="translate(-20,100)" class="dreizig">
     <use xlink:href="#dobs_ausen" />
