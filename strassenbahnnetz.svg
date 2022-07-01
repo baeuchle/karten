@@ -1586,10 +1586,10 @@
    <path class="kilometrierung" d="M 365,175 v 215" />
   </g>
   <g class="s73_strecke">
-   <path class="kilometrierung" d="M -20,150 v 180 a 15,15 0,0,0 15,15 h 180 a 15,15 0,0,1 15,15 v 45 a 15,15 0,0,0 15,15 h 45 a 15,15 0,0,0 15,-15 a 15,15 0,0,1 15,-15 h 120 q 10,0 17.5,7.5 l 115,115 q 7.5,7.5 17.5,7.5 h 275" />
+   <path class="kilometrierung" d="M 190,420 h 60 a 15,15 0,0,0 15,-15 a 15,15 0,0,1 15,-15 h 120 q 10,0 17.5,7.5 l 115,115 q 7.5,7.5 17.5,7.5 h 275" />
   </g>
   <g class="s80_strecke">
-   <path class="kilometrierung" d="M 190,420 v 45 a 15,15 0,0,1 -15,15 h -195" />
+   <path class="kilometrierung" d="M -20,150 v 180 a 15,15 0,0,0 15,15 h 180 a 15,15 0,0,1 15,15 v 105 a 15,15 0,0,1 -15,15 h -195" />
   </g>
   <g class="s84_strecke">
    <path class="kilometrierung" d="M -20,150 v 560 a 15,15 0,0,1 -15,15 a 5,5 0,0,0 -5,5 a 10,10 0,0,0 20,0 v -20" />
@@ -1809,10 +1809,10 @@
     <tspan id="s70_strecke_tx" onclick="kilometer('s70_strecke')">70: Innenstadt - Lokalbahnhof</tspan>
    </text>
    <text class="boxtext" x="20" y="117">
-    <tspan id="s73_strecke_tx" onclick="kilometer('s73_strecke')">73,82,83: Sachsenhausen - Oberrad</tspan>
+    <tspan id="s73_strecke_tx" onclick="kilometer('s73_strecke')">73,82: Südbahnhof - Oberrad</tspan>
    </text>
    <text class="boxtext" x="20" y="129">
-    <tspan id="s80_strecke_tx" onclick="kilometer('s80_strecke')">80: Südbahnhof - Louisa</tspan>
+    <tspan id="s80_strecke_tx" onclick="kilometer('s80_strecke')">80,83: Gartenstraße - Schweizer Straße - Louisa</tspan>
     <tspan id="s84_strecke_tx" onclick="kilometer('s84_strecke')">84: Neu-Isenburg</tspan>
    </text>
    <text class="boxtext" x="20" y="141">
