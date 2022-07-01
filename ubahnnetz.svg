@@ -132,9 +132,9 @@
   .stadtbahnstrecke, .streckennummer
   { stroke-width: 5px; stroke-dasharray:5,2; }
   .stadtbahnstrecke.unten { stroke-dasharray:2,5; }
-  .ss_as, .ss_d1, .ss_d4, .sn_30, .sn_20, .sn_65, .sn_54
+  .ss_as, .ss_d1, .ss_d4, .sn_30, .sn_20, .sn_65, .sn_54, .sn_44
   { stroke: #f80; fill: #f80; }
-  .ss_a1, .ss_bs, .ss_c1, .sn_29, .sn_37, .sn_35, .sn_50
+  .ss_a1, .ss_bs, .ss_c1, .sn_29, .sn_37, .sn_35, .sn_50, .sn_vzg
   { stroke: #080; fill: #080; }
   .ss_a2, .ss_d2, .ss_b2, .sn_36, .sn_41, .sn_43, .sn_24
   { stroke: #00f; fill: #00f; }
@@ -555,7 +555,7 @@
   </g>
   <g id="strecke_debene" class="tunnel">
    <path id="ul_b_bbost_1" d="M 600,1165 h -59 a 35,35 0,0,0 -35,35 v 25 c 0,10 5,10 5,20" />
-   <path id="ul_b_bbost_2" d="M 526,1220 q 0,-8 6,-14 l 23,-23 q 8,-8 14,-8 h 31" />
+   <path id="ul_b_bbost_2" d="M 526,1220 q 0,-8 6,-14 l 22,-22 q 9,-9 21,-9 h 25" />
    <path id="b_1_stamm" class="tunnel faeng" d="M -275,1585 h 5 a 50,50 0,0,1 50,50 v 50 q 0,24 18,42 q 18,18 42,18 h 95 q 24,0 42,-18 l 2,-2 q 15,-15 30,-15 h 221 a 60,60 0,0,0 60,-60" />
    <path id="b_2_stamm" class="tunnel endet" d="M 280,1650 a 50,50 0,0,1 -50,50 h -221 q -24,0 -42,18 l -2,2 q -15,15 -30,15 h -95 q -20,0 -35,-15 q -15,-15 -15,-35 v -50 a 60,60 0,0,0 -60,-60 h -5" />
    <path id="europaviertel_1.1" class="geplant verlaengerung_europaviertel" d="M -275,1575 h -85" />
@@ -1943,7 +1943,7 @@
      <text x="10" y="-20">Konstablerwache</text>
      <text x="-20" y="30" class="hstdetails te">(C-Ebene: KWC, 613)</text>
     </a>
-    <desc class="kmdata">km 10,0|bs|1|l:f|150</desc>
+    <desc class="kmdata">km 10,0|bs,b2|1|l:f|150</desc>
     <g class="hstdetails">
       <use xlink:href="#gleis1" transform="translate(-15,0)" />
       <use xlink:href="#gleis2" transform="translate(5,0)" />
@@ -4629,180 +4629,186 @@
        <use id="g822A61" xlink:href="#vierabstell" transform="translate(-10,-75)" />
      </g>
      <text x="15" y="5">Schäfflestraße</text>
-     <desc class="kmdata">km 7,24|c1|2|r:g|-60</desc>
-     <g class="hstdetails">
-       <text x="15" y="15">(SC, 822)</text>
-       <g transform="translate(-10,-79)" class="bgleisnummer"><circle cy="-1" r="2" /><text>6</text></g>
-       <g id="sig822Y12" transform="translate(-5,-50) rotate(180)" onmouseover="highlight(this)">
-         <path class="signalverbinder" d="M 2,0 C 2,-10 15,-10 20,-10" />
-         <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_f_012v" transform="translate(20,30)" />
-         <text transform="rotate(180) translate(-46,-10)" class="te">822Y12</text>
-       </g>
-       <g id="sig822Y13R" transform="translate(-5,-17)" onmouseover="highlight(this)">
-         <path class="signalverbinder" d="M 2,0 C 2,5 30,5 30,0" />
-         <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_f_02v" transform="translate(30,0)" />
-         <text transform="translate(56,-35)">822Y13R</text>
-       </g>
-       <g id="sig822Y14" transform="translate(-5,17) rotate(180)" onmouseover="highlight(this)">
-         <path class="signalverbinder" d="M 2,0 C 15,0 15,40 20,40" />
-         <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_f_013v" transform="translate(20,40)" />
-         <text transform="rotate(180) translate(-26,-30)" class="te">822Y14</text>
-       </g>
-       <g id="sig822Y21" transform="translate(5,50)" onmouseover="highlight(this)">
-         <path class="signalverbinder" d="M 2,0 C 2,10 15,15 20,15" />
-         <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_f_012v" transform="translate(20,15)" />
-         <text transform="translate(26,-20)">822Y21</text>
-       </g>
-       <g id="sig822Y24" transform="translate(5,-17)" onmouseover="highlight(this)">
-         <path class="signalverbinder" d="M 2,0 C 2,5 40,5 40,0" />
-         <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_f_012v" transform="translate(40,0)" />
-         <text transform="translate(46,-25)">822Y24</text>
-       </g>
-       <g id="sig822Y41" transform="translate(-15,40) rotate(90)" onmouseover="highlight(this)">
-         <path class="signalverbinder" d="M 2,0 C 2,40 10,45 20,45" />
-         <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_f_012v" transform="translate(20,45)" />
-         <text transform="rotate(-90) translate(-22.5,35)" class="tm">822Y41</text>
-       </g>
-       <g id="sig822Y61" transform="translate(-10,-50) rotate(180)" onmouseover="highlight(this)">
-         <path class="signalverbinder" d="M 2,0 C 2,40 30,40 35,30" />
-         <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_f_012v" transform="translate(35,30)" />
-         <text transform="rotate(180) translate(-41,-20)" class="te">822Y61</text>
-       </g>
+   <desc class="kmdata">km 7,24|c1|2|r:g|-30</desc>
+   <g class="hstdetails">
+     <text x="15" y="15">(SC, 822)</text>
+     <g transform="translate(-10,-79)" class="bgleisnummer"><circle cy="-1" r="2" /><text>6</text></g>
+     <g id="sig822Y12" transform="translate(-5,-50) rotate(180)" onmouseover="highlight(this)">
+       <path class="signalverbinder" d="M 2,0 C 2,-10 15,-10 20,-10" />
+       <use xlink:href="#signalplatz" />
+       <use xlink:href="#signal_f_012v" transform="translate(20,30)" />
+       <text transform="rotate(180) translate(-46,-10)" class="te">822Y12</text>
+     </g>
+     <g id="sig822Y13R" transform="translate(-5,-17)" onmouseover="highlight(this)">
+       <path class="signalverbinder" d="M 2,0 C 2,5 30,5 30,0" />
+       <use xlink:href="#signalplatz" />
+       <use xlink:href="#signal_f_02v" transform="translate(30,0)" />
+       <text transform="translate(56,-35)">822Y13R</text>
+     </g>
+     <g id="sig822Y14" transform="translate(-5,17) rotate(180)" onmouseover="highlight(this)">
+       <path class="signalverbinder" d="M 2,0 C 15,0 15,40 20,40" />
+       <use xlink:href="#signalplatz" />
+       <use xlink:href="#signal_f_013v" transform="translate(20,40)" />
+       <text transform="rotate(180) translate(-26,-30)" class="te">822Y14</text>
+     </g>
+     <g id="sig822Y21" transform="translate(5,50)" onmouseover="highlight(this)">
+       <path class="signalverbinder" d="M 2,0 C 2,10 15,15 20,15" />
+       <use xlink:href="#signalplatz" />
+       <use xlink:href="#signal_f_012v" transform="translate(20,15)" />
+       <text transform="translate(26,-20)">822Y21</text>
+     </g>
+     <g id="sig822Y24" transform="translate(5,-17)" onmouseover="highlight(this)">
+       <path class="signalverbinder" d="M 2,0 C 2,5 40,5 40,0" />
+       <use xlink:href="#signalplatz" />
+       <use xlink:href="#signal_f_012v" transform="translate(40,0)" />
+       <text transform="translate(46,-25)">822Y24</text>
+     </g>
+     <g id="sig822Y41" transform="translate(-15,40) rotate(90)" onmouseover="highlight(this)">
+       <path class="signalverbinder" d="M 2,0 C 2,40 10,45 20,45" />
+       <use xlink:href="#signalplatz" />
+       <use xlink:href="#signal_f_012v" transform="translate(20,45)" />
+       <text transform="rotate(-90) translate(-22.5,35)" class="tm">822Y41</text>
+     </g>
+     <g id="sig822Y61" transform="translate(-10,-50) rotate(180)" onmouseover="highlight(this)">
+       <path class="signalverbinder" d="M 2,0 C 2,40 30,40 35,30" />
+       <use xlink:href="#signalplatz" />
+       <use xlink:href="#signal_f_012v" transform="translate(35,30)" />
+       <text transform="rotate(180) translate(-41,-20)" class="te">822Y61</text>
      </g>
    </g>
-   <g id="hst823" transform="translate(830,1140)">
-    <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
-    <text x="15" y="5">Gwinnerstraße</text>
-    <text x="15" y="15" class="hstdetails">(GR, 823)</text>
-    <desc class="kmdata">km 7,89|c1|2|r:g|-60</desc>
-   </g>
-   <g id="hst824" transform="translate(830,1040)">
-    <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
-    <text x="15" y="5">Kruppstraße</text>
-    <text x="15" y="15" class="hstdetails">(KR, 824)</text>
-    <desc class="kmdata">km 8,39|c1|2|r:g|-60</desc>
-   </g>
-   <g id="hst825" transform="translate(830,940)">
-    <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
-    <text x="15" y="5">Hessen-Center</text>
-    <text x="15" y="15" class="hstdetails">(HC, 825)</text>
-    <desc class="kmdata">km 8,79|c1|2|r:g|-60</desc>
-   </g>
-   <g id="hst826" transform="translate(830,840)">
-     <use xlink:href="#bstg_mitte" onclick="toggle_details(this)" />
-     <text x="10" y="5">Enkheim</text>
-     <desc class="kmdata">km 9,26|c1|2|r:g|-60</desc>
-     <g class="hstdetails">
-       <text x="10" y="15">(EN, 826)</text>
-       <g id="sig826Y14" transform="translate(-5,17) rotate(180)" onmouseover="highlight(this)">
-         <path class="signalverbinder" d="M 2,0 C 2,5 40,5 40,0" />
-         <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_f_01v" transform="translate(40,0)" />
-         <text transform="rotate(180) translate(-46,10)" class="te">826Y14</text>
-       </g>
-       <g id="sig826Y23" transform="translate(5,17) rotate(180)" onmouseover="highlight(this)">
-         <path class="signalverbinder" d="M 2,0 C 2,5 30,5 30,0" />
-         <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_f_01v" transform="translate(30,0)" />
-         <text transform="rotate(180) translate(-56,20)" class="te">826Y23</text>
-       </g>
-       <g id="sig826Y21" transform="translate(5,60)" onmouseover="highlight(this)">
-         <path class="signalverbinder" d="M 2,0 C 2,5 15,5 20,5" />
-         <use xlink:href="#signalplatz" />
-         <use xlink:href="#signal_f_012v" transform="translate(20,5)" />
-         <text transform="translate(26,-31)">826Y21</text>
-       </g>
-     </g>
-   </g>
-  </g>
  </g>
- <g id="kilometrierungen_gruppen" class="kilometer">
-  <g class="as_strecke">
-   <path id="km_as" class="kilometrierung" d="M 115,1955 V 690" />
-   <path id="km_a23" class="kilometrierung klein" d="M 115,690 V 523 q 0,-10 -7.5,-17.5 l -32,-32 q -7.5,-7.5 -17.5,-7.5 h -128" />
-   <path id="km_a2" class="kilometrierung" d="M 75.5,473.5 q -10.5,-10.5 -10.5,-24.5 V 281 a 65,65 0,0,1 65,-65 h 325 a 55,55 0,0,0, 55,-55 v -140" />
-   <path id="km_a3" class="kilometrierung" d="M -70,466 h -33 q -22,0 -38.5,-16.5 q -16.5,-16.5 -16.5,-38.5 v -140 q 0,-22 -16.5,-38.5 l -105,-105 q -16.5,-16.5 -38.5,-16.5 h -120 a 25,25 0,0,1 0,-50 h 213 a 15,15 0,0,0 15,-15 v -130 a 55,55 0,0,0 -55,-55 h -535" />
-   <g id="end_as"><desc class="kmdata">km 7,65|as|3|r:i|-30|translate(115,1955)</desc></g>
-   <g id="end_a2"><desc class="kmdata">km 24,15|as|3|r:i|-60|translate(510,21)</desc></g>
-   <g class="verlaengerung_badhomburg geplant">
-    <path class="kilometrierung" d="M 510,21 v -185" />
-    <desc class="kmdata">km 25,49|as|3|r:i|-95|translate(515,-164)</desc>
+ <g id="hst823" transform="translate(830,1140)">
+  <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
+  <text x="15" y="5">Gwinnerstraße</text>
+  <text x="15" y="15" class="hstdetails">(GR, 823)</text>
+  <desc class="kmdata">km 7,89|c1|2|r:g|-60</desc>
+ </g>
+ <g id="hst824" transform="translate(830,1040)">
+  <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
+  <text x="15" y="5">Kruppstraße</text>
+  <text x="15" y="15" class="hstdetails">(KR, 824)</text>
+  <desc class="kmdata">km 8,39|c1|2|r:g|-60</desc>
+ </g>
+ <g id="hst825" transform="translate(830,940)">
+  <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
+  <text x="15" y="5">Hessen-Center</text>
+  <text x="15" y="15" class="hstdetails">(HC, 825)</text>
+  <desc class="kmdata">km 8,79|c1|2|r:g|-60</desc>
+ </g>
+ <g id="hst826" transform="translate(830,840)">
+   <use xlink:href="#bstg_mitte" onclick="toggle_details(this)" />
+   <text x="10" y="5">Enkheim</text>
+   <desc class="kmdata">km 9,26|c1|2|r:g|-60</desc>
+   <g class="hstdetails">
+     <text x="10" y="15">(EN, 826)</text>
+     <g id="sig826Y14" transform="translate(-5,17) rotate(180)" onmouseover="highlight(this)">
+       <path class="signalverbinder" d="M 2,0 C 2,5 40,5 40,0" />
+       <use xlink:href="#signalplatz" />
+       <use xlink:href="#signal_f_01v" transform="translate(40,0)" />
+       <text transform="rotate(180) translate(-46,10)" class="te">826Y14</text>
+     </g>
+     <g id="sig826Y23" transform="translate(5,17) rotate(180)" onmouseover="highlight(this)">
+       <path class="signalverbinder" d="M 2,0 C 2,5 30,5 30,0" />
+       <use xlink:href="#signalplatz" />
+       <use xlink:href="#signal_f_01v" transform="translate(30,0)" />
+       <text transform="rotate(180) translate(-56,20)" class="te">826Y23</text>
+     </g>
+     <g id="sig826Y21" transform="translate(5,60)" onmouseover="highlight(this)">
+       <path class="signalverbinder" d="M 2,0 C 2,5 15,5 20,5" />
+       <use xlink:href="#signalplatz" />
+       <use xlink:href="#signal_f_012v" transform="translate(20,5)" />
+       <text transform="translate(26,-31)">826Y21</text>
+     </g>
    </g>
-   <g><desc class="kmdata">km 22,09|as|2|l:i|-150|translate(-433,111)</desc></g>
-   <g><desc class="kmdata">km 22,89|as|2|l:i|135|translate(-225,61)</desc></g>
-   <g><desc class="kmdata">km 25,90|as|3|r:i|-60|translate(-515,-134)</desc></g>
-   <g><desc class="kmdata">km 27,07|as|3|l:i|60|translate(-745,-134)</desc></g>
-   <g><desc class="kmdata">km 27,24|as|3|l:i|180|translate(-800,-139)</desc></g>
+ </g>
+</g>
+</g>
+<g id="kilometrierungen_gruppen" class="kilometer">
+<g class="as_strecke">
+ <path id="km_as" class="kilometrierung" d="M 115,1955 V 690" />
+ <path id="km_a23" class="kilometrierung klein" d="M 115,690 V 523 q 0,-10 -7.5,-17.5 l -32,-32 q -7.5,-7.5 -17.5,-7.5 h -128" />
+ <path id="km_a2" class="kilometrierung" d="M 75.5,473.5 q -10.5,-10.5 -10.5,-24.5 V 281 a 65,65 0,0,1 65,-65 h 325 a 55,55 0,0,0, 55,-55 v -140" />
+ <path id="km_a3" class="kilometrierung" d="M -70,466 h -33 q -22,0 -38.5,-16.5 q -16.5,-16.5 -16.5,-38.5 v -140 q 0,-22 -16.5,-38.5 l -105,-105 q -16.5,-16.5 -38.5,-16.5 h -120 a 25,25 0,0,1 0,-50 h 213 a 15,15 0,0,0 15,-15 v -130 a 55,55 0,0,0 -55,-55 h -535" />
+ <g id="end_as"><desc class="kmdata">km 7,65|as|3|r:i|-30|translate(115,1955)</desc></g>
+ <g id="end_a2"><desc class="kmdata">km 24,15|as|3|r:i|-60|translate(510,21)</desc></g>
+ <g class="verlaengerung_badhomburg geplant">
+  <path class="kilometrierung" d="M 510,21 v -185" />
+  <desc class="kmdata">km 25,49|as|3|r:i|-95|translate(515,-164)</desc>
+ </g>
+ <g><desc class="kmdata">km 22,09|as|2|l:i|-150|translate(-433,111)</desc></g>
+ <g><desc class="kmdata">km 22,89|as|2|l:i|135|translate(-225,61)</desc></g>
+ <g><desc class="kmdata">km 25,90|as|3|r:i|-60|translate(-515,-134)</desc></g>
+ <g><desc class="kmdata">km 27,07|as|3|l:i|60|translate(-745,-134)</desc></g>
+ <g><desc class="kmdata">km 27,24|as|3|l:i|180|translate(-800,-139)</desc></g>
+</g>
+<g><desc class="kmdata">km 15,00 (A, A2, A3)\nkm 0,00 (A1)|a1,as|3|r:f|-30|translate(115,690)</desc></g>
+<g><desc class="kmdata">km 1,10 (A1)\nkm 16,10 (A2, A3)|as,a1|3|l:i|45|translate(75.5,473.5)</desc></g>
+<g class="a1_strecke">
+ <path class="kilometrierung" d="M 115,690 V 523 q 0,-10 -7.5,-17.5 l -32,-32 q -7.5,-7.5 -17.5,-7.5 h -128 a 55,55 0,0,0 -55,55 V 1001" />
+</g>
+<g class="bs_strecke">
+ <path class="kilometrierung" d="M -270,1580 a 55,55 0,0,1 55,55 v 50 q 0,22 16.5,38.5 q 16.5,16.5 38.5,16.5 h 95 q 21,0 36,-16.5 l 2,-2 q 16.5,-16.5 36,-16.5 h 221 a 55,55 0,0,0 55,-55 v -76" />
+ <g><desc class="kmdata">km 10,0|bs|1|l:f|150|translate(285,1580)</desc></g>
+ <g><desc class="kmdata">km 7,45|bs|3|r:i|-30|translate(-275,1580)</desc></g>
+ <g class="verlaengerung_europaviertel geplant">
+  <path class="kilometrierung" d="M -690,1580 h 413" />
+  <g><desc class="kmdata">km 5,79|bs|2|r:i|-30|translate(-460,1580)</desc></g>
+  <g><desc class="kmdata">km 4,70|bs|3|r:i|180|translate(-690,1575)</desc></g>
+ </g>
+ <path class="kilometrierung" d="M 275,1590 V 1070 v -90 c 0,-20 -12.5,-20 -12.5,-40 v -42.5" />
+ <path class="kilometrierung" d="M 275,1070 a 15,15 0,0,1 15,-15 h 130 a 15,15 0,0,0 15,-15 v -430" />
+ <g><desc class="kmdata">km 13,37|bs|3|l:i|60|translate(275,960)</desc></g>
+ <g><desc class="kmdata">km 13,47|bs|3|l:i|60|translate(262.5,897.5)</desc></g>
+ <g><desc class="kmdata">km 15,50|bs|3|r:i|-45|translate(435,610)</desc></g>
+ <g class="frankfurter_berg geplant">
+  <path class="kilometrierung" d="M 435,610 v -295" />
+  <g><desc class="kmdata">km 17,05|bs|3|r:i|-30|translate(435,315)</desc></g>
+ </g>
+</g>
+<g id="abzw_dornbusch"><desc class="kmdata">km 12,91 (A) ↑\nkm 0,0 (35) ↦|as,s35|3|l:i|45|translate(115,1040)</desc></g>
+<path class="kilometrierung klein s35_strecke" d="M 115,1040 a 15,15 0,0,0 15,15 h 145" />
+<g><desc class="kmdata">km 0,3|s35|3|l:g|105|translate(155,1060)</desc></g>
+<g><desc class="kmdata">km 0,7|s35|3|l:g|-60|translate(225,1060)</desc></g>
+<g id="eckenheimer_marbachweg"><desc class="kmdata">km 13,15 (B1/40) ↑↱\nkm 1,00 (35) ⇥|bs,s35|2|l:i|30|translate(275,1055)</desc></g>
+<g class="b2_strecke">
+  <path class="kilometrierung" d="M 285,1580 v -16 q 0,-22 16.5,-38.5 l 199.5,-199.5 q 15,-15 15,-35 v -41 c 0,-10 2.5,-10 2.5,-20 v -60" />
+  <path class="kilometrierung" d="M 518.5,1222.5 q 0,-10 7.5,-17.5 l 24.5,-24.5 q 10.5,-10.5 24.5,-10.5 h 25
+                                  h 115 a 20,20 0,0,1 20,20 v 85 a 20,20 0,0,0 20,20 h 60 h 15" />
+  <g><desc class="kmdata">km 13,2|b2|3|l:i|30|translate(518.5,1170)</desc></g>
+  <g><desc class="kmdata">km 13,1|b2|3|r:i|-30|translate(518.5,1225)</desc></g>
+  <g><desc class="kmdata">km 13,65|b2|3|l:g|15|translate(600,1170)</desc></g>
+  <g><desc class="kmdata">km 13,9|b2|3|l:g|45|translate(622.5,1170)</desc></g>
+  <g><desc class="kmdata">km 14,7|b2|3|r:g|-90|translate(762.5,1295)</desc></g>
+</g>
+<g class="cs_strecke">
+  <path class="kilometrierung" d="M -385.5,1166.5 l 92.5,92.5 q 15.5,15.5 15.5,37.5 v 100 a 32.5,32.5 0,0,0 32.5,32.5 h 100 q 22,0 38.5,16.5 l 118,118 q 16.5,16.5 38.5,16.5 h 399 q 18,0 31.5,13.5 l 82,82" />
+  <path class="kilometrierung" d="M -470,625 v 435 q 0,22 16.5,38.5 l 68,68" />
+  <g><desc class="kmdata">km 7,80|cs|3|r:i|210|translate(562.5,1675.5)</desc></g>
+  <g><desc class="kmdata">km 8,66|cs|2|l:i|225|translate(449,1580)</desc></g>
+  <g><desc class="kmdata">km 16,57|cs|2|l:g|90|translate(-470,705)</desc></g>
+  <g><desc class="kmdata">km 16,85|cs|3|l:g|90|translate(-470,625)</desc></g>
+  <g><desc class="kmdata">km 16,82|cs|2|r:g|-75|translate(-515,690)</desc></g>
+  <g class="geplant rtw">
+    <path class="kilometrierung" d="M -470,625 v -20 a 25,25 0,0,1 25,-25" />
+    <g><desc class="kmdata">km 17,14 (24) ↱\nkm 2,70 (RTW) ←|cs|2|l:g|0|translate(-445,580)</desc></g>
+    <path class="kilometrierung klein" d="M -340,580 h -105" />
+    <path class="kilometrierung klein" d="M -445,580 h -300 a 55,55 0,0,0 -55,55 v 75" />
+    <g><desc class="kmdata">km 2,15 (RTW)|cs|3|l:f|0|translate(-340,580)</desc></g>
+    <desc class="kmdata">km 3,70 (RTW)|cs|2|l:f|180|translate(-505,585)</desc>
+    <desc class="kmdata">km 4,00 (RTW)|cs|2|r:f|0|translate(-520,575)</desc>
+    <desc class="kmdata">km 4,20 (RTW)|cs|2|r:f|-30|translate(-540,580)</desc>
   </g>
-  <g><desc class="kmdata">km 15,00 (A, A2, A3)\nkm 0,00 (A1)|a1,as|3|r:f|-30|translate(115,690)</desc></g>
-  <g><desc class="kmdata">km 1,10 (A1)\nkm 16,10 (A2, A3)|as,a1|3|l:i|45|translate(75.5,473.5)</desc></g>
-  <g class="a1_strecke">
-   <path class="kilometrierung" d="M 115,690 V 523 q 0,-10 -7.5,-17.5 l -32,-32 q -7.5,-7.5 -17.5,-7.5 h -128 a 55,55 0,0,0 -55,55 V 1001" />
-  </g>
-  <g class="bs_strecke">
-   <path class="kilometrierung" d="M -270,1580 a 55,55 0,0,1 55,55 v 50 q 0,22 16.5,38.5 q 16.5,16.5 38.5,16.5 h 95 q 21,0 36,-16.5 l 2,-2 q 16.5,-16.5 36,-16.5 h 221 a 55,55 0,0,0 55,-55 v -76" />
-   <g><desc class="kmdata">km 10,0|bs|1|l:f|150|translate(285,1580)</desc></g>
-   <g><desc class="kmdata">km 7,45|bs|3|r:i|-30|translate(-275,1580)</desc></g>
-   <g class="verlaengerung_europaviertel geplant">
-    <path class="kilometrierung" d="M -690,1580 h 413" />
-    <g><desc class="kmdata">km 5,79|bs|2|r:i|-30|translate(-460,1580)</desc></g>
-    <g><desc class="kmdata">km 4,70|bs|3|r:i|180|translate(-690,1575)</desc></g>
-   </g>
-   <path class="kilometrierung" d="M 275,1590 V 1070 v -90 c 0,-20 -12.5,-20 -12.5,-40 v -42.5" />
-   <path class="kilometrierung" d="M 275,1070 a 15,15 0,0,1 15,-15 h 130 a 15,15 0,0,0 15,-15 v -430" />
-   <g><desc class="kmdata">km 13,37|bs|3|l:i|60|translate(275,960)</desc></g>
-   <g><desc class="kmdata">km 13,47|bs|3|l:i|60|translate(262.5,897.5)</desc></g>
-   <g><desc class="kmdata">km 15,50|bs|3|r:i|-45|translate(435,610)</desc></g>
-   <g class="frankfurter_berg geplant">
-    <path class="kilometrierung" d="M 435,610 v -295" />
-    <g><desc class="kmdata">km 17,05|bs|3|r:i|-30|translate(435,315)</desc></g>
-   </g>
-  </g>
-  <g id="abzw_dornbusch"><desc class="kmdata">km 12,91 (A) ↑\nkm 0,0 (35) ↦|as,s35|3|l:i|45|translate(115,1040)</desc></g>
-  <path class="kilometrierung s35_strecke" d="M 115,1040 a 15,15 0,0,0 15,15 h 145" />
-  <g><desc class="kmdata">km 0,3|s35|3|l:g|105|translate(155,1060)</desc></g>
-  <g><desc class="kmdata">km 0,7|s35|3|l:g|-60|translate(225,1060)</desc></g>
-  <g id="eckenheimer_marbachweg"><desc class="kmdata">km 13,15 (B1/40) ↑↱\nkm 1,00 (35) ⇥|bs,s35|2|l:i|30|translate(275,1055)</desc></g>
-  <g class="b2_strecke">
-    <path class="kilometrierung" d="M 285,1580 v -16 q 0,-22 16.5,-38.5 l 199.5,-199.5 q 15,-15 15,-35 v -41 c 0,-10 2.5,-10 2.5,-20 v -55" />
-    <g><desc class="kmdata">km 13,65|b2|3|l:i|30|translate(518.5,1175)</desc></g>
-  </g>
-  <g class="cs_strecke">
-    <path class="kilometrierung" d="M -385.5,1166.5 l 92.5,92.5 q 15.5,15.5 15.5,37.5 v 100 a 32.5,32.5 0,0,0 32.5,32.5 h 100 q 22,0 38.5,16.5 l 118,118 q 16.5,16.5 38.5,16.5 h 399 q 18,0 31.5,13.5 l 82,82" />
-    <path class="kilometrierung" d="M -470,625 v 435 q 0,22 16.5,38.5 l 68,68" />
-    <g><desc class="kmdata">km 7,80|cs|3|r:i|210|translate(562.5,1675.5)</desc></g>
-    <g><desc class="kmdata">km 8,66|cs|2|l:i|225|translate(449,1580)</desc></g>
-    <g><desc class="kmdata">km 16,57|cs|2|l:g|90|translate(-470,705)</desc></g>
-    <g><desc class="kmdata">km 16,85|cs|3|l:g|90|translate(-470,625)</desc></g>
-    <g><desc class="kmdata">km 16,82|cs|2|r:g|-75|translate(-515,690)</desc></g>
-    <g class="geplant rtw">
-      <path class="kilometrierung" d="M -470,625 v -20 a 25,25 0,0,1 25,-25" />
-      <g><desc class="kmdata">km 17,14 (24) ↱\nkm 2,70 (RTW) ←|cs|2|l:g|0|translate(-445,580)</desc></g>
-      <path class="kilometrierung klein" d="M -340,580 h -105" />
-      <path class="kilometrierung klein" d="M -445,580 h -300 a 55,55 0,0,0 -55,55 v 75" />
-      <g><desc class="kmdata">km 2,15 (RTW)|cs|3|l:f|0|translate(-340,580)</desc></g>
-      <desc class="kmdata">km 3,70 (RTW)|cs|2|l:f|180|translate(-505,585)</desc>
-      <desc class="kmdata">km 4,00 (RTW)|cs|2|r:f|0|translate(-520,575)</desc>
-      <desc class="kmdata">km 4,20 (RTW)|cs|2|r:f|-30|translate(-540,580)</desc>
-    </g>
-  </g>
-  <g class="c1_strecke">
-   <path class="kilometrierung" d="M 449,1580 h 6 q 22,0 38.5,-16.5 l 184,-184 q 16.5,-16.5 38.5,-16.5 h 39" />
-   <path class="kilometrierung" d="M 755,1435.5 h -5 a 7.5,7.5 0,0,1 -7.5,-7.5 v -52.5 a 12.5,12.5 0,0,1 12.5,-12.5 h 45 a 30,30 0,0,0 30,-30 v -513" />
-   <path class="kilometrierung klein" d="M 390,1580 h 59" />
-   <g><desc class="kmdata">km 0,00←|c1|3|l:f|-30|translate(390,1575)</desc></g>
-   <g><desc class="kmdata">km 0,00→\nkm 0,45←|c1|3|l:f|185|translate(449,1585)</desc></g>
+</g>
+<g class="c1_strecke">
+ <path class="kilometrierung" d="M 449,1580 h 6 q 22,0 38.5,-16.5 l 184,-184 q 16.5,-16.5 38.5,-16.5 h 39" />
+ <path class="kilometrierung" d="M 755,1435.5 h -5 a 7.5,7.5 0,0,1 -7.5,-7.5 v -52.5 a 12.5,12.5 0,0,1 12.5,-12.5 h 45 a 30,30 0,0,0 30,-30 v -513" />
+ <path class="kilometrierung klein" d="M 390,1580 h 59" />
+ <g><desc class="kmdata">km 0,00←|c1|3|l:f|-30|translate(390,1575)</desc></g>
+ <g><desc class="kmdata">km 0,00→\nkm 0,45←|c1|3|l:f|185|translate(449,1585)</desc></g>
    <g><desc class="kmdata">km 2,36⇥\nkm 2,66↤\nkm 6,40↱|c1|2|r:g|-60|translate(746,1363)</desc></g>
-   <g><desc class="kmdata">km 7,10|c1|2|r:g|-60|translate(830,1295)</desc></g>
    <g><desc class="kmdata">km 9,32|c1|3|r:g|-30|translate(830,820)</desc></g>
   </g>
+  <g><desc class="kmdata">km 15,0 (54) ⇥\nkm 7,10 (C1) ↑|b2,c1|3|r:g|-60|translate(830,1295)</desc></g>
   <g><desc class="kmdata">km 3,53 (20) ↑\nkm 14,0 (C,24) ↖|cs|2|l:g|30|translate(-385.5,1166.5)</desc></g>
   <g class="cs_strecke">
     <path class="kilometrierung" d="M -390,906 v 250 q 0,6 4.5,10.5" />
@@ -4832,10 +4838,14 @@
     <path id="sn_40" class="streckennummer sn_40" d="M 275,1510 V 970 c 0,-10 -12.5,-10 -12.5,-20 v -52.5" />
     <path id="sn_41" class="streckennummer sn_41" d="M -205,1520 v 75 c 0,20 -10,20 -10,40 v 50 q 0,22 16.5,38.5 q 16.5,16.5 38.5,16.5 h 95 q 21,0 36,-16.5 l 2,-2 q 16.5,-16.5 36,-16.5 h 91 m 30,0 h 100 a 55,55 0,0,0 55,-55 v -75 c 0,-20 -10,-20 -10,-40 v -25" />
     <path id="sn_43" class="streckennummer sn_43" d="M 275,1055 h 145 a 15,15 0,0,0 15,-15 v -430" />
+    <path id="sn_44" class="streckennummer sn_44" d="M -215,1635 a 55,55 0,0,0 -55,-55 h -5" />
+    <path id="sn_44_ev" class="verlaengerung_europaviertel streckennummer sn_44" d="M -275,1580 h -415" />
     <path id="sn_50" class="streckennummer sn_50" d="M 285,1580 v -16 q 0,-22 16.5,-38.5 l 199.5,-199.5 q 15,-15 15,-35 v -96 a 25,25 0,0,1 25,-25 h 59" />
     <path id="sn_54" class="streckennummer sn_54" d="M 600,1170 h 115 a 20,20 0,0,1 20,20 v 85 a 20,20 0,0,0 20,20 h 75" />
     <path id="sn_62" class="streckennummer sn_62" d="M 726,1363 h 29 M 755,1435.5 h -5 a 7.5,7.5 0,0,1 -7.5,-7.5 v -52.5 a 12.5,12.5 0,0,1 12.5,-12.5 h 45 a 30,30 0,0,0 30,-30 v -513" />
     <path id="sn_65" class="streckennummer sn_65" d="M 449,1580 h 6 q 22,0 38.5,-16.5 l 184,-184 q 16.5,-16.5 38.5,-16.5 h 10" />
+    <path id="sn_vzg_3611" class="rtw streckennummer sn_vzg" d="M -472.5,565 v -105" />
+    <path id="sn_vzg_3640" class="rtw streckennummer sn_vzg" d="M -800,710 v 70" />
     <text class="sn_20 te" x="-335.5" y="1304">20</text>
     <text class="sn_20" x="-375" y="991">20</text>
     <text class="sn_24" x="-460" y="875">24</text>
@@ -4867,6 +4877,8 @@
     <text class="sn_41" x="-100" y="1730">41</text>
     <text class="sn_41 te" x="265" y="1525">41</text>
     <text class="sn_43" x="445" y="860">43</text>
+    <text class="sn_44" x="-270" y="1570">44</text>
+    <text class="sn_44 verlaengerung_europaviertel" x="-470" y="1570">44</text>
     <text class="sn_50" x="415" y="1385">50</text>
     <text class="sn_50" x="550" y="1160">50</text>
     <text class="sn_54" x="700" y="1160">54</text>
@@ -4874,6 +4886,8 @@
     <text class="sn_62" x="735" y="1353">62</text>
     <text class="sn_62" x="755" y="1410">62</text>
     <text class="sn_65" x="622" y="1455">65</text>
+    <text class="sn_vzg" x="-465" y="515">VzG 3611</text>
+    <text class="sn_vzg" x="-790" y="745">VzG 3640</text>
   </g>
   <g class="stadtbahnstrecken layer">
     <rect class="overlay" id="overlay_ss" width="1765" height="2147" x="-815" y="-180" />
