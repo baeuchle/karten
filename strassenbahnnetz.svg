@@ -310,17 +310,17 @@
     <text y="-7">Beuthener</text>
     <text y="5">Straße</text>
    </g>
-   <desc class="kmdata">km 0,0|s80|6|r|0</desc>
+   <desc class="kmdata">km 3,6|s80|5|r|-30</desc>
   </g>
   <g id="hstBRES" transform="translate(95,480)" class="zehnzig te">
    <use xlink:href="#bstg_ausen" transform="rotate(90)" />
    <text x="-15" y="10" transform="rotate(-45)">Breslauer Straße</text>
-   <desc class="kmdata">km 0,0|s80|6|r|0</desc>
+   <desc class="kmdata">km 3,3|s80|5|r|0</desc>
   </g>
   <g id="hstOPPE" transform="translate(135,480)" class="te">
    <use xlink:href="#hstl_vers1" transform="rotate(90)" />
    <text x="-15" y="10" transform="rotate(-45)">Oppenheimer Landstraße</text>
-   <desc class="kmdata">km 0,0|s80|6|r|0</desc>
+   <desc class="kmdata">km 3,0|s80|5|r|30</desc>
   </g>
   <g id="hstSWMO" transform="translate(170,480)" class="te">
    <use xlink:href="#haltestel" transform="translate(0,5) rotate(90)" />
@@ -328,25 +328,25 @@
     <text y="-7">Schweizer Straße/</text>
     <text y="5">Mörfelder Landstraße</text>
    </g>
-   <desc class="kmdata">km 0,0|s80|6|r|0</desc>
+   <desc class="kmdata">km 2,7|s80|5|l|120</desc>
   </g>
   <g id="hstSWAN" transform="translate(190,390)" class="te">
    <use xlink:href="#hstl_ausen" />
    <text x="-15" y="5">Schwanthalerstraße</text>
-   <desc class="kmdata">km 0,0|s80|6|r|0</desc>
+   <desc class="kmdata">km 2,2|s80|5|r|-60</desc>
   </g>
   <g id="hstSWGA" transform="translate(190,345)" class="tm">
    <circle class="bstggruppe" cx="-5" cy="10" r="20" />
    <use xlink:href="#haltestel" transform="translate(5,15)" />
    <use xlink:href="#haltestel" transform="translate(-15,5) rotate(90)" />
    <g transform="translate(0,-10)"><text y="-12">Schweizer-/</text><text y="0">Gartenstraße</text></g>
-   <desc class="kmdata">km 0,0|s80|6|r|0</desc>
+   <desc class="kmdata">km 1,9|s80|5|r|0</desc>
   </g>
   <g id="hstOTTO" transform="translate(70,345)" class="dreizig">
    <use xlink:href="#doppelbst" transform="translate(0,+5) rotate(+90)" />
    <use xlink:href="#bahnsteig" transform="translate(0,-5) rotate(-90)" />
    <text x="20" y="0" transform="rotate(-45)">Otto-Hahn-Platz</text>
-   <desc class="kmdata">km 0,0|s80|6|r|0</desc>
+   <desc class="kmdata">km 1,6|s80|5|r|0</desc>
   </g>
   <g id="hstSTRG" transform="translate(-20,345)" class="te">
    <path class="bstggruppe" d="M 0,50 c 20,0 40,-40  40,-60 s -20,-35 -40,-35 c -30,0 -30,95 0,95" />
@@ -356,7 +356,7 @@
    <use xlink:href="#doppelbst" class="dreizig" transform="translate(5,20)" />
    <use xlink:href="#bahnsteig" class="dreizig" transform="translate(15,20) rotate(180)" />
    <g transform="translate(-12,5)"><text y="-8">Stresemannallee/</text><text y="6">Gartenstraße</text></g>
-   <desc class="kmdata">km 0,0|s80,s84,s90|6|r|0</desc>
+   <desc class="kmdata">km 1,05|s80,s84,s90|4|r|-30</desc>
   </g>
   <g id="hgrSB" transform="translate(215,430)">
     <path class="hstgruppe" d="M 25,10 c 30,0 65,0 65,-15 s -55,-20 -65,-20 c -55,0 -70,25 -70,35 s 0,30 20,30 c 25,0 25,-30 50,-30 Z" />
@@ -366,7 +366,7 @@
         <text y="-12" class="hstgrtitel">Südbahnhof/</text>
         <text>Schweizer Straße</text>
       </g>
-      <desc class="kmdata">km 0,0|s80|6|r|0</desc>
+      <desc class="kmdata">km 2,6|s80|5|l|120</desc>
     </g>
     <g id="hstSB" transform="translate(25,-10)" class="nullzig tm">
       <use xlink:href="#dobs_ausen" transform="rotate(90)" />
@@ -477,7 +477,7 @@
   <g id="hstBASP" transform="translate(-20,250)" class="dreizig">
    <use xlink:href="#dobs_ausen" />
    <text x="15" y="5">Baseler Platz</text>
-   <desc class="kmdata">km 0,37|s73,s84,s90|5|l|60</desc>
+   <desc class="kmdata">km 0,37|s73,s84,s90|5|l|75</desc>
   </g>
 
   <g id="hgrHB" transform="translate(-25,180)">
@@ -1680,6 +1680,9 @@
    <path class="kilometrierung klein" d="M -80,215 a 15,15 0,0,0 -15,15 v 20 a 5,5 0,0,0 5,5 h 10 a 5,5 0,0,0 5,-5 v -35" />
   </g>
   <desc class="kmdata">km 0,80 ⤒|s91|6|r|-120|translate(-75,215)</desc>
+  <desc class="kmdata">km 0,20|s80,s84,s90,s91|4|l|90|translate(-20,215)</desc>
+  <desc class="kmdata">km 2,5|s73,s80|4|r|-90|translate(190,420)</desc>
+  <desc class="kmdata">km 3,9|s80,s84|4|r|-90|translate(-20,480)</desc>
  </g>
  <g class="streckennummern layer">
   <rect class="overlay" id="overlay_sn" width="1900"  height="1190" x="-865" y="-425" />
