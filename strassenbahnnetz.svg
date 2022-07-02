@@ -796,103 +796,102 @@
   <g id="hstKW" transform="translate(260,120)" class="dreizig">
    <use xlink:href="#dobs_ausen" />
    <text x="15" y="5">Konstablerwache</text>
-   <desc class="kmdata">km 2,1|s41|5|r|-135</desc>
+   <desc class="kmdata">km 2,1|s41|5|r|-90</desc>
   </g>
   <g id="hstHESS" transform="translate(260,80)" class="zehnzig">
    <use xlink:href="#bstg_ausen" />
    <text x="15" y="5">Hessendenkmal</text>
-   <desc class="kmdata">km 2,6|s41|5|r|-135</desc>
+   <desc class="kmdata">km 2,6|s41|5|r|-90</desc>
   </g>
   <g id="hstFRIP" transform="translate(260,40)">
    <use xlink:href="#hstl_vers1" />
    <text x="15" y="5">Friedberger Platz</text>
-   <desc class="kmdata">km 3,1|s41|5|r|-135</desc>
+   <desc class="kmdata">km 3,1|s41|5|r|-90</desc>
   </g>
   <g id="hstROHR" transform="translate(260,-010)">
    <use xlink:href="#wien_vers2" />
    <text x="15" y="5">Rohrbachstraße/Friedberger Landstraße</text>
-   <desc class="kmdata">km 3,5|s41|5|r|-135</desc>
+   <desc class="kmdata">km 3,5|s41|5|r|-90</desc>
   </g>
- <desc class="kmdata">km 3,6|s41,s42|4|r|-135|translate(260,-50)</desc>
-  <g id="hstNIBE" transform="translate(271.5,-082.5) rotate(45)" class="dreizig te">
+  <g id="hstNIBE" transform="translate(271.5,-082.5)" class="dreizig te">
    <use xlink:href="#hstgrid" />
-   <use xlink:href="#dobs_ausen" />
-   <text transform="translate(-15,5) rotate(-45)">Nibelungenplatz/FH</text>
-   <desc class="kmdata">km 3,9|s41|5|r|-135</desc>
+   <use xlink:href="#dobs_ausen" transform="rotate(45)" />
+   <text x="-15" y="5">Nibelungenplatz/FH</text>
+   <desc class="kmdata">km 3,9|s41|5|r|-75</desc>
   </g>
-  <g id="hstMUEN" transform="translate(299.5,-110.5) rotate(45)" class="dreizig te">
+  <g id="hstMUEN" transform="translate(299.5,-110.5)" class="dreizig te">
    <use xlink:href="#hstgrid" />
-   <use xlink:href="#dobs_ausen" />
-   <text transform="translate(-15,5) rotate(-45)">Münzenberger Straße</text>
-   <desc class="kmdata">km 4,3|s41|5|r|-135</desc>
+   <use xlink:href="#dobs_ausen" transform="rotate(45)" />
+   <text x="-15" y="5">Münzenberger Straße</text>
+   <desc class="kmdata">km 4,3|s41|5|r|-75</desc>
   </g>
-  <g id="hstWASS" transform="translate(334.5,-145.5) rotate(45)" class="dreizig te">
+  <g id="hstWASS" transform="translate(334.5,-145.5)" class="dreizig te">
    <use xlink:href="#hstgrid" />
-   <use xlink:href="#dobs_vers2" />
-   <text transform="translate(-15,5) rotate(-45)">Wasserpark</text>
-   <desc class="kmdata">km 4,6|s41|5|r|-135</desc>
+   <use xlink:href="#dobs_vers2" transform="rotate(45)" />
+   <text x="-15" y="5">Wasserpark</text>
+   <desc class="kmdata">km 4,6|s41|5|r|-75</desc>
   </g>
-  <g id="hstFRIW" transform="translate(369.5,-180.5) rotate(45)" class="dreizig te">
+  <g id="hstFRIW" transform="translate(369.5,-180.5)" class="dreizig te">
    <use xlink:href="#hstgrid" />
-   <use xlink:href="#dobs_ausen" />
-   <text transform="translate(-15,5) rotate(-45)">Friedberger Warte</text>
-   <desc class="kmdata">km 5,1|s41|5|r|-135</desc>
+   <use xlink:href="#dobs_ausen" transform="rotate(45)" />
+   <text x="-15" y="5">Friedberger Warte</text>
+   <desc class="kmdata">km 5,1|s41|5|r|-75</desc>
   </g>
-  <g id="hstBODW" transform="translate(404.5,-215.5) rotate(45)" class="dreizig   ">
+  <g id="hstBODW" transform="translate(404.5,-215.5)" class="dreizig   ">
    <use xlink:href="#hstgrid" />
-   <use xlink:href="#dobs_ausen" />
-   <text transform="rotate(-45) translate(15,15)">Bodenweg</text>
-   <desc class="kmdata">km 5,4|s41|5|r|-135</desc>
+   <use xlink:href="#dobs_ausen" transform="rotate(45)" />
+   <text x="15" y="15">Bodenweg</text>
+   <desc class="kmdata">km 5,4|s41|5|l|135</desc>
   </g>
-  <g id="hstWKSI" transform="translate(432.5,-243.5) rotate(45)" class="dreizig   ">
+  <g id="hstWKSI" transform="translate(432.5,-243.5)" class="dreizig   ">
    <use xlink:href="#hstgrid" />
-   <use xlink:href="#bstg_ausen" />
-   <text transform="rotate(-45) translate(15,15)">Walter-Kolb-Siedlung</text>
-   <desc class="kmdata">km 6,0|s41|5|r|-135</desc>
+   <use xlink:href="#bstg_ausen" transform="rotate(45)" />
+   <text x="15" y="15">Walter-Kolb-Siedlung</text>
+   <desc class="kmdata">km 6,0|s41|5|l|135</desc>
   </g>
-  <g id="hstALKM" transform="translate(460.5,-271.5) rotate(45)" class="dreizig   ">
+  <g id="hstALKM" transform="translate(460.5,-271.5)" class="dreizig   ">
    <use xlink:href="#hstgrid" />
-   <use xlink:href="#bstg_ausen" />
-   <text transform="rotate(-45) translate(15,15)">Alkmenestraße</text>
-   <desc class="kmdata">km 6,6|s41|5|r|-135</desc>
+   <use xlink:href="#bstg_ausen" transform="rotate(45)" />
+   <text x="15" y="15">Alkmenestraße</text>
+   <desc class="kmdata">km 6,6|s41|5|l|135</desc>
   </g>
-  <g id="hstGRAV" transform="translate(502.5,-313.5) rotate(45)" class="dreizig   ">
+  <g id="hstGRAV" transform="translate(502.5,-313.5)" class="dreizig   ">
    <use xlink:href="#hstgrid" />
-   <use xlink:href="#bstg_mitte" />
-   <text transform="rotate(-45) translate(15,15)">Gravensteiner-Platz</text>
-   <desc class="kmdata">km 7,0|s41|5|r|-135</desc>
+   <use xlink:href="#bstg_mitte" transform="rotate(45)" />
+   <text x="15" y="15">Gravensteiner-Platz</text>
+   <desc class="kmdata">km 7,0|s41|6|l|135</desc>
   </g>
-  <g id="hstROTH" transform="translate(305,-50) rotate(-90)"  class="zehnzig">
-   <use xlink:href="#bahnsteig" transform="translate(5,10)" />
-   <use xlink:href="#haltestel" transform="translate(-5,-5) rotate(180)" />
-   <text transform="rotate(45) translate(15,0)">Rothschildallee</text>
-   <desc class="kmdata">km 0,0|s42|6|r|0</desc>
+  <g id="hstROTH" transform="translate(305,-50)"  class="zehnzig">
+   <use xlink:href="#bahnsteig" transform="translate(10,-5) rotate(-90)" />
+   <use xlink:href="#haltestel" transform="translate(-5,5) rotate(90)" />
+   <text transform="rotate(-45) translate(15,0)">Rothschildallee</text>
+   <desc class="kmdata">km 8,3|s42|5|l|0</desc>
   </g>
-  <g id="hstGUEP" transform="translate(355,-50) rotate(-90)">
-   <use xlink:href="#hstl_ausen" />
-   <text transform="rotate(45) translate(15,0)">Günthersburgpark</text>
-   <desc class="kmdata">km 0,0|s42|6|r|0</desc>
+  <g id="hstGUEP" transform="translate(355,-50)">
+   <use xlink:href="#hstl_ausen" transform="rotate(-90)" />
+   <text transform="rotate(-45) translate(15,0)">Günthersburgpark</text>
+   <desc class="kmdata">km 8,0|s42|5|l|-120</desc>
   </g>
-  <g id="hstHAIB" transform="translate(395,-50) rotate(-90)">
-   <use xlink:href="#hstl_links" />
-   <text transform="rotate(45) translate(15,0)">Hartmann-Ibach-Straße</text>
-   <desc class="kmdata">km 0,0|s42|6|r|0</desc>
+  <g id="hstHAIB" transform="translate(395,-50)">
+   <use xlink:href="#hstl_links" transform="rotate(-90)" />
+   <text transform="rotate(-45) translate(15,0)">Hartmann-Ibach-Straße</text>
+   <desc class="kmdata">km 7,8|s42|5|l|-150</desc>
   </g>
-  <g id="hstBURG" transform="translate(435,-50) rotate(-90)" class="zehnzig">
-   <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" />
-   <use xlink:href="#haltestel" transform="translate(+5,0)" />
-   <text transform="rotate(45) translate(15,0)">Burgstraße</text>
-   <desc class="kmdata">km 0,0|s42|6|r|0</desc>
+  <g id="hstBURG" transform="translate(435,-50)" class="zehnzig">
+   <use xlink:href="#bahnsteig" transform="translate(0,5) rotate(90)" />
+   <use xlink:href="#haltestel" transform="translate(0,-5) rotate(-90)" />
+   <text transform="rotate(-45) translate(15,0)">Burgstraße</text>
+   <desc class="kmdata">km 7,5|s42|5|l|-120</desc>
   </g>
-  <g id="hstBM" transform="translate(475,-50) rotate(-90)">
-   <use xlink:href="#hstl_ausen" />
-   <text transform="rotate(45) translate(15,0)">Bornheim Mitte</text>
-   <desc class="kmdata">km 0,0|s42|6|r|0</desc>
+  <g id="hstBM" transform="translate(475,-50)">
+   <use xlink:href="#hstl_ausen" transform="rotate(-90)" />
+   <text transform="rotate(-45) translate(15,0)">Bornheim Mitte</text>
+   <desc class="kmdata">km 7,3|s42|5|l|-150</desc>
   </g>
-  <g id="hstEH" transform="translate(660,-50) rotate(-90)" class="dreizig">
-   <use xlink:href="#bstg_ausen" />
-   <text transform="rotate(45) translate(15,0)">Eissporthalle</text>
-   <desc class="kmdata">km 0,0|s42|6|r|0</desc>
+  <g id="hstEH" transform="translate(660,-50)" class="dreizig">
+   <use xlink:href="#bstg_ausen" transform="rotate(-90)" />
+   <text transform="rotate(-45) translate(15,0)">Eissporthalle</text>
+   <desc class="kmdata">km 6,6|s42|5|l|60</desc>
   </g>
   <g id="hstZO" transform="translate(465,140)" class="dreizig">
    <path class="bstggruppe" d="M 0,15 c 20,0 20,-5 20,-25 s -15,-35 -30,-35 s -25,5 -25,30 s 10,30 35,30 Z" />
@@ -924,7 +923,7 @@
    <use xlink:href="#bahnsteig" transform="translate(5,19)" />
    <use xlink:href="#bstg_vers3" transform="rotate(90)" />
    <text transform="rotate(-45) translate(20,5)">Saalburg-/Wittelsbacherallee</text>
-   <desc class="kmdata">km 0,0|s42,s55|6|r|0</desc>
+   <desc class="kmdata">km 6,8 ←|s42,s55|6|r|0</desc>
   </g>
   <g id="hstEMPL" transform="translate(580,-120)">
    <path class="bstggruppe" d="M -5,15 c 10,0 15,10 25,10 a 5,5 0,0,0 5,-5 v -20 a 25,25 0,0,0 -50,0 a 20,15 0,0,0 20,15" />
@@ -1645,7 +1644,9 @@
   </g>
   <g class="s42_strecke">
     <path class="kilometrierung" d="M 197.5,-50 h 17.5 h 455 q 6,0 10.5,4.5 l 53,53" />
+    <desc class="kmdata">km 9,0|s42|6|r|-90|translate(197.5,-50)</desc>
   </g>
+  <desc class="kmdata">km 3,6 ↑\nkm 8,5 ←|s41,s42|4|r|-120|translate(260,-50)</desc>
   <g class="s55_strecke">
     <path class="kilometrierung" d="M 465,175 v -61 q 0,-6 4.5,-10.5 l 116,-116 q 4.5,-4.5 4.5,-10.5 v -97 a 10,10 0,1,0 -20,0 a 5,5 0,0,0 5,5 a 15,15 0,0,1 15,15" />
   </g>
