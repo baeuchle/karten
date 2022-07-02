@@ -278,18 +278,18 @@
    <use xlink:href="#doppelbst" class="dreizig" />
    <use xlink:href="#bahnsteig" transform="translate(5,-15)" class="nullzig" />
    <text x="10" y="5">Neu-Isenburg/Stadtgrenze</text>
-   <desc class="kmdata">km 0,0|s84|6|r|0</desc>
+   <desc class="kmdata">km 6,5|s84|5|r|-90</desc>
   </g>
   <g id="hstOBSS" transform="translate(-20,635)" class="dreizig">
    <use xlink:href="#bstg_vers1" />
    <text transform="translate(15,5)">Oberschweinstiege</text>
-   <desc class="kmdata">km 0,0|s84|6|r|0</desc>
+   <desc class="kmdata">km 4,5|s84|5|r|-90</desc>
   </g>
   <g id="hstLOUI" transform="translate(-20,565)" class="dreizig te">
    <use xlink:href="#doppelbst" transform="translate(-5,0) rotate(180)" />
    <use xlink:href="#bahnsteig" transform="translate(5,0)" />
    <text transform="rotate(-45) translate(-15,0)">Louisa Bahnhof</text>
-   <desc class="kmdata">km 0,0|s84|6|r|0</desc>
+   <desc class="kmdata">km 2,8|s84|5|r|-90</desc>
   </g>
   <g id="hstSTRM" transform="translate(-20,505)" class="zehnzig te">
    <use xlink:href="#bstg_ausen" />
@@ -297,12 +297,12 @@
     <text y="-7">Stresemannallee/</text>
     <text y="5">Mörfelder Landstraße</text>
    </g>
-   <desc class="kmdata">km 0,0|s84|6|r|0</desc>
+   <desc class="kmdata">km 2,3|s84|5|r|-90</desc>
   </g>
   <g id="hstSTBF" transform="translate(-20,425)" class="dreizig te">
    <use xlink:href="#bstg_ausen" />
    <text transform="rotate(-45) translate(-15,0)">Stresemannallee</text>
-   <desc class="kmdata">km 0,0|s84|6|r|0</desc>
+   <desc class="kmdata">km 1,6|s84|5|l|60</desc>
   </g>
   <g id="hstBEUT" transform="translate(50,480)" class="zehnzig te">
    <use xlink:href="#bstg_vers1" transform="rotate(90)" />
@@ -1682,7 +1682,7 @@
   <desc class="kmdata">km 0,80 ⤒|s91|6|r|-120|translate(-75,215)</desc>
   <desc class="kmdata">km 0,20|s80,s84,s90,s91|4|l|90|translate(-20,215)</desc>
   <desc class="kmdata">km 2,5|s73,s80|4|r|-90|translate(190,420)</desc>
-  <desc class="kmdata">km 3,9|s80,s84|4|r|-90|translate(-20,480)</desc>
+  <desc class="kmdata">km 2,1 (84) ↓\nkm 3,9 (80) ⇤|s80,s84|4|r|-90|translate(-20,480)</desc>
  </g>
  <g class="streckennummern layer">
   <rect class="overlay" id="overlay_sn" width="1900"  height="1190" x="-865" y="-425" />
