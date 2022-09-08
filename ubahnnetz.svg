@@ -2515,6 +2515,7 @@
     <path id="bbh_25" class="endet" d="M 63.5,-26.5 q -1.5,-1.5 -1.5,-3.5 v -20" />
     <path id="bbh_26" class="endet" d="M 65,-23 v -27" />
     <path id="bbh_61" class="faeng" d="M 35,0 v -28 q 0,-2 -1.5,-3.5" />
+    <path id="gw_maybachbrücke" d="M 55,26 c 0,10 -10,10 -10,20" />
    </g>
   </g>
   <g id="bb_eckenheim" transform="translate(205,965)">
