@@ -837,25 +837,25 @@
    <text x="-15" y="5">Friedberger Warte</text>
    <desc class="kmdata">km 5,1|s41|5|r|-75</desc>
   </g>
-  <g id="hstBODW" transform="translate(404.5,-215.5)" class="dreizig   ">
+  <g id="hstBODW" transform="translate(432.5,-243.5)" class="dreizig   ">
    <use xlink:href="#hstgrid" />
    <use xlink:href="#dobs_ausen" transform="rotate(45)" />
    <text x="15" y="15">Bodenweg</text>
    <desc class="kmdata">km 5,4|s41|5|l|135</desc>
   </g>
-  <g id="hstWKSI" transform="translate(432.5,-243.5)" class="dreizig   ">
+  <g id="hstWKSI" transform="translate(457.5,-271.5)" class="dreizig   ">
    <use xlink:href="#hstgrid" />
    <use xlink:href="#bstg_ausen" transform="rotate(45)" />
    <text x="15" y="15">Walter-Kolb-Siedlung</text>
    <desc class="kmdata">km 6,0|s41|5|l|135</desc>
   </g>
-  <g id="hstALKM" transform="translate(460.5,-271.5)" class="dreizig   ">
+  <g id="hstALKM" transform="translate(488.5,-299.5)" class="dreizig   ">
    <use xlink:href="#hstgrid" />
    <use xlink:href="#bstg_ausen" transform="rotate(45)" />
    <text x="15" y="15">Alkmenestraße</text>
    <desc class="kmdata">km 6,6|s41|5|l|135</desc>
   </g>
-  <g id="hstGRAV" transform="translate(502.5,-313.5)" class="dreizig   ">
+  <g id="hstGRAV" transform="translate(530.5,-341.5)" class="dreizig   ">
    <use xlink:href="#hstgrid" />
    <use xlink:href="#bstg_mitte" transform="rotate(45)" />
    <text x="15" y="15">Gravensteiner-Platz</text>
@@ -1205,56 +1205,57 @@
    <desc class="kmdata">km 0,0|s90|6|r|0</desc>
   </g>
   <g class="ausbau_ring">
-   <g id="hstEURO" transform="translate(-94,-335)" class="dreizig geplant">
+   <g id="hstAESC" transform="translate(-110,-335)" class="dreizig geplant">
+    <use xlink:href="#bstg_vers1" transform="rotate(90)"/>
+    <g transform="translate(5,-20) rotate(-45)">
+     <text y="-5">Am Eisernen</text>
+     <text y="+7">Schlag <tspan class="ab_bb">(optional)</tspan></text>
+    </g>
+   </g>
+   <g id="hstEURO" transform="translate(-65,-335)" class="dreizig geplant">
     <use xlink:href="#bstg_vers1" transform="rotate(90)"/>
     <text transform="translate(0,-15) rotate(-45)">Europaturm</text>
    </g>
-   <g id="hstDBUB" transform="translate(-44,-335)" class="dreizig geplant">
+   <g id="hstDBUB" transform="translate(-20,-335)" class="dreizig geplant">
     <use xlink:href="#bstg_ausen" transform="rotate(90)"/>
     <g transform="translate(5,-20) rotate(-45)">
      <text y="-5">Deutsche</text>
      <text y="+7">Bundesbank</text>
     </g>
    </g>
-   <g id="hstPLTE" transform="translate( -4,-335)" class="dreizig geplant">
-    <use xlink:href="#bstg_ausen" transform="rotate(90)"/>
+   <g id="hstPLTE" transform="translate(30,-335)" class="dreizig geplant">
+    <use xlink:href="#bstg_vers1" transform="rotate(90)"/>
     <text transform="translate(0,-15) rotate(-45)">Platenstraße</text>
    </g>
-   <g id="hstDO" transform="translate( 36,-335)" class="dreizig geplant">
-    <path class="bstggruppe" d="M -15,0 a 30,55 0,0,0 30,55 a 20,35 0,0,0 20,-35 a 25,35 0,0,0 -25,-35 c -15,0 -25,0 -25,15" />
-    <use xlink:href="#bstg_ausen" transform="rotate(90)"/>
-    <text transform="translate(30,-15) rotate(-45)">Dornbusch</text>
-    <g transform="translate(15,30)">
-    <use xlink:href="#bstg_ubahn" transform="translate(-5,0)" />
-    <use xlink:href="#bstg_ubahn" transform="translate(+5,0) rotate(180)" />
+   <g id="hstDO" transform="translate( 85,-335)" class="dreizig geplant">
+    <path class="bstggruppe" d="M -25,0 a 25,55 0,0,0 25,55 a 30,60 0,0,0 30,-60 a 25,15 0,0,0 -25,-15 a 30,20 0,0,0 -30,20" />
+    <use xlink:href="#bahnsteig" transform="translate(-15,5) rotate(90)"/>
+    <use xlink:href="#bahnsteig" transform="translate(20,-5) rotate(-90)"/>
+    <text transform="translate(15,-15) rotate(-45)">Dornbusch</text>
+    <g transform="translate(0,30)">
+     <use xlink:href="#bstg_ubahn" transform="translate(-5,0)" />
+     <use xlink:href="#bstg_ubahn" transform="translate(+5,0) rotate(180)" />
     </g>
    </g>
-   <g id="hstKASI" transform="translate(116,-335)" class="dreizig geplant">
-    <use xlink:href="#bstg_ausen" transform="rotate(90)"/>
+   <g id="hstKASI" transform="translate(155,-335)" class="dreizig geplant">
+    <use xlink:href="#bstg_vers2" transform="rotate(90)"/>
     <g transform="translate(5,-20) rotate(-45)">
      <text y="-12">Kaiser-</text>
      <text y="+00">Sigmund-</text>
      <text y="+12">Straße</text>
     </g>
    </g>
-   <g id="hstEM" transform="translate(166,-335)" class="dreizig te geplant">
-    <path class="hstgruppe" d="M 25,-20 c -25,0 -40,0 -40,20 c 0,20 15,20 40,20 c 50,0 50,0 50,-20 c 0,-20 0,-20 -50,-20" />
-    <use xlink:href="#bstg_ausen" transform="rotate(90)"/>
-    <g transform="translate(-5,25) rotate(-45)">
-     <text y="-5">Eckenheimer Landstraße/</text>
-     <text y="+7">Marbachweg</text>
-    </g>
-   </g>
-   <g id="hstMW" transform="translate(221,-335)" class="dreizig">
+   <g id="hstMW" transform="translate(235,-335)" class="dreizig">
     <use xlink:href="#hstgrid" transform="rotate(90)"/>
     <use xlink:href="#bstg_ubahn" transform="translate(0,-5) rotate(90)" />
     <use xlink:href="#bstg_ubahn" transform="translate(0,5) rotate(-90)" />
+    <use xlink:href="#bstg_ausen" class="geplant" transform="translate(25,0) rotate(90)" />
     <g transform="translate(5,-20) rotate(-45)">
-     <text class="ab_bb" y="-3">Marbachweg/</text>
-     <text class="ab_bb" y="+5">Sozialzentrum</text>
+     <text y="-7">Marbachweg/</text>
+     <text y="+5">Sozialzentrum</text>
     </g>
    </g>
-   <g id="hstGS" transform="translate(311,-335)">
+   <g id="hstGS" transform="translate(310,-335)">
     <use xlink:href="#hstgrid" transform="rotate(90)"/>
     <use xlink:href="#hstgrid" transform="translate(30,-30)"/>
     <path class="bstggruppe" d="M -25,0 a 20,20 0,0,0 20,20 c 20,0 35,-10 35,-30 c 0,-30 0,-40 -10,-40 a 45,50 0,0,0 -45,50" />
@@ -1265,7 +1266,7 @@
    </g>
    <g id="hstHOMA" transform="translate(356,-335)" class="dreizig geplant">
     <use xlink:href="#hstgrid" transform="rotate(90)"/>
-    <use xlink:href="#bstg_ausen"  transform="rotate(90)"/>
+    <use xlink:href="#bstg_vers1"  transform="rotate(90)"/>
     <g transform="translate(10,-20) rotate(-45)">
      <text y="-7">Homburger</text>
      <text y="+5">Landstraße/</text>
@@ -1274,8 +1275,8 @@
    </g>
    <g id="hstWETZ" transform="translate(381,-285)" class="dreizig geplant">
     <use xlink:href="#hstgrid"/>
-    <use xlink:href="#bstg_ausen" />
-    <text transform="translate(15,5) rotate(-45)">Wetzlarer Straße</text>
+    <use xlink:href="#bstg_vers1" />
+    <text transform="translate(15,5) rotate(-45)">Wetzlarer Straße <tspan class="ab_bb">(optional)</tspan></text>
    </g>
    <path class="strecke bb" d="M 396,-324 l 70,-70 h 20" />
    <text x="486" y="-391" class="ab_bb geplant">Ringstraßenbahn</text>
@@ -1296,8 +1297,7 @@
   <path id="schleife_hugojunkersstraß2" d="M 900,200 c 0,5 10,5 10,10 v 10 c 0,5 -10,5 -10,10" />
   <path id="gw_schießhüttenstraße" d="M 1015,295 c 0,10 10,10 10,20" />
   <path id="gw_münzenberger" d="M 278.5,-96.5 c 3.5,-3.5 10.5,3.5 14,0" />
-  <use xlink:href="#weg" transform="translate(285.5,-96.5) scale(0.5,0.5)"/>
-  <path id="gw_gravensteinerplatz" d="M 492,-310 c -3.5,3.5 3.5,10.5 0,14 c -3.5,3.5 -10.5,-3.5 -14,0" />
+  <path id="gw_gravensteinerplatz" d="M 520,-338 c -3.5,3.5 3.5,10.5 0,14 c -3.5,3.5 -10.5,-3.5 -14,0" />
   <path id="gw_burgstraße" d="M 445,-55 c 5,0 5,10 10,10" />
   <path id="gw_eissporthalle" d="M 684,-49 c 3.5,3.5 -3.5,10.5 0,14" />
   <path id="schleife_zoo" d="M 470,130 a 5,5 0,0,0 -5,-5 h -15 a 10,10 0,1,1 10,-10" />
@@ -1466,29 +1466,34 @@
      <text transform="translate(0,4)" class="ref te">B</text>
     </a>
   </g>
-  <path id="friedbergerlandstraße_1" class="endet" d="M 265,-35 v -30 q 0,-4 3,-7 l 245,-245" />
-  <path id="friedbergerlandstraße_2" class="faeng" d="M 506,-324 l -245,245 q -6,6 -6,14 v 30" />
-  <path id="friedbergerlandstraße_n" class="mitte hilfslinie"    d="M 260,-35 v -30 q 0,-6 4.5,-10.5 l 3.5,3.5 -7,-7 3.5,3.5 l 245,-245" />
+  <path id="friedbergerlandstraße_1" class="endet" d="M 265,-35 v -30 q 0,-4 3,-7 l 273,-273" />
+  <path id="friedbergerlandstraße_2" class="faeng" d="M 534,-352 l -273,273 q -6,6 -6,14 v 30" />
+  <path id="friedbergerlandstraße_n" class="mitte hilfslinie"    d="M 260,-35 v -30 q 0,-6 4.5,-10.5 l 3.5,3.5 -7,-7 3.5,3.5 l 273,-273" />
   <g class="ausbau_ring">
-   <path id="marbachweg_m" class="mitte hilfslinie" d="M 51,-350 a 15,15 0,0,0 15,15 v 5,-5 h 10 v 5,-5 h 90 v 5,-5 h 10 v 5,-5 a 15,15 0,0,0 15,-15" />
-   <path id="marbachweg_1a" class="bb" d="M 46,-350 a 20,20 0,0,0 20,20 c 5,0 5,-10 10,-10" />
-   <path id="marbachweg_1b" class="bb" d="M 166,-340 c 5,0 5,10 10,10 a 20,20 0,0,0 20,-20" />
-   <path id="marbachweg_2" class="bb" d="M 186,-350 a 10,10 0,0,1 -10,10 h -110 a 10,10 0,0,1 -10,-10" />
-   <path id="astrecke_m" class="ubahn mitte hilfslinie" d="M 51,-360 v 90" />
-   <path id="astrecke_1" class="ubahn zugabe ubergabe" d="M 46,-360 v 90" />
-   <path id="astrecke_2" class="ubahn zugabe ubergabe" d="M 56,-270 v -90" />
-   <path id="eckenheim_preungesheim_m" class="mitte hilfslinie" d="M 191,-350 a 15,15 0,0,0 15,15" />
-   <path id="eckenheim_preungesheim_1" class="bb" d="M 186,-350 a 20,20 0,0,0 20,20" />
-   <path id="eckenheim_preungesheim_2" class="bb" d="M 206,-340 a 10,10 0,0,1 -10,-10" />
-   <path id="konsti_eckenheim_m" class="mitte hilfslinie" d="M 191,-320 v -40" />
-   <path id="konsti_eckenheim_1" class="bb ubergabe" d="M 196,-320 v -40" />
-   <path id="konsti_eckenheim_2" class="bb zugabe" d="M 186,-360 v 40" />
-   <path id="u5_strecke_m" class="ubahn mitte hilfslinie" d="M 191,-310 v -10 a 15,15 0,0,1 15,-15 h 120 a 15,15 0,0,0 15,-15 v -45" />
-   <path id="u5_strecke_1" class="ubahn ubergabe zugabe" d="M 196,-310 v -10 a 10,10 0,0,1 10,-10 h 120 a 20,20 0,0,0 20,-20 v -45" />
-   <path id="u5_strecke_2" class="ubahn ubergabe zugabe" d="M 336,-395 v 45 a 10,10 0,0,1 -10,10 h -120 a 20,20 0,0,0 -20,20 v 10" />
+   <path id="marbachweg_m" class="mitte hilfslinie" d="M 85,-350 a 15,15 0,0,0 15,15 v 5,-5 h 10 v 5,-5 h 70 v 5,-5 h 10 v 5,-5 a 15,15 0,0,0 15,-15" />
+   <path id="marbachweg_1a" class="bb" d="M 80,-350 a 20,20 0,0,0 20,20 c 5,0 5,-10 10,-10" />
+   <path id="marbachweg_1b" class="bb" d="M 180,-340 c 5,0 5,10 10,10 a 20,20 0,0,0 20,-20" />
+   <path id="marbachweg_2" class="bb" d="M 200,-350 a 10,10 0,0,1 -10,10 h -90 a 10,10 0,0,1 -10,-10" />
+   <path id="astrecke_m" class="ubahn mitte hilfslinie" d="M 85,-360 v 90" />
+   <path id="astrecke_1" class="ubahn zugabe ubergabe" d="M 80,-360 v 90" />
+   <path id="astrecke_2" class="ubahn zugabe ubergabe" d="M 90,-270 v -90" />
+   <path id="eckenheim_preungesheim_m" class="mitte hilfslinie" d="M 205,-350 a 15,15 0,0,0 15,15" />
+   <path id="eckenheim_preungesheim_1" class="bb" d="M 200,-350 a 20,20 0,0,0 20,20" />
+   <path id="eckenheim_preungesheim_2" class="bb" d="M 220,-340 a 10,10 0,0,1 -10,-10" />
+   <path id="konsti_eckenheim_m" class="mitte hilfslinie" d="M 205,-320 v -40" />
+   <path id="konsti_eckenheim_1" class="bb ubergabe" d="M 210,-320 v -40" />
+   <path id="konsti_eckenheim_2" class="bb zugabe" d="M 200,-360 v 40" />
+   <path id="u5_strecke_m" class="ubahn mitte hilfslinie" d="M 205,-310 v -10 a 15,15 0,0,1 15,-15 h 105 a 15,15 0,0,0 15,-15 v -45" />
+   <path id="u5_strecke_1" class="ubahn ubergabe zugabe" d="M 210,-310 v -10 a 10,10 0,0,1 10,-10 h 105 a 20,20 0,0,0 20,-20 v -45" />
+   <path id="u5_strecke_2" class="ubahn ubergabe zugabe" d="M 335,-395 v 45 a 10,10 0,0,1 -10,10 h -105 a 20,20 0,0,0 -20,20 v 10" />
    <path id="ring_m" class="mitte hilfslinie" d="M 376.5,-187.5 l -3.5,-3.5 3.5,3.5 q 4.5,-4.5 4.5,-10.5 v -122 a 15,15 0,0,0 -15,-15 v 5 -5 h -499 a 15,15 0,0,0 -15,15 h 5,-10,5" />
    <path id="ring_1" class="geplant" d="M 380,-184 q 6,-6 6,-14 v -122 a 20,20 0,0,0 -20,-20 h -499 a 20,20 0,0,0 -20,20" />
    <path id="ring_2" class="geplant" d="M -143,-320 a 10,10 0,0,1 10,-10 h 499 a 10,10 0,0,1 10,10 v 122 q 0,4 -3,7" />
+   <path id="gw_dornbusch" class="geplant bb" d="M 65,-330 c -5,0 -5,-10 -10,-10" />
+   <path id="gw_markuskrankenhaus" class="geplant bb" d="M -143,-300 c 0,5 -10,5 -10,10" />
+   <path id="ring_anschluss_fw_m" class="mitte hilfslinie" d="M 406.5,-217.5 q -4.5,4.5 -10.5,4.5 a 15,15 0,0,1 -15,-15" />
+   <path id="ring_anschluss_fw_1" class="geplant" d="M 403,-221 q -3,3 -7,3 a 10,10 0,0,1 -10,-10" />
+   <path id="ring_anschluss_fw_2" class="geplant" d="M 376,-228 a 20,20 0,0,0 20,20 q 8,0 14,-6" />
   </g>
   <path id="bornheim_1" d="M 255,-65 a 20,20 0,0,0 20,20 h 300 a 10,10 0,0,1 10,10" />
   <path id="bornheim_2" d="M 595,-35 a 20,20 0,0,0 -20,-20 h -300 a 10,10 0,0,1 -10,-10" />
@@ -1641,7 +1646,7 @@
    <path class="kilometrierung" id="sk_28" d="M -148,-105 v -255 a 15,15 0,0,0 -15,-15 h -80" />
   </g>
   <g class="s41_strecke">
-    <path class="kilometrierung" d="M 260,175 v -240 q 0,-6 4.5,-10.5 l 245,-245" />
+    <path class="kilometrierung" d="M 260,175 v -240 q 0,-6 4.5,-10.5 l 273,-273" />
   </g>
   <g class="s42_strecke">
     <path class="kilometrierung" d="M 197.5,-50 h 17.5 h 455 q 6,0 10.5,4.5 l 53,53" />
@@ -1694,7 +1699,7 @@
   <path class="streckennummer sn_22" id="sn_22" d="M -108.5,-64.5 q -4.5,-4.5 -10.5,-4.5 h -276" />
   <path class="streckennummer sn_23" id="sn_23" d="M -183,-139 h -26 a 10,10 0,0,0 -10,10 v 15 a 10,10 0,0,0 10,10 h 51 a 10,10 0,0,0 10,-10 v -56" />
   <path class="streckennummer sn_28" id="sn_28" d="M -148,-170 v -190 a 15,15 0,0,0 -15,-15 h -80" />
-  <path class="streckennummer sn_41" id="sn_41" d="M 260,60 v -125 q 0,-6 4.5,-10.5 l 245,-245" />
+  <path class="streckennummer sn_41" id="sn_41" d="M 260,60 v -125 q 0,-6 4.5,-10.5 l 273,-273" />
   <path class="streckennummer sn_42" id="sn_42" d="M 197.5,-50 h 17.5 h 250" />
   <path class="streckennummer sn_52" id="sn_52" d="M 465,-50 h 205 q 6,0 10.5,4.5 l 53,53" />
   <path class="streckennummer sn_53" id="sn_53" d="M 260,100 v -40" />
@@ -1727,7 +1732,7 @@
   <text class="sn_23" x="-200" y="-110">23</text>
   <text class="sn_28" x="-138" y="-210">28</text>
   <text class="sn_41" x="270" y="15">41</text>
-  <text class="sn_41" x="500" y="-290">41</text>
+  <text class="sn_41" x="528" y="-318">41</text>
   <text class="sn_42" x="280" y="-30">42</text>
   <text class="sn_52" x="520" y="-30">52</text>
   <text class="sn_53" x="270" y="70">53</text>
@@ -1849,7 +1854,7 @@
    <text class="ab_bb" x="10" y="65">mit Anschluss an Stadtbahnstrecken</text>
    <text class="ab_bb" x="15" y="75">- A (Dornbusch) und</text>
    <text class="ab_bb" x="15" y="85">- B (Eckenheimer Landstraße / Gießener Straße)</text>
-   <text class="ab_bb" x="10" y="95">Status: Abwägung der <a xlink:href="https://www.stvv.frankfurt.de/parlisobj/B_381_2015_AN_Machbarkeitsstudie.pdf">Machbarkeitsstudie</a></text>
+   <text class="ab_bb" x="10" y="95">Status: <a xlink:href="https://stvv.frankfurt.de/download/M_167_2022.pdf">Vorplanung</a></text>
    <text class="boxtext" x="5" y="115" onclick="geplant('ausbau_kleyer')">Rebstöcker Straße <tspan class="link" id="ausbau_kleyer_aktion">anzeigen</tspan></text>
    <text class="ab_bb" x="10" y="130">Zweigleisiger Ausbau</text>
    <text class="ab_bb" x="10" y="140">Status: Planfeststellung fertig;</text>
