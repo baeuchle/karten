@@ -145,6 +145,7 @@
 
   .ausbau_kleyer { display:none; }
   .ausbau_ring { display:none; }
+  .ausbau_schlossstrasse { display:none; }
   .hilfslinie { display:none; }
   svg.debug .hilfslinie { display:inline; }
 
@@ -696,23 +697,25 @@
     <desc class="kmdata">km 1,52|s20|4|l|60|rotate(45) translate(-7,-7)</desc>
     <desc class="kmdata">km 1,51|s20|5|l|90|rotate(45)</desc>
   </g>
-  <g id="hstKUFU" transform="translate(-211.5,-167.5) rotate(-45)" class="dreizig te geplant">
-    <use xlink:href="#hstgrid" />
-    <use xlink:href="#bstg_ausen" />
-    <text transform="translate(-15,5) rotate(45)">Kurfürstenplatz</text>
-    <desc class="kmdata">km ?,??|s20|5|r|-90|rotate(45)</desc>
-  </g>
-  <g id="hstSCHH" transform="translate(-239.5,-195.5) rotate(-45)" class="dreizig te geplant">
-    <use xlink:href="#hstgrid" />
-    <use xlink:href="#bstg_ausen" />
-    <text transform="translate(-15,5) rotate(45)">Schönhof</text>
-    <desc class="kmdata">km ?,??|s20|5|r|-90|rotate(45)</desc>
+  <g class="ausbau_schlossstrasse">
+    <g id="hstKUFU" transform="translate(-211.5,-167.5) rotate(-45)" class="dreizig te geplant">
+      <use xlink:href="#hstgrid" />
+      <use xlink:href="#bstg_ausen" />
+      <text transform="translate(-15,5) rotate(45)">Kurfürstenplatz</text>
+      <desc class="kmdata">km ?,??|s20|5|r|-90|rotate(45)</desc>
+    </g>
+    <g id="hstSCHH" transform="translate(-239.5,-195.5) rotate(-45)" class="dreizig te geplant">
+      <use xlink:href="#hstgrid" />
+      <use xlink:href="#bstg_ausen" />
+      <text transform="translate(-15,5) rotate(45)">Schönhof</text>
+      <desc class="kmdata">km ?,??|s20|5|r|-90|rotate(45)</desc>
+    </g>
   </g>
   <g id="hstIH" transform="translate(-332,-244.5)" class="dreizig te">
     <use xlink:href="#hstgrid" />
     <use xlink:href="#bstg_ubahn" transform="translate(0,-2.5) rotate(90)" />
     <use xlink:href="#bstg_ubahn" transform="translate(0,2.5) rotate(-90)" />
-    <use class="geplant" xlink:href="#bahnsteig" transform="translate(15,-12.5) rotate(-90)" />
+    <use class="ausbau_schlossstrasse" xlink:href="#bahnsteig" transform="translate(15,-12.5) rotate(-90)" />
     <text transform="translate(0,20)">Industriehof</text>
     <desc class="kmdata">km 3,45|s20|5|l|-15</desc>
   </g>
@@ -1551,7 +1554,7 @@
    <path id="s25gw2" class="ubahnt" d="M -297,-242 c 5,0 5,-5 10,-5" />
    <path id="s20a3g1" d="M -140,-103 l -148,-148 q -6,-6 -14,-6 c -5,0 -5,10 -10,10" />
    <path id="g317A31" class="endet" d="M -302,-257 h -10" />
-   <path id="g317A31_add" class="endet geplant" d="M -312,-257 h -15" />
+   <path id="g317A31_add" class="endet geplant ausbau_schlossstrasse" d="M -312,-257 h -15" />
    <path id="s20a3g2" d="M -312,-242 c 5,0 5,10 10,10 h 15 q 4,0 7,3 l 133,133" />
    <path id="s20a4g1" class="ubahng ubergabe" d="M -312,-247 h -40 q -4,0 -7,-3 l -17,-17" />
    <path id="s20a4g2" class="ubahng zugabe" d="M -379.5,-263.5 l 17.5,17.5 q 4,4 10,4 h 40" />
@@ -1850,7 +1853,7 @@
    </g>
   </g>
   <g id="ausbauprojekte" transform="translate(835,-340)">
-   <rect class="box" width="200" height="155" />
+   <rect class="box" width="200" height="200" />
    <text class="unterschrift" x="5" y="20">Ausbauprojekte</text>
    <text class="boxtext" x="5" y="40" onclick="geplant('ausbau_ring')">Ringstraßenbahn <tspan class="link" id="ausbau_ring_aktion">anzeigen</tspan></text>
    <text class="ab_bb" x="10" y="55">Markus-Krankenhaus - Friedberger Warte</text>
@@ -1862,6 +1865,9 @@
    <text class="ab_bb" x="10" y="130">Zweigleisiger Ausbau</text>
    <text class="ab_bb" x="10" y="140">Status: Planfeststellung fertig;</text>
    <text class="ab_bb" x="10" y="150">Baubeginn nicht absehbar</text>
+   <text class="boxtext" x="5" y="170" onclick="geplant('ausbau_schlossstrasse')">Schloßstraße <tspan class="link" id="ausbau_schlossstrasse_aktion">anzeigen</tspan></text>
+   <text class="ab_bb" x="10" y="185">Linienverkehr bis und Wendemöglichkeit</text>
+   <text class="ab_bb" x="10" y="195">am Industriehof</text>
   </g>
   <text transform="translate(753.5,-63.5)" class="ab_bb tm">Anschluss Richtung BB Ost</text>
   <text transform="translate(753.5,-53.5)" class="ab_bb tm">(via Johanna-Tesch-Platz)</text>
