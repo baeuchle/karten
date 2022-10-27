@@ -1494,6 +1494,9 @@
    <path id="ring_anschluss_fw_m" class="mitte hilfslinie" d="M 406.5,-217.5 q -4.5,4.5 -10.5,4.5 a 15,15 0,0,1 -15,-15" />
    <path id="ring_anschluss_fw_1" class="geplant" d="M 403,-221 q -3,3 -7,3 a 10,10 0,0,1 -10,-10" />
    <path id="ring_anschluss_fw_2" class="geplant" d="M 376,-228 a 20,20 0,0,0 20,20 q 8,0 14,-6" />
+   <path id="ring_anschluss_mk_m" class="mitte hilfslinie" d="M -148,-350 a 15,15 0,0,0 15,15" />
+   <path id="ring_anschluss_mk_1" class="geplant" d="M -153,-350 a 20,20 0,0,0 20,20" />
+   <path id="ring_anschluss_mk_2" class="geplant" d="M -133,-340 a 10,10 0,0,1 -10,-10" />
   </g>
   <path id="bornheim_1" d="M 255,-65 a 20,20 0,0,0 20,20 h 300 a 10,10 0,0,1 10,10" />
   <path id="bornheim_2" d="M 595,-35 a 20,20 0,0,0 -20,-20 h -300 a 10,10 0,0,1 -10,-10" />
