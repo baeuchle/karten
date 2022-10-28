@@ -168,7 +168,7 @@ def process_request(data):
     except FileNotFoundError:
         pass
     result = print_content(revision, data['file'])
-    if not result and data['file'] == 'straßenbahnnetz.svg':
+    if result and data['file'] == 'straßenbahnnetz.svg':
         return print_content(revision, 'strassenbahnnetz.svg')
     return result
 
