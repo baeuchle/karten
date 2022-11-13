@@ -676,15 +676,12 @@
    <path id="a_2_stamm" class="endet" d="M 110,1130 V 1955" />
    <path id="d_1" class="faeng endet" d="M -200,1705 v -285 c 0,-7.5 2.5,-7.5 2.5,-15 v -45" />
    <path id="d_2" class="faeng endet" d="M -212.5,1360 v 45 c 0,7.5 2.5,7.5 2.5,15 v 175 c 0,25 -20,25 -20,50 v 80" />
-   <path id="d_ii_tunnel_2b_m" class="mitte" d="M -125,1130 v 115" />
-   <path id="d_ii_tunnel_2b_1" class="geplant ginnheimer_kurve" d="M -130,1130 v 115" />
-   <path id="d_ii_tunnel_2b_2" class="geplant ginnheimer_kurve" d="M -120,1245 v -115" />
-   <path id="d_ii_tunnel_23_m" class="mitte" d="M -165,1210 h 5 a 35,35 0,0,1 35,35 v 35 a 35,35 0,0,1 -35,35 h -10 a 35,35 0,0,0 -35,35 v 10" />
-   <path id="d_ii_tunnel_23_1" class="geplant ginnheimer_kurve" d="M -165,1215 h 5 a 30,30 0,0,1 30,30 v 35 a 30,30 0,0,1 -30,30 h -12.5 a 40,40 0,0,0 -40,40 v 10" />
-   <path id="d_ii_tunnel_23_2" class="geplant ginnheimer_kurve" d="M -197.5,1360 v -10 a 30,30 0,0,1 30,-30 h 7.5 a 40,40 0,0,0 40,-40 v -35 a 40,40 0,0,0 -40,-40 h -5" />
-   <path id="d_ii_tunnel_v1_m" class="mitte" d="M -205,1280 v 80" />
-   <path id="d_ii_tunnel_v1_1" class="geplant ginnheimer_kurve" d="M -210,1280 v 45 c 0,10 -2.5,10 -2.5,20 v 15" />
-   <path id="d_ii_tunnel_v1_2" class="geplant ginnheimer_kurve" d="M -197.5,1360 v -15 c 0,-10 -2.5,-10 -2.5,-20 v -45" />
+   <path id="d_ii_tunnel_23_m" class="mitte" d="M -125,1210 v 70 a 35,35 0,0,1 -35,35 h -10 a 35,35 0,0,0 -35,35 v 10" />
+   <path id="d_ii_tunnel_23_1" class="geplant ginnheimer_kurve" d="M -130,1220 v 60 a 30,30 0,0,1 -30,30 h -12.5 a 40,40 0,0,0 -40,40 v 10" />
+   <path id="d_ii_tunnel_23_2" class="geplant ginnheimer_kurve" d="M -197.5,1360 v -10 a 30,30 0,0,1 30,-30 h 7.5 a 40,40 0,0,0 40,-40 v -60" />
+   <path id="d_ii_tunnel_v1_m" class="mitte" d="M -205,1290 v 70" />
+   <path id="d_ii_tunnel_v1_1" class="geplant ginnheimer_kurve" d="M -210,1290 v 35 c 0,10 -2.5,10 -2.5,20 v 15" />
+   <path id="d_ii_tunnel_v1_2" class="geplant ginnheimer_kurve" d="M -197.5,1360 v -15 c 0,-10 -2.5,-10 -2.5,-20 v -35" />
    <path id="ostbahnhof_1" class="faeng" d="M 564,1670 l -64,-64 q -9,-9 -9,-21 a 20,20 0,0,0 -20,-20 h -62 c -10,0 -10,10 -20,10" />
    <path id="ostbahnhof_2" class="endet" d="M 449,1585 q 16,0 28,12 l 80,80" />
   </g>
@@ -2332,9 +2329,8 @@
     <use xlink:href="#tunnelrampe" transform="rotate(90)" />
     <desc class="kmdata">km 2,10→\nkm 2,40←|c1|2|r:i|-90</desc>
   </g>
-  <use id="rampe_ginnheimerkurve_2b" class="ginnheimer_kurve" xlink:href="#tunnelrampe" transform="translate(-125,1130)" />
-  <use id="rampe_ginnheimerkurve_23" class="ginnheimer_kurve" xlink:href="#tunnelrampe" transform="translate(-165,1210) rotate(-90)" />
-  <use id="rampe_ginnheimerkurve_v1" class="ginnheimer_kurve" xlink:href="#tunnelrampe" transform="translate(-205,1280)" />
+  <use id="rampe_ginnheimerkurve_2b" class="ginnheimer_kurve" xlink:href="#tunnelrampe" transform="translate(-125,1220)" />
+  <use id="rampe_ginnheimerkurve_v1" class="ginnheimer_kurve" xlink:href="#tunnelrampe" transform="translate(-205,1290)" />
  </g>
  <g id="oberirdisch">
  <g id="betrieb_oberirdisch" class="strecke bb">
@@ -2708,15 +2704,12 @@
    <path id="hausen_2" class="endet" d="M -382,1163 q -3,-3 -3,-7 v -250" />
   <!-- <path id="ginnheimerkurve_1" class="geplant ginnheimer_kurve" d="M -130,900 v 380" />-->
   <!-- <path id="ginnheimerkurve_2" class="geplant ginnheimer_kurve" d="M -120,1280 v -380" />-->
-   <path id="d_ii_23_m" class="mitte" d="M -125,1001 v 79 a 35,35 0,0,1 -35,35 h -10 a 35,35 0,0,0 -35,35 v 25 a 35,35 0,0,0 35,35 h 5" />
-   <path id="d_ii_23_1" class="geplant ginnheimer_kurve" d="M -130,1001 v 79 a 30,30 0,0,1 -30,30 h -10 a 40,40 0,0,0 -40,40 v 25 a 40,40 0,0,0 40,40 h 5" />
-   <path id="d_ii_23_2" class="geplant ginnheimer_kurve" d="M -165,1205 h -5 a 30,30 0,0,1 -30,-30 v -25 a 30,30 0,0,1 30,-30 h 10 a 40,40 0,0,0 40,-40 v -79" />
-   <path id="d_ii_2b_m" class="mitte" d="M -125,1080 v 50 " />
-   <path id="d_ii_2b_1" class="geplant ginnheimer_kurve" d="M -130,1080 v 50 " />
-   <path id="d_ii_2b_2" class="geplant ginnheimer_kurve" d="M -120,1130 v -50 " />
-   <path id="d_ii_v1_m" class="mitte" d="M -205,1175 v 105" />
-   <path id="d_ii_v1_1" class="geplant ginnheimer_kurve" d="M -210,1175 v 105" />
-   <path id="d_ii_v1_2" class="geplant ginnheimer_kurve" d="M -200,1280 v -105" />
+   <path id="d_ii_23_m" class="mitte" d="M -125,1001 v 209" />
+   <path id="d_ii_23_1" class="geplant ginnheimer_kurve" d="M -130,1001 v 219" />
+   <path id="d_ii_23_2" class="geplant ginnheimer_kurve" d="M -120,1220 v -219" />
+   <path id="d_ii_v1_m" class="mitte" d="M -125,1175 h 10,-10 a 35,35 0,0,1 -35,35 h -10 a 35,35 0,0,0 -35,35 v 45 h 10,-10" />
+   <path id="d_ii_v1_1" class="geplant ginnheimer_kurve" d="M -130,1175 a 30,30 0,0,1 -30,30 h -10 a 40,40 0,0,0 -40,40 v 45" />
+   <path id="d_ii_v1_2" class="geplant ginnheimer_kurve" d="M -200,1290 v -45 a 30,30 0,0,1 30,-30 h 10 a 40,40 0,0,0 40,-40" />
    <path id="strecke_D-IV_1" d="M -153,271 a 50,50 0,0,1 50,-50 h 234" />
    <path id="strecke_D-IV_2" d="M 131,211 h -234 a 60,60 0,0,0 -60,60" />
    <path id="gd_wiesenau_1" d="M -120,521 v -33 q 0,-24 -18,-42" />
@@ -2948,27 +2941,21 @@
     <text x="15" y="-5">Bota-</text>
     <text x="15" y="+5">nischer</text>
     <text x="15" y="15">Garten</text>
-    <text x="0" y="5" class="tm">?</text>
    </g>
    <g id="hst410_2" transform="translate(-125,1260)" class="geplant ginnheimer_kurve ta">
     <use xlink:href="#bstg_mitte" />
     <text x="15" y="5">Campus Westend</text>
    </g>
-   <g id="hst412" transform="translate(-165,1160)" class="geplant ginnheimer_kurve tm">
-    <use xlink:href="#bstg_mitte" transform="translate(40,0)" />
-    <use xlink:href="#bstg_ausen" transform="translate(-40,0)" />
-    <text x="0" y="0">Bundes-</text>
-    <text x="0" y="10">bank</text>
+   <g id="hst412" transform="translate(-125,1160)" class="geplant ginnheimer_kurve te">
+    <use xlink:href="#bstg_mitte" />
+    <text x="-15" y="5">Bundesbank</text>
    </g>
    <g id="hst413" transform="translate(-125, 1060)" class="geplant ginnheimer_kurve te">
     <use xlink:href="#bstg_ausen" />
     <text x="-15" y="5">Platensiedlung</text>
    </g>
    <text x="-215" y="1235" class="ginnheimer_kurve te ab_bb">v1*</text>
-   <text x="-115" y="1155" class="ginnheimer_kurve ta ab_bb">v2b</text>
-   <text x="-165" y="1105" class="ginnheimer_kurve te ab_bb">v1*, v2a, v3*</text>
-   <text x="-165" y="1195" class="ginnheimer_kurve tm ab_bb">v2a, v3*</text>
-   <text x="-165" y="1335" class="ginnheimer_kurve ta ab_bb">v2*, v3*</text>
+   <text x="-165" y="1335" class="ginnheimer_kurve ta ab_bb">v3</text>
    <g id="hst414" transform="translate(-125,981)" class="te">
     <g onclick="toggle_details(this)" class="no_ginnheimer_kurve">
      <use xlink:href="#bstg_tramb" transform="translate(-20,0)" />
@@ -5044,7 +5031,7 @@
     <a xlink:href="https://web.archive.org/web/20191215212000/https://frankfurt.de/sixcms/media.php/738/2019-12-05d_VGF_UBahn%20DII-final_Entwurf%20SPI_Teil-1.pdf">Variantenuntersuchung</a>
     <a xlink:href="https://web.archive.org/web/20191215212000/https://frankfurt.de/sixcms/media.php/738/2019-12-05d_VGF_UBahn%20DII-final_Entwurf%20SPI_Teil-2.pdf">(Teil 2)</a>
    </text>
-   <text class="ab_bb"      x="20" y="210">(Mehrere Varianten)</text>
+   <text class="ab_bb"      x="20" y="210">(Mehrere Varianten <a xlink:href="https://www.stvv.frankfurt.de/download/B_429_2022.pdf">werden vertieft untersucht</a>)</text>
    <text class="boxtext" x="10" y="230" onclick="geplant('frankfurter_berg')">Frankfurter Berg: <tspan class="link" id="frankfurter_berg_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="245" onclick="geplant('frankfurter_berg')">Preungesheim → Frankfurter Berg</text>
    <text class="ab_bb"      x="20" y="260">Status: Planfeststellung wird vorbereitet</text>
