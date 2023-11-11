@@ -908,7 +908,7 @@
    <text x="15" y="5">Waldschmidtstraße</text>
    <desc class="kmdata">km 3,5|s55|5|r|-60</desc>
   </g>
-  <g id="hstHAWI" transform="translate(523.5,49.5)" class="zehnzig">
+  <g id="hstHAWI" transform="translate(523.5,49.5)" class="dreizig">
    <use xlink:href="#hstgrid"  transform="rotate(45)"/>
    <use xlink:href="#bstg_ausen"  transform="rotate(45)"/>
    <text x="15" y="5">Habsburger-/Wittelsbacherallee</text>
