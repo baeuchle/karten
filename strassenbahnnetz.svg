@@ -1188,7 +1188,7 @@
   <g id="hstRENN" transform="translate(-252,535)" class="dreizig">
    <use xlink:href="#hstgrid" />
    <use xlink:href="#dobs_ausen" />
-   <text x="15" y="5">Rennbahn</text>
+   <text x="15" y="5">DFB Campus</text>
    <desc class="kmdata">km 0,0|s90|6|r|0</desc>
   </g>
   <g id="hstOBFO" transform="translate(-252,605)"><use xlink:href="#hstgrid" />
