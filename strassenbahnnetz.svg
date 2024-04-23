@@ -1622,6 +1622,10 @@
     <circle r="1.5" cx="25" />
    </g>
  </g>
+ <use xlink:href="#weg" transform="translate(260,405)" />
+ <use xlink:href="#weg" transform="translate(270,405)" />
+ <use xlink:href="#weg" transform="translate(340,385)" />
+ <use xlink:href="#weg" transform="translate(340,395)" />
  <g id="kilometrierungen_gruppen" class="kilometer">
   <g class="s00_strecke">
    <path class="kilometrierung" d="M -20,150 v 10 a 15,15 0,0,0 15,15 h 1010 a 15,15 0,0,1 15,15 v 155" />
