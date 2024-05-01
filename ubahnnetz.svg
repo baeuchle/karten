@@ -5021,23 +5021,23 @@
    <text class="unterschrift" x="15" y="25">Ausbauprojekte</text>
    <text class="boxtext" x="10" y="70" onclick="geplant('verlaengerung_badhomburg')">Bad Homburg: <tspan class="link" id="verlaengerung_badhomburg_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="85" onclick="geplant('verlaengerung_badhomburg')">Gonzenheim → Bad Homburg Bahnhof</text>
-   <text class="ab_bb"      x="20" y="100">Status: Planfestgestellt (seit <a xlink:href="https://www.bad-homburg-u2.de/downloads.html?file=files/content/downloads/Planfeststellungsbeschluss_Verl%C3%A4ngerung_U2_-_Durchschrift.pdf">25.01.2016</a>)</text>
+   <text class="ab_bb"   x="20" y="100">Status: Planfestgestellt (seit <a xlink:href="https://www.bad-homburg-u2.de/downloads.html?file=files/content/downloads/Planfeststellungsbeschluss_Verl%C3%A4ngerung_U2_-_Durchschrift.pdf">25.01.2016</a>)</text>
    <text class="boxtext" x="10" y="120" onclick="geplant('verlaengerung_europaviertel')">Europaviertel: <tspan class="link" id="verlaengerung_europaviertel_aktion">verstecken</tspan></text>
    <text class="boxtext" x="15" y="135" onclick="geplant('verlaengerung_europaviertel')">Hauptbahnhof → Wohnpark</text>
-   <text class="ab_bb"      x="20" y="150">Status: <a xlink:href="https://www.sbev-frankfurt.de/de/home/">in Bau</a></text>
+   <text class="ab_bb"   x="20" y="150">Status: <a xlink:href="https://www.sbev-frankfurt.de/de/home/">in Bau</a></text>
    <text class="boxtext" x="10" y="170" onclick="geplant('ginnheimer_kurve')">Lückenschluss DⅡ: <tspan class="link" id="ginnheimer_kurve_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="185" onclick="geplant('ginnheimer_kurve')">Ginnheim → Bockenheimer Warte</text>
-   <text class="ab_bb"      x="20" y="200">Status: Abwägung der
+   <text class="ab_bb"   x="20" y="200">Status: Abwägung der
     <a xlink:href="https://web.archive.org/web/20191215212000/https://frankfurt.de/sixcms/media.php/738/2019-12-05d_VGF_UBahn%20DII-final_Entwurf%20SPI_Teil-1.pdf">Variantenuntersuchung</a>
     <a xlink:href="https://web.archive.org/web/20191215212000/https://frankfurt.de/sixcms/media.php/738/2019-12-05d_VGF_UBahn%20DII-final_Entwurf%20SPI_Teil-2.pdf">(Teil 2)</a>
    </text>
-   <text class="ab_bb"      x="20" y="210">(Mehrere Varianten <a xlink:href="https://www.stvv.frankfurt.de/download/B_429_2022.pdf">werden vertieft untersucht</a>)</text>
+   <text class="ab_bb"   x="20" y="210">(Mehrere Varianten <a xlink:href="https://www.stvv.frankfurt.de/download/B_429_2022.pdf">werden vertieft untersucht</a>)</text>
    <text class="boxtext" x="10" y="230" onclick="geplant('frankfurter_berg')">Frankfurter Berg: <tspan class="link" id="frankfurter_berg_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="245" onclick="geplant('frankfurter_berg')">Preungesheim → Frankfurter Berg</text>
-   <text class="ab_bb"      x="20" y="260">Status: Planfeststellung wird vorbereitet</text>
+   <text class="ab_bb"   x="20" y="260">Status: Planfeststellung wird vorbereitet</text>
    <text class="boxtext" x="10" y="280" onclick="geplant('rtw')">Regionaltangente West (PFA Nord): <tspan class="link" id="rtw_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="295" onclick="geplant('rtw')">Sossenheim → Praunheim</text>
-   <text class="ab_bb"      x="20" y="310">Status: <a xlink:href="https://rp-darmstadt.hessen.de/pressemitteilungen/rp-leitet-anhörung-für-regionaltangente-west-ein-abschnitt-nord">Planfeststellung beantragt</a> (am 18.12.2017)</text>
+   <text class="ab_bb"   x="20" y="310">Status: <a xlink:href="https://www.uvp-verbund.de/trefferanzeige?docuuid=E3850FAD-4D63-4A99-896E-67B57D31591C">Planfeststellung erfolgt</a> (am 22.06.2023)</text>
   </g>
     <g id="overlay_box" transform="translate(0,-9)">
       <rect class="box" width="280" height="98" />
