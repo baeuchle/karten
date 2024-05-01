@@ -548,7 +548,7 @@
  </g>
  <g id="d_ebene">
   <g id="betrieb_debene" class="strecke tb">
-   <path id="gw_europaviertel_2" class="geplant verlaengerung_europaviertel" d="M -590,1585 c 10,0 10,-10 20,-10 c 10,0 10,10 20,10" />
+   <path id="gw_europaviertel_2" class="geplant verlaengerung_europaviertel" d="M -555,1585 c 10,0 10,-10 20,-10 c 10,0 10,10 20,10" />
    <path id="ul_hauptbahnhof_bd_nord" d="M -200,1615 c 0,10 -10,10 -10,20"/>
    <path id="ul_hauptbahnhof_bd_sued" d="M -230,1685 q 0,14 28,42" />
    <path id="gw_hbf" class="tb" d="M -210,1655 c 0,-10 -10,-10 -10,-20 m 10,0 c 0,10 -10,10 -10,20" />
@@ -558,13 +558,13 @@
    <path id="ul_b_bbost_2" d="M 526,1220 q 0,-8 6,-14 l 22,-22 q 9,-9 21,-9 h 25" />
    <path id="b_1_stamm" class="tunnel faeng" d="M -275,1585 h 5 a 50,50 0,0,1 50,50 v 50 q 0,24 18,42 q 18,18 42,18 h 95 q 24,0 42,-18 l 2,-2 q 15,-15 30,-15 h 221 a 60,60 0,0,0 60,-60" />
    <path id="b_2_stamm" class="tunnel endet" d="M 280,1650 a 50,50 0,0,1 -50,50 h -221 q -24,0 -42,18 l -2,2 q -15,15 -30,15 h -95 q -20,0 -35,-15 q -15,-15 -15,-35 v -50 a 60,60 0,0,0 -60,-60 h -5" />
-   <path id="europaviertel_1.1" class="geplant verlaengerung_europaviertel" d="M -275,1575 h -85" />
-   <path id="europaviertel_1.2" class="geplant verlaengerung_europaviertel" d="M -360,1585 h 85" />
-   <path id="europaviertel_3.1" class="geplant verlaengerung_europaviertel" d="M -540,1575 h -60" />
-   <path id="europaviertel_3.2" class="geplant verlaengerung_europaviertel" d="M -600,1585 h 60" />
+   <path id="europaviertel_1.1" class="geplant verlaengerung_europaviertel" d="M -275,1575 h -60" />
+   <path id="europaviertel_1.2" class="geplant verlaengerung_europaviertel" d="M -335,1585 h 60" />
+   <path id="europaviertel_3.1" class="geplant verlaengerung_europaviertel" d="M -505,1575 h -60" />
+   <path id="europaviertel_3.2" class="geplant verlaengerung_europaviertel" d="M -565,1585 h 60" />
   </g>
   <g id="hst_debene">
-   <g id="hst212" transform="translate(-310,1580)" class="geplant verlaengerung_europaviertel tm">
+   <g id="hst212" transform="translate(-290,1580)" class="geplant verlaengerung_europaviertel tm">
     <use xlink:href="#bstg_mitte" transform="rotate(90)" />
     <use xlink:href="#bau" />
     <text x="0" y="-15">Güterplatz</text>
@@ -2307,15 +2307,15 @@
     <desc class="kmdata">km 10,45|bs|2|r:i|-120</desc>
   </g>
   <g class="verlaengerung_europaviertel geplant">
-    <g id="rampe_gueterplatz" transform="translate(-360,1580)">
+    <g id="rampe_gueterplatz" transform="translate(-335,1580)">
       <use xlink:href="#tunnelrampe" transform="rotate(-90)" />
       <desc class="kmdata">km 6,35|bs|2|r:i|-30</desc>
     </g>
-    <g id="rampe_europapark_ost" transform="translate(-540,1580)">
+    <g id="rampe_europapark_ost" transform="translate(-505,1580)">
       <use xlink:href="#tunnelrampe" transform="rotate(90)" />
       <desc class="kmdata">km 5,50|bs|2|r:i|-30</desc>
     </g>
-    <g id="rampe_europapark_west" transform="translate(-600,1580)">
+    <g id="rampe_europapark_west" transform="translate(-565,1580)">
       <use xlink:href="#tunnelrampe" transform="rotate(-90)" />
       <desc class="kmdata">km 5,05|bs|2|r:i|210</desc>
     </g>
@@ -2390,7 +2390,7 @@
      <text transform="translate(25,15) translate(5,2.5)" class="ref">B</text>
    </a>
   </g>
-  <path id="gw_emserbrücke" class="geplant verlaengerung_europaviertel" d="M -470,1575 c 10,0 10,10 20,10" />
+  <path id="gw_emserbrücke" class="geplant verlaengerung_europaviertel" d="M -435,1575 c 10,0 10,10 20,10" />
   <g id="wa_heerstrasse" transform="translate(-470,685)">
    <path id="wa_heerstrasse_1" d="M -5,0 c 0,-10 10,-10 10,-20" />
    <path id="wa_heerstrasse_2" d="M +5,0 c 0,-10 -10,-10 -10,-20" />
@@ -2676,10 +2676,10 @@
    <path id="hohemark_1"  class="faeng" d="M -800,-134 h 535 a 50,50 0,0,1 50,50 v 130 a 10,10, 0,0,1 -10,10 h -213 a 30,30 0,0,0 0,60 h 120 q 20,0 35,15 l 105,105 q 15,15 15,35 v 140 q 0,24 18,42 q 18,18 42,18 h 33" />
    <path id="hohemark_2a" d="M -70,461 h -33 q -20,0 -35,-15 q -15,-15 -15,-35 v -140 q 0,-24 -18,-42 l -105,-105 q -18,-18 -42,-18 h -120 a 20,20 0,0,1 0,-40 h 213 a 20,20 0,0,0 20,-20 v -130 a 60,60 0,0,0 -60,-60 h -230 c -10,0 -10,10 -20,10" />
    <path id="hohemark_2b" class="endet" d="M -745,-134 c -10,0 -10,-10 -20,-10 h -35" />
-   <path id="europaviertel_2.1" class="geplant verlaengerung_europaviertel" d="M -360,1575 h -180" />
-   <path id="europaviertel_2.2" class="geplant verlaengerung_europaviertel" d="M -540,1585 h 180" />
-   <path id="europaviertel_4.1" class="geplant verlaengerung_europaviertel endet" d="M -600,1575 h -90" />
-   <path id="europaviertel_4.2" class="geplant verlaengerung_europaviertel" d="M -665,1575 c 10,0 10,10 20,10 h 45" />
+   <path id="europaviertel_2.1" class="geplant verlaengerung_europaviertel" d="M -335,1575 h -170" />
+   <path id="europaviertel_2.2" class="geplant verlaengerung_europaviertel" d="M -505,1585 h 170" />
+   <path id="europaviertel_4.1" class="geplant verlaengerung_europaviertel endet" d="M -565,1575 h -90" />
+   <path id="europaviertel_4.2" class="geplant verlaengerung_europaviertel" d="M -630,1575 c 10,0 10,10 20,10 h 45" />
    <path id="preungesheim_1" class="endet" d="M 280,1515 V 1070 a 10,10 0,0,1 10,-10 h 130 a 20,20 0,0,0 20,-20 v -430" />
    <path id="preungesheim_2" class="faeng" d="M 420,610 v 45 c 0,10 10,10 10,20 v 365 a 10,10 0,0,1 -10,10 h -130 a 20,20 0,0,0 -20,20 V 1515" />
    <path id="frankfurterberg_1" class="geplant frankfurter_berg endet" d="M 440,610 v -295" />
@@ -2716,22 +2716,22 @@
    <path id="gd_wiesenau_2" d="M -145,453 q 15,15 15,35 v 33" />
   </g>
   <g id="hst_oberirdisch">
-   <g id="hst213" transform="translate(-410,1580)" class="geplant verlaengerung_europaviertel tm">
-    <use xlink:href="#drei_ausen" transform="rotate(90)" />
+   <g id="hst213" transform="translate(-375,1580)" class="geplant verlaengerung_europaviertel tm">
+    <use xlink:href="#bstg_ausen" transform="rotate(90)" />
     <use xlink:href="#bau" transform="translate(0,-10)" />
     <use xlink:href="#bau" transform="translate(0,10)" />
     <text x="0" y="-15">Emser Brücke</text>
     <desc class="kmdata">km 6,15|bs|2|r:i|210</desc>
    </g>
-   <g id="hst214" transform="translate(-510,1580)" class="geplant verlaengerung_europaviertel tm">
-    <use xlink:href="#drei_ausen" transform="rotate(90)" />
+   <g id="hst214" transform="translate(-475,1580)" class="geplant verlaengerung_europaviertel tm">
+    <use xlink:href="#bstg_ausen" transform="rotate(90)" />
     <use xlink:href="#bau" transform="translate(0,-10)" />
     <use xlink:href="#bau" transform="translate(0,10)" />
     <text x="0" y="-15">Europapark</text>
     <desc class="kmdata">km 5,65|bs|2|r:i|210</desc>
    </g>
-   <g id="hst215" transform="translate(-630,1580)" class="geplant verlaengerung_europaviertel tm">
-    <use xlink:href="#drei_ausen" transform="rotate(90)" />
+   <g id="hst215" transform="translate(-595,1580)" class="geplant verlaengerung_europaviertel tm">
+    <use xlink:href="#bstg_ausen" transform="rotate(90)" />
     <use xlink:href="#bau" transform="translate(0,-10)" />
     <use xlink:href="#bau" transform="translate(0,10)" />
     <text x="0" y="-15">Wohnpark</text>
@@ -4739,9 +4739,9 @@
  <g><desc class="kmdata">km 10,0|bs|1|l:f|150|translate(285,1580)</desc></g>
  <g><desc class="kmdata">km 7,45|bs|3|r:i|-30|translate(-275,1580)</desc></g>
  <g class="verlaengerung_europaviertel geplant">
-  <path class="kilometrierung" d="M -690,1580 h 413" />
-  <g><desc class="kmdata">km 5,79|bs|2|r:i|-30|translate(-460,1580)</desc></g>
-  <g><desc class="kmdata">km 4,70|bs|3|r:i|180|translate(-690,1575)</desc></g>
+  <path class="kilometrierung" d="M -665,1580 h 413" />
+  <g><desc class="kmdata">km 5,79|bs|2|r:i|-30|translate(-425,1580)</desc></g>
+  <g><desc class="kmdata">km 4,70|bs|3|r:i|180|translate(-655,1575)</desc></g>
  </g>
  <path class="kilometrierung" d="M 275,1590 V 1070 v -90 c 0,-20 -12.5,-20 -12.5,-40 v -42.5" />
  <path class="kilometrierung" d="M 275,1070 a 15,15 0,0,1 15,-15 h 130 a 15,15 0,0,0 15,-15 v -430" />
@@ -4827,7 +4827,7 @@
     <path id="sn_41" class="streckennummer sn_41" d="M -205,1520 v 75 c 0,20 -10,20 -10,40 v 50 q 0,22 16.5,38.5 q 16.5,16.5 38.5,16.5 h 95 q 21,0 36,-16.5 l 2,-2 q 16.5,-16.5 36,-16.5 h 91 m 30,0 h 100 a 55,55 0,0,0 55,-55 v -75 c 0,-20 -10,-20 -10,-40 v -25" />
     <path id="sn_43" class="streckennummer sn_43" d="M 275,1055 h 145 a 15,15 0,0,0 15,-15 v -430" />
     <path id="sn_44" class="streckennummer sn_44" d="M -215,1635 a 55,55 0,0,0 -55,-55 h -5" />
-    <path id="sn_44_ev" class="verlaengerung_europaviertel streckennummer sn_44" d="M -275,1580 h -415" />
+    <path id="sn_44_ev" class="verlaengerung_europaviertel streckennummer sn_44" d="M -275,1580 h -380" />
     <path id="sn_50" class="streckennummer sn_50" d="M 285,1580 v -16 q 0,-22 16.5,-38.5 l 199.5,-199.5 q 15,-15 15,-35 v -96 a 25,25 0,0,1 25,-25 h 59" />
     <path id="sn_54" class="streckennummer sn_54" d="M 600,1170 h 115 a 20,20 0,0,1 20,20 v 85 a 20,20 0,0,0 20,20 h 75" />
     <path id="sn_62" class="streckennummer sn_62" d="M 726,1363 h 29 M 755,1435.5 h -5 a 7.5,7.5 0,0,1 -7.5,-7.5 v -52.5 a 12.5,12.5 0,0,1 12.5,-12.5 h 45 a 30,30 0,0,0 30,-30 v -513" />
@@ -4884,7 +4884,7 @@
     <path id="ss_a1" class="stadtbahnstrecke ss_a1" d="M 115,690 V 523 q 0,-10 -7.5,-17.5 l -32,-32 q -7.5,-7.5 -17.5,-7.5 h -128 a 55,55 0,0,0 -55,55 V 1001" />
     <path id="ss_a2" class="stadtbahnstrecke ss_a2" d="M 75.5,473.5 q -10.5,-10.5 -10.5,-24.5 V 281 a 65,65 0,0,1 65,-65 h 325 a 55,55 0,0,0, 55,-55 v -140" />
     <path id="ss_a3" class="stadtbahnstrecke ss_a3" d="M -70,466 h -33 q -22,0 -38.5,-16.5 q -16.5,-16.5 -16.5,-38.5 v -140 q 0,-22 -16.5,-38.5 l -105,-105 q -16.5,-16.5 -38.5,-16.5 h -120 a 25,25 0,0,1 0,-50 h 213 a 15,15 0,0,0 15,-15 v -130 a 55,55 0,0,0 -55,-55 h -535" />
-    <path id="ss_bs" class="stadtbahnstrecke ss_bs" d="M -690,1580 h 420 a 55,55 0,0,1 55,55 v 50 q 0,22 16.5,38.5 q 16.5,16.5 38.5,16.5 h 95 q 21,0 36,-16.5 l 2,-2 q 16.5,-16.5 36,-16.5 h 91 m 30,0 h 100 a 55,55 0,0,0 55,-55 v -75 c 0,-20 -10,-20 -10,-40 v -20" />
+    <path id="ss_bs" class="stadtbahnstrecke ss_bs" d="M -655,1580 h 385 a 55,55 0,0,1 55,55 v 50 q 0,22 16.5,38.5 q 16.5,16.5 38.5,16.5 h 95 q 21,0 36,-16.5 l 2,-2 q 16.5,-16.5 36,-16.5 h 91 m 30,0 h 100 a 55,55 0,0,0 55,-55 v -75 c 0,-20 -10,-20 -10,-40 v -20" />
     <path id="ss_bS" class="stadtbahnstrecke ss_bs unten" d="M 100,1705 h 30" />
     <path id="ss_b1" class="stadtbahnstrecke ss_b1" d="M 275,1515 V 1070 a 15,15 0,0,1 15,-15 h 130 a 15,15 0,0,0 15,-15 v -430" />
     <path id="ss_b2" class="stadtbahnstrecke ss_b2" d="M 285,1580 v -16 q 0,-22 16.5,-38.5 l 199.5,-199.5 q 15,-15 15,-35 v -41 c 0,-10 2.5,-10 2.5,-20 v -55" />
