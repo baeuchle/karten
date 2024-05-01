@@ -118,6 +118,7 @@
   /* Ausbauprojekte */
   .verlaengerung_badhomburg { display:none; }
   .verlaengerung_europaviertel { display:inline; }
+  .verlaengerung_roemerhof { display:none; }
   .ginnheimer_kurve { display:none; }
   .frankfurter_berg { display:none; }
   .rtw { display:none; }
@@ -2391,6 +2392,16 @@
    </a>
   </g>
   <path id="gw_emserbrücke" class="geplant verlaengerung_europaviertel" d="M -435,1575 c 10,0 10,10 20,10" />
+  <g class="geplant verlaengerung_roemerhof">
+    <path id="gw_roemerhof_1" d="M -735,1575 c 10,0 10,10 20,10 m -20,0 c 10,0 10,-10 20,-10" />
+    <path id="gw_roemerhof_2" d="M -790,1575 c 10,0 10,10 20,10 m -20,0 c 10,0 10,-10 20,-10" />
+    <path id="wa_roemerhof_2" class="endet" d="M -810,1565 c 0,-5 5,-5, 5,-10 v -25"/>
+    <path id="wa_roemerhof_4" class="endet" d="M -800,1565 c 0,-5 5,-5, 5,-10 v -25"/>
+    <use id="rh_1" xlink:href="#vierabstell" transform="translate(-810,1535)" />
+    <use id="rh_2" xlink:href="#vierabstell" transform="translate(-805,1535)" />
+    <use id="rh_3" xlink:href="#vierabstell" transform="translate(-800,1535)" />
+    <use id="rh_4" xlink:href="#vierabstell" transform="translate(-795,1535)" />
+  </g>
   <g id="wa_heerstrasse" transform="translate(-470,685)">
    <path id="wa_heerstrasse_1" d="M -5,0 c 0,-10 10,-10 10,-20" />
    <path id="wa_heerstrasse_2" d="M +5,0 c 0,-10 -10,-10 -10,-20" />
@@ -2680,6 +2691,8 @@
    <path id="europaviertel_2.2" class="geplant verlaengerung_europaviertel" d="M -505,1585 h 170" />
    <path id="europaviertel_4.1" class="geplant verlaengerung_europaviertel endet" d="M -565,1575 h -90" />
    <path id="europaviertel_4.2" class="geplant verlaengerung_europaviertel" d="M -630,1575 c 10,0 10,10 20,10 h 45" />
+   <path id="europaviertel_5.1" class="geplant verlaengerung_roemerhof endet" d="M -655,1575 h -135 a 10,10 0,0,1 -10,-10 v -35" />
+   <path id="europaviertel_5.2" class="geplant verlaengerung_roemerhof faeng" d="M -810,1530 v 35 a 20,20 0,0,0 20,20 h 180" />
    <path id="preungesheim_1" class="endet" d="M 280,1515 V 1070 a 10,10 0,0,1 10,-10 h 130 a 20,20 0,0,0 20,-20 v -430" />
    <path id="preungesheim_2" class="faeng" d="M 420,610 v 45 c 0,10 10,10 10,20 v 365 a 10,10 0,0,1 -10,10 h -130 a 20,20 0,0,0 -20,20 V 1515" />
    <path id="frankfurterberg_1" class="geplant frankfurter_berg endet" d="M 440,610 v -295" />
@@ -2736,6 +2749,18 @@
     <use xlink:href="#bau" transform="translate(0,10)" />
     <text x="0" y="-15">Wohnpark</text>
     <desc class="kmdata">km 4,85|bs|2|r:i|-30</desc>
+   </g>
+   <g id="hst216" transform="translate(-675,1580)" class="geplant verlaengerung_roemerhof tm">
+    <use xlink:href="#bstg_mitte" transform="rotate(90)" />
+    <text x="0" y="-15">Schmidtstraße</text>
+    <desc class="kmdata">km 4,40|bs|2|r:i|-30</desc>
+    <!-- Kilometrierung basiert auf grober Abschätzung -->
+   </g>
+   <g id="hst217" transform="translate(-755,1580)" class="geplant verlaengerung_roemerhof tm">
+    <use xlink:href="#bstg_mitte" transform="rotate(90)" />
+    <text x="0" y="25">Römerhof Gymnasium</text>
+    <desc class="kmdata">km 3,70|bs|2|r:i|-30</desc>
+    <!-- Kilometrierung basiert auf grober Abschätzung -->
    </g>
    <g id="hst317" transform="translate(-372.5,1179.5) rotate(-45)">
      <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
@@ -4828,6 +4853,7 @@
     <path id="sn_43" class="streckennummer sn_43" d="M 275,1055 h 145 a 15,15 0,0,0 15,-15 v -430" />
     <path id="sn_44" class="streckennummer sn_44" d="M -215,1635 a 55,55 0,0,0 -55,-55 h -5" />
     <path id="sn_44_ev" class="verlaengerung_europaviertel streckennummer sn_44" d="M -275,1580 h -380" />
+    <path id="sn_44_rh" class="verlaengerung_roemerhof streckennummer sn_44" d="M -655,1580 h -135" />
     <path id="sn_50" class="streckennummer sn_50" d="M 285,1580 v -16 q 0,-22 16.5,-38.5 l 199.5,-199.5 q 15,-15 15,-35 v -96 a 25,25 0,0,1 25,-25 h 59" />
     <path id="sn_54" class="streckennummer sn_54" d="M 600,1170 h 115 a 20,20 0,0,1 20,20 v 85 a 20,20 0,0,0 20,20 h 75" />
     <path id="sn_62" class="streckennummer sn_62" d="M 726,1363 h 29 M 755,1435.5 h -5 a 7.5,7.5 0,0,1 -7.5,-7.5 v -52.5 a 12.5,12.5 0,0,1 12.5,-12.5 h 45 a 30,30 0,0,0 30,-30 v -513" />
@@ -5017,7 +5043,7 @@
    <path class="gebaude wand" d="M 16,710 h 18 v 30 h -18 v -30" />
   </g>
   <g id="ausbauprojekte" transform="translate(-815,0)">
-   <rect class="box" width="305" height="320" />
+   <rect class="box" width="305" height="370" />
    <text class="unterschrift" x="15" y="25">Ausbauprojekte</text>
    <text class="boxtext" x="10" y="70" onclick="geplant('verlaengerung_badhomburg')">Bad Homburg: <tspan class="link" id="verlaengerung_badhomburg_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="85" onclick="geplant('verlaengerung_badhomburg')">Gonzenheim → Bad Homburg Bahnhof</text>
@@ -5038,6 +5064,9 @@
    <text class="boxtext" x="10" y="280" onclick="geplant('rtw')">Regionaltangente West (PFA Nord): <tspan class="link" id="rtw_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="295" onclick="geplant('rtw')">Sossenheim → Praunheim</text>
    <text class="ab_bb"   x="20" y="310">Status: <a xlink:href="https://www.uvp-verbund.de/trefferanzeige?docuuid=E3850FAD-4D63-4A99-896E-67B57D31591C">Planfeststellung erfolgt</a> (am 22.06.2023)</text>
+   <text class="boxtext" x="10" y="330" onclick="geplant('verlaengerung_roemerhof')">Roemerhof: <tspan class="link" id="verlaengerung_roemerhof_aktion">anzeigen</tspan></text>
+   <text class="boxtext" x="15" y="345" onclick="geplant('verlaengerung_roemerhof')">Wohnpark → Römerhof Gymnasium</text>
+   <text class="ab_bb"   x="20" y="360">Status: <a xlink:href="https://www.stvv.frankfurt.de/download/M_57_2024.pdf">Vorplanung vorgestellt</a> (am 29.04.2024)</text>
   </g>
     <g id="overlay_box" transform="translate(0,-9)">
       <rect class="box" width="280" height="98" />
