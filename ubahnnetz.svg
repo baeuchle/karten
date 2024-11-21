@@ -2989,7 +2989,7 @@
      <use xlink:href="#bstg_mitte" transform="translate(10,0)" />
     </g>
     <a xlink:href="https://de.wikipedia.org/wiki/U-Bahnhof_Ginnheim">
-     <text x="-35" y="-6">Ginnheim</text>
+     <text x="-35" y="-6">Ginnheim Mitte</text>
      <text x="-35" y="4" class="hstdetails">(GI, 414)</text>
     </a>
     <desc class="kmdata">km 5,28|a1|2|r:i|-30</desc>
@@ -3048,7 +3048,7 @@
    </g>
    <g id="hst415" transform="translate(-125,861)" class="te">
     <use xlink:href="#bstg_nidda" onclick="toggle_details(this)" />
-    <text x="-15" y="5">Niddapark</text>
+    <text x="-15" y="5">Ginnheim / Niddapark</text>
     <text x="-15" y="15" class="hstdetails">(Bahnsteigshöhe 56 cm) (NI, 415)</text>
     <desc class="kmdata">km 4,75|a1|2|r:i|-45</desc>
     <g class="hstdetails">
@@ -3995,7 +3995,7 @@
    <g id="hst624" transform="translate(405,1055)">
      <use xlink:href="#bstg_dreiw" onclick="toggle_details(this)" transform="rotate(90) translate(5,0)" />
      <use xlink:href="#bstg_dreiw" onclick="toggle_details(this)" transform="translate(25,-30) rotate(180)" />
-     <text x="35" y="5">Gießener Straße<tspan class="hstdetails"> (GS, 624)</tspan></text>
+     <text x="35" y="5">Feuerwehrstraße<tspan class="hstdetails"> (GS, 624)</tspan></text>
      <desc class="kmdata">km 13,70|bs|2|l:i|120|translate(0,5)</desc>
      <desc class="kmdata">km 13,85|bs|2|l:i|30|translate(30,-30)</desc>
    </g>
