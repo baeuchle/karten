@@ -394,8 +394,8 @@
   <g id="hgrLOKA" transform="translate(365,390)" class="dreizig">
    <path class="hstgruppe" d="M 5,20 c 25,0 40,-5 40,-30 s -20,-40 -45,-40 s -50,30 -50,50 s 30,20 55,20 Z"/>
    <path class="bstggruppe" d="M 5,15 c 20,0 35,-5 35,-25 s -20,-35 -40,-35 s -30,15 -30,35 s 10,25 35,25 Z" />
-   <g id="hstLOTE" transform="translate(-40,0)">
-    <use xlink:href="#hstl_ausen" transform="rotate(90)" />
+   <g id="hstLOTE" class="dreizig" transform="translate(-40,0)">
+    <use xlink:href="#bstg_ausen" transform="rotate(90)" />
     <g transform="translate(0,25)">
      <text class="hstgrtitel">Lokalbahnhof/</text>
      <text y="12">Textorstraße</text>
@@ -1622,10 +1622,6 @@
     <circle r="1.5" cx="25" />
    </g>
  </g>
- <use xlink:href="#weg" transform="translate(260,405)" />
- <use xlink:href="#weg" transform="translate(270,405)" />
- <use xlink:href="#weg" transform="translate(340,385)" />
- <use xlink:href="#weg" transform="translate(340,395)" />
  <g id="kilometrierungen_gruppen" class="kilometer">
   <g class="s00_strecke">
    <path class="kilometrierung" d="M -20,150 v 10 a 15,15 0,0,0 15,15 h 1010 a 15,15 0,0,1 15,15 v 155" />
