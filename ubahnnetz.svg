@@ -4060,12 +4060,12 @@
      </g>
    </g>
    <g id="hst633" transform="translate(435,505)" class="geplant frankfurter_berg">
-     <use xlink:href="#drei_ausen" />
+     <use xlink:href="#drei_mitte" />
      <text x="-15" y="5" class="te">August-Schanz-Straße</text>
      <desc class="kmdata">km 16,15|bs|2|l:i|30</desc>
    </g>
    <g id="hst634" transform="translate(435,425)" class="geplant frankfurter_berg">
-     <use xlink:href="#drei_ausen" />
+     <use xlink:href="#drei_mitte" />
      <text x="-15" y="5" class="te">Berkersheimer Weg</text>
      <desc class="kmdata">km 16,65|bs|2|l:i|30</desc>
    </g>
