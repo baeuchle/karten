@@ -758,7 +758,7 @@
    <use xlink:href="#hstgrid"/>
    <g id="hstGI" class="dreizig te">
      <use xlink:href="#bstg_ausen" transform="rotate(-90)" />
-     <text x="0" y="20">Ginnheim</text>
+     <text x="0" y="20">Ginnheim Mitte</text>
      <desc class="kmdata">km 4,87|s20|5|r|225</desc>
    </g>
    <desc class="kmdata">km 5,09|s20|6|r|270|translate(-70,0)</desc>
