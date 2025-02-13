@@ -122,6 +122,7 @@
   .ginnheimer_kurve { display:none; }
   .frankfurter_berg { display:none; }
   .rtw { display:none; }
+  .ab_roemerstadt { display:none; }
   /* Overlays */
   .overlay { fill: white; fill-opacity: 70%; }
   .streckennummern text, .stadtbahnstrecken text
@@ -2482,6 +2483,12 @@
    <path id="roem_a" d="M 0,0 c 0,5 -5,5 -5,10" />
    <path id="roem_1" class="endet" d="M -10,0 c 0,5 5,5 5,10 v 5 c 0,2.5 -2.5,2.5 -2.5,5 v 42.5" />
    <path id="roem_2" class="endet" d="M -5,15 c 0,2.5 2.5,2.5 2.5,5 v 30" />
+   <g class="geplant ab_roemerstadt" transform="translate(2.5,50)">
+     <path id="roem_41" class="endet" d="M 10,-18 c 0,-5 -5,-5 -5,-10 v -25" />
+     <path id="roem_42" class="endet" d="M 7,-11 q 3,-3 3,-7 v -35" />
+     <path id="roem_43" class="endet" d="M 0,0 q 0,-4 3,-7 l 9,-9 q 3,-3 3,-7 v -30" />
+     <path id="roem_gw" d="M -12.5,25 c 0,-5 10,-5 10,-10" />
+   </g>
   </g>
   <g id="bb_heddernheim" transform="translate(65 540)">
    <a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Betriebshof_Heddernheim">
@@ -3084,6 +3091,9 @@
      <use id="rs_31"  xlink:href="#vierabstell" transform="translate( 2.5,42.5)" />
      <use id="rs_32a" xlink:href="#dreiabstell" transform="translate(-2.5,42.5)" />
      <use id="rs_32b" xlink:href="#dreiabstell" transform="translate(-2.5,60)" />
+     <use id="rs_41"  xlink:href="#vierabstell" transform="translate(12.5,20)" class="geplant ab_roemerstadt" />
+     <use id="rs_42"  xlink:href="#vierabstell" transform="translate(17.5,20)" class="geplant ab_roemerstadt" />
+     <use id="rs_43"  xlink:href="#vierabstell" transform="translate(22.5,20)" class="geplant ab_roemerstadt" />
     </g>
     <text x="-15" y="5">Römerstadt</text>
     <text x="-15" y="15" class="hstdetails">(Bahnsteigshöhe 56 cm) (RS, 421)</text>
@@ -5043,7 +5053,7 @@
    <path class="gebaude wand" d="M 16,710 h 18 v 30 h -18 v -30" />
   </g>
   <g id="ausbauprojekte" transform="translate(-815,0)">
-   <rect class="box" width="305" height="370" />
+   <rect class="box" width="305" height="420" />
    <text class="unterschrift" x="15" y="25">Ausbauprojekte</text>
    <text class="boxtext" x="10" y="70" onclick="geplant('verlaengerung_badhomburg')">Bad Homburg: <tspan class="link" id="verlaengerung_badhomburg_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="85" onclick="geplant('verlaengerung_badhomburg')">Gonzenheim → Bad Homburg Bahnhof</text>
@@ -5067,6 +5077,9 @@
    <text class="boxtext" x="10" y="330" onclick="geplant('verlaengerung_roemerhof')">Roemerhof: <tspan class="link" id="verlaengerung_roemerhof_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="345" onclick="geplant('verlaengerung_roemerhof')">Wohnpark → Römerhof Gymnasium</text>
    <text class="ab_bb"   x="20" y="360">Status: <a xlink:href="https://www.stvv.frankfurt.de/download/M_57_2024.pdf">Vorplanung vorgestellt</a> (am 29.04.2024)</text>
+   <text class="boxtext" x="10" y="380" onclick="geplant('ab_roemerstadt')">Abstellanlage Römerstadt: <tspan class="link" id="ab_roemerstadt_aktion">anzeigen</tspan></text>
+   <text class="boxtext" x="15" y="395" onclick="geplant('ab_roemerstadt')">Erweiterung um 3 Gleise</text>
+   <text class="ab_bb"   x="20" y="410">Status: Bauvorbereitungen (Feb. 2025)</text>
   </g>
     <g id="overlay_box" transform="translate(0,-9)">
       <rect class="box" width="280" height="98" />
