@@ -2369,12 +2369,11 @@
    <path id="g556a14" class="endet" d="M -131,66 c 5,0 5,2 10,2 h 34" />
   </g>
   <path id="gw_gloecknerwiese" d="M -340,-134 c -10,0 -10,-10 -20,-10" />
-  <path id="gw_frankfurterberg" class="frankfurter_berg geplant" d="M 430,390 c 0,-10 10,-10 10,-20 c 0,-10 -10,-10 -10,-20" />
+  <path id="gw_frankfurterberg" class="frankfurter_berg geplant" d="M 430,430 c 0,-10 10,-10 10,-20 c 0,-10 -10,-10 -10,-20" />
+  <path id="frankfurterberg_gleis3" class="frankfurter_berg geplant endet" d="M 440,400 c 0,-10 10,-10 10,-20 v -35" />
   <g id="wa_preungesheim" transform="translate(430,665)">
    <path id="g632_gw" d="M 10,30 c 0,-10 -10,-10 -10,-20 m 0,-10 c 0,-10 10,-10 10,-20" />
    <path id="g632_a3" class="endet" d="M 0,10 v -65" />
-   <path id="g632_a13" class="endet frankfurter_berg" d="M 10,-55 c 0,-10 -10,-10 -10,-20 v -25" />
-   <path id="g632_gw13" class="frankfurter_berg" d="M -10,-55 c 0,-10 10,-10 10,-20" />
   </g>
   <path id="gw_sigmund_freud_straße" d="M 430,770 c 0,-10 10,-10 10,-20" />
   <path id="gw_hauptfriedhof" d="M 270,1275 c 0,-10 10,-10 10,-20" />
@@ -2695,8 +2694,8 @@
    <path id="europaviertel_5.2" class="geplant verlaengerung_roemerhof faeng" d="M -810,1530 v 35 a 20,20 0,0,0 20,20 h 180" />
    <path id="preungesheim_1" class="endet" d="M 280,1515 V 1070 a 10,10 0,0,1 10,-10 h 130 a 20,20 0,0,0 20,-20 v -430" />
    <path id="preungesheim_2" class="faeng" d="M 420,610 v 45 c 0,10 10,10 10,20 v 365 a 10,10 0,0,1 -10,10 h -130 a 20,20 0,0,0 -20,20 V 1515" />
-   <path id="frankfurterberg_1" class="geplant frankfurter_berg endet" d="M 440,610 v -295" />
-   <path id="frankfurterberg_2" class="geplant frankfurter_berg faeng" d="M 430,315 v 210 c 0,20 -10,20 -10,40 v 45" />
+   <path id="frankfurterberg_1" class="geplant frankfurter_berg endet" d="M 440,610 v -265" />
+   <path id="frankfurterberg_2" class="geplant frankfurter_berg faeng" d="M 430,345 v 225 c 0,20 -10,20 -10,40" />
    <path id="heerstrasse_1" class="faeng" d="M -475,625 v 435 q 0,24 18,42 l 123,123" />
    <path id="heerstrasse_2" class="endet" d="M -327,1218 l -123,-123 q -15,-15 -15,-35 v -435" />
    <path id="u6_1" class="geplant rtw" d="M -465,625 v -20 a 20,20 0,0,1 20,-20" />
@@ -4018,7 +4017,6 @@
      <g onclick="toggle_details(this)">
        <use id="bstg_preungesheim_3" xlink:href="#bstg_dreiw" transform="translate(+5,0)" />
        <use xlink:href="#drei_mitte" transform="translate(-10,0)" />
-       <use id="g632_13" class="frankfurter_berg" xlink:href="#dreiabstell" transform="translate(-5,-57)" />
      </g>
      <text x="15" y="5">Preungesheim<tspan class="hstdetails"> (PH, 632)</tspan></text>
      <desc class="kmdata">km 15,47|bs|2|l:i|30</desc>
@@ -4026,7 +4024,6 @@
        <use xlink:href="#gleis2" transform="translate(-15,0)" />
        <use xlink:href="#gleis3" transform="translate(-5,0)" />
        <use xlink:href="#gleis1" transform="translate(5,0)" />
-       <g class="bgleisnummer frankfurter_berg" transform="translate(-5,-60)"><circle cy="-1" r="2" /><text>13</text></g>
        <g id="sig623Y10" transform="translate(5,80)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 c 10,0 38,-5 38,-15" />
          <use xlink:href="#signalplatz" />
@@ -4059,18 +4056,19 @@
        </g>
      </g>
    </g>
-   <g id="hst633" transform="translate(435,505)" class="geplant frankfurter_berg">
+   <g id="hst633" transform="translate(435,550)" class="geplant frankfurter_berg">
      <use xlink:href="#drei_mitte" />
      <text x="-15" y="5" class="te">August-Schanz-Straße</text>
      <desc class="kmdata">km 16,15|bs|2|l:i|30</desc>
    </g>
-   <g id="hst634" transform="translate(435,425)" class="geplant frankfurter_berg">
+   <g id="hst634" transform="translate(435,470)" class="geplant frankfurter_berg">
      <use xlink:href="#drei_mitte" />
      <text x="-15" y="5" class="te">Berkersheimer Weg</text>
      <desc class="kmdata">km 16,65|bs|2|l:i|30</desc>
    </g>
-   <g id="hst635" transform="translate(435,335)" class="geplant frankfurter_berg te">
+   <g id="hst635" transform="translate(435,365)" class="geplant frankfurter_berg te">
      <use xlink:href="#drei_mitte" />
+     <use xlink:href="#bstg_dreiw" transform="translate(15,0)" />
      <text x="-15" y="5">Frankfurter Berg</text>
      <desc class="kmdata">km 17,00|bs|2|l:i|30</desc>
    </g>
@@ -4774,8 +4772,8 @@
  <g><desc class="kmdata">km 13,47|bs|3|l:i|60|translate(262.5,897.5)</desc></g>
  <g><desc class="kmdata">km 15,50|bs|3|r:i|-45|translate(435,610)</desc></g>
  <g class="frankfurter_berg geplant">
-  <path class="kilometrierung" d="M 435,610 v -295" />
-  <g><desc class="kmdata">km 17,05|bs|3|r:i|-30|translate(435,315)</desc></g>
+  <path class="kilometrierung" d="M 435,610 v -265" />
+  <g><desc class="kmdata">km 17,05|bs|3|r:i|-30|translate(435,345)</desc></g>
  </g>
 </g>
 <g id="abzw_dornbusch"><desc class="kmdata">km 12,91 (A) ↑\nkm 0,0 (35) ↦|as,s35|3|l:i|45|translate(115,1040)</desc></g>
@@ -5060,7 +5058,7 @@
    <text class="ab_bb"   x="20" y="210">(Mehrere Varianten <a xlink:href="https://www.stvv.frankfurt.de/download/B_429_2022.pdf">werden vertieft untersucht</a>)</text>
    <text class="boxtext" x="10" y="230" onclick="geplant('frankfurter_berg')">Frankfurter Berg: <tspan class="link" id="frankfurter_berg_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="245" onclick="geplant('frankfurter_berg')">Preungesheim → Frankfurter Berg</text>
-   <text class="ab_bb"   x="20" y="260">Status: Planfeststellung wird vorbereitet</text>
+   <text class="ab_bb"   x="20" y="260">Status: <a href="https://www.vgf-ffm.de/fileadmin/VGF/Aktuell/Bauvorhaben/Documents/Praes_Vorstellung_Verlg_U10_FFM-Berg_OBR_10_Sitzung_11-02-2025.pdf">Entwurfsplanung wird vorbereitet</a> (Stand Feb. 2025)</text>
    <text class="boxtext" x="10" y="280" onclick="geplant('rtw')">Regionaltangente West (PFA Nord): <tspan class="link" id="rtw_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="295" onclick="geplant('rtw')">Sossenheim → Praunheim</text>
    <text class="ab_bb"   x="20" y="310">Status: <a xlink:href="https://www.uvp-verbund.de/trefferanzeige?docuuid=E3850FAD-4D63-4A99-896E-67B57D31591C">Planfeststellung erfolgt</a> (am 22.06.2023)</text>
