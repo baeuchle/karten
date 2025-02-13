@@ -122,6 +122,7 @@
   .ginnheimer_kurve { display:none; }
   .frankfurter_berg { display:none; }
   .rtw { display:none; }
+  .ab_roemerstadt { display:none; }
   /* Overlays */
   .overlay { fill: white; fill-opacity: 70%; }
   .streckennummern text, .stadtbahnstrecken text
@@ -680,9 +681,6 @@
    <path id="d_ii_tunnel_23_m" class="mitte" d="M -125,1210 v 70 a 35,35 0,0,1 -35,35 h -10 a 35,35 0,0,0 -35,35 v 10" />
    <path id="d_ii_tunnel_23_1" class="geplant ginnheimer_kurve" d="M -130,1220 v 60 a 30,30 0,0,1 -30,30 h -12.5 a 40,40 0,0,0 -40,40 v 10" />
    <path id="d_ii_tunnel_23_2" class="geplant ginnheimer_kurve" d="M -197.5,1360 v -10 a 30,30 0,0,1 30,-30 h 7.5 a 40,40 0,0,0 40,-40 v -60" />
-   <path id="d_ii_tunnel_v1_m" class="mitte" d="M -205,1290 v 70" />
-   <path id="d_ii_tunnel_v1_1" class="geplant ginnheimer_kurve" d="M -210,1290 v 35 c 0,10 -2.5,10 -2.5,20 v 15" />
-   <path id="d_ii_tunnel_v1_2" class="geplant ginnheimer_kurve" d="M -197.5,1360 v -15 c 0,-10 -2.5,-10 -2.5,-20 v -35" />
    <path id="ostbahnhof_1" class="faeng" d="M 564,1670 l -64,-64 q -9,-9 -9,-21 a 20,20 0,0,0 -20,-20 h -62 c -10,0 -10,10 -20,10" />
    <path id="ostbahnhof_2" class="endet" d="M 449,1585 q 16,0 28,12 l 80,80" />
   </g>
@@ -2331,7 +2329,6 @@
     <desc class="kmdata">km 2,10→\nkm 2,40←|c1|2|r:i|-90</desc>
   </g>
   <use id="rampe_ginnheimerkurve_2b" class="ginnheimer_kurve" xlink:href="#tunnelrampe" transform="translate(-125,1220)" />
-  <use id="rampe_ginnheimerkurve_v1" class="ginnheimer_kurve" xlink:href="#tunnelrampe" transform="translate(-205,1290)" />
  </g>
  <g id="oberirdisch">
  <g id="betrieb_oberirdisch" class="strecke bb">
@@ -2369,12 +2366,11 @@
    <path id="g556a14" class="endet" d="M -131,66 c 5,0 5,2 10,2 h 34" />
   </g>
   <path id="gw_gloecknerwiese" d="M -340,-134 c -10,0 -10,-10 -20,-10" />
-  <path id="gw_frankfurterberg" class="frankfurter_berg geplant" d="M 430,390 c 0,-10 10,-10 10,-20 c 0,-10 -10,-10 -10,-20" />
+  <path id="gw_frankfurterberg" class="frankfurter_berg geplant" d="M 430,430 c 0,-10 10,-10 10,-20 c 0,-10 -10,-10 -10,-20" />
+  <path id="frankfurterberg_gleis3" class="frankfurter_berg geplant endet" d="M 440,400 c 0,-10 10,-10 10,-20 v -35" />
   <g id="wa_preungesheim" transform="translate(430,665)">
    <path id="g632_gw" d="M 10,30 c 0,-10 -10,-10 -10,-20 m 0,-10 c 0,-10 10,-10 10,-20" />
    <path id="g632_a3" class="endet" d="M 0,10 v -65" />
-   <path id="g632_a13" class="endet frankfurter_berg" d="M 10,-55 c 0,-10 -10,-10 -10,-20 v -25" />
-   <path id="g632_gw13" class="frankfurter_berg" d="M -10,-55 c 0,-10 10,-10 10,-20" />
   </g>
   <path id="gw_sigmund_freud_straße" d="M 430,770 c 0,-10 10,-10 10,-20" />
   <path id="gw_hauptfriedhof" d="M 270,1275 c 0,-10 10,-10 10,-20" />
@@ -2482,6 +2478,12 @@
    <path id="roem_a" d="M 0,0 c 0,5 -5,5 -5,10" />
    <path id="roem_1" class="endet" d="M -10,0 c 0,5 5,5 5,10 v 5 c 0,2.5 -2.5,2.5 -2.5,5 v 42.5" />
    <path id="roem_2" class="endet" d="M -5,15 c 0,2.5 2.5,2.5 2.5,5 v 30" />
+   <g class="geplant ab_roemerstadt" transform="translate(2.5,50)">
+     <path id="roem_41" class="endet" d="M 10,-18 c 0,-5 -5,-5 -5,-10 v -25" />
+     <path id="roem_42" class="endet" d="M 7,-11 q 3,-3 3,-7 v -35" />
+     <path id="roem_43" class="endet" d="M 0,0 q 0,-4 3,-7 l 9,-9 q 3,-3 3,-7 v -30" />
+     <path id="roem_gw" d="M -12.5,25 c 0,-5 10,-5 10,-10" />
+   </g>
   </g>
   <g id="bb_heddernheim" transform="translate(65 540)">
    <a xlink:href="https://de.wikipedia.org/wiki/Depots_der_Straßenbahn_Frankfurt_am_Main#Betriebshof_Heddernheim">
@@ -2695,8 +2697,8 @@
    <path id="europaviertel_5.2" class="geplant verlaengerung_roemerhof faeng" d="M -810,1530 v 35 a 20,20 0,0,0 20,20 h 180" />
    <path id="preungesheim_1" class="endet" d="M 280,1515 V 1070 a 10,10 0,0,1 10,-10 h 130 a 20,20 0,0,0 20,-20 v -430" />
    <path id="preungesheim_2" class="faeng" d="M 420,610 v 45 c 0,10 10,10 10,20 v 365 a 10,10 0,0,1 -10,10 h -130 a 20,20 0,0,0 -20,20 V 1515" />
-   <path id="frankfurterberg_1" class="geplant frankfurter_berg endet" d="M 440,610 v -295" />
-   <path id="frankfurterberg_2" class="geplant frankfurter_berg faeng" d="M 430,315 v 210 c 0,20 -10,20 -10,40 v 45" />
+   <path id="frankfurterberg_1" class="geplant frankfurter_berg endet" d="M 440,610 v -265" />
+   <path id="frankfurterberg_2" class="geplant frankfurter_berg faeng" d="M 430,345 v 225 c 0,20 -10,20 -10,40" />
    <path id="heerstrasse_1" class="faeng" d="M -475,625 v 435 q 0,24 18,42 l 123,123" />
    <path id="heerstrasse_2" class="endet" d="M -327,1218 l -123,-123 q -15,-15 -15,-35 v -435" />
    <path id="u6_1" class="geplant rtw" d="M -465,625 v -20 a 20,20 0,0,1 20,-20" />
@@ -2720,9 +2722,6 @@
    <path id="d_ii_23_m" class="mitte" d="M -125,1001 v 209" />
    <path id="d_ii_23_1" class="geplant ginnheimer_kurve" d="M -130,1001 v 219" />
    <path id="d_ii_23_2" class="geplant ginnheimer_kurve" d="M -120,1220 v -219" />
-   <path id="d_ii_v1_m" class="mitte" d="M -125,1175 h 10,-10 a 35,35 0,0,1 -35,35 h -10 a 35,35 0,0,0 -35,35 v 45 h 10,-10" />
-   <path id="d_ii_v1_1" class="geplant ginnheimer_kurve" d="M -130,1175 a 30,30 0,0,1 -30,30 h -10 a 40,40 0,0,0 -40,40 v 45" />
-   <path id="d_ii_v1_2" class="geplant ginnheimer_kurve" d="M -200,1290 v -45 a 30,30 0,0,1 30,-30 h 10 a 40,40 0,0,0 40,-40" />
    <path id="strecke_D-IV_1" d="M -153,271 a 50,50 0,0,1 50,-50 h 234" />
    <path id="strecke_D-IV_2" d="M 131,211 h -234 a 60,60 0,0,0 -60,60" />
    <path id="gd_wiesenau_1" d="M -120,521 v -33 q 0,-24 -18,-42" />
@@ -2961,15 +2960,9 @@
        </g>
      </g>
    </g>
-   <g id="hst410_1" transform="translate(-205,1260)" class="geplant ginnheimer_kurve ta">
-    <use xlink:href="#bstg_ausen" />
-    <text x="15" y="-5">Bota-</text>
-    <text x="15" y="+5">nischer</text>
-    <text x="15" y="15">Garten</text>
-   </g>
-   <g id="hst410_2" transform="translate(-125,1260)" class="geplant ginnheimer_kurve ta">
+   <g id="hst410_2" transform="translate(-125,1260)" class="geplant ginnheimer_kurve te">
     <use xlink:href="#bstg_mitte" />
-    <text x="15" y="5">Campus Westend</text>
+    <text x="-15" y="5">Campus Westend</text>
    </g>
    <g id="hst412" transform="translate(-125,1160)" class="geplant ginnheimer_kurve te">
     <use xlink:href="#bstg_mitte" />
@@ -2979,8 +2972,6 @@
     <use xlink:href="#bstg_ausen" />
     <text x="-15" y="5">Platensiedlung</text>
    </g>
-   <text x="-215" y="1235" class="ginnheimer_kurve te ab_bb">v1*</text>
-   <text x="-165" y="1335" class="ginnheimer_kurve ta ab_bb">v3</text>
    <g id="hst414" transform="translate(-125,981)" class="te">
     <g onclick="toggle_details(this)" class="no_ginnheimer_kurve">
      <use xlink:href="#bstg_tramb" transform="translate(-20,0)" />
@@ -3084,6 +3075,9 @@
      <use id="rs_31"  xlink:href="#vierabstell" transform="translate( 2.5,42.5)" />
      <use id="rs_32a" xlink:href="#dreiabstell" transform="translate(-2.5,42.5)" />
      <use id="rs_32b" xlink:href="#dreiabstell" transform="translate(-2.5,60)" />
+     <use id="rs_41"  xlink:href="#vierabstell" transform="translate(12.5,20)" class="geplant ab_roemerstadt" />
+     <use id="rs_42"  xlink:href="#vierabstell" transform="translate(17.5,20)" class="geplant ab_roemerstadt" />
+     <use id="rs_43"  xlink:href="#vierabstell" transform="translate(22.5,20)" class="geplant ab_roemerstadt" />
     </g>
     <text x="-15" y="5">Römerstadt</text>
     <text x="-15" y="15" class="hstdetails">(Bahnsteigshöhe 56 cm) (RS, 421)</text>
@@ -4018,7 +4012,6 @@
      <g onclick="toggle_details(this)">
        <use id="bstg_preungesheim_3" xlink:href="#bstg_dreiw" transform="translate(+5,0)" />
        <use xlink:href="#drei_mitte" transform="translate(-10,0)" />
-       <use id="g632_13" class="frankfurter_berg" xlink:href="#dreiabstell" transform="translate(-5,-57)" />
      </g>
      <text x="15" y="5">Preungesheim<tspan class="hstdetails"> (PH, 632)</tspan></text>
      <desc class="kmdata">km 15,47|bs|2|l:i|30</desc>
@@ -4026,7 +4019,6 @@
        <use xlink:href="#gleis2" transform="translate(-15,0)" />
        <use xlink:href="#gleis3" transform="translate(-5,0)" />
        <use xlink:href="#gleis1" transform="translate(5,0)" />
-       <g class="bgleisnummer frankfurter_berg" transform="translate(-5,-60)"><circle cy="-1" r="2" /><text>13</text></g>
        <g id="sig623Y10" transform="translate(5,80)" onmouseover="highlight(this)">
          <path class="signalverbinder" d="M 2,0 c 10,0 38,-5 38,-15" />
          <use xlink:href="#signalplatz" />
@@ -4059,18 +4051,19 @@
        </g>
      </g>
    </g>
-   <g id="hst633" transform="translate(435,505)" class="geplant frankfurter_berg">
+   <g id="hst633" transform="translate(435,550)" class="geplant frankfurter_berg">
      <use xlink:href="#drei_mitte" />
      <text x="-15" y="5" class="te">August-Schanz-Straße</text>
      <desc class="kmdata">km 16,15|bs|2|l:i|30</desc>
    </g>
-   <g id="hst634" transform="translate(435,425)" class="geplant frankfurter_berg">
+   <g id="hst634" transform="translate(435,470)" class="geplant frankfurter_berg">
      <use xlink:href="#drei_mitte" />
      <text x="-15" y="5" class="te">Berkersheimer Weg</text>
      <desc class="kmdata">km 16,65|bs|2|l:i|30</desc>
    </g>
-   <g id="hst635" transform="translate(435,335)" class="geplant frankfurter_berg te">
+   <g id="hst635" transform="translate(435,365)" class="geplant frankfurter_berg te">
      <use xlink:href="#drei_mitte" />
+     <use xlink:href="#bstg_dreiw" transform="translate(15,0)" />
      <text x="-15" y="5">Frankfurter Berg</text>
      <desc class="kmdata">km 17,00|bs|2|l:i|30</desc>
    </g>
@@ -4774,8 +4767,8 @@
  <g><desc class="kmdata">km 13,47|bs|3|l:i|60|translate(262.5,897.5)</desc></g>
  <g><desc class="kmdata">km 15,50|bs|3|r:i|-45|translate(435,610)</desc></g>
  <g class="frankfurter_berg geplant">
-  <path class="kilometrierung" d="M 435,610 v -295" />
-  <g><desc class="kmdata">km 17,05|bs|3|r:i|-30|translate(435,315)</desc></g>
+  <path class="kilometrierung" d="M 435,610 v -265" />
+  <g><desc class="kmdata">km 17,05|bs|3|r:i|-30|translate(435,345)</desc></g>
  </g>
 </g>
 <g id="abzw_dornbusch"><desc class="kmdata">km 12,91 (A) ↑\nkm 0,0 (35) ↦|as,s35|3|l:i|45|translate(115,1040)</desc></g>
@@ -5043,7 +5036,7 @@
    <path class="gebaude wand" d="M 16,710 h 18 v 30 h -18 v -30" />
   </g>
   <g id="ausbauprojekte" transform="translate(-815,0)">
-   <rect class="box" width="305" height="370" />
+   <rect class="box" width="305" height="420" />
    <text class="unterschrift" x="15" y="25">Ausbauprojekte</text>
    <text class="boxtext" x="10" y="70" onclick="geplant('verlaengerung_badhomburg')">Bad Homburg: <tspan class="link" id="verlaengerung_badhomburg_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="85" onclick="geplant('verlaengerung_badhomburg')">Gonzenheim → Bad Homburg Bahnhof</text>
@@ -5053,20 +5046,22 @@
    <text class="ab_bb"   x="20" y="150">Status: <a xlink:href="https://www.sbev-frankfurt.de/de/home/">in Bau</a></text>
    <text class="boxtext" x="10" y="170" onclick="geplant('ginnheimer_kurve')">Lückenschluss DⅡ: <tspan class="link" id="ginnheimer_kurve_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="185" onclick="geplant('ginnheimer_kurve')">Ginnheim → Bockenheimer Warte</text>
-   <text class="ab_bb"   x="20" y="200">Status: Abwägung der
-    <a xlink:href="https://web.archive.org/web/20191215212000/https://frankfurt.de/sixcms/media.php/738/2019-12-05d_VGF_UBahn%20DII-final_Entwurf%20SPI_Teil-1.pdf">Variantenuntersuchung</a>
-    <a xlink:href="https://web.archive.org/web/20191215212000/https://frankfurt.de/sixcms/media.php/738/2019-12-05d_VGF_UBahn%20DII-final_Entwurf%20SPI_Teil-2.pdf">(Teil 2)</a>
+   <text class="ab_bb"   x="20" y="200">Status:
+    <a xlink:href="https://www.stvv.frankfurt.de/download/M_16_2025.pdf">Variantenentscheidung gefallen</a>
+    (Februar 2025)
    </text>
-   <text class="ab_bb"   x="20" y="210">(Mehrere Varianten <a xlink:href="https://www.stvv.frankfurt.de/download/B_429_2022.pdf">werden vertieft untersucht</a>)</text>
    <text class="boxtext" x="10" y="230" onclick="geplant('frankfurter_berg')">Frankfurter Berg: <tspan class="link" id="frankfurter_berg_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="245" onclick="geplant('frankfurter_berg')">Preungesheim → Frankfurter Berg</text>
-   <text class="ab_bb"   x="20" y="260">Status: Planfeststellung wird vorbereitet</text>
+   <text class="ab_bb"   x="20" y="260">Status: <a href="https://www.vgf-ffm.de/fileadmin/VGF/Aktuell/Bauvorhaben/Documents/Praes_Vorstellung_Verlg_U10_FFM-Berg_OBR_10_Sitzung_11-02-2025.pdf">Entwurfsplanung wird vorbereitet</a> (Stand Feb. 2025)</text>
    <text class="boxtext" x="10" y="280" onclick="geplant('rtw')">Regionaltangente West (PFA Nord): <tspan class="link" id="rtw_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="295" onclick="geplant('rtw')">Sossenheim → Praunheim</text>
    <text class="ab_bb"   x="20" y="310">Status: <a xlink:href="https://www.uvp-verbund.de/trefferanzeige?docuuid=E3850FAD-4D63-4A99-896E-67B57D31591C">Planfeststellung erfolgt</a> (am 22.06.2023)</text>
-   <text class="boxtext" x="10" y="330" onclick="geplant('verlaengerung_roemerhof')">Roemerhof: <tspan class="link" id="verlaengerung_roemerhof_aktion">anzeigen</tspan></text>
+   <text class="boxtext" x="10" y="330" onclick="geplant('verlaengerung_roemerhof')">Römerhof: <tspan class="link" id="verlaengerung_roemerhof_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="345" onclick="geplant('verlaengerung_roemerhof')">Wohnpark → Römerhof Gymnasium</text>
    <text class="ab_bb"   x="20" y="360">Status: <a xlink:href="https://www.stvv.frankfurt.de/download/M_57_2024.pdf">Vorplanung vorgestellt</a> (am 29.04.2024)</text>
+   <text class="boxtext" x="10" y="380" onclick="geplant('ab_roemerstadt')">Abstellanlage Römerstadt: <tspan class="link" id="ab_roemerstadt_aktion">anzeigen</tspan></text>
+   <text class="boxtext" x="15" y="395" onclick="geplant('ab_roemerstadt')">Erweiterung um 3 Gleise</text>
+   <text class="ab_bb"   x="20" y="410">Status: Bauvorbereitungen (Feb. 2025)</text>
   </g>
     <g id="overlay_box" transform="translate(0,-9)">
       <rect class="box" width="280" height="98" />
