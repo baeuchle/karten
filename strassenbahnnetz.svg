@@ -374,7 +374,7 @@
       <text x="0" y="20">Südbahnhof</text>
       <desc class="kmdata">km 0,0|s73|6|r|0</desc>
     </g>
-    <g id="hstSBBR" transform="translate(75,-5)" class="zehnzig" >
+    <g id="hstSBBR" transform="translate(75,-5)" class="zehnzig" style="display:none;">
       <use xlink:href="#bahnsteig" transform="rotate(90)" />
       <g transform="translate(0,27)">
         <text y="-12" class="hstgrtitel">Südbahnhof/</text>
