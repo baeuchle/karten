@@ -502,26 +502,26 @@
     <desc class="kmdata">km 0,15|s00|5|l|30</desc>
    </g>
   </g>
-  <g id="hstWEMU" transform="translate(65,175)">
+  <g id="hstWEMU" transform="translate(75,175)">
    <use xlink:href="#hstgrid" />
    <use xlink:href="#hstl_vers1" transform="rotate(90)" />
    <text transform="translate(10,-10) rotate(-45)">Weser-/Münchener Straße</text>
    <desc class="kmdata">km 0,50|s00|5|r|-135</desc>
   </g>
-  <g id="hstWB" transform="translate(105,175)" class="dreizig">
+  <g id="hstWB" transform="translate(115,175)" class="dreizig">
    <use xlink:href="#hstgrid" />
    <use xlink:href="#bstg_ausen" transform="rotate(90)" />
    <text transform="translate(5,-10) rotate(-45)">Willy-Brandt-Platz</text>
    <desc class="kmdata">km 0,80|s00|5|r|45</desc>
   </g>
-  <g id="hstkar_" transform="translate(145,175)">
+  <g id="hstkar_" transform="translate(155,175)">
    <use xlink:href="#hstgrid" />
    <use xlink:href="#bahnsteig" transform="rotate(-90) translate(5,0)" class="zehnzig" />
    <use xlink:href="#bahnsteig" transform="rotate(90) translate(5,0)" class="nullzig" />
    <text transform="translate(5,-10) rotate(-45)">Karmeliterkloster</text>
    <desc class="kmdata">km 1,08|s00|5|r|-135</desc>
   </g>
-  <g id="hstRMPA" transform="translate(185,175)" class="dreizig te">
+  <g id="hstRMPA" transform="translate(195,175)" class="dreizig te">
    <use xlink:href="#hstgrid" />
    <use xlink:href="#bstg_vers1" transform="rotate(90)" />
    <text transform="translate(-10,15) rotate(-45)">Römer/Paulskirche</text>
@@ -673,24 +673,24 @@
     <text x="15" y="5">Platz der Republik</text>
     <desc class="kmdata">km 0,31|s10,s20|5|l|75</desc>
   </g>
-  <g id="hstHOSS" transform="translate(-20,40)" class="dreizig">
+  <g id="hstHOSS" transform="translate(-20,20)" class="dreizig">
     <use xlink:href="#bstg_ausen" />
     <text x="15" y="5">Hohenstaufenstraße</text>
     <desc class="kmdata">km 0,62|s20|5|l|110</desc>
   </g>
-  <g id="hstMS" transform="translate(-31.5,12.5) rotate(-45)">
+  <g id="hstMS" transform="translate(-31.5,-7.5) rotate(-45)">
    <path class="bstggruppe" d="M 15,0 a 15,15 0,0,1 -15,15 a 30,30 0,0,1 0,-60 a 15,45 0,0,1 15,45 z" />
    <use xlink:href="#bstg_ausen" class="dreizig" />
    <use xlink:href="#bahnsteig" class="nullzig" transform="translate(-15,-20) rotate(180)" />
    <text transform="translate(15,5) rotate(45)">Festhalle/Messe</text>
    <desc class="kmdata">km 0,90|s20|5|l|105|rotate(45)</desc>
   </g>
-  <g id="hstLUER" transform="translate(-73.5,-29.5) rotate(-45)" class="dreizig">
+  <g id="hstLUER" transform="translate(-73.5,-49.5) rotate(-45)" class="dreizig">
     <use xlink:href="#bstg_ausen" />
     <text transform="translate(15,5) rotate(45)">Ludwig-Erhard-Anlage</text>
     <desc class="kmdata">km 1,26|s20|5|l|90|rotate(45)</desc>
   </g>
-  <g id="hstVARR" transform="translate(-101.5,-57.5) rotate(-45)" class="dreizig">
+  <g id="hstVARR" transform="translate(-101.5,-77.5) rotate(-45)" class="dreizig">
     <use xlink:href="#hstgrid" />
     <use xlink:href="#bstg_ausen" />
     <text transform="translate(15,5) rotate(45)">Varrentrappstraße</text>
@@ -698,20 +698,20 @@
     <desc class="kmdata">km 1,51|s20|5|l|90|rotate(45)</desc>
   </g>
   <g class="ausbau_schlossstrasse">
-    <g id="hstKUFU" transform="translate(-211.5,-167.5) rotate(-45)" class="dreizig te geplant">
+    <g id="hstKUFU" transform="translate(-211.5,-187.5) rotate(-45)" class="dreizig te geplant">
       <use xlink:href="#hstgrid" />
       <use xlink:href="#bstg_ausen" />
       <text transform="translate(-15,5) rotate(45)">Kurfürstenplatz</text>
       <desc class="kmdata">km ?,??|s20|5|r|-90|rotate(45)</desc>
     </g>
-    <g id="hstSCHH" transform="translate(-239.5,-195.5) rotate(-45)" class="dreizig te geplant">
+    <g id="hstSCHH" transform="translate(-239.5,-215.5) rotate(-45)" class="dreizig te geplant">
       <use xlink:href="#hstgrid" />
       <use xlink:href="#bstg_ausen" />
       <text transform="translate(-15,5) rotate(45)">Schönhof</text>
       <desc class="kmdata">km ?,??|s20|5|r|-90|rotate(45)</desc>
     </g>
   </g>
-  <g id="hstIH" transform="translate(-332,-244.5)" class="dreizig te">
+  <g id="hstIH" transform="translate(-332,-264.5)" class="dreizig te">
     <use xlink:href="#hstgrid" />
     <use xlink:href="#bstg_ubahn" transform="translate(0,-2.5) rotate(90)" />
     <use xlink:href="#bstg_ubahn" transform="translate(0,2.5) rotate(-90)" />
@@ -719,7 +719,7 @@
     <text transform="translate(0,20)">Industriehof</text>
     <desc class="kmdata">km 3,45|s20|5|l|-15</desc>
   </g>
-  <g id="hstADAL" transform="translate(-148,-130)" class="zehnzig">
+  <g id="hstADAL" transform="translate(-148,-150)" class="zehnzig">
    <path class="bstggruppe" d="M 0,-25 a 20,35 0,0,1 0,70 a 35,15 0,0,1 -35,-15 a 35,55 0,0,1 35,-55" />
    <use xlink:href="#bahnsteig" transform="translate(-20,31) rotate(90)" />
    <use xlink:href="#hstgrid"   transform="translate(-20,31) rotate(90)" />
@@ -730,18 +730,18 @@
    <text x="15" y="5">Adalbert-/Schloßstraße</text>
    <desc class="kmdata">km 2,00↖↑\n2,63⇥|s20|5|l|90|translate(0,25)</desc>
   </g>
-  <g id="hstBW" transform="translate(-148,-190)" class="zehnzig">
+  <g id="hstBW" transform="translate(-148,-205)" class="zehnzig">
     <use xlink:href="#hstgrid" />
     <use xlink:href="#bstg_ausen" />
     <text x="15" y="3">Bockenheimer Warte</text>
     <desc class="kmdata">km 2,54|s20|5|l|105</desc>
   </g>
-  <g id="hstJULI" transform="translate(-148,-230)" class="te">
+  <g id="hstJULI" transform="translate(-148,-240)" class="te">
     <use xlink:href="#hstl_ausen" />
     <text x="-15" y="3">Juliusstraße</text>
     <desc class="kmdata">km 3,20|s20|5|l|105</desc>
   </g>
-  <g id="hstFRAU" transform="translate(-148,-270)" class="te">
+  <g id="hstFRAU" transform="translate(-148,-275)" class="te">
     <use xlink:href="#hstl_ausen" />
     <text x="-15" y="3">Frauenfriedenskirche</text>
     <desc class="kmdata">km 3,56|s20|5|l|105</desc>
@@ -763,35 +763,35 @@
    </g>
    <desc class="kmdata">km 5,09|s20|6|r|270|translate(-70,0)</desc>
   </g>
-  <g id="hstWEBF" transform="translate(-219,-121.5)" class="nullzig te">
+  <g id="hstWEBF" transform="translate(-219,-141.5)" class="nullzig te">
    <use xlink:href="#bahnsteig" transform="translate(-5,0) rotate(180)" />
    <use xlink:href="#bahnsteig" transform="translate(+5,0) rotate(180)" />
    <use xlink:href="#hstgrid" />
    <text x="-10" y="5">Westbahnhof</text>
    <desc class="kmdata">km 2,42|s20|5|r|-60</desc>
   </g>
-  <g id="hstNAUH" transform="translate(-215,-69)" class="dreizig te">
+  <g id="hstNAUH" transform="translate(-215,-89)" class="dreizig te">
     <use xlink:href="#hstgrid" />
     <use xlink:href="#bstg_ausen" transform="rotate(90)" />
     <text x="-15" y="10" transform="rotate(-45)">Nauheimer Straße</text>
     <desc class="kmdata">km 1,80|s20|5|l|225</desc>
   </g>
-  <g id="hstKUHW" transform="translate(-255,-69)" class="dreizig te">
+  <g id="hstKUHW" transform="translate(-255,-89)" class="dreizig te">
     <use xlink:href="#wien_ausen" transform="rotate(90)" />
     <text x="-15" y="10" transform="rotate(-45)">Kuhwaldstraße</text>
     <desc class="kmdata">km 2,05|s20|5|l|60</desc>
   </g>
-  <g id="hstADDH" transform="translate(-295,-69)" class="dreizig te">
+  <g id="hstADDH" transform="translate(-295,-89)" class="dreizig te">
     <use xlink:href="#wien_ausen" transform="rotate(90)" />
     <text x="-15" y="10" transform="rotate(-45)">An der Dammheide</text>
     <desc class="kmdata">km 2,73|s20|5|l|30</desc>
   </g>
-  <g id="hstLEVI" transform="translate(-335,-69)" class="dreizig te">
+  <g id="hstLEVI" transform="translate(-335,-89)" class="dreizig te">
     <use xlink:href="#bstg_ausen" transform="rotate(-90)" />
     <text x="-15" y="10" transform="rotate(-45)">Leonardo-da-Vinci-Allee</text>
     <desc class="kmdata">km 3,31|s20|5|l|225</desc>
   </g>
-  <g id="hstREBS" transform="translate(-385,-69)" class="dreizig te">
+  <g id="hstREBS" transform="translate(-385,-89)" class="dreizig te">
     <use xlink:href="#bstg_mitte" transform="rotate(90)" />
     <text x="-15" y="10" transform="rotate(-45)">Rebstockbad</text>
     <desc class="kmdata">km 3,81|s20|5|r|240</desc>
@@ -1281,8 +1281,6 @@
     <use xlink:href="#bstg_vers1" />
     <text transform="translate(15,5) rotate(-45)">Wetzlarer Straße <tspan class="ab_bb">(optional)</tspan></text>
    </g>
-   <path class="strecke bb" d="M 396,-324 l 70,-70 h 20" />
-   <text x="486" y="-391" class="ab_bb geplant">Ringstraßenbahn</text>
   </g>
  </g>
  <g class="strecke bb">
@@ -1295,7 +1293,7 @@
   <path id="aus_neuisenburg_2" d="M -15,680 c 0,5 -10,5 -10,10" />
   <path id="schleife_louisa_1" d="M -25,590 a 15,15 0,0,0 30,0 a 10,10 0,0,0 -10,-10 a 10,10 0,0,1 -10,-10" />
   <path id="schleife_louisa_2" d="M -10,605 a 10,10 0,0,0 10,-10 v -10 a 5,5 0,0,0 -5,-5" />
-  <path id="gw_theaterplatz" d="M 85,170 c 5,0 5,10 10,10" />
+  <path id="gw_theaterplatz" d="M 95,170 c 5,0 5,10 10,10" />
   <path id="schleife_hugojunkersstraße" d="M 890,180 a 10,10 0,0,1 10,10 v 40 a 15,15 0,0,0 30,0 v -45 a 15,15 0,0,0 -15,-15" />
   <path id="schleife_hugojunkersstraß2" d="M 900,200 c 0,5 10,5 10,10 v 10 c 0,5 -10,5 -10,10" />
   <path id="gw_schießhüttenstraße" d="M 1015,295 c 0,10 10,10 10,20" />
@@ -1313,17 +1311,17 @@
   <path id="gw_hbfsüd" d="M -60,210 c 5,0 5,10 10,10" />
   <path id="schleife_pforzheimerstraße_1" d="M -80,210 a 20,20 0,0,0 -20,20 v 20 a 10,10 0,0,0 10,10 h 10 a 10,10 0,0,0 10,-10 v -20 a 10,10 0,0,1 10,-10" />
   <path id="schleife_pforzheimerstraße_3" d="M -110,220 a 10,10 0,0,1 10,10" />
-  <path id="schleife_messe_1" d="M -46,-9 q -3,-3 -7,-3 a 10,10 0,0,0 -10,10 q 0,3 3,7 l 7,7 c 3.5,3.5 10.5,-3.5 14,0" />
-  <path id="schleife_messe_2" d="M -66,-15 q 3,3 3,7 v 6" />
-  <g id="gw_opelkreisel" transform="translate(-315,-69)">
+  <path id="schleife_messe_1" d="M -46,-29 q -3,-3 -7,-3 a 10,10 0,0,0 -10,10 q 0,3 3,7 l 7,7 c 3.5,3.5 10.5,-3.5 14,0" />
+  <path id="schleife_messe_2" d="M -66,-35 q 3,3 3,7 v 6" />
+  <g id="gw_opelkreisel" transform="translate(-315,-89)">
    <path d="M -5,-5 c 5,0 5,10 10,10" />
    <desc class="kmdata">km 2,89|s20|4|r|-30</desc>
   </g>
-  <path id="wa_rebstock" d="M -375,-64 c 5,0 5,-10 10,-10 c 5,0 5,10 10,10" />
-  <path id="schleife_westbahnhof_m" class="mitte hilfslinie" d="M -178.5,-134.5 l 3.5,-3.5 -3.5,3.5 q -4.5,-4.5 -10.5,-4.5 v -5 h -15 a 15,15 0,0,0 -15,15 v 15 a 15,15 0,0,0 15,15 h 50 v -5 q 6,0 10.5,4.5" />
-  <path id="schleife_westbahnhof_1" d="M -175,-138 q -6,-6 -14,-6 h -20 a 15,15 0,0,0 -15,15 v 15 a 15,15 0,0,0 15,15 h 51 a 15,15 0,0,0 15,-15" />
-  <path id="schleife_westbahnhof_2"  d="M -199,-144 a 15,15 0,0,0 -15,15 v 15 a 15,15 0,0,0 15,15" />
-  <path id="schleife_westbahnhof_3" d="M -158,-99 h 4 q 4,0 7,3" />
+  <path id="wa_rebstock" d="M -375,-84 c 5,0 5,-10 10,-10 c 5,0 5,10 10,10" />
+  <path id="schleife_westbahnhof_m" class="mitte hilfslinie" d="M -178.5,-154.5 l 3.5,-3.5 -3.5,3.5 q -4.5,-4.5 -10.5,-4.5 v -5 h -15 a 15,15 0,0,0 -15,15 v 15 a 15,15 0,0,0 15,15 h 50 v -5 q 6,0 10.5,4.5" />
+  <path id="schleife_westbahnhof_1" d="M -175,-158 q -6,-6 -14,-6 h -20 a 15,15 0,0,0 -15,15 v 15 a 15,15 0,0,0 15,15 h 51 a 15,15 0,0,0 15,-15" />
+  <path id="schleife_westbahnhof_2"  d="M -199,-164 a 15,15 0,0,0 -15,15 v 15 a 15,15 0,0,0 15,15" />
+  <path id="schleife_westbahnhof_3" d="M -158,-119 h 4 q 4,0 7,3" />
   <path id="wa_mönchhofstraße_1" class="endet" d="M -412,70 c -5,0 -5,5 -10,5 h -10" />
   <path id="wa_mönchhofstraße_2" d="M -422,75 c 5,0 5,5 10,5" />
   <path id="schleife_niedkirche" d="M -682,70 a 5,5 0,0,1 -5,-5 a 10,10 0,0,0 -20,0 v 10 a 5,5 0,0,0 5,5" />
@@ -1541,39 +1539,39 @@
   <path id="niddastraße_m" class="mitte hilfslinie" d="M -20,135 a 15,15 0,0,0 -15,-15 h -30 a 15,15 0,0,1 -15,-15 a 15,15 0,0,1 15,-15" />
   <path id="niddastraße_1" d="M -15,135 a 20,20 0,0,0 -20,-20 h -30 a 10,10 0,0,1 -10,-10 a 10,10 0,0,1 10,-10" />
   <path id="niddastraße_2" d="M -65,85 a 20,20 0,0,0 -20,20 a 20,20 0,0,0 20,20 h 30 a 10,10 0,0,1 10,10" />
-  <path id="friedrichebertanlage_1" d="M -153,-140 v 30 q 0,8 6,14 l 119,119 q 3,3 3,7 v 30 a 10,10 0,0,1 -10,10" />
-  <path id="friedrichebertanlage_2" d="M -35,80 a 20,20 0,0,0 20,-20 v -30 q 0,-8 -6,-14 l -119,-119 q -3,-3 -3,-7 v -30" />
-  <path id="friedrichebertanlage_m" class="mitte hilfslinie" d="M -35,75 a 15,15 0,0,0 15,-15 v -30 q 0,-6 -4.5,-10.5 l 3.5,-3.5 -7,7 3.5,-3.5 l -119,-119 l 3.5,-3.5 -7,7 3.5,-3.5 q -4.5,-4.5 -4.5,-10.5 h 5 -5 v -30 h 5" />
-  <g id="gw_breitenbachbruecke" transform="translate(-260,-216)" class="bb">
+  <path id="friedrichebertanlage_1" d="M -153,-160 v 30 q 0,8 6,14 l 119,119 q 3,3 3,7 v 50 a 10,10 0,0,1 -10,10" />
+  <path id="friedrichebertanlage_2" d="M -35,80 a 20,20 0,0,0 20,-20 v -50 q 0,-8 -6,-14 l -119,-119 q -3,-3 -3,-7 v -30" />
+  <path id="friedrichebertanlage_m" class="mitte hilfslinie" d="M -35,75 a 15,15 0,0,0 15,-15 v -50 q 0,-6 -4.5,-10.5 l 3.5,-3.5 -7,7 3.5,-3.5 l -119,-119 l 3.5,-3.5 -7,7 3.5,-3.5 q -4.5,-4.5 -4.5,-10.5 h 5 -5 v -30 h 5" />
+  <g id="gw_breitenbachbruecke" transform="translate(-260,-236)" class="bb">
    <path d="M 0,7 c -3.5,-3.5 3.5,-10.5 0,-14" />
    <desc class="kmdata">km 2,90|s20|4|r|-90</desc>
   </g>
-  <g id="industriehof">
-   <path id="s25a2g1" class="ubahnt zugabe" d="M -262,-247 h -35" />
-   <path id="s25a2g2" class="ubahnt ubergabe" d="M -297,-242 h 35" />
-   <path id="s25gw2" class="ubahnt" d="M -297,-242 c 5,0 5,-5 10,-5" />
-   <path id="s20a3g1" d="M -140,-103 l -148,-148 q -6,-6 -14,-6 c -5,0 -5,10 -10,10" />
-   <path id="g317A31" class="endet" d="M -302,-257 h -10" />
-   <path id="g317A31_add" class="endet geplant ausbau_schlossstrasse" d="M -312,-257 h -15" />
-   <path id="s20a3g2" d="M -312,-242 c 5,0 5,10 10,10 h 15 q 4,0 7,3 l 133,133" />
-   <path id="s20a4g1" class="ubahng ubergabe" d="M -312,-247 h -40 q -4,0 -7,-3 l -17,-17" />
-   <path id="s20a4g2" class="ubahng zugabe" d="M -379.5,-263.5 l 17.5,17.5 q 4,4 10,4 h 40" />
-   <path id="s24g1" class="ubahng ubergabe" d="M -352,-247 h -35" />
-   <path id="s24g2" class="ubahng zugabe" d="M -387,-242 h 35" />
-   <path id="s25a1g1" class="ubahng" d="M -297,-247 h -15" />
-   <path id="s25a1g2" class="ubahng" d="M -312,-242 h 15" />
-   <path id="s25gw1" class="ubahng" d="M -307,-247 c 5,0 5,5 10,5" />
-   <use xlink:href="#tunnelrampe" transform="translate(-297,-244.5) rotate(-90)" />
+  <g id="industriehof" transform="translate(-332,-284)">
+   <path id="s25a2g1" class="ubahnt zugabe" d="M 70,17 h -35" />
+   <path id="s25a2g2" class="ubahnt ubergabe" d="M 35,22 h 35" />
+   <path id="s25gw2" class="ubahnt" d="M 35,22 c 5,0 5,-5 10,-5" />
+   <path id="s20a3g1" d="M 192,161 l -148,-148 q -6,-6 -14,-6 c -5,0 -5,10 -10,10" />
+   <path id="g317A31" class="endet" d="M 30,7 h -10" />
+   <path id="g317A31_add" class="endet geplant ausbau_schlossstrasse" d="M 20,7 h -15" />
+   <path id="s20a3g2" d="M 20,22 c 5,0 5,10 10,10 h 15 q 4,0 7,3 l 133,133" />
+   <path id="s20a4g1" class="ubahng ubergabe" d="M 20,17 h -40 q -4,0 -7,-3 l -17,-17" />
+   <path id="s20a4g2" class="ubahng zugabe" d="M -47.5,0.5 l 17.5,17.5 q 4,4 10,4 h 40" />
+   <path id="s24g1" class="ubahng ubergabe" d="M -20,17 h -35" />
+   <path id="s24g2" class="ubahng zugabe" d="M -55,22 h 35" />
+   <path id="s25a1g1" class="ubahng" d="M 35,17 h -15" />
+   <path id="s25a1g2" class="ubahng" d="M 20,22 h 15" />
+   <path id="s25gw1" class="ubahng" d="M 25,17 c 5,0 5,5 10,5" />
+   <use xlink:href="#tunnelrampe" transform="translate(35,19.5) rotate(-90)" />
    <a class="viewboxlink" xlink:href="ubahnnetz.svg?viewbox=-516/1091/225/243">
-    <text class="ref ta" transform="translate(-259,-240.5)">C</text>
-    <text class="ref te" transform="translate(-390,-240.5)">C</text>
-    <text class="ref tm" transform="translate(-379.5,-267) rotate(-45)">C</text>
+    <text class="ref ta" transform="translate(73,23.5)">C</text>
+    <text class="ref te" transform="translate(-58,23.5)">C</text>
+    <text class="ref tm" transform="translate(-47.5,-3) rotate(-45)">C</text>
    </a>
   </g>
-  <path id="ginnheim_1" d="M -177,-126 q 6,6 14,6 a 20,20 0,0,0 20,-20 v -220 a 20,20 0,0,0 -20,-20 h -20 c -5,0 -5,10 -10,10" />
+  <path id="ginnheim_1" d="M -177,-146 q 6,6 14,6 a 20,20 0,0,0 20,-20 v -200 a 20,20 0,0,0 -20,-20 h -20 c -5,0 -5,10 -10,10" />
   <path id="ginnheim_3" class="endet" d="M -213,-370 c -5,0 -5,-10 -10,-10 h -20" />
-  <path id="ginnheim_2" class="faeng" d="M -243,-370 h 80 a 10,10 0,0,1 10,10 v 220 a 10,10 0,0,1 -10,10 q -4,0 -7,-3" />
-  <path id="ginnheim_m" class="mitte hilfslinie" d="M -173.5,-129.5 q 4.5,4.5 10.5,4.5 a 15,15 0,0,0 15,-15 h -5 5 v -220 h 5 -5 a 15,15 0,0,0 -15,-15 h -80" />
+  <path id="ginnheim_2" class="faeng" d="M -243,-370 h 80 a 10,10 0,0,1 10,10 v 200 a 10,10 0,0,1 -10,10 q -4,0 -7,-3" />
+  <path id="ginnheim_m" class="mitte hilfslinie" d="M -173.5,-149.5 q 4.5,4.5 10.5,4.5 a 15,15 0,0,0 15,-15 h -5 5 v -200 h 5 -5 a 15,15 0,0,0 -15,-15 h -80" />
   <g id="ginnheim_gleise" transform="translate(-193,-370)">
     <path id="ginnheim_u" class="ubergabe" d="M 0,0 q -4,0 -7,-3 l -9,-9" />
     <path class="ubahng" d="M -16,-12 l -5,-5 q -3,-3 -7,-3 " />
@@ -1585,10 +1583,10 @@
       <text transform="translate(-16,-12) rotate(-45)" class="ref tm">A</text>
     </a>
   </g>
-  <path id="rebstock_1" class="endet" d="M -105,-68 q -6,-6, -14,-6 h -276" />
-  <path id="rebstock_2a" class="faeng" d="M -395,-64 h 200 c 10,0 10,-10 20,-10" />
-  <path id="rebstock_2b" d="M -150,-74 c 10,0 10,10 20,10 h 11 q 4,0 7,3" />
-  <path id="rebstock_m" class="mitte hilfslinie" d="M -108.5,-64.5 l 3.5,-3.5 -7,7 3.5,-3.5 q -4.5,-4.5 -10.5,-4.5 v 5 -5 h -21 v 5 -5 h -45 v 5 -5 h -20 v 5 -5 h -190" />
+  <path id="rebstock_1" class="endet" d="M -105,-88 q -6,-6, -14,-6 h -276" />
+  <path id="rebstock_2a" class="faeng" d="M -395,-84 h 200 c 10,0 10,-10 20,-10" />
+  <path id="rebstock_2b" d="M -150,-94 c 10,0 10,10 20,10 h 11 q 4,0 7,3" />
+  <path id="rebstock_m" class="mitte hilfslinie" d="M -108.5,-84.5 l 3.5,-3.5 -7,7 3.5,-3.5 q -4.5,-4.5 -10.5,-4.5 v 5 -5 h -21 v 5 -5 h -45 v 5 -5 h -20 v 5 -5 h -190" />
   <path id="mainzerlandstraße_m" class="mitte hilfslinie" d="M -20,90 a 15,15 0,0,0 -15,-15 q -6,0 -10.5,4.5 l -6,6 q -4.5,4.5 -10.5,4.5 h -33" />
   <path id="mainzerlandstraße_1" d="M -15,90 a 20,20 0,0,0 -20,-20 q -8,0 -14,6 l -6,6 q -3,3 -7,3 h -33" />
   <path id="mainzerlandstraße_2" d="M -95,95 h 33 q 8,0 14,-6 l 6,-6 q 3,-3 7,-3 a 10,10 0,0,1 10,10" />
@@ -1613,7 +1611,7 @@
   <path id="stresemannallee_2" d="M -15,495 v -100 c 0,-5, 10,-5, 10,-10 v -25 a 10,10 0,0,1 10,-10" />
   <path id="hippodrom_1" d="M -15,400 v -25" />
   <path id="hippodrom_2" d="M -35,390 h 10 a 20,20 0,0,0 20,-20" />
-   <g transform="translate(-174,-64)" id="baeume">
+   <g transform="translate(-174,-84)" id="baeume">
     <circle r="1.5" cx="00" />
     <circle r="1.5" cx="05" />
     <circle r="1.5" cx="10" />
@@ -1639,17 +1637,17 @@
   </g>
   <g class="s20_strecke">
 -46,-9 q -3,-3 -7,-3 a 10,10 0,0,0 -10,10 q 0,3 3,7 l 7,7 c 3.5,3.5 10.5,-3.5 14,0
-   <desc class="kmdata">km 0,99↖\nkm 1,33⇥|s20|6|r|270|translate(-35.5,8.5)</desc><!--Messe-->
-   <desc class="kmdata">km 1,13|s20|4|l|90|translate(-58,-14)</desc><!--Messe-->
-   <desc class="kmdata">km 1,58|s20|4|l|230|translate(-145,-69)</desc><!--Eingleisig Anfang-->
-   <desc class="kmdata">km 1,71|s20|4|l|180|translate(-185,-69)</desc><!--Eingleisig Ende-->
-   <desc class="kmdata">km 3,72|s20|4|r|-60|translate(-365,-69)</desc><!--WA Rebstock-->
-   <desc class="kmdata">km 3,88|s20|6|r|-90|translate(-395,-69)</desc><!--Gleisende Rebstock-->
-   <desc class="kmdata">km 2,16|s20|4|r|15|translate(-183,-139)</desc><!--Kurfürstenstraße-->
-   <path class="kilometrierung" id="sk_20" d="M -20,150 v -120 q 0,-6 -4.5,-10.5 l -258,-258 q -6,-6 -20,-6 h -49.5 q -5,0 -8.5,-3.5 l -12,-12" />
-   <path class="kilometrierung" id="sk_22" d="M -108.5,-64.5 q -4.5,-4.5 -10.5,-4.5 h -276" />
-   <path class="kilometrierung klein" id="sk_23" d="M -183,-139 h -26 a 10,10 0,0,0 -10,10 v 15 a 10,10 0,0,0 10,10 h 61" />
-   <path class="kilometrierung" id="sk_28" d="M -148,-105 v -255 a 15,15 0,0,0 -15,-15 h -80" />
+   <desc class="kmdata">km 0,99↖\nkm 1,33⇥|s20|6|r|270|translate(-35.5,-8.5)</desc><!--Messe-->
+   <desc class="kmdata">km 1,13|s20|4|l|90|translate(-58,-34)</desc><!--Messe-->
+   <desc class="kmdata">km 1,58|s20|4|l|230|translate(-145,-89)</desc><!--Eingleisig Anfang-->
+   <desc class="kmdata">km 1,71|s20|4|l|180|translate(-185,-89)</desc><!--Eingleisig Ende-->
+   <desc class="kmdata">km 3,72|s20|4|r|-60|translate(-365,-89)</desc><!--WA Rebstock-->
+   <desc class="kmdata">km 3,88|s20|6|r|-90|translate(-395,-89)</desc><!--Gleisende Rebstock-->
+   <desc class="kmdata">km 2,16|s20|4|r|15|translate(-183,-159)</desc><!--Kurfürstenstraße-->
+   <path class="kilometrierung" id="sk_20" d="M -20,150 v -140 q 0,-6 -4.5,-10.5 l -258,-258 q -6,-6 -20,-6 h -49.5 q -5,0 -8.5,-3.5 l -12,-12" />
+   <path class="kilometrierung" id="sk_22" d="M -108.5,-84.5 q -4.5,-4.5 -10.5,-4.5 h -276" />
+   <path class="kilometrierung klein" id="sk_23" d="M -183,-159 h -26 a 10,10 0,0,0 -10,10 v 15 a 10,10 0,0,0 10,10 h 61" />
+   <path class="kilometrierung" id="sk_28" d="M -148,-125 v -235 a 15,15 0,0,0 -15,-15 h -80" />
   </g>
   <g class="s41_strecke">
     <path class="kilometrierung" d="M 260,175 v -240 q 0,-6 4.5,-10.5 l 273,-273" />
@@ -1701,10 +1699,10 @@
   <path class="streckennummer sn_10" id="sn_10" d="M -20,75 h -15 q -6,0 -10.5,4.5 l -6,6 q -4.5,4.5 -10.5,4.5 h -133 q -6,0 -10.5,-4.5 l -6,-6 q -4.5,-4.5 -10.5,-4.5 h -615 a 15,15 0,0,0 0,30 h 30 a 15,15 0,0,0 15,-15 a 15,15 0,0,1 15,-15" />
   <path class="streckennummer sn_11" id="sn_11" d="M -195,90 q -6,0 -10.5,4.5 l -66,66 q -4.5,4.5 -10.5,4.5 a 15,15 0,0,1 -15,-15 v -75" />
   <path class="streckennummer sn_12" id="sn_12" d="M -20,135 a 15,15 0,0,0 -15,-15 h -30 a 15,15 0,0,1 -15,-15 v -15" />
-  <path class="streckennummer sn_20" id="sn_20" d="M -20,135 v -105 q 0,-6 -4.5,-10.5 l -258,-258 q -6,-6 -20,-6 h -49.5 q -5,0 -8.5,-3.5 l -12,-12" />
-  <path class="streckennummer sn_22" id="sn_22" d="M -108.5,-64.5 q -4.5,-4.5 -10.5,-4.5 h -276" />
-  <path class="streckennummer sn_23" id="sn_23" d="M -183,-139 h -26 a 10,10 0,0,0 -10,10 v 15 a 10,10 0,0,0 10,10 h 51 a 10,10 0,0,0 10,-10 v -56" />
-  <path class="streckennummer sn_28" id="sn_28" d="M -148,-170 v -190 a 15,15 0,0,0 -15,-15 h -80" />
+  <path class="streckennummer sn_20" id="sn_20" d="M -20,135 v -125 q 0,-6 -4.5,-10.5 l -258,-258 q -6,-6 -20,-6 h -49.5 q -5,0 -8.5,-3.5 l -12,-12" />
+  <path class="streckennummer sn_22" id="sn_22" d="M -108.5,-84.5 q -4.5,-4.5 -10.5,-4.5 h -276" />
+  <path class="streckennummer sn_23" id="sn_23" d="M -183,-159 h -26 a 10,10 0,0,0 -10,10 v 15 a 10,10 0,0,0 10,10 h 51 a 10,10 0,0,0 10,-10 v -56" />
+  <path class="streckennummer sn_28" id="sn_28" d="M -148,-190 v -170 a 15,15 0,0,0 -15,-15 h -80" />
   <path class="streckennummer sn_41" id="sn_41" d="M 260,60 v -125 q 0,-6 4.5,-10.5 l 273,-273" />
   <path class="streckennummer sn_42" id="sn_42" d="M 197.5,-50 h 17.5 h 250" />
   <path class="streckennummer sn_52" id="sn_52" d="M 465,-50 h 205 q 6,0 10.5,4.5 l 53,53" />
@@ -1732,11 +1730,11 @@
   <text class="sn_10" x="-605" y="65">10</text>
   <text class="sn_11" x="-240" y="100">11</text>
   <text class="sn_12" x="-80" y="135">12</text>
-  <text class="sn_20" x="-40" y="-5">20</text>
-  <text class="sn_20" x="-255" y="-220">20</text>
-  <text class="sn_22" x="-200" y="-50">22</text>
-  <text class="sn_23" x="-200" y="-110">23</text>
-  <text class="sn_28" x="-138" y="-210">28</text>
+  <text class="sn_20" x="-40" y="-25">20</text>
+  <text class="sn_20" x="-255" y="-240">20</text>
+  <text class="sn_22" x="-200" y="-70">22</text>
+  <text class="sn_23" x="-200" y="-130">23</text>
+  <text class="sn_28" x="-138" y="-220">28</text>
   <text class="sn_41" x="270" y="15">41</text>
   <text class="sn_41" x="528" y="-318">41</text>
   <text class="sn_42" x="280" y="-30">42</text>
