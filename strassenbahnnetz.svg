@@ -1663,13 +1663,15 @@
    </g>
    <g id="hbf_4gleise" class="ausbau_hauptbahnhof geplant">
      <path class="verstecke_ausbau" d="M -45,50 h 40 v 35 h -30 v 20 h 30 v 25 h -40 z" />
-     <path class="verstecke_ausbau" d="M -35,160 h 30 v 15 h -15 v 5 h -15 v -20" />
      <path id="hbf_1_neu" d="M 5,170 h -10 a 20,20 0,0,0 -20,20 v 10 a 10,10 0,0,1 -10,10" />
      <path id="hbf_2_neu" d="M -35,220 a 20,20 0,0,0 20,-20 v -10 a 10,10 0,0,1 10,-10" />
      <path id="altstadt_1_neu" d="M -25,130 v 30 a 20,20 0,0,0 20,20 h 280" />
      <path id="altstadt_2_neu" d="M 275,170 h -270 a 10,10 0,0,1 -10,-10 v -15 c 0,-7.5 -10,-7.5 -10,-15" />
+     <path id="altstadt_3" d="M 5,170 h -10 a 10,10 0,0,1 -10,-10" />
+     <path id="altstadt_4" d="M -35,160 a 20,20 0,0,0 20,20 h 10" />
      <path id="hauptbahnhof_1_neu" d="M -15,190 v -135" />
-     <path id="hauptbahnhof_2_neu" d="M -28,62 l -1,1 q -6,6 -6,14 v 26 q 0,8 6,14 l 1,1 q 3,3 3,7 v 5 c 0,7.5 -10,7.5 -10,15 v 15 c 0,10 10,10 10,20 v 10" />
+     <path id="hauptbahnhof_2_neu" d="M -28,62 l -1,1 q -6,6 -6,14 v 26 q 0,8 6,14 l 1,1 q 3,3 3,7 v 5 c 0,7.5 -10,7.5 -10,15 v 20 c 0,10 10,10 10,20 v 5" />
+     <path id="hauptbahnhof_3" d="M -15,185 c 0,-10 10,-10 10,-20 v -5" />
      <path id="niddastraße_m_neu" class="mitte hilfslinie" d="M -24.5,114.5 q -4.5,-4.5 -10.5,-4.5 v 5 -5 h -30 a 15,15 0,0,1 -15,-15 v -10 a 15,15 0,0,1 15,-15" />
      <path id="niddastraße_1_neu" d="M -21,111 q -6,-6 -14,-6  h -30 a 10,10 0,0,1 -10,-10 v -10 a 10,10 0,0,1 10,-10" />
      <path id="niddastraße_2_neu" d="M -65,65 a 20,20 0,0,0 -20,20 v 10 a 20,20 0,0,0 20,20 h 30 q 4,0 7,3 q 3,3 3,7" />
