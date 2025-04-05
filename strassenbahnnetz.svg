@@ -147,6 +147,8 @@
   .ausbau_ring { display:none; }
   .ausbau_schlossstrasse { display:none; }
   .ausbau_hauptbahnhof { display:none; }
+  .ausbau_bbgutleut { display:none; }
+  .ausbau_briefzentrum { display:none; }
   .hilfslinie { display:none; }
   svg.debug .hilfslinie { display:inline; }
   .verstecke_ausbau { fill: white; fill-opacity: .75; stroke: none; }
@@ -479,6 +481,7 @@
    <desc class="kmdata">km 2,5|s70|5|l|90</desc>
   </g>
   <g id="hstBASP" transform="translate(-20,250)" class="dreizig">
+   <use xlink:href="#hstgrid" />
    <use xlink:href="#dobs_ausen" />
    <text x="15" y="5">Baseler Platz</text>
    <desc class="kmdata">km 0,37|s73,s84,s90|5|l|75</desc>
@@ -1373,6 +1376,11 @@
    <path id="gut_04" d="M -23.5,18.5 q -1.5,1.5 -1.5,3.5 v 61 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5 h -11 q -2,0 -3.5,1.5" />
    <path id="gut_05" d="M -28.5,23.5 q -1.5,1.5 -1.5,3.5 v 61 q 0,2 -1.5,3.5" />
    <path id="gut_06" class="endet" d="M -18,15 q -2,0 -3.5,1.5 l -12,12 q -1.5,1.5 -1.5,3.5 v 43" />
+   <path class="verstecke_ausbau ausbau_bbgutleut" d="M -7.5,80 h -15 v 20 h 15 z" />
+   <path id="gut_01_neu" class="geplant ausbau_bbgutleut" d="M -8.5,18.5 q -1.5,1.5 -1.5,3.5 v 61 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5 h -5" />
+   <path id="gut_02_neu" class="geplant ausbau_bbgutleut" d="M -13.5,23.5 q -1.5,1.5 -1.5,3.5 v 56 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5 h -10" />
+   <path id="gut_03_neu" class="geplant ausbau_bbgutleut" d="M -3,15 q -2,0 -3.5,1.5 l -12,12 q -1.5,1.5 -1.5,3.5 v 56 q 0,2 -1.5,3.5" />
+   <path id="gut_06_neu" class="geplant ausbau_bbgutleut" d="M -18,15 q -2,0 -3.5,1.5 l -12,12 q -1.5,1.5 -1.5,3.5 v 56 q 0,2 -1.5,3.5 l -2,2 q -1.5,1.5 -3.5,1.5" />
    <path id="gut_07" class="endet" d="M -29,15 q -2,0 -3.5,2.5 l -6,10 q -1.5,2.5, -1.5,3.5 v 34" />
    <path id="gut_08" d="M -34,20 q -1.5,2.5 -3.0,4.0 l -6.5,6.5 q -1.5,1.5, -1.5,3.5 v 54 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5 h -15" />
    <path id="gut_09" d="M -38,19.2 q -2.5,1.5 -4.0,3.0 l -6.5,6.5 q -1.5,1.5 -1.5,3.5 v 55.8 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5" />
@@ -1394,11 +1402,25 @@
    <path id="gut_25" d="M -98,5 q -2,0 -3.5,1.5 l -27,27 q -1.5,1.5 -1.5,3.5 v 50 q 0,2 1.5,3.5" />
    <path id="gut_26" d="M -120,25 q -2,2 -4.5,3.5 l -8,5.4 q -2.5,1.5 -2.5,4.0 v 44.1 q 0,2 1.5,3.5 l 13,13 q 1.5,1.5 3.5,1.5 h 45" />
    <path id="gut_27" d="M -133.5,85.5 l -5,-5 q -1.5,-1.5 -1.5,-3.5 v -40 q 0,-2 1.5,-3.5 l 27,-27 q 1.5,-1.5 3.5,-1.5 h 138" />
+   <path class="verstecke_ausbau ausbau_briefzentrum" d="M -139.5,75 h 4 v 10 h -4 z" />
+   <path id="gut_27_neu" class="geplant ausbau_briefzentrum" d="M -117,100 h -5 q -2.0,0 -3.5,-1.5 l -13,-13 q -1.5,-1.5 -1.5,-3.5 v -45 q 0,-2 1.5,-3.5 l 27,-27 q 1.5,-1.5 3.5,-1.5 h 138" />
+   <path id="gut_as1" class="geplant ausbau_briefzentrum" d="M -135,72 c 0,5 -5,5 -5,10 v 58 a 20,20 0,0,0 20,20" />
+   <path id="gut_as2" class="geplant ausbau_briefzentrum" d="M -140,140 a 10,10 0,0,0 10,10" />
+   <path id="gut_51" class="faeng geplant ausbau_bbgutleut" d="M -10,105 h -120 q -2,0 -3.5,-1.5" />
+   <path id="gut_52" class="faeng geplant ausbau_bbgutleut" d="M -10,110 h -115 q -2,0 -3.5,-1.5 l -5,-5 q -1.5,-1.5 -1.5,-3.5" />
+   <path id="gut_53" class="faeng geplant ausbau_bbgutleut" d="M -10,115 h -115 q -2,0 -3.5,-1.5 l -5,-5 q -1.5,-1.5 -1.5,-3.5" />
+   <path id="gut_54" class="faeng geplant ausbau_bbgutleut" d="M -10,120 h -120 q -2,0 -3.5,-1.5" />
+   <path id="gut_55" class="faeng geplant ausbau_bbgutleut" d="M -10,125 h -115 q -2,0 -3.5,-1.5 l -5,-5 q -1.5,-1.5 -1.5,-3.5" />
+   <path id="gut_56" class="faeng geplant ausbau_bbgutleut" d="M -10,130 h -120 q -2,0 -3.5,-1.5" />
+   <path id="gut_57" class="faeng geplant ausbau_bbgutleut" d="M -10,135 h -115 q -2,0 -3.5,-1.5 l -5,-5 q -1.5,-1.5 -1.5,-3.5" />
+   <path id="gut_58" class="endet geplant ausbau_bbgutleut" d="M -140,82 q 0,2 1.5,3.5 l 2,2 q 1.5,1.5 1.5,3.5 v 39 q 0,2 1.5,3.5 l 5,5 q 1.5,1.5 3.5,1.5 h 115" />
+   <path id="gut_wa" class="endet geplant ausbau_bbgutleut" d="M -57,100 h 47" />
    <g id="gleisnummern_gutleut">
     <path class="gebaude wand" id="halle_gutleut" d="M -2.5,40 h -140 v 42.5 h 145 v -12.5 h -5 z" />
     <path class="gebaude wand" id="halle_schleif" d="M -98.5,37.5 h 1 v 35 h -5 v -35 h 1" />
     <path class="gebaude wand" id="halle_waschur" d="M -42.5,87.5 h 2.5 v -5 h -2.5 v -15 h 5 v -32.5 h -20 v 47.5 h -2.5 v 5 h 2.5" />
-    <path class="gebaude wand geplant ausbau_bbgutleut" id="halle_neu" d="M -7.5,102.5 h -115 v 40 h 115 v -40" />
+    <path class="gebaude wand geplant ausbau_bbgutleut" id="halle_neu" d="M -7.5,97.5 h -40 v 5 h -75 v 40 h 115 v -40" />
+    <path class="gebaude wand geplant ausbau_bbgutleut" id="wasch_neu" d="M -7.5,97.5 h -40 v 5 h 40 v -5" />
     <g transform="translate(-150,25)" class="beschrift te"><path d="M 1,-2 h 35 l 13,13" /><text>Schleifstand</text></g>
     <g transform="translate(0,33)" class="beschrift ta"><path d="M -1,-2 h -36 l -2,2" /><text>Wasch- und Revisionshalle</text></g>
     <g transform="translate( -10,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>1</text></g>
@@ -1459,9 +1481,17 @@
   <path id="gartenstraße_2" d="M -25,300 c 0,10 10,10 10,20 v 10 a 20,20 0,0,0 20,20 h 170 a 10,10 0,0,1 10,10 v 75" />
   <path id="friedensbrücke_1" d="M -35,390 h 5 a 15,15 0,0,0 15,-15 v -15 c 0,-10 10,-10 10,-20 v -20 c 0,-10 -10,-10 -10,-20 v -100" />
   <path id="friedensbrücke_2" d="M -25,200 V 370 a 10,10 0,0,1 -10,10"/>
-  <path id="heilbronnerstraße_1" d="M -15,230 a 20,20 0,0,0 -20,-20 h -160" />
-  <path id="heilbronnerstraße_2" d="M -195,220 h 160 a 10,10 0,0,1 10,10" />
-  <path id="heilbronnerstraße_m" class="mitte hilfslinie" d="M -20,230 a 15,15 0,0,0 -15,-15 h -160" />
+  <g class="geplant ausbau_briefzentrum">
+    <path id="gutleutstraße_m" class="mitte hilfslinie" d="M -20,275 h -55 q -6,0 -10.5,4.5 l -76,76 q -4.5,4.5 -10.5,4.5 h -300" />
+    <path id="gutleutstraße_1" d="M -25,270 h -50 q -8,0 -14,6 l -76,76 q -3,3 -7,3 h -300" />
+    <path id="gutleutstraße_2" d="M -472,365 h 300 q 8,0 14,-6 l 76,-76 q 3,-3 7,-3 h 50" />
+    <path id="heilbronnerstraße_m" class="mitte hilfslinie" d="M -190,360 a 15,15 0,0,1 -15,-15 v -130" />
+    <path id="heilbronnerstraße_1" class="bb" d="M -190,355 a 10,10 0,0,1 -10,-10 v -125" />
+    <path id="heilbronnerstraße_2" class="bb" d="M -210,220 v 125 a 20,20 0,0,0 20,20" />
+  </g>
+  <path id="mannheimerstraße_1" d="M -15,230 a 20,20 0,0,0 -20,-20 h -160" />
+  <path id="mannheimerstraße_2" d="M -195,220 h 160 a 10,10 0,0,1 10,10" />
+  <path id="mannheimerstraße_m" class="mitte hilfslinie" d="M -20,230 a 15,15 0,0,0 -15,-15 h -160" />
   <path id="hbf_1" d="M -5,170 a 20,20 0,0,0 -20,20 v 10 a 10,10 0,0,1 -10,10" />
   <path id="hbf_2" d="M -35,220 a 20,20 0,0,0 20,-20 v -10 a 10,10 0,0,1 10,-10" />
   <path id="altstadt_1" d="M -25,160 a 20,20 0,0,0 20,20 h 280" />
@@ -1883,7 +1913,7 @@
    </g>
   </g>
   <g id="ausbauprojekte" transform="translate(835,-340)">
-   <rect class="box" width="200" height="245" />
+   <rect class="box" width="200" height="335" />
    <text class="unterschrift" x="5" y="20">Ausbauprojekte</text>
    <text class="boxtext" x="5" y="40" onclick="geplant('ausbau_ring')">Ringstraßenbahn <tspan class="link" id="ausbau_ring_aktion">anzeigen</tspan></text>
    <text class="ab_bb" x="10" y="55">Markus-Krankenhaus - Friedberger Warte</text>
@@ -1901,6 +1931,12 @@
    <text class="boxtext" x="5" y="215" onclick="geplant('ausbau_hauptbahnhof')">Hauptbahnhof <tspan class="link" id="ausbau_hauptbahnhof_aktion">anzeigen</tspan></text>
    <text class="ab_bb" x="10" y="230">Ausbau auf vier Gleise</text>
    <text class="ab_bb" x="10" y="240">Status: <a xlink:href="https://www.stvv.frankfurt.de/download/M_59_2025.pdf">Genehmigung der Vorplanung</a></text>
+   <text class="boxtext" x="5" y="260" onclick="geplant('ausbau_bbgutleut')">Erweiterung BB Gutleut <tspan class="link" id="ausbau_bbgutleut_aktion">anzeigen</tspan></text>
+   <text class="ab_bb" x="10" y="275">(Verbunden mit Strecke Gutleut)</text>
+   <text class="ab_bb" x="10" y="285">Status: </text>
+   <text class="boxtext" x="5" y="305" onclick="geplant('ausbau_briefzentrum')">Briefzentrum Gutleut <tspan class="link" id="ausbau_briefzentrum_aktion">anzeigen</tspan></text>
+   <text class="ab_bb" x="10" y="320">Strecke und alternative Anbindung BB Gutleut</text>
+   <text class="ab_bb" x="10" y="330">Status: </text>
   </g>
   <text transform="translate(753.5,-63.5)" class="ab_bb tm">Anschluss Richtung BB Ost</text>
   <text transform="translate(753.5,-53.5)" class="ab_bb tm">(via Johanna-Tesch-Platz)</text>
