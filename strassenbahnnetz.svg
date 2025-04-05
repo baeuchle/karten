@@ -146,8 +146,11 @@
   .ausbau_kleyer { display:none; }
   .ausbau_ring { display:none; }
   .ausbau_schlossstrasse { display:none; }
+  .ausbau_hauptbahnhof { display:none; }
   .hilfslinie { display:none; }
   svg.debug .hilfslinie { display:inline; }
+  .verstecke_ausbau { fill: white; fill-opacity: .75; stroke: none; }
+  svg.debug .verstecke_ausbau { stroke-width: .2; stroke: blue; stroke-dasharray: 1,0; }
 
   .always_links rect { fill: white; fill-opacity: .3; stroke: none; }
   path.link_symbol { fill: none; stroke-width: 1; stroke: blue; stroke-opacity: .5; }
@@ -494,6 +497,8 @@
    <g id="hstHB" transform="translate(5,-30)" class="dreizig">
     <use xlink:href="#hstgrid"/>
     <use xlink:href="#dobs_ausen" />
+    <use xlink:href="#dobs_mitte" transform="translate(10,0)" class="geplant ausbau_hauptbahnhof"/>
+    <use xlink:href="#dobs_mitte" transform="translate(-10,0)" class="geplant ausbau_hauptbahnhof" />
     <text x="15" y="-9">Hauptbahnhof</text>
     <desc class="kmdata">km 0,00|s00,s10,s20,s73,s84,s90,s91|5|l|45</desc>
    </g>
@@ -672,6 +677,8 @@
   <g id="hstPLDR" transform="translate(-20,95)" class="dreizig">
     <use xlink:href="#hstgrid" />
     <use xlink:href="#dobs_ausen" />
+    <use xlink:href="#dobs_mitte" transform="translate(-10,0)" class="geplant ausbau_hauptbahnhof" />
+    <use xlink:href="#doppelbst" transform="translate(5,0)" class="geplant ausbau_hauptbahnhof" />
     <text x="15" y="5">Platz der Republik</text>
     <desc class="kmdata">km 0,31|s10,s20|5|l|75</desc>
   </g>
@@ -1542,9 +1549,9 @@
   <path id="hauptbahnhof_m" class="mitte hilfslinie" d="M -20,190 v -135" />
   <path id="hauptbahnhof_1" d="M -15,190 v -135" />
   <path id="hauptbahnhof_2" d="M -25,55 v 135"/>
-  <path id="niddastraße_m" class="mitte hilfslinie" d="M -20,135 a 15,15 0,0,0 -15,-15 h -30 a 15,15 0,0,1 -15,-15 v -20 a 15,15 0,0,1 15,-15" />
-  <path id="niddastraße_1" d="M -15,135 a 20,20 0,0,0 -20,-20 h -30 a 10,10 0,0,1 -10,-10 v -20 a 10,10 0,0,1 10,-10" />
-  <path id="niddastraße_2" d="M -65,65 a 20,20 0,0,0 -20,20 v 20 a 20,20 0,0,0 20,20 h 30 a 10,10 0,0,1 10,10" />
+  <path id="niddastraße_m" class="mitte hilfslinie" d="M -20,125 a 15,15 0,0,0 -15,-15 h -30 a 15,15 0,0,1 -15,-15 v -10 a 15,15 0,0,1 15,-15" />
+  <path id="niddastraße_1" d="M -15,125 a 20,20 0,0,0 -20,-20 h -30 a 10,10 0,0,1 -10,-10 v -10 a 10,10 0,0,1 10,-10" />
+  <path id="niddastraße_2" d="M -65,65 a 20,20 0,0,0 -20,20 v 10 a 20,20 0,0,0 20,20 h 30 a 10,10 0,0,1 10,10" />
   <path id="friedrichebertanlage_1" d="M -153,-160 v 30 q 0,8 6,14 l 119,119 q 3,3 3,7 v 45 a 10,10 0,0,1 -10,10" />
   <path id="friedrichebertanlage_2" d="M -35,75 a 20,20 0,0,0 20,-20 v -45 q 0,-8 -6,-14 l -119,-119 q -3,-3 -3,-7 v -30" />
   <path id="friedrichebertanlage_m" class="mitte hilfslinie" d="M -35,70 a 15,15 0,0,0 15,-15 v -45 q 0,-6 -4.5,-10.5 l 3.5,-3.5 -7,7 3.5,-3.5 l -119,-119 l 3.5,-3.5 -7,7 3.5,-3.5 q -4.5,-4.5 -4.5,-10.5 h 5 -5 v -30 h 5" />
@@ -1624,6 +1631,25 @@
     <circle r="1.5" cx="15" />
     <circle r="1.5" cx="20" />
     <circle r="1.5" cx="25" />
+   </g>
+   <g id="hbf_4gleise" class="ausbau_hauptbahnhof geplant">
+     <path class="verstecke_ausbau" d="M -45,50 h 40 v 35 h -30 v 20 h 30 v 25 h -40 z" />
+     <path class="verstecke_ausbau" d="M -35,160 h 30 v 15 h -15 v 5 h -15 v -20" />
+     <path id="hbf_1_neu" d="M 5,170 h -10 a 20,20 0,0,0 -20,20 v 10 a 10,10 0,0,1 -10,10" />
+     <path id="hbf_2_neu" d="M -35,220 a 20,20 0,0,0 20,-20 v -10 a 10,10 0,0,1 10,-10" />
+     <path id="altstadt_1_neu" d="M -25,130 v 30 a 20,20 0,0,0 20,20 h 280" />
+     <path id="altstadt_2_neu" d="M 275,170 h -270 a 10,10 0,0,1 -10,-10 v -15 c 0,-7.5 -10,-7.5 -10,-15" />
+     <path id="hauptbahnhof_1_neu" d="M -15,190 v -135" />
+     <path id="hauptbahnhof_2_neu" d="M -28,62 l -1,1 q -6,6 -6,14 v 26 q 0,8 6,14 l 1,1 q 3,3 3,7 v 5 c 0,7.5 -10,7.5 -10,15 v 15 c 0,10 10,10 10,20 v 10" />
+     <path id="niddastraße_m_neu" class="mitte hilfslinie" d="M -24.5,114.5 q -4.5,-4.5 -10.5,-4.5 v 5 -5 h -30 a 15,15 0,0,1 -15,-15 v -10 a 15,15 0,0,1 15,-15" />
+     <path id="niddastraße_1_neu" d="M -21,111 q -6,-6 -14,-6  h -30 a 10,10 0,0,1 -10,-10 v -10 a 10,10 0,0,1 10,-10" />
+     <path id="niddastraße_2_neu" d="M -65,65 a 20,20 0,0,0 -20,20 v 10 a 20,20 0,0,0 20,20 h 30 q 4,0 7,3 q 3,3 3,7" />
+     <path id="friedrichebertanlage_1_neu" d="M -153,-160 v 30 q 0,8 6,14 l 119,119 q 3,3 3,7 v 45 q 0,4 -3,7 q -3,3 -7,3 h -10" />
+     <path id="friedrichebertanlage_2_neu" d="M -45,75 h 10 a 20,20 0,0,0 20,-20 v -45 q 0,-8 -6,-14 l -119,-119 q -3,-3 -3,-7 v -30" />
+     <path id="friedrichebertanlage_m_neu" class="mitte hilfslinie" d="M -45,70 h 10 a 15,15 0,0,0 15,-15 v -45 q 0,-6 -4.5,-10.5 l 3.5,-3.5 -7,7 3.5,-3.5 l -119,-119 l 3.5,-3.5 -7,7 3.5,-3.5 q -4.5,-4.5 -4.5,-10.5 h 5 -5 v -30 h 5" />
+    <path id="mainzerlandstraße_m" class="mitte hilfslinie" d="M -20,125 q 0,-6 -4.5,-10.5 l -1,-1 q -4.5,-4.5 -4.5,-10.5 h 5,-5 v -18 a 15,15 0,0,0 -15,-15 h -50" />
+    <path id="mainzerlandstraße_1" d="M -15,125 q 0,-8 -6,-14 l -1,-1 q -3,-3 -3,-7 v -18 a 20,20 0,0,0 -20,-20 h -50" />
+    <path id="mainzerlandstraße_2" d="M -95,75 h 50 a 10,10 0,0,1 10,10" />
    </g>
  </g>
  <g id="kilometrierungen_gruppen" class="kilometer">
@@ -1857,7 +1883,7 @@
    </g>
   </g>
   <g id="ausbauprojekte" transform="translate(835,-340)">
-   <rect class="box" width="200" height="200" />
+   <rect class="box" width="200" height="245" />
    <text class="unterschrift" x="5" y="20">Ausbauprojekte</text>
    <text class="boxtext" x="5" y="40" onclick="geplant('ausbau_ring')">Ringstraßenbahn <tspan class="link" id="ausbau_ring_aktion">anzeigen</tspan></text>
    <text class="ab_bb" x="10" y="55">Markus-Krankenhaus - Friedberger Warte</text>
@@ -1872,6 +1898,9 @@
    <text class="boxtext" x="5" y="170" onclick="geplant('ausbau_schlossstrasse')">Schloßstraße <tspan class="link" id="ausbau_schlossstrasse_aktion">anzeigen</tspan></text>
    <text class="ab_bb" x="10" y="185">Linienverkehr bis und Wendemöglichkeit</text>
    <text class="ab_bb" x="10" y="195">am Industriehof</text>
+   <text class="boxtext" x="5" y="215" onclick="geplant('ausbau_hauptbahnhof')">Hauptbahnhof <tspan class="link" id="ausbau_hauptbahnhof_aktion">anzeigen</tspan></text>
+   <text class="ab_bb" x="10" y="230">Ausbau auf vier Gleise</text>
+   <text class="ab_bb" x="10" y="240">Status: <a xlink:href="https://www.stvv.frankfurt.de/download/M_59_2025.pdf">Genehmigung der Vorplanung</a></text>
   </g>
   <text transform="translate(753.5,-63.5)" class="ab_bb tm">Anschluss Richtung BB Ost</text>
   <text transform="translate(753.5,-53.5)" class="ab_bb tm">(via Johanna-Tesch-Platz)</text>
