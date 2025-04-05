@@ -2428,7 +2428,7 @@
    <path class="tramg" d="M 37,55 a 10,10 0,0,1 10,-10" />
    <path class="tramg" d="M 42,40 a 5,5 0,0,0 5,5" />
    <path class="tramg" d="M 37,40 a 10,10 0,0,0 10,10" />
-   <a class="viewboxlink" xlink:href="strassenbahnnetz.svg?viewbox=-311/-201/316/118">
+   <a class="viewboxlink" xlink:href="strassenbahnnetz.svg?viewbox=-407/-310/167/89">
      <text transform="translate(40.5,12)" class="ref tm">C</text>
    </a>
   </g>
