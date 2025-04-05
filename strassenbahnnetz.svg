@@ -1596,9 +1596,8 @@
       <text transform="translate(-16,-12) rotate(-45)" class="ref tm">A</text>
     </a>
   </g>
-  <path id="rebstock_1" class="endet" d="M -105,-88 q -6,-6, -14,-6 h -276" />
-  <path id="rebstock_2a" class="faeng" d="M -395,-84 h 200 c 10,0 10,-10 20,-10" />
-  <path id="rebstock_2b" d="M -150,-94 c 10,0 10,10 20,10 h 11 q 4,0 7,3" />
+  <path id="rebstock_1" class="endet" d="M -105,-88 q -6,-6, -14,-6 h -21 c -5,0 -5,2 -10,2 h -25 c -5,0 -5,-2 -10,-2 h -210" />
+  <path id="rebstock_2" class="faeng" d="M -395,-84 h 200 c 10,0 10,-10 20,-10 h 25 c 10,0 10,10 20,10 h 11 q 4,0 7,3" />
   <path id="rebstock_m" class="mitte hilfslinie" d="M -108.5,-84.5 l 3.5,-3.5 -7,7 3.5,-3.5 q -4.5,-4.5 -10.5,-4.5 v 5 -5 h -21 v 5 -5 h -45 v 5 -5 h -20 v 5 -5 h -190" />
   <path id="mainzerlandstraße_m" class="mitte hilfslinie" d="M -20,85 a 15,15 0,0,0 -15,-15 h -60" />
   <path id="mainzerlandstraße_1" d="M -15,85 a 20,20 0,0,0 -20,-20 h -60" />
@@ -1816,7 +1815,7 @@
    <path d="M 20,110 a 15,15 0,0,0 30,0 a 10,10 0,0,0 -10,-10 a 10,10 0,0,1 -10,-10" class="strecke bb" />
    <path d="M 30,125 v 60" class="strecke geplant" />
    <path d="M 20,125 v 60" class="strecke geplant" />
-   <path d="M 30,185 v 550 a 10,10 0,0,0 10,10 a 10,10 0,0,1 10,10 v 5 a 15,15 0,0,1 -30,0 v -575" class="strecke" />
+   <path d="M 30,185 v 110 c 0,5 -2,5 -2,10 v 10 c 0,5 2,5 2,10 v 410 a 10,10 0,0,0 10,10 a 10,10 0,0,1 10,10 v 5 a 15,15 0,0,1 -30,0 v -425 c 0,-10 10,-10 10,-20 v -10 c 0,-10 -10,-10 -10,-20 v -110" class="strecke" />
    <path d="M 20,200 a 20,20 0,0,0 20,20 h 15" class="strecke ubergabe" />
    <path d="M 30,200 a 15,15 0,0,0 15,15 h 10" class="strecke ubergabe" />
    <path d="M 55,215 h 10 a 10,10 0,0,1 10,10 v 10 m 0,-10 v -20" class="strecke ubahng" />
@@ -1834,13 +1833,14 @@
    <text transform="translate(35,265) rotate(45)" class="ab_bb">(und kurzem Ausschnitt der U-Bahn-Gleise)</text>
    <use xlink:href="#weg" transform="translate(30,285)"/>
    <text transform="translate(35,290) rotate(45)">Gleis gesperrt</text>
+   <text transform="translate(35,305) rotate(45)" class="ab_bb">Gleisverschlingung</text>
    <g id="bahnsteig_legende" transform="translate(0,330)">
      <text transform="translate(100,55) rotate(45)" class="headline tm">Haltestellen</text>
      <text transform="translate(55,30) rotate(45)" class="ab_bb">Als Bahnsteig zählt jede Fläche,</text>
      <text transform="translate(55,45) rotate(45)" class="ab_bb">die nicht dem Autoverkehr zur</text>
      <text transform="translate(55,60) rotate(45)" class="ab_bb">Verfügung steht.</text>
-     <text transform="translate(10,-10) rotate(90)" class="ab_bb">Doppel- oder lange Haltestelle</text>
-     <text transform="translate(35,-10) rotate(90)" class="ab_bb">Einfachhaltestelle</text>
+     <text transform="translate(10,130) rotate(90)" class="ab_bb te">Doppel- oder lange Haltestelle</text>
+     <text transform="translate(35,70) rotate(90)" class="ab_bb te">Einfachhaltestelle</text>
      <use xlink:href="#haltestel" transform="translate(30,75)" />
      <text transform="translate(40,80) rotate(45)">Einstieg von Straße, 0 cm</text>
      <use xlink:href="#wien_einzl" class="dreizig" transform="translate(30,110)" />
