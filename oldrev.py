@@ -113,6 +113,8 @@ def print_content(rev, filename):
         '--find-object={}'.format(object_id),
         # also, cannot use --format=%as.
         '--format=%ad', '--date=short')
+    if not authordates:
+        authordates = git.commandlines('log', '-1', '--format=%ad', 'date=short')
     # cannot use fromisoformat because old python3 version on server
     filedate = datetime.strptime(authordates[-1].strip(), '%Y-%m-%d')
     contents = git.command('show', object_id)
