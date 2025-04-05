@@ -83,7 +83,7 @@
   .grid3 { stroke-width:.2px; stroke:#888888; }
   .grid4 { stroke-width:.2px; stroke:#000000; stroke-dasharray:1,1; }
 
-  .beschrift text { fill:black; stroke:none; font-size:3pt; text-anchor:middle; }
+  .beschrift text { fill:black; stroke:none; font-size:3pt; }
   .bgleisnummer circle { fill:white; fill-opacity:.8; stroke:black; stroke-width:.3; }
   .bgleisnummer text { fill:black; stroke:none; font-size:4pt; text-anchor:middle; }
   .wand { stroke:#93799a; stroke-width:.2; }
@@ -1370,11 +1370,11 @@
    <path id="gut_01" class="endet" d="M -8.5,18.5 q -1.5,1.5 -1.5,3.5 v 73 " />
    <path id="gut_02" class="endet" d="M -13.5,23.5 q -1.5,1.5 -1.5,3.5 v 68" />
    <path id="gut_03" class="endet" d="M -3,15 q -2,0 -3.5,1.5 l -12,12 q -1.5,1.5 -1.5,3.5 v 63" />
-   <path id="gut_04" d="M -23.5,18.5 q -1.5,1.5 -1.5,3.5 v 66 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5 h -35" />
-   <path id="gut_05" d="M -28.5,23.5 q -1.5,1.5 -1.5,3.5 v 66 q 0,2 -1.5,3.5" />
+   <path id="gut_04" d="M -23.5,18.5 q -1.5,1.5 -1.5,3.5 v 61 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5 h -11 q -2,0 -3.5,1.5" />
+   <path id="gut_05" d="M -28.5,23.5 q -1.5,1.5 -1.5,3.5 v 61 q 0,2 -1.5,3.5" />
    <path id="gut_06" class="endet" d="M -18,15 q -2,0 -3.5,1.5 l -12,12 q -1.5,1.5 -1.5,3.5 v 43" />
    <path id="gut_07" class="endet" d="M -29,15 q -2,0 -3.5,2.5 l -6,10 q -1.5,2.5, -1.5,3.5 v 34" />
-   <path id="gut_08" d="M -34,20 q -1.5,2.5 -3.0,4.0 l -6.5,6.5 q -1.5,1.5, -1.5,3.5 v 54 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5" />
+   <path id="gut_08" d="M -34,20 q -1.5,2.5 -3.0,4.0 l -6.5,6.5 q -1.5,1.5, -1.5,3.5 v 54 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5 h -15" />
    <path id="gut_09" d="M -38,19.2 q -2.5,1.5 -4.0,3.0 l -6.5,6.5 q -1.5,1.5 -1.5,3.5 v 55.8 q 0,2 -1.5,3.5 l -7,7 q -1.5,1.5 -3.5,1.5" />
    <path id="gut_10" d="M -29,15 q -2,0 -3.5,0.9 l -21,12.6 q -1.5,0.9 -1.5,2.9 v 61.6 q 0,2 -1.5,3.5" />
    <path id="gut_11" class="endet" d="M -49,15 q -2,0 -3.5,2.5 l -6,10 q -1.5,2.5, -1.5,3.5 v 49" />
@@ -1398,8 +1398,9 @@
     <path class="gebaude wand" id="halle_gutleut" d="M -2.5,40 h -140 v 42.5 h 145 v -12.5 h -5 z" />
     <path class="gebaude wand" id="halle_schleif" d="M -98.5,37.5 h 1 v 35 h -5 v -35 h 1" />
     <path class="gebaude wand" id="halle_waschur" d="M -42.5,87.5 h 2.5 v -5 h -2.5 v -15 h 5 v -32.5 h -20 v 47.5 h -2.5 v 5 h 2.5" />
-    <g transform="translate(-108,115)" class="beschrift"><path d="M 0,-4 l 8,-8 v -28" /><text>Schleifstand</text></g>
-    <g transform="translate(-28,105)" class="beschrift"><path d="M 0,-4 l -12,-12" /><text>Wasch- und Revisionshalle</text></g>
+    <path class="gebaude wand geplant ausbau_bbgutleut" id="halle_neu" d="M -7.5,102.5 h -115 v 40 h 115 v -40" />
+    <g transform="translate(-150,25)" class="beschrift te"><path d="M 1,-2 h 35 l 13,13" /><text>Schleifstand</text></g>
+    <g transform="translate(0,33)" class="beschrift ta"><path d="M -1,-2 h -36 l -2,2" /><text>Wasch- und Revisionshalle</text></g>
     <g transform="translate( -10,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>1</text></g>
     <g transform="translate( -15,57)" class="bgleisnummer"><circle cy="-2" r="4" /><text>2</text></g>
     <g transform="translate( -20,50)" class="bgleisnummer"><circle cy="-2" r="4" /><text>3</text></g>
