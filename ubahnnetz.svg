@@ -2732,21 +2732,21 @@
     <use xlink:href="#bstg_ausen" transform="rotate(90)" />
     <use xlink:href="#bau" transform="translate(0,-10)" />
     <use xlink:href="#bau" transform="translate(0,10)" />
-    <text x="0" y="-15">Emser Brücke</text>
+    <text x="0" y="-15">Emser Brücke / Messe</text>
     <desc class="kmdata">km 6,15|bs|2|r:i|210</desc>
    </g>
    <g id="hst214" transform="translate(-475,1580)" class="geplant verlaengerung_europaviertel tm">
     <use xlink:href="#bstg_ausen" transform="rotate(90)" />
     <use xlink:href="#bau" transform="translate(0,-10)" />
     <use xlink:href="#bau" transform="translate(0,10)" />
-    <text x="0" y="-15">Europapark</text>
+    <text x="0" y="-15">Europagarten</text>
     <desc class="kmdata">km 5,65|bs|2|r:i|210</desc>
    </g>
    <g id="hst215" transform="translate(-595,1580)" class="geplant verlaengerung_europaviertel tm">
     <use xlink:href="#bstg_ausen" transform="rotate(90)" />
     <use xlink:href="#bau" transform="translate(0,-10)" />
     <use xlink:href="#bau" transform="translate(0,10)" />
-    <text x="0" y="-15">Wohnpark</text>
+    <text x="0" y="-15">Europaviertel West</text>
     <desc class="kmdata">km 4,85|bs|2|r:i|-30</desc>
    </g>
    <g id="hst216" transform="translate(-675,1580)" class="geplant verlaengerung_roemerhof tm">
@@ -5042,7 +5042,7 @@
    <text class="boxtext" x="15" y="85" onclick="geplant('verlaengerung_badhomburg')">Gonzenheim → Bad Homburg Bahnhof</text>
    <text class="ab_bb"   x="20" y="100">Status: Planfestgestellt (seit <a xlink:href="https://www.bad-homburg-u2.de/downloads.html?file=files/content/downloads/Planfeststellungsbeschluss_Verl%C3%A4ngerung_U2_-_Durchschrift.pdf">25.01.2016</a>)</text>
    <text class="boxtext" x="10" y="120" onclick="geplant('verlaengerung_europaviertel')">Europaviertel: <tspan class="link" id="verlaengerung_europaviertel_aktion">verstecken</tspan></text>
-   <text class="boxtext" x="15" y="135" onclick="geplant('verlaengerung_europaviertel')">Hauptbahnhof → Wohnpark</text>
+   <text class="boxtext" x="15" y="135" onclick="geplant('verlaengerung_europaviertel')">Hauptbahnhof → Europaviertel West</text>
    <text class="ab_bb"   x="20" y="150">Status: <a xlink:href="https://www.sbev-frankfurt.de/de/home/">in Bau</a></text>
    <text class="boxtext" x="10" y="170" onclick="geplant('ginnheimer_kurve')">Lückenschluss DⅡ: <tspan class="link" id="ginnheimer_kurve_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="185" onclick="geplant('ginnheimer_kurve')">Ginnheim → Bockenheimer Warte</text>
@@ -5057,7 +5057,7 @@
    <text class="boxtext" x="15" y="295" onclick="geplant('rtw')">Sossenheim → Praunheim</text>
    <text class="ab_bb"   x="20" y="310">Status: <a xlink:href="https://www.uvp-verbund.de/trefferanzeige?docuuid=E3850FAD-4D63-4A99-896E-67B57D31591C">Planfeststellung erfolgt</a> (am 22.06.2023)</text>
    <text class="boxtext" x="10" y="330" onclick="geplant('verlaengerung_roemerhof')">Römerhof: <tspan class="link" id="verlaengerung_roemerhof_aktion">anzeigen</tspan></text>
-   <text class="boxtext" x="15" y="345" onclick="geplant('verlaengerung_roemerhof')">Wohnpark → Römerhof Gymnasium</text>
+   <text class="boxtext" x="15" y="345" onclick="geplant('verlaengerung_roemerhof')">Europaviertel West → Römerhof Gymnasium</text>
    <text class="ab_bb"   x="20" y="360">Status: <a xlink:href="https://www.stvv.frankfurt.de/download/M_57_2024.pdf">Vorplanung vorgestellt</a> (am 29.04.2024)</text>
    <text class="boxtext" x="10" y="380" onclick="geplant('ab_roemerstadt')">Abstellanlage Römerstadt: <tspan class="link" id="ab_roemerstadt_aktion">anzeigen</tspan></text>
    <text class="boxtext" x="15" y="395" onclick="geplant('ab_roemerstadt')">Erweiterung um 3 Gleise</text>
