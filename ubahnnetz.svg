@@ -47,7 +47,6 @@
   #bstg_feuer { stroke:#8000ff; fill:url(#bs87); }
   use.achtzig { stroke:#00c000; fill:url(#bs80); }
   use.funfzig,
-  #bstg_nidda { stroke:#00c0ff; fill:url(#bs56); }
   #sbahn { stroke:#000000; stroke-width:1px; fill:url(#bs99); }
   #haltestel circle { stroke:#00c000; stroke-width:1px; fill:#ffff00; }
   #haltestel path { stroke:#00c000; fill:none; }
@@ -235,10 +234,6 @@
   </g>
   <use id="bahnsteig" xlink:href="#viersteig" class="achtzig" />
   <use id="bstg_feuer" xlink:href="#viersteig" />
-  <g id="bstg_nidda">
-   <use xlink:href="#viersteig" transform="translate(-5,0) rotate(180)" />
-   <use xlink:href="#viersteig" transform="translate(5,0)" />
-  </g>
   <g id="bstg_tramb">
    <use xlink:href="#einwagen" transform="translate(-5,7.5) rotate(180)" />
    <use xlink:href="#einwagen" transform="translate(5,0)" />
@@ -3038,9 +3033,9 @@
     <use xlink:href="#bstg_ausen" />
    </g>
    <g id="hst415" transform="translate(-125,861)" class="te">
-    <use xlink:href="#bstg_nidda" onclick="toggle_details(this)" />
+    <use xlink:href="#bstg_ausen" onclick="toggle_details(this)" />
     <text x="-15" y="5">Ginnheim / Niddapark</text>
-    <text x="-15" y="15" class="hstdetails">(Bahnsteigshöhe 56 cm) (NI, 415)</text>
+    <text x="-15" y="15" class="hstdetails">(NI, 415)</text>
     <desc class="kmdata">km 4,75|a1|2|r:i|-45</desc>
     <g class="hstdetails">
       <g id="sig415H11" transform="translate(5,30)" onmouseover="highlight(this)">
@@ -5007,8 +5002,7 @@
    <text transform="translate(70,545)" class="ab_bb">Nur im Mittelteil 80 cm, vorderer und hinterer Teil 60 cm. Länge 73 m</text>
    <text transform="translate(70,570)">Umbauten</text>
    <text transform="translate(70,580)" class="ab_bb">Ersatzhaltestelle / Halt entfällt</text>
-   <text transform="translate(70,612)">Links: Höhe 56 cm (nur Niddapark)</text>
-   <text transform="translate(70,626)">Rechts: Höhe 87 cm (nur Hauptbahnhof Gleis 3)</text>
+   <text transform="translate(70,626)">Höhe 87 cm (nur Hauptbahnhof Gleis 3)</text>
    <text transform="translate(60,650)" class="headline">Betriebshöfe (BB) und Abstellanlagen (AB)</text>
    <text transform="translate(70,675)" class="ab_bb">Abstell- und Wendegleise,</text>
    <text transform="translate(70,690)" class="ab_bb">jedes Segment für die Länge eines Stadtbahnwagens</text>
@@ -5025,7 +5019,6 @@
    <use xlink:href="#bstg_ausen" transform="translate(25,571)" />
    <use xlink:href="#bau" transform="translate(15,571)" />
    <use xlink:href="#uml" transform="translate(35,571) rotate(90)" />
-   <use xlink:href="#bstg_nidda" transform="translate(25,616)" />
    <use xlink:href="#bstg_feuer" transform="translate(30,616)" />
    <use xlink:href="#einsabstell" transform="translate(20,665)" />
    <use xlink:href="#zweiabstell" transform="translate(25,665)" />
