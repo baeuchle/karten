@@ -3080,7 +3080,7 @@
      <use id="rs_43"  xlink:href="#vierabstell" transform="translate(22.5,20)" class="geplant ab_roemerstadt" />
     </g>
     <text x="-15" y="5">Römerstadt</text>
-    <text x="-15" y="15" class="hstdetails">(Bahnsteigshöhe 56 cm) (RS, 421)</text>
+    <text x="-15" y="15" class="hstdetails">(RS, 421)</text>
     <desc class="kmdata">km 3,70|a1|2|r:i|-30</desc>
     <g class="hstdetails">
       <g transform="translate(-2.5,80)" class="bgleisnummer"><circle cy="-1" r="2" /><text>31</text></g>
